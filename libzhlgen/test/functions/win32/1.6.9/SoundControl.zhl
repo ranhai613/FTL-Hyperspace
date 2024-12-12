@@ -6,6 +6,10 @@ __thiscall void SoundControl::StopPlaylist(SoundControl *this, int fadeOut);
 __thiscall void SoundControl::StartPlaylist(SoundControl *this, std::vector<std::string> &playlist);
 "578d????0883e4??ff????5589e557565383ec??8039??8b??f30f10????":
 __thiscall void SoundControl::UpdateSoundLoop(SoundControl *this, const std::string& loopId, float count);
+"660fefc083ec04f30f2a4124f30f5e05????????f30f110424d9042483c404c3":
+__thiscall float SoundControl::GetMusicVolume(SoundControl *this);
+".660fefc083ec04f30f2a4128f30f5e05????????f30f110424d9042483c404c3":
+__thiscall float SoundControl::GetSoundVolume(SoundControl *this);
 
 "!8b4b08e8????????0fb6c0b9(???????\?)890424e8????????b9":
 SoundControl* Global_SoundControl_Sounds;

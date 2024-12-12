@@ -1,0 +1,4 @@
+"55660fefdb660fefd289":
+__thiscall void SlideBar::OnRender(SlideBar *this);
+".578d7c240883e4f0ff77fc5589e5575389cb83ec2080":
+__thiscall void SlideBar::MouseClick(SlideBar *this, int mX, int mY);

@@ -88,3 +88,20 @@ public:
 private:
     static CustomOptionsManager instance;
 };
+
+class ModOptionsScreen
+{
+public:
+    ModOptionsScreen();
+    void OnInit();
+    void OnRender();
+
+    bool bOpen;
+
+    static ModOptionsScreen *GetInstance() {return &instance;}
+
+private:
+    WindowFrame *customBox;
+
+    static ModOptionsScreen instance;
+};

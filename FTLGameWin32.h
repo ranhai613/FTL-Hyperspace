@@ -161,6 +161,22 @@ struct TextLibrary
         return TextLibrary::GetText(name, currentLanguage);
 	}
 
+	std::string InsertText(const std::string& inserter, const std::string& original, const std::string& replacement)
+    {
+        std::string result = original;
+        size_t pos = result.find(inserter);
+        if (pos != std::string::npos)
+        {
+            result.replace(pos, inserter.length(), replacement);
+        }
+        return result;
+    }
+
+    std::string InsertText(const std::string& original, const std::string& replacement)
+    {
+    	return TextLibrary::InsertText("\\1", original, replacement);
+    }
+
 	void SetLanguage(const std::string &language)
 	{
 		currentLanguage = language;
@@ -3196,9 +3212,11 @@ struct ChoiceBox : FocusWindow
         return ret;
     }
 
+	LIBZHL_API int GetPotentialChoice();
 	LIBZHL_API void MouseClick(int mX, int mY);
 	LIBZHL_API void MouseMove(int x, int y);
 	LIBZHL_API void OnRender();
+	LIBZHL_API void SetChoices(std::string *mainText, std::vector<ChoiceText> *newChoices, std::vector<ChoiceText> *choicesSecond);
 	
 	GL_Texture *textBox;
 	WindowFrame *box;
@@ -3350,6 +3368,7 @@ struct ControlsScreen;
 
 struct ControlsScreen
 {
+	LIBZHL_API void MouseClick(int mX, int mY);
 	LIBZHL_API void OnInit();
 	LIBZHL_API void OnLoop();
 	LIBZHL_API void OnRender();
@@ -3365,8 +3384,13 @@ struct ControlsScreen
 
 struct OptionsScreen;
 
+struct SlideBar;
+
 struct SlideBar
 {
+	LIBZHL_API void MouseClick(int mX, int mY);
+	LIBZHL_API void OnRender();
+	
 	Globals::Rect box;
 	bool hovering;
 	bool holding;
@@ -3378,8 +3402,12 @@ struct SlideBar
 
 struct OptionsScreen : ChoiceBox
 {
+	LIBZHL_API void CheckSelection();
+	LIBZHL_API void Close();
+	LIBZHL_API void MouseClick(int mX, int mY);
 	LIBZHL_API void OnInit();
 	LIBZHL_API void OnLoop();
+	LIBZHL_API void OnRender();
 	LIBZHL_API void Open(bool mainMenu);
 	
 	Point position;
@@ -6689,6 +6717,8 @@ struct Settings
 	LIBZHL_API static void __stdcall ResetHotkeys();
 	LIBZHL_API static void __stdcall SaveSettings();
 	LIBZHL_API static void __stdcall SetHotkey(const std::string &hotkeyName, SDLKey key);
+	LIBZHL_API static void __stdcall ToggleFullScreen();
+	LIBZHL_API static void __stdcall ToggleVSync();
 	
 };
 
@@ -7138,6 +7168,8 @@ struct SoundControl;
 
 struct SoundControl
 {
+	LIBZHL_API float GetMusicVolume();
+	LIBZHL_API float GetSoundVolume();
 	LIBZHL_API int PlaySoundMix(const std::string &soundName, float volume, bool loop);
 	LIBZHL_API void StartPlaylist(std::vector<std::string> &playlist);
 	LIBZHL_API void StopPlaylist(int fadeOut);
