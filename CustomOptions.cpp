@@ -4,12 +4,42 @@
 CustomOptionsManager CustomOptionsManager::instance = CustomOptionsManager();
 
 
+SimpleTextButton::SimpleTextButton(const std::string &_text, int x, int y, bool _bRightAlign) :
+text(_text), bRightAlign(_bRightAlign)
+{
+    hitbox.x = x;
+    hitbox.y = y;
+    hitbox.w = 0;
+    hitbox.h = 0;
+    data = 0;
+}
+
+void SimpleTextButton::OnInit()
+{
+    textColor = COLOR_WHITE;
+    Pointf textSize = freetype::easy_measurePrintLines(1, 0, 0, 999, text);
+    hitbox.w = textSize.x;
+    hitbox.h = textSize.y;
+    if (bRightAlign)
+    {
+        hitbox.x -= textSize.x;
+    }
+
+}
+
+void SimpleTextButton::OnRender()
+{
+    CSurface::GL_SetColor(textColor);
+    freetype::easy_print(1, hitbox.x, hitbox.y, text);
+}
+
 ModOptionsScreen ModOptionsScreen::instance = ModOptionsScreen();
 
 ModOptionsScreen::ModOptionsScreen()
 {
     customBox = nullptr;
     bOpen = false;
+    dismissSoundButton = SimpleTextButton("airLock", 600, 300, true);
 }
 
 void ModOptionsScreen::OnInit()
@@ -18,6 +48,7 @@ void ModOptionsScreen::OnInit()
     {
         customBox = new WindowFrame(130, 112, 1089, 500);
     }
+    dismissSoundButton.OnInit();
 }
 
 void ModOptionsScreen::OnRender()
@@ -34,6 +65,8 @@ void ModOptionsScreen::OnRender()
     CSurface::GL_SetColor(COLOR_BUTTON_TEXT);
     freetype::easy_print(63, 154.f, 81.f, tabText);
     CSurface::GL_SetColor(COLOR_WHITE);
+
+    dismissSoundButton.OnRender();
 }
 
 HOOK_METHOD(OptionsScreen, OnInit, () -> void)
@@ -41,12 +74,6 @@ HOOK_METHOD(OptionsScreen, OnInit, () -> void)
     super();
     ModOptions->OnInit();
 }
-
-// HOOK_METHOD(OptionsScreen, OnRender, () -> void)
-// {
-//     super();
-//     if (ModOptions->bOpen) ModOptions->OnRender();
-// }
 
 HOOK_METHOD_PRIORITY(OptionsScreen, OnRender, 1000, () -> void)
 {
@@ -284,6 +311,9 @@ HOOK_METHOD_PRIORITY(OptionsScreen, Open, 1000, (bool mainMenu) -> void)
     showWipeButton = mainMenu;
     bCustomizeControls = false;
     lastFullScreen = settings->fullscreen;
+    //========== Mod Options Screen Addition Start ==========
+    ModOptions->bOpen = false;
+    //========== Mod Options Screen Addition End ==========
     /*
     #ifdef STEAM_1_6_13_BUILD
         steam.showSyncAchievements = G_->GetAchievementTracker()->IsReadyToSync();
@@ -422,6 +452,133 @@ HOOK_METHOD_PRIORITY(OptionsScreen, Open, 1000, (bool mainMenu) -> void)
     // End of orig-code
 }
 
+HOOK_METHOD_PRIORITY(OptionsScreen, MouseMove, 1000, (int x, int y) -> void)
+{
+    LOG_HOOK("HOOK_METHOD_PRIORITY -> OptionsScreen::MouseMove -> Begin (ControllerFunctionRewrites.cpp)\n")
+
+    // code reverse engineered by Dino
+    if (!langChooser.bOpen)
+    {
+        if (wipeProfileDialog.bOpen)
+        {
+            // Handles wipe profile confirm window hover stuff
+            wipeProfileDialog.MouseMove(x, y);
+            return;
+        }
+
+        if (!restartRequiredDialog.bOpen)
+        {
+            closeButton.MouseMove(x, y, false);
+            
+            if (!bCustomizeControls)
+            {
+                
+                if (showWipeButton)
+                {
+                    // Handles the hovering of the wipe profile button
+                    wipeProfileButton.MouseMove(x, y, false);
+                }
+
+                /*
+                #ifdef STEAM_1_6_13_BUILD
+                Steam1613OptionsScreenStructAdditions steam;
+                if (steam.showSyncAchievements) 
+                {
+                    steam.syncAchievementsButton.MouseMove(x, y, false);
+                }
+                #endif
+                */
+
+                // Tells the game where the cursor is so it knows which texts to highlight
+                ChoiceBox::MouseMove(x, y);
+
+                /*
+                Unused Vanilla code - Reports back if a resolution mode is supported when hovering it (kinda broken)
+                if (choiceBoxes.size() > 0 && choiceBoxes[0].x <= x && x <= choiceBoxes[0].x + choiceBoxes[0].w && choiceBoxes[0].y <= y && y <= choiceBoxes[0].y + choiceBoxes[0].h) 
+                {
+                    if (!G_->GetSettings()->manualResolution)
+                    {
+                        std::string tooltipID = (G_->GetSettings()->fullscreen == 1 || !CSurface::IsFrameBufferSupported()) ? "stretch_not_supported" : "manual_override";
+                        std::string tooltip = G_->GetTextLibrary()->GetText(tooltipID, G_->GetTextLibrary()->currentLanguage);
+                        G_->GetMouseControl()->SetTooltip(tooltip);
+                        G_->GetMouseControl()->InstantTooltip();
+                    }
+                }
+                */
+
+                // Handles the sound volume slider stuff
+                if (!soundVolume.holding)
+                {
+                    // Checks if the slider is hovered
+                    bool isHovering =  x > soundVolume.marker.x && x < soundVolume.marker.x + soundVolume.marker.w && y > soundVolume.marker.y && y < soundVolume.marker.y + soundVolume.marker.h;
+                    soundVolume.hovering = isHovering;
+                }
+                else
+                {
+                    // Handles the movement of the slider
+                    int16_t newMarkerX = (x - soundVolume.mouseStart.x) + soundVolume.rectStart.x;
+
+                    if (newMarkerX < soundVolume.minMax.first)
+                    {
+                        newMarkerX = soundVolume.minMax.first;
+                    }
+                    else if (newMarkerX > soundVolume.minMax.second)
+                    {
+                        newMarkerX = soundVolume.minMax.second;
+                    }
+
+                    soundVolume.marker.x = newMarkerX;
+                }
+
+                // Handles the music volume slider stuff
+                if (!musicVolume.holding)
+                {
+                    // Checks if the slider is hovered
+                    bool isHovering = x > musicVolume.marker.x && x < musicVolume.marker.x + musicVolume.marker.w && y > musicVolume.marker.y && y < musicVolume.marker.y + musicVolume.marker.h;
+                    musicVolume.hovering = isHovering;
+                }
+                else
+                {
+                    // Handles the movement of the slider
+                    int16_t newMarkerX = (x - musicVolume.mouseStart.x) + musicVolume.rectStart.x;
+
+                    if (newMarkerX < musicVolume.minMax.first)
+                    {
+                        newMarkerX = musicVolume.minMax.first;
+                    }
+                    else if (newMarkerX > musicVolume.minMax.second)
+                    {
+                        newMarkerX = musicVolume.minMax.second;
+                    }
+
+                    musicVolume.marker.x = newMarkerX;
+                }
+
+            }
+            else
+            {
+                // Tells the game what is hovered in the controls menu
+                controls.MouseMove(x, y);
+            }
+        }
+        else
+        {
+            // Tells the game what is hovered in the restart required box
+            restartRequiredDialog.MouseMove(x, y);
+        }
+    }
+    else
+    {
+        // Handles the hovering of the language buttons in the lang menu
+        std::vector<TextButton*> locButtons = langChooser.buttons;
+        for (uint8_t buttonIndex = 0; buttonIndex < locButtons.size(); ++buttonIndex) 
+        {
+            locButtons[buttonIndex]->MouseMove(x, y, false);
+        }
+    }
+    // End of orig-code
+}
+
 HOOK_METHOD_PRIORITY(OptionsScreen, MouseClick, 1000, (int x, int y) -> void)
 {
     LOG_HOOK("HOOK_METHOD_PRIORITY -> OptionsScreen::MouseClick -> Begin (ControllerFunctionRewrites.cpp)\n")
@@ -528,6 +685,103 @@ HOOK_METHOD_PRIORITY(OptionsScreen, MouseClick, 1000, (int x, int y) -> void)
             }
         }
     }
+    // End of orig-code
+}
+
+HOOK_METHOD_PRIORITY(OptionsScreen, KeyDown, 1000, (SDLKey sym) -> bool)
+{
+    LOG_HOOK("HOOK_METHOD_PRIORITY -> OptionsScreen::KeyDown -> Begin (ControllerFunctionRewrites.cpp)\n")
+
+    // code reverse engineered by Dino
+
+    /*
+    Notes:
+    0x1b corresponds to the escape key on your keyboard
+    I improvised some code here because ghidra showed a mess
+    Inlined some function calls that were literally just changing window visibility bools
+    */
+
+    if (!langChooser.bOpen && !wipeProfileDialog.bOpen) // Check if neither the language chooser nor the wipe profile dialog is open
+    {
+        // Check if the hotkey menu is open
+        if (bCustomizeControls)
+        {
+            if (sym == 0x1b)
+            {
+                int16_t selectedButton = controls.selectedButton;
+
+                // Deselect the hotkey and set it to its previous key
+                if (selectedButton != -1)
+                {
+                    controls.buttons[controls.currentPage][selectedButton].state = 0;
+                    controls.selectedButton = -1;
+                    return true;
+                }
+
+                // Close the reset dialog if open
+                if (controls.resetDialog.bOpen)
+                {
+                    controls.resetDialog.Close();
+                    return true;
+                }
+            }
+            else if (sym != 0x1b) // Bind the the pressed key to the selected hotkey if wasn't the escape key
+            {
+                std::vector<ControlButton> &hotkeyButtons = controls.buttons[controls.currentPage];
+                for (ControlButton &button : hotkeyButtons)
+                {
+                    if (button.state == 2)
+                    {
+                        Settings::SetHotkey(button.value, sym);
+                        button.state = 0;
+                    }
+                }
+            }
+
+            // Exit if the Escape key is pressed
+            if (sym == 0x1b)
+            {
+                bCustomizeControls = false;
+                return false;
+            }
+
+            return false;
+        }
+        //========== Mod Options Screen Addition Start ==========
+        else if (ModOptions->bOpen)
+        {
+            if (sym == 0x1b)
+            {
+                ModOptions->bOpen = false;
+            }
+            return false;
+        }
+        //========== Mod Options Screen Addition End ==========
+        else
+        {
+            // Close the current window if the Escape key is pressed
+            if (sym == 0x1b)
+            {
+                bOpen = false;
+            }
+            else
+            {
+                // Handling they key further
+                ChoiceBox::KeyDown(sym);
+            }
+            return false;
+        }
+    }
+    else if (langChooser.bOpen && sym == 0x1b) // Close language chooser on Escape key input
+    {
+        langChooser.bOpen = false;
+    }
+    else if (wipeProfileDialog.bOpen) // Close profile dialog if open
+    {
+        wipeProfileDialog.bOpen = false;
+    }
+
+    return false;
     // End of orig-code
 }
 

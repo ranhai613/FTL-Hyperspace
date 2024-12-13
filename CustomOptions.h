@@ -89,6 +89,20 @@ private:
     static CustomOptionsManager instance;
 };
 
+struct SimpleTextButton
+{
+    SimpleTextButton() {}
+    SimpleTextButton(const std::string &_text, int x, int y, bool _bRightAlign);
+    void OnInit();
+    void OnRender();
+
+    Globals::Rect hitbox;
+    std::string text;
+    GL_Color textColor;
+    bool bRightAlign;
+    int data;
+};
+
 class ModOptionsScreen
 {
 public:
@@ -96,9 +110,10 @@ public:
     void OnInit();
     void OnRender();
 
-    bool bOpen;
-
     static ModOptionsScreen *GetInstance() {return &instance;}
+
+    bool bOpen;
+    SimpleTextButton dismissSoundButton;
 
 private:
     WindowFrame *customBox;
