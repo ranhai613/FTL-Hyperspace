@@ -3,35 +3,117 @@
 
 CustomOptionsManager CustomOptionsManager::instance = CustomOptionsManager();
 
+void Selector::OnInit() {}
+void Selector::OnRender() {}
+void Selector::MouseMove(int mX, int mY) {}
+void Selector::MouseClick(int mX, int mY) {}
+int Selector::MeasureHeight() {}
 
-SimpleTextButton::SimpleTextButton(const std::string &_text, int x, int y, bool _bRightAlign) :
+const int SimpleTextButton::line_length = 180;
+
+SimpleTextButton::SimpleTextButton(const std::string &_text, bool _bRightAlign) :
 text(_text), bRightAlign(_bRightAlign)
 {
-    hitbox.x = x;
-    hitbox.y = y;
-    hitbox.w = 0;
-    hitbox.h = 0;
+    on_click = [&](SimpleTextButton* const _this) {};
     data = 0;
 }
 
 void SimpleTextButton::OnInit()
 {
     textColor = COLOR_WHITE;
-    Pointf textSize = freetype::easy_measurePrintLines(1, 0, 0, 999, text);
-    hitbox.w = textSize.x;
-    hitbox.h = textSize.y;
-    if (bRightAlign)
-    {
-        hitbox.x -= textSize.x;
-    }
-
+    SetText(text);
 }
 
 void SimpleTextButton::OnRender()
 {
     CSurface::GL_SetColor(textColor);
-    freetype::easy_print(1, hitbox.x, hitbox.y, text);
+    freetype::easy_printAutoNewlines(13, hitbox.x, hitbox.y, line_length, text);
 }
+
+void SimpleTextButton::MouseMove(int mX, int mY)
+{
+    if (hitbox.x <= mX && mX <= hitbox.x + hitbox.w && hitbox.y <= mY && mY <= hitbox.y + hitbox.h)
+    {
+        textColor = COLOR_YELLOW;
+    }
+    else
+    {
+        textColor = COLOR_WHITE;
+    }
+}
+
+void SimpleTextButton::MouseClick(int mX, int mY)
+{
+    if (hitbox.x <= mX && mX <= hitbox.x + hitbox.w && hitbox.y <= mY && mY <= hitbox.y + hitbox.h)
+    {
+        on_click(this);
+    }
+}
+
+int SimpleTextButton::MeasureHeight()
+{
+    return static_cast<int>(freetype::easy_measurePrintLines(13, 0.f, 0.f, line_length, text).y);
+}
+
+void SimpleTextButton::SetText(const std::string &_text)
+{
+    hitbox.x = position.x;
+    hitbox.y = position.y;
+
+    text = _text;
+    Pointf textSize = freetype::easy_measurePrintLines(13, 0, 0, line_length, text);
+    hitbox.w = textSize.x;
+    hitbox.h = textSize.y;
+    if (bRightAlign)
+    {
+        hitbox.x += 180 - textSize.x;
+    }
+}
+
+SettingEntry::SettingEntry(const std::string &_text, Selector* _selector) : text(_text), selector(_selector)
+{
+    position = Point();
+    height = 0;
+}
+
+void SettingEntry::OnInit(int x, int y)
+{
+    position.x = x;
+    position.y = y;
+    selector->position.x = x;
+    selector->position.y = y;
+    selector->position.x += 220;
+    selector->OnInit();
+    int textHeight = static_cast<int>(freetype::easy_measurePrintLines(13, 0.f, 0.f, 300, text).y);
+    int selectorHeight = selector->MeasureHeight();
+    if (textHeight > selectorHeight)
+    {
+        selector->position.y += (textHeight - selectorHeight) / 2;
+    }
+    else if (textHeight < selectorHeight)
+    {
+        position.y += (selectorHeight - textHeight) / 2;
+    }
+    height = std::max(textHeight, selectorHeight);
+}
+
+void SettingEntry::OnRender()
+{
+    CSurface::GL_SetColor(COLOR_WHITE);
+    freetype::easy_printAutoNewlines(13, position.x, position.y, 300, text);
+    selector->OnRender();
+}
+
+void SettingEntry::MouseMove(int mX, int mY)
+{
+    selector->MouseMove(mX, mY);
+}
+
+void SettingEntry::MouseClick(int mX, int mY)
+{
+    selector->MouseClick(mX, mY);
+}
+
 
 ModOptionsScreen ModOptionsScreen::instance = ModOptionsScreen();
 
@@ -39,7 +121,30 @@ ModOptionsScreen::ModOptionsScreen()
 {
     customBox = nullptr;
     bOpen = false;
-    dismissSoundButton = SimpleTextButton("airLock", 600, 300, true);
+    SimpleTextButton *dismissSoundButton = new SimpleTextButton("airLoss", true);
+    dismissSoundButton->data = 1;
+    dismissSoundButton->on_click = [&](SimpleTextButton* const _this)
+    {
+        switch (_this->data)
+        {
+            case 0:
+                _this->SetText("airLoss");
+                _this->data = 1;
+                CustomOptionsManager::GetInstance()->dismissSound.currentValue = "airLoss";
+                break;
+            case 1:
+                _this->SetText("None");
+                _this->data = 2;
+                CustomOptionsManager::GetInstance()->dismissSound.currentValue = "";
+                break;
+            case 2:
+                _this->SetText("DOOM");
+                _this->data = 0;
+                CustomOptionsManager::GetInstance()->dismissSound.currentValue = "flak";
+                break;
+        }
+    };
+    entries.emplace_back("Dismiss Sound:", dismissSoundButton);
 }
 
 void ModOptionsScreen::OnInit()
@@ -48,7 +153,14 @@ void ModOptionsScreen::OnInit()
     {
         customBox = new WindowFrame(130, 112, 1089, 500);
     }
-    dismissSoundButton.OnInit();
+
+    const int gap = 10;
+    Point pos = Point(160, 140);
+    for (auto &entry : entries)
+    {
+        entry.OnInit(pos.x, pos.y);
+        pos.y += entry.height + gap;
+    }
 }
 
 void ModOptionsScreen::OnRender()
@@ -56,7 +168,7 @@ void ModOptionsScreen::OnRender()
     customBox->Draw(0, 0);
     GL_Texture *tabTexture = G_->GetResources()->GetImageId("box_options_configure_tab.png");
 
-    std::string tabText = "Hyperspace";
+    std::string tabText = "Hyperspace Settings";
     
     Pointf tabSize = freetype::easy_measurePrintLines(63, 0.f, 0.f, 999, tabText);
     CSurface::GL_BlitImagePartial(tabTexture, 123.f, 70.f, 39.f, tabTexture->height_, 0.0, 39.f / tabTexture->width_, 0.f, 1.f, 1.f, COLOR_WHITE, false);
@@ -66,7 +178,27 @@ void ModOptionsScreen::OnRender()
     freetype::easy_print(63, 154.f, 81.f, tabText);
     CSurface::GL_SetColor(COLOR_WHITE);
 
-    dismissSoundButton.OnRender();
+    for (auto &entry : entries)
+    {
+        entry.OnRender();
+    }
+
+}
+
+void ModOptionsScreen::MouseMove(int mX, int mY)
+{
+    for (auto entry : entries)
+    {
+        entry.MouseMove(mX, mY);
+    }
+}
+
+void ModOptionsScreen::MouseClick(int mX, int mY)
+{
+    for (auto entry : entries)
+    {
+        entry.MouseClick(mX, mY);
+    }
 }
 
 HOOK_METHOD(OptionsScreen, OnInit, () -> void)
@@ -469,7 +601,11 @@ HOOK_METHOD_PRIORITY(OptionsScreen, MouseMove, 1000, (int x, int y) -> void)
         if (!restartRequiredDialog.bOpen)
         {
             closeButton.MouseMove(x, y, false);
-            
+
+            //========== Mod Options Screen Addition Start ==========
+            if (ModOptions->bOpen) return ModOptions->MouseMove(x, y);
+            //========== Mod Options Screen Addition End ==========
+
             if (!bCustomizeControls)
             {
                 
@@ -598,7 +734,16 @@ HOOK_METHOD_PRIORITY(OptionsScreen, MouseClick, 1000, (int x, int y) -> void)
             // Close button handling 
             if (!closeButton.bActive || !closeButton.bHover) 
             {
-                if (!bCustomizeControls) 
+                //========== Mod Options Screen Addition Start ==========
+                if (ModOptions->bOpen)
+                {
+                    ModOptions->MouseClick(x, y);
+                }
+                //========== Mod Options Screen Addition End ==========
+                //========== Mod Options Screen Changes Start ==========
+                // original: `if (!bCustomizeControls) `
+                else if (!bCustomizeControls) 
+                //========== Mod Options Screen Changes End ==========
                 {
                     // Handle various buttons and the sound sliders
                     if (wipeProfileButton.bActive && wipeProfileButton.bHover && showWipeButton) 

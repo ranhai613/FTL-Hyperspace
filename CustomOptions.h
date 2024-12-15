@@ -89,18 +89,50 @@ private:
     static CustomOptionsManager instance;
 };
 
-struct SimpleTextButton
+struct Selector
+{
+    virtual void OnInit() = 0;
+    virtual void OnRender() = 0;
+    virtual void MouseMove(int mX, int mY) = 0;
+    virtual void MouseClick(int mX, int mY) = 0;
+    virtual int MeasureHeight() = 0;
+    Point position;
+};
+
+struct SimpleTextButton : Selector
 {
     SimpleTextButton() {}
-    SimpleTextButton(const std::string &_text, int x, int y, bool _bRightAlign);
+    SimpleTextButton(const std::string &_text, bool _bRightAlign);
     void OnInit();
     void OnRender();
+    void MouseMove(int mX, int mY);
+    void MouseClick(int mX, int mY);
+    int MeasureHeight();
+    void SetText(const std::string &_text);
 
     Globals::Rect hitbox;
     std::string text;
     GL_Color textColor;
+    static const int line_length;
     bool bRightAlign;
+    std::function<void(SimpleTextButton* const)> on_click;
     int data;
+};
+
+
+struct SettingEntry
+{
+    SettingEntry(const std::string &_text, Selector* _selector);
+    void OnInit(int x, int y);
+    void OnRender();
+    void MouseMove(int mX, int mY);
+    void MouseClick(int mX, int mY);
+    int MeasureHeight();
+
+    Point position;
+    int height;
+    std::string text;
+    Selector *selector;
 };
 
 class ModOptionsScreen
@@ -109,11 +141,13 @@ public:
     ModOptionsScreen();
     void OnInit();
     void OnRender();
+    void MouseMove(int mX, int mY);
+    void MouseClick(int mX, int mY);
 
     static ModOptionsScreen *GetInstance() {return &instance;}
 
     bool bOpen;
-    SimpleTextButton dismissSoundButton;
+    std::vector<SettingEntry> entries;
 
 private:
     WindowFrame *customBox;

@@ -1,16 +1,18 @@
 "5589e55383e4f083ec10a1????????83":
 __thiscall void OptionsScreen::Close(OptionsScreen *this); // 00568830
-"57660f76c08d7c240883e4f0ff77fc5589e557565381ec9c0400008b07898d70fbffff0f1181f8090000c681cc02000000":
+".57660f76c08d7c240883e4f0ff77fc5589e557565381ec9c0400008b07898d70fbffff0f1181f8090000c681cc02000000":
 __thiscall void OptionsScreen::Open(OptionsScreen *this, bool mainMenu); // 0056ae70
-"57660fefc0660fefc98d7c240883e4f0ff77fc5589e557565389cf83ec7c8b91880200008b8168020000894d9029d0f30f2ac08b818c020000b9????????894594":
+".57660fefc0660fefc98d7c240883e4f0ff77fc5589e557565389cf83ec7c8b91880200008b8168020000894d9029d0f30f2ac08b818c020000b9????????894594":
 __thiscall void OptionsScreen::OnLoop(OptionsScreen *this); // 0056ee30
 ".578d7c240883e4f0ff77fc5589e5575389cb83ec10e8????????85c078":
 __thiscall void OptionsScreen::CheckSelection(OptionsScreen *this); // 0056f2c0
-"578d7c240883e4f0ff77fc5589e557565389cbb9????????8d7dcc8db31808000081ec????????e8????????8b83880200008b938c020000d99d34ffffff660fefc9":
+".578d7c240883e4f0ff77fc5589e557565389cbb9????????8d7dcc8db31808000081ec????????e8????????8b83880200008b938c020000d99d34ffffff660fefc9":
 __thiscall void OptionsScreen::OnInit(OptionsScreen *this); // 00570240
-"578d7c240883e4f0ff77fc5589e557565389ce83ec1c0fb6":
+".578d7c240883e4f0ff77fc5589e557565389ce83ec1c0fb6":
 __thiscall bool OptionsScreen::KeyDown(OptionsScreen *this, SDLKey sym); // 00570c20
-"578d7c240883e4f0ff77fc5589e557565389cb83ec6c80b9340a0000":
+".578d7c240883e4f0ff77fc5589e557565389cb83ec6c80b9340a0000":
 __thiscall void OptionsScreen::OnRender(OptionsScreen *this); // 00571ad0
-"578d7c240883e4f0ff77fc5589e557565383ec7c80":
+".578d7c240883e4f0ff77fc5589e557565389ce83ec5c80b9340a0000":
+__thiscall void OptionsScreen::MouseMove(OptionsScreen *this, int mX, int mY); // 005720d0
+".578d7c240883e4f0ff77fc5589e557565383ec7c80":
 __thiscall void OptionsScreen::MouseClick(OptionsScreen *this, int mX, int mY); // 005726c0
