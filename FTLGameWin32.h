@@ -4152,6 +4152,7 @@ struct Equipment : FocusWindow
 	LIBZHL_API void MouseUp(int mX, int mY);
 	LIBZHL_API void OnInit(ShipManager *ship);
 	LIBZHL_API void OnLoop();
+	LIBZHL_API void OnRender();
 	LIBZHL_API void Open();
 	
 	GL_Texture *box;
@@ -6310,6 +6311,11 @@ struct PowerManager
 
 struct ProjectileFactory : ShipObject
 {
+	ProjectileFactory(const WeaponBlueprint *bp, int shipId)
+	{
+		this->constructor(bp, shipId);
+	}
+
 	LIBZHL_API void ClearAiming();
 	LIBZHL_API void ClearProjectiles();
 	LIBZHL_API void Fire(std::vector<Pointf> &points, int target);
