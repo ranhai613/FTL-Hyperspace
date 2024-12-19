@@ -4422,7 +4422,7 @@ struct VTable_EquipmentBox
   void (__thiscall *SetPosition)(EquipmentBox *this, Point pos);
   void (__thiscall *OnRender)(EquipmentBox *this, bool empty);
   void (__thiscall *RenderLabels)(EquipmentBox *this, bool empty);
-  void (__thiscall *RenderIcon)(EquipmentBox *this, bool empty);
+  void (__thiscall *RenderIcon)(EquipmentBox *this);
   void (__thiscall *SetShipManager)(EquipmentBox *this, ShipManager *ship);
   void (__thiscall *MouseMove)(EquipmentBox *this, int x, int y);
   void (__thiscall *OnTouch)(EquipmentBox *this);

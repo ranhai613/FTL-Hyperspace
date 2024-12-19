@@ -77,18 +77,19 @@ HOOK_METHOD_PRIORITY(Equipment, AddToCargo, 9999, (const std::string& name) -> v
     }
 }
 
+std::vector<EquipmentBox*> g_overCapacityBoxes;
+
 HOOK_METHOD(Equipment, AddWeapon, (WeaponBlueprint *weaponBlueprint, bool free, bool forceCargo) -> void)
 {
     if (!forceCargo && shipManager->HasSystem(3) && shipManager->weaponSystem->weapons.size() < shipManager->myBlueprint.weaponSlots)
     {
         shipManager->AddWeapon(weaponBlueprint, -1);
-        auto weaponSys = shipManager->weaponSystem; // origi: shipManager->GetWeaponSystem()
-        auto droneSys = shipManager->droneSystem; // origi: shipManager->GetDroneSystem()
+        auto weaponSys = shipManager->weaponSystem;
+        auto droneSys = shipManager->droneSystem;
         for (auto equipBox : vEquipmentBoxes)
         {
             equipBox->weaponSys = weaponSys;
             equipBox->droneSys = droneSys;
-            // origi: equipBox->CheckContents(); // which does nothing
         }
         return;
     }
@@ -111,9 +112,33 @@ HOOK_METHOD(Equipment, AddWeapon, (WeaponBlueprint *weaponBlueprint, bool free, 
             return;
         }
     }
-    bOpen = true; // origi: Open()
+    bOpen = true;
+    /*
+    //original code start
+
     overcapacityBox->AddItem(item);
-    bOverCapacity = true;
+
+    //original code end
+    */
+
+    // addition start
+
+    EquipmentBox *equipBox = new EquipmentBox(Point(overBox.position.x + position.x + 80, 80 * g_overCapacityBoxes.size()), -1);
+    equipBox->AddItem(item);
+    g_overCapacityBoxes.push_back(equipBox);
+
+    //addition end
+
+    //bOverCapacity = true;
+}
+
+HOOK_METHOD(Equipment, IsCompletelyFull, (int type) -> bool)
+{
+    if (type == 0 || type == 1 || type == 3)
+    {
+        return false;
+    }
+    return super(type);
 }
 
 HOOK_METHOD(Equipment, OnRender, () -> void)
@@ -153,5 +178,66 @@ HOOK_METHOD(Equipment, OnRender, () -> void)
         overAugImage.OnRender();
     }
     CSurface::GL_PopMatrix();
-    //wip
+    int weaponSlots = shipManager->myBlueprint.weaponSlots;
+    int droneSlots = shipManager->myBlueprint.droneSlots;
+    bool hasWeaopn = shipManager->HasSystem(3);
+    bool hasDrone = shipManager->HasSystem(4);
+    void* _overcapacityBox = static_cast<void*>(overcapacityBox);
+    void* _overAugBox = static_cast<void*>(overAugBox);
+
+    // FYI: vEquipmentBoxes = {weaopn slots..., drone slots..., augment slots..., cargo slots..., over capacity slot, over capacity augment slot}
+    for (int i = 0; i < vEquipmentBoxes.size(); ++i)
+    {
+        // skip unavailable boxes; when you dont install weapon or drone, their boxes are not rendered.
+        if ((!hasWeaopn && weaponSlots > i) || (!hasDrone && i >= weaponSlots && weaponSlots + droneSlots > i))
+        {
+            continue;
+        }
+
+        if ((!bOverCapacity && i == vEquipmentBoxes.size() - 2) || (!bOverAugCapacity && i == vEquipmentBoxes.size() - 1))
+        {
+            continue;
+        }
+
+        EquipmentBox *equipBox = vEquipmentBoxes[i];
+        // over capacity check have been done by the if statement above. I guess this is just in case.
+        if (!bOverCapacity && static_cast<void*>(equipBox) == _overcapacityBox)
+        {
+            continue;
+        }
+        if (!bOverAugCapacity && static_cast<void*>(equipBox) == _overAugBox)
+        {
+            continue;
+        }
+
+        equipBox->OnRender(i == draggingEquipBox ? bDragging : false);
+        equipBox->RenderLabels(i == draggingEquipBox ? bDragging : false);
+    }
+
+    // addition start
+    for (auto equipBox : g_overCapacityBoxes)
+    {
+        equipBox->OnRender(false);
+        equipBox->RenderLabels(false);
+    }
+    // addition end
+
+    infoBox.OnRender();
+    CSurface::GL_SetColor(COLOR_BUTTON_ON);
+    if (!hasWeaopn)
+    {
+        freetype::easy_printCenter(63, position.x + 301, position.y + 93, lib->GetText("equipment_no_system"));
+    }
+    if (!hasDrone)
+    {
+        freetype::easy_printCenter(63, position.x + 301, position.y + 203, lib->GetText("equipment_no_system"));
+    }
+    CSurface::GL_SetColor(COLOR_WHITE);
+    if (bDragging)
+    {
+        CSurface::GL_PushMatrix();
+        CSurface::GL_Translate(currentMouse.x, currentMouse.y);
+        vEquipmentBoxes[draggingEquipBox]->RenderIcon();
+        CSurface::GL_PopMatrix();
+    }
 }
