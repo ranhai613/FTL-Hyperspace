@@ -1,4 +1,5 @@
 #include "Global.h"
+#include "Equipment_Extend.h"
 
 HOOK_METHOD(InfoBox, SetBlueprintWeapon, (const WeaponBlueprint* bp, int status, bool hasWeaponSystem, int yShift) -> void)
 {
@@ -77,8 +78,6 @@ HOOK_METHOD_PRIORITY(Equipment, AddToCargo, 9999, (const std::string& name) -> v
     }
 }
 
-std::vector<EquipmentBox*> g_overCapacityBoxes;
-
 HOOK_METHOD(Equipment, AddWeapon, (WeaponBlueprint *weaponBlueprint, bool free, bool forceCargo) -> void)
 {
     if (!forceCargo && shipManager->HasSystem(3) && shipManager->weaponSystem->weapons.size() < shipManager->myBlueprint.weaponSlots)
@@ -122,10 +121,10 @@ HOOK_METHOD(Equipment, AddWeapon, (WeaponBlueprint *weaponBlueprint, bool free, 
     */
 
     // addition start
-
-    EquipmentBox *equipBox = new EquipmentBox(Point(overBox.position.x + position.x + 80, 80 * g_overCapacityBoxes.size()), -1);
+    auto ex = EQ_EX(this);
+    EquipmentBox *equipBox = new EquipmentBox(Point(overBox.position.x + position.x + 80, 80 * ex->overCapacityBoxes.size()), -1);
     equipBox->AddItem(item);
-    g_overCapacityBoxes.push_back(equipBox);
+    ex->overCapacityBoxes.push_back(equipBox);
 
     //addition end
 
@@ -215,7 +214,8 @@ HOOK_METHOD(Equipment, OnRender, () -> void)
     }
 
     // addition start
-    for (auto equipBox : g_overCapacityBoxes)
+    auto ex = EQ_EX(this);
+    for (auto equipBox : ex->overCapacityBoxes)
     {
         equipBox->OnRender(false);
         equipBox->RenderLabels(false);
@@ -240,4 +240,109 @@ HOOK_METHOD(Equipment, OnRender, () -> void)
         vEquipmentBoxes[draggingEquipBox]->RenderIcon();
         CSurface::GL_PopMatrix();
     }
+}
+
+HOOK_METHOD(Equipment, MouseMove, (int mX, int mY) -> void)
+{
+    if (!bDragging)
+    {
+        FocusWindow::MouseMove(mX, mY);
+    }
+    selectedEquipBox = -1;
+    currentMouse = Point(mX, mY);
+    for (auto i : vEquipmentBoxes)
+    {
+        i->bGlow = false;
+    }
+
+    int weaponSlots = shipManager->myBlueprint.weaponSlots;
+    int droneSlots = shipManager->myBlueprint.droneSlots;
+    bool hasWeaopn = shipManager->HasSystem(3);
+    bool hasDrone = shipManager->HasSystem(4);
+    void* _overcapacityBox = static_cast<void*>(overcapacityBox);
+    void* _overAugBox = static_cast<void*>(overAugBox);
+
+    for (int i = 0; i < vEquipmentBoxes.size(); ++i)
+    {
+        if ((!hasWeaopn && weaponSlots > i) || (!hasDrone && i >= weaponSlots && weaponSlots + droneSlots > i))
+        {
+            continue;
+        }
+
+        if ((!bOverCapacity && i == vEquipmentBoxes.size() - 2) || (!bOverAugCapacity && i == vEquipmentBoxes.size() - 1))
+        {
+            continue;
+        }
+
+        auto equipBox = vEquipmentBoxes[i];
+        equipBox->MouseMove(mX, mY);
+        
+        if (!equipBox->bMouseHovering)
+        {
+            continue;
+        }
+
+        if (bDragging)
+        {
+            if (equipBox->bBlocked)
+            {
+                continue;
+            }
+
+            selectedEquipBox = i;
+        }
+        else
+        {
+            selectedEquipBox = i;
+            if (equipBox->IsEmpty())
+            {
+                continue;
+            }
+        }
+
+        equipBox->bGlow = true;
+    }
+
+    infoBox.Clear();
+    if (selectedEquipBox == -1)
+    {
+        if (!bDragging)
+        {
+            bSellingItem = false;
+            sellBox.selectedImage = 0;
+            return
+        }
+    }
+    else
+    {
+        vEquipmentBoxes[selectedEquipBox]->SetBlueprint(infoBox, false);
+        if (selectedEquipBox == -1 || vEquipmentBoxes[selectedEquipBox]->IsEmpty())
+        {
+            if (!bDragging)
+            {
+                bSellingItem = false;
+                sellBox.selectedImage = 0;
+                return
+            }
+        }
+    }
+    
+    int iVar4 = bDragging ? draggingEquipBox : (selectedEquipBox == -1 ? draggingEquipBox : selectedEquipBox);
+    iVar4 = vEquipmentBoxes[iVar4]->GetItemValue();
+    sellCostText = std::to_string(iVar4 / 2);
+    bSellingItem = false;
+    int uVar7 = 0;
+    if (bDragging && bStoreMode)
+    {
+        if (sellBox.Contains(mX, mY))
+        {
+            bSellingItem = true
+            uVar7 = 1;
+        }
+        else
+        {
+            uVar7 = 0;
+        }
+    }
+    //wip
 }

@@ -163,6 +163,8 @@ target_sources(
     EnemyShipIcons.cpp
     EnemyShipIcons.h
     EnumClassHash.h
+    Equipment_Extend.cpp
+    Equipment_Extend.h
     ErosionEffect.cpp
     EventButtons.cpp
     EventButtons.h

@@ -2167,6 +2167,7 @@ struct Equipment
   DropBox overAugImage;
   DropBox sellBox;
   bool bSellingItem;
+  uint8_t gap_ex[2];
   ShipManager *shipManager;
   std__vector_14EquipmentBoxZ1 vEquipmentBoxes;
   std__vector_19ProjectileFactoryZ1 weaponsTrashList;

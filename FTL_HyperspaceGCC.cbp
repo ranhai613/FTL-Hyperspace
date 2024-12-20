@@ -1057,6 +1057,12 @@
 		<Unit filename="EnumClassHash.h">
 			<Option virtualFolder="PAL/" />
 		</Unit>
+		<Unit filename="Equipment_Extend.cpp">
+			<Option virtualFolder="Core/Equipment/" />
+		</Unit>
+		<Unit filename="Equipment_Extend.h">
+			<Option virtualFolder="Core/Equipment/" />
+		</Unit>
 		<Unit filename="ErosionEffect.cpp">
 			<Option virtualFolder="Core/Weapons/" />
 		</Unit>
