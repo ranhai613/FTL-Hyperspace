@@ -9,6 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Setup Variables
+      id: variables
+      run: |
+        run: echo "::set-output name=version::${GITHUB_REF#refs/tags/v}"
+        
     - name: Checkout
       uses: actions/checkout@v3
 
@@ -26,11 +31,11 @@ jobs:
         cp build-*/Hyperspace.*.so "build-package/Linux/"
         cp build-*/Hyperspace.dll "build-package/Windows - Extract these files into where FTLGame.exe is/"
         cd build-package
-        zip -r FTL.Hyperspace.${{ GITHUB_REF#refs/tags/v }}.zip * -x FTL.Hyperspace.${{ GITHUB_REF#refs/tags/v }}.zip -x Linux/IGNORE_THIS_FILE.txt
+        zip -r FTL.Hyperspace.${{ steps.variables.outputs.version }}.zip * -x FTL.Hyperspace.${{ steps.variables.outputs.version }}.zip -x Linux/IGNORE_THIS_FILE.txt
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: build-package/FTL.Hyperspace.${{ GITHUB_REF#refs/tags/v }}.zip
-        name: ${{ GITHUB_REF#refs/tags/v }}
+        files: build-package/FTL.Hyperspace.${{ steps.variables.outputs.version }}.zip
+        name: ${{ steps.variables.outputs.version }}
         generate_release_notes: true
