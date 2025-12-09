@@ -34,6 +34,12 @@ If you would like to suggest improvements to the wiki it is welcomed by creating
 
 Join the [***FTL Multiverse Discord***](https://discord.gg/hhs5ecx) and talk with us on the hyperspace channels for additional discussion.
 
+## Lua API
+
+Hyperspace exposes a rich Lua API for advanced mods.
+
+- [Lua API Reference](lua/)
+
 ### Credits
 
 Development:

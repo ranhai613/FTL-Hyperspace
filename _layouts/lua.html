@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/lua.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{% seo %}
+    {% include head-custom.html %}
+  </head>
+
+  <body class="lua-doc">
+
+    <!-- HEADER (reuse banner + language selector for consistency) -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %}
+
+          <img class="banner" src="{{ '/assets/img/hyperspace_banner.png' | relative_url }}" alt="{{ site.title | default: site.github.repository_name }}" />
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner lua-page-wrapper">
+        <main class="lua-main lua-content">
+          <div class="lua-breadcrumb lua-small lua-muted">
+            <a href="{{ site.baseurl }}/">Home</a> / <a href="{{ '/lua/' | relative_url }}">Lua API</a>{% if page.title %} / {{ page.title }}{% endif %}
+          </div>
+          {{ content }}
+        </main>
+        <aside class="lua-nav-right">
+          {% if page.title %}
+          <h2>On this page</h2>
+          {% assign headers = content | split: '\n' %}
+          <nav>
+            {%- for h in headers -%}
+              {%- if h contains '# ' -%}
+                {%- assign id = h | replace: '# ', '' | strip | replace: ' ', '-' | downcase -%}
+                <a href="#{{ id }}">{{ h | replace: '# ', '' | strip }}</a>
+              {%- elsif h contains '## ' -%}
+                {%- assign id = h | replace: '## ', '' | strip | replace: ' ', '-' | downcase -%}
+                <a href="#{{ id }}">{{ h | replace: '## ', '' | strip }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          </nav>
+          {% endif %}
+        </aside>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer lua-footer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Site last updated: {{ site.time | date: "%d %B %Y" }}</p>
+      </footer>
+    </div>
+  </body>
+</html>
