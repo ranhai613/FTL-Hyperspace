@@ -38,15 +38,15 @@
         <aside class="lua-nav-right">
           {% if page.title %}
           <h2>On this page</h2>
-          {% assign headers = content | split: '\n' %}
+          {% assign headers = page.content | newline_to_br | split: '<br />' %}
           <nav>
             {%- for h in headers -%}
               {%- if h contains '# ' -%}
                 {%- assign id = h | replace: '# ', '' | strip | replace: ' ', '-' | downcase -%}
-                <a href="#{{ id }}">{{ h | replace: '# ', '' | strip }}</a>
+                <a href="#{{ id }}">{{ h | replace: '#', '' | strip }}</a>
               {%- elsif h contains '## ' -%}
                 {%- assign id = h | replace: '## ', '' | strip | replace: ' ', '-' | downcase -%}
-                <a href="#{{ id }}">{{ h | replace: '## ', '' | strip }}</a>
+                <a href="#{{ id }}">{{ h | replace: '##', '' | strip }}</a>
               {%- endif -%}
             {%- endfor -%}
           </nav>
