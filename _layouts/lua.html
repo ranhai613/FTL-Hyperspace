@@ -23,12 +23,53 @@
           {% endif %}
 
           <img class="banner" src="{{ '/assets/img/hyperspace_banner.png' | relative_url }}" alt="{{ site.title | default: site.github.repository_name }}" />
+          <button id="lua-theme-toggle" class="lua-theme-toggle" type="button" aria-label="Toggle dark mode">
+            Toggle dark mode
+          </button>
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner lua-page-wrapper">
+        <aside class="lua-nav-left">
+          <h2>Lua Reference</h2>
+          <nav class="lua-sidebar">
+            {% assign graphics_pages = site.pages | where_exp: "p", "p.path contains 'lua/Graphics/'" | sort: 'title' %}
+            {% assign hyperspace_pages = site.pages | where_exp: "p", "p.path contains 'lua/Hyperspace/'" | sort: 'title' %}
+
+            {% assign current_graphics = graphics_pages | where: "url", page.url | first %}
+            {% assign current_hyperspace = hyperspace_pages | where: "url", page.url | first %}
+
+            <div class="lua-sidebar-group{% if current_graphics or page.url == '/lua/' or page.url == '/lua/index.html' %} is-open{% endif %}">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-graphics" aria-expanded="{% if current_graphics or page.url == '/lua/' or page.url == '/lua/index.html' %}true{% else %}false{% endif %}">
+                <span>Graphics</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-graphics" class="lua-sidebar-list">
+                {% for p in graphics_pages %}
+                  <li{% if p.url == page.url %} class="active"{% endif %}>
+                    <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="lua-sidebar-group{% if current_hyperspace or page.url == '/lua/' or page.url == '/lua/index.html' %} is-open{% endif %}">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-hyperspace" aria-expanded="{% if current_hyperspace or page.url == '/lua/' or page.url == '/lua/index.html' %}true{% else %}false{% endif %}">
+                <span>Hyperspace</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-hyperspace" class="lua-sidebar-list">
+                {% for p in hyperspace_pages %}
+                  <li{% if p.url == page.url %} class="active"{% endif %}>
+                    <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </nav>
+        </aside>
         <main class="lua-main lua-content">
           <div class="lua-breadcrumb lua-small lua-muted">
             <a href="{{ site.baseurl }}/">Home</a> / <a href="{{ '/lua/' | relative_url }}">Lua API</a>{% if page.title %} / {{ page.title }}{% endif %}
@@ -41,12 +82,15 @@
           {% assign headers = page.content | newline_to_br | split: '<br />' %}
           <nav>
             {%- for h in headers -%}
-              {%- if h contains '# ' -%}
-                {%- assign id = h | replace: '# ', '' | strip | replace: ' ', '-' | downcase -%}
-                <a href="#{{ id }}">{{ h | replace: '#', '' | strip }}</a>
-              {%- elsif h contains '## ' -%}
-                {%- assign id = h | replace: '## ', '' | strip | replace: ' ', '-' | downcase -%}
-                <a href="#{{ id }}">{{ h | replace: '##', '' | strip }}</a>
+              {%- assign h_trim = h | strip -%}
+              {%- assign h_prefix3 = h_trim | slice: 0, 4 -%}
+              {%- assign h_prefix2 = h_trim | slice: 0, 3 -%}
+              {%- if h_prefix3 == '### ' -%}
+                {%- assign id = h_trim | replace: '###', '' | strip | replace: '(', '' | replace: ')', '' | replace: ' ', '-' | downcase -%}
+                <a href="#{{ id }}">{{ h_trim | replace: '#', '' | strip }}</a>
+              {%- elsif h_prefix2 == '## ' -%}
+                {%- assign id = h_trim | replace: '##', '' | strip | replace: '(', '' | replace: ')', '' | replace: ' ', '-' | downcase -%}
+                <a href="#{{ id }}">{{ h_trim | replace: '##', '' | strip }}</a>
               {%- endif -%}
             {%- endfor -%}
           </nav>
@@ -65,5 +109,73 @@
         <p>Site last updated: {{ site.time | date: "%d %B %Y" }}</p>
       </footer>
     </div>
+    <script>
+      (function() {
+        var body = document.body;
+        var storageKey = 'luaTheme';
+        var stored = null;
+        try {
+          stored = window.localStorage ? localStorage.getItem(storageKey) : null;
+        } catch (e) {
+          stored = null;
+        }
+
+        function prefersDark() {
+          return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function applyTheme(mode) {
+          if (mode === 'dark') {
+            body.classList.add('lua-dark');
+          } else {
+            body.classList.remove('lua-dark');
+          }
+          try {
+            if (window.localStorage) {
+              localStorage.setItem(storageKey, mode);
+            }
+          } catch (e) {
+            /* ignore */
+          }
+        }
+
+        // Initial theme: stored preference, otherwise system preference
+        if (stored === 'dark' || stored === 'light') {
+          applyTheme(stored);
+        } else {
+          applyTheme(prefersDark() ? 'dark' : 'light');
+        }
+
+        var btn = document.getElementById('lua-theme-toggle');
+        if (btn) {
+          btn.addEventListener('click', function() {
+            var current = body.classList.contains('lua-dark') ? 'dark' : 'light';
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+          });
+        }
+
+        // Collapsible left-hand Lua sidebar navigation
+        var groups = document.querySelectorAll('.lua-sidebar-group');
+        for (var i = 0; i < groups.length; i++) {
+          (function(group) {
+            var button = group.querySelector('.lua-sidebar-toggle');
+            if (!button) return;
+
+            var targetId = button.getAttribute('data-target');
+            var list = targetId ? document.getElementById(targetId) : null;
+            if (!list) return;
+
+            // Ensure aria-expanded matches initial open state
+            var isInitiallyOpen = group.classList.contains('is-open');
+            button.setAttribute('aria-expanded', isInitiallyOpen ? 'true' : 'false');
+
+            button.addEventListener('click', function() {
+              var isOpen = group.classList.toggle('is-open');
+              button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+          })(groups[i]);
+        }
+      })();
+    </script>
   </body>
 </html>

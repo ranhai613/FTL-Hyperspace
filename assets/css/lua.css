@@ -1,29 +1,245 @@
 /* Lua API docs theme inspired by IsaacDocs */
 
+/*
+  Light/dark theming is driven by CSS variables scoped to body.lua-doc.
+  - Default (no extra class): light theme
+  - body.lua-doc.lua-dark: dark theme (close to current design)
+*/
+
 body.lua-doc {
-  background-color: #000000;
-  color: #000000;
+  /* Light theme (default) */
+  --lua-body-bg: #f9fafb;
+  --lua-body-fg: #111827;
+  --lua-main-bg: #ffffff;
+  --lua-main-fg: #111827;
+  --lua-heading-color: #000000;
+  --lua-link-color: #0369a1;
+  --lua-code-bg: #f3f4f6;
+  --lua-table-bg: #ffffff;
+  --lua-border-color: #d1d5db;
+  --lua-th-bg: #e5e7eb;
+  --lua-section-bg: #f3f4f6;
+  --lua-section-border: #b45309;
+  --lua-breadcrumb-color: #6b7280;
+  --lua-breadcrumb-link: #374151;
+  --lua-nav-bg: #f9fafb;
+  --lua-nav-text: #374151;
+
+  --function-color: #90CAF9;
+  --function-color-light: #BBDEFB;
+  --static-function-color: #b66de0;
+  --static-function-color-light: #e3bbfb;
+  --var-color: #A5D6A7;
+  --var-color-light: #E8F5E9;
+  --constructor-color: #FFCC80;
+  --constructor-color-light: #FFE0B2;
+  --function-overview-bg-color: #BBDEFB;
+  --var-overview-bg-color: #E8F5E9;
+  --constructor-overview-bg-color: #FFE0B2;
+  --operator-color: #CE93D8;
+  --operator-color-light: #E1BEE7;
+  --operator-overview-bg-color: #F3E5F5;
+  --constants-color: #d89393;
+  --constants-color-light: #e7bebe;
+  --constants-overview-bg-color: #f5e5e5;
+  --abp-color: #FDD835;
+  --rep-color: #F44336;
+  --repplus-color: #ff85e6;
+  --alldlc-color: #47a5fd;
+  --md-typeset-mark-text-color: #000000;
+
+  background-color: var(--lua-body-bg);
+  color: var(--lua-body-fg);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+body.lua-doc.lua-dark {
+  /* Dark theme values, based on original hard-coded colors */
+  --lua-body-bg: #000000;
+  --lua-body-fg: #e5e7eb;
+  --lua-main-bg: #202c3b;
+  --lua-main-fg: #fff7f7;
+  --lua-heading-color: #ffffff;
+  --lua-link-color: #79c0ff;
+  --lua-code-bg: #1b1b1f;
+  --lua-table-bg: #16161a;
+  --lua-border-color: #2a2a30;
+  --lua-th-bg: #202028;
+  --lua-section-bg: #15151a;
+  --lua-section-border: #ffd15c;
+  --lua-breadcrumb-color: #aaaaaa;
+  --lua-breadcrumb-link: #dddddd;
+  --lua-nav-bg: #15151a;
+  --lua-nav-text: #cccccc;
+
+  --function-color: #405e9a;
+  --function-color-light: #272938;
+  --static-function-color: #7b4397;
+  --static-function-color-light: #272938;
+  --var-color: #128676;
+  --var-color-light: #272938;
+  --constructor-color: #e65100;
+  --constructor-color-light: #272938;
+  --function-overview-bg-color: rgb(64 94 154 / 50%);
+  --var-overview-bg-color: rgb(18 134 118 / 50%);
+  --constructor-overview-bg-color: rgb(230 81 0 / 50%);
+  --operator-color: #BA68C8;
+  --operator-color-light: #272938;
+  --operator-overview-bg-color: rgb(186 104 200 / 50%);
+  --constants-color: #c86868;
+  --constants-color-light: #382727;
+  --constants-overview-bg-color: rgba(200, 104, 104, 0.5);
+  --md-hue: 232;
+
+  --md-primary-fg-color: #4051b5;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color: rgb(255 255 255 / 87%);
+  --md-primary-bg-color--light: rgb(255 255 255 / 54%);
+
+  --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
+  --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
+  --md-default-fg-color--lighter: #ffc41e;
+  --md-default-fg-color--lightest: hsla(var(--md-hue), 75%, 90%, 0.12);
+  --md-default-bg-color: hsla(var(--md-hue), 15%, 21%, 1);
+  --md-default-bg-color--light: hsla(var(--md-hue), 15%, 21%, 0.54);
+  --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 21%, 0.26);
+  --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 21%, 0.07);
+  --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
+  --md-code-bg-color: hsla(var(--md-hue), 15%, 15%, 1);
+  --md-code-hl-color: hsla(218, 100%, 63%, 0.15);
+  --md-code-hl-number-color: hsla(6, 74%, 63%, 1);
+  --md-code-hl-special-color: hsla(340, 83%, 66%, 1);
+  --md-code-hl-function-color: hsla(291, 57%, 65%, 1);
+  --md-code-hl-constant-color: hsla(250, 62%, 70%, 1);
+  --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
+  --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
+  --md-typeset-a-color: #ffc41e;
+  --md-accent-fg-color: #ffc41e;
+  /*var(--md-primary-fg-color--light);*/
+  --md-typeset-mark-color: #ffc41e;
+  --md-typeset-mark-text-color: #000000;
+  --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
+  --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
+  --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
+  --md-admonition-bg-color: hsla(var(--md-hue), 0%, 100%, 0.025);
+  --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+  --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
+  --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
+  --md-code-bg-color: hsla(var(--md-hue), 15%, 15%, 1) !important;
+  --md-code-hl-color: hsla(218, 100%, 63%, 0.15);
+  --md-code-hl-number-color: hsla(6, 74%, 63%, 1);
+  --md-code-hl-special-color: hsla(340, 83%, 66%, 1);
+  --md-code-hl-function-color: hsla(291, 57%, 65%, 1);
+  --md-code-hl-constant-color: hsla(250, 62%, 70%, 1);
+  --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
+  --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
+}
+
+h3[aria-label$='Functions'],
+h3[aria-label$='StaticFunctions'],
+h3[aria-label$='Variables'],
+h3[aria-label$='Operators'],
+h3[aria-label$='Constants'],
+h3[aria-label$='Constructors'] {
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px 10px;
+    margin: 0 !important;
+    display: inline-block;
+}
+
+h3[aria-label$='Functions'] {
+    background-color: var(--function-color);
+}
+
+h3[aria-label$='StaticFunctions'] {
+    background-color: var(--static-function-color);
+}
+
+h3[aria-label$='Variables'] {
+    background-color: var(--var-color);
+}
+
+h3[aria-label$='Constructors'] {
+    background-color: var(--constructor-color);
+}
+
+h3[aria-label$='Operators'] {
+    background-color: var(--operator-color);
+}
+
+h3[aria-label$='Constants'] {
+    background-color: var(--constants-color);
+}
+
+h4[aria-label$='Functions'],
+h4[aria-label$='StaticFunctions'],
+h4[aria-label$='Variables'],
+h4[aria-label$='Operators'],
+h4[aria-label$='Constants'],
+h4[aria-label$='Constructors'] {
+    border-radius: 0px 5px 5px 5px;
+    padding: 2px 10px;
+    margin: 0 !important;
+    font-weight: 400 !important;
+    font-family: "Roboto Mono", SFMono-Regular, Consolas, Menlo, monospace;
+    line-height: 1.6;
+}
+
+h4[aria-label$='Functions'] {
+    background-color: var(--function-color-light);
+}
+
+h4[aria-label$='StaticFunctions'] {
+    background-color: var(--static-function-color-light);
+}
+
+h4[aria-label$='Variables'] {
+    background-color: var(--var-color-light);
+}
+
+h4[aria-label$='Constructors'] {
+    background-color: var(--constructor-color-light);
+}
+
+h4[aria-label$='Operators'] {
+    background-color: var(--operator-color-light);
+}
+
+h4[aria-label$='Constants'] {
+    background-color: var(--constants-color-light);
+}
+
 .lua-main {
-  background-color: #202c3b;
-  color: #fff7f7;
+  background-color: var(--lua-main-bg);
+  color: var(--lua-main-fg);
   /* max-width: 1080px; */
   margin: 0 auto;
   padding: 1.5rem 1rem 3rem;
+}
+
+.lua-main hr {
+  display: flow-root;
+  margin: 1.5em 0;
 }
 
 .lua-main h1,
 .lua-main h2,
 .lua-main h3,
 .lua-main h4 {
-  color: #ffd15c;
+  color: var(--lua-heading-color);
   font-weight: 600;
 }
 
+.lua-main h2 {
+    margin: 0 !important;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5625em;
+    line-height: 1.4;
+}
+
 .lua-main a {
-  color: #79c0ff;
+  color: var(--lua-link-color);
   text-decoration: none;
 }
 
@@ -37,14 +253,14 @@ body.lua-doc {
 }
 
 .lua-main pre {
-  background: #1b1b1f;
+  background: var(--lua-code-bg);
   border-radius: 4px;
   padding: 0.75rem 1rem;
   overflow-x: auto;
 }
 
 .lua-main code {
-  background: #1b1b1f;
+  background: var(--lua-code-bg);
   padding: 0.1rem 0.25rem;
   border-radius: 3px;
 }
@@ -53,24 +269,24 @@ body.lua-doc {
   border-collapse: collapse;
   width: 100%;
   margin: 1rem 0;
-  background: #16161a;
+  background: var(--lua-table-bg);
 }
 
 .lua-main th,
 .lua-main td {
-  border: 1px solid #2a2a30;
+  border: 1px solid var(--lua-border-color);
   padding: 0.4rem 0.6rem;
 }
 
 .lua-main th {
-  background: #202028;
-  color: #ffd15c;
+  background: var(--lua-th-bg);
+  color: var(--lua-heading-color);
   text-align: left;
 }
 
 .lua-section {
-  border-left: 4px solid #ffd15c;
-  background: #15151a;
+  border-left: 4px solid var(--lua-section-border);
+  background: var(--lua-section-bg);
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   border-radius: 4px;
@@ -79,11 +295,11 @@ body.lua-doc {
 .lua-breadcrumb {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
-  color: #aaa;
+  color: var(--lua-breadcrumb-color);
 }
 
 .lua-breadcrumb a {
-  color: #ddd;
+  color: var(--lua-breadcrumb-link);
 }
 
 /* Layout: main content + right-hand navigation */
@@ -99,13 +315,87 @@ body.lua-doc {
   flex: 1 1 auto;
 }
 
-.lua-nav-right {
+.lua-nav-left {
   flex: 0 0 260px;
-  background: #15151a;
-  border-left: 1px solid #2a2a30;
+  background: var(--lua-nav-bg);
+  border-right: 1px solid var(--lua-border-color);
   padding: 1rem;
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--lua-nav-text);
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.lua-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lua-sidebar-group + .lua-sidebar-group {
+  margin-top: 0.5rem;
+}
+
+.lua-sidebar-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lua-sidebar-arrow {
+  transition: transform 0.15s ease-in-out;
+}
+
+.lua-sidebar-group.is-open .lua-sidebar-arrow {
+  transform: rotate(90deg);
+}
+
+.lua-sidebar-list {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding-left: 0.75rem;
+  display: none;
+}
+
+.lua-sidebar-group.is-open .lua-sidebar-list {
+  display: block;
+}
+
+.lua-sidebar-list li + li {
+  margin-top: 0.15rem;
+}
+
+.lua-sidebar-list a {
+  color: var(--lua-link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.lua-sidebar-list a:hover {
+  text-decoration: underline;
+}
+
+.lua-sidebar-list li.active > a {
+  font-weight: 600;
+}
+
+.lua-nav-right {
+  flex: 0 0 260px;
+  background: var(--lua-nav-bg);
+  border-left: 1px solid var(--lua-border-color);
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--lua-nav-text);
   position: sticky;
   top: 1rem;
   max-height: calc(100vh - 2rem);
@@ -118,7 +408,7 @@ body.lua-doc {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #ffd15c;
+  color: var(--lua-heading-color);
 }
 
 .lua-nav-right nav {
@@ -128,7 +418,7 @@ body.lua-doc {
 }
 
 .lua-nav-right a {
-  color: #79c0ff;
+  color: var(--lua-link-color);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -143,6 +433,7 @@ body.lua-doc {
     flex-direction: column;
   }
 
+  .lua-nav-left,
   .lua-nav-right {
     position: static;
     max-height: none;
