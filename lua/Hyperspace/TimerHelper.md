@@ -20,89 +20,89 @@ ___
 
 ## Methods
 ### Done ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Done ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ResetMinMax ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ResetMinMax (integer min, integer max)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Running ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Running ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMaxTime ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMaxTime (number max)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Start ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Start (integer goal)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Start_Float ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Start_Float (number goal)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Stop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Stop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Update ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Update ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### currGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .currGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .currTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .loop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### minTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .minTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### running
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .running
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

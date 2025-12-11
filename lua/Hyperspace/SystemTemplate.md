@@ -13,56 +13,56 @@ lang: en
 
 ## Fields
 ### bp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .bp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .powerLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### slot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .systemId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .weapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -13,19 +13,19 @@ lang: en
 
 ## Fields
 ### event (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .event
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___### defs (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[TriggeredEventDefinition](../Hyperspace/TriggeredEventDefinition)\> .defs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -22,47 +22,47 @@ ___
 
 ## Methods
 ### GetWeaponCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetWeaponCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### drone_image_glow
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_glow
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### glowAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .glowAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Shields](../Hyperspace/Shields) .shieldSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -21,50 +21,50 @@ ___
 
 ## Fields
 ### color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasTexture
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasTexture
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### id
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .id
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lineWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lineWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### texture
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .texture
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### textureAntialias
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .textureAntialias
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -13,43 +13,43 @@ lang: en
 
 ## Fields
 ### currentMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .currentMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Affect the visual portion of the selection box
 
 ______
 ### firstMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .firstMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Affect the visual portion of the selection box
 
 ______
 ### potentialSelectedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .potentialSelectedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Crew hovered by the selection box
 
 ______
 ### selectedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .selectedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### worldCurrentMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldCurrentMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Affect the logic portion of the selection box, fills `.potentialSelectedCrew`
 
 ______
 ### worldFirstMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldFirstMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Affect the logic portion of the selection box, fills `.potentialSelectedCrew`
 
 ___

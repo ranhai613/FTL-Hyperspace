@@ -13,26 +13,26 @@ lang: en
 
 ## Fields
 ### customDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CustomDamage](../Hyperspace/CustomDamage) .customDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missedDrones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .missedDrones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### orig (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Projectile](../Hyperspace/Projectile) .orig
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

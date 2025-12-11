@@ -14,74 +14,74 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Methods
 ### DePowerDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DePowerDrone ([Drone](../Hyperspace/Drone) drone, boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RemoveDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Drone](../Hyperspace/Drone) :RemoveDrone (integer slot)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetBonusPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### drone_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .drone_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .drone_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Drone](../Hyperspace/Drone)\> .drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
 ______
 ### iStartingBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iStartingBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repowerList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<boolean\> .repowerList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
 ______
 ### slot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .targetShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### userPowered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<boolean\> .userPowered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
 ___

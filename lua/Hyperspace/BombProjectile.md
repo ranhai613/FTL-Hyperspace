@@ -23,32 +23,32 @@ ___
 
 ## Fields
 ### bMissed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bMissed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSuperShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSuperShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### explosiveDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .explosiveDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missMessage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### DamageMessage .missMessage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superShieldBypass
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .superShieldBypass
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

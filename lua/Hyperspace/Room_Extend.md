@@ -13,26 +13,26 @@ lang: en
 
 ## Fields
 ### hullDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .hullDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ionDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .ionDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sysDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .sysDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### timeDilation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .timeDilation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

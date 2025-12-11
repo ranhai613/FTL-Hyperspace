@@ -22,65 +22,65 @@ ___
 
 ## Methods
 ### PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetWeaponTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### drone_image_charging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_charging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### engine_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .engine_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### oldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .oldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### progressToDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .progressToDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -22,56 +22,56 @@ ___
 
 ## Methods
 ### EmptyOxygen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EmptyOxygen (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRefillSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetRefillSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ModifyRoomOxygen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ModifyRoomOxygen (integer roomId, number value)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bLeakingO2 (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bLeakingO2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fTotalOxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fTotalOxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### leakModifier (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .leakModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 A multiplier to the rate at which airlocks and breaches drain oxygen.
 Can be changed with `CALCULATE_LEAK_MODIFIER` callback.
 
 ______
 ### max_oxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .max_oxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### oxygenLevels
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<number\> .oxygenLevels
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

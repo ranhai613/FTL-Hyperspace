@@ -13,44 +13,44 @@ lang: en
 
 ## Fields
 ### frameHeight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .frameHeight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### frameWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .frameWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### imageHeight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .imageHeight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### imageWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .imageWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### numFrames
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .numFrames
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stripStartX
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .stripStartX
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stripStartY
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .stripStartY
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

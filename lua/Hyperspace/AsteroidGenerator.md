@@ -13,9 +13,9 @@ lang: en
 
 ## Fields
 ### bRunning (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bRunning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ___

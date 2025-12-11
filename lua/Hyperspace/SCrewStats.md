@@ -21,27 +21,27 @@ ___
 
 ## Fields
 ### male
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .male
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### species
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .species
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .stat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Has 5 values. `[0]` is the number of repairs, `[1]` is the number of crew combat kills, `[2]` is piloted evasions, `[3]` is jumps survived, `[4]` is skills mastered.
 
 ___

@@ -12,9 +12,9 @@ lang: en
 
 ## Methods
 ### RenderWarningText ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderWarningText (integer effect, integer textOffset)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

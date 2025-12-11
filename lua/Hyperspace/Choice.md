@@ -13,26 +13,26 @@ lang: en
 
 ## Fields
 ### event
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hiddenReward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hiddenReward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### requirement
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ChoiceReq](../Hyperspace/ChoiceReq) .requirement
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

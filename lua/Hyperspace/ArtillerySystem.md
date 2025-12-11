@@ -15,20 +15,20 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Fields
 ### bCloaked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCloaked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### projectileFactory
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .projectileFactory
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

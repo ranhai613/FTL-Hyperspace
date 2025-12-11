@@ -13,188 +13,188 @@ lang: en
 
 ## Fields
 ### achPopups (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .achPopups
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### altPause (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .altPause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDlcEnabled (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDlcEnabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bShowChangelog (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bShowChangelog
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### beamTutorial (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .beamTutorial
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### colorblind (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .colorblind
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### commandConsole (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .commandConsole
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentFullscreen (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentFullscreen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dialogKeys (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .dialogKeys
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### difficulty (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .difficulty
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fbError (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .fbError
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### frameLimit (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .frameLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fullscreen (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .fullscreen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### holdingModifier (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .holdingModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### language (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .language
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### languageSet (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .languageSet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastFullscreen (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastFullscreen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loadingSaveVersion (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .loadingSaveVersion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### logging (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .logging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lowend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .lowend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### manualResolution (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .manualResolution
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### manualStretched (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .manualStretched
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### manualWindowed (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .manualWindowed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### music (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .music
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### openedList (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .openedList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### screenResolution (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .screenResolution
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### showPaths (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .showPaths
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sound (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .sound
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### swapTextureType (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .swapTextureType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### touchAutoPause (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .touchAutoPause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### vsync (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .vsync
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

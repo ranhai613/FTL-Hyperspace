@@ -26,305 +26,305 @@ ___
 
 ## Methods
 ### CustomDeath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CustomDeath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### FireShot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :FireShot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDeathSound ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetDeathSound ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetFiringFrame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetFiringFrame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShootingSound ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetShootingSound ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnInit (string name, [Pointf](../Hyperspace/Pointf) position, boolean enemy)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender (number scale, integer selectedState, boolean outlineOnly)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRenderProps ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRenderProps ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnUpdate ([Pointf](../Hyperspace/Pointf) position, boolean moving, boolean fighting, boolean repairing, boolean dying, boolean onFire)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnUpdateEffects ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnUpdateEffects ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderIcon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderIcon (boolean border)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Restart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Restart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetupStrips ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetupStrips ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateFiring ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateFiring ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateShooting ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateShooting ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### anims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<vector\<[Animation](../Hyperspace/Animation)\>\> .anims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDoorTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDoorTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bExactShooting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bExactShooting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFrozen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFrozen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bGhost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bGhost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bMale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bMale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bPlayer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bPlayer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSharedSpot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSharedSpot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bStunned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bStunned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bTyping
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bTyping
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### baseStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### colorStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### colorblind
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .colorblind
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fDamageDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fDamageDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### forcedAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .forcedAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### forcedDirection
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .forcedDirection
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### layerColors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[GL_Color](../Graphics/GL_Color)\> .layerColors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### layerStrips
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[GL_Texture](../Graphics/GL_Texture)\> .layerStrips
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### moveDirection
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .moveDirection
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### projectile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .projectile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### projectileColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .projectileColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### punchTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .punchTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### race
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .race
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shootTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .shootTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### smokeEmitter
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ParticleEmitter .smokeEmitter
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### status
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .status
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sub_direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .sub_direction
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### uniqueBool1
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .uniqueBool1
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### uniqueBool2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .uniqueBool2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

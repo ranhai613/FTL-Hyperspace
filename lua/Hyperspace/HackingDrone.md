@@ -22,95 +22,95 @@ ___
 
 ## Methods
 ### CollisionMoving ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMovementTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### arrived
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .arrived
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneImage_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneImage_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### explosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extending
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .extending
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### finalDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .finalDestination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### finishedSetup
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .finishedSetup
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flying
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flying
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lightImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lightImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### prefRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .prefRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startingPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

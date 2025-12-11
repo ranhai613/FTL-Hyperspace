@@ -13,8 +13,8 @@ lang: en
 
 ## Fields
 ### augList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### map\<string, integer\> .augList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

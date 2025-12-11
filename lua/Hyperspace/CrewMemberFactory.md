@@ -12,24 +12,24 @@ lang: en
 
 ## Methods
 ### GetCloneReadyList ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :GetCloneReadyList (vector\<[CrewMember](../Hyperspace/CrewMember)\> vec, boolean player)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCloneReadyList ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :GetCloneReadyList (boolean player)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### crewMembers (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .crewMembers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ___

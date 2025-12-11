@@ -11,254 +11,254 @@ lang: en
 
 ## Static Methods
 ### GetShipInfo ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [ShipGraph](../Hyperspace/ShipGraph) .GetShipInfo (integer shipId)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ______
 ### TranslateFromGrid ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [Point](../Hyperspace/Point) .TranslateFromGrid (integer xx, integer yy)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ______
 ### TranslateToGrid ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [Point](../Hyperspace/Point) .TranslateToGrid (integer xx, integer yy)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### ComputeCenter ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ComputeCenter ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConnectedGridSquares ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :ConnectedGridSquares (integer x1, integer y1, integer x2, integer y2)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConnectedGridSquaresPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :ConnectedGridSquaresPoint ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConnectingDoor ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Door](../Hyperspace/Door) :ConnectingDoor (integer x1, integer y1, integer x2, integer y2)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConnectingDoor ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Door](../Hyperspace/Door) :ConnectingDoor ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConnectivityDFS ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<integer\> :ConnectivityDFS (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ContainsPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ContainsPoint (integer x, integer y)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConvertToLocalAngle ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :ConvertToLocalAngle (number ang)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConvertToLocalPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :ConvertToLocalPosition ([Pointf](../Hyperspace/Pointf) world, boolean past)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConvertToWorldAngle ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :ConvertToWorldAngle (number ang)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ConvertToWorldPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :ConvertToWorldPosition ([Pointf](../Hyperspace/Pointf) local)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Dijkstra ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### Path :Dijkstra ([Point](../Hyperspace/Point) start, [Point](../Hyperspace/Point) goal, integer shipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DoorCount ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :DoorCount (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### FindPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### Path :FindPath ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2, integer shipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetClosestSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :GetClosestSlot ([Point](../Hyperspace/Point) pos, integer shipId, boolean intruder)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDoors ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<[Door](../Hyperspace/Door)\> :GetDoors (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetIntoRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetIntoRoom (integer roomId, [Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNumSlots ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetNumSlots (integer room)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomBlackedOut ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetRoomBlackedOut (integer room)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomCenter ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRoomCenter (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomOxygen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetRoomOxygen (integer room)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Rect](../Hyperspace/Rect) :GetRoomShape (integer room)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelectedRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelectedRoom (integer x, integer y, boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSlotRenderPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetSlotRenderPosition (integer slotId, integer roomId, boolean intruder)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSlotWorldPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetSlotWorldPosition (integer slotId, integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsRoomConnected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsRoomConnected (integer room1, integer room2)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PopClosestDoor ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :PopClosestDoor (vector\<integer\> doors, vector\<number\> distances)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RoomCount ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :RoomCount ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### doorCounts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .doorCounts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### doors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Door](../Hyperspace/Door)\> .doors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastWorldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lastWorldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastWorldPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastWorldPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rooms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Room](../Hyperspace/Room)\> .rooms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipBox
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .shipBox
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .shipName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### worldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .worldHeading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### worldPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .worldPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

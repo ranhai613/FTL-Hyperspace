@@ -12,15 +12,15 @@ lang: en
 
 ## Methods
 ### PlaySoundMix ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :PlaySoundMix (string soundName, number volume, boolean loop)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StopChannel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StopChannel (integer channel, number fade)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 The channel value is given by `PlaySoundMix`
 `fade` is counted in milliseconds
 

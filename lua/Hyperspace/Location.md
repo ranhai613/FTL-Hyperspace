@@ -13,88 +13,88 @@ lang: en
 
 ## Fields
 ### beacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .beacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .boss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Final boss event overrides the beacon, no visual indication.
 
 ______
 ### connectedLocations
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Location](../Hyperspace/Location)\> .connectedLocations
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dangerZone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .dangerZone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### event
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fleetChanging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .fleetChanging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### known
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .known
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .loc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### nebula
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .nebula
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Grant the fleet delay of nebula, no changes to the event itself
 
 ______
 ### planet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .planet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### planetImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .planetImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### space
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .space
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### spaceImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .spaceImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### visited
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .visited
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

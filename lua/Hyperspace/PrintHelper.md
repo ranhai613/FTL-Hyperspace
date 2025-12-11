@@ -11,9 +11,9 @@ lang: en
 
 ## Static Methods
 ### GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [PrintHelper](../Hyperspace/PrintHelper) .GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 Returns the main instance of `PrintHelper`. Always use this to access any members belonging to this class.
 
 ___
@@ -22,51 +22,51 @@ ___
 
 ## Fields
 ### duration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .duration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 How long (in seconds) each message lasts. Default is 5.
 
 ______
 ### font
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .font
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The size of the font used. Default is 10.
 
 ______
 ### lineLength
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lineLength
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Width (in pixels) before automatic newline. Default is 400.
 
 ______
 ### messageLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .messageLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 How many messages may be displayed at once. Default is 10.
 
 ______
 ### useSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .useSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Whether the speed at which messages are cleared scales with game speed. Default is `false`.
 
 ______
 ### x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The x coordinate of messages. Default is 100.
 
 ______
 ### y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The y coordinate of messages. Default is 100.
 
 ___

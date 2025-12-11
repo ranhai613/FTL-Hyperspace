@@ -20,42 +20,42 @@ ___
 
 ## Methods
 ### GetNameLong ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetNameLong ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNameShort ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetNameShort ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetType ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetType ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### desc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Description](../Hyperspace/Description) .desc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 [`ShipGraph`](#ShipGraph) `.GetShipInfo(int shipId)`
 
 ___

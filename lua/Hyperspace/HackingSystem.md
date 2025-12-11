@@ -14,66 +14,66 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Methods
 ### BlowHackingDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :BlowHackingDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bBlocked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBlocked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bCanHack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCanHack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bHacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bHacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .currentSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The current system it is targeting
 
 ______
 ### drone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [HackingDrone](../Hyperspace/HackingDrone) .drone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .effectTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### queuedSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .queuedSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### spendDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .spendDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

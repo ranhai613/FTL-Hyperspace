@@ -21,110 +21,110 @@ ___
 
 ## Fields
 ### crewLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .crewLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewPlacementDefinition](../Hyperspace/CrewPlacementDefinition)\> .crewList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### forceAutomated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .forceAutomated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hiddenAugs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### map\<string, integer\> .hiddenAugs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hpCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .hpCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxReactorLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxReactorLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noFuelStalemate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noFuelStalemate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### reactorPriceIncrement
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .reactorPriceIncrement
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### reactorPrices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .reactorPrices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### roomDefs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### unordered_map\<integer, [RoomDefinition](../Hyperspace/RoomDefinition)\> .roomDefs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipGenerator
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .shipGenerator
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipIcons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .shipIcons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startingFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .startingFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startingScrap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .startingScrap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### subsystemLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .subsystemLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .systemLimit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

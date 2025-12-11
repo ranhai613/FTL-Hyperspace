@@ -12,151 +12,151 @@ lang: en
 
 ## Methods
 ### MouseMove ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :MouseMove (integer x, integer y, boolean silent)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnClick ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnClick ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRightClick ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRightClick ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnTouch ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnTouch ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Reset ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Reset ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ResetPrimitives ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ResetPrimitives ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetActive ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetActive (boolean active)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHitBox ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHitBox ([Rect](../Hyperspace/Rect) rect)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### activeTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .activeTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### allowAnyTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .allowAnyTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bActivated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bActivated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bActive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bActive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFlashing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFlashing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bHover
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bHover
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bRenderOff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bRenderOff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bRenderSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bRenderSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flashing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hitbox (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .hitbox
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ______
 ### position (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ______
 ### touchSelectable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .touchSelectable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

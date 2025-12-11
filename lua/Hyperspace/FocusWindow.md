@@ -21,20 +21,20 @@ ___
 
 ## Fields
 ### bCloseButtonSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCloseButtonSelected
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFullFocus
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFullFocus
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bOpen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOpen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

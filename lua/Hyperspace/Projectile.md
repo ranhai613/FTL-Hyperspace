@@ -13,316 +13,316 @@ Extends: [Collideable](../Hyperspace/Collideable)
 
 ## Static Methods
 ### RandomSidePoint ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .RandomSidePoint (integer side)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### CollisionCheck ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CollisionCheck ([Collideable](../Hyperspace/Collideable) other)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CollisionMoving ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ComputeHeading ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ComputeHeading ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Dead ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Dead ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EnterDestinationSpace ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EnterDestinationSpace ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceRenderLayer ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :ForceRenderLayer ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRandomTargettingPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean valuable)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetType ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetType ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Initialize ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Initialize ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Kill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Kill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadProjectile ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadProjectile (integer fd)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRenderSpecific ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SaveProjectile ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SaveProjectile (integer fd)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDamage ([Damage](../Hyperspace/Damage) damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDestinationSpace ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDestinationSpace (integer space)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMovingTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMovingTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSpin ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSpin (number spin)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetWeaponAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetWeaponAnimation ([WeaponAnimation](../Hyperspace/WeaponAnimation) animation)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### _targetable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) ._targetable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bBroadcastTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBroadcastTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .dead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### death_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .death_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### destinationSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .destinationSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### entryAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .entryAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Projectile_Extend](../Hyperspace/Projectile_Extend) .extend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flight_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flight_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hitShieldSound
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .hitShieldSound
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hitSolidSound
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .hitSolidSound
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hitTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hitTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### last_position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .last_position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .missed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ownerId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .ownerId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .passedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selfId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### uint .selfId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### speed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### speed_magnitude
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .speed_magnitude
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startedDeath
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .startedDeath
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .targetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -21,146 +21,146 @@ ___
 
 ## Fields
 ### augment
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AugmentBlueprint](../Hyperspace/AugmentBlueprint) .augment
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloneText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .cloneText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloneable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .cloneable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .crew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewBlue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) .crewBlue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .crewType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [DroneBlueprint](../Hyperspace/DroneBlueprint) .drone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .droneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fleetDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .fleetDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .fuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hullDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .hullDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### intruders
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .intruders
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missiles
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .missiles
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### removeItem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .removeItem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### scrap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .scrap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### steal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .steal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .systemId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### traitor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .traitor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### upgradeAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .upgradeAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### upgradeId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .upgradeId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### upgradeSuccessFlag
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .upgradeSuccessFlag
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) .weapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .weaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

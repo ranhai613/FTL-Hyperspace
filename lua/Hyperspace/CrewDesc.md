@@ -21,20 +21,20 @@ ___
 
 ## Fields
 ### amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### prop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .prop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

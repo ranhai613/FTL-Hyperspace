@@ -13,488 +13,488 @@ lang: en
 
 ## Fields
 ### allDamageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .allDamageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animBase
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .animBase
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .animSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .bonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canBurn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canBurn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canFight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canFight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canMan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canMan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canPunch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canPunch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canSabotage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canSabotage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canSuffocate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canSuffocate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canTeleport
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canTeleport
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### changeIfSame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .changeIfSame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloneLoseSkills
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .cloneLoseSkills
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloneSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .cloneSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### controllable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .controllable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .crewSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageEnemiesAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .damageEnemiesAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .damageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .damageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### deathSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .deathSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### deathSoundsFemale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .deathSoundsFemale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### defaultSkillLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .defaultSkillLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### detectsLifeforms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .detectsLifeforms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### doorDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .doorDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### DroneAI .droneAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneMoveFromManningSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .droneMoveFromManningSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### essential
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .essential
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### explosionDef
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ExplosionDefinition .explosionDef
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fireDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireRepairMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fireRepairMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hackDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hackDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasCustomDeathAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasCustomDeathAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasDeathExplosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasDeathExplosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .healAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healCrewAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .healCrewAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .healSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isAnaerobic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .isAnaerobic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isTelepathic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .isTelepathic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lowHealthThreshold
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lowHealthThreshold
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lowHealthThresholdPercentage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lowHealthThresholdPercentage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### moveSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .moveSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### nameRace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .nameRace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noWarning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noWarning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### oxygenChangeSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .oxygenChangeSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .passiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passiveHealDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .passiveHealDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passiveStatBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .passiveStatBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDefs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition)\> .powerDefs
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDrain
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .powerDrain
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDrainFriendly
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .powerDrainFriendly
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerRechargeMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .powerRechargeMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### providesPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .providesPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### punchTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .punchTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### race
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .race
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rangedDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .rangedDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairSoundFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .repairSoundFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .repairSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .repairSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### resistsMindControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .resistsMindControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sabotageSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .sabotageSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selectable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .selectable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shootTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .shootTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shootingSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .shootingSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### silenced
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .silenced
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### skillsDef
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### SkillsDefinition .skillsDef
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### snapToSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .snapToSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stunMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .stunMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### suffocationModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .suffocationModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### teleportMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .teleportMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### teleportMoveOtherShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .teleportMoveOtherShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### transformName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .transformName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### trueHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .trueHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### truePassiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .truePassiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### validTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .validTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

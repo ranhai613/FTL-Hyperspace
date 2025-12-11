@@ -12,16 +12,16 @@ lang: en
 
 ## Methods
 ### GetText ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetText (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Retrieve the corresponding text string from the `text_` xml files in the current language.
 
 ______
 ### GetText ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetText (string name, string lang)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

@@ -15,14 +15,14 @@ Extends: [Repairable](../Hyperspace/Repairable)
 
 ## Fields
 ### breach
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .breach
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### heal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .heal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

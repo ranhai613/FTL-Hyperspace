@@ -21,92 +21,92 @@ ___
 
 ## Fields
 ### bFriendlyFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFriendlyFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bHullBuster
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bHullBuster
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bLockdown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bLockdown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### breachChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .breachChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crystalShard
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .crystalShard
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .fireChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iIonDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iIonDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iPersDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iPersDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iShieldPiercing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iShieldPiercing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iStun
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iStun
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iSystemDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iSystemDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ownerId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .ownerId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selfId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selfId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stunChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .stunChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -25,321 +25,321 @@ ___
 
 ## Static Methods
 ### GetLevelDescription ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### string .GetLevelDescription (integer systemId, integer level, boolean tooltip)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ______
 ### IsSubsystem ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### boolean .IsSubsystem (integer systemType)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ______
 ### NameToSystemId ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### integer .NameToSystemId (string name)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ______
 ### SystemIdToName ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### string .SystemIdToName (integer systemId)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### AddDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddDamage (integer amount)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AddLock ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddLock (integer lock)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanBeSabotaged ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanBeSabotaged ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckForRepower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CheckForRepower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CheckMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ClearStatus ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ClearStatus ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Clickable ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Clickable ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CompletelyDestroyed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CompletelyDestroyed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DamageOverTime ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DamageOverTime (number unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DecreasePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DecreasePower (boolean force)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceBatteryPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ForceBatteryPower (integer power)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceDecreasePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ForceDecreasePower (integer powerLoss)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceIncreasePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ForceIncreasePower (integer power)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Functioning ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Functioning ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetEffectivePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetEffectivePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetLocked ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetLocked ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNeedsPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetNeedsPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPowerCap ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetPowerCap ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetRoomId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IncreasePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IncreasePower (integer amount, boolean force)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IonDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :IonDamage (integer amount)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Ioned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Ioned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Ioned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Ioned (integer num)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsMannedBoost ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :IsMannedBoost ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsRoomBased ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsRoomBased ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LockSystem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LockSystem (integer lock)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### NeedsRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :NeedsRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PartialDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :PartialDamage (number amount)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Must be called every tick or else you will not see any change
 
 ______
 ### PartialRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :PartialRepair (number speed, boolean autoRepair)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Cause a partial repair of a system (opposite of partialDamage) must be called every tick or else you will not see any change
 
 ______
 ### Powered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Powered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RemoveBatteryPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RemoveBatteryPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Repair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Repair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Not sure if this is a function called every tick to cause repairs or what, probably not useful to lua
 
 ______
 ### SetBonusPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDamage (number damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHackingLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMaxDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMaxDamage (number maxDamage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetName (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetPowerCap ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetPowerCap (integer cap)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetPowerLoss ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :SetPowerLoss (integer power)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetRoomId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetRoomId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSelected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSelected (integer selectedState)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StopHacking ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StopHacking ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpgradeSystem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :UpgradeSystem (integer amount)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Upgrading a system is basically the same as changing the max power of a system although I think max power might reset after a jump? Not sure haven't tested.
 I think negative upgrades (downgrades) are allowed, please report if they are not.
 
@@ -348,309 +348,309 @@ ___
 
 ## Fields
 ### _shipObj
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipObject](../Hyperspace/ShipObject) ._shipObj
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bBoostable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBoostable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If the system can be manned by a crewmember.
 
 ______
 ### bBreached
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBreached
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bExploded
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bExploded
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFriendlies
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFriendlies
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bLevelBoostable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bLevelBoostable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If the system is given an additional level when manned by a crewmember (e.g. doors, sensors).
 
 ______
 ### bManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bNeedsManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bNeedsManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If the system requires manning to function.
 
 ______
 ### bNeedsPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bNeedsPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 True for regular systems, false for subsystems.
 
 ______
 ### bOccupied
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOccupied
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bTriggerIon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bTriggerIon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bUnderAttack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bUnderAttack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bpCost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .bpCost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### computerLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .computerLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damagedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .damagedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 I don't know if this can be set to true per-frame to hold the damage over time progression counter, it might be able to freeze the graphic so it doesn't count down.
 
 ______
 ### extend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipSystem_Extend](../Hyperspace/ShipSystem_Extend) .extend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Since 1.4.0**
 
 ______
 ### fDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fDamageOverTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fDamageOverTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fMaxDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fMaxDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fRepairOverTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fRepairOverTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healthState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .healthState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iActiveManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iActiveManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iHackEffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iHackEffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iLastBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iLastBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iLockCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iLockCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iRepairCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iRepairCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iRequiredPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iRequiredPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iSystemType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iSystemType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempDividePower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempDividePower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempPowerCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempPowerCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempPowerLoss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempPowerLoss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### interiorImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .interiorImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### interiorImageManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .interiorImageManned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### interiorImageMannedFancy
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .interiorImageMannedFancy
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### interiorImageName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .interiorImageName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### interiorImageOn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .interiorImageOn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastUserPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastUserPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lockTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .lockTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### originalPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .originalPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### pLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .pLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .powerState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .repairedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 I don't know if this can be set to true per-frame to hold the repair over time progression counter, it might be able to freeze the graphic so it doesn't count down.
 
 ______
 ### roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

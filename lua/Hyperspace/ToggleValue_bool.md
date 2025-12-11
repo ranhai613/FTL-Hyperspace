@@ -27,14 +27,14 @@ ___
 
 ## Fields
 ### enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### value
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .value
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

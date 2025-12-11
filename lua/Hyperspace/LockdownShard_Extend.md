@@ -13,39 +13,39 @@ lang: en
 
 ## Fields
 ### anim (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .anim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-Only**
 The name of the animation for this shard. Used for restoring animations on save/load.
 
 ______
 ### canDilate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canDilate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If this shard is affected by time dilation.
 
 ______
 ### color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The color that this shard is tinted.
 
 ______
 ### door (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .door
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-Only**
 The door that this shard is locking down, if any. Nil if no associated door.
 
 ______
 ### health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The current health of the shard. Is reduced by 1 for each hit from a crew member with base door damage. Only matters for door shards.
 
 ___

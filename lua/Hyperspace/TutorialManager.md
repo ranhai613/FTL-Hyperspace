@@ -13,77 +13,77 @@ lang: en
 
 ## Fields
 ### bAllowJumping
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bAllowJumping
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If true, plyer can open the star map.
 
 ______
 ### bAllowUpgrades
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bAllowUpgrades
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If true, player can open Upgrades screen.
 
 ______
 ### bGamePaused
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bGamePaused
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bQuitTutorial
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bQuitTutorial
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Setting this to true ends the tutorial.
 
 ______
 ### bRunning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bRunning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### combatControl (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CombatControl](../Hyperspace/CombatControl) .combatControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### gui (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CommandGui](../Hyperspace/CommandGui) .gui
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### playerShip (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipManager](../Hyperspace/ShipManager) .playerShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### shipInfo (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TabbedWindow](../Hyperspace/TabbedWindow) .shipInfo
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### starMap (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [StarMap](../Hyperspace/StarMap) .starMap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### tracker (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .tracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ___

@@ -14,396 +14,396 @@ Extends: [Drone](../Hyperspace/Drone)
 
 ## Methods
 ### CollisionMoving ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DamageArea ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DamageArea ([Pointf](../Hyperspace/Pointf) pos, [Damage](../Hyperspace/Damage) damage, boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DamageBeam ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DamageBeam ([Pointf](../Hyperspace/Pointf) pos1, [Pointf](../Hyperspace/Pointf) pos2, [Damage](../Hyperspace/Damage) damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetBoardingDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### BoarderDrone :GetBoardingDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNextProjectile ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Projectile](../Hyperspace/Projectile) :GetNextProjectile ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetOwnerId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetOwnerId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRandomTargettingPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelfId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelfId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShieldShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Ellipse](../Hyperspace/Ellipse) :GetShieldShape ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpaceId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSpaceId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetTooltip ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetWeaponCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetWeaponCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### HasTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :HasTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### HideUnderOwner ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :HideUnderOwner ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### MouseMove ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :MouseMove (integer mX, integer mY)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender (integer space)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PickDestination ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PickDestination ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RandomizeStartingPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RandomizeStartingPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentLocation ([Pointf](../Hyperspace/Pointf) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDeployed (boolean deployed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMovementTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetWeaponTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateAimingAngle ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :UpdateAimingAngle ([Pointf](../Hyperspace/Pointf) location, number percentage, number forceDesired)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTargetObject ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### _collideable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Collideable](../Hyperspace/Collideable) ._collideable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### _targetable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) ._targetable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### additionalPause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .additionalPause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### aimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .aimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDisrupted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDisrupted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bLoadedPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bLoadedPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### beamCurrentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamCurrentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### beamFinalTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamFinalTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### beamSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .beamSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .currentLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### current_angle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .current_angle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### deployedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .deployedLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### desiredAimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .desiredAimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### destinationLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .destinationLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### destinationSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .destinationSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### explosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hackAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .hackAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hackSparks
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .hackSparks
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ionStun
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .ionStun
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastAimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lastAimingAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### message
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### DamageMessage .message
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### movementTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movementTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### pause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .pause
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### pointTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .pointTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### poweredLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .poweredLastFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### speedVector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speedVector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponBlueprint (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) .weaponBlueprint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### weaponCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .weaponCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .weaponTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapon_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .weapon_animation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

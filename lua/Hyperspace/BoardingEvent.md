@@ -21,32 +21,32 @@ ___
 
 ## Fields
 ### amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### breach
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .breach
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### max
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .max
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### min
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .min
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

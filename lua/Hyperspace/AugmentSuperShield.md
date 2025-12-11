@@ -13,38 +13,38 @@ lang: en
 
 ## Fields
 ### add (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .add
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### customRender (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .customRender
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### present (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .present
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldColor (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .shieldColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldTexture (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .shieldTexture
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### value (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .value
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

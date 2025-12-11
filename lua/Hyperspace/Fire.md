@@ -14,59 +14,59 @@ Extends: [Spreadable](../Hyperspace/Spreadable)
 
 ## Methods
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateDeathTimer ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateDeathTimer (integer connectedFires)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateStartTimer ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateStartTimer (integer doorLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bWasOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bWasOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fDeathTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fDeathTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fOxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fOxygen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fStartTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fStartTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .fireAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### smokeAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .smokeAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -12,16 +12,16 @@ lang: en
 
 ## Methods
 ### OnExit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnExit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Close game, autosave profile and settings but not current run (current run will be on previous autosave).
 
 ______
 ### OnRequestExit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRequestExit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Close game, autosave run, profile, and settings.
 
 ___
@@ -29,21 +29,21 @@ ___
 
 ## Fields
 ### gui
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CommandGui](../Hyperspace/CommandGui) .gui
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### menu (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [MainMenu](../Hyperspace/MainMenu) .menu
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### world
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [WorldManager](../Hyperspace/WorldManager) .world
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

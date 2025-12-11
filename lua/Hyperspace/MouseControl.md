@@ -12,234 +12,234 @@ lang: en
 
 ## Methods
 ### InstantTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :InstantTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadTooltip (string tooltipName)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### MeasureTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :MeasureTooltip (integer unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 `tooltipName` should be an id of the text without prefix `tooltip_`.
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### QueueStaticTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :QueueStaticTooltip ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderTooltip ([Point](../Hyperspace/Point) tooltipPoint, boolean staticPos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Reset ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Reset ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ResetArmed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ResetArmed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDoor ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDoor (integer state)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetTooltip (string tooltip)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetTooltipTitle ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetTooltipTitle (string tooltip)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### aiming_required
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .aiming_required
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animateDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .animateDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bForceTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bForceTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bHideMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bHideMouse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bMoving
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bMoving
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSellingStuff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSellingStuff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iHacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iHacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iMindControlling
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iMindControlling
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTeleporting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTeleporting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### invalidPointer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .invalidPointer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastAddition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lastAddition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastIcon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lastIcon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .lastPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastTooltipText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .lastTooltipText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastValid
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .lastValid
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### newHover
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .newHover
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### openDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .openDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### overrideTooltipWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .overrideTooltipWidth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selling
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .selling
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### staticTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .staticTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .tooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tooltipTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .tooltipTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tooltipTitle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .tooltipTitle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### valid
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .valid
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### validPointer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .validPointer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

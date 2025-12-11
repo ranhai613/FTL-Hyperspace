@@ -78,6 +78,12 @@ ADDITIONAL_ENUMS = [
 MODULE_NAME_PATTERN = re.compile(r'#define\s+SWIG_name\s+"(\w+)"')
 CLASS_NAME_PATTERN = re.compile(r'static swig_lua_namespace swig_(\w+?)_(?:Sf_)?SwigStatic = {\s*"(\w+)"\s*,')
 
+class PropertyType(Enum):
+    CONSTRUCTOR = 1,
+    CONSTANT = 2,
+    STATICMETHOD = 3,
+    METHOD = 4,
+    FIELD = 5
 class FuncType(Enum):
     METHOD = 1,
     STATIC = 2,
@@ -238,8 +244,97 @@ class FunctionInfo:
                     return data["documentation"]
         
         return None
+
+class WikiPageItem:
+    def __init__(self, name: str, propertyType: PropertyType, className: str, returnType: str, documentation: str|None = None, params_name: list[str]|None = None, params_type: list[str]|None = None, immutable: bool = False, value: int|None = None):
+        self.name = name
+        self.propertyType = propertyType
+        self.className = className
+        self.returnType = returnType
+        self.documentation = documentation
+        self.params_name = params_name
+        self.params_type = params_type
+        self.immutable = immutable
+        self.value = value
+    
+    def __eq__(self, value):
+        if not isinstance(value, WikiPageItem):
+            return False
+        
+        if self.propertyType != value.propertyType:
+            return False
+        
+        if self.name != value.name:
+            return False
+        
+        if self.propertyType == PropertyType.CONSTRUCTOR:
+            raise NotImplementedError("WikiPageItem: __eq__ not implemented for CONSTRUCTOR")
+        elif self.propertyType in [PropertyType.STATICMETHOD, PropertyType.METHOD]:
+            return match_args(self.params_type, value.params_type)
+        elif self.propertyType in [PropertyType.CONSTANT, PropertyType.FIELD]:
+            return True
+        
+    def __hash__(self):
+        if self.propertyType == PropertyType.CONSTRUCTOR:
+            raise NotImplementedError("WikiPageItem: __hash__ not implemented for CONSTRUCTOR")
+        elif self.propertyType in [PropertyType.STATICMETHOD, PropertyType.METHOD]:
+            return hash((self.propertyType, self.name, tuple(self.params_type)))
+        elif self.propertyType in [PropertyType.CONSTANT, PropertyType.FIELD]:
+            return hash((self.propertyType, self.name))
+
+class WikiPage:
+    def __init__(self, name: str, moduleName: str, parentNames, constructors: list[WikiPageItem], constants: list[WikiPageItem], staticMethods: list[WikiPageItem], methods: list[WikiPageItem], fields: list[WikiPageItem]):
+        self.name = name
+        self.moduleName = moduleName
+        self.parentNames = parentNames
+        self.constructors = constructors
+        self.constants = constants
+        self.staticMethods = staticMethods
+        self.methods = methods
+        self.fields = fields
+    
+    def getParentItems(self, type: PropertyType) -> set[WikiPageItem]:
+        ret = []
+        for parentName in self.parentNames:
+            if parentPage := g_wiki_pages.get(parentName, None) is None:
+                continue
+            
+            if type == PropertyType.CONSTRUCTOR:
+                raise NotImplementedError("WikiPage: getParentItems not implemented for CONSTRUCTOR")
+            elif type == PropertyType.CONSTANT:
+                ret += parentPage.constants
+            elif type == PropertyType.STATICMETHOD:
+                ret += parentPage.staticMethods
+            elif type == PropertyType.METHOD:
+                ret += parentPage.methods
+            elif type == PropertyType.FIELD:
+                ret += parentPage.fields
+            
+            ret += parentPage.getParentItems(type)
+        return 
+    
+    def outputFields(self) -> str:
+        sorting_list = []
+        for field in self.fields:
+            ret = ""
+            ret += f"___\n### {field.name}"
+            if field.immutable:
+                ret += " (Read-only)"
+            ret += "\n{: aria-label='Variables' }\n"
+            ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Variables' }}\n"
+            if field.documentation:
+                ret += f"{field.documentation}\n"
+            ret += "\n___"
+            sorting_list.append((field.name, ret))
+        
+        ret = "".join([x[1] for x in sorted(sorting_list, key=lambda x: x[0])])
+        if len(ret) > 4:
+            ret = ret[4:] # remove leading ___
+        return ret
     
 g_functionDataMap: dict[str, FunctionInfo] = {}
+
+g_wiki_pages: dict[str, WikiPage] = {}
 
 g_enum_parse_requests = set()
 
@@ -372,70 +467,62 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                     wikiData = [x for x in wikiInfo["methods"] if x["name"] == methodName]
                 func.LoadWikiData(wikiData)
     
-    def parse_constructor(moduleName: str, className: str, fixedRet=None) -> tuple[str, int]:
+    def parse_constructor(moduleName: str, className: str, fixedRet=None) -> list[WikiPageItem]:
         constructor = g_functionDataMap.get(f"_wrap_new_{className}", None)
         if constructor is None:
-            return "", 0
+            return []
         
-        ret = ""
-        count = 0
+        ret = []
         for overload in constructor.GetArgs(True):
             documentation = constructor.GetWikiDoc([data["type"] for data in overload])
             
-            params_type = [wrap_type_for_md(className, get_lua_type(data["type"])) for data in overload]
+            params_type = [get_lua_type(data["type"]) for data in overload]
             params_name = [data["name"] for data in overload]
-            params = [f"{typeName} {name}" for name, typeName in zip(params_name, params_type)]
                         
             return_type =  fixedRet if fixedRet else get_lua_type(className)
             
-            ret += f"___\n### {className} ()\n{{: aria-label='Constructors' }}\n#### {wrap_type_for_md(className, return_type)} {className} (" + ", ".join(params) + ")\n{: aria-label='Constructors' }\n"
-            if documentation:
-                ret += f"{documentation}\n"
-            ret += "\n___"
-            count += 1
-        if len(ret) > 4:
-            ret = ret[4:] # remove leading ___
-        return ret, count
+            ret.append(WikiPageItem(
+                name=className,
+                propertyType=PropertyType.CONSTRUCTOR,
+                className=className,
+                returnType=return_type,
+                documentation=documentation,
+                params_name=params_name,
+                params_type=params_type
+            ))
+        return ret
 
         
-    def parse_methods(className: str, HSInfo: dict, wikiInfo: dict, content: str, funcType: FuncType) -> tuple[str, int]:
+    def parse_methods(className: str, HSInfo: dict, wikiInfo: dict, content: str, funcType: FuncType) -> list[WikiPageItem]:
         assert funcType == FuncType.METHOD or funcType == FuncType.STATIC, "parse_methods: funcType must be METHOD or STATIC"
         
-        sorting_list = []
-        count = 0
+        ret = []
         for m in re.finditer(r'{\s*"(\w+)"\s*,\s*(\w+)\s*}', content):
             methodName = m.group(1)
             func = g_functionDataMap[m.group(2)]
                         
             for overload in func.GetArgs(funcType == FuncType.STATIC):
-                ret = ""
                 documentation = func.GetWikiDoc([data["type"] for data in overload])
                 
-                params_type = [wrap_type_for_md(className, get_lua_type(data["type"])) for data in overload]
+                params_type = [get_lua_type(data["type"]) for data in overload]
                 params_name = [data["name"] for data in overload]
-                params = [f"{typeName} {name}" for name, typeName in zip(params_name, params_type)]
                 
-                return_type = wrap_type_for_md(className, get_lua_type(func.GetRetType()))
+                return_type = get_lua_type(func.GetRetType())
                 
-                label = "{: aria-label='StaticFunctions' }" if funcType == FuncType.STATIC else "{: aria-label='Functions' }"
-                
-                ret += f"___\n### {methodName} ()\n{label}\n#### {return_type} " + (":" if funcType == FuncType.METHOD else ".") + methodName + " (" + ", ".join(params) + ")\n" + label + "\n"
-                if documentation:
-                    ret += f"{documentation}\n"
-                ret += "\n___"
-                sorting_list.append((methodName, ret))
-                count += 1
-
-        ret = "".join([x[1] for x in sorted(sorting_list, key=lambda x: x[0])])
-        if len(ret) > 4:
-            ret = ret[4:] # remove leading ___
-        return ret, count
+                ret.append(WikiPageItem(
+                    name=methodName,
+                    propertyType=PropertyType.STATICMETHOD if funcType == FuncType.STATIC else PropertyType.METHOD,
+                    className=className,
+                    returnType=return_type,
+                    documentation=documentation,
+                    params_name=params_name,
+                    params_type=params_type
+                ))
+        return ret
     
-    def parse_fields(className: str, wikiInfo: dict, content: str) -> tuple[str, int]:
-        sorting_list = []
-        count = 0
+    def parse_fields(className: str, wikiInfo: dict, content: str) -> list[WikiPageItem]:
+        ret = []
         for m in re.finditer(r'{\s*"(\w+)"\s*,\s*(\w+)\s*,\s*(\w+)\s*}', content):
-            ret = ""
             fieldName = m.group(1)
             typeName = ""
             documentation = ""
@@ -454,28 +541,20 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             
             immutable = m.group(3) == "SWIG_Lua_set_immutable"
             
-            # ret += f"---@field {fieldName} {get_lua_type(typeName)}" + (" (Read-only) " if immutable else " ") + documentation.replace("\n", "<br>") + "\n"
-            ret += f"___\n### {fieldName}"
-            if immutable:
-                ret += " (Read-only)"
-            ret += "\n{: aria-label='Variables' }\n"
-            ret += f"#### {wrap_type_for_md(className, get_lua_type(typeName))} .{fieldName}\n{{: aria-label='Variables' }}\n"
-            if documentation:
-                ret += f"{documentation}\n"
-            ret += "\n___"
-            sorting_list.append((fieldName, ret))
-            count += 1
+            ret.append(WikiPageItem(
+                name=fieldName,
+                propertyType=PropertyType.FIELD,
+                className=className,
+                returnType=get_lua_type(typeName),
+                documentation=documentation,
+                immutable=immutable
+            ))
         
-        ret = "".join([x[1] for x in sorted(sorting_list, key=lambda x: x[0])])
-        if len(ret) > 4:
-            ret = ret[4:] # remove leading ___
-        return ret, count
+        return ret
     
-    def parse_constants(className: str, wikiInfo: dict, content: str) -> tuple[str, int]:
-        sorting_list = []
-        count = 0
+    def parse_constants(className: str, wikiInfo: dict, content: str) -> list[WikiPageItem]:
+        ret = []
         for m in re.finditer(r'{\s*SWIG_LUA_CONSTTAB_INT\(\s*"(\w+)"\s*,\s*([\w:]+)\s*\)\s*}', content):
-            ret = ""
             constantName = m.group(1)
             typeName = m.group(2)
             g_enum_parse_requests.add(typeName)
@@ -498,19 +577,18 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             elif get_lua_type(className, True) == "Defines.RenderEvents":
                 documentation = eventHookBuilder.process("RenderEvents", constantName, value)
                         
-            ret += f"___\n### {className}.{constantName}\n{{: aria-label='Constants' }}\nEquivalent to `{value}`.\n"
-            if documentation:
-                ret += f"{documentation}\n"
-            ret += "\n___"
-            sorting_list.append((constantName, ret))
-            count += 1
+            ret.append(WikiPageItem(
+                name=constantName,
+                propertyType=PropertyType.CONSTANT,
+                className=className,
+                returnType=get_lua_type(typeName),
+                documentation=documentation,
+                value=value
+            ))
 
             additionalEnumBuilder.process(get_lua_type(className), constantName, value)
         
-        ret = "".join([x[1] for x in sorted(sorting_list, key=lambda x: x[0])])
-        if len(ret) > 4:
-            ret = ret[4:] # remove leading ___
-        return ret, count
+        return ret
     
     result = ""
     
@@ -601,31 +679,31 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         additionalTableMembersMap[className].append(memberName)
     
     # Parse variables attributed just under the module
-    globalFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    if globalFields:
-        part_module_fields, _ = parse_fields(moduleName, globalWikiInfo, globalFields.group(1))
+    # globalFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    # if globalFields:
+    #     part_module_fields, _ = parse_fields(moduleName, globalWikiInfo, globalFields.group(1))
     
-    globalStaticFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_Sf_SwigStatic_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    if globalStaticFields:
-        part_module_fields += parse_fields(moduleName, globalWikiInfo, globalStaticFields.group(1))[0]
+    # globalStaticFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_Sf_SwigStatic_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    # if globalStaticFields:
+    #     part_module_fields += parse_fields(moduleName, globalWikiInfo, globalStaticFields.group(1))[0]
     
-    appended_fields = g_fieldsAppendMap.get(moduleName, None)
-    if appended_fields:
-        for content in appended_fields:
-            part_module_fields += f"---@field {content}\n"
+    # appended_fields = g_fieldsAppendMap.get(moduleName, None)
+    # if appended_fields:
+    #     for content in appended_fields:
+    #         part_module_fields += f"---@field {content}\n"
     
-    globalMethods = re.search(r'static\s+swig_lua_method\s+swig_SwigModule_methods\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    if globalMethods:
-        part_module_methods, _ = parse_methods(moduleName, globalHSInfo, globalWikiInfo, globalMethods.group(1), FuncType.STATIC)
+    # globalMethods = re.search(r'static\s+swig_lua_method\s+swig_SwigModule_methods\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    # if globalMethods:
+    #     part_module_methods, _ = parse_methods(moduleName, globalHSInfo, globalWikiInfo, globalMethods.group(1), FuncType.STATIC)
     
-    globalConstants = re.search(r'static\s+swig_lua_const_info\s+swig_SwigModule_constants\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    if globalConstants:
-        part_module_consts, _ = parse_constants(moduleName, globalWikiInfo, globalConstants.group(1))
+    # globalConstants = re.search(r'static\s+swig_lua_const_info\s+swig_SwigModule_constants\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    # if globalConstants:
+    #     part_module_consts, _ = parse_constants(moduleName, globalWikiInfo, globalConstants.group(1))
     
-    additionalTableMembers = additionalTableMembersMap.get(moduleName, None)
-    if additionalTableMembers:
-        for memberName in additionalTableMembers:
-            part_module_consts += f"    {memberName} = {{}},\n"
+    # additionalTableMembers = additionalTableMembersMap.get(moduleName, None)
+    # if additionalTableMembers:
+    #     for memberName in additionalTableMembers:
+    #         part_module_consts += f"    {memberName} = {{}},\n"
     
     # result += f"---@class {moduleName}\n{part_module_fields}{moduleName} = {{" + (f"\n{part_module_consts}" if part_module_consts else "") + f"}}\n\n{part_module_methods}"
     
@@ -634,7 +712,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         full_name = get_lua_type(className, True)
         container_type = format_container_type(className)
         if container_type:
-            part_constructor, _ = parse_constructor(moduleName, className, container_type)
+            # part_constructor, _ = parse_constructor(moduleName, className, container_type)
             # result += part_constructor
             continue
         
@@ -647,76 +725,77 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             for parent in re.finditer(r'"(\w+)\s*\*?\s*"\s*,', parents_m.group(1)):
                 parents.append(get_lua_type(parent.group(1)))
         
-        part_fields = ""
+        fields = []
         count_fields = 0     
         fields_m = re.search(rf'static\s+swig_lua_attribute\s+swig_{className}_attributes\[\]\s*=\s*\{{(.*?)\}};', lua_code, re.DOTALL)
         if fields_m:
-            part_fields, count_fields = parse_fields(className, wikiInfo, fields_m.group(1))
+            fields += parse_fields(className, wikiInfo, fields_m.group(1))
         
         static_fields_m = re.search(rf'static\s+swig_lua_attribute\s+swig_{className}_Sf_SwigStatic_attributes\[\]\s*=\s*\{{(.*?)\}};', lua_code, re.DOTALL)
         if static_fields_m:
-            p, c = parse_fields(className, wikiInfo, static_fields_m.group(1))
-            part_fields += p
-            count_fields += c
+            fields += parse_fields(className, wikiInfo, static_fields_m.group(1))
         
-        appended_fields = g_fieldsAppendMap.get(full_name, None)
-        if appended_fields:
-            for content in appended_fields:
-                part_fields += f"---@field {content}\n"
-                count_fields += 1
+        # appended_fields = g_fieldsAppendMap.get(full_name, None)
+        # if appended_fields:
+        #     for content in appended_fields:
+        #         part_fields += f"---@field {content}\n"
+        #         count_fields += 1
         
-        part_constructor, count_constructor = parse_constructor(moduleName, className)
+        constructors = parse_constructor(moduleName, className)
 
-        part_methods = ""
-        count_methods = 0
+        methods = []
         methods_m = re.search(rf'static\s+swig_lua_method\s+swig_{className}_methods\[\]\s*=\s*\{{(.*?)\}};', lua_code, re.DOTALL)
         if methods_m:
-            p, c = parse_methods(className, HSInfo, wikiInfo, methods_m.group(1), FuncType.METHOD)
-            part_methods += p
-            count_methods += c
+            methods += parse_methods(className, HSInfo, wikiInfo, methods_m.group(1), FuncType.METHOD)
         
-        part_static_methods = ""
-        count_static_methods = 0
+        static_methods = []
         staticMethods_m = re.search(rf'static\s+swig_lua_method\s+swig_{className}_Sf_SwigStatic_methods\[\]\s*=\s*\{{(.*?)\}};', lua_code, re.DOTALL)
         if staticMethods_m:
-            p, c = parse_methods(className, HSInfo, wikiInfo, staticMethods_m.group(1), FuncType.STATIC)
-            part_static_methods += p
-            count_static_methods += c
+            static_methods += parse_methods(className, HSInfo, wikiInfo, staticMethods_m.group(1), FuncType.STATIC)
         
-        part_consts = ""
-        count_consts = 0
+        constants = []
         constants_m = re.search(rf'static\s+swig_lua_const_info\s+swig_{className}_Sf_SwigStatic_constants\[\]\s*=\s*\{{(.*?)\}};', lua_code, re.DOTALL)
         if constants_m:
-            part_consts, count_consts = parse_constants(className, wikiInfo, constants_m.group(1))
+            constants += parse_constants(className, wikiInfo, constants_m.group(1))
         
-        additionalTableMembers = additionalTableMembersMap.get(className, None)
-        if additionalTableMembers:
-            for memberName in additionalTableMembers:
-                part_consts += f"    {memberName} = {{}},\n"
+        # additionalTableMembers = additionalTableMembersMap.get(className, None)
+        # if additionalTableMembers:
+        #     for memberName in additionalTableMembers:
+        #         part_consts += f"    {memberName} = {{}},\n"
         
-        should_be_enum = count_constructor < 2 and count_methods == 0 and count_fields == 0 and count_consts > 0
+        should_be_enum = len(constructors) < 2 and len(methods) + len(static_methods) == 0 and len(fields) == 0 and len(constants) > 0
         if should_be_enum:
             # result += f"---@enum {full_name}\n{full_name} = {{\n{part_consts}}}\n\n"
             pass
         else:
-            result += f"---@class {full_name}" + ((": " + ", ".join(parents)) if parents else "") + f"\n{part_fields}{full_name} = {{" + (f"\n{part_consts}" if part_consts else "") + f"}}\n\n{part_constructor}{part_methods}"
-            replace_map = {}
-            replace_map["NAME"] = className
-            if parents:
-                replace_map["PARENTS"] = ", ".join([wrap_type_for_md(className, parent) for parent in parents])
-            if count_constructor > 0:
-                replace_map["CONSTRUCTORS"] = part_constructor
-            if count_consts > 0:
-                replace_map["CONSTANTS"] = part_consts
-            if count_static_methods > 0:
-                replace_map["STATIC_METHODS"] = part_static_methods
-            if count_methods > 0:
-                replace_map["METHODS"] = part_methods
-            if count_fields > 0:
-                replace_map["FIELDS"] = part_fields
+            # result += f"---@class {full_name}" + ((": " + ", ".join(parents)) if parents else "") + f"\n{part_fields}{full_name} = {{" + (f"\n{part_consts}" if part_consts else "") + f"}}\n\n{part_constructor}{part_methods}"
+            g_wiki_pages[full_name] = WikiPage(
+                name=className,
+                moduleName=moduleName,
+                parentNames=parents,
+                constructors=constructors,
+                constants=constants,
+                staticMethods=static_methods,
+                methods=methods,
+                fields=fields
+            )
+            # replace_map = {}
+            # replace_map["NAME"] = className
+            # if parents:
+            #     replace_map["PARENTS"] = ", ".join([wrap_type_for_md(className, parent) for parent in parents])
+            # if count_constructor > 0:
+            #     replace_map["CONSTRUCTORS"] = part_constructor
+            # if count_consts > 0:
+            #     replace_map["CONSTANTS"] = part_consts
+            # if count_static_methods > 0:
+            #     replace_map["STATIC_METHODS"] = part_static_methods
+            # if count_methods > 0:
+            #     replace_map["METHODS"] = part_methods
+            # if count_fields > 0:
+            #     replace_map["FIELDS"] = part_fields
             
-            output_path = f"lua/{moduleName}/{className}.md"
-            create_wiki_md(replace_map, output_path)
+            # output_path = f"lua/{moduleName}/{className}.md"
+            # create_wiki_md(replace_map, output_path)
     
     return result
     

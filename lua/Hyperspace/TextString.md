@@ -26,9 +26,9 @@ ___
 
 ## Methods
 ### GetText ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetText ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 If `.isLiteral` is true, this gets the value of `.data`, otherwise it gets the text referring to the text id from the value of `.data`.
 
 ___
@@ -36,17 +36,17 @@ ___
 
 ## Fields
 ### data
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .data
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 You can change the text by setting this value.
 If `.isLiteral` is true, this stores the text itself, otherwise it stores the text id.
 
 ______
 ### isLiteral
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .isLiteral
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If true, the game will display the value of `.data`, otherwise it will refer to the text id from the value of `.data`.
 
 ___

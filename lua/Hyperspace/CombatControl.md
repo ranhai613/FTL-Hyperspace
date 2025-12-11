@@ -13,93 +13,93 @@ lang: en
 
 ## Fields
 ### aimingPoints
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Pointf](../Hyperspace/Pointf)\> .aimingPoints
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### beamMoveLast
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .beamMoveLast
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boss_visual (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .boss_visual
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### invalidBeamTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .invalidBeamTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isAimingTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .isAimingTouch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mouseDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .mouseDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### movingBeam
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .movingBeam
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### open
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .open
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### playerShipPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .playerShipPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### potentialAiming
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .potentialAiming
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selectedRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selectedRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selectedSelfRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selectedSelfRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .targetPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [WeaponControl](../Hyperspace/WeaponControl) .weapControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

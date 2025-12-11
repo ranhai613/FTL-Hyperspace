@@ -23,20 +23,20 @@ ___
 
 ## Fields
 ### movingTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### spinAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .spinAngle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### spinSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .spinSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

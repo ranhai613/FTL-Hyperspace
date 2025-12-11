@@ -28,71 +28,71 @@ ___
 
 ## Methods
 ### GetCurrentSkillColor ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [GL_Color](../Graphics/GL_Color) :GetCurrentSkillColor (integer skill)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNameShort ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetNameShort ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RandomSkills ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RandomSkills (integer worldLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderIcon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderIcon (number opacity)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderSkill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderSkill (integer x, integer y, integer length, integer height, integer skill)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### colorChoices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .colorChoices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### colorLayers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<vector\<[GL_Color](../Graphics/GL_Color)\>\> .colorLayers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewNameLong
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .crewNameLong
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### male
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .male
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[TextString](../Hyperspace/TextString)\> .powers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### skillLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<std_pair_int_int\> .skillLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

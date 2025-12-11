@@ -14,71 +14,71 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Methods
 ### SetArmed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetArmed (integer armed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHackingLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bBlocked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBlocked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bCanUse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCanUse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSuperShields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSuperShields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### controlTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .controlTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### controlledCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .controlledCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iQueuedShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iQueuedShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iQueuedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iQueuedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### queuedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .queuedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

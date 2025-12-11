@@ -15,21 +15,21 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
 ## Fields
 ### bBlockClose
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBlockClose
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bTutorialMode
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bTutorialMode
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If true, player cannot access anything other than Upgrades screen.
 
 ______
 ### bWindowLock
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bWindowLock
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

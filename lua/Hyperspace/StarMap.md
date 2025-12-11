@@ -14,133 +14,133 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
 ## Methods
 ### ForceWaitMessage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ForceWaitMessage ([GL_Primitive](../Graphics/GL_Primitive) waitMessage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Disables the ability to jump and enables the wait/distress menu. Replaces the "NO FUEL" message shown on the sector map with a primitive of your own.
 NOTE: The primitive should be a local or global variable. If it is garbage collected while in use this will lead to a crash.
 If no argument is passed, then the jump menu is re-enabled and the "NO FUEL" message is restored.
 
 ______
 ### ForceWaitMessage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ForceWaitMessage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ModifyPursuit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ModifyPursuit (integer unk0)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PointToGrid ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :PointToGrid (number x, number y)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bChoosingNewSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bChoosingNewSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bMapRevealed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bMapRevealed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSecretSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSecretSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bTutorialGenerated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bTutorialGenerated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .currentLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Sector](../Hyperspace/Sector) .currentSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dangerZone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .dangerZone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hoverLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .hoverLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### locations (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Location](../Hyperspace/Location)\> .locations
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### mapsBottom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive[] length=3](../Graphics/GL_Primitive[] length=3) .mapsBottom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Contains the 3 background images of the sector map. Index selected via `worldLevel % 3`.
 
 ______
 ### potentialLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .potentialLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### pursuitDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .pursuitDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sectors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Sector](../Hyperspace/Sector)\> .sectors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ship
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .ship
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The map icon that rotates around the current location representing the player ship.
 
 ______
 ### shipNoFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shipNoFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The no fuel variant of the `ship` icon.
 
 ______
 ### worldLevel (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .worldLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ___

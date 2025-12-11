@@ -49,146 +49,146 @@ ___
 
 ## Fields
 ### aiDisabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .aiDisabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### checkRoomCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .checkRoomCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### enemyBlackList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .enemyBlackList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### enemyInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .enemyInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### enemyShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .enemyShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### enemyWhiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .enemyWhiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extraConditions
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraConditions
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extraOrConditions
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraOrConditions
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extraOrConditionsTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .extraOrConditionsTooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### friendlyBlackList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .friendlyBlackList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### friendlyInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .friendlyInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### friendlyWhiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .friendlyWhiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasClonebay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasClonebay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### inCombat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .inCombat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### minHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .minHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### outOfCombat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .outOfCombat
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### playerShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .playerShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### requiredSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .requiredSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### requiredSystemFunctional
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .requiredSystemFunctional
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemDamaged
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .systemDamaged
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .systemInRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ActivatedPowerRequirements.Type](../Hyperspace/ActivatedPowerRequirements.Type) .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### whiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .whiteList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

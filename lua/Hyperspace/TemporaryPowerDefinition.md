@@ -13,362 +13,362 @@ lang: en
 
 ## Fields
 ### allDamageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .allDamageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .animFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .animSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### baseVisible
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .baseVisible
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .bonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canBurn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canBurn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canFight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canFight
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canMan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canMan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canSabotage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canSabotage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canSuffocate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canSuffocate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### canTeleport
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canTeleport
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloneSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .cloneSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### controllable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .controllable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cooldownColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .cooldownColor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageEnemiesAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .damageEnemiesAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .damageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .damageTakenMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### detectsLifeforms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .detectsLifeforms
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### doorDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .doorDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### duration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .duration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .effectAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectFinishAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .effectFinishAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .fireDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fireRepairMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .fireRepairMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hackDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .hackDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .healAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healCrewAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .healCrewAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .healSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### invulnerable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .invulnerable
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isAnaerobic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .isAnaerobic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isTelepathic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .isTelepathic
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lowHealthThreshold
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .lowHealthThreshold
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .maxHealth
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### moveSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .moveSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .noAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### oxygenChangeSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .oxygenChangeSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .passiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passiveHealDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .passiveHealDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDrain
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<integer\> .powerDrain
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDrainFriendly
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .powerDrainFriendly
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerRechargeMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .powerRechargeMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rangedDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .rangedDamageMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .repairSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### resistsMindControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .resistsMindControl
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sabotageSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .sabotageSpeedMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### silenced
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .silenced
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .sounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundsEnemy
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .soundsEnemy
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### statBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stunMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .stunMultiplier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### suffocationModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .suffocationModifier
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### teleportMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .teleportMove
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### teleportMoveOtherShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .teleportMoveOtherShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### trueHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .trueHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### truePassiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<number\> .truePassiveHealAmount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### validTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ToggleValue\<boolean\> .validTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -19,36 +19,36 @@ ___
 
 ## Static Methods
 ### GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [CustomEventsParser](../Hyperspace/CustomEventsParser) .GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### GetCustomEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent (string event)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCustomEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent ([Location](../Hyperspace/Location) loc)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, EventLoadList eventList, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, string eventName, boolean ignoreUnique, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

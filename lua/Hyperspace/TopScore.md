@@ -21,14 +21,14 @@ ___
 
 ## Fields
 ### score
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .score
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .sector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

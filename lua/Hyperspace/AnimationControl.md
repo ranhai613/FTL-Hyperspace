@@ -12,9 +12,9 @@ lang: en
 
 ## Methods
 ### GetAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Animation](../Hyperspace/Animation) :GetAnimation (string animName)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

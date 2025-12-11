@@ -11,80 +11,80 @@ lang: en
 
 ## Static Methods
 ### GetPowerManager ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [PowerManager](../Hyperspace/PowerManager) .GetPowerManager (integer iShipId)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### GetAvailablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetAvailablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetMaxPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### batteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .batteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .currentPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fFuel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### failedPowerup
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .failedPowerup
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iHacked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iHacked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempDividePower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempDividePower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempPowerCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempPowerCap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iTempPowerLoss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iTempPowerLoss
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### over_powered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .over_powered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

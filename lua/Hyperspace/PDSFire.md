@@ -23,32 +23,32 @@ ___
 
 ## Fields
 ### currentScale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .currentScale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### explosionAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosionAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .missed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### passedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .passedTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startPoint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startPoint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -12,30 +12,30 @@ lang: en
 
 ## Methods
 ### Fire ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Fire (vector\<[Pointf](../Hyperspace/Pointf)\> points, integer target, boolean autoFire)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### armedSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .armedSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### armedWeapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .armedWeapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### autoFiring (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .autoFiring
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ___

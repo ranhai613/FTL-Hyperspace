@@ -13,44 +13,44 @@ lang: en
 
 ## Fields
 ### h
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .h
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### resId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .resId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .rot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tex
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .tex
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### w
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .w
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

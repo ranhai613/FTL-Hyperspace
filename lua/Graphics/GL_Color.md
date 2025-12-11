@@ -25,9 +25,9 @@ ___
 
 ## Static Methods
 ### FromHSV ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [GL_Color](../Graphics/GL_Color) .FromHSV (number fH, number fS, number fV, number fA)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
@@ -35,26 +35,26 @@ ___
 
 ## Fields
 ### a
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .a
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### b
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .b
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### g
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .g
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### r
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .r
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

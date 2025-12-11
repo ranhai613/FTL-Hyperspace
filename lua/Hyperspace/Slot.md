@@ -13,23 +13,23 @@ lang: en
 
 ## Fields
 ### roomId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### slotId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slotId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### worldLocation (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ___

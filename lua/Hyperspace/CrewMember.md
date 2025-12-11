@@ -25,1324 +25,1324 @@ ___
 
 ## Static Methods
 ### GetSkillFromSystem ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### integer .GetSkillFromSystem (integer systemId)
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### ActivatePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ActivatePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ApplyDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ApplyDamage (number damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AtFinalGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :AtFinalGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AtGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :AtGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### BadAtCombat ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :BadAtCombat ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### BlockRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :BlockRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanBurn ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanBurn ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanFight ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanFight ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanHeal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanHeal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanMan ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanMan ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanSabotage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanSabotage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanStim ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanStim ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanSuffocate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanSuffocate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckFighting ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CheckFighting ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckForTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CheckForTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckRoomPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CheckRoomPath (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CheckSkills ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CheckSkills ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Cleanup ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Cleanup ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ClearPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ClearPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ClearPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ClearPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ClearTask ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ClearTask ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Clone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Clone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CloseDoorBehind ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CloseDoorBehind ([Door](../Hyperspace/Door) door)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ContainsPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ContainsPoint (integer x, integer y)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CountForVictory ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CountForVictory ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CycleColorLayer ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CycleColorLayer (integer unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DirectModifyHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :DirectModifyHealth (number health)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EmptySlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EmptySlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ExactTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ExactTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### FindSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :FindSlot (integer roomId, integer slotId, boolean closeEnough)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### FireFightingSoundEffect ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :FireFightingSoundEffect ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceMindControl ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ForceMindControl (boolean force)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Functional ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Functional ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetControllable ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetControllable ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDamageMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetDamageMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetFinalGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetFinalGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetFireRepairMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetFireRepairMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetIntegerHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetIntegerHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetIntruder ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetIntruder ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetLongName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetLongName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMaxHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetMaxHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMoveSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetMoveSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMoveSpeedMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetMoveSpeedMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNewGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetNewGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetNextGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetNextGoal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPowerCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### pair\<number, number\> :GetPowerCooldown ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPriority ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetPriority ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRepairSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetRepairSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRepairingId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetRepairingId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetResisted ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetResisted ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRoomDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Damage](../Hyperspace/Damage) :GetRoomDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSavedPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :GetSavedPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSkillLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSkillLevel (integer skillId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSkillModifier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetSkillModifier (integer skillId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSkillProgress ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### pair\<integer, integer\> :GetSkillProgress (integer skillId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpecies ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetSpecies ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSuffocationMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetSuffocationMultiplier ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetUniqueRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetUniqueRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### HasSpecialPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :HasSpecialPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IncreaseSkill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :IncreaseSkill (integer skillId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### InitializeSkills ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :InitializeSkills ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### InsideRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :InsideRoom (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsAnaerobic ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsAnaerobic ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsBusy ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsBusy ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsCloned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsCloned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsCrew ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsCrew ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsDead ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsDead ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsManningArtillery ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsManningArtillery ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsTelepathic ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsTelepathic ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Jump ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Jump ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Kill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Kill (boolean noClone)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadState (integer fileHelper)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### MasterSkill ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :MasterSkill (integer skillId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ModifyHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ModifyHealth (number health)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### MoveToRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :MoveToRoom (integer roomId, integer slotId, boolean forceMove)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### MultiShots ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :MultiShots ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### NeedFrozenLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :NeedFrozenLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### NeedsSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :NeedsSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender (boolean outlineOnly)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRenderHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRenderHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRenderPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRenderPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OutOfGame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :OutOfGame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PermanentDeath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :PermanentDeath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PositionShift ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :PositionShift ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PowerReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :PowerReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ProvidesPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ProvidesPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ProvidesVision ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ProvidesVision ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ReadyToFight ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ReadyToFight ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderSkillUpAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderSkillUpAnimation ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Repairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Repairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RepairingFire ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :RepairingFire ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RepairingSystem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :RepairingSystem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ResetPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ResetPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Restart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Restart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RestorePosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :RestorePosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Sabotaging ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Sabotaging ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SavePosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SavePosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SaveState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SaveState (integer fileHelper)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SelectSabotageTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :SelectSabotageTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCloneReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCloneReady (boolean cloneReady)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentShip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentShip (integer shipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentSystem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentSystem ([ShipSystem](../Hyperspace/ShipSystem) sys)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentTarget ([StatBoostDefinition.CrewTarget](../Hyperspace/StatBoostDefinition.CrewTarget) target, boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDamageBoost ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDamageBoost (number damageBoost)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDeathNumber ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDeathNumber (integer deathNum)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetFrozen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetFrozen (boolean frozen)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetFrozenLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetFrozenLocation (boolean frozenLocation)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHealthBoost ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHealthBoost (integer healthBoost)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMedbay ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMedbay (number health)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMindControl ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMindControl (boolean controlled)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetName ([TextString](../Hyperspace/TextString) name, boolean force)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetOutOfGame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetOutOfGame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :SetPath (Path path)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetPosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetPosition ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetResisted ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetResisted (boolean resisted)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetRoom (integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetRoomPath ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetRoomPath (integer slotId, integer roomId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSavePosition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSavePosition ([Slot](../Hyperspace/Slot) position)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSex ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSex (boolean male)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSkillProgress ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSkillProgress (integer skillId, integer skillLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetTask ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetTask (CrewTask task)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ShipDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ShipDamage (number damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StartRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StartRepair ([Repairable](../Hyperspace/Repairable) toRepair)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StartTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StartTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StartTeleportArrive ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StartTeleportArrive ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StopRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StopRepairing ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateMovement ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateMovement ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### UpdateRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateRepair ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTarget (integer unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### WithinRect ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :WithinRect (integer x, integer y, integer w, integer h)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bActiveManning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bActiveManning
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bCloned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCloned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFighting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFighting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFrozen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFrozen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bFrozenLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bFrozenLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bMindControlled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bMindControlled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bOutOfGame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOutOfGame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bResisted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bResisted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSharedSpot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSharedSpot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSuffocating
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSuffocating
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### blockingDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .blockingDoor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### blueprint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) .blueprint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boardingGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### BoardingGoal .boardingGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### clone_ready
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .clone_ready
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewAnimation](../Hyperspace/CrewAnimation) .crewAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [StatBoostDefinition.CrewTarget](../Hyperspace/StatBoostDefinition.CrewTarget) .crewTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Repairable](../Hyperspace/Repairable) .currentRepair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .currentSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .currentSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .currentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .extend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fCloneDying
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fCloneDying
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fMedbay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fMedbay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fMindDamageBoost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fMindDamageBoost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fStunTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fStunTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### finalGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .finalGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flashHealthTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashHealthTracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### goal_x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .goal_x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### goal_y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .goal_y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .healing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healthBar
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedRect .healthBar
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healthBoost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .healthBoost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healthBox
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .healthBox
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### healthBoxRed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .healthBoxRed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### height
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .height
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iDeathNumber
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iDeathNumber
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iManningId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iManningId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iOnFire
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iRepairId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iRepairId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iRoomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iRoomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iStackId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iStackId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### intruder
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .intruder
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastDamageTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lastDamageTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastHealthChange
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lastHealthChange
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastLevelUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastLevelUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### last_door
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .last_door
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### levelUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .levelUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mindControlled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .mindControlled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### moveGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .moveGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### movementTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .movementTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### new_path
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .new_path
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### path
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### Path .path
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### savedPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .savedPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### scale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .scale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selectionImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .selectionImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selectionState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selectionState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ship
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Ship](../Hyperspace/Ship) .ship
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### skillUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<vector\<[AnimationTracker](../Hyperspace/AnimationTracker)\>\> .skillUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### skillsEarned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<vector\<boolean\>\> .skillsEarned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### species
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .species
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### speed_x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .speed_x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### speed_y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .speed_y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stats
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [SCrewStats](../Hyperspace/SCrewStats) .stats
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stunIcon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .stunIcon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stunned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .stunned
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### task
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CrewTask .task
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### usingSkill
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .usingSkill
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### width
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .width
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### x (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### x_destination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .x_destination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### y (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### y_destination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .y_destination
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

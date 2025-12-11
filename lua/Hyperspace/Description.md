@@ -13,62 +13,62 @@ lang: en
 
 ## Fields
 ### baseRarity
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .baseRarity
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .bp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .cost
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### description
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .description
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### locked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .locked
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rarity
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .rarity
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shortTitle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortTitle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .tip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### title
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .title
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .tooltip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

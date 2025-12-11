@@ -19,30 +19,30 @@ ___
 
 ## Static Methods
 ### GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [CustomAugmentManager](../Hyperspace/CustomAugmentManager) .GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### GetAugmentDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [AugmentDefinition](../Hyperspace/AugmentDefinition) :GetAugmentDefinition (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipAugments ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unordered_map\<string, integer\> :GetShipAugments (integer iShipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsAugment ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsAugment (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

@@ -15,8 +15,8 @@ Extends: [Repairable](../Hyperspace/Repairable)
 
 ## Fields
 ### soundName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .soundName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

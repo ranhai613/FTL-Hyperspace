@@ -13,14 +13,14 @@ lang: en
 
 ## Fields
 ### fake
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .fake
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

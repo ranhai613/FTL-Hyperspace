@@ -21,32 +21,32 @@ ___
 
 ## Fields
 ### blue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .blue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### max_group
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .max_group
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### max_level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .max_level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### min_level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .min_level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### object
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .object
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -13,32 +13,32 @@ lang: en
 
 ## Fields
 ### gib
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .gib
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mirror
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .mirror
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rotate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .rotate
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### slide
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slide
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

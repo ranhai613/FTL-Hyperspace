@@ -13,17 +13,17 @@ lang: en
 
 ## Fields
 ### orig (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [SystemBox](../Hyperspace/SystemBox) .orig
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 The SystemBox associated with this SystemBox_Extend.
 
 ______
 ### xOffset
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .xOffset
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The offset from this SystemBox to the next in the UI.
 THIS IS DEPRECIATED IN FAVOR OF `ShipSystem_Extend.xOffset`!
 

@@ -20,95 +20,95 @@ ___
 
 ## Methods
 ### GetAlphaLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetAlphaLevel (boolean reverse)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Progress ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :Progress (number speed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetLoop (boolean loop, number loopDelay)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetProgress ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetProgress (number time)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Start ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Start (number time)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StartReverse ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StartReverse (number time)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Stop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Stop (boolean resetTime)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### currentDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .currentDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### current_time
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .current_time
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### done
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .done
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .loop
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loopDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .loopDelay
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### reverse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .reverse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### running
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .running
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### time
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .time
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

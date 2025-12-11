@@ -12,30 +12,30 @@ lang: en
 
 ## Methods
 ### GetAchievementStatus ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetAchievementStatus (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetAchievement ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetAchievement (string name, boolean noPopup)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Used to award achievements (CheckShipAchievement is automatically called if needed)
 
 ______
 ### UpdateVariableAchievements ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :UpdateVariableAchievements (string varName, integer varValue, boolean inGame=true)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### instance (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CustomAchievementTracker](../Hyperspace/CustomAchievementTracker) .instance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

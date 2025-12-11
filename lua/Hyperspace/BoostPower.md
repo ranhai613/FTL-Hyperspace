@@ -13,20 +13,20 @@ lang: en
 
 ## Fields
 ### amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .amount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

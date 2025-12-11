@@ -13,9 +13,9 @@ lang: en
 
 ## Fields
 ### currentScore (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TopScore](../Hyperspace/TopScore) .currentScore
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ___

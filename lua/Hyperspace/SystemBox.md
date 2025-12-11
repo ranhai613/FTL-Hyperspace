@@ -27,30 +27,30 @@ ___
 
 ## Fields
 ### bPlayerUI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bPlayerUI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [SystemBox_Extend](../Hyperspace/SystemBox_Extend) .extend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 The SystemBox_Extend associated with this SystemBox.
 
 ______
 ### location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .location
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The location of the SystemBox.
 
 ______
 ### pSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .pSystem
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 The ShipSystem managed by this SystemBox.
 
 ___

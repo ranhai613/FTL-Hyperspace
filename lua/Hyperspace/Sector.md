@@ -13,22 +13,22 @@ lang: en
 
 ## Fields
 ### description (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [SectorDescription](../Hyperspace/SectorDescription) .description
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ______
 ### level (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### visited
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .visited
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

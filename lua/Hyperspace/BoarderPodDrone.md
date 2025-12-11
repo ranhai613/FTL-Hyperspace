@@ -22,83 +22,83 @@ ___
 
 ## Methods
 ### CanBeDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanBeDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CollisionMoving ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDeployed (boolean _deployed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetMovementTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bDeliveredDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDeliveredDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### baseSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boarderDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### BoarderDrone .boarderDrone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### colorSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorSheet
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### diedInSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .diedInSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .droneImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### flame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .flame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startingPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

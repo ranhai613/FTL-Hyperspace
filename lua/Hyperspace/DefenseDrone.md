@@ -22,89 +22,89 @@ ___
 
 ## Methods
 ### GetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetTooltip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PickTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetWeaponTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTargetObject ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### currentSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .currentSpeed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentTargetType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentTargetType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .drone_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### engine_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .engine_image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### gun_image_charging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .gun_image_charging
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### gun_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .gun_image_off
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### gun_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .gun_image_on
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shotAtTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .shotAtTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

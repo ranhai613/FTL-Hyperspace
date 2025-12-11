@@ -14,9 +14,9 @@ Extends: [Selectable](../Hyperspace/Selectable)
 
 ## Methods
 ### FillSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :FillSlot (integer slot, boolean intruder)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Set the slot to occupied. To empty the slot, use `Ship:EmptySlots`.
 
 ___
@@ -24,41 +24,41 @@ ___
 
 ## Fields
 ### bBlackedOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBlackedOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extend (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Room_Extend](../Hyperspace/Room_Extend) .extend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### highlightPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .highlightPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### highlightPrimitive2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .highlightPrimitive2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iRoomId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iRoomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### rect (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .rect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ___

@@ -20,15 +20,15 @@ ___
 
 ## Methods
 ### CreateEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :CreateEvent (string name, integer worldLevel, boolean ignoreUnique)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetBaseEvent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :GetBaseEvent (string name, integer worldLevel, boolean ignoreUnique, integer seed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

@@ -12,59 +12,59 @@ lang: en
 
 ## Methods
 ### __tostring ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :__tostring ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### getDeprecatedIntegerVersion ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :getDeprecatedIntegerVersion ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### getFeatureName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :getFeatureName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### isFeatureBuild ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :isFeatureBuild ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### toIdentifierString ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :toIdentifierString ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### toVersionString ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :toVersionString ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### major (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### uint .major
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### minor (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### uint .minor
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### patch (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### uint .patch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

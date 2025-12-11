@@ -14,33 +14,33 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
 ## Methods
 ### AddAugment ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddAugment ([AugmentBlueprint](../Hyperspace/AugmentBlueprint) bp, boolean free, boolean forceCargo)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AddDrone ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddDrone ([DroneBlueprint](../Hyperspace/DroneBlueprint) bp, boolean free, boolean forceCargo)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AddToCargo ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddToCargo (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### AddWeapon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddWeapon ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp, boolean free, boolean forceCargo)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCargoHold ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<string\> :GetCargoHold ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

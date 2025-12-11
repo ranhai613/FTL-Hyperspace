@@ -20,9 +20,9 @@ ___
 
 ## Methods
 ### CreateShip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ShipManager](../Hyperspace/ShipManager) :CreateShip ([ShipBlueprint](../Hyperspace/ShipBlueprint) shipBlueprint, integer sector, ShipEvent event)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

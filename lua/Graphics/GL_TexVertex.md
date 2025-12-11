@@ -21,26 +21,26 @@ ___
 
 ## Fields
 ### u
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .u
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### v
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .v
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

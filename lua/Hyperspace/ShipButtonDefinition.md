@@ -13,8 +13,8 @@ lang: en
 
 ## Fields
 ### name (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

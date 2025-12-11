@@ -22,21 +22,21 @@ ___
 
 ## Methods
 ### OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnInit ([Point](../Hyperspace/Point) pos, [Point](../Hyperspace/Point) size, integer cornerInset, [TextString](../Hyperspace/TextString) buttonLabel, integer font)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ResetPrimitives ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ResetPrimitives ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

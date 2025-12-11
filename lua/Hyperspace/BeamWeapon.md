@@ -22,161 +22,161 @@ ___
 
 ## Methods
 ### OnRenderSpecific ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### animationTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .animationTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bDamageSuperShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDamageSuperShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### checkedCollision
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .checkedCollision
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### contactAnimations
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .contactAnimations
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dh
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .dh
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### final_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .final_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastSmokeAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastSmokeAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### last_collision
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) .last_collision
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### length
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .length
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lifespan
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### movingTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### movingTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .movingTargetId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### oneSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .oneSpace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### piercedShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .piercedShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shield_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shield_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### smokeAnims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .smokeAnims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundChannel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .soundChannel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### start_heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .start_heading
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sub_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_end
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sub_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target1
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target1
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weapAnimation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

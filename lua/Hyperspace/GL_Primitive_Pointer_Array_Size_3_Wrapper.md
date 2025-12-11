@@ -12,15 +12,15 @@ lang: en
 
 ## Methods
 ### __getitem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [GL_Primitive](../Graphics/GL_Primitive) :__getitem (uint unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __setitem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unknown :__setitem (uint unknown, [GL_Primitive](../Graphics/GL_Primitive) unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

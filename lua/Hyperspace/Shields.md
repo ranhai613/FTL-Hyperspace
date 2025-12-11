@@ -22,167 +22,167 @@ ___
 
 ## Methods
 ### AddSuperShield ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddSuperShield ([Point](../Hyperspace/Point) pos)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CollisionReal ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionReal (number x, number y, [Damage](../Hyperspace/Damage) damage, boolean force)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### InstantCharge ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :InstantCharge ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetBaseEllipse ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetBaseEllipse ([Ellipse](../Hyperspace/Ellipse) ellipse)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHackingLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bBarrierMode
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bBarrierMode
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bEnemyPresent
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bEnemyPresent
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bExcessChargeHack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bExcessChargeHack
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### baseShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Ellipse](../Hyperspace/Ellipse) .baseShield
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### chargeTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .chargeTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ellipseRatio
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .ellipseRatio
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iHighlightedSide
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iHighlightedSide
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastHitShieldLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastHitShieldLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastHitTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .lastHitTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldHits
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Shields.ShieldAnimation](../Hyperspace/Shields.ShieldAnimation)\> .shieldHits
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .shieldImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldImageName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .shieldImageName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shieldPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Shield](../Hyperspace/Shield) .shields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldsDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldsDownPoint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shieldsDownPoint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldsUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shields_shutdown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .shields_shutdown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superShieldDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .superShieldDown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superShieldUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .superShieldUp
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superUpLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .superUpLoc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

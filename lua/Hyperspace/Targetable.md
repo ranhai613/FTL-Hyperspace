@@ -12,113 +12,113 @@ lang: en
 
 ## Methods
 ### DamageTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :DamageTarget ([Pointf](../Hyperspace/Pointf) pos, [Damage](../Hyperspace/Damage) damage)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetAllTargettingPoints ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<[Pointf](../Hyperspace/Pointf)\> :GetAllTargettingPoints ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetIsDying ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetIsDying ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetIsJumping ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetIsJumping ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetOwnerId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetOwnerId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRandomTargettingPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelfId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelfId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Rect](../Hyperspace/Rect) :GetShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShieldPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ShieldPower](../Hyperspace/ShieldPower) :GetShieldPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShieldShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Ellipse](../Hyperspace/Ellipse) :GetShieldShape ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpaceId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSpaceId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsCloaked ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsCloaked ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ValidTarget ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### hostile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hostile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targeted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .targeted
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

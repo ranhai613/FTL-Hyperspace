@@ -13,8 +13,8 @@ lang: en
 
 ## Fields
 ### selectedState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selectedState
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

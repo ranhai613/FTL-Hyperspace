@@ -26,57 +26,57 @@ ___
 
 ## Methods
 ### __getitem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :__getitem (string unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __setitem ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unknown :__setitem (string unknown, integer unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### clear ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unknown :clear ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### del ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unknown :del (string unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### empty ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :empty ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### get ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :get (string unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### has_key ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :has_key (string unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### set ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### unknown :set (string unknown, integer unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### size ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### uint :size ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 

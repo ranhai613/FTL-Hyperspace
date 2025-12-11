@@ -20,53 +20,53 @@ ___
 
 ## Methods
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### arrow
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .arrow
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### arrow2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .arrow2
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### arrow2_color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .arrow2_color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### arrow_color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .arrow_color
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### blitSize
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .blitSize
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rotation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .rotation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -13,32 +13,32 @@ lang: en
 
 ## Fields
 ### hitShieldSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .hitShieldSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hitShipSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .hitShipSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .image
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### launchSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .launchSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .missSounds
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

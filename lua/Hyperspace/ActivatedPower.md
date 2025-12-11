@@ -38,242 +38,242 @@ ___
 
 ## Methods
 ### ActivatePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ActivatePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ActivateTemporaryPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ActivateTemporaryPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CancelPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :CancelPower (boolean clearAnim)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ChangePowerDef ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ChangePowerDef ([ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) newDef)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DisablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :DisablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EnableInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EnableInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EnablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EnablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCrewBoxResourceWidth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetCrewBoxResourceWidth (integer mode)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPowerDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Damage](../Hyperspace/Damage) :GetPowerDamage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PowerReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### PowerReadyState :PowerReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PowerReq ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### PowerReadyState :PowerReq ([ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) req)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PrepareAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PrepareAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PreparePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PreparePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PrepareTemporaryAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :PrepareTemporaryAnimation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### TemporaryPowerFinished ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :TemporaryPowerFinished ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### crew (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .crew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### crew_ex (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .crew_ex
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### def (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .def
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### effectAnim (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .effectAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectFinishAnim (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .effectFinishAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectPos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .effectPos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### effectWorldPos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .effectWorldPos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### extraAnims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .extraAnims
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### modifiedChargesPerJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .modifiedChargesPerJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### modifiedPowerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .modifiedPowerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerActivated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .powerActivated
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .powerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .powerCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .powerDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerResources (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ActivatedPowerResource](../Hyperspace/ActivatedPowerResource)\> .powerResources
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .powerRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .powerShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tempEffectAnim (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .tempEffectAnim
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tempEffectStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .tempEffectStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### temporaryPowerActive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .temporaryPowerActive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### temporaryPowerDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .temporaryPowerDone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### temporaryPowerDuration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .temporaryPowerDuration
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

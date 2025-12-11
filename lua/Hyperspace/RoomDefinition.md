@@ -21,32 +21,32 @@ ___
 
 ## Fields
 ### hullDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .hullDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### ionDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .ionDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sensorBlind
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .sensorBlind
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sysDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .sysDamageResistChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

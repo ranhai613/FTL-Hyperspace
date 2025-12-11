@@ -20,41 +20,41 @@ ___
 
 ## Methods
 ### Draw ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Draw (integer x, integer y)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### DrawMask ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :DrawMask (integer unk)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### mask
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .mask
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### outline
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .outline
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### pattern
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .pattern
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### rect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .rect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

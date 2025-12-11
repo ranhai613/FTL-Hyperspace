@@ -13,16 +13,16 @@ lang: en
 
 ## Fields
 ### bOpen (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOpen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### shipBuilder (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShipBuilder](../Hyperspace/ShipBuilder) .shipBuilder
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ___

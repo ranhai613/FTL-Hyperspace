@@ -13,20 +13,20 @@ lang: en
 
 ## Fields
 ### first
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .first
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### second
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .second
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### super
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .super
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -1,5 +1,21 @@
 /* Lua API docs theme inspired by IsaacDocs */
 
+.md-nav__link {
+  align-items:center;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  margin-top:.625em;
+  overflow:hidden;
+  scroll-snap-align:start;
+  text-overflow:ellipsis;
+  transition:color 125ms
+}
+
+.md-nav__item {
+  padding:0 .6rem;
+}
+
 /*
   Light/dark theming is driven by CSS variables scoped to body.lua-doc.
   - Default (no extra class): light theme
@@ -135,9 +151,33 @@ body.lua-doc.lua-dark {
   --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
 }
 
-h3[aria-label$='Functions'],
-h3[aria-label$='StaticFunctions'],
-h3[aria-label$='Variables'],
+nav[aria-label='Methods'] {
+    border-left-color: var(--function-color) !important;
+}
+
+nav[aria-label='StaticMethods'] {
+    border-left-color: var(--static-function-color) !important;
+}
+
+nav[aria-label='Fields'] {
+    border-left-color: var(--var-color) !important;
+}
+
+nav[aria-label='Constructors'] {
+    border-left-color: var(--constructor-color) !important;
+}
+
+nav[aria-label='Operators'] {
+    border-left-color: var(--operator-color) !important;
+}
+
+nav[aria-label='Constants'] {
+    border-left-color: var(--constants-color) !important;
+}
+
+h3[aria-label$='Methods'],
+h3[aria-label$='StaticMethods'],
+h3[aria-label$='Fields'],
 h3[aria-label$='Operators'],
 h3[aria-label$='Constants'],
 h3[aria-label$='Constructors'] {
@@ -147,15 +187,15 @@ h3[aria-label$='Constructors'] {
     display: inline-block;
 }
 
-h3[aria-label$='Functions'] {
+h3[aria-label$='Methods'] {
     background-color: var(--function-color);
 }
 
-h3[aria-label$='StaticFunctions'] {
+h3[aria-label$='StaticMethods'] {
     background-color: var(--static-function-color);
 }
 
-h3[aria-label$='Variables'] {
+h3[aria-label$='Fields'] {
     background-color: var(--var-color);
 }
 
@@ -171,9 +211,9 @@ h3[aria-label$='Constants'] {
     background-color: var(--constants-color);
 }
 
-h4[aria-label$='Functions'],
-h4[aria-label$='StaticFunctions'],
-h4[aria-label$='Variables'],
+h4[aria-label$='Methods'],
+h4[aria-label$='StaticMethods'],
+h4[aria-label$='Fields'],
 h4[aria-label$='Operators'],
 h4[aria-label$='Constants'],
 h4[aria-label$='Constructors'] {
@@ -185,15 +225,15 @@ h4[aria-label$='Constructors'] {
     line-height: 1.6;
 }
 
-h4[aria-label$='Functions'] {
+h4[aria-label$='Methods'] {
     background-color: var(--function-color-light);
 }
 
-h4[aria-label$='StaticFunctions'] {
+h4[aria-label$='StaticMethods'] {
     background-color: var(--static-function-color-light);
 }
 
-h4[aria-label$='Variables'] {
+h4[aria-label$='Fields'] {
     background-color: var(--var-color-light);
 }
 
@@ -307,7 +347,7 @@ h4[aria-label$='Constants'] {
 .lua-page-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 0.2rem;
 }
 
 .lua-page-wrapper .lua-main {
@@ -316,7 +356,7 @@ h4[aria-label$='Constants'] {
 }
 
 .lua-nav-left {
-  flex: 0 0 260px;
+  flex: 0 0 230px;
   background: var(--lua-nav-bg);
   border-right: 1px solid var(--lua-border-color);
   padding: 1rem;
@@ -389,12 +429,21 @@ h4[aria-label$='Constants'] {
   font-weight: 600;
 }
 
+.lua-nav-title {
+  text-align: center;
+  border-bottom: 1px solid #ababab;
+  display: block;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 0 .6rem;
+  text-overflow: ellipsis;
+}
+
 .lua-nav-right {
-  flex: 0 0 260px;
+  flex: 0 0 230px;
   background: var(--lua-nav-bg);
   border-left: 1px solid var(--lua-border-color);
-  padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--lua-nav-text);
   position: sticky;
   top: 1rem;
@@ -425,6 +474,27 @@ h4[aria-label$='Constants'] {
 
 .lua-nav-right a:hover {
   text-decoration: underline;
+}
+
+.lua-nav-right-list-item,
+.lua-nav-right-item {
+  list-style: none;
+  padding: 0 .6rem;
+}
+
+.lua-nav-right-item-list {
+  margin: 0;
+  padding: 0;
+}
+
+.lua-nav-right-item>a {
+  font-weight: 700;
+}
+
+.lua-nav-right-item>nav {
+  border-left: 5px solid #dddddd;
+  line-height: 1.15;
+  margin: 0 0 1.5rem 0;
 }
 
 /* Stack layout on small screens */

@@ -27,20 +27,20 @@ ___
 
 ## Fields
 ### rewards
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .rewards
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

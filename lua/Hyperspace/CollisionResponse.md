@@ -21,26 +21,26 @@ ___
 
 ## Fields
 ### collision_type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .collision_type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### damage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .damage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### point
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .point
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .superDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

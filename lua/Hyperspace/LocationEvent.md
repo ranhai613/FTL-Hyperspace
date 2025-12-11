@@ -20,156 +20,156 @@ ___
 
 ## Methods
 ### AddChoice ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddChoice ([LocationEvent](../Hyperspace/LocationEvent) newEvent, string text, [ChoiceReq](../Hyperspace/ChoiceReq) requirement, boolean hiddenReward)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetChoices ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<[Choice](../Hyperspace/Choice)\> :GetChoices ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RemoveChoice ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :RemoveChoice (integer index)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### beacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .beacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boarders
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [BoardingEvent](../Hyperspace/BoardingEvent) .boarders
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### choices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[Choice](../Hyperspace/Choice)\> .choices
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 If you want to modify the current `Choice` values please refer to `:GetChoices()` instead
 
 ______
 ### distressBeacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .distressBeacon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### environment
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .environment
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### environmentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .environmentTarget
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### eventName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .eventName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fleetPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .fleetPosition
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### gap_ex_cleared
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .gap_ex_cleared
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### modifyPursuit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .modifyPursuit
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### planetImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .planetImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### quest
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .quest
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .repair
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### reveal_map
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .reveal_map
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### reward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .reward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### secretSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .secretSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### spaceImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .spaceImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### store
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .store
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stuff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .stuff
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### unlockShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .unlockShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### unlockShipText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .unlockShipText
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

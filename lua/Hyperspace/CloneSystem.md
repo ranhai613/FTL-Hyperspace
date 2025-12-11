@@ -15,50 +15,50 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Fields
 ### bottom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .bottom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### clone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .clone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fDeathTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fDeathTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fTimeGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fTimeGoal
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fTimeToClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fTimeToClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### gas
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .gas
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### slot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### top
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .top
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -13,9 +13,9 @@ lang: en
 
 ## Fields
 ### bOpen (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bOpen
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ___

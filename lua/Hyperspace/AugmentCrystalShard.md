@@ -13,20 +13,20 @@ lang: en
 
 ## Fields
 ### chance (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .chance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### stacking (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .stacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapon (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .weapon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

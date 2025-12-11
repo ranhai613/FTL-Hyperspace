@@ -15,14 +15,14 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 ## Fields
 ### stacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .stacking
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### value
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .value
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

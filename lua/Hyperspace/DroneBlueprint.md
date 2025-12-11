@@ -15,62 +15,62 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 ## Fields
 ### combatIcon (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .combatIcon
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cooldown (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .cooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### dodge (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .dodge
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneImage (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .droneImage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### level (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .level
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### power (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .power
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### speed (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .speed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### targetType (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .targetType
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### typeName (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .typeName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponBlueprint (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .weaponBlueprint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

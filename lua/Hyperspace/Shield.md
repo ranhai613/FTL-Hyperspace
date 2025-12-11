@@ -13,20 +13,20 @@ lang: en
 
 ## Fields
 ### charger
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .charger
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### power
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [ShieldPower](../Hyperspace/ShieldPower) .power
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### superTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .superTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -14,89 +14,89 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Methods
 ### ForceIncreasePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :ForceIncreasePower (integer amount)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RemoveWeapon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) :RemoveWeapon (integer slot)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetBonusPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### iStartingBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iStartingBatteryPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missile_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .missile_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missile_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .missile_start
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repowerList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<boolean\> .repowerList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .shot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shot_timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .shot_timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### slot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slot_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### userPowered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<boolean\> .userPowered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponsTrashList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weaponsTrashList
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

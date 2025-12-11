@@ -26,59 +26,59 @@ ___
 
 ## Methods
 ### Distance ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :Distance ([Point](../Hyperspace/Point) other)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RelativeDistance ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :RelativeDistance ([Point](../Hyperspace/Point) other)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __add ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :__add ([Point](../Hyperspace/Point) unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __div ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :__div (integer unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __lt ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :__lt ([Point](../Hyperspace/Point) unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __mul ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :__mul (integer unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### __sub ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :__sub ([Point](../Hyperspace/Point) unknown)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .x
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .y
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

@@ -29,212 +29,212 @@ ___
 
 ## Fields
 ### augments
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .augments
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### blueprintName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .blueprintName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### boardingAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .boardingAI
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bp_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .bp_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### cloakFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .cloakFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### customCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[CrewBlueprint](../Hyperspace/CrewBlueprint)\> .customCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### defaultCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .defaultCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### desc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Description](../Hyperspace/Description) .desc
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .droneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .droneSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drone_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .drone_count
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .drones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### floorFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .floorFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .health
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### imgFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .imgFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### layoutFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .layoutFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loadDrones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .loadDrones
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### loadWeapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .loadWeapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### maxSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .maxSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### minSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .minSector
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### missiles
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .missiles
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### originalCrewCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .originalCrewCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### originalDroneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .originalDroneCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### originalWeaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .originalWeaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shieldFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .shieldFile
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipClass
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shipClass
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systemInfo
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### map\<integer, [SystemTemplate](../Hyperspace/SystemTemplate)\> .systemInfo
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### systems
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<integer\> .systems
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### unlock
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .unlock
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .weaponCount
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weaponSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .weaponSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### weapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .weapons
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

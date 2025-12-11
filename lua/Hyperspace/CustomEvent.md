@@ -21,15 +21,15 @@ ___
 
 ## Fields
 ### triggeredEvents (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<uint\> .triggeredEvents
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### unlockShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .unlockShip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

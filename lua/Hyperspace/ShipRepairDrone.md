@@ -15,14 +15,14 @@ Extends: [CombatDrone](../Hyperspace/CombatDrone)
 
 ## Fields
 ### repairBeam
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### CachedImage .repairBeam
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### repairBeams
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<number\> .repairBeams
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

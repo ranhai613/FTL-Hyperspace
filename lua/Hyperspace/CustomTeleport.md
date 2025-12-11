@@ -13,26 +13,26 @@ lang: en
 
 ## Fields
 ### roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .roomId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .shipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### slotId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .slotId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### teleporting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .teleporting
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

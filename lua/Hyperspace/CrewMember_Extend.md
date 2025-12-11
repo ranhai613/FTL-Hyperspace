@@ -20,150 +20,150 @@ ___
 
 ## Methods
 ### CalculateStat ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :CalculateStat ([CrewStat](../Hyperspace/CrewStat) stat, [CrewDefinition](../Hyperspace/CrewDefinition) def, boolean boolValue=nullptr)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CalculateStat ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :CalculateStat ([CrewStat](../Hyperspace/CrewStat) stat, boolean boolValue=nullptr)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 Returns the current `float` and `bool` value for the given `CrewStat`.
 
 ______
 ### GetDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CrewDefinition](../Hyperspace/CrewDefinition) :GetDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### InitiateTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :InitiateTeleport (integer shipId, integer roomId=-1, integer slotId=-1)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .canPhaseThroughDoors
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewPowers (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ActivatedPower](../Hyperspace/ActivatedPower)\> .crewPowers
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### customTele
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CustomTeleport](../Hyperspace/CustomTeleport) .customTele
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### deathTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .deathTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### exploded
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .exploded
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hasSpecialPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .hasSpecialPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### isHealing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .isHealing
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastRoom
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### lastShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .lastShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noClone
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noSlot
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### orig (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .orig
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### passiveHealTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .passiveHealTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerChange
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition)\> .powerChange
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerResourceMap (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### unordered_map\<uint, [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource)\> .powerResourceMap
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### powerResources (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[ActivatedPowerResource](../Hyperspace/ActivatedPowerResource)\> .powerResources
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### selfId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selfId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### transformRace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .transformRace
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Can be set within a CalculateStat callback to transform a crew to a different race.
 
 ______
 ### triggerExplosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .triggerExplosion
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

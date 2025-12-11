@@ -26,203 +26,203 @@ ___
 
 ## Methods
 ### AddSoundQueue ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :AddSoundQueue (integer frame, string sound)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Done ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Done ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadState (integer fd)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnRender ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnRender (number opacity, [GL_Color](../Graphics/GL_Color) color, boolean mirror)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RandomStart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :RandomStart ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SaveState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SaveState (integer fd)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetAnimationId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetAnimationId ([GL_Texture](../Graphics/GL_Texture) tex)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentFrame ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentFrame (integer frame)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetProgress ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetProgress (number progress)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Start ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Start (boolean reset)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### StartReverse ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :StartReverse (boolean reset)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Update ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Update ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### animName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .animName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### animationStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .animationStrip
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bAlwaysMirror
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bAlwaysMirror
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### currentFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .currentFrame
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fScale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fScale
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fYStretch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fYStretch
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### fadeOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .fadeOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### info
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationDescriptor](../Hyperspace/AnimationDescriptor) .info
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mask_x_pos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .mask_x_pos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mask_x_size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .mask_x_size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mask_y_pos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .mask_y_pos
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mask_y_size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .mask_y_size
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### mirroredPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .mirroredPrimitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### primitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .primitive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### randomizeFrames
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .randomizeFrames
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundForward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .soundForward
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundQueue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<vector\<string\>\> .soundQueue
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundReverse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .soundReverse
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### startFadeOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .startFadeOut
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### tracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .tracker
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

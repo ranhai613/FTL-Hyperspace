@@ -13,20 +13,20 @@ lang: en
 
 ## Fields
 ### name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .name
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### shortName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortName
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

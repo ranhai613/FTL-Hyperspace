@@ -20,35 +20,35 @@ ___
 
 ## Methods
 ### Clear ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :Clear ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### accuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .accuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### def
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CustomDamageDefinition](../Hyperspace/CustomDamageDefinition) .def
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### droneAccuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .droneAccuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### sourceShipId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .sourceShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

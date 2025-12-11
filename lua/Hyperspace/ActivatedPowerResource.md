@@ -38,98 +38,98 @@ ___
 
 ## Methods
 ### DisablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :DisablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EnableInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EnableInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### EnablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :EnablePower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCrewBoxResourceWidth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetCrewBoxResourceWidth (integer mode)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetLinkedPowers ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :GetLinkedPowers ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnUpdate ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### PowerReq ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### PowerReadyState :PowerReq ([ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) req)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### crew (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .crew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### crew_ex (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .crew_ex
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### def (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .def
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .enabled
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### modifiedChargesPerJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .modifiedChargesPerJump
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### modifiedPowerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .modifiedPowerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<integer, integer\> .powerCharges
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powerCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### pair\<number, number\> .powerCooldown
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

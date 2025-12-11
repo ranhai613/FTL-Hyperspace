@@ -21,20 +21,20 @@ ___
 
 ## Fields
 ### a
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .a
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### b
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .b
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

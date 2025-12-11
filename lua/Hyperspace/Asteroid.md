@@ -23,14 +23,14 @@ ___
 
 ## Fields
 ### angle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .angle
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### imageId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .imageId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

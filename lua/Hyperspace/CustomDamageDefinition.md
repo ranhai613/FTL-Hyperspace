@@ -20,99 +20,99 @@ ___
 
 ## Methods
 ### GiveId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :GiveId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### accuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .accuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewSpawnChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .crewSpawnChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewSpawns (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<CrewSpawn\> .crewSpawns
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### droneAccuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .droneAccuracyMod
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### erosionChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .erosionChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### erosionEffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### ErosionEffect .erosionEffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### idx (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .idx
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### ionBeamFix
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .ionBeamFix
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noPersDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noPersDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### noSysDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .noSysDamage
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### roomStatBoostChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .roomStatBoostChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### roomStatBoosts (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .roomStatBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ______
 ### statBoostChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .statBoostChance
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### statBoosts (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **read-only**
 
 ___

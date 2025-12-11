@@ -19,147 +19,147 @@ ___
 
 ## Static Methods
 ### GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 #### [CustomShipSelect](../Hyperspace/CustomShipSelect) .GetInstance ()
-{: aria-label='StaticFunctions' }
+{: aria-label='StaticMethods' }
 
 ___
 
 
 ## Methods
 ### ClearSelection ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ClearSelection ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CountUnlockedShips ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :CountUnlockedShips (integer variant)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### FirstPage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :FirstPage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetCurrentPage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetCurrentPage ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDefaultDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CustomShipDefinition](../Hyperspace/CustomShipDefinition) :GetDefaultDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [CustomShipDefinition](../Hyperspace/CustomShipDefinition) :GetDefinition (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetLastSelected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetLastSelected ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetMaxPages ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetMaxPages ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetOrderedShipButtonDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ShipButtonDefinition](../Hyperspace/ShipButtonDefinition) :GetOrderedShipButtonDefinition (integer id)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRandomShipIndex ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetRandomShipIndex ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelectedId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelectedId ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetSelection ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetSelection ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipBlueprint ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetShipBlueprint (integer shipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipButtonDefinition ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ShipButtonDefinition](../Hyperspace/ShipButtonDefinition) :GetShipButtonDefinition (integer id)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipButtonIdFromName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetShipButtonIdFromName (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipButtonListFromID ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [ShipButtonList](../Hyperspace/ShipButtonList) :GetShipButtonListFromID (integer id)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipButtonLists ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### vector\<[ShipButtonList](../Hyperspace/ShipButtonList)\> :GetShipButtonLists ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipButtonOrderIndex ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetShipButtonOrderIndex (integer id)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetShipIdAndVariantFromName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### pair\<integer, integer\> :GetShipIdAndVariantFromName (string name)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### IsOpen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :IsOpen ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ShipCount ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :ShipCount (integer type=0)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### customShipOrder
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<string\> .customShipOrder
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 Each pages is %11 ships, `empty` means that a ship button in the page is skipped, special ships are the two last slots.
 
 ___

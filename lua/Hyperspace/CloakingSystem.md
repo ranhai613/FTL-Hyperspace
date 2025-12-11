@@ -15,20 +15,20 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Fields
 ### bTurnedOn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bTurnedOn
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### soundeffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### string .soundeffect
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .timer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

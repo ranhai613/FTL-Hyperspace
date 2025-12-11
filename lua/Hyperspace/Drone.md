@@ -12,253 +12,253 @@ lang: en
 
 ## Methods
 ### BlowUp ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :BlowUp (boolean silent)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanBeDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanBeDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanBeRecovered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanBeRecovered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Destroyed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Destroyed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDroneHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetDroneHealth ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetDroneSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :GetDroneSlot ([Drone](../Hyperspace/Drone) drone)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetName ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### string :GetName ([Drone](../Hyperspace/Drone) drone)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetPowered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetPowered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetRequiredPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### integer :GetRequiredPower ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetStunned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :GetStunned ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetWorldLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetWorldLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### LoadState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :LoadState (integer fh)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### NeedsRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :NeedsRoom ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnDestroy ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnDestroy ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnInit ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :OnLoop ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RecallOnJump ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :RecallOnJump ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### RenderIcon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :RenderIcon ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SaveState ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SaveState (integer fh)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetCurrentShip ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetCurrentShip (integer shipId)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDeployed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDeployed (boolean _deployed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetDestroyed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetDestroyed (boolean dead, boolean setTimer)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHacked ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHacked (integer level)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetInstantPowered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetInstantPowered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetPowered ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetPowered (boolean _powered)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetSlot ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetSlot (integer room, integer slot)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetWorldLocation ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetWorldLocation ([Point](../Hyperspace/Point) point)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bDead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bDead
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### blueprint (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### [DroneBlueprint](../Hyperspace/DroneBlueprint) .blueprint
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### deployed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .deployed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### destroyedTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .destroyedTimer
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### hackTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .hackTime
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iBonusPower
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iHackLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iHackLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iShipId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 **Read-only**
 
 ______
 ### powerRequired
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .powerRequired
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### powered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .powered
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### poweredAtLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .poweredAtLocation
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### selfId (Read-only)
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .selfId
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .type
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___

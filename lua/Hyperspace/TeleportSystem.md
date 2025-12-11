@@ -14,101 +14,101 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 ## Methods
 ### CanReceive ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanReceive ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### CanSend ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :CanSend ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### Charged ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### boolean :Charged ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### ForceReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :ForceReady ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### GetChargedPercent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### number :GetChargedPercent ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### InitiateTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :InitiateTeleport ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetArmed ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetArmed (integer armed)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ______
 ### SetHackingLevel ()
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
-{: aria-label='Functions' }
+{: aria-label='Methods' }
 
 ___
 
 
 ## Fields
 ### bCanReceive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCanReceive
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bCanSend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bCanSend
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### bSuperShields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### boolean .bSuperShields
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### chargeLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### number .chargeLevel
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### crewSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### vector\<boolean\> .crewSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iArmed
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iNumSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iNumSlots
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ______
 ### iPreparedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 #### integer .iPreparedCrew
-{: aria-label='Variables' }
+{: aria-label='Fields' }
 
 ___
