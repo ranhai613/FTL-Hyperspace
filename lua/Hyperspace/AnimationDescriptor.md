@@ -12,44 +12,45 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### frameHeight
-{: aria-label='Fields' }
+{: #frameHeight aria-label='Fields' }
 #### integer .frameHeight
 {: aria-label='Fields' }
 
 ___
 ### frameWidth
-{: aria-label='Fields' }
+{: #frameWidth aria-label='Fields' }
 #### integer .frameWidth
 {: aria-label='Fields' }
 
 ___
 ### imageHeight
-{: aria-label='Fields' }
+{: #imageHeight aria-label='Fields' }
 #### integer .imageHeight
 {: aria-label='Fields' }
 
 ___
 ### imageWidth
-{: aria-label='Fields' }
+{: #imageWidth aria-label='Fields' }
 #### integer .imageWidth
 {: aria-label='Fields' }
 
 ___
 ### numFrames
-{: aria-label='Fields' }
+{: #numFrames aria-label='Fields' }
 #### integer .numFrames
 {: aria-label='Fields' }
 
 ___
 ### stripStartX
-{: aria-label='Fields' }
+{: #stripStartX aria-label='Fields' }
 #### integer .stripStartX
 {: aria-label='Fields' }
 
 ___
 ### stripStartY
-{: aria-label='Fields' }
+{: #stripStartY aria-label='Fields' }
 #### integer .stripStartY
 {: aria-label='Fields' }
 

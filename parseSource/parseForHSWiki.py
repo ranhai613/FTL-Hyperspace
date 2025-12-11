@@ -112,6 +112,9 @@ def make_str_list_unique(strings: list[str]) -> list[str]:
             result.append(unique_s)
     return result
 
+def to_md_ref(name: str) -> str:
+    return name.replace('(', '').replace(')', '').strip().replace(' ', '-')
+
 class FunctionInfo:
     def __init__(self, name: str, returnType: str, args: list[str], originalName: str|None):
         self.name = name
@@ -246,10 +249,11 @@ class FunctionInfo:
         return None
 
 class WikiPageItem:
-    def __init__(self, name: str, propertyType: PropertyType, className: str, returnType: str, documentation: str|None = None, params_name: list[str]|None = None, params_type: list[str]|None = None, immutable: bool = False, value: int|None = None):
+    def __init__(self, name: str, propertyType: PropertyType, className: str, moduleName: str, returnType: str, documentation: str|None = None, params_name: list[str]|None = None, params_type: list[str]|None = None, immutable: bool = False, value: int|None = None):
         self.name = name
         self.propertyType = propertyType
         self.className = className
+        self.moduleName = moduleName
         self.returnType = returnType
         self.documentation = documentation
         self.params_name = params_name
@@ -290,6 +294,7 @@ class WikiPage:
         self.name = name
         self.moduleName = moduleName
         self.parentNames = parentNames
+        self.subClassNames = set()
         self.constructors = constructors
         self.constants = constants
         self.staticMethods = staticMethods
@@ -299,7 +304,7 @@ class WikiPage:
     def getInheritedItems(self, type: PropertyType) -> set[WikiPageItem]:
         ret = set()
         for parentName in self.parentNames:
-            if parentPage := g_wiki_pages.get(parentName, None) is None:
+            if (parentPage := g_wiki_pages.get(parentName, None)) is None:
                 continue
             
             if type == PropertyType.CONSTRUCTOR:
@@ -329,7 +334,7 @@ class WikiPage:
     def outputConstructors(self) -> str:
         ret = ""
         for constructor in sorted(self.constructors, key=lambda x: x.name):
-            ret += f"___\n### {constructor.name} ()\n{{: aria-label='Constructors' }}\n"
+            ret += f"___\n### {constructor.name} ()\n{{: #{constructor.name} aria-label='Constructors' }}\n"
             params = []
             for i in range(len(constructor.params_name)):
                 params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
@@ -345,8 +350,22 @@ class WikiPage:
     
     def outputConstants(self) -> str:
         ret = ""
+        
+        # Make inherited constants table
+        inherited_constants = self.getInheritedItems(PropertyType.CONSTANT)
+        if inherited_constants:
+            inherited_map = defaultdict(list)
+            for constant in inherited_constants:
+                inherited_map[constant.className].append(constant)
+            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Constants</summary>\n\n"
+            for parentClass in sorted(inherited_map.keys()):
+                ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Constant | Value |\n| --- | --- |\n"
+                for constant in sorted(inherited_map[parentClass], key=lambda x: x.name):
+                    ret += f"| .[{constant.name}]({md_ref_path(self.moduleName, constant.moduleName, constant.className, f"#{to_md_ref(constant.name)}")}) | `{constant.value}` |\n"
+            ret += "\n</details>\n"
+        
         for constant in sorted(self.constants, key=lambda x: x.name):
-            ret += f"___\n### {constant.className}.{constant.name}\n{{: aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
+            ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
             if constant.documentation:
                 ret += f"{constant.documentation}\n"
             ret += "\n"
@@ -358,8 +377,26 @@ class WikiPage:
     
     def outputStaticMethods(self) -> str:
         ret = ""
+        
+        # Make inherited static methods table
+        inherited_methods = self.getInheritedItems(PropertyType.STATICMETHOD)
+        if inherited_methods:
+            inherited_map = defaultdict(list)
+            for method in inherited_methods:
+                inherited_map[method.className].append(method)
+            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Static Methods</summary>\n\n"
+            for parentClass in sorted(inherited_map.keys()):
+                ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Return Type | Method |\n| --- | --- |\n"
+                for method in sorted(inherited_map[parentClass], key=lambda x: x.name):
+                    params = []
+                    for i in range(len(method.params_name)):
+                        params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
+                    params_str = ", ".join(params)
+                    ret += f"| {wrap_type_for_md(method.className, method.returnType)} | .[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
+            ret += "\n</details>\n"
+        
         for method in sorted(self.staticMethods, key=lambda x: x.name):
-            ret += f"___\n### {method.name} ()\n{{: aria-label='StaticMethods' }}\n"
+            ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='StaticMethods' }}\n"
             params = []
             for i in range(len(method.params_name)):
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
@@ -375,8 +412,26 @@ class WikiPage:
     
     def outputMethods(self) -> str:
         ret = ""
+        
+        # Make inherited methods table
+        inherited_methods = self.getInheritedItems(PropertyType.METHOD)
+        if inherited_methods:
+            inherited_map = defaultdict(list)
+            for method in inherited_methods:
+                inherited_map[method.className].append(method)
+            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Methods</summary>\n\n"
+            for parentClass in sorted(inherited_map.keys()):
+                ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Return Type | Method |\n| --- | --- |\n"
+                for method in sorted(inherited_map[parentClass], key=lambda x: x.name):
+                    params = []
+                    for i in range(len(method.params_name)):
+                        params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
+                    params_str = ", ".join(params)
+                    ret += f"| {wrap_type_for_md(method.className, method.returnType)} | :[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
+            ret += "\n</details>\n"
+        
         for method in sorted(self.methods, key=lambda x: x.name):
-            ret += f"___\n### {method.name} ()\n{{: aria-label='Methods' }}\n"
+            ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='Methods' }}\n"
             params = []
             for i in range(len(method.params_name)):
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
@@ -392,11 +447,25 @@ class WikiPage:
     
     def outputFields(self) -> str:
         ret = ""
+        
+        # Make inherited fields table
+        inherited_fields = self.getInheritedItems(PropertyType.FIELD)
+        if inherited_fields:
+            inherited_map = defaultdict(list)
+            for field in inherited_fields:
+                inherited_map[field.className].append(field)
+            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Fields</summary>\n\n"
+            for parentClass in sorted(inherited_map.keys()):
+                ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Type | Field |\n| --- | --- |\n"
+                for field in sorted(inherited_map[parentClass], key=lambda x: x.name):
+                    ret += f"| {wrap_type_for_md(field.className, field.returnType)} | .[{field.name}]({md_ref_path(self.moduleName, field.moduleName, field.className, f"#{to_md_ref(field.name)}-")}) |\n"
+            ret += "\n</details>\n"
+        
         for field in sorted(self.fields, key=lambda x: x.name):
             ret += f"___\n### {field.name}"
             if field.immutable:
                 ret += " (Read-only)"
-            ret += "\n{: aria-label='Fields' }\n"
+            ret += f"\n{{: #{field.name} aria-label='Fields' }}\n"
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
             if field.documentation:
                 ret += f"{field.documentation}\n"
@@ -406,11 +475,46 @@ class WikiPage:
             ret = ret[4:] # remove leading ___
         return ret
     
+    def getAncestorNames(self) -> list[str]:
+        ancestors_list = []
+        if not self.parentNames:
+            return []
+        
+        parents = []
+        ancestors_list_new = []
+        for parentName in sorted(self.parentNames):
+            if (parent := g_wiki_pages.get(parentName, None)) is None:
+                continue
+            
+            parents.append(wrap_type_for_md(self.name, parentName))
+            ancestors_list_new += parent.getAncestorNames() 
+        ancestors_list.append(", ".join(parents))
+        if ancestors_list_new:
+            ancestors_list.append(", ".join(ancestors_list_new))
+        return ancestors_list
+    
+    def outputRelations(self) -> str:
+        ret = ""
+        if self.parentNames:
+            for parentName in sorted(self.parentNames):
+                ret += f"\nExtends: {wrap_type_for_md(self.name, parentName)}"
+                if (parent := g_wiki_pages.get(parentName, None)) is None:
+                    continue
+                
+                ancestors_list = parent.getAncestorNames()
+                if ancestors_list:
+                    ret += f" <- {' <- '.join(ancestors_list)}"
+        
+        if self.subClassNames:
+            ret += "\n\nSubclasses: " + ", ".join([wrap_type_for_md(self.name, subClassName) for subClassName in sorted(self.subClassNames)])
+        
+        return ret
+    
     def Output(self, basePath: str):
         output_path = Path(basePath) / self.moduleName / f"{self.name}.md"
         replace_map = {
             "NAME": self.name,
-            "PARENTS": ", ".join([wrap_type_for_md(self.name, parent) for parent in sorted(self.parentNames)]) if self.parentNames else None,
+            "RELATIONS": self.outputRelations() if self.parentNames or self.subClassNames else None,
             "CONSTRUCTORS": self.outputConstructors() if self.constructors else None,
             "CONSTANTS": self.outputConstants() if self.constants else None,
             "STATIC_METHODS": self.outputStaticMethods() if self.staticMethods else None,
@@ -489,7 +593,13 @@ def get_lua_type(type: str, isClassDef=False, isFuncRet=False) -> str:
     
     return type.replace("::", ".")
 
-def wrap_type_for_md(className: str, typeName: str) -> str:
+def md_ref_path(className: str, parent: str, child: str, tail: str="") -> str:
+    if parent == className:
+        return f"{child.replace('[]', '')}{tail}"
+    else:
+        return f"../{parent}/{child.replace('[]', '')}{tail}"
+
+def wrap_type_for_md(className: str, typeName: str, tail: str="") -> str:
     template_match = re.match(TEMPLATE_PATTERN, typeName)
     if template_match:
         outer_type = template_match.group(1)
@@ -505,10 +615,7 @@ def wrap_type_for_md(className: str, typeName: str) -> str:
     child = levels[1]
     if len(levels) > 2:
         child = ".".join(levels[1:])
-    if parent == className:
-        return f"[{child}]({child.replace('[]', '')})"
-    else:
-        return f"[{child}](../{parent}/{child.replace('[]', '')})"
+    return f"[{child}]({md_ref_path(className, parent, child, tail)})"
     
 
 def format_container_type(className: str) -> str|None:
@@ -576,6 +683,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                 name=className,
                 propertyType=PropertyType.CONSTRUCTOR,
                 className=className,
+                moduleName=moduleName,
                 returnType=return_type,
                 documentation=documentation,
                 params_name=params_name,
@@ -604,6 +712,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                     name=methodName,
                     propertyType=PropertyType.STATICMETHOD if funcType == FuncType.STATIC else PropertyType.METHOD,
                     className=className,
+                    moduleName=moduleName,
                     returnType=return_type,
                     documentation=documentation,
                     params_name=params_name,
@@ -636,6 +745,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                 name=fieldName,
                 propertyType=PropertyType.FIELD,
                 className=className,
+                moduleName=moduleName,
                 returnType=get_lua_type(typeName),
                 documentation=documentation,
                 immutable=immutable
@@ -672,6 +782,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                 name=constantName,
                 propertyType=PropertyType.CONSTANT,
                 className=className,
+                moduleName=moduleName,
                 returnType=get_lua_type(typeName),
                 documentation=documentation,
                 value=value
@@ -887,6 +998,17 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             
             # output_path = f"lua/{moduleName}/{className}.md"
             # create_wiki_md(replace_map, output_path)
+    
+    # Build subclass relationships
+    for full_name, wiki_page in g_wiki_pages.items():
+        if wiki_page.parentNames is None:
+            continue
+        
+        for parentName in wiki_page.parentNames:
+            if (parent := g_wiki_pages.get(parentName, None)) is None:
+                continue
+            parent.subClassNames.add(full_name)
+            
     for wiki_page in g_wiki_pages.values():
         wiki_page.Output("lua")
     return result

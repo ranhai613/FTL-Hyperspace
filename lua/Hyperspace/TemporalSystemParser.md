@@ -10,8 +10,9 @@ lang: en
 
 
 ## Static Methods
+{: #Static-Methods .section}
 ### GetDilationStrength ()
-{: aria-label='StaticMethods' }
+{: #GetDilationStrength aria-label='StaticMethods' }
 #### number .GetDilationStrength (integer effectStrength)
 {: aria-label='StaticMethods' }
 Gets the temporal modifier for a given time dilation value.

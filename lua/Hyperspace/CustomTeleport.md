@@ -12,26 +12,27 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### roomId
-{: aria-label='Fields' }
+{: #roomId aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### shipId
-{: aria-label='Fields' }
+{: #shipId aria-label='Fields' }
 #### integer .shipId
 {: aria-label='Fields' }
 
 ___
 ### slotId
-{: aria-label='Fields' }
+{: #slotId aria-label='Fields' }
 #### integer .slotId
 {: aria-label='Fields' }
 
 ___
 ### teleporting
-{: aria-label='Fields' }
+{: #teleporting aria-label='Fields' }
 #### boolean .teleporting
 {: aria-label='Fields' }
 

@@ -7,9 +7,14 @@ lang: en
 # Class "FocusWindow"
 
 
+
+Subclasses: [ChoiceBox](../Hyperspace/ChoiceBox), [Equipment](../Hyperspace/Equipment), [StarMap](../Hyperspace/StarMap), [TabbedWindow](../Hyperspace/TabbedWindow)
+
+
 ## Constructors
+{: #Constructors .section}
 ### FocusWindow ()
-{: aria-label='Constructors' }
+{: #FocusWindow aria-label='Constructors' }
 #### [FocusWindow](../Hyperspace/FocusWindow) FocusWindow ()
 {: aria-label='Constructors' }
 
@@ -20,20 +25,21 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### bCloseButtonSelected
-{: aria-label='Fields' }
+{: #bCloseButtonSelected aria-label='Fields' }
 #### boolean .bCloseButtonSelected
 {: aria-label='Fields' }
 
 ___
 ### bFullFocus
-{: aria-label='Fields' }
+{: #bFullFocus aria-label='Fields' }
 #### boolean .bFullFocus
 {: aria-label='Fields' }
 
 ___
 ### bOpen
-{: aria-label='Fields' }
+{: #bOpen aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
 

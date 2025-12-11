@@ -11,14 +11,15 @@ lang: en
 
 
 ## Methods
+{: #Methods .section}
 ### PlaySoundMix ()
-{: aria-label='Methods' }
+{: #PlaySoundMix aria-label='Methods' }
 #### integer :PlaySoundMix (string soundName, number volume, boolean loop)
 {: aria-label='Methods' }
 
 ___
 ### StopChannel ()
-{: aria-label='Methods' }
+{: #StopChannel aria-label='Methods' }
 #### void :StopChannel (integer channel, number fade)
 {: aria-label='Methods' }
 The channel value is given by `PlaySoundMix`

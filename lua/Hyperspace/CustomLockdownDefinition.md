@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### CustomLockdownDefinition ()
-{: aria-label='Constructors' }
+{: #CustomLockdownDefinition aria-label='Constructors' }
 #### [CustomLockdownDefinition](../Hyperspace/CustomLockdownDefinition) CustomLockdownDefinition ()
 {: aria-label='Constructors' }
 
@@ -20,8 +21,9 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### anims
-{: aria-label='Fields' }
+{: #anims aria-label='Fields' }
 #### vector\<string\> .anims
 {: aria-label='Fields' }
 A selection of animation names for each shard to use.
@@ -30,28 +32,28 @@ Door shards will use the first animation from the list.
 
 ___
 ### canDilate
-{: aria-label='Fields' }
+{: #canDilate aria-label='Fields' }
 #### boolean .canDilate
 {: aria-label='Fields' }
 If this lockdown is affected by time dilation.
 
 ___
 ### color
-{: aria-label='Fields' }
+{: #color aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 The color that each shard will be tinted.
 
 ___
 ### duration
-{: aria-label='Fields' }
+{: #duration aria-label='Fields' }
 #### number .duration
 {: aria-label='Fields' }
 The amount of time that this lockdown will last, in seconds.
 
 ___
 ### health
-{: aria-label='Fields' }
+{: #health aria-label='Fields' }
 #### integer .health
 {: aria-label='Fields' }
 The health of each shard.

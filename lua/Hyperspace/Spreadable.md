@@ -6,7 +6,10 @@ lang: en
 
 # Class "Spreadable"
 
-Extends: [Repairable](../Hyperspace/Repairable)
+
+Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Selectable)
+
+Subclasses: [Fire](../Hyperspace/Fire)
 
 
 
@@ -14,8 +17,32 @@ Extends: [Repairable](../Hyperspace/Repairable)
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Repairable](Repairable)
+
+| Type | Field |
+| --- | --- |
+| number | .[fDamage](Repairable#fDamage-) |
+| number | .[fMaxDamage](Repairable#fMaxDamage-) |
+| integer | .[iRepairCount](Repairable#iRepairCount-) |
+| string | .[name](Repairable#name-) |
+| [Point](../Hyperspace/Point) | .[pLoc](Repairable#pLoc-) |
+| integer | .[roomId](Repairable#roomId-) |
+| [ShipObject](../Hyperspace/ShipObject) | .[shipObj](Repairable#shipObj-) |
+
+#### From [Selectable](Selectable)
+
+| Type | Field |
+| --- | --- |
+| integer | .[selectedState](Selectable#selectedState-) |
+
+</details>
+___
 ### soundName
-{: aria-label='Fields' }
+{: #soundName aria-label='Fields' }
 #### string .soundName
 {: aria-label='Fields' }
 

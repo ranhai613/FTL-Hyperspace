@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### CrewDesc ()
-{: aria-label='Constructors' }
+{: #CrewDesc aria-label='Constructors' }
 #### [CrewDesc](../Hyperspace/CrewDesc) CrewDesc ()
 {: aria-label='Constructors' }
 
@@ -20,20 +21,21 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### amount
-{: aria-label='Fields' }
+{: #amount aria-label='Fields' }
 #### integer .amount
 {: aria-label='Fields' }
 
 ___
 ### prop
-{: aria-label='Fields' }
+{: #prop aria-label='Fields' }
 #### number .prop
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

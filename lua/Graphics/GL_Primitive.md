@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### GL_Primitive ()
-{: aria-label='Constructors' }
+{: #GL_Primitive aria-label='Constructors' }
 #### [GL_Primitive](../Graphics/GL_Primitive) GL_Primitive ()
 {: aria-label='Constructors' }
 
@@ -20,50 +21,51 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### color
-{: aria-label='Fields' }
+{: #color aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
 ___
 ### hasColor
-{: aria-label='Fields' }
+{: #hasColor aria-label='Fields' }
 #### boolean .hasColor
 {: aria-label='Fields' }
 
 ___
 ### hasTexture
-{: aria-label='Fields' }
+{: #hasTexture aria-label='Fields' }
 #### boolean .hasTexture
 {: aria-label='Fields' }
 
 ___
 ### id
-{: aria-label='Fields' }
+{: #id aria-label='Fields' }
 #### integer .id
 {: aria-label='Fields' }
 
 ___
 ### lineWidth
-{: aria-label='Fields' }
+{: #lineWidth aria-label='Fields' }
 #### number .lineWidth
 {: aria-label='Fields' }
 
 ___
 ### texture
-{: aria-label='Fields' }
+{: #texture aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .texture
 {: aria-label='Fields' }
 
 ___
 ### textureAntialias
-{: aria-label='Fields' }
+{: #textureAntialias aria-label='Fields' }
 #### boolean .textureAntialias
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 

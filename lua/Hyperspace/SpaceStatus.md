@@ -11,8 +11,9 @@ lang: en
 
 
 ## Methods
+{: #Methods .section}
 ### RenderWarningText ()
-{: aria-label='Methods' }
+{: #RenderWarningText aria-label='Methods' }
 #### void :RenderWarningText (integer effect, integer textOffset)
 {: aria-label='Methods' }
 

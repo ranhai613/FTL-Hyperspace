@@ -249,6 +249,21 @@ h4[aria-label$='Constants'] {
     background-color: var(--constants-color-light);
 }
 
+details {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--lua-border-color);
+    border-radius: 4px;
+    background: var(--lua-section-bg);
+    padding: 0.5rem 1rem 0.75rem;
+}
+
+summary {
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .lua-main {
   background-color: var(--lua-main-bg);
   color: var(--lua-main-fg);
@@ -310,12 +325,23 @@ h4[aria-label$='Constants'] {
   width: 100%;
   margin: 1rem 0;
   background: var(--lua-table-bg);
+  table-layout: fixed;
 }
 
 .lua-main th,
 .lua-main td {
   border: 1px solid var(--lua-border-color);
   padding: 0.4rem 0.6rem;
+}
+
+.lua-main th:first-child,
+.lua-main td:first-child {
+  width: 20%;
+}
+
+.lua-main th:last-child,
+.lua-main td:last-child {
+  width: 80%;
 }
 
 .lua-main th {

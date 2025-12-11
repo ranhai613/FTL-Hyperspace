@@ -11,8 +11,9 @@ lang: en
 
 
 ## Methods
+{: #Methods .section}
 ### GetAnimation ()
-{: aria-label='Methods' }
+{: #GetAnimation aria-label='Methods' }
 #### [Animation](../Hyperspace/Animation) :GetAnimation (string animName)
 {: aria-label='Methods' }
 

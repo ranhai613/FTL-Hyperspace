@@ -12,8 +12,9 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### name (Read-only)
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 

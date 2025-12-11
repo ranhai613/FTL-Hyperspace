@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### StatBoostManager ()
-{: aria-label='Constructors' }
+{: #StatBoostManager aria-label='Constructors' }
 #### [StatBoostManager](../Hyperspace/StatBoostManager) StatBoostManager ()
 {: aria-label='Constructors' }
 
@@ -18,8 +19,9 @@ ___
 
 
 ## Static Methods
+{: #Static-Methods .section}
 ### GetInstance ()
-{: aria-label='StaticMethods' }
+{: #GetInstance aria-label='StaticMethods' }
 #### [StatBoostManager](../Hyperspace/StatBoostManager) .GetInstance ()
 {: aria-label='StaticMethods' }
 Returns the main instance of `StatBoostManager`. Always use this to access any members and methods belonging to this class.
@@ -28,8 +30,9 @@ ___
 
 
 ## Methods
+{: #Methods .section}
 ### CreateTimedAugmentBoost ()
-{: aria-label='Methods' }
+{: #CreateTimedAugmentBoost aria-label='Methods' }
 #### void :CreateTimedAugmentBoost ([StatBoost](../Hyperspace/StatBoost) unknown, [CrewMember](../Hyperspace/CrewMember) unknown)
 {: aria-label='Methods' }
 

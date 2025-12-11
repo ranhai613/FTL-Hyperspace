@@ -7,9 +7,14 @@ lang: en
 # Class "Blueprint"
 
 
+
+Subclasses: [AugmentBlueprint](../Hyperspace/AugmentBlueprint), [CrewBlueprint](../Hyperspace/CrewBlueprint), [DroneBlueprint](../Hyperspace/DroneBlueprint), [ShipBlueprint](../Hyperspace/ShipBlueprint), [WeaponBlueprint](../Hyperspace/WeaponBlueprint)
+
+
 ## Constructors
+{: #Constructors .section}
 ### Blueprint ()
-{: aria-label='Constructors' }
+{: #Blueprint aria-label='Constructors' }
 #### [Blueprint](../Hyperspace/Blueprint) Blueprint ()
 {: aria-label='Constructors' }
 
@@ -19,20 +24,21 @@ ___
 
 
 ## Methods
+{: #Methods .section}
 ### GetNameLong ()
-{: aria-label='Methods' }
+{: #GetNameLong aria-label='Methods' }
 #### string :GetNameLong ()
 {: aria-label='Methods' }
 
 ___
 ### GetNameShort ()
-{: aria-label='Methods' }
+{: #GetNameShort aria-label='Methods' }
 #### string :GetNameShort ()
 {: aria-label='Methods' }
 
 ___
 ### GetType ()
-{: aria-label='Methods' }
+{: #GetType aria-label='Methods' }
 #### integer :GetType ()
 {: aria-label='Methods' }
 
@@ -40,20 +46,21 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### desc
-{: aria-label='Fields' }
+{: #desc aria-label='Fields' }
 #### [Description](../Hyperspace/Description) .desc
 {: aria-label='Fields' }
 
 ___
 ### name
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 [`ShipGraph`](#ShipGraph) `.GetShipInfo(int shipId)`

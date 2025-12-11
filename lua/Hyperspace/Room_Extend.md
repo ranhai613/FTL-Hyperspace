@@ -12,26 +12,27 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### hullDamageResistChance
-{: aria-label='Fields' }
+{: #hullDamageResistChance aria-label='Fields' }
 #### number .hullDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### ionDamageResistChance
-{: aria-label='Fields' }
+{: #ionDamageResistChance aria-label='Fields' }
 #### number .ionDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### sysDamageResistChance
-{: aria-label='Fields' }
+{: #sysDamageResistChance aria-label='Fields' }
 #### number .sysDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### timeDilation
-{: aria-label='Fields' }
+{: #timeDilation aria-label='Fields' }
 #### integer .timeDilation
 {: aria-label='Fields' }
 

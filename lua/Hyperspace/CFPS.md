@@ -12,44 +12,45 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### Frames (Read-only)
-{: aria-label='Fields' }
+{: #Frames aria-label='Fields' }
 #### integer .Frames
 {: aria-label='Fields' }
 
 ___
 ### LastTime (Read-only)
-{: aria-label='Fields' }
+{: #LastTime aria-label='Fields' }
 #### number .LastTime
 {: aria-label='Fields' }
 
 ___
 ### NumFrames (Read-only)
-{: aria-label='Fields' }
+{: #NumFrames aria-label='Fields' }
 #### integer .NumFrames
 {: aria-label='Fields' }
 
 ___
 ### OldTime (Read-only)
-{: aria-label='Fields' }
+{: #OldTime aria-label='Fields' }
 #### number .OldTime
 {: aria-label='Fields' }
 
 ___
 ### RunningTime (Read-only)
-{: aria-label='Fields' }
+{: #RunningTime aria-label='Fields' }
 #### number .RunningTime
 {: aria-label='Fields' }
 
 ___
 ### SpeedFactor (Read-only)
-{: aria-label='Fields' }
+{: #SpeedFactor aria-label='Fields' }
 #### number .SpeedFactor
 {: aria-label='Fields' }
 
 ___
 ### speedLevel
-{: aria-label='Fields' }
+{: #speedLevel aria-label='Fields' }
 #### integer .speedLevel
 {: aria-label='Fields' }
 

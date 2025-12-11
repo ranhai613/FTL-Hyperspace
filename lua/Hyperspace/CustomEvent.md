@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### CustomEvent ()
-{: aria-label='Constructors' }
+{: #CustomEvent aria-label='Constructors' }
 #### [CustomEvent](../Hyperspace/CustomEvent) CustomEvent ()
 {: aria-label='Constructors' }
 
@@ -20,15 +21,16 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### triggeredEvents (Read-only)
-{: aria-label='Fields' }
+{: #triggeredEvents aria-label='Fields' }
 #### vector\<uint\> .triggeredEvents
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### unlockShip
-{: aria-label='Fields' }
+{: #unlockShip aria-label='Fields' }
 #### string .unlockShip
 {: aria-label='Fields' }
 

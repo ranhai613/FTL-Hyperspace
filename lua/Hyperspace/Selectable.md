@@ -8,12 +8,17 @@ lang: en
 
 
 
+Subclasses: [Repairable](../Hyperspace/Repairable), [Room](../Hyperspace/Room)
+
+
+
 
 
 
 ## Fields
+{: #Fields .section}
 ### selectedState
-{: aria-label='Fields' }
+{: #selectedState aria-label='Fields' }
 #### integer .selectedState
 {: aria-label='Fields' }
 

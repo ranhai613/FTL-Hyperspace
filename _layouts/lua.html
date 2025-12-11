@@ -97,7 +97,7 @@
                 {%- if in_h2 -%}
                   </li>
                 {%- endif -%}
-                {%- assign id = h_trim | replace: '##', '' | strip | replace: '(', '' | replace: ')', '' | replace: ' ', '-' | downcase -%}
+                {%- assign id = h_trim | replace: '##', '' | replace: '(', '' | replace: ')', '' | strip | replace: ' ', '-' -%}
                 <li class="lua-nav-right-item">
                   <a class="md-nav__link" href="#{{ id }}">{{ h_trim | replace: '##', '' | strip }}</a>
                 {%- assign in_h2 = true -%}
@@ -108,7 +108,7 @@
                     <ul class="lua-nav-right-item-list">
                   {%- assign has_h3 = true -%}
                 {%- endunless -%}
-                {%- assign id = h_trim | replace: '###', '' | strip | replace: '(', '' | replace: ')', '' | replace: ' ', '-' | downcase -%}
+                {%- assign id = h_trim | replace: '###', '' | replace: '(', '' | replace: ')', '' | strip | replace: ' ', '-' -%}
                   <li class="lua-nav-right-list-item">
                     <a class="md-nav__link" href="#{{ id }}">{{ h_trim | replace: '###', '' | strip }}</a>
                   </li>

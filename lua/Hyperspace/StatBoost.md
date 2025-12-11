@@ -8,14 +8,15 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### StatBoost ()
-{: aria-label='Constructors' }
+{: #StatBoost aria-label='Constructors' }
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)
 {: aria-label='Constructors' }
 
 ___
 ### StatBoost ()
-{: aria-label='Constructors' }
+{: #StatBoost aria-label='Constructors' }
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)
 {: aria-label='Constructors' }
 

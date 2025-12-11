@@ -6,7 +6,8 @@ lang: en
 
 # Class "OuterHull"
 
-Extends: [Repairable](../Hyperspace/Repairable)
+
+Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Selectable)
 
 
 
@@ -14,14 +15,38 @@ Extends: [Repairable](../Hyperspace/Repairable)
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Repairable](Repairable)
+
+| Type | Field |
+| --- | --- |
+| number | .[fDamage](Repairable#fDamage-) |
+| number | .[fMaxDamage](Repairable#fMaxDamage-) |
+| integer | .[iRepairCount](Repairable#iRepairCount-) |
+| string | .[name](Repairable#name-) |
+| [Point](../Hyperspace/Point) | .[pLoc](Repairable#pLoc-) |
+| integer | .[roomId](Repairable#roomId-) |
+| [ShipObject](../Hyperspace/ShipObject) | .[shipObj](Repairable#shipObj-) |
+
+#### From [Selectable](Selectable)
+
+| Type | Field |
+| --- | --- |
+| integer | .[selectedState](Selectable#selectedState-) |
+
+</details>
+___
 ### breach
-{: aria-label='Fields' }
+{: #breach aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .breach
 {: aria-label='Fields' }
 
 ___
 ### heal
-{: aria-label='Fields' }
+{: #heal aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .heal
 {: aria-label='Fields' }
 

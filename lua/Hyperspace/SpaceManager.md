@@ -11,74 +11,75 @@ lang: en
 
 
 ## Methods
+{: #Methods .section}
 ### CreateAsteroid ()
-{: aria-label='Methods' }
+{: #CreateAsteroid aria-label='Methods' }
 #### [Asteroid](../Hyperspace/Asteroid) :CreateAsteroid ([Pointf](../Hyperspace/Pointf) position, integer space, integer ownerId, [Pointf](../Hyperspace/Pointf) target, integer targetSpace, number heading)
 {: aria-label='Methods' }
 
 ___
 ### CreateBeam ()
-{: aria-label='Methods' }
+{: #CreateBeam aria-label='Methods' }
 #### [BeamWeapon](../Hyperspace/BeamWeapon) :CreateBeam ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, [Pointf](../Hyperspace/Pointf) position, integer space, integer ownerId, [Pointf](../Hyperspace/Pointf) target1, [Pointf](../Hyperspace/Pointf) target2, integer targetSpace, integer length, number heading)
 {: aria-label='Methods' }
 
 ___
 ### CreateBomb ()
-{: aria-label='Methods' }
+{: #CreateBomb aria-label='Methods' }
 #### [BombProjectile](../Hyperspace/BombProjectile) :CreateBomb ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, integer ownerId, [Pointf](../Hyperspace/Pointf) target, integer targetSpace)
 {: aria-label='Methods' }
 
 ___
 ### CreateBurstProjectile ()
-{: aria-label='Methods' }
+{: #CreateBurstProjectile aria-label='Methods' }
 #### [LaserBlast](../Hyperspace/LaserBlast) :CreateBurstProjectile ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, string image, boolean fake, [Pointf](../Hyperspace/Pointf) position, integer space, integer ownerId, [Pointf](../Hyperspace/Pointf) target, integer targetSpace, number heading)
 {: aria-label='Methods' }
 
 ___
 ### CreateLaserBlast ()
-{: aria-label='Methods' }
+{: #CreateLaserBlast aria-label='Methods' }
 #### [LaserBlast](../Hyperspace/LaserBlast) :CreateLaserBlast ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, [Pointf](../Hyperspace/Pointf) position, integer space, integer ownerId, [Pointf](../Hyperspace/Pointf) target, integer targetSpace, number heading)
 {: aria-label='Methods' }
 
 ___
 ### CreateMissile ()
-{: aria-label='Methods' }
+{: #CreateMissile aria-label='Methods' }
 #### [Missile](../Hyperspace/Missile) :CreateMissile ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, [Pointf](../Hyperspace/Pointf) position, integer space, integer ownerId, [Pointf](../Hyperspace/Pointf) target, integer targetSpace, number heading)
 {: aria-label='Methods' }
 
 ___
 ### CreatePDSFire ()
-{: aria-label='Methods' }
+{: #CreatePDSFire aria-label='Methods' }
 #### [PDSFire](../Hyperspace/PDSFire) :CreatePDSFire ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) weapon, [Point](../Hyperspace/Point) position, [Pointf](../Hyperspace/Pointf) target, integer targetSpace, boolean smoke)
 {: aria-label='Methods' }
 
 ___
 ### DangerousEnvironment ()
-{: aria-label='Methods' }
+{: #DangerousEnvironment aria-label='Methods' }
 #### boolean :DangerousEnvironment ()
 {: aria-label='Methods' }
 
 ___
 ### SwitchBackground ()
-{: aria-label='Methods' }
+{: #SwitchBackground aria-label='Methods' }
 #### [ImageDesc](../Hyperspace/ImageDesc) :SwitchBackground (string name)
 {: aria-label='Methods' }
 
 ___
 ### SwitchPlanet ()
-{: aria-label='Methods' }
+{: #SwitchPlanet aria-label='Methods' }
 #### [ImageDesc](../Hyperspace/ImageDesc) :SwitchPlanet (string name)
 {: aria-label='Methods' }
 
 ___
 ### UpdatePlanetImage ()
-{: aria-label='Methods' }
+{: #UpdatePlanetImage aria-label='Methods' }
 #### void :UpdatePlanetImage ()
 {: aria-label='Methods' }
 
 ___
 ### UpdateProjectile ()
-{: aria-label='Methods' }
+{: #UpdateProjectile aria-label='Methods' }
 #### void :UpdateProjectile ([Projectile](../Hyperspace/Projectile) proj)
 {: aria-label='Methods' }
 
@@ -86,57 +87,58 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### asteroidGenerator (Read-only)
-{: aria-label='Fields' }
+{: #asteroidGenerator aria-label='Fields' }
 #### [AsteroidGenerator](../Hyperspace/AsteroidGenerator) .asteroidGenerator
 {: aria-label='Fields' }
 
 ___
 ### bNebula (Read-only)
-{: aria-label='Fields' }
+{: #bNebula aria-label='Fields' }
 #### boolean .bNebula
 {: aria-label='Fields' }
 
 ___
 ### bPDS (Read-only)
-{: aria-label='Fields' }
+{: #bPDS aria-label='Fields' }
 #### boolean .bPDS
 {: aria-label='Fields' }
 
 ___
 ### bStorm (Read-only)
-{: aria-label='Fields' }
+{: #bStorm aria-label='Fields' }
 #### boolean .bStorm
 {: aria-label='Fields' }
 
 ___
 ### currentBack
-{: aria-label='Fields' }
+{: #currentBack aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .currentBack
 {: aria-label='Fields' }
 
 ___
 ### currentPlanet
-{: aria-label='Fields' }
+{: #currentPlanet aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .currentPlanet
 {: aria-label='Fields' }
 
 ___
 ### drones (Read-only)
-{: aria-label='Fields' }
+{: #drones aria-label='Fields' }
 #### vector\<[SpaceDrone](../Hyperspace/SpaceDrone)\> .drones
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### envTarget
-{: aria-label='Fields' }
+{: #envTarget aria-label='Fields' }
 #### integer .envTarget
 {: aria-label='Fields' }
 
 ___
 ### gamePaused (Read-only)
-{: aria-label='Fields' }
+{: #gamePaused aria-label='Fields' }
 #### boolean .gamePaused
 {: aria-label='Fields' }
 **Read-only**
@@ -158,20 +160,20 @@ Dictate the current target of the PDS (0: player, 1: enemy, 2: both)
 
 ___
 ### projectiles (Read-only)
-{: aria-label='Fields' }
+{: #projectiles aria-label='Fields' }
 #### vector\<[Projectile](../Hyperspace/Projectile)\> .projectiles
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### pulsarLevel (Read-only)
-{: aria-label='Fields' }
+{: #pulsarLevel aria-label='Fields' }
 #### boolean .pulsarLevel
 {: aria-label='Fields' }
 
 ___
 ### sunLevel (Read-only)
-{: aria-label='Fields' }
+{: #sunLevel aria-label='Fields' }
 #### boolean .sunLevel
 {: aria-label='Fields' }
 

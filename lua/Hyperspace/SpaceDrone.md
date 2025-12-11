@@ -6,183 +6,224 @@ lang: en
 
 # Class "SpaceDrone"
 
+
 Extends: [Drone](../Hyperspace/Drone)
+
+Subclasses: [BoarderPodDrone](../Hyperspace/BoarderPodDrone), [CombatDrone](../Hyperspace/CombatDrone), [DefenseDrone](../Hyperspace/DefenseDrone), [HackingDrone](../Hyperspace/HackingDrone)
 
 
 
 
 
 ## Methods
+{: #Methods .section}
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [Drone](Drone)
+
+| Return Type | Method |
+| --- | --- |
+| void | :[BlowUp](Drone#BlowUp) (boolean silent) |
+| boolean | :[CanBeDeployed](Drone#CanBeDeployed) () |
+| boolean | :[CanBeRecovered](Drone#CanBeRecovered) () |
+| boolean | :[Destroyed](Drone#Destroyed) () |
+| boolean | :[GetDeployed](Drone#GetDeployed) () |
+| integer | :[GetDroneHealth](Drone#GetDroneHealth) () |
+| [Slot](../Hyperspace/Slot) | :[GetDroneSlot](Drone#GetDroneSlot) ([Drone](../Hyperspace/Drone) drone) |
+| string | :[GetName](Drone#GetName) ([Drone](../Hyperspace/Drone) drone) |
+| boolean | :[GetPowered](Drone#GetPowered) () |
+| integer | :[GetRequiredPower](Drone#GetRequiredPower) () |
+| boolean | :[GetStunned](Drone#GetStunned) () |
+| [Point](../Hyperspace/Point) | :[GetWorldLocation](Drone#GetWorldLocation) () |
+| void | :[LoadState](Drone#LoadState) (integer fh) |
+| boolean | :[NeedsRoom](Drone#NeedsRoom) () |
+| void | :[OnDestroy](Drone#OnDestroy) () |
+| void | :[OnInit](Drone#OnInit) () |
+| void | :[OnLoop](Drone#OnLoop) () |
+| boolean | :[RecallOnJump](Drone#RecallOnJump) () |
+| void | :[RenderIcon](Drone#RenderIcon) () |
+| void | :[SaveState](Drone#SaveState) (integer fh) |
+| void | :[SetCurrentShip](Drone#SetCurrentShip) (integer shipId) |
+| void | :[SetDestroyed](Drone#SetDestroyed) (boolean dead, boolean setTimer) |
+| void | :[SetHacked](Drone#SetHacked) (integer level) |
+| void | :[SetInstantPowered](Drone#SetInstantPowered) () |
+| void | :[SetPowered](Drone#SetPowered) (boolean _powered) |
+| void | :[SetSlot](Drone#SetSlot) (integer room, integer slot) |
+| void | :[SetWorldLocation](Drone#SetWorldLocation) ([Point](../Hyperspace/Point) point) |
+
+</details>
+___
 ### CollisionMoving ()
-{: aria-label='Methods' }
+{: #CollisionMoving aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### DamageArea ()
-{: aria-label='Methods' }
+{: #DamageArea aria-label='Methods' }
 #### boolean :DamageArea ([Pointf](../Hyperspace/Pointf) pos, [Damage](../Hyperspace/Damage) damage, boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### DamageBeam ()
-{: aria-label='Methods' }
+{: #DamageBeam aria-label='Methods' }
 #### boolean :DamageBeam ([Pointf](../Hyperspace/Pointf) pos1, [Pointf](../Hyperspace/Pointf) pos2, [Damage](../Hyperspace/Damage) damage)
 {: aria-label='Methods' }
 
 ___
 ### GetBoardingDrone ()
-{: aria-label='Methods' }
+{: #GetBoardingDrone aria-label='Methods' }
 #### BoarderDrone :GetBoardingDrone ()
 {: aria-label='Methods' }
 
 ___
 ### GetNextProjectile ()
-{: aria-label='Methods' }
+{: #GetNextProjectile aria-label='Methods' }
 #### [Projectile](../Hyperspace/Projectile) :GetNextProjectile ()
 {: aria-label='Methods' }
 
 ___
 ### GetOwnerId ()
-{: aria-label='Methods' }
+{: #GetOwnerId aria-label='Methods' }
 #### integer :GetOwnerId ()
 {: aria-label='Methods' }
 
 ___
 ### GetRandomTargettingPoint ()
-{: aria-label='Methods' }
+{: #GetRandomTargettingPoint aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### GetSelfId ()
-{: aria-label='Methods' }
+{: #GetSelfId aria-label='Methods' }
 #### integer :GetSelfId ()
 {: aria-label='Methods' }
 
 ___
 ### GetShieldShape ()
-{: aria-label='Methods' }
+{: #GetShieldShape aria-label='Methods' }
 #### [Ellipse](../Hyperspace/Ellipse) :GetShieldShape ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
 {: aria-label='Methods' }
 
 ___
 ### GetSpaceId ()
-{: aria-label='Methods' }
+{: #GetSpaceId aria-label='Methods' }
 #### integer :GetSpaceId ()
 {: aria-label='Methods' }
 
 ___
 ### GetSpeed ()
-{: aria-label='Methods' }
+{: #GetSpeed aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
 {: aria-label='Methods' }
 
 ___
 ### GetTooltip ()
-{: aria-label='Methods' }
+{: #GetTooltip aria-label='Methods' }
 #### string :GetTooltip ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
 {: aria-label='Methods' }
 
 ___
 ### GetWeaponCooldown ()
-{: aria-label='Methods' }
+{: #GetWeaponCooldown aria-label='Methods' }
 #### number :GetWeaponCooldown ()
 {: aria-label='Methods' }
 
 ___
 ### GetWorldCenterPoint ()
-{: aria-label='Methods' }
+{: #GetWorldCenterPoint aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
 {: aria-label='Methods' }
 
 ___
 ### HasTarget ()
-{: aria-label='Methods' }
+{: #HasTarget aria-label='Methods' }
 #### boolean :HasTarget ()
 {: aria-label='Methods' }
 
 ___
 ### HideUnderOwner ()
-{: aria-label='Methods' }
+{: #HideUnderOwner aria-label='Methods' }
 #### boolean :HideUnderOwner ()
 {: aria-label='Methods' }
 
 ___
 ### MouseMove ()
-{: aria-label='Methods' }
+{: #MouseMove aria-label='Methods' }
 #### void :MouseMove (integer mX, integer mY)
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: aria-label='Methods' }
+{: #OnRender aria-label='Methods' }
 #### void :OnRender (integer space)
 {: aria-label='Methods' }
 
 ___
 ### PickDestination ()
-{: aria-label='Methods' }
+{: #PickDestination aria-label='Methods' }
 #### void :PickDestination ()
 {: aria-label='Methods' }
 
 ___
 ### PickTarget ()
-{: aria-label='Methods' }
+{: #PickTarget aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
 ___
 ### RandomizeStartingPosition ()
-{: aria-label='Methods' }
+{: #RandomizeStartingPosition aria-label='Methods' }
 #### void :RandomizeStartingPosition ()
 {: aria-label='Methods' }
 
 ___
 ### RenderDrone ()
-{: aria-label='Methods' }
+{: #RenderDrone aria-label='Methods' }
 #### void :RenderDrone ()
 {: aria-label='Methods' }
 
 ___
 ### SetCurrentLocation ()
-{: aria-label='Methods' }
+{: #SetCurrentLocation aria-label='Methods' }
 #### void :SetCurrentLocation ([Pointf](../Hyperspace/Pointf) pos)
 {: aria-label='Methods' }
 
 ___
 ### SetDeployed ()
-{: aria-label='Methods' }
+{: #SetDeployed aria-label='Methods' }
 #### void :SetDeployed (boolean deployed)
 {: aria-label='Methods' }
 
 ___
 ### SetMovementTarget ()
-{: aria-label='Methods' }
+{: #SetMovementTarget aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### SetWeaponTarget ()
-{: aria-label='Methods' }
+{: #SetWeaponTarget aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### UpdateAimingAngle ()
-{: aria-label='Methods' }
+{: #UpdateAimingAngle aria-label='Methods' }
 #### number :UpdateAimingAngle ([Pointf](../Hyperspace/Pointf) location, number percentage, number forceDesired)
 {: aria-label='Methods' }
 
 ___
 ### ValidTarget ()
-{: aria-label='Methods' }
+{: #ValidTarget aria-label='Methods' }
 #### boolean :ValidTarget ()
 {: aria-label='Methods' }
 
 ___
 ### ValidTargetObject ()
-{: aria-label='Methods' }
+{: #ValidTargetObject aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -190,219 +231,243 @@ ___
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Drone](Drone)
+
+| Type | Field |
+| --- | --- |
+| boolean | .[bDead](Drone#bDead-) |
+| [DroneBlueprint](../Hyperspace/DroneBlueprint) | .[blueprint](Drone#blueprint-) |
+| boolean | .[deployed](Drone#deployed-) |
+| number | .[destroyedTimer](Drone#destroyedTimer-) |
+| number | .[hackTime](Drone#hackTime-) |
+| integer | .[iBonusPower](Drone#iBonusPower-) |
+| integer | .[iHackLevel](Drone#iHackLevel-) |
+| integer | .[iShipId](Drone#iShipId-) |
+| integer | .[powerRequired](Drone#powerRequired-) |
+| boolean | .[powered](Drone#powered-) |
+| boolean | .[poweredAtLocation](Drone#poweredAtLocation-) |
+| integer | .[selfId](Drone#selfId-) |
+| integer | .[type](Drone#type-) |
+
+</details>
+___
 ### _collideable
-{: aria-label='Fields' }
+{: #_collideable aria-label='Fields' }
 #### [Collideable](../Hyperspace/Collideable) ._collideable
 {: aria-label='Fields' }
 
 ___
 ### _targetable
-{: aria-label='Fields' }
+{: #_targetable aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) ._targetable
 {: aria-label='Fields' }
 
 ___
 ### additionalPause
-{: aria-label='Fields' }
+{: #additionalPause aria-label='Fields' }
 #### number .additionalPause
 {: aria-label='Fields' }
 
 ___
 ### aimingAngle
-{: aria-label='Fields' }
+{: #aimingAngle aria-label='Fields' }
 #### number .aimingAngle
 {: aria-label='Fields' }
 
 ___
 ### bDisrupted
-{: aria-label='Fields' }
+{: #bDisrupted aria-label='Fields' }
 #### boolean .bDisrupted
 {: aria-label='Fields' }
 
 ___
 ### bFire
-{: aria-label='Fields' }
+{: #bFire aria-label='Fields' }
 #### boolean .bFire
 {: aria-label='Fields' }
 
 ___
 ### bLoadedPosition
-{: aria-label='Fields' }
+{: #bLoadedPosition aria-label='Fields' }
 #### boolean .bLoadedPosition
 {: aria-label='Fields' }
 
 ___
 ### beamCurrentTarget
-{: aria-label='Fields' }
+{: #beamCurrentTarget aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamCurrentTarget
 {: aria-label='Fields' }
 
 ___
 ### beamFinalTarget
-{: aria-label='Fields' }
+{: #beamFinalTarget aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamFinalTarget
 {: aria-label='Fields' }
 
 ___
 ### beamSpeed
-{: aria-label='Fields' }
+{: #beamSpeed aria-label='Fields' }
 #### number .beamSpeed
 {: aria-label='Fields' }
 
 ___
 ### currentLocation
-{: aria-label='Fields' }
+{: #currentLocation aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .currentLocation
 {: aria-label='Fields' }
 
 ___
 ### currentSpace
-{: aria-label='Fields' }
+{: #currentSpace aria-label='Fields' }
 #### integer .currentSpace
 {: aria-label='Fields' }
 
 ___
 ### current_angle
-{: aria-label='Fields' }
+{: #current_angle aria-label='Fields' }
 #### number .current_angle
 {: aria-label='Fields' }
 
 ___
 ### deployedLastFrame
-{: aria-label='Fields' }
+{: #deployedLastFrame aria-label='Fields' }
 #### boolean .deployedLastFrame
 {: aria-label='Fields' }
 
 ___
 ### desiredAimingAngle
-{: aria-label='Fields' }
+{: #desiredAimingAngle aria-label='Fields' }
 #### number .desiredAimingAngle
 {: aria-label='Fields' }
 
 ___
 ### destinationLocation
-{: aria-label='Fields' }
+{: #destinationLocation aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .destinationLocation
 {: aria-label='Fields' }
 
 ___
 ### destinationSpace
-{: aria-label='Fields' }
+{: #destinationSpace aria-label='Fields' }
 #### integer .destinationSpace
 {: aria-label='Fields' }
 
 ___
 ### explosion
-{: aria-label='Fields' }
+{: #explosion aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
 {: aria-label='Fields' }
 
 ___
 ### hackAngle
-{: aria-label='Fields' }
+{: #hackAngle aria-label='Fields' }
 #### number .hackAngle
 {: aria-label='Fields' }
 
 ___
 ### hackSparks
-{: aria-label='Fields' }
+{: #hackSparks aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .hackSparks
 {: aria-label='Fields' }
 
 ___
 ### ionStun
-{: aria-label='Fields' }
+{: #ionStun aria-label='Fields' }
 #### number .ionStun
 {: aria-label='Fields' }
 
 ___
 ### lastAimingAngle
-{: aria-label='Fields' }
+{: #lastAimingAngle aria-label='Fields' }
 #### number .lastAimingAngle
 {: aria-label='Fields' }
 
 ___
 ### lastLocation
-{: aria-label='Fields' }
+{: #lastLocation aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastLocation
 {: aria-label='Fields' }
 
 ___
 ### lifespan
-{: aria-label='Fields' }
+{: #lifespan aria-label='Fields' }
 #### integer .lifespan
 {: aria-label='Fields' }
 
 ___
 ### message
-{: aria-label='Fields' }
+{: #message aria-label='Fields' }
 #### DamageMessage .message
 {: aria-label='Fields' }
 
 ___
 ### movementTarget
-{: aria-label='Fields' }
+{: #movementTarget aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movementTarget
 {: aria-label='Fields' }
 
 ___
 ### pause
-{: aria-label='Fields' }
+{: #pause aria-label='Fields' }
 #### number .pause
 {: aria-label='Fields' }
 
 ___
 ### pointTarget
-{: aria-label='Fields' }
+{: #pointTarget aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .pointTarget
 {: aria-label='Fields' }
 
 ___
 ### poweredLastFrame
-{: aria-label='Fields' }
+{: #poweredLastFrame aria-label='Fields' }
 #### boolean .poweredLastFrame
 {: aria-label='Fields' }
 
 ___
 ### speedVector
-{: aria-label='Fields' }
+{: #speedVector aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speedVector
 {: aria-label='Fields' }
 
 ___
 ### targetLocation
-{: aria-label='Fields' }
+{: #targetLocation aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetLocation
 {: aria-label='Fields' }
 
 ___
 ### targetSpeed
-{: aria-label='Fields' }
+{: #targetSpeed aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetSpeed
 {: aria-label='Fields' }
 
 ___
 ### weaponBlueprint (Read-only)
-{: aria-label='Fields' }
+{: #weaponBlueprint aria-label='Fields' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) .weaponBlueprint
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### weaponCooldown
-{: aria-label='Fields' }
+{: #weaponCooldown aria-label='Fields' }
 #### number .weaponCooldown
 {: aria-label='Fields' }
 
 ___
 ### weaponTarget
-{: aria-label='Fields' }
+{: #weaponTarget aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .weaponTarget
 {: aria-label='Fields' }
 
 ___
 ### weapon_animation
-{: aria-label='Fields' }
+{: #weapon_animation aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .weapon_animation
 {: aria-label='Fields' }
 

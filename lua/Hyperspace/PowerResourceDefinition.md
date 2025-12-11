@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### PowerResourceDefinition ()
-{: aria-label='Constructors' }
+{: #PowerResourceDefinition aria-label='Constructors' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) PowerResourceDefinition ()
 {: aria-label='Constructors' }
 
@@ -18,14 +19,15 @@ ___
 
 
 ## Static Methods
+{: #Static-Methods .section}
 ### AddNamedDefinition ()
-{: aria-label='StaticMethods' }
+{: #AddNamedDefinition aria-label='StaticMethods' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .AddNamedDefinition (string _name, [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) copyDef)
 {: aria-label='StaticMethods' }
 
 ___
 ### GetByName ()
-{: aria-label='StaticMethods' }
+{: #GetByName aria-label='StaticMethods' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .GetByName (string _name)
 {: aria-label='StaticMethods' }
 
@@ -33,20 +35,21 @@ ___
 
 
 ## Methods
+{: #Methods .section}
 ### AssignGroup ()
-{: aria-label='Methods' }
+{: #AssignGroup aria-label='Methods' }
 #### void :AssignGroup (string _name)
 {: aria-label='Methods' }
 
 ___
 ### AssignIndex ()
-{: aria-label='Methods' }
+{: #AssignIndex aria-label='Methods' }
 #### void :AssignIndex ()
 {: aria-label='Methods' }
 
 ___
 ### AssignName ()
-{: aria-label='Methods' }
+{: #AssignName aria-label='Methods' }
 #### void :AssignName (string _name)
 {: aria-label='Methods' }
 
@@ -54,124 +57,125 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### chargeReq
-{: aria-label='Fields' }
+{: #chargeReq aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .chargeReq
 {: aria-label='Fields' }
 
 ___
 ### chargesPerJump
-{: aria-label='Fields' }
+{: #chargesPerJump aria-label='Fields' }
 #### integer .chargesPerJump
 {: aria-label='Fields' }
 
 ___
 ### cooldown
-{: aria-label='Fields' }
+{: #cooldown aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### cooldownColor
-{: aria-label='Fields' }
+{: #cooldownColor aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .cooldownColor
 {: aria-label='Fields' }
 
 ___
 ### disabledCharges
-{: aria-label='Fields' }
+{: #disabledCharges aria-label='Fields' }
 #### integer .disabledCharges
 {: aria-label='Fields' }
 
 ___
 ### disabledCooldown
-{: aria-label='Fields' }
+{: #disabledCooldown aria-label='Fields' }
 #### integer .disabledCooldown
 {: aria-label='Fields' }
 
 ___
 ### groupIndex (Read-only)
-{: aria-label='Fields' }
+{: #groupIndex aria-label='Fields' }
 #### uint .groupIndex
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### hideCharges
-{: aria-label='Fields' }
+{: #hideCharges aria-label='Fields' }
 #### boolean .hideCharges
 {: aria-label='Fields' }
 
 ___
 ### hideCooldown
-{: aria-label='Fields' }
+{: #hideCooldown aria-label='Fields' }
 #### boolean .hideCooldown
 {: aria-label='Fields' }
 
 ___
 ### initialCharges
-{: aria-label='Fields' }
+{: #initialCharges aria-label='Fields' }
 #### integer .initialCharges
 {: aria-label='Fields' }
 
 ___
 ### initialCooldownFraction
-{: aria-label='Fields' }
+{: #initialCooldownFraction aria-label='Fields' }
 #### number .initialCooldownFraction
 {: aria-label='Fields' }
 
 ___
 ### jumpCooldown
-{: aria-label='Fields' }
+{: #jumpCooldown aria-label='Fields' }
 #### integer .jumpCooldown
 {: aria-label='Fields' }
 
 ___
 ### name (Read-only)
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### onDeath
-{: aria-label='Fields' }
+{: #onDeath aria-label='Fields' }
 #### integer .onDeath
 {: aria-label='Fields' }
 
 ___
 ### powerCharges
-{: aria-label='Fields' }
+{: #powerCharges aria-label='Fields' }
 #### integer .powerCharges
 {: aria-label='Fields' }
 
 ___
 ### respawnCharges
-{: aria-label='Fields' }
+{: #respawnCharges aria-label='Fields' }
 #### integer .respawnCharges
 {: aria-label='Fields' }
 
 ___
 ### showLinkedCharges
-{: aria-label='Fields' }
+{: #showLinkedCharges aria-label='Fields' }
 #### boolean .showLinkedCharges
 {: aria-label='Fields' }
 
 ___
 ### showLinkedCooldowns
-{: aria-label='Fields' }
+{: #showLinkedCooldowns aria-label='Fields' }
 #### boolean .showLinkedCooldowns
 {: aria-label='Fields' }
 
 ___
 ### showTemporaryBars
-{: aria-label='Fields' }
+{: #showTemporaryBars aria-label='Fields' }
 #### boolean .showTemporaryBars
 {: aria-label='Fields' }
 
 ___
 ### sortOrder
-{: aria-label='Fields' }
+{: #sortOrder aria-label='Fields' }
 #### integer .sortOrder
 {: aria-label='Fields' }
 

@@ -12,20 +12,21 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### name
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .name
 {: aria-label='Fields' }
 
 ___
 ### shortName
-{: aria-label='Fields' }
+{: #shortName aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortName
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

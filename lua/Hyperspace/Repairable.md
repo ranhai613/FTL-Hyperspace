@@ -6,7 +6,10 @@ lang: en
 
 # Class "Repairable"
 
+
 Extends: [Selectable](../Hyperspace/Selectable)
+
+Subclasses: [OuterHull](../Hyperspace/OuterHull), [Spreadable](../Hyperspace/Spreadable)
 
 
 
@@ -14,44 +17,56 @@ Extends: [Selectable](../Hyperspace/Selectable)
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Selectable](Selectable)
+
+| Type | Field |
+| --- | --- |
+| integer | .[selectedState](Selectable#selectedState-) |
+
+</details>
+___
 ### fDamage
-{: aria-label='Fields' }
+{: #fDamage aria-label='Fields' }
 #### number .fDamage
 {: aria-label='Fields' }
 
 ___
 ### fMaxDamage
-{: aria-label='Fields' }
+{: #fMaxDamage aria-label='Fields' }
 #### number .fMaxDamage
 {: aria-label='Fields' }
 
 ___
 ### iRepairCount
-{: aria-label='Fields' }
+{: #iRepairCount aria-label='Fields' }
 #### integer .iRepairCount
 {: aria-label='Fields' }
 
 ___
 ### name
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### pLoc
-{: aria-label='Fields' }
+{: #pLoc aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .pLoc
 {: aria-label='Fields' }
 
 ___
 ### roomId
-{: aria-label='Fields' }
+{: #roomId aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### shipObj
-{: aria-label='Fields' }
+{: #shipObj aria-label='Fields' }
 #### [ShipObject](../Hyperspace/ShipObject) .shipObj
 {: aria-label='Fields' }
 

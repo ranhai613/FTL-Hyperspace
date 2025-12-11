@@ -12,14 +12,15 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### fake
-{: aria-label='Fields' }
+{: #fake aria-label='Fields' }
 #### boolean .fake
 {: aria-label='Fields' }
 
 ___
 ### image
-{: aria-label='Fields' }
+{: #image aria-label='Fields' }
 #### string .image
 {: aria-label='Fields' }
 

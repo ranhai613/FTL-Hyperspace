@@ -8,14 +8,15 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### ToggleValue_int ()
-{: aria-label='Constructors' }
+{: #ToggleValue_int aria-label='Constructors' }
 #### [ToggleValue_int](../Hyperspace/ToggleValue_int) ToggleValue_int ()
 {: aria-label='Constructors' }
 
 ___
 ### ToggleValue_int ()
-{: aria-label='Constructors' }
+{: #ToggleValue_int aria-label='Constructors' }
 #### [ToggleValue_int](../Hyperspace/ToggleValue_int) ToggleValue_int (integer unknown)
 {: aria-label='Constructors' }
 
@@ -26,14 +27,15 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### enabled
-{: aria-label='Fields' }
+{: #enabled aria-label='Fields' }
 #### boolean .enabled
 {: aria-label='Fields' }
 
 ___
 ### value
-{: aria-label='Fields' }
+{: #value aria-label='Fields' }
 #### integer .value
 {: aria-label='Fields' }
 

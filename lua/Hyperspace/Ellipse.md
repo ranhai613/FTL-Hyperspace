@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### Ellipse ()
-{: aria-label='Constructors' }
+{: #Ellipse aria-label='Constructors' }
 #### [Ellipse](../Hyperspace/Ellipse) Ellipse ()
 {: aria-label='Constructors' }
 
@@ -20,20 +21,21 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### a
-{: aria-label='Fields' }
+{: #a aria-label='Fields' }
 #### number .a
 {: aria-label='Fields' }
 
 ___
 ### b
-{: aria-label='Fields' }
+{: #b aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
 ___
 ### center
-{: aria-label='Fields' }
+{: #center aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
 

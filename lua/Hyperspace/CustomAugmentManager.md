@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### CustomAugmentManager ()
-{: aria-label='Constructors' }
+{: #CustomAugmentManager aria-label='Constructors' }
 #### [CustomAugmentManager](../Hyperspace/CustomAugmentManager) CustomAugmentManager ()
 {: aria-label='Constructors' }
 
@@ -18,8 +19,9 @@ ___
 
 
 ## Static Methods
+{: #Static-Methods .section}
 ### GetInstance ()
-{: aria-label='StaticMethods' }
+{: #GetInstance aria-label='StaticMethods' }
 #### [CustomAugmentManager](../Hyperspace/CustomAugmentManager) .GetInstance ()
 {: aria-label='StaticMethods' }
 
@@ -27,20 +29,21 @@ ___
 
 
 ## Methods
+{: #Methods .section}
 ### GetAugmentDefinition ()
-{: aria-label='Methods' }
+{: #GetAugmentDefinition aria-label='Methods' }
 #### [AugmentDefinition](../Hyperspace/AugmentDefinition) :GetAugmentDefinition (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetShipAugments ()
-{: aria-label='Methods' }
+{: #GetShipAugments aria-label='Methods' }
 #### unordered_map\<string, integer\> :GetShipAugments (integer iShipId)
 {: aria-label='Methods' }
 
 ___
 ### IsAugment ()
-{: aria-label='Methods' }
+{: #IsAugment aria-label='Methods' }
 #### boolean :IsAugment (string name)
 {: aria-label='Methods' }
 

@@ -12,8 +12,9 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### bOpen (Read-only)
-{: aria-label='Fields' }
+{: #bOpen aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
 **read-only**

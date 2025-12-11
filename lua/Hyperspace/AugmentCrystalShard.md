@@ -12,20 +12,21 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### chance (Read-only)
-{: aria-label='Fields' }
+{: #chance aria-label='Fields' }
 #### number .chance
 {: aria-label='Fields' }
 
 ___
 ### stacking (Read-only)
-{: aria-label='Fields' }
+{: #stacking aria-label='Fields' }
 #### integer .stacking
 {: aria-label='Fields' }
 
 ___
 ### weapon (Read-only)
-{: aria-label='Fields' }
+{: #weapon aria-label='Fields' }
 #### string .weapon
 {: aria-label='Fields' }
 

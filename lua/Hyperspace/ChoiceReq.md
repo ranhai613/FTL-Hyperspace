@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### ChoiceReq ()
-{: aria-label='Constructors' }
+{: #ChoiceReq aria-label='Constructors' }
 #### [ChoiceReq](../Hyperspace/ChoiceReq) ChoiceReq ()
 {: aria-label='Constructors' }
 
@@ -20,32 +21,33 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### blue
-{: aria-label='Fields' }
+{: #blue aria-label='Fields' }
 #### boolean .blue
 {: aria-label='Fields' }
 
 ___
 ### max_group
-{: aria-label='Fields' }
+{: #max_group aria-label='Fields' }
 #### integer .max_group
 {: aria-label='Fields' }
 
 ___
 ### max_level
-{: aria-label='Fields' }
+{: #max_level aria-label='Fields' }
 #### integer .max_level
 {: aria-label='Fields' }
 
 ___
 ### min_level
-{: aria-label='Fields' }
+{: #min_level aria-label='Fields' }
 #### integer .min_level
 {: aria-label='Fields' }
 
 ___
 ### object
-{: aria-label='Fields' }
+{: #object aria-label='Fields' }
 #### string .object
 {: aria-label='Fields' }
 

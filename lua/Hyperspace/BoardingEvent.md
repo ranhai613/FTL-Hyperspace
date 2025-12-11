@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### BoardingEvent ()
-{: aria-label='Constructors' }
+{: #BoardingEvent aria-label='Constructors' }
 #### [BoardingEvent](../Hyperspace/BoardingEvent) BoardingEvent ()
 {: aria-label='Constructors' }
 
@@ -20,32 +21,33 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### amount
-{: aria-label='Fields' }
+{: #amount aria-label='Fields' }
 #### integer .amount
 {: aria-label='Fields' }
 
 ___
 ### breach
-{: aria-label='Fields' }
+{: #breach aria-label='Fields' }
 #### boolean .breach
 {: aria-label='Fields' }
 
 ___
 ### max
-{: aria-label='Fields' }
+{: #max aria-label='Fields' }
 #### integer .max
 {: aria-label='Fields' }
 
 ___
 ### min
-{: aria-label='Fields' }
+{: #min aria-label='Fields' }
 #### integer .min
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

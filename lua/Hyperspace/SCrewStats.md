@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### SCrewStats ()
-{: aria-label='Constructors' }
+{: #SCrewStats aria-label='Constructors' }
 #### [SCrewStats](../Hyperspace/SCrewStats) SCrewStats ()
 {: aria-label='Constructors' }
 
@@ -20,26 +21,27 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### male
-{: aria-label='Fields' }
+{: #male aria-label='Fields' }
 #### boolean .male
 {: aria-label='Fields' }
 
 ___
 ### name
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### species
-{: aria-label='Fields' }
+{: #species aria-label='Fields' }
 #### string .species
 {: aria-label='Fields' }
 
 ___
 ### stat
-{: aria-label='Fields' }
+{: #stat aria-label='Fields' }
 #### vector\<integer\> .stat
 {: aria-label='Fields' }
 Has 5 values. `[0]` is the number of repairs, `[1]` is the number of crew combat kills, `[2]` is piloted evasions, `[3]` is jumps survived, `[4]` is skills mastered.

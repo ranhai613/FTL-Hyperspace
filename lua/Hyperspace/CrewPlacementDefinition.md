@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### CrewPlacementDefinition ()
-{: aria-label='Constructors' }
+{: #CrewPlacementDefinition aria-label='Constructors' }
 #### [CrewPlacementDefinition](../Hyperspace/CrewPlacementDefinition) CrewPlacementDefinition ()
 {: aria-label='Constructors' }
 
@@ -20,26 +21,27 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### isList
-{: aria-label='Fields' }
+{: #isList aria-label='Fields' }
 #### boolean .isList
 {: aria-label='Fields' }
 
 ___
 ### name
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### roomId
-{: aria-label='Fields' }
+{: #roomId aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### species
-{: aria-label='Fields' }
+{: #species aria-label='Fields' }
 #### string .species
 {: aria-label='Fields' }
 

@@ -12,15 +12,16 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### bOpen (Read-only)
-{: aria-label='Fields' }
+{: #bOpen aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### shipBuilder (Read-only)
-{: aria-label='Fields' }
+{: #shipBuilder aria-label='Fields' }
 #### [ShipBuilder](../Hyperspace/ShipBuilder) .shipBuilder
 {: aria-label='Fields' }
 **read-only**

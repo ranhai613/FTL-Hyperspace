@@ -12,44 +12,45 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### crystalShard (Read-only)
-{: aria-label='Fields' }
+{: #crystalShard aria-label='Fields' }
 #### vector\<[AugmentCrystalShard](../Hyperspace/AugmentCrystalShard)\> .crystalShard
 {: aria-label='Fields' }
 
 ___
 ### functions (Read-only)
-{: aria-label='Fields' }
+{: #functions aria-label='Fields' }
 #### unordered_multimap\<string, [AugmentFunction](../Hyperspace/AugmentFunction)\> .functions
 {: aria-label='Fields' }
 
 ___
 ### iconShipId (Read-only)
-{: aria-label='Fields' }
+{: #iconShipId aria-label='Fields' }
 #### integer .iconShipId
 {: aria-label='Fields' }
 
 ___
 ### locked (Read-only)
-{: aria-label='Fields' }
+{: #locked aria-label='Fields' }
 #### boolean .locked
 {: aria-label='Fields' }
 
 ___
 ### name (Read-only)
-{: aria-label='Fields' }
+{: #name aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### statBoosts (Read-only)
-{: aria-label='Fields' }
+{: #statBoosts aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
 {: aria-label='Fields' }
 
 ___
 ### superShield (Read-only)
-{: aria-label='Fields' }
+{: #superShield aria-label='Fields' }
 #### [AugmentSuperShield](../Hyperspace/AugmentSuperShield) .superShield
 {: aria-label='Fields' }
 

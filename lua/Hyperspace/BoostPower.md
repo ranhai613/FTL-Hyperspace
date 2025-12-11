@@ -12,20 +12,21 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### amount
-{: aria-label='Fields' }
+{: #amount aria-label='Fields' }
 #### number .amount
 {: aria-label='Fields' }
 
 ___
 ### count
-{: aria-label='Fields' }
+{: #count aria-label='Fields' }
 #### integer .count
 {: aria-label='Fields' }
 
 ___
 ### type
-{: aria-label='Fields' }
+{: #type aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 

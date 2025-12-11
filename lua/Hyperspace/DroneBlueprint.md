@@ -6,6 +6,7 @@ lang: en
 
 # Class "DroneBlueprint"
 
+
 Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
@@ -14,62 +15,76 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Blueprint](Blueprint)
+
+| Type | Field |
+| --- | --- |
+| [Description](../Hyperspace/Description) | .[desc](Blueprint#desc-) |
+| string | .[name](Blueprint#name-) |
+| integer | .[type](Blueprint#type-) |
+
+</details>
+___
 ### combatIcon (Read-only)
-{: aria-label='Fields' }
+{: #combatIcon aria-label='Fields' }
 #### string .combatIcon
 {: aria-label='Fields' }
 
 ___
 ### cooldown (Read-only)
-{: aria-label='Fields' }
+{: #cooldown aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### dodge (Read-only)
-{: aria-label='Fields' }
+{: #dodge aria-label='Fields' }
 #### integer .dodge
 {: aria-label='Fields' }
 
 ___
 ### droneImage (Read-only)
-{: aria-label='Fields' }
+{: #droneImage aria-label='Fields' }
 #### string .droneImage
 {: aria-label='Fields' }
 
 ___
 ### level (Read-only)
-{: aria-label='Fields' }
+{: #level aria-label='Fields' }
 #### integer .level
 {: aria-label='Fields' }
 
 ___
 ### power (Read-only)
-{: aria-label='Fields' }
+{: #power aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
 ___
 ### speed (Read-only)
-{: aria-label='Fields' }
+{: #speed aria-label='Fields' }
 #### integer .speed
 {: aria-label='Fields' }
 
 ___
 ### targetType (Read-only)
-{: aria-label='Fields' }
+{: #targetType aria-label='Fields' }
 #### integer .targetType
 {: aria-label='Fields' }
 
 ___
 ### typeName (Read-only)
-{: aria-label='Fields' }
+{: #typeName aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
 ___
 ### weaponBlueprint (Read-only)
-{: aria-label='Fields' }
+{: #weaponBlueprint aria-label='Fields' }
 #### string .weaponBlueprint
 {: aria-label='Fields' }
 

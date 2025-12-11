@@ -12,76 +12,77 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### bAllowJumping
-{: aria-label='Fields' }
+{: #bAllowJumping aria-label='Fields' }
 #### boolean .bAllowJumping
 {: aria-label='Fields' }
 If true, plyer can open the star map.
 
 ___
 ### bAllowUpgrades
-{: aria-label='Fields' }
+{: #bAllowUpgrades aria-label='Fields' }
 #### boolean .bAllowUpgrades
 {: aria-label='Fields' }
 If true, player can open Upgrades screen.
 
 ___
 ### bGamePaused
-{: aria-label='Fields' }
+{: #bGamePaused aria-label='Fields' }
 #### boolean .bGamePaused
 {: aria-label='Fields' }
 
 ___
 ### bQuitTutorial
-{: aria-label='Fields' }
+{: #bQuitTutorial aria-label='Fields' }
 #### boolean .bQuitTutorial
 {: aria-label='Fields' }
 Setting this to true ends the tutorial.
 
 ___
 ### bRunning
-{: aria-label='Fields' }
+{: #bRunning aria-label='Fields' }
 #### boolean .bRunning
 {: aria-label='Fields' }
 
 ___
 ### combatControl (Read-only)
-{: aria-label='Fields' }
+{: #combatControl aria-label='Fields' }
 #### [CombatControl](../Hyperspace/CombatControl) .combatControl
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### gui (Read-only)
-{: aria-label='Fields' }
+{: #gui aria-label='Fields' }
 #### [CommandGui](../Hyperspace/CommandGui) .gui
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### playerShip (Read-only)
-{: aria-label='Fields' }
+{: #playerShip aria-label='Fields' }
 #### [ShipManager](../Hyperspace/ShipManager) .playerShip
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### shipInfo (Read-only)
-{: aria-label='Fields' }
+{: #shipInfo aria-label='Fields' }
 #### [TabbedWindow](../Hyperspace/TabbedWindow) .shipInfo
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### starMap (Read-only)
-{: aria-label='Fields' }
+{: #starMap aria-label='Fields' }
 #### [StarMap](../Hyperspace/StarMap) .starMap
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### tracker (Read-only)
-{: aria-label='Fields' }
+{: #tracker aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .tracker
 {: aria-label='Fields' }
 **Read-only**

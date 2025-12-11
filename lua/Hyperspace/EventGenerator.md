@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### EventGenerator ()
-{: aria-label='Constructors' }
+{: #EventGenerator aria-label='Constructors' }
 #### [EventGenerator](../Hyperspace/EventGenerator) EventGenerator ()
 {: aria-label='Constructors' }
 
@@ -19,14 +20,15 @@ ___
 
 
 ## Methods
+{: #Methods .section}
 ### CreateEvent ()
-{: aria-label='Methods' }
+{: #CreateEvent aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :CreateEvent (string name, integer worldLevel, boolean ignoreUnique)
 {: aria-label='Methods' }
 
 ___
 ### GetBaseEvent ()
-{: aria-label='Methods' }
+{: #GetBaseEvent aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :GetBaseEvent (string name, integer worldLevel, boolean ignoreUnique, integer seed)
 {: aria-label='Methods' }
 

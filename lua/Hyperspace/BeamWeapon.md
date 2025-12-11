@@ -6,12 +6,14 @@ lang: en
 
 # Class "BeamWeapon"
 
-Extends: [Projectile](../Hyperspace/Projectile)
+
+Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
 
 ## Constructors
+{: #Constructors .section}
 ### BeamWeapon ()
-{: aria-label='Constructors' }
+{: #BeamWeapon aria-label='Constructors' }
 #### [BeamWeapon](../Hyperspace/BeamWeapon) BeamWeapon ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target, [Pointf](../Hyperspace/Pointf) _target2, integer _length, [Targetable](../Hyperspace/Targetable) _targetable, number _heading=0.0f)
 {: aria-label='Constructors' }
 
@@ -21,8 +23,55 @@ ___
 
 
 ## Methods
+{: #Methods .section}
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [Collideable](Collideable)
+
+| Return Type | Method |
+| --- | --- |
+| boolean | :[DamageArea](Collideable#DamageArea) ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit) |
+| boolean | :[DamageBeam](Collideable#DamageBeam) ([Pointf](../Hyperspace/Pointf) current, [Pointf](../Hyperspace/Pointf) last, [Damage](../Hyperspace/Damage) damage) |
+| boolean | :[DamageShield](Collideable#DamageShield) ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit) |
+| boolean | :[GetDodged](Collideable#GetDodged) () |
+| integer | :[GetOwnerId](Collideable#GetOwnerId) () |
+| integer | :[GetSelfId](Collideable#GetSelfId) () |
+| integer | :[GetSpaceId](Collideable#GetSpaceId) () |
+| [Pointf](../Hyperspace/Pointf) | :[GetSuperShield](Collideable#GetSuperShield) () |
+| void | :[SetTempVision](Collideable#SetTempVision) ([Pointf](../Hyperspace/Pointf) location) |
+| boolean | :[ValidTargetLocation](Collideable#ValidTargetLocation) ([Pointf](../Hyperspace/Pointf) location) |
+
+#### From [Projectile](Projectile)
+
+| Return Type | Method |
+| --- | --- |
+| void | :[CollisionCheck](Projectile#CollisionCheck) ([Collideable](../Hyperspace/Collideable) other) |
+| [CollisionResponse](../Hyperspace/CollisionResponse) | :[CollisionMoving](Projectile#CollisionMoving) ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace) |
+| void | :[ComputeHeading](Projectile#ComputeHeading) () |
+| boolean | :[Dead](Projectile#Dead) () |
+| void | :[EnterDestinationSpace](Projectile#EnterDestinationSpace) () |
+| integer | :[ForceRenderLayer](Projectile#ForceRenderLayer) () |
+| [Pointf](../Hyperspace/Pointf) | :[GetRandomTargettingPoint](Projectile#GetRandomTargettingPoint) (boolean valuable) |
+| [Pointf](../Hyperspace/Pointf) | :[GetSpeed](Projectile#GetSpeed) () |
+| integer | :[GetType](Projectile#GetType) () |
+| [Pointf](../Hyperspace/Pointf) | :[GetWorldCenterPoint](Projectile#GetWorldCenterPoint) () |
+| void | :[Initialize](Projectile#Initialize) ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp) |
+| void | :[Kill](Projectile#Kill) () |
+| void | :[LoadProjectile](Projectile#LoadProjectile) (integer fd) |
+| void | :[OnUpdate](Projectile#OnUpdate) () |
+| void | :[SaveProjectile](Projectile#SaveProjectile) (integer fd) |
+| void | :[SetDamage](Projectile#SetDamage) ([Damage](../Hyperspace/Damage) damage) |
+| void | :[SetDestinationSpace](Projectile#SetDestinationSpace) (integer space) |
+| void | :[SetMovingTarget](Projectile#SetMovingTarget) ([Targetable](../Hyperspace/Targetable) target) |
+| void | :[SetSpin](Projectile#SetSpin) (number spin) |
+| void | :[SetWeaponAnimation](Projectile#SetWeaponAnimation) ([WeaponAnimation](../Hyperspace/WeaponAnimation) animation) |
+| boolean | :[ValidTarget](Projectile#ValidTarget) () |
+
+</details>
+___
 ### OnRenderSpecific ()
-{: aria-label='Methods' }
+{: #OnRenderSpecific aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
 {: aria-label='Methods' }
 
@@ -30,152 +79,190 @@ ___
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Projectile](Projectile)
+
+| Type | Field |
+| --- | --- |
+| [Targetable](../Hyperspace/Targetable) | .[_targetable](Projectile#_targetable-) |
+| boolean | .[bBroadcastTarget](Projectile#bBroadcastTarget-) |
+| [GL_Color](../Graphics/GL_Color) | .[color](Projectile#color-) |
+| integer | .[currentSpace](Projectile#currentSpace-) |
+| [Damage](../Hyperspace/Damage) | .[damage](Projectile#damage-) |
+| boolean | .[dead](Projectile#dead-) |
+| [Animation](../Hyperspace/Animation) | .[death_animation](Projectile#death_animation-) |
+| integer | .[destinationSpace](Projectile#destinationSpace-) |
+| number | .[entryAngle](Projectile#entryAngle-) |
+| [Projectile_Extend](../Hyperspace/Projectile_Extend) | .[extend](Projectile#extend-) |
+| [AnimationTracker](../Hyperspace/AnimationTracker) | .[flashTracker](Projectile#flashTracker-) |
+| [Animation](../Hyperspace/Animation) | .[flight_animation](Projectile#flight_animation-) |
+| number | .[heading](Projectile#heading-) |
+| string | .[hitShieldSound](Projectile#hitShieldSound-) |
+| string | .[hitSolidSound](Projectile#hitSolidSound-) |
+| boolean | .[hitTarget](Projectile#hitTarget-) |
+| [Pointf](../Hyperspace/Pointf) | .[last_position](Projectile#last_position-) |
+| boolean | .[missed](Projectile#missed-) |
+| integer | .[ownerId](Projectile#ownerId-) |
+| boolean | .[passedTarget](Projectile#passedTarget-) |
+| [Pointf](../Hyperspace/Pointf) | .[position](Projectile#position-) |
+| uint | .[selfId](Projectile#selfId-) |
+| [Pointf](../Hyperspace/Pointf) | .[speed](Projectile#speed-) |
+| number | .[speed_magnitude](Projectile#speed_magnitude-) |
+| boolean | .[startedDeath](Projectile#startedDeath-) |
+| [Pointf](../Hyperspace/Pointf) | .[target](Projectile#target-) |
+| integer | .[targetId](Projectile#targetId-) |
+
+</details>
+___
 ### animationTimer
-{: aria-label='Fields' }
+{: #animationTimer aria-label='Fields' }
 #### number .animationTimer
 {: aria-label='Fields' }
 
 ___
 ### bDamageSuperShield
-{: aria-label='Fields' }
+{: #bDamageSuperShield aria-label='Fields' }
 #### boolean .bDamageSuperShield
 {: aria-label='Fields' }
 
 ___
 ### checkedCollision
-{: aria-label='Fields' }
+{: #checkedCollision aria-label='Fields' }
 #### boolean .checkedCollision
 {: aria-label='Fields' }
 
 ___
 ### contactAnimations
-{: aria-label='Fields' }
+{: #contactAnimations aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .contactAnimations
 {: aria-label='Fields' }
 
 ___
 ### dh
-{: aria-label='Fields' }
+{: #dh aria-label='Fields' }
 #### number .dh
 {: aria-label='Fields' }
 
 ___
 ### final_end
-{: aria-label='Fields' }
+{: #final_end aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .final_end
 {: aria-label='Fields' }
 
 ___
 ### lastDamage
-{: aria-label='Fields' }
+{: #lastDamage aria-label='Fields' }
 #### integer .lastDamage
 {: aria-label='Fields' }
 
 ___
 ### lastSmokeAnim
-{: aria-label='Fields' }
+{: #lastSmokeAnim aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastSmokeAnim
 {: aria-label='Fields' }
 
 ___
 ### last_collision
-{: aria-label='Fields' }
+{: #last_collision aria-label='Fields' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) .last_collision
 {: aria-label='Fields' }
 
 ___
 ### length
-{: aria-label='Fields' }
+{: #length aria-label='Fields' }
 #### number .length
 {: aria-label='Fields' }
 
 ___
 ### lifespan
-{: aria-label='Fields' }
+{: #lifespan aria-label='Fields' }
 #### number .lifespan
 {: aria-label='Fields' }
 
 ___
 ### movingTarget
-{: aria-label='Fields' }
+{: #movingTarget aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
 
 ___
 ### movingTargetId
-{: aria-label='Fields' }
+{: #movingTargetId aria-label='Fields' }
 #### integer .movingTargetId
 {: aria-label='Fields' }
 
 ___
 ### oneSpace
-{: aria-label='Fields' }
+{: #oneSpace aria-label='Fields' }
 #### boolean .oneSpace
 {: aria-label='Fields' }
 
 ___
 ### piercedShield
-{: aria-label='Fields' }
+{: #piercedShield aria-label='Fields' }
 #### boolean .piercedShield
 {: aria-label='Fields' }
 
 ___
 ### shield_end
-{: aria-label='Fields' }
+{: #shield_end aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shield_end
 {: aria-label='Fields' }
 
 ___
 ### smokeAnims
-{: aria-label='Fields' }
+{: #smokeAnims aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .smokeAnims
 {: aria-label='Fields' }
 
 ___
 ### soundChannel
-{: aria-label='Fields' }
+{: #soundChannel aria-label='Fields' }
 #### integer .soundChannel
 {: aria-label='Fields' }
 
 ___
 ### start_heading
-{: aria-label='Fields' }
+{: #start_heading aria-label='Fields' }
 #### number .start_heading
 {: aria-label='Fields' }
 
 ___
 ### sub_end
-{: aria-label='Fields' }
+{: #sub_end aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_end
 {: aria-label='Fields' }
 
 ___
 ### sub_start
-{: aria-label='Fields' }
+{: #sub_start aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_start
 {: aria-label='Fields' }
 
 ___
 ### target1
-{: aria-label='Fields' }
+{: #target1 aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target1
 {: aria-label='Fields' }
 
 ___
 ### target2
-{: aria-label='Fields' }
+{: #target2 aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target2
 {: aria-label='Fields' }
 
 ___
 ### timer
-{: aria-label='Fields' }
+{: #timer aria-label='Fields' }
 #### number .timer
 {: aria-label='Fields' }
 
 ___
 ### weapAnimation
-{: aria-label='Fields' }
+{: #weapAnimation aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weapAnimation
 {: aria-label='Fields' }
 

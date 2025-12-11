@@ -6,14 +6,18 @@ lang: en
 
 # Class "Projectile"
 
+
 Extends: [Collideable](../Hyperspace/Collideable)
+
+Subclasses: [Asteroid](../Hyperspace/Asteroid), [BeamWeapon](../Hyperspace/BeamWeapon), [BombProjectile](../Hyperspace/BombProjectile), [LaserBlast](../Hyperspace/LaserBlast), [Missile](../Hyperspace/Missile)
 
 
 
 
 ## Static Methods
+{: #Static-Methods .section}
 ### RandomSidePoint ()
-{: aria-label='StaticMethods' }
+{: #RandomSidePoint aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .RandomSidePoint (integer side)
 {: aria-label='StaticMethods' }
 
@@ -21,134 +25,155 @@ ___
 
 
 ## Methods
+{: #Methods .section}
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [Collideable](Collideable)
+
+| Return Type | Method |
+| --- | --- |
+| boolean | :[DamageArea](Collideable#DamageArea) ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit) |
+| boolean | :[DamageBeam](Collideable#DamageBeam) ([Pointf](../Hyperspace/Pointf) current, [Pointf](../Hyperspace/Pointf) last, [Damage](../Hyperspace/Damage) damage) |
+| boolean | :[DamageShield](Collideable#DamageShield) ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit) |
+| boolean | :[GetDodged](Collideable#GetDodged) () |
+| integer | :[GetOwnerId](Collideable#GetOwnerId) () |
+| integer | :[GetSelfId](Collideable#GetSelfId) () |
+| integer | :[GetSpaceId](Collideable#GetSpaceId) () |
+| [Pointf](../Hyperspace/Pointf) | :[GetSuperShield](Collideable#GetSuperShield) () |
+| void | :[SetTempVision](Collideable#SetTempVision) ([Pointf](../Hyperspace/Pointf) location) |
+| boolean | :[ValidTargetLocation](Collideable#ValidTargetLocation) ([Pointf](../Hyperspace/Pointf) location) |
+
+</details>
+___
 ### CollisionCheck ()
-{: aria-label='Methods' }
+{: #CollisionCheck aria-label='Methods' }
 #### void :CollisionCheck ([Collideable](../Hyperspace/Collideable) other)
 {: aria-label='Methods' }
 
 ___
 ### CollisionMoving ()
-{: aria-label='Methods' }
+{: #CollisionMoving aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### ComputeHeading ()
-{: aria-label='Methods' }
+{: #ComputeHeading aria-label='Methods' }
 #### void :ComputeHeading ()
 {: aria-label='Methods' }
 
 ___
 ### Dead ()
-{: aria-label='Methods' }
+{: #Dead aria-label='Methods' }
 #### boolean :Dead ()
 {: aria-label='Methods' }
 
 ___
 ### EnterDestinationSpace ()
-{: aria-label='Methods' }
+{: #EnterDestinationSpace aria-label='Methods' }
 #### void :EnterDestinationSpace ()
 {: aria-label='Methods' }
 
 ___
 ### ForceRenderLayer ()
-{: aria-label='Methods' }
+{: #ForceRenderLayer aria-label='Methods' }
 #### integer :ForceRenderLayer ()
 {: aria-label='Methods' }
 
 ___
 ### GetRandomTargettingPoint ()
-{: aria-label='Methods' }
+{: #GetRandomTargettingPoint aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean valuable)
 {: aria-label='Methods' }
 
 ___
 ### GetSpeed ()
-{: aria-label='Methods' }
+{: #GetSpeed aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
 {: aria-label='Methods' }
 
 ___
 ### GetType ()
-{: aria-label='Methods' }
+{: #GetType aria-label='Methods' }
 #### integer :GetType ()
 {: aria-label='Methods' }
 
 ___
 ### GetWorldCenterPoint ()
-{: aria-label='Methods' }
+{: #GetWorldCenterPoint aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
 {: aria-label='Methods' }
 
 ___
 ### Initialize ()
-{: aria-label='Methods' }
+{: #Initialize aria-label='Methods' }
 #### void :Initialize ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp)
 {: aria-label='Methods' }
 
 ___
 ### Kill ()
-{: aria-label='Methods' }
+{: #Kill aria-label='Methods' }
 #### void :Kill ()
 {: aria-label='Methods' }
 
 ___
 ### LoadProjectile ()
-{: aria-label='Methods' }
+{: #LoadProjectile aria-label='Methods' }
 #### void :LoadProjectile (integer fd)
 {: aria-label='Methods' }
 
 ___
 ### OnRenderSpecific ()
-{: aria-label='Methods' }
+{: #OnRenderSpecific aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
 {: aria-label='Methods' }
 
 ___
 ### OnUpdate ()
-{: aria-label='Methods' }
+{: #OnUpdate aria-label='Methods' }
 #### void :OnUpdate ()
 {: aria-label='Methods' }
 
 ___
 ### SaveProjectile ()
-{: aria-label='Methods' }
+{: #SaveProjectile aria-label='Methods' }
 #### void :SaveProjectile (integer fd)
 {: aria-label='Methods' }
 
 ___
 ### SetDamage ()
-{: aria-label='Methods' }
+{: #SetDamage aria-label='Methods' }
 #### void :SetDamage ([Damage](../Hyperspace/Damage) damage)
 {: aria-label='Methods' }
 
 ___
 ### SetDestinationSpace ()
-{: aria-label='Methods' }
+{: #SetDestinationSpace aria-label='Methods' }
 #### void :SetDestinationSpace (integer space)
 {: aria-label='Methods' }
 
 ___
 ### SetMovingTarget ()
-{: aria-label='Methods' }
+{: #SetMovingTarget aria-label='Methods' }
 #### void :SetMovingTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### SetSpin ()
-{: aria-label='Methods' }
+{: #SetSpin aria-label='Methods' }
 #### void :SetSpin (number spin)
 {: aria-label='Methods' }
 
 ___
 ### SetWeaponAnimation ()
-{: aria-label='Methods' }
+{: #SetWeaponAnimation aria-label='Methods' }
 #### void :SetWeaponAnimation ([WeaponAnimation](../Hyperspace/WeaponAnimation) animation)
 {: aria-label='Methods' }
 
 ___
 ### ValidTarget ()
-{: aria-label='Methods' }
+{: #ValidTarget aria-label='Methods' }
 #### boolean :ValidTarget ()
 {: aria-label='Methods' }
 
@@ -156,172 +181,173 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### _targetable
-{: aria-label='Fields' }
+{: #_targetable aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) ._targetable
 {: aria-label='Fields' }
 
 ___
 ### bBroadcastTarget
-{: aria-label='Fields' }
+{: #bBroadcastTarget aria-label='Fields' }
 #### boolean .bBroadcastTarget
 {: aria-label='Fields' }
 
 ___
 ### color
-{: aria-label='Fields' }
+{: #color aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
 ___
 ### currentSpace
-{: aria-label='Fields' }
+{: #currentSpace aria-label='Fields' }
 #### integer .currentSpace
 {: aria-label='Fields' }
 
 ___
 ### damage
-{: aria-label='Fields' }
+{: #damage aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
 ___
 ### dead
-{: aria-label='Fields' }
+{: #dead aria-label='Fields' }
 #### boolean .dead
 {: aria-label='Fields' }
 
 ___
 ### death_animation
-{: aria-label='Fields' }
+{: #death_animation aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .death_animation
 {: aria-label='Fields' }
 
 ___
 ### destinationSpace
-{: aria-label='Fields' }
+{: #destinationSpace aria-label='Fields' }
 #### integer .destinationSpace
 {: aria-label='Fields' }
 
 ___
 ### entryAngle
-{: aria-label='Fields' }
+{: #entryAngle aria-label='Fields' }
 #### number .entryAngle
 {: aria-label='Fields' }
 
 ___
 ### extend (Read-only)
-{: aria-label='Fields' }
+{: #extend aria-label='Fields' }
 #### [Projectile_Extend](../Hyperspace/Projectile_Extend) .extend
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### flashTracker
-{: aria-label='Fields' }
+{: #flashTracker aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
 {: aria-label='Fields' }
 
 ___
 ### flight_animation
-{: aria-label='Fields' }
+{: #flight_animation aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flight_animation
 {: aria-label='Fields' }
 
 ___
 ### heading
-{: aria-label='Fields' }
+{: #heading aria-label='Fields' }
 #### number .heading
 {: aria-label='Fields' }
 
 ___
 ### hitShieldSound
-{: aria-label='Fields' }
+{: #hitShieldSound aria-label='Fields' }
 #### string .hitShieldSound
 {: aria-label='Fields' }
 
 ___
 ### hitSolidSound
-{: aria-label='Fields' }
+{: #hitSolidSound aria-label='Fields' }
 #### string .hitSolidSound
 {: aria-label='Fields' }
 
 ___
 ### hitTarget
-{: aria-label='Fields' }
+{: #hitTarget aria-label='Fields' }
 #### boolean .hitTarget
 {: aria-label='Fields' }
 
 ___
 ### last_position
-{: aria-label='Fields' }
+{: #last_position aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .last_position
 {: aria-label='Fields' }
 
 ___
 ### lifespan
-{: aria-label='Fields' }
+{: #lifespan aria-label='Fields' }
 #### number .lifespan
 {: aria-label='Fields' }
 
 ___
 ### missed
-{: aria-label='Fields' }
+{: #missed aria-label='Fields' }
 #### boolean .missed
 {: aria-label='Fields' }
 
 ___
 ### ownerId
-{: aria-label='Fields' }
+{: #ownerId aria-label='Fields' }
 #### integer .ownerId
 {: aria-label='Fields' }
 
 ___
 ### passedTarget
-{: aria-label='Fields' }
+{: #passedTarget aria-label='Fields' }
 #### boolean .passedTarget
 {: aria-label='Fields' }
 
 ___
 ### position
-{: aria-label='Fields' }
+{: #position aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
 {: aria-label='Fields' }
 
 ___
 ### selfId (Read-only)
-{: aria-label='Fields' }
+{: #selfId aria-label='Fields' }
 #### uint .selfId
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### speed
-{: aria-label='Fields' }
+{: #speed aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speed
 {: aria-label='Fields' }
 
 ___
 ### speed_magnitude
-{: aria-label='Fields' }
+{: #speed_magnitude aria-label='Fields' }
 #### number .speed_magnitude
 {: aria-label='Fields' }
 
 ___
 ### startedDeath
-{: aria-label='Fields' }
+{: #startedDeath aria-label='Fields' }
 #### boolean .startedDeath
 {: aria-label='Fields' }
 
 ___
 ### target
-{: aria-label='Fields' }
+{: #target aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
 {: aria-label='Fields' }
 
 ___
 ### targetId
-{: aria-label='Fields' }
+{: #targetId aria-label='Fields' }
 #### integer .targetId
 {: aria-label='Fields' }
 

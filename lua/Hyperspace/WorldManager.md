@@ -11,14 +11,15 @@ lang: en
 
 
 ## Methods
+{: #Methods .section}
 ### AddBoarders ()
-{: aria-label='Methods' }
+{: #AddBoarders aria-label='Methods' }
 #### boolean :AddBoarders ([BoardingEvent](../Hyperspace/BoardingEvent) boardingEvent)
 {: aria-label='Methods' }
 
 ___
 ### ClearLocation ()
-{: aria-label='Methods' }
+{: #ClearLocation aria-label='Methods' }
 #### void :ClearLocation ()
 {: aria-label='Methods' }
 
@@ -26,54 +27,55 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### bLoadingGame (Read-only)
-{: aria-label='Fields' }
+{: #bLoadingGame aria-label='Fields' }
 #### boolean .bLoadingGame
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### bStartedGame (Read-only)
-{: aria-label='Fields' }
+{: #bStartedGame aria-label='Fields' }
 #### boolean .bStartedGame
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### currentDifficulty (Read-only)
-{: aria-label='Fields' }
+{: #currentDifficulty aria-label='Fields' }
 #### integer .currentDifficulty
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### killedCrew
-{: aria-label='Fields' }
+{: #killedCrew aria-label='Fields' }
 #### integer .killedCrew
 {: aria-label='Fields' }
 
 ___
 ### playerCrewCount
-{: aria-label='Fields' }
+{: #playerCrewCount aria-label='Fields' }
 #### integer .playerCrewCount
 {: aria-label='Fields' }
 
 ___
 ### playerHull
-{: aria-label='Fields' }
+{: #playerHull aria-label='Fields' }
 #### integer .playerHull
 {: aria-label='Fields' }
 
 ___
 ### space (Read-only)
-{: aria-label='Fields' }
+{: #space aria-label='Fields' }
 #### [SpaceManager](../Hyperspace/SpaceManager) .space
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### starMap (Read-only)
-{: aria-label='Fields' }
+{: #starMap aria-label='Fields' }
 #### [StarMap](../Hyperspace/StarMap) .starMap
 {: aria-label='Fields' }
 **Read-only**

@@ -6,12 +6,14 @@ lang: en
 
 # Class "WeaponBlueprint"
 
+
 Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
 ## Constructors
+{: #Constructors .section}
 ### WeaponBlueprint ()
-{: aria-label='Constructors' }
+{: #WeaponBlueprint aria-label='Constructors' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) WeaponBlueprint ()
 {: aria-label='Constructors' }
 
@@ -22,128 +24,142 @@ ___
 
 
 ## Fields
+{: #Fields .section}
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [Blueprint](Blueprint)
+
+| Type | Field |
+| --- | --- |
+| [Description](../Hyperspace/Description) | .[desc](Blueprint#desc-) |
+| string | .[name](Blueprint#name-) |
+| integer | .[type](Blueprint#type-) |
+
+</details>
+___
 ### boostPower
-{: aria-label='Fields' }
+{: #boostPower aria-label='Fields' }
 #### [BoostPower](../Hyperspace/BoostPower) .boostPower
 {: aria-label='Fields' }
 
 ___
 ### chargeLevels
-{: aria-label='Fields' }
+{: #chargeLevels aria-label='Fields' }
 #### integer .chargeLevels
 {: aria-label='Fields' }
 
 ___
 ### color
-{: aria-label='Fields' }
+{: #color aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
 ___
 ### combatIcon
-{: aria-label='Fields' }
+{: #combatIcon aria-label='Fields' }
 #### string .combatIcon
 {: aria-label='Fields' }
 
 ___
 ### cooldown
-{: aria-label='Fields' }
+{: #cooldown aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### damage
-{: aria-label='Fields' }
+{: #damage aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
 ___
 ### drone_targetable
-{: aria-label='Fields' }
+{: #drone_targetable aria-label='Fields' }
 #### integer .drone_targetable
 {: aria-label='Fields' }
 
 ___
 ### effects
-{: aria-label='Fields' }
+{: #effects aria-label='Fields' }
 #### [EffectsBlueprint](../Hyperspace/EffectsBlueprint) .effects
 {: aria-label='Fields' }
 
 ___
 ### explosion
-{: aria-label='Fields' }
+{: #explosion aria-label='Fields' }
 #### string .explosion
 {: aria-label='Fields' }
 
 ___
 ### flavorType
-{: aria-label='Fields' }
+{: #flavorType aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .flavorType
 {: aria-label='Fields' }
 
 ___
 ### length
-{: aria-label='Fields' }
+{: #length aria-label='Fields' }
 #### integer .length
 {: aria-label='Fields' }
 
 ___
 ### miniCount
-{: aria-label='Fields' }
+{: #miniCount aria-label='Fields' }
 #### integer .miniCount
 {: aria-label='Fields' }
 
 ___
 ### miniProjectiles
-{: aria-label='Fields' }
+{: #miniProjectiles aria-label='Fields' }
 #### vector\<[MiniProjectile](../Hyperspace/MiniProjectile)\> .miniProjectiles
 {: aria-label='Fields' }
 
 ___
 ### missiles
-{: aria-label='Fields' }
+{: #missiles aria-label='Fields' }
 #### integer .missiles
 {: aria-label='Fields' }
 
 ___
 ### power
-{: aria-label='Fields' }
+{: #power aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
 ___
 ### radius
-{: aria-label='Fields' }
+{: #radius aria-label='Fields' }
 #### integer .radius
 {: aria-label='Fields' }
 
 ___
 ### shots
-{: aria-label='Fields' }
+{: #shots aria-label='Fields' }
 #### integer .shots
 {: aria-label='Fields' }
 
 ___
 ### speed
-{: aria-label='Fields' }
+{: #speed aria-label='Fields' }
 #### number .speed
 {: aria-label='Fields' }
 
 ___
 ### spin
-{: aria-label='Fields' }
+{: #spin aria-label='Fields' }
 #### integer .spin
 {: aria-label='Fields' }
 
 ___
 ### typeName
-{: aria-label='Fields' }
+{: #typeName aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
 ___
 ### weaponArt
-{: aria-label='Fields' }
+{: #weaponArt aria-label='Fields' }
 #### string .weaponArt
 {: aria-label='Fields' }
 

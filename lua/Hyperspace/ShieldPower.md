@@ -12,20 +12,21 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### first
-{: aria-label='Fields' }
+{: #first aria-label='Fields' }
 #### integer .first
 {: aria-label='Fields' }
 
 ___
 ### second
-{: aria-label='Fields' }
+{: #second aria-label='Fields' }
 #### integer .second
 {: aria-label='Fields' }
 
 ___
 ### super
-{: aria-label='Fields' }
+{: #super aria-label='Fields' }
 #### pair\<integer, integer\> .super
 {: aria-label='Fields' }
 

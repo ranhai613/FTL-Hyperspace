@@ -8,8 +8,9 @@ lang: en
 
 
 ## Constructors
+{: #Constructors .section}
 ### TopScore ()
-{: aria-label='Constructors' }
+{: #TopScore aria-label='Constructors' }
 #### [TopScore](../Hyperspace/TopScore) TopScore ()
 {: aria-label='Constructors' }
 
@@ -20,14 +21,15 @@ ___
 
 
 ## Fields
+{: #Fields .section}
 ### score
-{: aria-label='Fields' }
+{: #score aria-label='Fields' }
 #### integer .score
 {: aria-label='Fields' }
 
 ___
 ### sector
-{: aria-label='Fields' }
+{: #sector aria-label='Fields' }
 #### integer .sector
 {: aria-label='Fields' }
 

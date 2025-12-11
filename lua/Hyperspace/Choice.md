@@ -12,26 +12,27 @@ lang: en
 
 
 ## Fields
+{: #Fields .section}
 ### event
-{: aria-label='Fields' }
+{: #event aria-label='Fields' }
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
 {: aria-label='Fields' }
 
 ___
 ### hiddenReward
-{: aria-label='Fields' }
+{: #hiddenReward aria-label='Fields' }
 #### boolean .hiddenReward
 {: aria-label='Fields' }
 
 ___
 ### requirement
-{: aria-label='Fields' }
+{: #requirement aria-label='Fields' }
 #### [ChoiceReq](../Hyperspace/ChoiceReq) .requirement
 {: aria-label='Fields' }
 
 ___
 ### text
-{: aria-label='Fields' }
+{: #text aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text
 {: aria-label='Fields' }
 
