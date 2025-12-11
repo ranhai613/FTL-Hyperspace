@@ -484,6 +484,12 @@ ______
 {: aria-label='Fields' }
 
 ______
+### savedStatBoostDefs
+{: aria-label='Fields' }
+#### unordered_map\<string, [StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .savedStatBoostDefs
+{: aria-label='Fields' }
+
+______
 ### shipTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.ShipTarget](../Hyperspace/StatBoostDefinition.ShipTarget) .shipTarget
@@ -510,6 +516,12 @@ ______
 ### stat
 {: aria-label='Fields' }
 #### [CrewStat](../Hyperspace/CrewStat) .stat
+{: aria-label='Fields' }
+
+______
+### statBoostDefs
+{: aria-label='Fields' }
+#### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoostDefs
 {: aria-label='Fields' }
 
 ______
@@ -561,17 +573,6 @@ ______
 ### whiteList
 {: aria-label='Fields' }
 #### vector\<string\> .whiteList
-{: aria-label='Fields' }
-
-___### savedStatBoostDefs
-{: aria-label='Fields' }
-#### unordered_map\<string, [StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .savedStatBoostDefs
-{: aria-label='Fields' }
-
-______
-### statBoostDefs
-{: aria-label='Fields' }
-#### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoostDefs
 {: aria-label='Fields' }
 
 ___

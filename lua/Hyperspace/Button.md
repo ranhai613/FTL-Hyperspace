@@ -74,13 +74,13 @@ ______
 ______
 ### images
 {: aria-label='Fields' }
-#### [GL_Texture[] length=3](../Graphics/GL_Texture[] length=3) .images
+#### [GL_Texture[]](../Graphics/GL_Texture) .images
 {: aria-label='Fields' }
 
 ______
 ### primitives
 {: aria-label='Fields' }
-#### [GL_Primitive[] length=3](../Graphics/GL_Primitive[] length=3) .primitives
+#### [GL_Primitive[]](../Graphics/GL_Primitive) .primitives
 {: aria-label='Fields' }
 
 ___

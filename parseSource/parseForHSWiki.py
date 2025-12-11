@@ -6,7 +6,7 @@ import re
 import json
 from collections import defaultdict
 from enum import Enum
-import os
+from pathlib import Path
 
 LUA_PRIMITIVES = [
     "boolean", "number", "string", "table", "function", "userdata", "thread", "nil", "any", "integer"
@@ -267,6 +267,9 @@ class WikiPageItem:
         if self.name != value.name:
             return False
         
+        if self.returnType != value.returnType:
+            return False
+        
         if self.propertyType == PropertyType.CONSTRUCTOR:
             raise NotImplementedError("WikiPageItem: __eq__ not implemented for CONSTRUCTOR")
         elif self.propertyType in [PropertyType.STATICMETHOD, PropertyType.METHOD]:
@@ -293,44 +296,125 @@ class WikiPage:
         self.methods = methods
         self.fields = fields
     
-    def getParentItems(self, type: PropertyType) -> set[WikiPageItem]:
-        ret = []
+    def getInheritedItems(self, type: PropertyType) -> set[WikiPageItem]:
+        ret = set()
         for parentName in self.parentNames:
             if parentPage := g_wiki_pages.get(parentName, None) is None:
                 continue
             
             if type == PropertyType.CONSTRUCTOR:
-                raise NotImplementedError("WikiPage: getParentItems not implemented for CONSTRUCTOR")
+                raise NotImplementedError("WikiPage: getInheritedItems not implemented for CONSTRUCTOR")
             elif type == PropertyType.CONSTANT:
-                ret += parentPage.constants
+                ret |= set(parentPage.constants)
             elif type == PropertyType.STATICMETHOD:
-                ret += parentPage.staticMethods
+                ret |= set(parentPage.staticMethods)
             elif type == PropertyType.METHOD:
-                ret += parentPage.methods
+                ret |= set(parentPage.methods)
             elif type == PropertyType.FIELD:
-                ret += parentPage.fields
+                ret |= set(parentPage.fields)
             
-            ret += parentPage.getParentItems(type)
-        return 
-    
-    def outputFields(self) -> str:
-        sorting_list = []
-        for field in self.fields:
-            ret = ""
-            ret += f"___\n### {field.name}"
-            if field.immutable:
-                ret += " (Read-only)"
-            ret += "\n{: aria-label='Variables' }\n"
-            ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Variables' }}\n"
-            if field.documentation:
-                ret += f"{field.documentation}\n"
-            ret += "\n___"
-            sorting_list.append((field.name, ret))
+            ret |= parentPage.getInheritedItems(type)
         
-        ret = "".join([x[1] for x in sorted(sorting_list, key=lambda x: x[0])])
+        if type == PropertyType.CONSTRUCTOR:
+            raise NotImplementedError("WikiPage: getInheritedItems not implemented for CONSTRUCTOR")
+        elif type == PropertyType.CONSTANT:
+            return ret - set(self.constants)
+        elif type == PropertyType.STATICMETHOD:
+            return ret - set(self.staticMethods)
+        elif type == PropertyType.METHOD:
+            return ret - set(self.methods)
+        elif type == PropertyType.FIELD:
+            return ret - set(self.fields)
+    
+    def outputConstructors(self) -> str:
+        ret = ""
+        for constructor in sorted(self.constructors, key=lambda x: x.name):
+            ret += f"___\n### {constructor.name} ()\n{{: aria-label='Constructors' }}\n"
+            params = []
+            for i in range(len(constructor.params_name)):
+                params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
+            params_str = ", ".join(params)
+            ret += f"#### {wrap_type_for_md(constructor.className, constructor.returnType)} {constructor.name} ({params_str})\n{{: aria-label='Constructors' }}\n"
+            if constructor.documentation:
+                ret += f"{constructor.documentation}\n"
+            ret += "\n___"
+        
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret
+    
+    def outputConstants(self) -> str:
+        ret = ""
+        for constant in sorted(self.constants, key=lambda x: x.name):
+            ret += f"___\n### {constant.className}.{constant.name}\n{{: aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
+            if constant.documentation:
+                ret += f"{constant.documentation}\n"
+            ret += "\n___"
+        
+        if len(ret) > 4:
+            ret = ret[4:] # remove leading ___
+        return ret
+    
+    def outputStaticMethods(self) -> str:
+        ret = ""
+        for method in sorted(self.staticMethods, key=lambda x: x.name):
+            ret += f"___\n### {method.name} ()\n{{: aria-label='StaticMethods' }}\n"
+            params = []
+            for i in range(len(method.params_name)):
+                params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
+            params_str = ", ".join(params)
+            ret += f"#### {wrap_type_for_md(method.className, method.returnType)} .{method.name} ({params_str})\n{{: aria-label='StaticMethods' }}\n"
+            if method.documentation:
+                ret += f"{method.documentation}\n"
+            ret += "\n___"
+        if len(ret) > 4:
+            ret = ret[4:] # remove leading ___
+        return ret
+    
+    def outputMethods(self) -> str:
+        ret = ""
+        for method in sorted(self.methods, key=lambda x: x.name):
+            ret += f"___\n### {method.name} ()\n{{: aria-label='Methods' }}\n"
+            params = []
+            for i in range(len(method.params_name)):
+                params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
+            params_str = ", ".join(params)
+            ret += f"#### {wrap_type_for_md(method.className, method.returnType)} :{method.name} ({params_str})\n{{: aria-label='Methods' }}\n"
+            if method.documentation:
+                ret += f"{method.documentation}\n"
+            ret += "\n___"
+        if len(ret) > 4:
+            ret = ret[4:] # remove leading ___
+        return ret
+    
+    def outputFields(self) -> str:
+        ret = ""
+        for field in sorted(self.fields, key=lambda x: x.name):
+            ret += f"___\n### {field.name}"
+            if field.immutable:
+                ret += " (Read-only)"
+            ret += "\n{: aria-label='Fields' }\n"
+            ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
+            if field.documentation:
+                ret += f"{field.documentation}\n"
+            ret += "\n___"
+        
+        if len(ret) > 4:
+            ret = ret[4:] # remove leading ___
+        return ret
+    
+    def Output(self, basePath: str):
+        output_path = Path(basePath) / self.moduleName / f"{self.name}.md"
+        replace_map = {
+            "NAME": self.name,
+            "PARENTS": ", ".join([wrap_type_for_md(self.name, parent) for parent in sorted(self.parentNames)]) if self.parentNames else None,
+            "CONSTRUCTORS": self.outputConstructors() if self.constructors else None,
+            "CONSTANTS": self.outputConstants() if self.constants else None,
+            "STATIC_METHODS": self.outputStaticMethods() if self.staticMethods else None,
+            "METHODS": self.outputMethods() if self.methods else None,
+            "FIELDS": self.outputFields() if self.fields else None
+        }
+        create_wiki_md(replace_map, output_path)
     
 g_functionDataMap: dict[str, FunctionInfo] = {}
 
@@ -339,6 +423,7 @@ g_wiki_pages: dict[str, WikiPage] = {}
 g_enum_parse_requests = set()
 
 TEMPLATE_PATTERN = re.compile(r'([\w:]+)<(.+)>')
+ARRAY_PATTERN = re.compile(r'(.+)\[(\d*)\]')
 
 def get_lua_type(type: str, isClassDef=False, isFuncRet=False) -> str:
     # String = string|number; this union type is needed for the implicit conversion between string and number in lua
@@ -354,13 +439,13 @@ def get_lua_type(type: str, isClassDef=False, isFuncRet=False) -> str:
     type = type.replace("*", "")
     
     # Handle arrays like int[10]
-    array_match = re.match(r'(.+)\[(\d+)\]', type)
+    array_match = re.match(ARRAY_PATTERN, type)
     if array_match:
         inner_type = array_match.group(1)
         size = array_match.group(2)
         # Process the inner type recursively
         processed_inner_type = get_lua_type(inner_type)
-        return f"{processed_inner_type}[] length={size}"
+        return f"{processed_inner_type}[]"
 
     # Handle template types like vector<int>
     template_match = re.match(TEMPLATE_PATTERN, type)
@@ -418,9 +503,9 @@ def wrap_type_for_md(className: str, typeName: str) -> str:
     if len(levels) > 2:
         child = ".".join(levels[1:])
     if parent == className:
-        return f"[{child}]({child})"
+        return f"[{child}]({child.replace('[]', '')})"
     else:
-        return f"[{child}](../{parent}/{child})"
+        return f"[{child}](../{parent}/{child.replace('[]', '')})"
     
 
 def format_container_type(className: str) -> str|None:
@@ -445,6 +530,9 @@ def create_wiki_md(replace_map: dict[str, str], output_path: str):
     
     template = re.sub(r"\{\?(.*?)\?\}", optional_replace, template, flags=re.DOTALL)
     for key, value in replace_map.items():
+        if value is None:
+            continue
+        
         template = template.replace(f"{{{{{key}}}}}", value)
     
     with open(output_path, 'w', encoding='utf8') as f:
@@ -796,7 +884,8 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             
             # output_path = f"lua/{moduleName}/{className}.md"
             # create_wiki_md(replace_map, output_path)
-    
+    for wiki_page in g_wiki_pages.values():
+        wiki_page.Output("lua")
     return result
     
 def build_class_map(result: dict, path: str):    

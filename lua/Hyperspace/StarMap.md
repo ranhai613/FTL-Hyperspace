@@ -100,7 +100,7 @@ ______
 ______
 ### mapsBottom
 {: aria-label='Fields' }
-#### [GL_Primitive[] length=3](../Graphics/GL_Primitive[] length=3) .mapsBottom
+#### [GL_Primitive[]](../Graphics/GL_Primitive) .mapsBottom
 {: aria-label='Fields' }
 Contains the 3 background images of the sector map. Index selected via `worldLevel % 3`.
 

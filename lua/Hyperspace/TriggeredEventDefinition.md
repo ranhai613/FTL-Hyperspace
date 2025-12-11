@@ -12,6 +12,12 @@ lang: en
 
 
 ## Fields
+### defs (Read-only)
+{: aria-label='Fields' }
+#### vector\<[TriggeredEventDefinition](../Hyperspace/TriggeredEventDefinition)\> .defs
+{: aria-label='Fields' }
+
+______
 ### event (Read-only)
 {: aria-label='Fields' }
 #### string .event
@@ -21,11 +27,6 @@ ______
 ### name (Read-only)
 {: aria-label='Fields' }
 #### string .name
-{: aria-label='Fields' }
-
-___### defs (Read-only)
-{: aria-label='Fields' }
-#### vector\<[TriggeredEventDefinition](../Hyperspace/TriggeredEventDefinition)\> .defs
 {: aria-label='Fields' }
 
 ___

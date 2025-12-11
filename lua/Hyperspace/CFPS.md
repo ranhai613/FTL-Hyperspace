@@ -53,5 +53,4 @@ ______
 #### integer .speedLevel
 {: aria-label='Fields' }
 
-___---@field speedEnabled boolean
-
+___
