@@ -12,6 +12,24 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 
+## Static Methods
+{: #Static-Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+
+
+#### From [ShipSystem](ShipSystem)
+
+| Return Type | Method |
+| --- | --- |
+| string | .[GetLevelDescription](ShipSystem#GetLevelDescription) (integer systemId, integer level, boolean tooltip) |
+| boolean | .[IsSubsystem](ShipSystem#IsSubsystem) (integer systemType) |
+| integer | .[NameToSystemId](ShipSystem#NameToSystemId) (string name) |
+| string | .[SystemIdToName](ShipSystem#SystemIdToName) (integer systemId) |
+
+</details>
+
+
 
 ## Methods
 {: #Methods .section}

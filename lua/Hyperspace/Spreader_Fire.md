@@ -22,6 +22,29 @@ ___
 
 
 
+## Methods
+{: #Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [ShipObject](ShipObject)
+
+| Return Type | Method |
+| --- | --- |
+| boolean | :[AddAugmentation](ShipObject#AddAugmentation) (string augment) |
+| void | :[ClearShipInfo](ShipObject#ClearShipInfo) () |
+| integer | :[GetAugmentationCount](ShipObject#GetAugmentationCount) () |
+| vector\<string\> | :[GetAugmentationList](ShipObject#GetAugmentationList) () |
+| number | :[GetAugmentationValue](ShipObject#GetAugmentationValue) (string augment) |
+| integer | :[HasAugmentation](ShipObject#HasAugmentation) (string augment) |
+| integer | :[HasEquipment](ShipObject#HasEquipment) (string equipmentName, boolean checkCargo=false) |
+| integer | :[HasEquipment](ShipObject#HasEquipment) (string equip) |
+| void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
+
+</details>
+
+
 
 ## Fields
 {: #Fields .section}

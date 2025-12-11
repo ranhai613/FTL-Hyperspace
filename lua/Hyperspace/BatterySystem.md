@@ -12,6 +12,86 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 
+## Static Methods
+{: #Static-Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+
+
+#### From [ShipSystem](ShipSystem)
+
+| Return Type | Method |
+| --- | --- |
+| string | .[GetLevelDescription](ShipSystem#GetLevelDescription) (integer systemId, integer level, boolean tooltip) |
+| boolean | .[IsSubsystem](ShipSystem#IsSubsystem) (integer systemType) |
+| integer | .[NameToSystemId](ShipSystem#NameToSystemId) (string name) |
+| string | .[SystemIdToName](ShipSystem#SystemIdToName) (integer systemId) |
+
+</details>
+
+
+
+## Methods
+{: #Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [ShipSystem](ShipSystem)
+
+| Return Type | Method |
+| --- | --- |
+| void | :[AddDamage](ShipSystem#AddDamage) (integer amount) |
+| void | :[AddLock](ShipSystem#AddLock) (integer lock) |
+| boolean | :[CanBeSabotaged](ShipSystem#CanBeSabotaged) () |
+| void | :[CheckForRepower](ShipSystem#CheckForRepower) () |
+| void | :[CheckMaxPower](ShipSystem#CheckMaxPower) () |
+| void | :[ClearStatus](ShipSystem#ClearStatus) () |
+| boolean | :[Clickable](ShipSystem#Clickable) () |
+| boolean | :[CompletelyDestroyed](ShipSystem#CompletelyDestroyed) () |
+| boolean | :[DamageOverTime](ShipSystem#DamageOverTime) (number unk) |
+| boolean | :[DecreasePower](ShipSystem#DecreasePower) (boolean force) |
+| void | :[ForceBatteryPower](ShipSystem#ForceBatteryPower) (integer power) |
+| boolean | :[ForceDecreasePower](ShipSystem#ForceDecreasePower) (integer powerLoss) |
+| boolean | :[ForceIncreasePower](ShipSystem#ForceIncreasePower) (integer power) |
+| boolean | :[Functioning](ShipSystem#Functioning) () |
+| number | :[GetDamage](ShipSystem#GetDamage) () |
+| integer | :[GetEffectivePower](ShipSystem#GetEffectivePower) () |
+| integer | :[GetId](ShipSystem#GetId) () |
+| boolean | :[GetLocked](ShipSystem#GetLocked) () |
+| integer | :[GetMaxPower](ShipSystem#GetMaxPower) () |
+| boolean | :[GetNeedsPower](ShipSystem#GetNeedsPower) () |
+| integer | :[GetPowerCap](ShipSystem#GetPowerCap) () |
+| integer | :[GetRoomId](ShipSystem#GetRoomId) () |
+| integer | :[GetSelected](ShipSystem#GetSelected) () |
+| boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
+| void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
+| boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
+| boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
+| void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
+| boolean | :[NeedsRepairing](ShipSystem#NeedsRepairing) () |
+| boolean | :[PartialDamage](ShipSystem#PartialDamage) (number amount) |
+| boolean | :[PartialRepair](ShipSystem#PartialRepair) (number speed, boolean autoRepair) |
+| boolean | :[Powered](ShipSystem#Powered) () |
+| void | :[RemoveBatteryPower](ShipSystem#RemoveBatteryPower) () |
+| void | :[Repair](ShipSystem#Repair) () |
+| void | :[SetBonusPower](ShipSystem#SetBonusPower) (integer amount, integer permanentPower) |
+| void | :[SetDamage](ShipSystem#SetDamage) (number damage) |
+| void | :[SetHackingLevel](ShipSystem#SetHackingLevel) (integer hackingLevel) |
+| void | :[SetLocation](ShipSystem#SetLocation) ([Point](../Hyperspace/Point) pos) |
+| void | :[SetMaxDamage](ShipSystem#SetMaxDamage) (number maxDamage) |
+| void | :[SetName](ShipSystem#SetName) (string name) |
+| void | :[SetPowerCap](ShipSystem#SetPowerCap) (integer cap) |
+| integer | :[SetPowerLoss](ShipSystem#SetPowerLoss) (integer power) |
+| void | :[SetRoomId](ShipSystem#SetRoomId) () |
+| void | :[SetSelected](ShipSystem#SetSelected) (integer selectedState) |
+| void | :[StopHacking](ShipSystem#StopHacking) () |
+| boolean | :[UpgradeSystem](ShipSystem#UpgradeSystem) (integer amount) |
+
+</details>
+
 
 
 ## Fields

@@ -22,6 +22,23 @@ ___
 
 
 
+## Methods
+{: #Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+
+
+#### From [Blueprint](Blueprint)
+
+| Return Type | Method |
+| --- | --- |
+| string | :[GetNameLong](Blueprint#GetNameLong) () |
+| string | :[GetNameShort](Blueprint#GetNameShort) () |
+| integer | :[GetType](Blueprint#GetType) () |
+
+</details>
+
+
 
 ## Fields
 {: #Fields .section}

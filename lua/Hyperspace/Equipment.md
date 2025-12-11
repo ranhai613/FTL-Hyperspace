@@ -46,3 +46,20 @@ ___
 
 ___
 
+
+## Fields
+{: #Fields .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+
+
+#### From [FocusWindow](FocusWindow)
+
+| Type | Field |
+| --- | --- |
+| boolean | .[bCloseButtonSelected](FocusWindow#bCloseButtonSelected-) |
+| boolean | .[bFullFocus](FocusWindow#bFullFocus-) |
+| boolean | .[bOpen](FocusWindow#bOpen-) |
+
+</details>
+

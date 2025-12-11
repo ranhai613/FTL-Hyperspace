@@ -332,6 +332,9 @@ class WikiPage:
             return ret - set(self.fields)
     
     def outputConstructors(self) -> str:
+        if not self.constructors:
+            return ""
+        
         ret = ""
         for constructor in sorted(self.constructors, key=lambda x: x.name):
             ret += f"___\n### {constructor.name} ()\n{{: #{constructor.name} aria-label='Constructors' }}\n"
@@ -364,6 +367,9 @@ class WikiPage:
                     ret += f"| .[{constant.name}]({md_ref_path(self.moduleName, constant.moduleName, constant.className, f"#{to_md_ref(constant.name)}")}) | `{constant.value}` |\n"
             ret += "\n</details>\n"
         
+        if not self.constants:
+            return ret
+        
         for constant in sorted(self.constants, key=lambda x: x.name):
             ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
             if constant.documentation:
@@ -394,6 +400,9 @@ class WikiPage:
                     params_str = ", ".join(params)
                     ret += f"| {wrap_type_for_md(method.className, method.returnType)} | .[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
             ret += "\n</details>\n"
+        
+        if not self.staticMethods:
+            return ret
         
         for method in sorted(self.staticMethods, key=lambda x: x.name):
             ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='StaticMethods' }}\n"
@@ -430,6 +439,9 @@ class WikiPage:
                     ret += f"| {wrap_type_for_md(method.className, method.returnType)} | :[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
             ret += "\n</details>\n"
         
+        if not self.methods:
+            return ret
+        
         for method in sorted(self.methods, key=lambda x: x.name):
             ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='Methods' }}\n"
             params = []
@@ -460,6 +472,9 @@ class WikiPage:
                 for field in sorted(inherited_map[parentClass], key=lambda x: x.name):
                     ret += f"| {wrap_type_for_md(field.className, field.returnType)} | .[{field.name}]({md_ref_path(self.moduleName, field.moduleName, field.className, f"#{to_md_ref(field.name)}-")}) |\n"
             ret += "\n</details>\n"
+        
+        if not self.fields:
+            return ret
         
         for field in sorted(self.fields, key=lambda x: x.name):
             ret += f"___\n### {field.name}"
@@ -514,12 +529,12 @@ class WikiPage:
         output_path = Path(basePath) / self.moduleName / f"{self.name}.md"
         replace_map = {
             "NAME": self.name,
-            "RELATIONS": self.outputRelations() if self.parentNames or self.subClassNames else None,
-            "CONSTRUCTORS": self.outputConstructors() if self.constructors else None,
-            "CONSTANTS": self.outputConstants() if self.constants else None,
-            "STATIC_METHODS": self.outputStaticMethods() if self.staticMethods else None,
-            "METHODS": self.outputMethods() if self.methods else None,
-            "FIELDS": self.outputFields() if self.fields else None
+            "RELATIONS": self.outputRelations() or None,
+            "CONSTRUCTORS": self.outputConstructors() or None,
+            "CONSTANTS": self.outputConstants() or None,
+            "STATIC_METHODS": self.outputStaticMethods() or None,
+            "METHODS": self.outputMethods() or None,
+            "FIELDS": self.outputFields() or None
         }
         create_wiki_md(replace_map, output_path)
     

@@ -21,6 +21,21 @@ ___
 
 
 
+## Static Methods
+{: #Static-Methods .section}
+___
+<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+
+
+#### From [Projectile](Projectile)
+
+| Return Type | Method |
+| --- | --- |
+| [Pointf](../Hyperspace/Pointf) | .[RandomSidePoint](Projectile#RandomSidePoint) (integer side) |
+
+</details>
+
+
 
 ## Methods
 {: #Methods .section}
