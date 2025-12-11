@@ -19,7 +19,7 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean .bTurnedOn
 {: aria-label='Fields' }
 
-______
+___
 ### soundeffect
 {: aria-label='Fields' }
 #### string .soundeffect

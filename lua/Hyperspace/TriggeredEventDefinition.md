@@ -17,13 +17,13 @@ lang: en
 #### vector\<[TriggeredEventDefinition](../Hyperspace/TriggeredEventDefinition)\> .defs
 {: aria-label='Fields' }
 
-______
+___
 ### event (Read-only)
 {: aria-label='Fields' }
 #### string .event
 {: aria-label='Fields' }
 
-______
+___
 ### name (Read-only)
 {: aria-label='Fields' }
 #### string .name

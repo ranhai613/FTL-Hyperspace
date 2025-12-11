@@ -25,13 +25,13 @@ ___
 #### integer .amount
 {: aria-label='Fields' }
 
-______
+___
 ### prop
 {: aria-label='Fields' }
 #### number .prop
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### string .type

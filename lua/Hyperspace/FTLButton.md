@@ -18,7 +18,7 @@ Extends: [TextButton0](../Hyperspace/TextButton0)
 #### void :MouseMove (integer mX, integer mY, boolean silent)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender ()

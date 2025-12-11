@@ -17,25 +17,25 @@ lang: en
 #### integer .gib
 {: aria-label='Fields' }
 
-______
+___
 ### mirror
 {: aria-label='Fields' }
 #### boolean .mirror
 {: aria-label='Fields' }
 
-______
+___
 ### position
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 
-______
+___
 ### rotate
 {: aria-label='Fields' }
 #### boolean .rotate
 {: aria-label='Fields' }
 
-______
+___
 ### slide
 {: aria-label='Fields' }
 #### integer .slide

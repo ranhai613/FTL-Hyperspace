@@ -16,7 +16,7 @@ lang: en
 #### [GL_Primitive](../Graphics/GL_Primitive) :__getitem (uint unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### __setitem ()
 {: aria-label='Methods' }
 #### unknown :__setitem (uint unknown, [GL_Primitive](../Graphics/GL_Primitive) unknown)

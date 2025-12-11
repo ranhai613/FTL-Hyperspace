@@ -16,31 +16,31 @@ lang: en
 #### [AugmentBlueprint](../Hyperspace/AugmentBlueprint) :GetAugmentBlueprint (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### GetBlueprintList ()
 {: aria-label='Methods' }
 #### vector\<string\> :GetBlueprintList (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### GetCrewBlueprint ()
 {: aria-label='Methods' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) :GetCrewBlueprint (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### GetDroneBlueprint ()
 {: aria-label='Methods' }
 #### [DroneBlueprint](../Hyperspace/DroneBlueprint) :GetDroneBlueprint (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### GetShipBlueprint ()
 {: aria-label='Methods' }
 #### [ShipBlueprint](../Hyperspace/ShipBlueprint) :GetShipBlueprint (string name, integer sector)
 {: aria-label='Methods' }
 
-______
+___
 ### GetWeaponBlueprint ()
 {: aria-label='Methods' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) :GetWeaponBlueprint (string name)

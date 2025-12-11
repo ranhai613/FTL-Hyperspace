@@ -17,25 +17,25 @@ lang: en
 #### vector\<string\> .hitShieldSounds
 {: aria-label='Fields' }
 
-______
+___
 ### hitShipSounds
 {: aria-label='Fields' }
 #### vector\<string\> .hitShipSounds
 {: aria-label='Fields' }
 
-______
+___
 ### image
 {: aria-label='Fields' }
 #### string .image
 {: aria-label='Fields' }
 
-______
+___
 ### launchSounds
 {: aria-label='Fields' }
 #### vector\<string\> .launchSounds
 {: aria-label='Fields' }
 
-______
+___
 ### missSounds
 {: aria-label='Fields' }
 #### vector\<string\> .missSounds

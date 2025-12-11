@@ -16,61 +16,61 @@ lang: en
 #### void :MouseMove (integer x, integer y, boolean silent)
 {: aria-label='Methods' }
 
-______
+___
 ### OnClick ()
 {: aria-label='Methods' }
 #### void :OnClick ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnRightClick ()
 {: aria-label='Methods' }
 #### void :OnRightClick ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnTouch ()
 {: aria-label='Methods' }
 #### void :OnTouch ()
 {: aria-label='Methods' }
 
-______
+___
 ### Reset ()
 {: aria-label='Methods' }
 #### void :Reset ()
 {: aria-label='Methods' }
 
-______
+___
 ### ResetPrimitives ()
 {: aria-label='Methods' }
 #### void :ResetPrimitives ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetActive ()
 {: aria-label='Methods' }
 #### void :SetActive (boolean active)
 {: aria-label='Methods' }
 
-______
+___
 ### SetHitBox ()
 {: aria-label='Methods' }
 #### void :SetHitBox ([Rect](../Hyperspace/Rect) rect)
 {: aria-label='Methods' }
 
-______
+___
 ### SetLocation ()
 {: aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
@@ -85,75 +85,75 @@ ___
 #### integer .activeTouch
 {: aria-label='Fields' }
 
-______
+___
 ### allowAnyTouch
 {: aria-label='Fields' }
 #### boolean .allowAnyTouch
 {: aria-label='Fields' }
 
-______
+___
 ### bActivated
 {: aria-label='Fields' }
 #### boolean .bActivated
 {: aria-label='Fields' }
 
-______
+___
 ### bActive
 {: aria-label='Fields' }
 #### boolean .bActive
 {: aria-label='Fields' }
 
-______
+___
 ### bFlashing
 {: aria-label='Fields' }
 #### boolean .bFlashing
 {: aria-label='Fields' }
 
-______
+___
 ### bHover
 {: aria-label='Fields' }
 #### boolean .bHover
 {: aria-label='Fields' }
 
-______
+___
 ### bRenderOff
 {: aria-label='Fields' }
 #### boolean .bRenderOff
 {: aria-label='Fields' }
 
-______
+___
 ### bRenderSelected
 {: aria-label='Fields' }
 #### boolean .bRenderSelected
 {: aria-label='Fields' }
 
-______
+___
 ### bSelected
 {: aria-label='Fields' }
 #### boolean .bSelected
 {: aria-label='Fields' }
 
-______
+___
 ### flashing
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashing
 {: aria-label='Fields' }
 
-______
+___
 ### hitbox (Read-only)
 {: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .hitbox
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
-______
+___
 ### position (Read-only)
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
-______
+___
 ### touchSelectable
 {: aria-label='Fields' }
 #### boolean .touchSelectable

@@ -13,7 +13,7 @@ lang: en
 #### [playerVariableType](../Hyperspace/playerVariableType) playerVariableType ()
 {: aria-label='Constructors' }
 
-______
+___
 ### playerVariableType ()
 {: aria-label='Constructors' }
 #### [playerVariableType](../Hyperspace/playerVariableType) playerVariableType ([playerVariableType](../Hyperspace/playerVariableType) unknown)
@@ -30,49 +30,49 @@ ___
 #### integer :__getitem (string unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### __setitem ()
 {: aria-label='Methods' }
 #### unknown :__setitem (string unknown, integer unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### clear ()
 {: aria-label='Methods' }
 #### unknown :clear ()
 {: aria-label='Methods' }
 
-______
+___
 ### del ()
 {: aria-label='Methods' }
 #### unknown :del (string unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### empty ()
 {: aria-label='Methods' }
 #### boolean :empty ()
 {: aria-label='Methods' }
 
-______
+___
 ### get ()
 {: aria-label='Methods' }
 #### integer :get (string unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### has_key ()
 {: aria-label='Methods' }
 #### boolean :has_key (string unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### set ()
 {: aria-label='Methods' }
 #### unknown :set (string unknown, integer unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### size ()
 {: aria-label='Methods' }
 #### uint :size ()

@@ -25,19 +25,19 @@ ___
 #### integer .collision_type
 {: aria-label='Fields' }
 
-______
+___
 ### damage
 {: aria-label='Fields' }
 #### integer .damage
 {: aria-label='Fields' }
 
-______
+___
 ### point
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .point
 {: aria-label='Fields' }
 
-______
+___
 ### superDamage
 {: aria-label='Fields' }
 #### integer .superDamage

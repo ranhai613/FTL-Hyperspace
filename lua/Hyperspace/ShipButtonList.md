@@ -24,14 +24,14 @@ ___
 #### integer :GetId ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetIndex ()
 {: aria-label='Methods' }
 #### integer :GetIndex ()
 {: aria-label='Methods' }
 equivalent of `:GetId() - 100`, all custom ship id are shifted by 100 to not overwrite vanilla ones
 
-______
+___
 ### GetPage ()
 {: aria-label='Methods' }
 #### integer :GetPage ()

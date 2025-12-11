@@ -17,55 +17,55 @@ lang: en
 #### integer .baseRarity
 {: aria-label='Fields' }
 
-______
+___
 ### bp
 {: aria-label='Fields' }
 #### integer .bp
 {: aria-label='Fields' }
 
-______
+___
 ### cost
 {: aria-label='Fields' }
 #### integer .cost
 {: aria-label='Fields' }
 
-______
+___
 ### description
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .description
 {: aria-label='Fields' }
 
-______
+___
 ### locked
 {: aria-label='Fields' }
 #### boolean .locked
 {: aria-label='Fields' }
 
-______
+___
 ### rarity
 {: aria-label='Fields' }
 #### integer .rarity
 {: aria-label='Fields' }
 
-______
+___
 ### shortTitle
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortTitle
 {: aria-label='Fields' }
 
-______
+___
 ### tip
 {: aria-label='Fields' }
 #### string .tip
 {: aria-label='Fields' }
 
-______
+___
 ### title
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .title
 {: aria-label='Fields' }
 
-______
+___
 ### tooltip
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .tooltip

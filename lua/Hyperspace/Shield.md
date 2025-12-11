@@ -17,13 +17,13 @@ lang: en
 #### number .charger
 {: aria-label='Fields' }
 
-______
+___
 ### power
 {: aria-label='Fields' }
 #### [ShieldPower](../Hyperspace/ShieldPower) .power
 {: aria-label='Fields' }
 
-______
+___
 ### superTimer
 {: aria-label='Fields' }
 #### number .superTimer

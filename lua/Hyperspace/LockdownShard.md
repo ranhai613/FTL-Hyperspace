@@ -13,13 +13,13 @@ lang: en
 #### [LockdownShard](../Hyperspace/LockdownShard) LockdownShard ()
 {: aria-label='Constructors' }
 
-______
+___
 ### LockdownShard ()
 {: aria-label='Constructors' }
 #### [LockdownShard](../Hyperspace/LockdownShard) LockdownShard (integer lockingRoom, [Pointf](../Hyperspace/Pointf) start, [Point](../Hyperspace/Point) goal, boolean superFreeze)
 {: aria-label='Constructors' }
 
-______
+___
 ### LockdownShard ()
 {: aria-label='Constructors' }
 #### [LockdownShard](../Hyperspace/LockdownShard) LockdownShard (integer fd)
@@ -46,7 +46,7 @@ ___
 {: aria-label='Fields' }
 If the shard has reached its destination.
 
-______
+___
 ### bDone (Read-only)
 {: aria-label='Fields' }
 #### boolean .bDone
@@ -54,7 +54,7 @@ ______
 **Read-only**
 If the shard has completed its lifetime and is marked for removal.
 
-______
+___
 ### extend (Read-only)
 {: aria-label='Fields' }
 #### [LockdownShard_Extend](../Hyperspace/LockdownShard_Extend) .extend
@@ -62,21 +62,21 @@ ______
 **Read-only**
 The associated extend object for this instance.
 
-______
+___
 ### goal
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .goal
 {: aria-label='Fields' }
 The location where the shard is heading, if it is not already there.
 
-______
+___
 ### lifeTime
 {: aria-label='Fields' }
 #### number .lifeTime
 {: aria-label='Fields' }
 The remaining time in seconds until this shard disappears.
 
-______
+___
 ### lockingRoom (Read-only)
 {: aria-label='Fields' }
 #### integer .lockingRoom
@@ -84,28 +84,28 @@ ______
 **Read-only**
 The room that this shard is locking down.
 
-______
+___
 ### position
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
 {: aria-label='Fields' }
 The current position of the shard.
 
-______
+___
 ### shard
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .shard
 {: aria-label='Fields' }
 The animation used for the shard visual.
 
-______
+___
 ### speed
 {: aria-label='Fields' }
 #### number .speed
 {: aria-label='Fields' }
 The rate at which the shard is moving.
 
-______
+___
 ### superFreeze
 {: aria-label='Fields' }
 #### boolean .superFreeze

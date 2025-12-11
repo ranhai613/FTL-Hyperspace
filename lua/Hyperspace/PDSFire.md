@@ -27,25 +27,25 @@ ___
 #### number .currentScale
 {: aria-label='Fields' }
 
-______
+___
 ### explosionAnimation
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosionAnimation
 {: aria-label='Fields' }
 
-______
+___
 ### missed
 {: aria-label='Fields' }
 #### boolean .missed
 {: aria-label='Fields' }
 
-______
+___
 ### passedTarget
 {: aria-label='Fields' }
 #### boolean .passedTarget
 {: aria-label='Fields' }
 
-______
+___
 ### startPoint
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startPoint

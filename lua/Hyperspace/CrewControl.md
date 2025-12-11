@@ -18,34 +18,34 @@ lang: en
 {: aria-label='Fields' }
 Affect the visual portion of the selection box
 
-______
+___
 ### firstMouse
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .firstMouse
 {: aria-label='Fields' }
 Affect the visual portion of the selection box
 
-______
+___
 ### potentialSelectedCrew
 {: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .potentialSelectedCrew
 {: aria-label='Fields' }
 Crew hovered by the selection box
 
-______
+___
 ### selectedCrew
 {: aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .selectedCrew
 {: aria-label='Fields' }
 
-______
+___
 ### worldCurrentMouse
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldCurrentMouse
 {: aria-label='Fields' }
 Affect the logic portion of the selection box, fills `.potentialSelectedCrew`
 
-______
+___
 ### worldFirstMouse
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldFirstMouse

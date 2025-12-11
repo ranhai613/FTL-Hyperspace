@@ -337,8 +337,8 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(constructor.className, constructor.returnType)} {constructor.name} ({params_str})\n{{: aria-label='Constructors' }}\n"
             if constructor.documentation:
                 ret += f"{constructor.documentation}\n"
-            ret += "\n___"
-        
+            ret += "\n"
+        ret += "___"
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret
@@ -349,8 +349,9 @@ class WikiPage:
             ret += f"___\n### {constant.className}.{constant.name}\n{{: aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
             if constant.documentation:
                 ret += f"{constant.documentation}\n"
-            ret += "\n___"
+            ret += "\n"
         
+        ret += "___"
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret
@@ -366,7 +367,8 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} .{method.name} ({params_str})\n{{: aria-label='StaticMethods' }}\n"
             if method.documentation:
                 ret += f"{method.documentation}\n"
-            ret += "\n___"
+            ret += "\n"
+        ret += "___"
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret
@@ -382,7 +384,8 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} :{method.name} ({params_str})\n{{: aria-label='Methods' }}\n"
             if method.documentation:
                 ret += f"{method.documentation}\n"
-            ret += "\n___"
+            ret += "\n"
+        ret += "___"
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret
@@ -397,8 +400,8 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
             if field.documentation:
                 ret += f"{field.documentation}\n"
-            ret += "\n___"
-        
+            ret += "\n"
+        ret += "___"
         if len(ret) > 4:
             ret = ret[4:] # remove leading ___
         return ret

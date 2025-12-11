@@ -17,7 +17,7 @@ lang: en
 {: aria-label='Methods' }
 0 being ship variant A, 1 is ship variant B and 2 is ship variant C
 
-______
+___
 ### UnlockShip ()
 {: aria-label='Methods' }
 #### void :UnlockShip (string shipBlueprint, boolean silent, boolean checkMultiUnlocks=true, boolean isEvent=false)

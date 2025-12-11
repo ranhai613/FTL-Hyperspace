@@ -26,13 +26,13 @@ ___
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetMovementTarget ()
 {: aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
@@ -47,67 +47,67 @@ ___
 #### boolean .arrived
 {: aria-label='Fields' }
 
-______
+___
 ### droneImage_off
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_off
 {: aria-label='Fields' }
 
-______
+___
 ### droneImage_on
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_on
 {: aria-label='Fields' }
 
-______
+___
 ### explosion
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
 {: aria-label='Fields' }
 
-______
+___
 ### extending
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .extending
 {: aria-label='Fields' }
 
-______
+___
 ### finalDestination
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .finalDestination
 {: aria-label='Fields' }
 
-______
+___
 ### finishedSetup
 {: aria-label='Fields' }
 #### boolean .finishedSetup
 {: aria-label='Fields' }
 
-______
+___
 ### flashTracker
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
 {: aria-label='Fields' }
 
-______
+___
 ### flying
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flying
 {: aria-label='Fields' }
 
-______
+___
 ### lightImage
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lightImage
 {: aria-label='Fields' }
 
-______
+___
 ### prefRoom
 {: aria-label='Fields' }
 #### integer .prefRoom
 {: aria-label='Fields' }
 
-______
+___
 ### startingPosition
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition

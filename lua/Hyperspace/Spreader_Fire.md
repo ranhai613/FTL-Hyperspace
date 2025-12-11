@@ -27,13 +27,13 @@ ___
 #### integer .count
 {: aria-label='Fields' }
 
-______
+___
 ### grid
 {: aria-label='Fields' }
 #### vector\<vector\<[Fire](../Hyperspace/Fire)\>\> .grid
 {: aria-label='Fields' }
 
-______
+___
 ### roomCount
 {: aria-label='Fields' }
 #### vector\<integer\> .roomCount

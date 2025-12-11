@@ -26,25 +26,25 @@ ___
 #### boolean :CanBeDeployed ()
 {: aria-label='Methods' }
 
-______
+___
 ### CollisionMoving ()
 {: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetDeployed ()
 {: aria-label='Methods' }
 #### void :SetDeployed (boolean _deployed)
 {: aria-label='Methods' }
 
-______
+___
 ### SetMovementTarget ()
 {: aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
@@ -59,43 +59,43 @@ ___
 #### boolean .bDeliveredDrone
 {: aria-label='Fields' }
 
-______
+___
 ### baseSheet
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseSheet
 {: aria-label='Fields' }
 
-______
+___
 ### boarderDrone
 {: aria-label='Fields' }
 #### BoarderDrone .boarderDrone
 {: aria-label='Fields' }
 
-______
+___
 ### colorSheet
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorSheet
 {: aria-label='Fields' }
 
-______
+___
 ### diedInSpace
 {: aria-label='Fields' }
 #### boolean .diedInSpace
 {: aria-label='Fields' }
 
-______
+___
 ### droneImage
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .droneImage
 {: aria-label='Fields' }
 
-______
+___
 ### flame
 {: aria-label='Fields' }
 #### CachedImage .flame
 {: aria-label='Fields' }
 
-______
+___
 ### startingPosition
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition

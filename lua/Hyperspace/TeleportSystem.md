@@ -18,43 +18,43 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean :CanReceive ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanSend ()
 {: aria-label='Methods' }
 #### boolean :CanSend ()
 {: aria-label='Methods' }
 
-______
+___
 ### Charged ()
 {: aria-label='Methods' }
 #### boolean :Charged ()
 {: aria-label='Methods' }
 
-______
+___
 ### ForceReady ()
 {: aria-label='Methods' }
 #### void :ForceReady ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetChargedPercent ()
 {: aria-label='Methods' }
 #### number :GetChargedPercent ()
 {: aria-label='Methods' }
 
-______
+___
 ### InitiateTeleport ()
 {: aria-label='Methods' }
 #### void :InitiateTeleport ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetArmed ()
 {: aria-label='Methods' }
 #### void :SetArmed (integer armed)
 {: aria-label='Methods' }
 
-______
+___
 ### SetHackingLevel ()
 {: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
@@ -69,43 +69,43 @@ ___
 #### boolean .bCanReceive
 {: aria-label='Fields' }
 
-______
+___
 ### bCanSend
 {: aria-label='Fields' }
 #### boolean .bCanSend
 {: aria-label='Fields' }
 
-______
+___
 ### bSuperShields
 {: aria-label='Fields' }
 #### boolean .bSuperShields
 {: aria-label='Fields' }
 
-______
+___
 ### chargeLevel
 {: aria-label='Fields' }
 #### number .chargeLevel
 {: aria-label='Fields' }
 
-______
+___
 ### crewSlots
 {: aria-label='Fields' }
 #### vector\<boolean\> .crewSlots
 {: aria-label='Fields' }
 
-______
+___
 ### iArmed
 {: aria-label='Fields' }
 #### integer .iArmed
 {: aria-label='Fields' }
 
-______
+___
 ### iNumSlots
 {: aria-label='Fields' }
 #### integer .iNumSlots
 {: aria-label='Fields' }
 
-______
+___
 ### iPreparedCrew
 {: aria-label='Fields' }
 #### integer .iPreparedCrew

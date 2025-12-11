@@ -13,7 +13,7 @@ lang: en
 #### [SystemBox](../Hyperspace/SystemBox) SystemBox ()
 {: aria-label='Constructors' }
 
-______
+___
 ### SystemBox ()
 {: aria-label='Constructors' }
 #### [SystemBox](../Hyperspace/SystemBox) SystemBox ([Point](../Hyperspace/Point) pos, [ShipSystem](../Hyperspace/ShipSystem) sys, boolean playerUI)
@@ -31,7 +31,7 @@ ___
 #### boolean .bPlayerUI
 {: aria-label='Fields' }
 
-______
+___
 ### extend (Read-only)
 {: aria-label='Fields' }
 #### [SystemBox_Extend](../Hyperspace/SystemBox_Extend) .extend
@@ -39,14 +39,14 @@ ______
 **Read-only**
 The SystemBox_Extend associated with this SystemBox.
 
-______
+___
 ### location
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .location
 {: aria-label='Fields' }
 The location of the SystemBox.
 
-______
+___
 ### pSystem
 {: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .pSystem

@@ -17,37 +17,37 @@ lang: en
 #### integer .h
 {: aria-label='Fields' }
 
-______
+___
 ### resId
 {: aria-label='Fields' }
 #### integer .resId
 {: aria-label='Fields' }
 
-______
+___
 ### rot
 {: aria-label='Fields' }
 #### integer .rot
 {: aria-label='Fields' }
 
-______
+___
 ### tex
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .tex
 {: aria-label='Fields' }
 
-______
+___
 ### w
 {: aria-label='Fields' }
 #### integer .w
 {: aria-label='Fields' }
 
-______
+___
 ### x
 {: aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 
-______
+___
 ### y
 {: aria-label='Fields' }
 #### integer .y

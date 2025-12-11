@@ -25,25 +25,25 @@ ___
 #### number .hullDamageResistChance
 {: aria-label='Fields' }
 
-______
+___
 ### ionDamageResistChance
 {: aria-label='Fields' }
 #### number .ionDamageResistChance
 {: aria-label='Fields' }
 
-______
+___
 ### roomId
 {: aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
-______
+___
 ### sensorBlind
 {: aria-label='Fields' }
 #### boolean .sensorBlind
 {: aria-label='Fields' }
 
-______
+___
 ### sysDamageResistChance
 {: aria-label='Fields' }
 #### number .sysDamageResistChance

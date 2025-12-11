@@ -19,13 +19,13 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean .bCloaked
 {: aria-label='Fields' }
 
-______
+___
 ### projectileFactory
 {: aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .projectileFactory
 {: aria-label='Fields' }
 
-______
+___
 ### target
 {: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .target

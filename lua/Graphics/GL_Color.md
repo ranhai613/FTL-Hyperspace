@@ -13,7 +13,7 @@ lang: en
 #### [GL_Color](../Graphics/GL_Color) GL_Color (number rr, number gg, number bb, number aa)
 {: aria-label='Constructors' }
 
-______
+___
 ### GL_Color ()
 {: aria-label='Constructors' }
 #### [GL_Color](../Graphics/GL_Color) GL_Color ()
@@ -39,19 +39,19 @@ ___
 #### number .a
 {: aria-label='Fields' }
 
-______
+___
 ### b
 {: aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
-______
+___
 ### g
 {: aria-label='Fields' }
 #### number .g
 {: aria-label='Fields' }
 
-______
+___
 ### r
 {: aria-label='Fields' }
 #### number .r

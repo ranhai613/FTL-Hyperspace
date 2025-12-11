@@ -19,55 +19,55 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 #### string .combatIcon
 {: aria-label='Fields' }
 
-______
+___
 ### cooldown (Read-only)
 {: aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
-______
+___
 ### dodge (Read-only)
 {: aria-label='Fields' }
 #### integer .dodge
 {: aria-label='Fields' }
 
-______
+___
 ### droneImage (Read-only)
 {: aria-label='Fields' }
 #### string .droneImage
 {: aria-label='Fields' }
 
-______
+___
 ### level (Read-only)
 {: aria-label='Fields' }
 #### integer .level
 {: aria-label='Fields' }
 
-______
+___
 ### power (Read-only)
 {: aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
-______
+___
 ### speed (Read-only)
 {: aria-label='Fields' }
 #### integer .speed
 {: aria-label='Fields' }
 
-______
+___
 ### targetType (Read-only)
 {: aria-label='Fields' }
 #### integer .targetType
 {: aria-label='Fields' }
 
-______
+___
 ### typeName (Read-only)
 {: aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
-______
+___
 ### weaponBlueprint (Read-only)
 {: aria-label='Fields' }
 #### string .weaponBlueprint

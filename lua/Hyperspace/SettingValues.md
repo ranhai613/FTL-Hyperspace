@@ -17,181 +17,181 @@ lang: en
 #### boolean .achPopups
 {: aria-label='Fields' }
 
-______
+___
 ### altPause (Read-only)
 {: aria-label='Fields' }
 #### boolean .altPause
 {: aria-label='Fields' }
 
-______
+___
 ### bDlcEnabled (Read-only)
 {: aria-label='Fields' }
 #### boolean .bDlcEnabled
 {: aria-label='Fields' }
 
-______
+___
 ### bShowChangelog (Read-only)
 {: aria-label='Fields' }
 #### boolean .bShowChangelog
 {: aria-label='Fields' }
 
-______
+___
 ### beamTutorial (Read-only)
 {: aria-label='Fields' }
 #### boolean .beamTutorial
 {: aria-label='Fields' }
 
-______
+___
 ### colorblind (Read-only)
 {: aria-label='Fields' }
 #### boolean .colorblind
 {: aria-label='Fields' }
 
-______
+___
 ### commandConsole (Read-only)
 {: aria-label='Fields' }
 #### boolean .commandConsole
 {: aria-label='Fields' }
 
-______
+___
 ### currentFullscreen (Read-only)
 {: aria-label='Fields' }
 #### integer .currentFullscreen
 {: aria-label='Fields' }
 
-______
+___
 ### dialogKeys (Read-only)
 {: aria-label='Fields' }
 #### integer .dialogKeys
 {: aria-label='Fields' }
 
-______
+___
 ### difficulty (Read-only)
 {: aria-label='Fields' }
 #### integer .difficulty
 {: aria-label='Fields' }
 
-______
+___
 ### fbError (Read-only)
 {: aria-label='Fields' }
 #### boolean .fbError
 {: aria-label='Fields' }
 
-______
+___
 ### frameLimit (Read-only)
 {: aria-label='Fields' }
 #### boolean .frameLimit
 {: aria-label='Fields' }
 
-______
+___
 ### fullscreen (Read-only)
 {: aria-label='Fields' }
 #### integer .fullscreen
 {: aria-label='Fields' }
 
-______
+___
 ### holdingModifier (Read-only)
 {: aria-label='Fields' }
 #### boolean .holdingModifier
 {: aria-label='Fields' }
 
-______
+___
 ### language (Read-only)
 {: aria-label='Fields' }
 #### string .language
 {: aria-label='Fields' }
 
-______
+___
 ### languageSet (Read-only)
 {: aria-label='Fields' }
 #### boolean .languageSet
 {: aria-label='Fields' }
 
-______
+___
 ### lastFullscreen (Read-only)
 {: aria-label='Fields' }
 #### integer .lastFullscreen
 {: aria-label='Fields' }
 
-______
+___
 ### loadingSaveVersion (Read-only)
 {: aria-label='Fields' }
 #### integer .loadingSaveVersion
 {: aria-label='Fields' }
 
-______
+___
 ### logging (Read-only)
 {: aria-label='Fields' }
 #### boolean .logging
 {: aria-label='Fields' }
 
-______
+___
 ### lowend (Read-only)
 {: aria-label='Fields' }
 #### boolean .lowend
 {: aria-label='Fields' }
 
-______
+___
 ### manualResolution (Read-only)
 {: aria-label='Fields' }
 #### boolean .manualResolution
 {: aria-label='Fields' }
 
-______
+___
 ### manualStretched (Read-only)
 {: aria-label='Fields' }
 #### boolean .manualStretched
 {: aria-label='Fields' }
 
-______
+___
 ### manualWindowed (Read-only)
 {: aria-label='Fields' }
 #### boolean .manualWindowed
 {: aria-label='Fields' }
 
-______
+___
 ### music (Read-only)
 {: aria-label='Fields' }
 #### integer .music
 {: aria-label='Fields' }
 
-______
+___
 ### openedList (Read-only)
 {: aria-label='Fields' }
 #### integer .openedList
 {: aria-label='Fields' }
 
-______
+___
 ### screenResolution (Read-only)
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .screenResolution
 {: aria-label='Fields' }
 
-______
+___
 ### showPaths (Read-only)
 {: aria-label='Fields' }
 #### boolean .showPaths
 {: aria-label='Fields' }
 
-______
+___
 ### sound (Read-only)
 {: aria-label='Fields' }
 #### integer .sound
 {: aria-label='Fields' }
 
-______
+___
 ### swapTextureType (Read-only)
 {: aria-label='Fields' }
 #### boolean .swapTextureType
 {: aria-label='Fields' }
 
-______
+___
 ### touchAutoPause (Read-only)
 {: aria-label='Fields' }
 #### boolean .touchAutoPause
 {: aria-label='Fields' }
 
-______
+___
 ### vsync (Read-only)
 {: aria-label='Fields' }
 #### boolean .vsync

@@ -24,43 +24,43 @@ ___
 #### boolean :Done ()
 {: aria-label='Methods' }
 
-______
+___
 ### ResetMinMax ()
 {: aria-label='Methods' }
 #### void :ResetMinMax (integer min, integer max)
 {: aria-label='Methods' }
 
-______
+___
 ### Running ()
 {: aria-label='Methods' }
 #### boolean :Running ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetMaxTime ()
 {: aria-label='Methods' }
 #### void :SetMaxTime (number max)
 {: aria-label='Methods' }
 
-______
+___
 ### Start ()
 {: aria-label='Methods' }
 #### void :Start (integer goal)
 {: aria-label='Methods' }
 
-______
+___
 ### Start_Float ()
 {: aria-label='Methods' }
 #### void :Start_Float (number goal)
 {: aria-label='Methods' }
 
-______
+___
 ### Stop ()
 {: aria-label='Methods' }
 #### void :Stop ()
 {: aria-label='Methods' }
 
-______
+___
 ### Update ()
 {: aria-label='Methods' }
 #### void :Update ()
@@ -75,31 +75,31 @@ ___
 #### number .currGoal
 {: aria-label='Fields' }
 
-______
+___
 ### currTime
 {: aria-label='Fields' }
 #### number .currTime
 {: aria-label='Fields' }
 
-______
+___
 ### loop
 {: aria-label='Fields' }
 #### boolean .loop
 {: aria-label='Fields' }
 
-______
+___
 ### maxTime
 {: aria-label='Fields' }
 #### integer .maxTime
 {: aria-label='Fields' }
 
-______
+___
 ### minTime
 {: aria-label='Fields' }
 #### integer .minTime
 {: aria-label='Fields' }
 
-______
+___
 ### running
 {: aria-label='Fields' }
 #### boolean .running

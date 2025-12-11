@@ -17,7 +17,7 @@ lang: en
 #### boolean .fake
 {: aria-label='Fields' }
 
-______
+___
 ### image
 {: aria-label='Fields' }
 #### string .image

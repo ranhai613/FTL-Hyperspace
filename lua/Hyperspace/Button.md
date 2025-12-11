@@ -26,31 +26,31 @@ ___
 #### void :OnInit (string img, [Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetActiveImage ()
 {: aria-label='Methods' }
 #### void :SetActiveImage ([GL_Texture](../Graphics/GL_Texture) texture)
 {: aria-label='Methods' }
 
-______
+___
 ### SetImageBase ()
 {: aria-label='Methods' }
 #### void :SetImageBase (string imageBase)
 {: aria-label='Methods' }
 
-______
+___
 ### SetInactiveImage ()
 {: aria-label='Methods' }
 #### void :SetInactiveImage ([GL_Texture](../Graphics/GL_Texture) texture)
 {: aria-label='Methods' }
 
-______
+___
 ### SetLocation ()
 {: aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
@@ -65,19 +65,19 @@ ___
 #### boolean .bMirror
 {: aria-label='Fields' }
 
-______
+___
 ### imageSize
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .imageSize
 {: aria-label='Fields' }
 
-______
+___
 ### images
 {: aria-label='Fields' }
 #### [GL_Texture[]](../Graphics/GL_Texture) .images
 {: aria-label='Fields' }
 
-______
+___
 ### primitives
 {: aria-label='Fields' }
 #### [GL_Primitive[]](../Graphics/GL_Primitive) .primitives

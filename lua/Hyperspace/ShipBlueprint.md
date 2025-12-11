@@ -15,7 +15,7 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 #### [ShipBlueprint](../Hyperspace/ShipBlueprint) ShipBlueprint ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ShipBlueprint ()
 {: aria-label='Constructors' }
 #### [ShipBlueprint](../Hyperspace/ShipBlueprint) ShipBlueprint ([ShipBlueprint](../Hyperspace/ShipBlueprint) unknown)
@@ -33,205 +33,205 @@ ___
 #### vector\<string\> .augments
 {: aria-label='Fields' }
 
-______
+___
 ### blueprintName
 {: aria-label='Fields' }
 #### string .blueprintName
 {: aria-label='Fields' }
 
-______
+___
 ### boardingAI
 {: aria-label='Fields' }
 #### integer .boardingAI
 {: aria-label='Fields' }
 
-______
+___
 ### bp_count
 {: aria-label='Fields' }
 #### integer .bp_count
 {: aria-label='Fields' }
 
-______
+___
 ### cloakFile
 {: aria-label='Fields' }
 #### string .cloakFile
 {: aria-label='Fields' }
 
-______
+___
 ### customCrew
 {: aria-label='Fields' }
 #### vector\<[CrewBlueprint](../Hyperspace/CrewBlueprint)\> .customCrew
 {: aria-label='Fields' }
 
-______
+___
 ### defaultCrew
 {: aria-label='Fields' }
 #### vector\<string\> .defaultCrew
 {: aria-label='Fields' }
 
-______
+___
 ### desc
 {: aria-label='Fields' }
 #### [Description](../Hyperspace/Description) .desc
 {: aria-label='Fields' }
 
-______
+___
 ### droneCount
 {: aria-label='Fields' }
 #### integer .droneCount
 {: aria-label='Fields' }
 
-______
+___
 ### droneSlots
 {: aria-label='Fields' }
 #### integer .droneSlots
 {: aria-label='Fields' }
 
-______
+___
 ### drone_count
 {: aria-label='Fields' }
 #### integer .drone_count
 {: aria-label='Fields' }
 
-______
+___
 ### drones
 {: aria-label='Fields' }
 #### vector\<string\> .drones
 {: aria-label='Fields' }
 
-______
+___
 ### floorFile
 {: aria-label='Fields' }
 #### string .floorFile
 {: aria-label='Fields' }
 
-______
+___
 ### health
 {: aria-label='Fields' }
 #### integer .health
 {: aria-label='Fields' }
 
-______
+___
 ### imgFile
 {: aria-label='Fields' }
 #### string .imgFile
 {: aria-label='Fields' }
 
-______
+___
 ### layoutFile
 {: aria-label='Fields' }
 #### string .layoutFile
 {: aria-label='Fields' }
 
-______
+___
 ### loadDrones
 {: aria-label='Fields' }
 #### string .loadDrones
 {: aria-label='Fields' }
 
-______
+___
 ### loadWeapons
 {: aria-label='Fields' }
 #### string .loadWeapons
 {: aria-label='Fields' }
 
-______
+___
 ### maxCrew
 {: aria-label='Fields' }
 #### integer .maxCrew
 {: aria-label='Fields' }
 
-______
+___
 ### maxPower
 {: aria-label='Fields' }
 #### integer .maxPower
 {: aria-label='Fields' }
 
-______
+___
 ### maxSector
 {: aria-label='Fields' }
 #### integer .maxSector
 {: aria-label='Fields' }
 
-______
+___
 ### minSector
 {: aria-label='Fields' }
 #### integer .minSector
 {: aria-label='Fields' }
 
-______
+___
 ### missiles
 {: aria-label='Fields' }
 #### integer .missiles
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .name
 {: aria-label='Fields' }
 
-______
+___
 ### originalCrewCount
 {: aria-label='Fields' }
 #### integer .originalCrewCount
 {: aria-label='Fields' }
 
-______
+___
 ### originalDroneCount
 {: aria-label='Fields' }
 #### integer .originalDroneCount
 {: aria-label='Fields' }
 
-______
+___
 ### originalWeaponCount
 {: aria-label='Fields' }
 #### integer .originalWeaponCount
 {: aria-label='Fields' }
 
-______
+___
 ### shieldFile
 {: aria-label='Fields' }
 #### string .shieldFile
 {: aria-label='Fields' }
 
-______
+___
 ### shipClass
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shipClass
 {: aria-label='Fields' }
 
-______
+___
 ### systemInfo
 {: aria-label='Fields' }
 #### map\<integer, [SystemTemplate](../Hyperspace/SystemTemplate)\> .systemInfo
 {: aria-label='Fields' }
 
-______
+___
 ### systems
 {: aria-label='Fields' }
 #### vector\<integer\> .systems
 {: aria-label='Fields' }
 
-______
+___
 ### unlock
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .unlock
 {: aria-label='Fields' }
 
-______
+___
 ### weaponCount
 {: aria-label='Fields' }
 #### integer .weaponCount
 {: aria-label='Fields' }
 
-______
+___
 ### weaponSlots
 {: aria-label='Fields' }
 #### integer .weaponSlots
 {: aria-label='Fields' }
 
-______
+___
 ### weapons
 {: aria-label='Fields' }
 #### vector\<string\> .weapons

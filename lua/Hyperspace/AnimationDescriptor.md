@@ -17,37 +17,37 @@ lang: en
 #### integer .frameHeight
 {: aria-label='Fields' }
 
-______
+___
 ### frameWidth
 {: aria-label='Fields' }
 #### integer .frameWidth
 {: aria-label='Fields' }
 
-______
+___
 ### imageHeight
 {: aria-label='Fields' }
 #### integer .imageHeight
 {: aria-label='Fields' }
 
-______
+___
 ### imageWidth
 {: aria-label='Fields' }
 #### integer .imageWidth
 {: aria-label='Fields' }
 
-______
+___
 ### numFrames
 {: aria-label='Fields' }
 #### integer .numFrames
 {: aria-label='Fields' }
 
-______
+___
 ### stripStartX
 {: aria-label='Fields' }
 #### integer .stripStartX
 {: aria-label='Fields' }
 
-______
+___
 ### stripStartY
 {: aria-label='Fields' }
 #### integer .stripStartY

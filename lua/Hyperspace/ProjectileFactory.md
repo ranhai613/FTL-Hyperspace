@@ -26,49 +26,49 @@ ___
 #### void :Fire (vector\<[Pointf](../Hyperspace/Pointf)\> points, integer target)
 {: aria-label='Methods' }
 
-______
+___
 ### FireNextShot ()
 {: aria-label='Methods' }
 #### boolean :FireNextShot ()
 {: aria-label='Methods' }
 
-______
+___
 ### ForceCoolup ()
 {: aria-label='Methods' }
 #### void :ForceCoolup ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetProjectile ()
 {: aria-label='Methods' }
 #### [Projectile](../Hyperspace/Projectile) :GetProjectile ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsChargedGoal ()
 {: aria-label='Methods' }
 #### boolean :IsChargedGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### NumTargetsRequired ()
 {: aria-label='Methods' }
 #### integer :NumTargetsRequired ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetCooldownModifier ()
 {: aria-label='Methods' }
 #### void :SetCooldownModifier (number mod)
 {: aria-label='Methods' }
 
-______
+___
 ### SetCurrentShip ()
 {: aria-label='Methods' }
 #### void :SetCurrentShip ([Targetable](../Hyperspace/Targetable) ship)
 {: aria-label='Methods' }
 
-______
+___
 ### SetHacked ()
 {: aria-label='Methods' }
 #### void :SetHacked (integer hacked)
@@ -83,199 +83,199 @@ ___
 #### boolean .autoFiring
 {: aria-label='Fields' }
 
-______
+___
 ### bFiredOnce
 {: aria-label='Fields' }
 #### boolean .bFiredOnce
 {: aria-label='Fields' }
 
-______
+___
 ### baseCooldown
 {: aria-label='Fields' }
 #### number .baseCooldown
 {: aria-label='Fields' }
 
-______
+___
 ### blueprint
 {: aria-label='Fields' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) .blueprint
 {: aria-label='Fields' }
 
-______
+___
 ### boostLevel
 {: aria-label='Fields' }
 #### integer .boostLevel
 {: aria-label='Fields' }
 
-______
+___
 ### chargeLevel
 {: aria-label='Fields' }
 #### integer .chargeLevel
 {: aria-label='Fields' }
 
-______
+___
 ### cooldown
 {: aria-label='Fields' }
 #### pair\<number, number\> .cooldown
 {: aria-label='Fields' }
 
-______
+___
 ### cooldownModifier
 {: aria-label='Fields' }
 #### number .cooldownModifier
 {: aria-label='Fields' }
 
-______
+___
 ### currentEntryAngle
 {: aria-label='Fields' }
 #### number .currentEntryAngle
 {: aria-label='Fields' }
 
-______
+___
 ### currentFiringAngle
 {: aria-label='Fields' }
 #### number .currentFiringAngle
 {: aria-label='Fields' }
 
-______
+___
 ### currentShipTarget
 {: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .currentShipTarget
 {: aria-label='Fields' }
 
-______
+___
 ### fireWhenReady
 {: aria-label='Fields' }
 #### boolean .fireWhenReady
 {: aria-label='Fields' }
 
-______
+___
 ### flight_animation
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flight_animation
 {: aria-label='Fields' }
 
-______
+___
 ### goalChargeLevel
 {: aria-label='Fields' }
 #### integer .goalChargeLevel
 {: aria-label='Fields' }
 
-______
+___
 ### iAmmo
 {: aria-label='Fields' }
 #### integer .iAmmo
 {: aria-label='Fields' }
 
-______
+___
 ### iBonusPower
 {: aria-label='Fields' }
 #### integer .iBonusPower
 {: aria-label='Fields' }
 
-______
+___
 ### iHackLevel
 {: aria-label='Fields' }
 #### integer .iHackLevel
 {: aria-label='Fields' }
 
-______
+___
 ### iSpendMissile
 {: aria-label='Fields' }
 #### integer .iSpendMissile
 {: aria-label='Fields' }
 
-______
+___
 ### isArtillery
 {: aria-label='Fields' }
 #### boolean .isArtillery
 {: aria-label='Fields' }
 
-______
+___
 ### lastProjectileId
 {: aria-label='Fields' }
 #### integer .lastProjectileId
 {: aria-label='Fields' }
 
-______
+___
 ### lastTargets
 {: aria-label='Fields' }
 #### vector\<[Pointf](../Hyperspace/Pointf)\> .lastTargets
 {: aria-label='Fields' }
 
-______
+___
 ### localPosition
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .localPosition
 {: aria-label='Fields' }
 
-______
+___
 ### mount
 {: aria-label='Fields' }
 #### [WeaponMount](../Hyperspace/WeaponMount) .mount
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### numShots
 {: aria-label='Fields' }
 #### integer .numShots
 {: aria-label='Fields' }
 
-______
+___
 ### powered
 {: aria-label='Fields' }
 #### boolean .powered
 {: aria-label='Fields' }
 
-______
+___
 ### queuedProjectiles
 {: aria-label='Fields' }
 #### vector\<[Projectile](../Hyperspace/Projectile)\> .queuedProjectiles
 {: aria-label='Fields' }
 
-______
+___
 ### radius
 {: aria-label='Fields' }
 #### integer .radius
 {: aria-label='Fields' }
 
-______
+___
 ### requiredPower
 {: aria-label='Fields' }
 #### integer .requiredPower
 {: aria-label='Fields' }
 
-______
+___
 ### shotsFiredAtTarget
 {: aria-label='Fields' }
 #### integer .shotsFiredAtTarget
 {: aria-label='Fields' }
 
-______
+___
 ### subCooldown
 {: aria-label='Fields' }
 #### pair\<number, number\> .subCooldown
 {: aria-label='Fields' }
 
-______
+___
 ### targetId
 {: aria-label='Fields' }
 #### integer .targetId
 {: aria-label='Fields' }
 
-______
+___
 ### targets
 {: aria-label='Fields' }
 #### vector\<[Pointf](../Hyperspace/Pointf)\> .targets
 {: aria-label='Fields' }
 
-______
+___
 ### weaponVisual
 {: aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weaponVisual

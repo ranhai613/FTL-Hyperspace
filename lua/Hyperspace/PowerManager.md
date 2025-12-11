@@ -24,7 +24,7 @@ ___
 #### integer :GetAvailablePower ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetMaxPower ()
 {: aria-label='Methods' }
 #### integer :GetMaxPower ()
@@ -39,49 +39,49 @@ ___
 #### pair\<integer, integer\> .batteryPower
 {: aria-label='Fields' }
 
-______
+___
 ### currentPower
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .currentPower
 {: aria-label='Fields' }
 
-______
+___
 ### fFuel
 {: aria-label='Fields' }
 #### number .fFuel
 {: aria-label='Fields' }
 
-______
+___
 ### failedPowerup
 {: aria-label='Fields' }
 #### boolean .failedPowerup
 {: aria-label='Fields' }
 
-______
+___
 ### iHacked
 {: aria-label='Fields' }
 #### integer .iHacked
 {: aria-label='Fields' }
 
-______
+___
 ### iTempDividePower
 {: aria-label='Fields' }
 #### integer .iTempDividePower
 {: aria-label='Fields' }
 
-______
+___
 ### iTempPowerCap
 {: aria-label='Fields' }
 #### integer .iTempPowerCap
 {: aria-label='Fields' }
 
-______
+___
 ### iTempPowerLoss
 {: aria-label='Fields' }
 #### integer .iTempPowerLoss
 {: aria-label='Fields' }
 
-______
+___
 ### over_powered
 {: aria-label='Fields' }
 #### integer .over_powered

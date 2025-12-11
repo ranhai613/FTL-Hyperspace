@@ -16,7 +16,7 @@ lang: en
 #### [Pointf](../Hyperspace/Pointf) :GetSlide ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetFireTime ()
 {: aria-label='Methods' }
 #### void :SetFireTime (number time)
@@ -31,163 +31,163 @@ ___
 #### [Animation](../Hyperspace/Animation) .anim
 {: aria-label='Fields' }
 
-______
+___
 ### bFireShot
 {: aria-label='Fields' }
 #### boolean .bFireShot
 {: aria-label='Fields' }
 
-______
+___
 ### bFiring
 {: aria-label='Fields' }
 #### boolean .bFiring
 {: aria-label='Fields' }
 
-______
+___
 ### bMirrored
 {: aria-label='Fields' }
 #### boolean .bMirrored
 {: aria-label='Fields' }
 
-______
+___
 ### bPowered
 {: aria-label='Fields' }
 #### boolean .bPowered
 {: aria-label='Fields' }
 
-______
+___
 ### bRotation
 {: aria-label='Fields' }
 #### boolean .bRotation
 {: aria-label='Fields' }
 
-______
+___
 ### bShowCharge
 {: aria-label='Fields' }
 #### boolean .bShowCharge
 {: aria-label='Fields' }
 
-______
+___
 ### boostAnim
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .boostAnim
 {: aria-label='Fields' }
 
-______
+___
 ### boostLevel
 {: aria-label='Fields' }
 #### integer .boostLevel
 {: aria-label='Fields' }
 
-______
+___
 ### currentOffset
 {: aria-label='Fields' }
 #### integer .currentOffset
 {: aria-label='Fields' }
 
-______
+___
 ### explosionAnim
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosionAnim
 {: aria-label='Fields' }
 
-______
+___
 ### fActualChargeLevel
 {: aria-label='Fields' }
 #### number .fActualChargeLevel
 {: aria-label='Fields' }
 
-______
+___
 ### fChargeLevel
 {: aria-label='Fields' }
 #### number .fChargeLevel
 {: aria-label='Fields' }
 
-______
+___
 ### fDelayChargeTime
 {: aria-label='Fields' }
 #### number .fDelayChargeTime
 {: aria-label='Fields' }
 
-______
+___
 ### fireLocation
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .fireLocation
 {: aria-label='Fields' }
 
-______
+___
 ### fireMountVector
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .fireMountVector
 {: aria-label='Fields' }
 
-______
+___
 ### hackSparks
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .hackSparks
 {: aria-label='Fields' }
 
-______
+___
 ### iChargeLevels
 {: aria-label='Fields' }
 #### integer .iChargeLevels
 {: aria-label='Fields' }
 
-______
+___
 ### iChargeOffset
 {: aria-label='Fields' }
 #### integer .iChargeOffset
 {: aria-label='Fields' }
 
-______
+___
 ### iChargedFrame
 {: aria-label='Fields' }
 #### integer .iChargedFrame
 {: aria-label='Fields' }
 
-______
+___
 ### iFireFrame
 {: aria-label='Fields' }
 #### integer .iFireFrame
 {: aria-label='Fields' }
 
-______
+___
 ### iHackLevel
 {: aria-label='Fields' }
 #### integer .iHackLevel
 {: aria-label='Fields' }
 
-______
+___
 ### mount
 {: aria-label='Fields' }
 #### [WeaponMount](../Hyperspace/WeaponMount) .mount
 {: aria-label='Fields' }
 
-______
+___
 ### mountPoint
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .mountPoint
 {: aria-label='Fields' }
 
-______
+___
 ### playerShip
 {: aria-label='Fields' }
 #### boolean .playerShip
 {: aria-label='Fields' }
 
-______
+___
 ### renderPoint
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .renderPoint
 {: aria-label='Fields' }
 
-______
+___
 ### slideDirection
 {: aria-label='Fields' }
 #### integer .slideDirection
 {: aria-label='Fields' }
 
-______
+___
 ### slideTracker
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .slideTracker

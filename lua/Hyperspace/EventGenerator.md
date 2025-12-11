@@ -24,7 +24,7 @@ ___
 #### [LocationEvent](../Hyperspace/LocationEvent) :CreateEvent (string name, integer worldLevel, boolean ignoreUnique)
 {: aria-label='Methods' }
 
-______
+___
 ### GetBaseEvent ()
 {: aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :GetBaseEvent (string name, integer worldLevel, boolean ignoreUnique, integer seed)

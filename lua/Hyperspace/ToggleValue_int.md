@@ -13,7 +13,7 @@ lang: en
 #### [ToggleValue_int](../Hyperspace/ToggleValue_int) ToggleValue_int ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ToggleValue_int ()
 {: aria-label='Constructors' }
 #### [ToggleValue_int](../Hyperspace/ToggleValue_int) ToggleValue_int (integer unknown)
@@ -31,7 +31,7 @@ ___
 #### boolean .enabled
 {: aria-label='Fields' }
 
-______
+___
 ### value
 {: aria-label='Fields' }
 #### integer .value

@@ -33,37 +33,37 @@ ___
 #### [GL_Texture](../Graphics/GL_Texture) .arrow
 {: aria-label='Fields' }
 
-______
+___
 ### arrow2
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .arrow2
 {: aria-label='Fields' }
 
-______
+___
 ### arrow2_color
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .arrow2_color
 {: aria-label='Fields' }
 
-______
+___
 ### arrow_color
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .arrow_color
 {: aria-label='Fields' }
 
-______
+___
 ### blitSize
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .blitSize
 {: aria-label='Fields' }
 
-______
+___
 ### position
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
 {: aria-label='Fields' }
 
-______
+___
 ### rotation
 {: aria-label='Fields' }
 #### number .rotation

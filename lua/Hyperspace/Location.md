@@ -17,81 +17,81 @@ lang: en
 #### boolean .beacon
 {: aria-label='Fields' }
 
-______
+___
 ### boss
 {: aria-label='Fields' }
 #### boolean .boss
 {: aria-label='Fields' }
 Final boss event overrides the beacon, no visual indication.
 
-______
+___
 ### connectedLocations
 {: aria-label='Fields' }
 #### vector\<[Location](../Hyperspace/Location)\> .connectedLocations
 {: aria-label='Fields' }
 
-______
+___
 ### dangerZone
 {: aria-label='Fields' }
 #### boolean .dangerZone
 {: aria-label='Fields' }
 
-______
+___
 ### event
 {: aria-label='Fields' }
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
 {: aria-label='Fields' }
 
-______
+___
 ### fleetChanging
 {: aria-label='Fields' }
 #### boolean .fleetChanging
 {: aria-label='Fields' }
 
-______
+___
 ### known
 {: aria-label='Fields' }
 #### boolean .known
 {: aria-label='Fields' }
 
-______
+___
 ### loc
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .loc
 {: aria-label='Fields' }
 
-______
+___
 ### nebula
 {: aria-label='Fields' }
 #### boolean .nebula
 {: aria-label='Fields' }
 Grant the fleet delay of nebula, no changes to the event itself
 
-______
+___
 ### planet
 {: aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .planet
 {: aria-label='Fields' }
 
-______
+___
 ### planetImage
 {: aria-label='Fields' }
 #### string .planetImage
 {: aria-label='Fields' }
 
-______
+___
 ### space
 {: aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .space
 {: aria-label='Fields' }
 
-______
+___
 ### spaceImage
 {: aria-label='Fields' }
 #### string .spaceImage
 {: aria-label='Fields' }
 
-______
+___
 ### visited
 {: aria-label='Fields' }
 #### integer .visited

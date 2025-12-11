@@ -19,13 +19,13 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean .bTurnedOn
 {: aria-label='Fields' }
 
-______
+___
 ### soundeffect
 {: aria-label='Fields' }
 #### string .soundeffect
 {: aria-label='Fields' }
 
-______
+___
 ### timer
 {: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .timer

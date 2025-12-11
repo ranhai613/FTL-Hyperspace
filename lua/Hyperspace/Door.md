@@ -25,150 +25,150 @@ ___
 #### boolean .bFakeOpen
 {: aria-label='Fields' }
 
-______
+___
 ### bIoned
 {: aria-label='Fields' }
 #### boolean .bIoned
 {: aria-label='Fields' }
 
-______
+___
 ### bOpen
 {: aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
 
-______
+___
 ### bVertical (Read-only)
 {: aria-label='Fields' }
 #### boolean .bVertical
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### baseHealth
 {: aria-label='Fields' }
 #### integer .baseHealth
 {: aria-label='Fields' }
 
-______
+___
 ### doorAnim
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .doorAnim
 {: aria-label='Fields' }
 
-______
+___
 ### doorAnimLarge
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .doorAnimLarge
 {: aria-label='Fields' }
 
-______
+___
 ### doorLevel
 {: aria-label='Fields' }
 #### integer .doorLevel
 {: aria-label='Fields' }
 
-______
+___
 ### fakeOpenTimer
 {: aria-label='Fields' }
 #### number .fakeOpenTimer
 {: aria-label='Fields' }
 
-______
+___
 ### forcedOpen
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .forcedOpen
 {: aria-label='Fields' }
 
-______
+___
 ### gotHit
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .gotHit
 {: aria-label='Fields' }
 
-______
+___
 ### health
 {: aria-label='Fields' }
 #### integer .health
 {: aria-label='Fields' }
 
-______
+___
 ### height (Read-only)
 {: aria-label='Fields' }
 #### integer .height
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### highlightPrimitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .highlightPrimitive
 {: aria-label='Fields' }
 
-______
+___
 ### iBlast
 {: aria-label='Fields' }
 #### integer .iBlast
 {: aria-label='Fields' }
 
-______
+___
 ### iDoorId (Read-only)
 {: aria-label='Fields' }
 #### integer .iDoorId
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### iHacked
 {: aria-label='Fields' }
 #### integer .iHacked
 {: aria-label='Fields' }
 
-______
+___
 ### iRoom1 (Read-only)
 {: aria-label='Fields' }
 #### integer .iRoom1
 {: aria-label='Fields' }
 
-______
+___
 ### iRoom2 (Read-only)
 {: aria-label='Fields' }
 #### integer .iRoom2
 {: aria-label='Fields' }
 
-______
+___
 ### lastbase
 {: aria-label='Fields' }
 #### number .lastbase
 {: aria-label='Fields' }
 
-______
+___
 ### lockedDown
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .lockedDown
 {: aria-label='Fields' }
 
-______
+___
 ### outlinePrimitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .outlinePrimitive
 {: aria-label='Fields' }
 
-______
+___
 ### width (Read-only)
 {: aria-label='Fields' }
 #### integer .width
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### x (Read-only)
 {: aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### y (Read-only)
 {: aria-label='Fields' }
 #### integer .y

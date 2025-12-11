@@ -24,7 +24,7 @@ ___
 #### void :Draw (integer x, integer y)
 {: aria-label='Methods' }
 
-______
+___
 ### DrawMask ()
 {: aria-label='Methods' }
 #### void :DrawMask (integer unk)
@@ -39,19 +39,19 @@ ___
 #### [GL_Primitive](../Graphics/GL_Primitive) .mask
 {: aria-label='Fields' }
 
-______
+___
 ### outline
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .outline
 {: aria-label='Fields' }
 
-______
+___
 ### pattern
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .pattern
 {: aria-label='Fields' }
 
-______
+___
 ### rect
 {: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .rect

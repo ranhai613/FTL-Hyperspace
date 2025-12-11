@@ -23,7 +23,7 @@ ___
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .AddNamedDefinition (string _name, [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) copyDef)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GetPowerByName ()
 {: aria-label='StaticMethods' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .GetPowerByName (string _name)
@@ -38,25 +38,25 @@ ___
 #### void :AssignActivateGroup (string _name)
 {: aria-label='Methods' }
 
-______
+___
 ### AssignGroup ()
 {: aria-label='Methods' }
 #### void :AssignGroup (string _name)
 {: aria-label='Methods' }
 
-______
+___
 ### AssignIndex ()
 {: aria-label='Methods' }
 #### void :AssignIndex ()
 {: aria-label='Methods' }
 
-______
+___
 ### AssignName ()
 {: aria-label='Methods' }
 #### void :AssignName (string _name)
 {: aria-label='Methods' }
 
-______
+___
 ### AssignReplaceGroup ()
 {: aria-label='Methods' }
 #### void :AssignReplaceGroup (string _name)
@@ -72,291 +72,291 @@ ___
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### activateReadyEnemies
 {: aria-label='Fields' }
 #### boolean .activateReadyEnemies
 {: aria-label='Fields' }
 
-______
+___
 ### activateWhenReady
 {: aria-label='Fields' }
 #### boolean .activateWhenReady
 {: aria-label='Fields' }
 
-______
+___
 ### animFrame
 {: aria-label='Fields' }
 #### integer .animFrame
 {: aria-label='Fields' }
 
-______
+___
 ### buttonLabel
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .buttonLabel
 {: aria-label='Fields' }
 
-______
+___
 ### chargeReq
 {: aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .chargeReq
 {: aria-label='Fields' }
 
-______
+___
 ### chargesPerJump
 {: aria-label='Fields' }
 #### integer .chargesPerJump
 {: aria-label='Fields' }
 
-______
+___
 ### cooldown
 {: aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
-______
+___
 ### cooldownColor
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .cooldownColor
 {: aria-label='Fields' }
 
-______
+___
 ### crewHealth
 {: aria-label='Fields' }
 #### number .crewHealth
 {: aria-label='Fields' }
 
-______
+___
 ### crewSpawns
 {: aria-label='Fields' }
 #### vector\<CrewSpawn\> .crewSpawns
 {: aria-label='Fields' }
 
-______
+___
 ### damage
 {: aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
-______
+___
 ### disabledCharges
 {: aria-label='Fields' }
 #### integer .disabledCharges
 {: aria-label='Fields' }
 
-______
+___
 ### disabledCooldown
 {: aria-label='Fields' }
 #### integer .disabledCooldown
 {: aria-label='Fields' }
 
-______
+___
 ### effectAnim
 {: aria-label='Fields' }
 #### string .effectAnim
 {: aria-label='Fields' }
 
-______
+___
 ### effectPostAnim
 {: aria-label='Fields' }
 #### string .effectPostAnim
 {: aria-label='Fields' }
 
-______
+___
 ### effectSounds
 {: aria-label='Fields' }
 #### vector\<string\> .effectSounds
 {: aria-label='Fields' }
 
-______
+___
 ### effectSoundsEnemy
 {: aria-label='Fields' }
 #### boolean .effectSoundsEnemy
 {: aria-label='Fields' }
 
-______
+___
 ### enemyHealth
 {: aria-label='Fields' }
 #### number .enemyHealth
 {: aria-label='Fields' }
 
-______
+___
 ### enemyReq
 {: aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .enemyReq
 {: aria-label='Fields' }
 
-______
+___
 ### event
 {: aria-label='Fields' }
 #### array\<string, 2\> .event
 {: aria-label='Fields' }
 
-______
+___
 ### followCrew
 {: aria-label='Fields' }
 #### boolean .followCrew
 {: aria-label='Fields' }
 
-______
+___
 ### hasSpecialPower
 {: aria-label='Fields' }
 #### boolean .hasSpecialPower
 {: aria-label='Fields' }
 
-______
+___
 ### hasTemporaryPower
 {: aria-label='Fields' }
 #### boolean .hasTemporaryPower
 {: aria-label='Fields' }
 
-______
+___
 ### hideButton
 {: aria-label='Fields' }
 #### boolean .hideButton
 {: aria-label='Fields' }
 
-______
+___
 ### hideCharges
 {: aria-label='Fields' }
 #### boolean .hideCharges
 {: aria-label='Fields' }
 
-______
+___
 ### hideCooldown
 {: aria-label='Fields' }
 #### boolean .hideCooldown
 {: aria-label='Fields' }
 
-______
+___
 ### initialCharges
 {: aria-label='Fields' }
 #### integer .initialCharges
 {: aria-label='Fields' }
 
-______
+___
 ### initialCooldownFraction
 {: aria-label='Fields' }
 #### number .initialCooldownFraction
 {: aria-label='Fields' }
 
-______
+___
 ### jumpCooldown
 {: aria-label='Fields' }
 #### integer .jumpCooldown
 {: aria-label='Fields' }
 
-______
+___
 ### name (Read-only)
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### onDeath
 {: aria-label='Fields' }
 #### integer .onDeath
 {: aria-label='Fields' }
 
-______
+___
 ### onHotkey
 {: aria-label='Fields' }
 #### integer .onHotkey
 {: aria-label='Fields' }
 
-______
+___
 ### playerReq
 {: aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .playerReq
 {: aria-label='Fields' }
 
-______
+___
 ### powerCharges
 {: aria-label='Fields' }
 #### integer .powerCharges
 {: aria-label='Fields' }
 
-______
+___
 ### powerResources
 {: aria-label='Fields' }
 #### vector\<[PowerResourceDefinition](../Hyperspace/PowerResourceDefinition)\> .powerResources
 {: aria-label='Fields' }
 
-______
+___
 ### replaceGroupIndex (Read-only)
 {: aria-label='Fields' }
 #### uint .replaceGroupIndex
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### respawnCharges
 {: aria-label='Fields' }
 #### integer .respawnCharges
 {: aria-label='Fields' }
 
-______
+___
 ### roomStatBoosts
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .roomStatBoosts
 {: aria-label='Fields' }
 
-______
+___
 ### selfHealth
 {: aria-label='Fields' }
 #### number .selfHealth
 {: aria-label='Fields' }
 
-______
+___
 ### shipFriendlyFire
 {: aria-label='Fields' }
 #### boolean .shipFriendlyFire
 {: aria-label='Fields' }
 
-______
+___
 ### sortOrder
 {: aria-label='Fields' }
 #### integer .sortOrder
 {: aria-label='Fields' }
 
-______
+___
 ### sounds
 {: aria-label='Fields' }
 #### vector\<string\> .sounds
 {: aria-label='Fields' }
 
-______
+___
 ### soundsEnemy
 {: aria-label='Fields' }
 #### boolean .soundsEnemy
 {: aria-label='Fields' }
 
-______
+___
 ### statBoosts
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
 {: aria-label='Fields' }
 
-______
+___
 ### tempPower
 {: aria-label='Fields' }
 #### [TemporaryPowerDefinition](../Hyperspace/TemporaryPowerDefinition) .tempPower
 {: aria-label='Fields' }
 
-______
+___
 ### tooltip
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .tooltip
 {: aria-label='Fields' }
 
-______
+___
 ### transformRace
 {: aria-label='Fields' }
 #### string .transformRace
 {: aria-label='Fields' }
 
-______
+___
 ### win
 {: aria-label='Fields' }
 #### boolean .win

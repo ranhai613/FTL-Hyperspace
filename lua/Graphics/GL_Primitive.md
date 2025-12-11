@@ -25,43 +25,43 @@ ___
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
-______
+___
 ### hasColor
 {: aria-label='Fields' }
 #### boolean .hasColor
 {: aria-label='Fields' }
 
-______
+___
 ### hasTexture
 {: aria-label='Fields' }
 #### boolean .hasTexture
 {: aria-label='Fields' }
 
-______
+___
 ### id
 {: aria-label='Fields' }
 #### integer .id
 {: aria-label='Fields' }
 
-______
+___
 ### lineWidth
 {: aria-label='Fields' }
 #### number .lineWidth
 {: aria-label='Fields' }
 
-______
+___
 ### texture
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .texture
 {: aria-label='Fields' }
 
-______
+___
 ### textureAntialias
 {: aria-label='Fields' }
 #### boolean .textureAntialias
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### integer .type

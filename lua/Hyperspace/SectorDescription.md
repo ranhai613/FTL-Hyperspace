@@ -17,13 +17,13 @@ lang: en
 #### [TextString](../Hyperspace/TextString) .name
 {: aria-label='Fields' }
 
-______
+___
 ### shortName
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortName
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### string .type

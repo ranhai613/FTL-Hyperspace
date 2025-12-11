@@ -28,33 +28,33 @@ ___
 #### boolean .bBlackedOut
 {: aria-label='Fields' }
 
-______
+___
 ### extend (Read-only)
 {: aria-label='Fields' }
 #### [Room_Extend](../Hyperspace/Room_Extend) .extend
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### highlightPrimitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .highlightPrimitive
 {: aria-label='Fields' }
 
-______
+___
 ### highlightPrimitive2
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .highlightPrimitive2
 {: aria-label='Fields' }
 
-______
+___
 ### iRoomId (Read-only)
 {: aria-label='Fields' }
 #### integer .iRoomId
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### rect (Read-only)
 {: aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .rect

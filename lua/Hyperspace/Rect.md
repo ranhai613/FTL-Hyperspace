@@ -13,7 +13,7 @@ lang: en
 #### [Rect](../Hyperspace/Rect) Rect ()
 {: aria-label='Constructors' }
 
-______
+___
 ### Rect ()
 {: aria-label='Constructors' }
 #### [Rect](../Hyperspace/Rect) Rect (integer _x, integer _y, integer _w, integer _h)
@@ -31,19 +31,19 @@ ___
 #### integer .h
 {: aria-label='Fields' }
 
-______
+___
 ### w
 {: aria-label='Fields' }
 #### integer .w
 {: aria-label='Fields' }
 
-______
+___
 ### x
 {: aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 
-______
+___
 ### y
 {: aria-label='Fields' }
 #### integer .y

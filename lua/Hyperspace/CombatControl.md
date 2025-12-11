@@ -17,86 +17,86 @@ lang: en
 #### vector\<[Pointf](../Hyperspace/Pointf)\> .aimingPoints
 {: aria-label='Fields' }
 
-______
+___
 ### beamMoveLast
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .beamMoveLast
 {: aria-label='Fields' }
 
-______
+___
 ### boss_visual (Read-only)
 {: aria-label='Fields' }
 #### boolean .boss_visual
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### invalidBeamTouch
 {: aria-label='Fields' }
 #### boolean .invalidBeamTouch
 {: aria-label='Fields' }
 
-______
+___
 ### isAimingTouch
 {: aria-label='Fields' }
 #### boolean .isAimingTouch
 {: aria-label='Fields' }
 
-______
+___
 ### mouseDown
 {: aria-label='Fields' }
 #### boolean .mouseDown
 {: aria-label='Fields' }
 
-______
+___
 ### movingBeam
 {: aria-label='Fields' }
 #### boolean .movingBeam
 {: aria-label='Fields' }
 
-______
+___
 ### open
 {: aria-label='Fields' }
 #### boolean .open
 {: aria-label='Fields' }
 
-______
+___
 ### playerShipPosition
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .playerShipPosition
 {: aria-label='Fields' }
 
-______
+___
 ### position
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 
-______
+___
 ### potentialAiming
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .potentialAiming
 {: aria-label='Fields' }
 
-______
+___
 ### selectedRoom
 {: aria-label='Fields' }
 #### integer .selectedRoom
 {: aria-label='Fields' }
 
-______
+___
 ### selectedSelfRoom
 {: aria-label='Fields' }
 #### integer .selectedSelfRoom
 {: aria-label='Fields' }
 
-______
+___
 ### targetPosition
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .targetPosition
 {: aria-label='Fields' }
 
-______
+___
 ### weapControl
 {: aria-label='Fields' }
 #### [WeaponControl](../Hyperspace/WeaponControl) .weapControl

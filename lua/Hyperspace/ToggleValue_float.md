@@ -13,7 +13,7 @@ lang: en
 #### [ToggleValue_float](../Hyperspace/ToggleValue_float) ToggleValue_float ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ToggleValue_float ()
 {: aria-label='Constructors' }
 #### [ToggleValue_float](../Hyperspace/ToggleValue_float) ToggleValue_float (number unknown)
@@ -31,7 +31,7 @@ ___
 #### boolean .enabled
 {: aria-label='Fields' }
 
-______
+___
 ### value
 {: aria-label='Fields' }
 #### number .value

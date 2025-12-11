@@ -27,25 +27,25 @@ ___
 #### boolean .bMissed
 {: aria-label='Fields' }
 
-______
+___
 ### bSuperShield
 {: aria-label='Fields' }
 #### boolean .bSuperShield
 {: aria-label='Fields' }
 
-______
+___
 ### explosiveDelay
 {: aria-label='Fields' }
 #### number .explosiveDelay
 {: aria-label='Fields' }
 
-______
+___
 ### missMessage
 {: aria-label='Fields' }
 #### DamageMessage .missMessage
 {: aria-label='Fields' }
 
-______
+___
 ### superShieldBypass
 {: aria-label='Fields' }
 #### boolean .superShieldBypass

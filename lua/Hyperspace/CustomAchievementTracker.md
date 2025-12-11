@@ -16,14 +16,14 @@ lang: en
 #### integer :GetAchievementStatus (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### SetAchievement ()
 {: aria-label='Methods' }
 #### void :SetAchievement (string name, boolean noPopup)
 {: aria-label='Methods' }
 Used to award achievements (CheckShipAchievement is automatically called if needed)
 
-______
+___
 ### UpdateVariableAchievements ()
 {: aria-label='Methods' }
 #### void :UpdateVariableAchievements (string varName, integer varValue, boolean inGame=true)

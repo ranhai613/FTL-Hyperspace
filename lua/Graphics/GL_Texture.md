@@ -25,43 +25,43 @@ ___
 #### integer .height
 {: aria-label='Fields' }
 
-______
+___
 ### id
 {: aria-label='Fields' }
 #### integer .id
 {: aria-label='Fields' }
 
-______
+___
 ### isLogical
 {: aria-label='Fields' }
 #### boolean .isLogical
 {: aria-label='Fields' }
 
-______
+___
 ### u_base
 {: aria-label='Fields' }
 #### number .u_base
 {: aria-label='Fields' }
 
-______
+___
 ### u_size
 {: aria-label='Fields' }
 #### number .u_size
 {: aria-label='Fields' }
 
-______
+___
 ### v_base
 {: aria-label='Fields' }
 #### number .v_base
 {: aria-label='Fields' }
 
-______
+___
 ### v_size
 {: aria-label='Fields' }
 #### number .v_size
 {: aria-label='Fields' }
 
-______
+___
 ### width
 {: aria-label='Fields' }
 #### integer .width

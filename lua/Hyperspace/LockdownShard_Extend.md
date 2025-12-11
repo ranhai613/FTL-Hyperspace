@@ -19,21 +19,21 @@ lang: en
 **Read-Only**
 The name of the animation for this shard. Used for restoring animations on save/load.
 
-______
+___
 ### canDilate
 {: aria-label='Fields' }
 #### boolean .canDilate
 {: aria-label='Fields' }
 If this shard is affected by time dilation.
 
-______
+___
 ### color
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 The color that this shard is tinted.
 
-______
+___
 ### door (Read-only)
 {: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .door
@@ -41,7 +41,7 @@ ______
 **Read-Only**
 The door that this shard is locking down, if any. Nil if no associated door.
 
-______
+___
 ### health
 {: aria-label='Fields' }
 #### integer .health

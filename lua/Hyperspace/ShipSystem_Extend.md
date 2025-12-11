@@ -17,7 +17,7 @@ lang: en
 #### integer .additionalPowerLoss
 {: aria-label='Fields' }
 
-______
+___
 ### xOffset
 {: aria-label='Fields' }
 #### integer .xOffset

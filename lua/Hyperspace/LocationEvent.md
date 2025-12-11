@@ -24,13 +24,13 @@ ___
 #### void :AddChoice ([LocationEvent](../Hyperspace/LocationEvent) newEvent, string text, [ChoiceReq](../Hyperspace/ChoiceReq) requirement, boolean hiddenReward)
 {: aria-label='Methods' }
 
-______
+___
 ### GetChoices ()
 {: aria-label='Methods' }
 #### vector\<[Choice](../Hyperspace/Choice)\> :GetChoices ()
 {: aria-label='Methods' }
 
-______
+___
 ### RemoveChoice ()
 {: aria-label='Methods' }
 #### boolean :RemoveChoice (integer index)
@@ -45,128 +45,128 @@ ___
 #### boolean .beacon
 {: aria-label='Fields' }
 
-______
+___
 ### boarders
 {: aria-label='Fields' }
 #### [BoardingEvent](../Hyperspace/BoardingEvent) .boarders
 {: aria-label='Fields' }
 
-______
+___
 ### choices
 {: aria-label='Fields' }
 #### vector\<[Choice](../Hyperspace/Choice)\> .choices
 {: aria-label='Fields' }
 If you want to modify the current `Choice` values please refer to `:GetChoices()` instead
 
-______
+___
 ### distressBeacon
 {: aria-label='Fields' }
 #### boolean .distressBeacon
 {: aria-label='Fields' }
 
-______
+___
 ### environment
 {: aria-label='Fields' }
 #### integer .environment
 {: aria-label='Fields' }
 
-______
+___
 ### environmentTarget
 {: aria-label='Fields' }
 #### integer .environmentTarget
 {: aria-label='Fields' }
 
-______
+___
 ### eventName
 {: aria-label='Fields' }
 #### string .eventName
 {: aria-label='Fields' }
 
-______
+___
 ### fleetPosition
 {: aria-label='Fields' }
 #### integer .fleetPosition
 {: aria-label='Fields' }
 
-______
+___
 ### gap_ex_cleared
 {: aria-label='Fields' }
 #### boolean .gap_ex_cleared
 {: aria-label='Fields' }
 
-______
+___
 ### modifyPursuit
 {: aria-label='Fields' }
 #### integer .modifyPursuit
 {: aria-label='Fields' }
 
-______
+___
 ### planetImage
 {: aria-label='Fields' }
 #### string .planetImage
 {: aria-label='Fields' }
 
-______
+___
 ### quest
 {: aria-label='Fields' }
 #### string .quest
 {: aria-label='Fields' }
 
-______
+___
 ### repair
 {: aria-label='Fields' }
 #### boolean .repair
 {: aria-label='Fields' }
 
-______
+___
 ### reveal_map
 {: aria-label='Fields' }
 #### boolean .reveal_map
 {: aria-label='Fields' }
 
-______
+___
 ### reward
 {: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .reward
 {: aria-label='Fields' }
 
-______
+___
 ### secretSector
 {: aria-label='Fields' }
 #### boolean .secretSector
 {: aria-label='Fields' }
 
-______
+___
 ### spaceImage
 {: aria-label='Fields' }
 #### string .spaceImage
 {: aria-label='Fields' }
 
-______
+___
 ### store
 {: aria-label='Fields' }
 #### boolean .store
 {: aria-label='Fields' }
 
-______
+___
 ### stuff
 {: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .stuff
 {: aria-label='Fields' }
 
-______
+___
 ### text
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text
 {: aria-label='Fields' }
 
-______
+___
 ### unlockShip
 {: aria-label='Fields' }
 #### integer .unlockShip
 {: aria-label='Fields' }
 
-______
+___
 ### unlockShipText
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .unlockShipText

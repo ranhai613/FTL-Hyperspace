@@ -13,7 +13,7 @@ lang: en
 #### [TextString](../Hyperspace/TextString) TextString ()
 {: aria-label='Constructors' }
 
-______
+___
 ### TextString ()
 {: aria-label='Constructors' }
 #### [TextString](../Hyperspace/TextString) TextString (string str, boolean literal)
@@ -42,7 +42,7 @@ ___
 You can change the text by setting this value.
 If `.isLiteral` is true, this stores the text itself, otherwise it stores the text id.
 
-______
+___
 ### isLiteral
 {: aria-label='Fields' }
 #### boolean .isLiteral

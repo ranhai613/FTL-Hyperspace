@@ -18,13 +18,13 @@ Extends: [Spreadable](../Hyperspace/Spreadable)
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateDeathTimer ()
 {: aria-label='Methods' }
 #### void :UpdateDeathTimer (integer connectedFires)
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateStartTimer ()
 {: aria-label='Methods' }
 #### void :UpdateStartTimer (integer doorLevel)
@@ -39,31 +39,31 @@ ___
 #### boolean .bWasOnFire
 {: aria-label='Fields' }
 
-______
+___
 ### fDeathTimer
 {: aria-label='Fields' }
 #### number .fDeathTimer
 {: aria-label='Fields' }
 
-______
+___
 ### fOxygen
 {: aria-label='Fields' }
 #### number .fOxygen
 {: aria-label='Fields' }
 
-______
+___
 ### fStartTimer
 {: aria-label='Fields' }
 #### number .fStartTimer
 {: aria-label='Fields' }
 
-______
+___
 ### fireAnimation
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .fireAnimation
 {: aria-label='Fields' }
 
-______
+___
 ### smokeAnimation
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .smokeAnimation

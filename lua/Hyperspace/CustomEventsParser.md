@@ -32,19 +32,19 @@ ___
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent (string event)
 {: aria-label='Methods' }
 
-______
+___
 ### GetCustomEvent ()
 {: aria-label='Methods' }
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent ([Location](../Hyperspace/Location) loc)
 {: aria-label='Methods' }
 
-______
+___
 ### LoadEvent ()
 {: aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, EventLoadList eventList, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)
 {: aria-label='Methods' }
 
-______
+___
 ### LoadEvent ()
 {: aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, string eventName, boolean ignoreUnique, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)

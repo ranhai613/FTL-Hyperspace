@@ -25,13 +25,13 @@ ___
 #### number .a
 {: aria-label='Fields' }
 
-______
+___
 ### b
 {: aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
-______
+___
 ### center
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center

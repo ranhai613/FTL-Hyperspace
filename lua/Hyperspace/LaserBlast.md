@@ -27,13 +27,13 @@ ___
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
 
-______
+___
 ### spinAngle
 {: aria-label='Fields' }
 #### number .spinAngle
 {: aria-label='Fields' }
 
-______
+___
 ### spinSpeed
 {: aria-label='Fields' }
 #### number .spinSpeed

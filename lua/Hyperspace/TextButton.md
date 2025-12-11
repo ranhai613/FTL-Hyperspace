@@ -26,13 +26,13 @@ ___
 #### void :OnInit ([Point](../Hyperspace/Point) pos, [Point](../Hyperspace/Point) size, integer cornerInset, [TextString](../Hyperspace/TextString) buttonLabel, integer font)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
-______
+___
 ### ResetPrimitives ()
 {: aria-label='Methods' }
 #### void :ResetPrimitives ()

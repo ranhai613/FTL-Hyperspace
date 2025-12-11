@@ -19,13 +19,13 @@ lang: en
 **Read-only**
 Maybe true for event pauses and ESC menu pauses? Not sure.
 
-______
+___
 ### bHideUI
 {: aria-label='Fields' }
 #### boolean .bHideUI
 {: aria-label='Fields' }
 
-______
+___
 ### bPaused
 {: aria-label='Fields' }
 #### boolean .bPaused
@@ -33,47 +33,47 @@ ______
 Only true for spacebar pauses, NOT event pauses or ESC menu pauses.
 Modifying this variable during event pauses and ESC menu pauses does not unfreeze the game; it will only change whether or not the game remains paused when the event or ESC menu closes.
 
-______
+___
 ### choiceBox (Read-only)
 {: aria-label='Fields' }
 #### [ChoiceBox](../Hyperspace/ChoiceBox) .choiceBox
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### choiceBoxOpen (Read-only)
 {: aria-label='Fields' }
 #### boolean .choiceBoxOpen
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### combatControl
 {: aria-label='Fields' }
 #### [CombatControl](../Hyperspace/CombatControl) .combatControl
 {: aria-label='Fields' }
 
-______
+___
 ### crewControl
 {: aria-label='Fields' }
 #### [CrewControl](../Hyperspace/CrewControl) .crewControl
 {: aria-label='Fields' }
 
-______
+___
 ### dangerLocation (Read-only)
 {: aria-label='Fields' }
 #### boolean .dangerLocation
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### equipScreen (Read-only)
 {: aria-label='Fields' }
 #### [Equipment](../Hyperspace/Equipment) .equipScreen
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
-______
+___
 ### event_pause (Read-only)
 {: aria-label='Fields' }
 #### boolean .event_pause
@@ -81,27 +81,27 @@ ______
 **Read-only**
 True for event pauses.
 
-______
+___
 ### ftlButton
 {: aria-label='Fields' }
 #### [FTLButton](../Hyperspace/FTLButton) .ftlButton
 {: aria-label='Fields' }
 
-______
+___
 ### jumpComplete (Read-only)
 {: aria-label='Fields' }
 #### boolean .jumpComplete
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### mapId (Read-only)
 {: aria-label='Fields' }
 #### integer .mapId
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### menu_pause (Read-only)
 {: aria-label='Fields' }
 #### boolean .menu_pause
@@ -109,51 +109,51 @@ ______
 **Read-only**
 Probably true for ESC menu pauses.
 
-______
+___
 ### outOfFuel (Read-only)
 {: aria-label='Fields' }
 #### boolean .outOfFuel
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### pauseTextLoc
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .pauseTextLoc
 {: aria-label='Fields' }
 
-______
+___
 ### secretSector (Read-only)
 {: aria-label='Fields' }
 #### boolean .secretSector
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### shipPosition
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .shipPosition
 {: aria-label='Fields' }
 
-______
+___
 ### shipStatus
 {: aria-label='Fields' }
 #### ShipStatus .shipStatus
 {: aria-label='Fields' }
 
-______
+___
 ### spaceStatus
 {: aria-label='Fields' }
 #### [SpaceStatus](../Hyperspace/SpaceStatus) .spaceStatus
 {: aria-label='Fields' }
 
-______
+___
 ### sysControl
 {: aria-label='Fields' }
 #### SystemControl .sysControl
 {: aria-label='Fields' }
 
-______
+___
 ### upgradeButton (Read-only)
 {: aria-label='Fields' }
 #### [Button](../Hyperspace/Button) .upgradeButton

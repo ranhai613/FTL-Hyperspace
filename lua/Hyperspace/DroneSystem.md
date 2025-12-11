@@ -18,13 +18,13 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean :DePowerDrone ([Drone](../Hyperspace/Drone) drone, boolean unk)
 {: aria-label='Methods' }
 
-______
+___
 ### RemoveDrone ()
 {: aria-label='Methods' }
 #### [Drone](../Hyperspace/Drone) :RemoveDrone (integer slot)
 {: aria-label='Methods' }
 
-______
+___
 ### SetBonusPower ()
 {: aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
@@ -39,45 +39,45 @@ ___
 #### integer .drone_count
 {: aria-label='Fields' }
 
-______
+___
 ### drone_start
 {: aria-label='Fields' }
 #### integer .drone_start
 {: aria-label='Fields' }
 
-______
+___
 ### drones
 {: aria-label='Fields' }
 #### vector\<[Drone](../Hyperspace/Drone)\> .drones
 {: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
-______
+___
 ### iStartingBatteryPower
 {: aria-label='Fields' }
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
 
-______
+___
 ### repowerList
 {: aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
-______
+___
 ### slot_count
 {: aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
 
-______
+___
 ### targetShip
 {: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .targetShip
 {: aria-label='Fields' }
 
-______
+___
 ### userPowered
 {: aria-label='Fields' }
 #### vector\<boolean\> .userPowered

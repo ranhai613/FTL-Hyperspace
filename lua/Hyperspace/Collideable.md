@@ -16,61 +16,61 @@ lang: en
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
-______
+___
 ### DamageArea ()
 {: aria-label='Methods' }
 #### boolean :DamageArea ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit)
 {: aria-label='Methods' }
 
-______
+___
 ### DamageBeam ()
 {: aria-label='Methods' }
 #### boolean :DamageBeam ([Pointf](../Hyperspace/Pointf) current, [Pointf](../Hyperspace/Pointf) last, [Damage](../Hyperspace/Damage) damage)
 {: aria-label='Methods' }
 
-______
+___
 ### DamageShield ()
 {: aria-label='Methods' }
 #### boolean :DamageShield ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit)
 {: aria-label='Methods' }
 
-______
+___
 ### GetDodged ()
 {: aria-label='Methods' }
 #### boolean :GetDodged ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetOwnerId ()
 {: aria-label='Methods' }
 #### integer :GetOwnerId ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSelfId ()
 {: aria-label='Methods' }
 #### integer :GetSelfId ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSpaceId ()
 {: aria-label='Methods' }
 #### integer :GetSpaceId ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSuperShield ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSuperShield ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetTempVision ()
 {: aria-label='Methods' }
 #### void :SetTempVision ([Pointf](../Hyperspace/Pointf) location)
 {: aria-label='Methods' }
 
-______
+___
 ### ValidTargetLocation ()
 {: aria-label='Methods' }
 #### boolean :ValidTargetLocation ([Pointf](../Hyperspace/Pointf) location)

@@ -26,7 +26,7 @@ ___
 #### number :GetWeaponCooldown ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
@@ -41,25 +41,25 @@ ___
 #### CachedImage .drone_image_glow
 {: aria-label='Fields' }
 
-______
+___
 ### drone_image_off
 {: aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
 
-______
+___
 ### drone_image_on
 {: aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
 
-______
+___
 ### glowAnimation
 {: aria-label='Fields' }
 #### number .glowAnimation
 {: aria-label='Fields' }
 
-______
+___
 ### shieldSystem
 {: aria-label='Fields' }
 #### [Shields](../Hyperspace/Shields) .shieldSystem

@@ -13,7 +13,7 @@ lang: en
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)
 {: aria-label='Constructors' }
 
-______
+___
 ### StatBoost ()
 {: aria-label='Constructors' }
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)

@@ -17,37 +17,37 @@ lang: en
 #### vector\<[AugmentCrystalShard](../Hyperspace/AugmentCrystalShard)\> .crystalShard
 {: aria-label='Fields' }
 
-______
+___
 ### functions (Read-only)
 {: aria-label='Fields' }
 #### unordered_multimap\<string, [AugmentFunction](../Hyperspace/AugmentFunction)\> .functions
 {: aria-label='Fields' }
 
-______
+___
 ### iconShipId (Read-only)
 {: aria-label='Fields' }
 #### integer .iconShipId
 {: aria-label='Fields' }
 
-______
+___
 ### locked (Read-only)
 {: aria-label='Fields' }
 #### boolean .locked
 {: aria-label='Fields' }
 
-______
+___
 ### name (Read-only)
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### statBoosts (Read-only)
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
 {: aria-label='Fields' }
 
-______
+___
 ### superShield (Read-only)
 {: aria-label='Fields' }
 #### [AugmentSuperShield](../Hyperspace/AugmentSuperShield) .superShield

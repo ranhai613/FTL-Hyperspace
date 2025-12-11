@@ -18,25 +18,25 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 #### void :AddAugment ([AugmentBlueprint](../Hyperspace/AugmentBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
-______
+___
 ### AddDrone ()
 {: aria-label='Methods' }
 #### void :AddDrone ([DroneBlueprint](../Hyperspace/DroneBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
-______
+___
 ### AddToCargo ()
 {: aria-label='Methods' }
 #### void :AddToCargo (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### AddWeapon ()
 {: aria-label='Methods' }
 #### void :AddWeapon ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
-______
+___
 ### GetCargoHold ()
 {: aria-label='Methods' }
 #### vector\<string\> :GetCargoHold ()

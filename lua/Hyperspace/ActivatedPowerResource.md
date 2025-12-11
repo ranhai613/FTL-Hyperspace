@@ -13,19 +13,19 @@ lang: en
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def)
 {: aria-label='Constructors' }
 
-______
+___
 ### ActivatedPowerResource ()
 {: aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember](../Hyperspace/CrewMember) _crew, [CrewMember_Extend](../Hyperspace/CrewMember_Extend) _ex)
 {: aria-label='Constructors' }
 
-______
+___
 ### ActivatedPowerResource ()
 {: aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember](../Hyperspace/CrewMember) _crew)
 {: aria-label='Constructors' }
 
-______
+___
 ### ActivatedPowerResource ()
 {: aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember_Extend](../Hyperspace/CrewMember_Extend) _ex)
@@ -42,37 +42,37 @@ ___
 #### void :DisablePower ()
 {: aria-label='Methods' }
 
-______
+___
 ### EnableInit ()
 {: aria-label='Methods' }
 #### void :EnableInit ()
 {: aria-label='Methods' }
 
-______
+___
 ### EnablePower ()
 {: aria-label='Methods' }
 #### void :EnablePower ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetCrewBoxResourceWidth ()
 {: aria-label='Methods' }
 #### integer :GetCrewBoxResourceWidth (integer mode)
 {: aria-label='Methods' }
 
-______
+___
 ### GetLinkedPowers ()
 {: aria-label='Methods' }
 #### void :GetLinkedPowers ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnUpdate ()
 {: aria-label='Methods' }
 #### void :OnUpdate ()
 {: aria-label='Methods' }
 
-______
+___
 ### PowerReq ()
 {: aria-label='Methods' }
 #### PowerReadyState :PowerReq ([ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) req)
@@ -88,45 +88,45 @@ ___
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### crew_ex (Read-only)
 {: aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .crew_ex
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### def (Read-only)
 {: aria-label='Fields' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .def
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### enabled
 {: aria-label='Fields' }
 #### boolean .enabled
 {: aria-label='Fields' }
 
-______
+___
 ### modifiedChargesPerJump
 {: aria-label='Fields' }
 #### number .modifiedChargesPerJump
 {: aria-label='Fields' }
 
-______
+___
 ### modifiedPowerCharges
 {: aria-label='Fields' }
 #### number .modifiedPowerCharges
 {: aria-label='Fields' }
 
-______
+___
 ### powerCharges
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .powerCharges
 {: aria-label='Fields' }
 
-______
+___
 ### powerCooldown
 {: aria-label='Fields' }
 #### pair\<number, number\> .powerCooldown

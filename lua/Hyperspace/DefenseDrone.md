@@ -26,25 +26,25 @@ ___
 #### string :GetTooltip ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### PickTarget ()
 {: aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetWeaponTarget ()
 {: aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
-______
+___
 ### ValidTargetObject ()
 {: aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
@@ -59,49 +59,49 @@ ___
 #### number .currentSpeed
 {: aria-label='Fields' }
 
-______
+___
 ### currentTargetId
 {: aria-label='Fields' }
 #### integer .currentTargetId
 {: aria-label='Fields' }
 
-______
+___
 ### currentTargetType
 {: aria-label='Fields' }
 #### integer .currentTargetType
 {: aria-label='Fields' }
 
-______
+___
 ### drone_image
 {: aria-label='Fields' }
 #### CachedImage .drone_image
 {: aria-label='Fields' }
 
-______
+___
 ### engine_image
 {: aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
 
-______
+___
 ### gun_image_charging
 {: aria-label='Fields' }
 #### CachedImage .gun_image_charging
 {: aria-label='Fields' }
 
-______
+___
 ### gun_image_off
 {: aria-label='Fields' }
 #### CachedImage .gun_image_off
 {: aria-label='Fields' }
 
-______
+___
 ### gun_image_on
 {: aria-label='Fields' }
 #### CachedImage .gun_image_on
 {: aria-label='Fields' }
 
-______
+___
 ### shotAtTargetId
 {: aria-label='Fields' }
 #### integer .shotAtTargetId

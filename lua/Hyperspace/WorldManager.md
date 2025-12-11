@@ -16,7 +16,7 @@ lang: en
 #### boolean :AddBoarders ([BoardingEvent](../Hyperspace/BoardingEvent) boardingEvent)
 {: aria-label='Methods' }
 
-______
+___
 ### ClearLocation ()
 {: aria-label='Methods' }
 #### void :ClearLocation ()
@@ -32,46 +32,46 @@ ___
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### bStartedGame (Read-only)
 {: aria-label='Fields' }
 #### boolean .bStartedGame
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### currentDifficulty (Read-only)
 {: aria-label='Fields' }
 #### integer .currentDifficulty
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### killedCrew
 {: aria-label='Fields' }
 #### integer .killedCrew
 {: aria-label='Fields' }
 
-______
+___
 ### playerCrewCount
 {: aria-label='Fields' }
 #### integer .playerCrewCount
 {: aria-label='Fields' }
 
-______
+___
 ### playerHull
 {: aria-label='Fields' }
 #### integer .playerHull
 {: aria-label='Fields' }
 
-______
+___
 ### space (Read-only)
 {: aria-label='Fields' }
 #### [SpaceManager](../Hyperspace/SpaceManager) .space
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### starMap (Read-only)
 {: aria-label='Fields' }
 #### [StarMap](../Hyperspace/StarMap) .starMap

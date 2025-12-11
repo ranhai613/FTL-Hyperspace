@@ -17,481 +17,481 @@ lang: en
 #### number .allDamageTakenMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### animBase
 {: aria-label='Fields' }
 #### string .animBase
 {: aria-label='Fields' }
 
-______
+___
 ### animSheet
 {: aria-label='Fields' }
 #### string .animSheet
 {: aria-label='Fields' }
 
-______
+___
 ### bonusPower
 {: aria-label='Fields' }
 #### integer .bonusPower
 {: aria-label='Fields' }
 
-______
+___
 ### canBurn
 {: aria-label='Fields' }
 #### boolean .canBurn
 {: aria-label='Fields' }
 
-______
+___
 ### canFight
 {: aria-label='Fields' }
 #### boolean .canFight
 {: aria-label='Fields' }
 
-______
+___
 ### canMan
 {: aria-label='Fields' }
 #### boolean .canMan
 {: aria-label='Fields' }
 
-______
+___
 ### canMove
 {: aria-label='Fields' }
 #### boolean .canMove
 {: aria-label='Fields' }
 
-______
+___
 ### canPhaseThroughDoors
 {: aria-label='Fields' }
 #### boolean .canPhaseThroughDoors
 {: aria-label='Fields' }
 
-______
+___
 ### canPunch
 {: aria-label='Fields' }
 #### ToggleValue\<boolean\> .canPunch
 {: aria-label='Fields' }
 
-______
+___
 ### canRepair
 {: aria-label='Fields' }
 #### boolean .canRepair
 {: aria-label='Fields' }
 
-______
+___
 ### canSabotage
 {: aria-label='Fields' }
 #### boolean .canSabotage
 {: aria-label='Fields' }
 
-______
+___
 ### canSuffocate
 {: aria-label='Fields' }
 #### boolean .canSuffocate
 {: aria-label='Fields' }
 
-______
+___
 ### canTeleport
 {: aria-label='Fields' }
 #### boolean .canTeleport
 {: aria-label='Fields' }
 
-______
+___
 ### changeIfSame
 {: aria-label='Fields' }
 #### boolean .changeIfSame
 {: aria-label='Fields' }
 
-______
+___
 ### cloneLoseSkills
 {: aria-label='Fields' }
 #### boolean .cloneLoseSkills
 {: aria-label='Fields' }
 
-______
+___
 ### cloneSpeedMultiplier
 {: aria-label='Fields' }
 #### number .cloneSpeedMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### controllable
 {: aria-label='Fields' }
 #### boolean .controllable
 {: aria-label='Fields' }
 
-______
+___
 ### crewSlots
 {: aria-label='Fields' }
 #### number .crewSlots
 {: aria-label='Fields' }
 
-______
+___
 ### damageEnemiesAmount
 {: aria-label='Fields' }
 #### number .damageEnemiesAmount
 {: aria-label='Fields' }
 
-______
+___
 ### damageMultiplier
 {: aria-label='Fields' }
 #### number .damageMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### damageTakenMultiplier
 {: aria-label='Fields' }
 #### number .damageTakenMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### deathSounds
 {: aria-label='Fields' }
 #### vector\<string\> .deathSounds
 {: aria-label='Fields' }
 
-______
+___
 ### deathSoundsFemale
 {: aria-label='Fields' }
 #### vector\<string\> .deathSoundsFemale
 {: aria-label='Fields' }
 
-______
+___
 ### defaultSkillLevel
 {: aria-label='Fields' }
 #### integer .defaultSkillLevel
 {: aria-label='Fields' }
 
-______
+___
 ### detectsLifeforms
 {: aria-label='Fields' }
 #### boolean .detectsLifeforms
 {: aria-label='Fields' }
 
-______
+___
 ### doorDamageMultiplier
 {: aria-label='Fields' }
 #### number .doorDamageMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### droneAI
 {: aria-label='Fields' }
 #### DroneAI .droneAI
 {: aria-label='Fields' }
 
-______
+___
 ### droneMoveFromManningSlot
 {: aria-label='Fields' }
 #### boolean .droneMoveFromManningSlot
 {: aria-label='Fields' }
 
-______
+___
 ### essential
 {: aria-label='Fields' }
 #### number .essential
 {: aria-label='Fields' }
 
-______
+___
 ### explosionDef
 {: aria-label='Fields' }
 #### ExplosionDefinition .explosionDef
 {: aria-label='Fields' }
 
-______
+___
 ### fireDamageMultiplier
 {: aria-label='Fields' }
 #### number .fireDamageMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### fireRepairMultiplier
 {: aria-label='Fields' }
 #### number .fireRepairMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### hackDoors
 {: aria-label='Fields' }
 #### boolean .hackDoors
 {: aria-label='Fields' }
 
-______
+___
 ### hasCustomDeathAnimation
 {: aria-label='Fields' }
 #### boolean .hasCustomDeathAnimation
 {: aria-label='Fields' }
 
-______
+___
 ### hasDeathExplosion
 {: aria-label='Fields' }
 #### boolean .hasDeathExplosion
 {: aria-label='Fields' }
 
-______
+___
 ### healAmount
 {: aria-label='Fields' }
 #### number .healAmount
 {: aria-label='Fields' }
 
-______
+___
 ### healCrewAmount
 {: aria-label='Fields' }
 #### number .healCrewAmount
 {: aria-label='Fields' }
 
-______
+___
 ### healSpeed
 {: aria-label='Fields' }
 #### number .healSpeed
 {: aria-label='Fields' }
 
-______
+___
 ### isAnaerobic
 {: aria-label='Fields' }
 #### boolean .isAnaerobic
 {: aria-label='Fields' }
 
-______
+___
 ### isTelepathic
 {: aria-label='Fields' }
 #### boolean .isTelepathic
 {: aria-label='Fields' }
 
-______
+___
 ### lowHealthThreshold
 {: aria-label='Fields' }
 #### number .lowHealthThreshold
 {: aria-label='Fields' }
 
-______
+___
 ### lowHealthThresholdPercentage
 {: aria-label='Fields' }
 #### number .lowHealthThresholdPercentage
 {: aria-label='Fields' }
 
-______
+___
 ### maxHealth
 {: aria-label='Fields' }
 #### integer .maxHealth
 {: aria-label='Fields' }
 
-______
+___
 ### moveSpeedMultiplier
 {: aria-label='Fields' }
 #### number .moveSpeedMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### nameRace
 {: aria-label='Fields' }
 #### vector\<string\> .nameRace
 {: aria-label='Fields' }
 
-______
+___
 ### noAI
 {: aria-label='Fields' }
 #### boolean .noAI
 {: aria-label='Fields' }
 
-______
+___
 ### noClone
 {: aria-label='Fields' }
 #### boolean .noClone
 {: aria-label='Fields' }
 
-______
+___
 ### noSlot
 {: aria-label='Fields' }
 #### boolean .noSlot
 {: aria-label='Fields' }
 
-______
+___
 ### noWarning
 {: aria-label='Fields' }
 #### boolean .noWarning
 {: aria-label='Fields' }
 
-______
+___
 ### oxygenChangeSpeed
 {: aria-label='Fields' }
 #### number .oxygenChangeSpeed
 {: aria-label='Fields' }
 
-______
+___
 ### passiveHealAmount
 {: aria-label='Fields' }
 #### number .passiveHealAmount
 {: aria-label='Fields' }
 
-______
+___
 ### passiveHealDelay
 {: aria-label='Fields' }
 #### integer .passiveHealDelay
 {: aria-label='Fields' }
 
-______
+___
 ### passiveStatBoosts
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .passiveStatBoosts
 {: aria-label='Fields' }
 
-______
+___
 ### powerDefs
 {: aria-label='Fields' }
 #### vector\<[ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition)\> .powerDefs
 {: aria-label='Fields' }
 
-______
+___
 ### powerDrain
 {: aria-label='Fields' }
 #### integer .powerDrain
 {: aria-label='Fields' }
 
-______
+___
 ### powerDrainFriendly
 {: aria-label='Fields' }
 #### boolean .powerDrainFriendly
 {: aria-label='Fields' }
 
-______
+___
 ### powerRechargeMultiplier
 {: aria-label='Fields' }
 #### number .powerRechargeMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### providesPower
 {: aria-label='Fields' }
 #### boolean .providesPower
 {: aria-label='Fields' }
 
-______
+___
 ### punchTimer
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .punchTimer
 {: aria-label='Fields' }
 
-______
+___
 ### race
 {: aria-label='Fields' }
 #### string .race
 {: aria-label='Fields' }
 
-______
+___
 ### rangedDamageMultiplier
 {: aria-label='Fields' }
 #### number .rangedDamageMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### repairSoundFrame
 {: aria-label='Fields' }
 #### integer .repairSoundFrame
 {: aria-label='Fields' }
 
-______
+___
 ### repairSounds
 {: aria-label='Fields' }
 #### vector\<string\> .repairSounds
 {: aria-label='Fields' }
 
-______
+___
 ### repairSpeed
 {: aria-label='Fields' }
 #### number .repairSpeed
 {: aria-label='Fields' }
 
-______
+___
 ### resistsMindControl
 {: aria-label='Fields' }
 #### boolean .resistsMindControl
 {: aria-label='Fields' }
 
-______
+___
 ### sabotageSpeedMultiplier
 {: aria-label='Fields' }
 #### number .sabotageSpeedMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### selectable
 {: aria-label='Fields' }
 #### boolean .selectable
 {: aria-label='Fields' }
 
-______
+___
 ### shootTimer
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .shootTimer
 {: aria-label='Fields' }
 
-______
+___
 ### shootingSounds
 {: aria-label='Fields' }
 #### vector\<string\> .shootingSounds
 {: aria-label='Fields' }
 
-______
+___
 ### silenced
 {: aria-label='Fields' }
 #### boolean .silenced
 {: aria-label='Fields' }
 
-______
+___
 ### skillsDef
 {: aria-label='Fields' }
 #### SkillsDefinition .skillsDef
 {: aria-label='Fields' }
 
-______
+___
 ### snapToSlot
 {: aria-label='Fields' }
 #### boolean .snapToSlot
 {: aria-label='Fields' }
 
-______
+___
 ### stunMultiplier
 {: aria-label='Fields' }
 #### number .stunMultiplier
 {: aria-label='Fields' }
 
-______
+___
 ### suffocationModifier
 {: aria-label='Fields' }
 #### number .suffocationModifier
 {: aria-label='Fields' }
 
-______
+___
 ### teleportMove
 {: aria-label='Fields' }
 #### boolean .teleportMove
 {: aria-label='Fields' }
 
-______
+___
 ### teleportMoveOtherShip
 {: aria-label='Fields' }
 #### boolean .teleportMoveOtherShip
 {: aria-label='Fields' }
 
-______
+___
 ### transformName
 {: aria-label='Fields' }
 #### vector\<string\> .transformName
 {: aria-label='Fields' }
 
-______
+___
 ### trueHealAmount
 {: aria-label='Fields' }
 #### number .trueHealAmount
 {: aria-label='Fields' }
 
-______
+___
 ### truePassiveHealAmount
 {: aria-label='Fields' }
 #### number .truePassiveHealAmount
 {: aria-label='Fields' }
 
-______
+___
 ### validTarget
 {: aria-label='Fields' }
 #### boolean .validTarget

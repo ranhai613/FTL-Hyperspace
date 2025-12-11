@@ -17,19 +17,19 @@ lang: en
 #### number .hullDamageResistChance
 {: aria-label='Fields' }
 
-______
+___
 ### ionDamageResistChance
 {: aria-label='Fields' }
 #### number .ionDamageResistChance
 {: aria-label='Fields' }
 
-______
+___
 ### sysDamageResistChance
 {: aria-label='Fields' }
 #### number .sysDamageResistChance
 {: aria-label='Fields' }
 
-______
+___
 ### timeDilation
 {: aria-label='Fields' }
 #### integer .timeDilation

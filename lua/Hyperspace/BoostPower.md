@@ -17,13 +17,13 @@ lang: en
 #### number .amount
 {: aria-label='Fields' }
 
-______
+___
 ### count
 {: aria-label='Fields' }
 #### integer .count
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### integer .type

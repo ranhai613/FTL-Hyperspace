@@ -27,50 +27,50 @@ ___
 #### boolean .bArmed
 {: aria-label='Fields' }
 
-______
+___
 ### bBlocked
 {: aria-label='Fields' }
 #### boolean .bBlocked
 {: aria-label='Fields' }
 
-______
+___
 ### bCanHack
 {: aria-label='Fields' }
 #### boolean .bCanHack
 {: aria-label='Fields' }
 
-______
+___
 ### bHacking
 {: aria-label='Fields' }
 #### boolean .bHacking
 {: aria-label='Fields' }
 
-______
+___
 ### currentSystem
 {: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .currentSystem
 {: aria-label='Fields' }
 The current system it is targeting
 
-______
+___
 ### drone
 {: aria-label='Fields' }
 #### [HackingDrone](../Hyperspace/HackingDrone) .drone
 {: aria-label='Fields' }
 
-______
+___
 ### effectTimer
 {: aria-label='Fields' }
 #### pair\<number, number\> .effectTimer
 {: aria-label='Fields' }
 
-______
+___
 ### queuedSystem
 {: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .queuedSystem
 {: aria-label='Fields' }
 
-______
+___
 ### spendDrone
 {: aria-label='Fields' }
 #### integer .spendDrone

@@ -13,7 +13,7 @@ lang: en
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) ActivatedPowerRequirements ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ActivatedPowerRequirements ()
 {: aria-label='Constructors' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) ActivatedPowerRequirements ([ActivatedPowerRequirements.Type](../Hyperspace/ActivatedPowerRequirements.Type) unknown)
@@ -27,17 +27,17 @@ ___
 {: aria-label='Constants' }
 Equivalent to `2`.
 
-______
+___
 ### ActivatedPowerRequirements.Type_ENEMY
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### ActivatedPowerRequirements.Type_PLAYER
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### ActivatedPowerRequirements.Type_UNKNOWN
 {: aria-label='Constants' }
 Equivalent to `3`.
@@ -53,139 +53,139 @@ ___
 #### boolean .aiDisabled
 {: aria-label='Fields' }
 
-______
+___
 ### checkRoomCrew
 {: aria-label='Fields' }
 #### boolean .checkRoomCrew
 {: aria-label='Fields' }
 
-______
+___
 ### enemyBlackList
 {: aria-label='Fields' }
 #### vector\<string\> .enemyBlackList
 {: aria-label='Fields' }
 
-______
+___
 ### enemyInRoom
 {: aria-label='Fields' }
 #### boolean .enemyInRoom
 {: aria-label='Fields' }
 
-______
+___
 ### enemyShip
 {: aria-label='Fields' }
 #### boolean .enemyShip
 {: aria-label='Fields' }
 
-______
+___
 ### enemyWhiteList
 {: aria-label='Fields' }
 #### vector\<string\> .enemyWhiteList
 {: aria-label='Fields' }
 
-______
+___
 ### extraConditions
 {: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraConditions
 {: aria-label='Fields' }
 
-______
+___
 ### extraOrConditions
 {: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraOrConditions
 {: aria-label='Fields' }
 
-______
+___
 ### extraOrConditionsTooltip
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .extraOrConditionsTooltip
 {: aria-label='Fields' }
 
-______
+___
 ### friendlyBlackList
 {: aria-label='Fields' }
 #### vector\<string\> .friendlyBlackList
 {: aria-label='Fields' }
 
-______
+___
 ### friendlyInRoom
 {: aria-label='Fields' }
 #### boolean .friendlyInRoom
 {: aria-label='Fields' }
 
-______
+___
 ### friendlyWhiteList
 {: aria-label='Fields' }
 #### vector\<string\> .friendlyWhiteList
 {: aria-label='Fields' }
 
-______
+___
 ### hasClonebay
 {: aria-label='Fields' }
 #### boolean .hasClonebay
 {: aria-label='Fields' }
 
-______
+___
 ### inCombat
 {: aria-label='Fields' }
 #### boolean .inCombat
 {: aria-label='Fields' }
 
-______
+___
 ### maxHealth
 {: aria-label='Fields' }
 #### ToggleValue\<integer\> .maxHealth
 {: aria-label='Fields' }
 
-______
+___
 ### minHealth
 {: aria-label='Fields' }
 #### ToggleValue\<integer\> .minHealth
 {: aria-label='Fields' }
 
-______
+___
 ### outOfCombat
 {: aria-label='Fields' }
 #### boolean .outOfCombat
 {: aria-label='Fields' }
 
-______
+___
 ### playerShip
 {: aria-label='Fields' }
 #### boolean .playerShip
 {: aria-label='Fields' }
 
-______
+___
 ### requiredSystem
 {: aria-label='Fields' }
 #### integer .requiredSystem
 {: aria-label='Fields' }
 
-______
+___
 ### requiredSystemFunctional
 {: aria-label='Fields' }
 #### boolean .requiredSystemFunctional
 {: aria-label='Fields' }
 
-______
+___
 ### systemDamaged
 {: aria-label='Fields' }
 #### boolean .systemDamaged
 {: aria-label='Fields' }
 
-______
+___
 ### systemInRoom
 {: aria-label='Fields' }
 #### boolean .systemInRoom
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### [ActivatedPowerRequirements.Type](../Hyperspace/ActivatedPowerRequirements.Type) .type
 {: aria-label='Fields' }
 
-______
+___
 ### whiteList
 {: aria-label='Fields' }
 #### vector\<string\> .whiteList

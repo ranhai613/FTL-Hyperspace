@@ -19,43 +19,43 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### [GL_Texture](../Graphics/GL_Texture) .bottom
 {: aria-label='Fields' }
 
-______
+___
 ### clone
 {: aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .clone
 {: aria-label='Fields' }
 
-______
+___
 ### fDeathTime
 {: aria-label='Fields' }
 #### number .fDeathTime
 {: aria-label='Fields' }
 
-______
+___
 ### fTimeGoal
 {: aria-label='Fields' }
 #### number .fTimeGoal
 {: aria-label='Fields' }
 
-______
+___
 ### fTimeToClone
 {: aria-label='Fields' }
 #### number .fTimeToClone
 {: aria-label='Fields' }
 
-______
+___
 ### gas
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .gas
 {: aria-label='Fields' }
 
-______
+___
 ### slot
 {: aria-label='Fields' }
 #### integer .slot
 {: aria-label='Fields' }
 
-______
+___
 ### top
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .top

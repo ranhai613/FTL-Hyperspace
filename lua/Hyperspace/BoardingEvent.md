@@ -25,25 +25,25 @@ ___
 #### integer .amount
 {: aria-label='Fields' }
 
-______
+___
 ### breach
 {: aria-label='Fields' }
 #### boolean .breach
 {: aria-label='Fields' }
 
-______
+___
 ### max
 {: aria-label='Fields' }
 #### integer .max
 {: aria-label='Fields' }
 
-______
+___
 ### min
 {: aria-label='Fields' }
 #### integer .min
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### string .type

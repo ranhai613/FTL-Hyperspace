@@ -26,7 +26,7 @@ ___
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetWeaponTarget ()
 {: aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
@@ -41,43 +41,43 @@ ___
 #### CachedImage .drone_image_charging
 {: aria-label='Fields' }
 
-______
+___
 ### drone_image_off
 {: aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
 
-______
+___
 ### drone_image_on
 {: aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
 
-______
+___
 ### engine_image
 {: aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
 
-______
+___
 ### heading
 {: aria-label='Fields' }
 #### number .heading
 {: aria-label='Fields' }
 
-______
+___
 ### lastDestination
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastDestination
 {: aria-label='Fields' }
 
-______
+___
 ### oldHeading
 {: aria-label='Fields' }
 #### number .oldHeading
 {: aria-label='Fields' }
 
-______
+___
 ### progressToDestination
 {: aria-label='Fields' }
 #### number .progressToDestination

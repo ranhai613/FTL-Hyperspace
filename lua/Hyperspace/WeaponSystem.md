@@ -18,13 +18,13 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 #### boolean :ForceIncreasePower (integer amount)
 {: aria-label='Methods' }
 
-______
+___
 ### RemoveWeapon ()
 {: aria-label='Methods' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) :RemoveWeapon (integer slot)
 {: aria-label='Methods' }
 
-______
+___
 ### SetBonusPower ()
 {: aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
@@ -39,61 +39,61 @@ ___
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
 
-______
+___
 ### missile_count
 {: aria-label='Fields' }
 #### integer .missile_count
 {: aria-label='Fields' }
 
-______
+___
 ### missile_start
 {: aria-label='Fields' }
 #### integer .missile_start
 {: aria-label='Fields' }
 
-______
+___
 ### repowerList
 {: aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
 
-______
+___
 ### shot_count
 {: aria-label='Fields' }
 #### integer .shot_count
 {: aria-label='Fields' }
 
-______
+___
 ### shot_timer
 {: aria-label='Fields' }
 #### number .shot_timer
 {: aria-label='Fields' }
 
-______
+___
 ### slot_count
 {: aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
 
-______
+___
 ### target
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
 {: aria-label='Fields' }
 
-______
+___
 ### userPowered
 {: aria-label='Fields' }
 #### vector\<boolean\> .userPowered
 {: aria-label='Fields' }
 
-______
+___
 ### weapons
 {: aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weapons
 {: aria-label='Fields' }
 
-______
+___
 ### weaponsTrashList
 {: aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weaponsTrashList

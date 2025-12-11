@@ -16,7 +16,7 @@ lang: en
 #### void :GetCloneReadyList (vector\<[CrewMember](../Hyperspace/CrewMember)\> vec, boolean player)
 {: aria-label='Methods' }
 
-______
+___
 ### GetCloneReadyList ()
 {: aria-label='Methods' }
 #### void :GetCloneReadyList (boolean player)

@@ -25,13 +25,13 @@ ___
 #### integer .armedSlot
 {: aria-label='Fields' }
 
-______
+___
 ### armedWeapon
 {: aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .armedWeapon
 {: aria-label='Fields' }
 
-______
+___
 ### autoFiring (Read-only)
 {: aria-label='Fields' }
 #### boolean .autoFiring

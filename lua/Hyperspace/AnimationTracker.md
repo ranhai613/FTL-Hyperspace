@@ -24,37 +24,37 @@ ___
 #### number :GetAlphaLevel (boolean reverse)
 {: aria-label='Methods' }
 
-______
+___
 ### Progress ()
 {: aria-label='Methods' }
 #### number :Progress (number speed)
 {: aria-label='Methods' }
 
-______
+___
 ### SetLoop ()
 {: aria-label='Methods' }
 #### void :SetLoop (boolean loop, number loopDelay)
 {: aria-label='Methods' }
 
-______
+___
 ### SetProgress ()
 {: aria-label='Methods' }
 #### void :SetProgress (number time)
 {: aria-label='Methods' }
 
-______
+___
 ### Start ()
 {: aria-label='Methods' }
 #### void :Start (number time)
 {: aria-label='Methods' }
 
-______
+___
 ### StartReverse ()
 {: aria-label='Methods' }
 #### void :StartReverse (number time)
 {: aria-label='Methods' }
 
-______
+___
 ### Stop ()
 {: aria-label='Methods' }
 #### void :Stop (boolean resetTime)
@@ -69,43 +69,43 @@ ___
 #### number .currentDelay
 {: aria-label='Fields' }
 
-______
+___
 ### current_time
 {: aria-label='Fields' }
 #### number .current_time
 {: aria-label='Fields' }
 
-______
+___
 ### done
 {: aria-label='Fields' }
 #### boolean .done
 {: aria-label='Fields' }
 
-______
+___
 ### loop
 {: aria-label='Fields' }
 #### boolean .loop
 {: aria-label='Fields' }
 
-______
+___
 ### loopDelay
 {: aria-label='Fields' }
 #### number .loopDelay
 {: aria-label='Fields' }
 
-______
+___
 ### reverse
 {: aria-label='Fields' }
 #### boolean .reverse
 {: aria-label='Fields' }
 
-______
+___
 ### running
 {: aria-label='Fields' }
 #### boolean .running
 {: aria-label='Fields' }
 
-______
+___
 ### time
 {: aria-label='Fields' }
 #### number .time

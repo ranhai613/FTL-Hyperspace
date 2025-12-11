@@ -25,103 +25,103 @@ ___
 #### integer .crewLimit
 {: aria-label='Fields' }
 
-______
+___
 ### crewList
 {: aria-label='Fields' }
 #### vector\<[CrewPlacementDefinition](../Hyperspace/CrewPlacementDefinition)\> .crewList
 {: aria-label='Fields' }
 
-______
+___
 ### forceAutomated
 {: aria-label='Fields' }
 #### ToggleValue\<boolean\> .forceAutomated
 {: aria-label='Fields' }
 
-______
+___
 ### hiddenAugs
 {: aria-label='Fields' }
 #### map\<string, integer\> .hiddenAugs
 {: aria-label='Fields' }
 
-______
+___
 ### hpCap
 {: aria-label='Fields' }
 #### integer .hpCap
 {: aria-label='Fields' }
 
-______
+___
 ### maxReactorLevel
 {: aria-label='Fields' }
 #### integer .maxReactorLevel
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### noFuelStalemate
 {: aria-label='Fields' }
 #### boolean .noFuelStalemate
 {: aria-label='Fields' }
 
-______
+___
 ### noJump
 {: aria-label='Fields' }
 #### boolean .noJump
 {: aria-label='Fields' }
 
-______
+___
 ### reactorPriceIncrement
 {: aria-label='Fields' }
 #### integer .reactorPriceIncrement
 {: aria-label='Fields' }
 
-______
+___
 ### reactorPrices
 {: aria-label='Fields' }
 #### vector\<integer\> .reactorPrices
 {: aria-label='Fields' }
 
-______
+___
 ### roomDefs
 {: aria-label='Fields' }
 #### unordered_map\<integer, [RoomDefinition](../Hyperspace/RoomDefinition)\> .roomDefs
 {: aria-label='Fields' }
 
-______
+___
 ### shipGenerator
 {: aria-label='Fields' }
 #### string .shipGenerator
 {: aria-label='Fields' }
 
-______
+___
 ### shipIcons
 {: aria-label='Fields' }
 #### vector\<string\> .shipIcons
 {: aria-label='Fields' }
 
-______
+___
 ### startingFuel
 {: aria-label='Fields' }
 #### integer .startingFuel
 {: aria-label='Fields' }
 
-______
+___
 ### startingScrap
 {: aria-label='Fields' }
 #### integer .startingScrap
 {: aria-label='Fields' }
 
-______
+___
 ### subsystemLimit
 {: aria-label='Fields' }
 #### integer .subsystemLimit
 {: aria-label='Fields' }
 
-______
+___
 ### systemLimit
 {: aria-label='Fields' }
 #### integer .systemLimit

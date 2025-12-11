@@ -25,19 +25,19 @@ ___
 #### boolean .male
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### species
 {: aria-label='Fields' }
 #### string .species
 {: aria-label='Fields' }
 
-______
+___
 ### stat
 {: aria-label='Fields' }
 #### vector\<integer\> .stat

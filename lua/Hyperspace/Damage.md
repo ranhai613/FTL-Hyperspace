@@ -25,85 +25,85 @@ ___
 #### boolean .bFriendlyFire
 {: aria-label='Fields' }
 
-______
+___
 ### bHullBuster
 {: aria-label='Fields' }
 #### boolean .bHullBuster
 {: aria-label='Fields' }
 
-______
+___
 ### bLockdown
 {: aria-label='Fields' }
 #### boolean .bLockdown
 {: aria-label='Fields' }
 
-______
+___
 ### breachChance
 {: aria-label='Fields' }
 #### integer .breachChance
 {: aria-label='Fields' }
 
-______
+___
 ### crystalShard
 {: aria-label='Fields' }
 #### boolean .crystalShard
 {: aria-label='Fields' }
 
-______
+___
 ### fireChance
 {: aria-label='Fields' }
 #### integer .fireChance
 {: aria-label='Fields' }
 
-______
+___
 ### iDamage
 {: aria-label='Fields' }
 #### integer .iDamage
 {: aria-label='Fields' }
 
-______
+___
 ### iIonDamage
 {: aria-label='Fields' }
 #### integer .iIonDamage
 {: aria-label='Fields' }
 
-______
+___
 ### iPersDamage
 {: aria-label='Fields' }
 #### integer .iPersDamage
 {: aria-label='Fields' }
 
-______
+___
 ### iShieldPiercing
 {: aria-label='Fields' }
 #### integer .iShieldPiercing
 {: aria-label='Fields' }
 
-______
+___
 ### iStun
 {: aria-label='Fields' }
 #### integer .iStun
 {: aria-label='Fields' }
 
-______
+___
 ### iSystemDamage
 {: aria-label='Fields' }
 #### integer .iSystemDamage
 {: aria-label='Fields' }
 
-______
+___
 ### ownerId
 {: aria-label='Fields' }
 #### integer .ownerId
 {: aria-label='Fields' }
 
-______
+___
 ### selfId
 {: aria-label='Fields' }
 #### integer .selfId
 {: aria-label='Fields' }
 
-______
+___
 ### stunChance
 {: aria-label='Fields' }
 #### integer .stunChance

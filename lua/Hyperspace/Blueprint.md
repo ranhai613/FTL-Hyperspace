@@ -24,13 +24,13 @@ ___
 #### string :GetNameLong ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetNameShort ()
 {: aria-label='Methods' }
 #### string :GetNameShort ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetType ()
 {: aria-label='Methods' }
 #### integer :GetType ()
@@ -45,13 +45,13 @@ ___
 #### [Description](../Hyperspace/Description) .desc
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### integer .type

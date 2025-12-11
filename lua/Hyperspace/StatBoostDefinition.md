@@ -21,172 +21,172 @@ ___
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.BoostSource_CREW
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.BoostType_ADD
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.BoostType_FLAT
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.BoostType_FLIP
 {: aria-label='Constants' }
 Equivalent to `3`.
 
-______
+___
 ### StatBoostDefinition.BoostType_MAX
 {: aria-label='Constants' }
 Equivalent to `6`.
 
-______
+___
 ### StatBoostDefinition.BoostType_MIN
 {: aria-label='Constants' }
 Equivalent to `5`.
 
-______
+___
 ### StatBoostDefinition.BoostType_MULT
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.BoostType_REPLACE_GROUP
 {: aria-label='Constants' }
 Equivalent to `7`.
 
-______
+___
 ### StatBoostDefinition.BoostType_REPLACE_POWER
 {: aria-label='Constants' }
 Equivalent to `8`.
 
-______
+___
 ### StatBoostDefinition.BoostType_SET
 {: aria-label='Constants' }
 Equivalent to `2`.
 
-______
+___
 ### StatBoostDefinition.BoostType_SET_VALUE
 {: aria-label='Constants' }
 Equivalent to `4`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_ALL
 {: aria-label='Constants' }
 Equivalent to `3`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_ALLIES
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_CURRENT_ALLIES
 {: aria-label='Constants' }
 Equivalent to `4`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_CURRENT_ENEMIES
 {: aria-label='Constants' }
 Equivalent to `5`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_ENEMIES
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_ORIGINAL_ALLIES
 {: aria-label='Constants' }
 Equivalent to `6`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_ORIGINAL_ENEMIES
 {: aria-label='Constants' }
 Equivalent to `7`.
 
-______
+___
 ### StatBoostDefinition.CrewTarget_SELF
 {: aria-label='Constants' }
 Equivalent to `2`.
 
-______
+___
 ### StatBoostDefinition.DroneTarget_ALL
 {: aria-label='Constants' }
 Equivalent to `2`.
 
-______
+___
 ### StatBoostDefinition.DroneTarget_CREW
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.DroneTarget_DRONES
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_ALL
 {: aria-label='Constants' }
 Equivalent to `9`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_CREW_TARGET
 {: aria-label='Constants' }
 Equivalent to `7`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_CURRENT_ALL
 {: aria-label='Constants' }
 Equivalent to `2`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_CURRENT_ROOM
 {: aria-label='Constants' }
 Equivalent to `3`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_ENEMY_SHIP
 {: aria-label='Constants' }
 Equivalent to `1`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_ORIGINAL_OTHER_SHIP
 {: aria-label='Constants' }
 Equivalent to `6`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_ORIGINAL_SHIP
 {: aria-label='Constants' }
 Equivalent to `5`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_OTHER_ALL
 {: aria-label='Constants' }
 Equivalent to `4`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_PLAYER_SHIP
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.ShipTarget_TARGETS_ME
 {: aria-label='Constants' }
 Equivalent to `8`.
 
-______
+___
 ### StatBoostDefinition.SystemRoomTarget_ALL
 {: aria-label='Constants' }
 Equivalent to `0`.
 
-______
+___
 ### StatBoostDefinition.SystemRoomTarget_NONE
 {: aria-label='Constants' }
 Equivalent to `1`.
@@ -201,19 +201,19 @@ ___
 #### void :GiveId ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsTargetPower ()
 {: aria-label='Methods' }
 #### boolean :IsTargetPower ([ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) power)
 {: aria-label='Methods' }
 
-______
+___
 ### IsTargetPower ()
 {: aria-label='Methods' }
 #### boolean :IsTargetPower ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) power)
 {: aria-label='Methods' }
 
-______
+___
 ### TestRoomStatBoostSystem ()
 {: aria-label='Methods' }
 #### boolean :TestRoomStatBoostSystem ([ShipManager](../Hyperspace/ShipManager) ship, integer room)
@@ -228,25 +228,25 @@ ___
 #### boolean .affectsSelf
 {: aria-label='Fields' }
 
-______
+___
 ### amount
 {: aria-label='Fields' }
 #### number .amount
 {: aria-label='Fields' }
 
-______
+___
 ### blackList
 {: aria-label='Fields' }
 #### vector\<string\> .blackList
 {: aria-label='Fields' }
 
-______
+___
 ### boostAnim
 {: aria-label='Fields' }
 #### string .boostAnim
 {: aria-label='Fields' }
 
-______
+___
 ### boostSource
 {: aria-label='Fields' }
 #### [StatBoostDefinition.BoostSource](../Hyperspace/StatBoostDefinition.BoostSource) .boostSource
@@ -255,7 +255,7 @@ Valid values:
 `Hyperspace.StatBoostDefinition.BoostSource.CREW`
 `Hyperspace.StatBoostDefinition.BoostSource.AUGMENT`
 
-______
+___
 ### boostType
 {: aria-label='Fields' }
 #### [StatBoostDefinition.BoostType](../Hyperspace/StatBoostDefinition.BoostType) .boostType
@@ -272,13 +272,13 @@ Valid values:
 `Hyperspace.StatBoostDefinition.BoostType.REPLACE_GROUP`
 `Hyperspace.StatBoostDefinition.BoostType.REPLACE_POWER`
 
-______
+___
 ### cloneClear
 {: aria-label='Fields' }
 #### boolean .cloneClear
 {: aria-label='Fields' }
 
-______
+___
 ### crewTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.CrewTarget](../Hyperspace/StatBoostDefinition.CrewTarget) .crewTarget
@@ -293,19 +293,19 @@ Valid values:
 `Hyperspace.StatBoostDefinition.CrewTarget.ORIGINAL_ALLIES`
 `Hyperspace.StatBoostDefinition.CrewTarget.ORIGINAL_ENEMIES`
 
-______
+___
 ### dangerRating
 {: aria-label='Fields' }
 #### number .dangerRating
 {: aria-label='Fields' }
 
-______
+___
 ### deathEffectChange
 {: aria-label='Fields' }
 #### ExplosionDefinition .deathEffectChange
 {: aria-label='Fields' }
 
-______
+___
 ### droneTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.DroneTarget](../Hyperspace/StatBoostDefinition.DroneTarget) .droneTarget
@@ -315,181 +315,181 @@ Valid values:
 `Hyperspace.StatBoostDefinition.DroneTarget.CREW`
 `Hyperspace.StatBoostDefinition.DroneTarget.ALL`
 
-______
+___
 ### duration
 {: aria-label='Fields' }
 #### number .duration
 {: aria-label='Fields' }
 
-______
+___
 ### extraConditions
 {: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraConditions
 {: aria-label='Fields' }
 
-______
+___
 ### extraConditionsReq
 {: aria-label='Fields' }
 #### boolean .extraConditionsReq
 {: aria-label='Fields' }
 
-______
+___
 ### extraOrConditions
 {: aria-label='Fields' }
 #### vector\<[CrewExtraCondition](../pair<Hyperspace/CrewExtraCondition), boolean>\> .extraOrConditions
 {: aria-label='Fields' }
 
-______
+___
 ### fireCount
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .fireCount
 {: aria-label='Fields' }
 
-______
+___
 ### functionalTarget
 {: aria-label='Fields' }
 #### boolean .functionalTarget
 {: aria-label='Fields' }
 
-______
+___
 ### hasPowerList
 {: aria-label='Fields' }
 #### boolean .hasPowerList
 {: aria-label='Fields' }
 
-______
+___
 ### healthFractionReq
 {: aria-label='Fields' }
 #### pair\<number, number\> .healthFractionReq
 {: aria-label='Fields' }
 
-______
+___
 ### healthReq
 {: aria-label='Fields' }
 #### pair\<number, number\> .healthReq
 {: aria-label='Fields' }
 
-______
+___
 ### isBool
 {: aria-label='Fields' }
 #### boolean .isBool
 {: aria-label='Fields' }
 
-______
+___
 ### isRoomBased
 {: aria-label='Fields' }
 #### boolean .isRoomBased
 {: aria-label='Fields' }
 
-______
+___
 ### jumpClear
 {: aria-label='Fields' }
 #### boolean .jumpClear
 {: aria-label='Fields' }
 
-______
+___
 ### maxStacks
 {: aria-label='Fields' }
 #### integer .maxStacks
 {: aria-label='Fields' }
 
-______
+___
 ### oxygenReq
 {: aria-label='Fields' }
 #### pair\<number, number\> .oxygenReq
 {: aria-label='Fields' }
 
-______
+___
 ### powerBlacklist
 {: aria-label='Fields' }
 #### unordered_set\<[ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition)\> .powerBlacklist
 {: aria-label='Fields' }
 
-______
+___
 ### powerChange
 {: aria-label='Fields' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .powerChange
 {: aria-label='Fields' }
 
-______
+___
 ### powerGroupBlacklist
 {: aria-label='Fields' }
 #### unordered_set\<uint\> .powerGroupBlacklist
 {: aria-label='Fields' }
 
-______
+___
 ### powerGroupWhitelist
 {: aria-label='Fields' }
 #### unordered_set\<uint\> .powerGroupWhitelist
 {: aria-label='Fields' }
 
-______
+___
 ### powerResourceBlacklist
 {: aria-label='Fields' }
 #### unordered_set\<[PowerResourceDefinition](../Hyperspace/PowerResourceDefinition)\> .powerResourceBlacklist
 {: aria-label='Fields' }
 
-______
+___
 ### powerResourceWhitelist
 {: aria-label='Fields' }
 #### unordered_set\<[PowerResourceDefinition](../Hyperspace/PowerResourceDefinition)\> .powerResourceWhitelist
 {: aria-label='Fields' }
 
-______
+___
 ### powerScaling
 {: aria-label='Fields' }
 #### vector\<number\> .powerScaling
 {: aria-label='Fields' }
 
-______
+___
 ### powerScalingHackedSys
 {: aria-label='Fields' }
 #### number .powerScalingHackedSys
 {: aria-label='Fields' }
 
-______
+___
 ### powerScalingNoSys
 {: aria-label='Fields' }
 #### number .powerScalingNoSys
 {: aria-label='Fields' }
 
-______
+___
 ### powerWhitelist
 {: aria-label='Fields' }
 #### unordered_set\<[ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition)\> .powerWhitelist
 {: aria-label='Fields' }
 
-______
+___
 ### priority
 {: aria-label='Fields' }
 #### integer .priority
 {: aria-label='Fields' }
 
-______
+___
 ### providedStatBoosts
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .providedStatBoosts
 {: aria-label='Fields' }
 
-______
+___
 ### realBoostId
 {: aria-label='Fields' }
 #### integer .realBoostId
 {: aria-label='Fields' }
 
-______
+___
 ### roomAnim
 {: aria-label='Fields' }
 #### RoomAnimDef .roomAnim
 {: aria-label='Fields' }
 
-______
+___
 ### savedStatBoostDefs
 {: aria-label='Fields' }
 #### unordered_map\<string, [StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .savedStatBoostDefs
 {: aria-label='Fields' }
 
-______
+___
 ### shipTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.ShipTarget](../Hyperspace/StatBoostDefinition.ShipTarget) .shipTarget
@@ -506,55 +506,55 @@ Valid values:
 `Hyperspace.StatBoostDefinition.ShipTarget.TARGETS_ME`
 `Hyperspace.StatBoostDefinition.ShipTarget.ALL`
 
-______
+___
 ### stackId
 {: aria-label='Fields' }
 #### integer .stackId
 {: aria-label='Fields' }
 
-______
+___
 ### stat
 {: aria-label='Fields' }
 #### [CrewStat](../Hyperspace/CrewStat) .stat
 {: aria-label='Fields' }
 
-______
+___
 ### statBoostDefs
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoostDefs
 {: aria-label='Fields' }
 
-______
+___
 ### stringValue
 {: aria-label='Fields' }
 #### string .stringValue
 {: aria-label='Fields' }
 
-______
+___
 ### systemList
 {: aria-label='Fields' }
 #### vector\<string\> .systemList
 {: aria-label='Fields' }
 
-______
+___
 ### systemPowerScaling
 {: aria-label='Fields' }
 #### vector\<integer\> .systemPowerScaling
 {: aria-label='Fields' }
 
-______
+___
 ### systemRoomReq
 {: aria-label='Fields' }
 #### boolean .systemRoomReq
 {: aria-label='Fields' }
 
-______
+___
 ### systemRoomReqs
 {: aria-label='Fields' }
 #### vector\<string\> .systemRoomReqs
 {: aria-label='Fields' }
 
-______
+___
 ### systemRoomTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.SystemRoomTarget](../Hyperspace/StatBoostDefinition.SystemRoomTarget) .systemRoomTarget
@@ -563,13 +563,13 @@ Valid values:
 `Hyperspace.StatBoostDefinition.SystemRoomTarget.ALL`
 `Hyperspace.StatBoostDefinition.SystemRoomTarget.NONE`
 
-______
+___
 ### value
 {: aria-label='Fields' }
 #### boolean .value
 {: aria-label='Fields' }
 
-______
+___
 ### whiteList
 {: aria-label='Fields' }
 #### vector\<string\> .whiteList

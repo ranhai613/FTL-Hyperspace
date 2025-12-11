@@ -13,7 +13,7 @@ lang: en
 #### [CrewMember](../Hyperspace/CrewMember) CrewMember ()
 {: aria-label='Constructors' }
 
-______
+___
 ### CrewMember ()
 {: aria-label='Constructors' }
 #### [CrewMember](../Hyperspace/CrewMember) CrewMember ([CrewBlueprint](../Hyperspace/CrewBlueprint) bp, integer shipId, boolean enemy, [CrewAnimation](../Hyperspace/CrewAnimation) animation)
@@ -38,835 +38,835 @@ ___
 #### void :ActivatePower ()
 {: aria-label='Methods' }
 
-______
+___
 ### ApplyDamage ()
 {: aria-label='Methods' }
 #### boolean :ApplyDamage (number damage)
 {: aria-label='Methods' }
 
-______
+___
 ### AtFinalGoal ()
 {: aria-label='Methods' }
 #### boolean :AtFinalGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### AtGoal ()
 {: aria-label='Methods' }
 #### boolean :AtGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### BadAtCombat ()
 {: aria-label='Methods' }
 #### boolean :BadAtCombat ()
 {: aria-label='Methods' }
 
-______
+___
 ### BlockRoom ()
 {: aria-label='Methods' }
 #### integer :BlockRoom ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanBurn ()
 {: aria-label='Methods' }
 #### boolean :CanBurn ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanFight ()
 {: aria-label='Methods' }
 #### boolean :CanFight ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanHeal ()
 {: aria-label='Methods' }
 #### boolean :CanHeal ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanMan ()
 {: aria-label='Methods' }
 #### boolean :CanMan ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanRepair ()
 {: aria-label='Methods' }
 #### boolean :CanRepair ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanSabotage ()
 {: aria-label='Methods' }
 #### boolean :CanSabotage ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanStim ()
 {: aria-label='Methods' }
 #### boolean :CanStim ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanSuffocate ()
 {: aria-label='Methods' }
 #### boolean :CanSuffocate ()
 {: aria-label='Methods' }
 
-______
+___
 ### CanTeleport ()
 {: aria-label='Methods' }
 #### boolean :CanTeleport ()
 {: aria-label='Methods' }
 
-______
+___
 ### CheckFighting ()
 {: aria-label='Methods' }
 #### void :CheckFighting ()
 {: aria-label='Methods' }
 
-______
+___
 ### CheckForTeleport ()
 {: aria-label='Methods' }
 #### void :CheckForTeleport ()
 {: aria-label='Methods' }
 
-______
+___
 ### CheckRoomPath ()
 {: aria-label='Methods' }
 #### boolean :CheckRoomPath (integer roomId)
 {: aria-label='Methods' }
 
-______
+___
 ### CheckSkills ()
 {: aria-label='Methods' }
 #### void :CheckSkills ()
 {: aria-label='Methods' }
 
-______
+___
 ### Cleanup ()
 {: aria-label='Methods' }
 #### void :Cleanup ()
 {: aria-label='Methods' }
 
-______
+___
 ### ClearPath ()
 {: aria-label='Methods' }
 #### void :ClearPath ()
 {: aria-label='Methods' }
 
-______
+___
 ### ClearPosition ()
 {: aria-label='Methods' }
 #### void :ClearPosition ()
 {: aria-label='Methods' }
 
-______
+___
 ### ClearTask ()
 {: aria-label='Methods' }
 #### void :ClearTask ()
 {: aria-label='Methods' }
 
-______
+___
 ### Clone ()
 {: aria-label='Methods' }
 #### void :Clone ()
 {: aria-label='Methods' }
 
-______
+___
 ### CloseDoorBehind ()
 {: aria-label='Methods' }
 #### void :CloseDoorBehind ([Door](../Hyperspace/Door) door)
 {: aria-label='Methods' }
 
-______
+___
 ### ContainsPoint ()
 {: aria-label='Methods' }
 #### boolean :ContainsPoint (integer x, integer y)
 {: aria-label='Methods' }
 
-______
+___
 ### CountForVictory ()
 {: aria-label='Methods' }
 #### boolean :CountForVictory ()
 {: aria-label='Methods' }
 
-______
+___
 ### CycleColorLayer ()
 {: aria-label='Methods' }
 #### void :CycleColorLayer (integer unk)
 {: aria-label='Methods' }
 
-______
+___
 ### DirectModifyHealth ()
 {: aria-label='Methods' }
 #### boolean :DirectModifyHealth (number health)
 {: aria-label='Methods' }
 
-______
+___
 ### EmptySlot ()
 {: aria-label='Methods' }
 #### void :EmptySlot ()
 {: aria-label='Methods' }
 
-______
+___
 ### ExactTarget ()
 {: aria-label='Methods' }
 #### boolean :ExactTarget ()
 {: aria-label='Methods' }
 
-______
+___
 ### FindSlot ()
 {: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :FindSlot (integer roomId, integer slotId, boolean closeEnough)
 {: aria-label='Methods' }
 
-______
+___
 ### FireFightingSoundEffect ()
 {: aria-label='Methods' }
 #### boolean :FireFightingSoundEffect ()
 {: aria-label='Methods' }
 
-______
+___
 ### ForceMindControl ()
 {: aria-label='Methods' }
 #### void :ForceMindControl (boolean force)
 {: aria-label='Methods' }
 
-______
+___
 ### Functional ()
 {: aria-label='Methods' }
 #### boolean :Functional ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetControllable ()
 {: aria-label='Methods' }
 #### boolean :GetControllable ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetDamageMultiplier ()
 {: aria-label='Methods' }
 #### number :GetDamageMultiplier ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetFinalGoal ()
 {: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetFinalGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetFireRepairMultiplier ()
 {: aria-label='Methods' }
 #### number :GetFireRepairMultiplier ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetIntegerHealth ()
 {: aria-label='Methods' }
 #### integer :GetIntegerHealth ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetIntruder ()
 {: aria-label='Methods' }
 #### boolean :GetIntruder ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetLocation ()
 {: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetLocation ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetLongName ()
 {: aria-label='Methods' }
 #### string :GetLongName ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetMaxHealth ()
 {: aria-label='Methods' }
 #### integer :GetMaxHealth ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetMoveSpeed ()
 {: aria-label='Methods' }
 #### number :GetMoveSpeed ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetMoveSpeedMultiplier ()
 {: aria-label='Methods' }
 #### number :GetMoveSpeedMultiplier ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetName ()
 {: aria-label='Methods' }
 #### string :GetName ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetNewGoal ()
 {: aria-label='Methods' }
 #### boolean :GetNewGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetNextGoal ()
 {: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetNextGoal ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetPosition ()
 {: aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetPosition ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetPowerCooldown ()
 {: aria-label='Methods' }
 #### pair\<number, number\> :GetPowerCooldown ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetPriority ()
 {: aria-label='Methods' }
 #### integer :GetPriority ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetRepairSpeed ()
 {: aria-label='Methods' }
 #### number :GetRepairSpeed ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetRepairingId ()
 {: aria-label='Methods' }
 #### integer :GetRepairingId ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetResisted ()
 {: aria-label='Methods' }
 #### boolean :GetResisted ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetRoomDamage ()
 {: aria-label='Methods' }
 #### [Damage](../Hyperspace/Damage) :GetRoomDamage ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSavedPosition ()
 {: aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :GetSavedPosition ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSkillLevel ()
 {: aria-label='Methods' }
 #### integer :GetSkillLevel (integer skillId)
 {: aria-label='Methods' }
 
-______
+___
 ### GetSkillModifier ()
 {: aria-label='Methods' }
 #### number :GetSkillModifier (integer skillId)
 {: aria-label='Methods' }
 
-______
+___
 ### GetSkillProgress ()
 {: aria-label='Methods' }
 #### pair\<integer, integer\> :GetSkillProgress (integer skillId)
 {: aria-label='Methods' }
 
-______
+___
 ### GetSpecies ()
 {: aria-label='Methods' }
 #### string :GetSpecies ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetSuffocationMultiplier ()
 {: aria-label='Methods' }
 #### number :GetSuffocationMultiplier ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetTooltip ()
 {: aria-label='Methods' }
 #### string :GetTooltip ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetUniqueRepairing ()
 {: aria-label='Methods' }
 #### string :GetUniqueRepairing ()
 {: aria-label='Methods' }
 
-______
+___
 ### HasSpecialPower ()
 {: aria-label='Methods' }
 #### boolean :HasSpecialPower ()
 {: aria-label='Methods' }
 
-______
+___
 ### IncreaseSkill ()
 {: aria-label='Methods' }
 #### void :IncreaseSkill (integer skillId)
 {: aria-label='Methods' }
 
-______
+___
 ### InitializeSkills ()
 {: aria-label='Methods' }
 #### void :InitializeSkills ()
 {: aria-label='Methods' }
 
-______
+___
 ### InsideRoom ()
 {: aria-label='Methods' }
 #### boolean :InsideRoom (integer roomId)
 {: aria-label='Methods' }
 
-______
+___
 ### IsAnaerobic ()
 {: aria-label='Methods' }
 #### boolean :IsAnaerobic ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsBusy ()
 {: aria-label='Methods' }
 #### boolean :IsBusy ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsCloned ()
 {: aria-label='Methods' }
 #### boolean :IsCloned ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsCrew ()
 {: aria-label='Methods' }
 #### boolean :IsCrew ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsDead ()
 {: aria-label='Methods' }
 #### boolean :IsDead ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsDrone ()
 {: aria-label='Methods' }
 #### boolean :IsDrone ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsManningArtillery ()
 {: aria-label='Methods' }
 #### boolean :IsManningArtillery ()
 {: aria-label='Methods' }
 
-______
+___
 ### IsTelepathic ()
 {: aria-label='Methods' }
 #### boolean :IsTelepathic ()
 {: aria-label='Methods' }
 
-______
+___
 ### Jump ()
 {: aria-label='Methods' }
 #### void :Jump ()
 {: aria-label='Methods' }
 
-______
+___
 ### Kill ()
 {: aria-label='Methods' }
 #### void :Kill (boolean noClone)
 {: aria-label='Methods' }
 
-______
+___
 ### LoadState ()
 {: aria-label='Methods' }
 #### void :LoadState (integer fileHelper)
 {: aria-label='Methods' }
 
-______
+___
 ### MasterSkill ()
 {: aria-label='Methods' }
 #### void :MasterSkill (integer skillId)
 {: aria-label='Methods' }
 
-______
+___
 ### ModifyHealth ()
 {: aria-label='Methods' }
 #### void :ModifyHealth (number health)
 {: aria-label='Methods' }
 
-______
+___
 ### MoveToRoom ()
 {: aria-label='Methods' }
 #### boolean :MoveToRoom (integer roomId, integer slotId, boolean forceMove)
 {: aria-label='Methods' }
 
-______
+___
 ### MultiShots ()
 {: aria-label='Methods' }
 #### boolean :MultiShots ()
 {: aria-label='Methods' }
 
-______
+___
 ### NeedFrozenLocation ()
 {: aria-label='Methods' }
 #### boolean :NeedFrozenLocation ()
 {: aria-label='Methods' }
 
-______
+___
 ### NeedsSlot ()
 {: aria-label='Methods' }
 #### boolean :NeedsSlot ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnInit ()
 {: aria-label='Methods' }
 #### boolean :OnInit ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnLoop ()
 {: aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender (boolean outlineOnly)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRenderHealth ()
 {: aria-label='Methods' }
 #### void :OnRenderHealth ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnRenderPath ()
 {: aria-label='Methods' }
 #### void :OnRenderPath ()
 {: aria-label='Methods' }
 
-______
+___
 ### OutOfGame ()
 {: aria-label='Methods' }
 #### boolean :OutOfGame ()
 {: aria-label='Methods' }
 
-______
+___
 ### PermanentDeath ()
 {: aria-label='Methods' }
 #### boolean :PermanentDeath ()
 {: aria-label='Methods' }
 
-______
+___
 ### PositionShift ()
 {: aria-label='Methods' }
 #### number :PositionShift ()
 {: aria-label='Methods' }
 
-______
+___
 ### PowerReady ()
 {: aria-label='Methods' }
 #### boolean :PowerReady ()
 {: aria-label='Methods' }
 
-______
+___
 ### ProvidesPower ()
 {: aria-label='Methods' }
 #### boolean :ProvidesPower ()
 {: aria-label='Methods' }
 
-______
+___
 ### ProvidesVision ()
 {: aria-label='Methods' }
 #### boolean :ProvidesVision ()
 {: aria-label='Methods' }
 
-______
+___
 ### ReadyToFight ()
 {: aria-label='Methods' }
 #### boolean :ReadyToFight ()
 {: aria-label='Methods' }
 
-______
+___
 ### RenderSkillUpAnimation ()
 {: aria-label='Methods' }
 #### void :RenderSkillUpAnimation ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
-______
+___
 ### Repairing ()
 {: aria-label='Methods' }
 #### boolean :Repairing ()
 {: aria-label='Methods' }
 
-______
+___
 ### RepairingFire ()
 {: aria-label='Methods' }
 #### boolean :RepairingFire ()
 {: aria-label='Methods' }
 
-______
+___
 ### RepairingSystem ()
 {: aria-label='Methods' }
 #### boolean :RepairingSystem ()
 {: aria-label='Methods' }
 
-______
+___
 ### ResetPower ()
 {: aria-label='Methods' }
 #### void :ResetPower ()
 {: aria-label='Methods' }
 
-______
+___
 ### Restart ()
 {: aria-label='Methods' }
 #### void :Restart ()
 {: aria-label='Methods' }
 
-______
+___
 ### RestorePosition ()
 {: aria-label='Methods' }
 #### boolean :RestorePosition ()
 {: aria-label='Methods' }
 
-______
+___
 ### Sabotaging ()
 {: aria-label='Methods' }
 #### boolean :Sabotaging ()
 {: aria-label='Methods' }
 
-______
+___
 ### SavePosition ()
 {: aria-label='Methods' }
 #### void :SavePosition ()
 {: aria-label='Methods' }
 
-______
+___
 ### SaveState ()
 {: aria-label='Methods' }
 #### void :SaveState (integer fileHelper)
 {: aria-label='Methods' }
 
-______
+___
 ### SelectSabotageTarget ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :SelectSabotageTarget ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetCloneReady ()
 {: aria-label='Methods' }
 #### void :SetCloneReady (boolean cloneReady)
 {: aria-label='Methods' }
 
-______
+___
 ### SetCurrentShip ()
 {: aria-label='Methods' }
 #### void :SetCurrentShip (integer shipId)
 {: aria-label='Methods' }
 
-______
+___
 ### SetCurrentSystem ()
 {: aria-label='Methods' }
 #### void :SetCurrentSystem ([ShipSystem](../Hyperspace/ShipSystem) sys)
 {: aria-label='Methods' }
 
-______
+___
 ### SetCurrentTarget ()
 {: aria-label='Methods' }
 #### void :SetCurrentTarget ([StatBoostDefinition.CrewTarget](../Hyperspace/StatBoostDefinition.CrewTarget) target, boolean unk)
 {: aria-label='Methods' }
 
-______
+___
 ### SetDamageBoost ()
 {: aria-label='Methods' }
 #### void :SetDamageBoost (number damageBoost)
 {: aria-label='Methods' }
 
-______
+___
 ### SetDeathNumber ()
 {: aria-label='Methods' }
 #### void :SetDeathNumber (integer deathNum)
 {: aria-label='Methods' }
 
-______
+___
 ### SetFrozen ()
 {: aria-label='Methods' }
 #### void :SetFrozen (boolean frozen)
 {: aria-label='Methods' }
 
-______
+___
 ### SetFrozenLocation ()
 {: aria-label='Methods' }
 #### void :SetFrozenLocation (boolean frozenLocation)
 {: aria-label='Methods' }
 
-______
+___
 ### SetHealthBoost ()
 {: aria-label='Methods' }
 #### void :SetHealthBoost (integer healthBoost)
 {: aria-label='Methods' }
 
-______
+___
 ### SetMedbay ()
 {: aria-label='Methods' }
 #### void :SetMedbay (number health)
 {: aria-label='Methods' }
 
-______
+___
 ### SetMindControl ()
 {: aria-label='Methods' }
 #### void :SetMindControl (boolean controlled)
 {: aria-label='Methods' }
 
-______
+___
 ### SetName ()
 {: aria-label='Methods' }
 #### void :SetName ([TextString](../Hyperspace/TextString) name, boolean force)
 {: aria-label='Methods' }
 
-______
+___
 ### SetOutOfGame ()
 {: aria-label='Methods' }
 #### void :SetOutOfGame ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetPath ()
 {: aria-label='Methods' }
 #### boolean :SetPath (Path path)
 {: aria-label='Methods' }
 
-______
+___
 ### SetPosition ()
 {: aria-label='Methods' }
 #### void :SetPosition ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
-______
+___
 ### SetResisted ()
 {: aria-label='Methods' }
 #### void :SetResisted (boolean resisted)
 {: aria-label='Methods' }
 
-______
+___
 ### SetRoom ()
 {: aria-label='Methods' }
 #### void :SetRoom (integer roomId)
 {: aria-label='Methods' }
 
-______
+___
 ### SetRoomPath ()
 {: aria-label='Methods' }
 #### void :SetRoomPath (integer slotId, integer roomId)
 {: aria-label='Methods' }
 
-______
+___
 ### SetSavePosition ()
 {: aria-label='Methods' }
 #### void :SetSavePosition ([Slot](../Hyperspace/Slot) position)
 {: aria-label='Methods' }
 
-______
+___
 ### SetSex ()
 {: aria-label='Methods' }
 #### void :SetSex (boolean male)
 {: aria-label='Methods' }
 
-______
+___
 ### SetSkillProgress ()
 {: aria-label='Methods' }
 #### void :SetSkillProgress (integer skillId, integer skillLevel)
 {: aria-label='Methods' }
 
-______
+___
 ### SetTask ()
 {: aria-label='Methods' }
 #### void :SetTask (CrewTask task)
 {: aria-label='Methods' }
 
-______
+___
 ### ShipDamage ()
 {: aria-label='Methods' }
 #### boolean :ShipDamage (number damage)
 {: aria-label='Methods' }
 
-______
+___
 ### StartRepair ()
 {: aria-label='Methods' }
 #### void :StartRepair ([Repairable](../Hyperspace/Repairable) toRepair)
 {: aria-label='Methods' }
 
-______
+___
 ### StartTeleport ()
 {: aria-label='Methods' }
 #### void :StartTeleport ()
 {: aria-label='Methods' }
 
-______
+___
 ### StartTeleportArrive ()
 {: aria-label='Methods' }
 #### void :StartTeleportArrive ()
 {: aria-label='Methods' }
 
-______
+___
 ### StopRepairing ()
 {: aria-label='Methods' }
 #### void :StopRepairing ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateHealth ()
 {: aria-label='Methods' }
 #### void :UpdateHealth ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateMovement ()
 {: aria-label='Methods' }
 #### void :UpdateMovement ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateRepair ()
 {: aria-label='Methods' }
 #### void :UpdateRepair ()
 {: aria-label='Methods' }
 
-______
+___
 ### ValidTarget ()
 {: aria-label='Methods' }
 #### boolean :ValidTarget (integer unk)
 {: aria-label='Methods' }
 
-______
+___
 ### WithinRect ()
 {: aria-label='Methods' }
 #### boolean :WithinRect (integer x, integer y, integer w, integer h)
@@ -881,465 +881,465 @@ ___
 #### boolean .bActiveManning
 {: aria-label='Fields' }
 
-______
+___
 ### bCloned
 {: aria-label='Fields' }
 #### boolean .bCloned
 {: aria-label='Fields' }
 
-______
+___
 ### bDead
 {: aria-label='Fields' }
 #### boolean .bDead
 {: aria-label='Fields' }
 
-______
+___
 ### bFighting
 {: aria-label='Fields' }
 #### boolean .bFighting
 {: aria-label='Fields' }
 
-______
+___
 ### bFrozen
 {: aria-label='Fields' }
 #### boolean .bFrozen
 {: aria-label='Fields' }
 
-______
+___
 ### bFrozenLocation
 {: aria-label='Fields' }
 #### boolean .bFrozenLocation
 {: aria-label='Fields' }
 
-______
+___
 ### bMindControlled
 {: aria-label='Fields' }
 #### boolean .bMindControlled
 {: aria-label='Fields' }
 
-______
+___
 ### bOutOfGame
 {: aria-label='Fields' }
 #### boolean .bOutOfGame
 {: aria-label='Fields' }
 
-______
+___
 ### bResisted
 {: aria-label='Fields' }
 #### boolean .bResisted
 {: aria-label='Fields' }
 
-______
+___
 ### bSharedSpot
 {: aria-label='Fields' }
 #### boolean .bSharedSpot
 {: aria-label='Fields' }
 
-______
+___
 ### bSuffocating
 {: aria-label='Fields' }
 #### boolean .bSuffocating
 {: aria-label='Fields' }
 
-______
+___
 ### blockingDoor
 {: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .blockingDoor
 {: aria-label='Fields' }
 
-______
+___
 ### blueprint
 {: aria-label='Fields' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) .blueprint
 {: aria-label='Fields' }
 
-______
+___
 ### boardingGoal
 {: aria-label='Fields' }
 #### BoardingGoal .boardingGoal
 {: aria-label='Fields' }
 
-______
+___
 ### clone_ready
 {: aria-label='Fields' }
 #### boolean .clone_ready
 {: aria-label='Fields' }
 
-______
+___
 ### crewAnim
 {: aria-label='Fields' }
 #### [CrewAnimation](../Hyperspace/CrewAnimation) .crewAnim
 {: aria-label='Fields' }
 
-______
+___
 ### crewTarget
 {: aria-label='Fields' }
 #### [StatBoostDefinition.CrewTarget](../Hyperspace/StatBoostDefinition.CrewTarget) .crewTarget
 {: aria-label='Fields' }
 
-______
+___
 ### currentRepair
 {: aria-label='Fields' }
 #### [Repairable](../Hyperspace/Repairable) .currentRepair
 {: aria-label='Fields' }
 
-______
+___
 ### currentShipId
 {: aria-label='Fields' }
 #### integer .currentShipId
 {: aria-label='Fields' }
 
-______
+___
 ### currentSlot
 {: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .currentSlot
 {: aria-label='Fields' }
 
-______
+___
 ### currentSystem
 {: aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .currentSystem
 {: aria-label='Fields' }
 
-______
+___
 ### currentTarget
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .currentTarget
 {: aria-label='Fields' }
 
-______
+___
 ### extend (Read-only)
 {: aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .extend
 {: aria-label='Fields' }
 
-______
+___
 ### fCloneDying
 {: aria-label='Fields' }
 #### number .fCloneDying
 {: aria-label='Fields' }
 
-______
+___
 ### fMedbay
 {: aria-label='Fields' }
 #### number .fMedbay
 {: aria-label='Fields' }
 
-______
+___
 ### fMindDamageBoost
 {: aria-label='Fields' }
 #### number .fMindDamageBoost
 {: aria-label='Fields' }
 
-______
+___
 ### fStunTime
 {: aria-label='Fields' }
 #### number .fStunTime
 {: aria-label='Fields' }
 
-______
+___
 ### finalGoal
 {: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .finalGoal
 {: aria-label='Fields' }
 
-______
+___
 ### flashHealthTracker
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashHealthTracker
 {: aria-label='Fields' }
 
-______
+___
 ### goal_x
 {: aria-label='Fields' }
 #### number .goal_x
 {: aria-label='Fields' }
 
-______
+___
 ### goal_y
 {: aria-label='Fields' }
 #### number .goal_y
 {: aria-label='Fields' }
 
-______
+___
 ### healing
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .healing
 {: aria-label='Fields' }
 
-______
+___
 ### health
 {: aria-label='Fields' }
 #### pair\<number, number\> .health
 {: aria-label='Fields' }
 
-______
+___
 ### healthBar
 {: aria-label='Fields' }
 #### CachedRect .healthBar
 {: aria-label='Fields' }
 
-______
+___
 ### healthBoost
 {: aria-label='Fields' }
 #### integer .healthBoost
 {: aria-label='Fields' }
 
-______
+___
 ### healthBox
 {: aria-label='Fields' }
 #### CachedImage .healthBox
 {: aria-label='Fields' }
 
-______
+___
 ### healthBoxRed
 {: aria-label='Fields' }
 #### CachedImage .healthBoxRed
 {: aria-label='Fields' }
 
-______
+___
 ### height
 {: aria-label='Fields' }
 #### integer .height
 {: aria-label='Fields' }
 
-______
+___
 ### iDeathNumber
 {: aria-label='Fields' }
 #### integer .iDeathNumber
 {: aria-label='Fields' }
 
-______
+___
 ### iManningId
 {: aria-label='Fields' }
 #### integer .iManningId
 {: aria-label='Fields' }
 
-______
+___
 ### iOnFire
 {: aria-label='Fields' }
 #### integer .iOnFire
 {: aria-label='Fields' }
 
-______
+___
 ### iRepairId
 {: aria-label='Fields' }
 #### integer .iRepairId
 {: aria-label='Fields' }
 
-______
+___
 ### iRoomId
 {: aria-label='Fields' }
 #### integer .iRoomId
 {: aria-label='Fields' }
 
-______
+___
 ### iShipId
 {: aria-label='Fields' }
 #### integer .iShipId
 {: aria-label='Fields' }
 
-______
+___
 ### iStackId
 {: aria-label='Fields' }
 #### integer .iStackId
 {: aria-label='Fields' }
 
-______
+___
 ### intruder
 {: aria-label='Fields' }
 #### boolean .intruder
 {: aria-label='Fields' }
 
-______
+___
 ### lastDamageTimer
 {: aria-label='Fields' }
 #### number .lastDamageTimer
 {: aria-label='Fields' }
 
-______
+___
 ### lastHealthChange
 {: aria-label='Fields' }
 #### number .lastHealthChange
 {: aria-label='Fields' }
 
-______
+___
 ### lastLevelUp
 {: aria-label='Fields' }
 #### integer .lastLevelUp
 {: aria-label='Fields' }
 
-______
+___
 ### last_door
 {: aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .last_door
 {: aria-label='Fields' }
 
-______
+___
 ### levelUp
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .levelUp
 {: aria-label='Fields' }
 
-______
+___
 ### mindControlled
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .mindControlled
 {: aria-label='Fields' }
 
-______
+___
 ### moveGoal
 {: aria-label='Fields' }
 #### integer .moveGoal
 {: aria-label='Fields' }
 
-______
+___
 ### movementTarget
 {: aria-label='Fields' }
 #### CachedImage .movementTarget
 {: aria-label='Fields' }
 
-______
+___
 ### new_path
 {: aria-label='Fields' }
 #### boolean .new_path
 {: aria-label='Fields' }
 
-______
+___
 ### path
 {: aria-label='Fields' }
 #### Path .path
 {: aria-label='Fields' }
 
-______
+___
 ### savedPosition
 {: aria-label='Fields' }
 #### [Slot](../Hyperspace/Slot) .savedPosition
 {: aria-label='Fields' }
 
-______
+___
 ### scale
 {: aria-label='Fields' }
 #### number .scale
 {: aria-label='Fields' }
 
-______
+___
 ### selectionImage
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .selectionImage
 {: aria-label='Fields' }
 
-______
+___
 ### selectionState
 {: aria-label='Fields' }
 #### integer .selectionState
 {: aria-label='Fields' }
 
-______
+___
 ### ship
 {: aria-label='Fields' }
 #### [Ship](../Hyperspace/Ship) .ship
 {: aria-label='Fields' }
 
-______
+___
 ### size
 {: aria-label='Fields' }
 #### number .size
 {: aria-label='Fields' }
 
-______
+___
 ### skillUp
 {: aria-label='Fields' }
 #### vector\<vector\<[AnimationTracker](../Hyperspace/AnimationTracker)\>\> .skillUp
 {: aria-label='Fields' }
 
-______
+___
 ### skillsEarned
 {: aria-label='Fields' }
 #### vector\<vector\<boolean\>\> .skillsEarned
 {: aria-label='Fields' }
 
-______
+___
 ### species
 {: aria-label='Fields' }
 #### string .species
 {: aria-label='Fields' }
 
-______
+___
 ### speed_x
 {: aria-label='Fields' }
 #### number .speed_x
 {: aria-label='Fields' }
 
-______
+___
 ### speed_y
 {: aria-label='Fields' }
 #### number .speed_y
 {: aria-label='Fields' }
 
-______
+___
 ### stats
 {: aria-label='Fields' }
 #### [SCrewStats](../Hyperspace/SCrewStats) .stats
 {: aria-label='Fields' }
 
-______
+___
 ### stunIcon
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .stunIcon
 {: aria-label='Fields' }
 
-______
+___
 ### stunned
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .stunned
 {: aria-label='Fields' }
 
-______
+___
 ### task
 {: aria-label='Fields' }
 #### CrewTask .task
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 
-______
+___
 ### usingSkill
 {: aria-label='Fields' }
 #### integer .usingSkill
 {: aria-label='Fields' }
 
-______
+___
 ### width
 {: aria-label='Fields' }
 #### integer .width
 {: aria-label='Fields' }
 
-______
+___
 ### x (Read-only)
 {: aria-label='Fields' }
 #### number .x
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### x_destination
 {: aria-label='Fields' }
 #### number .x_destination
 {: aria-label='Fields' }
 
-______
+___
 ### y (Read-only)
 {: aria-label='Fields' }
 #### number .y
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### y_destination
 {: aria-label='Fields' }
 #### number .y_destination

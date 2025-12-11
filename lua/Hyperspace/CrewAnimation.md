@@ -13,7 +13,7 @@ lang: en
 #### [CrewAnimation](../Hyperspace/CrewAnimation) CrewAnimation ()
 {: aria-label='Constructors' }
 
-______
+___
 ### CrewAnimation ()
 {: aria-label='Constructors' }
 #### [CrewAnimation](../Hyperspace/CrewAnimation) CrewAnimation (integer _shipId, string _race, [Pointf](../Hyperspace/Pointf) _unk, integer _hostile)
@@ -30,85 +30,85 @@ ___
 #### boolean :CustomDeath ()
 {: aria-label='Methods' }
 
-______
+___
 ### FireShot ()
 {: aria-label='Methods' }
 #### boolean :FireShot ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetDeathSound ()
 {: aria-label='Methods' }
 #### string :GetDeathSound ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetFiringFrame ()
 {: aria-label='Methods' }
 #### integer :GetFiringFrame ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetShootingSound ()
 {: aria-label='Methods' }
 #### string :GetShootingSound ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnInit ()
 {: aria-label='Methods' }
 #### void :OnInit (string name, [Pointf](../Hyperspace/Pointf) position, boolean enemy)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender (number scale, integer selectedState, boolean outlineOnly)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRenderProps ()
 {: aria-label='Methods' }
 #### void :OnRenderProps ()
 {: aria-label='Methods' }
 
-______
+___
 ### OnUpdate ()
 {: aria-label='Methods' }
 #### void :OnUpdate ([Pointf](../Hyperspace/Pointf) position, boolean moving, boolean fighting, boolean repairing, boolean dying, boolean onFire)
 {: aria-label='Methods' }
 
-______
+___
 ### OnUpdateEffects ()
 {: aria-label='Methods' }
 #### void :OnUpdateEffects ()
 {: aria-label='Methods' }
 
-______
+___
 ### RenderIcon ()
 {: aria-label='Methods' }
 #### void :RenderIcon (boolean border)
 {: aria-label='Methods' }
 
-______
+___
 ### Restart ()
 {: aria-label='Methods' }
 #### void :Restart ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetupStrips ()
 {: aria-label='Methods' }
 #### void :SetupStrips ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateFiring ()
 {: aria-label='Methods' }
 #### void :UpdateFiring ()
 {: aria-label='Methods' }
 
-______
+___
 ### UpdateShooting ()
 {: aria-label='Methods' }
 #### void :UpdateShooting ()
@@ -123,205 +123,205 @@ ___
 #### vector\<vector\<[Animation](../Hyperspace/Animation)\>\> .anims
 {: aria-label='Fields' }
 
-______
+___
 ### bDoorTarget
 {: aria-label='Fields' }
 #### boolean .bDoorTarget
 {: aria-label='Fields' }
 
-______
+___
 ### bDrone
 {: aria-label='Fields' }
 #### boolean .bDrone
 {: aria-label='Fields' }
 
-______
+___
 ### bExactShooting
 {: aria-label='Fields' }
 #### boolean .bExactShooting
 {: aria-label='Fields' }
 
-______
+___
 ### bFrozen
 {: aria-label='Fields' }
 #### boolean .bFrozen
 {: aria-label='Fields' }
 
-______
+___
 ### bGhost
 {: aria-label='Fields' }
 #### boolean .bGhost
 {: aria-label='Fields' }
 
-______
+___
 ### bMale
 {: aria-label='Fields' }
 #### boolean .bMale
 {: aria-label='Fields' }
 
-______
+___
 ### bPlayer
 {: aria-label='Fields' }
 #### boolean .bPlayer
 {: aria-label='Fields' }
 
-______
+___
 ### bSharedSpot
 {: aria-label='Fields' }
 #### boolean .bSharedSpot
 {: aria-label='Fields' }
 
-______
+___
 ### bStunned
 {: aria-label='Fields' }
 #### boolean .bStunned
 {: aria-label='Fields' }
 
-______
+___
 ### bTyping
 {: aria-label='Fields' }
 #### boolean .bTyping
 {: aria-label='Fields' }
 
-______
+___
 ### baseStrip
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseStrip
 {: aria-label='Fields' }
 
-______
+___
 ### colorStrip
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorStrip
 {: aria-label='Fields' }
 
-______
+___
 ### colorblind
 {: aria-label='Fields' }
 #### boolean .colorblind
 {: aria-label='Fields' }
 
-______
+___
 ### currentShip
 {: aria-label='Fields' }
 #### integer .currentShip
 {: aria-label='Fields' }
 
-______
+___
 ### direction
 {: aria-label='Fields' }
 #### integer .direction
 {: aria-label='Fields' }
 
-______
+___
 ### fDamageDone
 {: aria-label='Fields' }
 #### number .fDamageDone
 {: aria-label='Fields' }
 
-______
+___
 ### forcedAnimation
 {: aria-label='Fields' }
 #### integer .forcedAnimation
 {: aria-label='Fields' }
 
-______
+___
 ### forcedDirection
 {: aria-label='Fields' }
 #### integer .forcedDirection
 {: aria-label='Fields' }
 
-______
+___
 ### iShipId
 {: aria-label='Fields' }
 #### integer .iShipId
 {: aria-label='Fields' }
 
-______
+___
 ### lastPosition
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastPosition
 {: aria-label='Fields' }
 
-______
+___
 ### layerColors
 {: aria-label='Fields' }
 #### vector\<[GL_Color](../Graphics/GL_Color)\> .layerColors
 {: aria-label='Fields' }
 
-______
+___
 ### layerStrips
 {: aria-label='Fields' }
 #### vector\<[GL_Texture](../Graphics/GL_Texture)\> .layerStrips
 {: aria-label='Fields' }
 
-______
+___
 ### moveDirection
 {: aria-label='Fields' }
 #### integer .moveDirection
 {: aria-label='Fields' }
 
-______
+___
 ### projectile
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .projectile
 {: aria-label='Fields' }
 
-______
+___
 ### projectileColor
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .projectileColor
 {: aria-label='Fields' }
 
-______
+___
 ### punchTimer
 {: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .punchTimer
 {: aria-label='Fields' }
 
-______
+___
 ### race
 {: aria-label='Fields' }
 #### string .race
 {: aria-label='Fields' }
 
-______
+___
 ### shootTimer
 {: aria-label='Fields' }
 #### [TimerHelper](../Hyperspace/TimerHelper) .shootTimer
 {: aria-label='Fields' }
 
-______
+___
 ### smokeEmitter
 {: aria-label='Fields' }
 #### ParticleEmitter .smokeEmitter
 {: aria-label='Fields' }
 
-______
+___
 ### status
 {: aria-label='Fields' }
 #### integer .status
 {: aria-label='Fields' }
 
-______
+___
 ### sub_direction
 {: aria-label='Fields' }
 #### integer .sub_direction
 {: aria-label='Fields' }
 
-______
+___
 ### target
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
 {: aria-label='Fields' }
 
-______
+___
 ### uniqueBool1
 {: aria-label='Fields' }
 #### boolean .uniqueBool1
 {: aria-label='Fields' }
 
-______
+___
 ### uniqueBool2
 {: aria-label='Fields' }
 #### boolean .uniqueBool2

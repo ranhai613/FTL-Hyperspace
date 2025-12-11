@@ -17,41 +17,41 @@ lang: en
 {: aria-label='Methods' }
 Adds the specified augment to the ship. Works properly with hidden augments.
 
-______
+___
 ### ClearShipInfo ()
 {: aria-label='Methods' }
 #### void :ClearShipInfo ()
 {: aria-label='Methods' }
 
-______
+___
 ### GetAugmentationCount ()
 {: aria-label='Methods' }
 #### integer :GetAugmentationCount ()
 {: aria-label='Methods' }
 Returns the number of augments on the ship.
 
-______
+___
 ### GetAugmentationList ()
 {: aria-label='Methods' }
 #### vector\<string\> :GetAugmentationList ()
 {: aria-label='Methods' }
 Returns a `std::vector<std::string>` of augments, in Lua you can handle this as if it was an array of strings.
 
-______
+___
 ### GetAugmentationValue ()
 {: aria-label='Methods' }
 #### number :GetAugmentationValue (string augment)
 {: aria-label='Methods' }
 Returns the value of the augment, this corresponds to the value defined in blueprints.xml. If the ship has multiple, their values are added together.
 
-______
+___
 ### HasAugmentation ()
 {: aria-label='Methods' }
 #### integer :HasAugmentation (string augment)
 {: aria-label='Methods' }
 Returns the number of the given augment you have, NOT a bool.
 
-______
+___
 ### HasEquipment ()
 {: aria-label='Methods' }
 #### integer :HasEquipment (string equipmentName, boolean checkCargo=false)
@@ -59,13 +59,13 @@ ______
 Returns an int indicating whether you have the blue options for the specified equipment.
 checkCargo indicates if cargo will be included in the check.
 
-______
+___
 ### HasEquipment ()
 {: aria-label='Methods' }
 #### integer :HasEquipment (string equip)
 {: aria-label='Methods' }
 
-______
+___
 ### RemoveAugmentation ()
 {: aria-label='Methods' }
 #### void :RemoveAugmentation (string augment)

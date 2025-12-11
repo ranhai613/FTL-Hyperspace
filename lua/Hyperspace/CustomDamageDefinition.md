@@ -33,82 +33,82 @@ ___
 #### integer .accuracyMod
 {: aria-label='Fields' }
 
-______
+___
 ### crewSpawnChance
 {: aria-label='Fields' }
 #### integer .crewSpawnChance
 {: aria-label='Fields' }
 
-______
+___
 ### crewSpawns (Read-only)
 {: aria-label='Fields' }
 #### vector\<CrewSpawn\> .crewSpawns
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### droneAccuracyMod
 {: aria-label='Fields' }
 #### integer .droneAccuracyMod
 {: aria-label='Fields' }
 
-______
+___
 ### erosionChance
 {: aria-label='Fields' }
 #### integer .erosionChance
 {: aria-label='Fields' }
 
-______
+___
 ### erosionEffect
 {: aria-label='Fields' }
 #### ErosionEffect .erosionEffect
 {: aria-label='Fields' }
 
-______
+___
 ### idx (Read-only)
 {: aria-label='Fields' }
 #### integer .idx
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### ionBeamFix
 {: aria-label='Fields' }
 #### boolean .ionBeamFix
 {: aria-label='Fields' }
 
-______
+___
 ### noPersDamage
 {: aria-label='Fields' }
 #### boolean .noPersDamage
 {: aria-label='Fields' }
 
-______
+___
 ### noSysDamage
 {: aria-label='Fields' }
 #### boolean .noSysDamage
 {: aria-label='Fields' }
 
-______
+___
 ### roomStatBoostChance
 {: aria-label='Fields' }
 #### integer .roomStatBoostChance
 {: aria-label='Fields' }
 
-______
+___
 ### roomStatBoosts (Read-only)
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .roomStatBoosts
 {: aria-label='Fields' }
 **read-only**
 
-______
+___
 ### statBoostChance
 {: aria-label='Fields' }
 #### integer .statBoostChance
 {: aria-label='Fields' }
 
-______
+___
 ### statBoosts (Read-only)
 {: aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts

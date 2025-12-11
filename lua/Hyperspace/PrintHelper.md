@@ -27,42 +27,42 @@ ___
 {: aria-label='Fields' }
 How long (in seconds) each message lasts. Default is 5.
 
-______
+___
 ### font
 {: aria-label='Fields' }
 #### integer .font
 {: aria-label='Fields' }
 The size of the font used. Default is 10.
 
-______
+___
 ### lineLength
 {: aria-label='Fields' }
 #### integer .lineLength
 {: aria-label='Fields' }
 Width (in pixels) before automatic newline. Default is 400.
 
-______
+___
 ### messageLimit
 {: aria-label='Fields' }
 #### integer .messageLimit
 {: aria-label='Fields' }
 How many messages may be displayed at once. Default is 10.
 
-______
+___
 ### useSpeed
 {: aria-label='Fields' }
 #### boolean .useSpeed
 {: aria-label='Fields' }
 Whether the speed at which messages are cleared scales with game speed. Default is `false`.
 
-______
+___
 ### x
 {: aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 The x coordinate of messages. Default is 100.
 
-______
+___
 ### y
 {: aria-label='Fields' }
 #### integer .y

@@ -35,145 +35,145 @@ ___
 #### number .animationTimer
 {: aria-label='Fields' }
 
-______
+___
 ### bDamageSuperShield
 {: aria-label='Fields' }
 #### boolean .bDamageSuperShield
 {: aria-label='Fields' }
 
-______
+___
 ### checkedCollision
 {: aria-label='Fields' }
 #### boolean .checkedCollision
 {: aria-label='Fields' }
 
-______
+___
 ### contactAnimations
 {: aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .contactAnimations
 {: aria-label='Fields' }
 
-______
+___
 ### dh
 {: aria-label='Fields' }
 #### number .dh
 {: aria-label='Fields' }
 
-______
+___
 ### final_end
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .final_end
 {: aria-label='Fields' }
 
-______
+___
 ### lastDamage
 {: aria-label='Fields' }
 #### integer .lastDamage
 {: aria-label='Fields' }
 
-______
+___
 ### lastSmokeAnim
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastSmokeAnim
 {: aria-label='Fields' }
 
-______
+___
 ### last_collision
 {: aria-label='Fields' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) .last_collision
 {: aria-label='Fields' }
 
-______
+___
 ### length
 {: aria-label='Fields' }
 #### number .length
 {: aria-label='Fields' }
 
-______
+___
 ### lifespan
 {: aria-label='Fields' }
 #### number .lifespan
 {: aria-label='Fields' }
 
-______
+___
 ### movingTarget
 {: aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
 
-______
+___
 ### movingTargetId
 {: aria-label='Fields' }
 #### integer .movingTargetId
 {: aria-label='Fields' }
 
-______
+___
 ### oneSpace
 {: aria-label='Fields' }
 #### boolean .oneSpace
 {: aria-label='Fields' }
 
-______
+___
 ### piercedShield
 {: aria-label='Fields' }
 #### boolean .piercedShield
 {: aria-label='Fields' }
 
-______
+___
 ### shield_end
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shield_end
 {: aria-label='Fields' }
 
-______
+___
 ### smokeAnims
 {: aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .smokeAnims
 {: aria-label='Fields' }
 
-______
+___
 ### soundChannel
 {: aria-label='Fields' }
 #### integer .soundChannel
 {: aria-label='Fields' }
 
-______
+___
 ### start_heading
 {: aria-label='Fields' }
 #### number .start_heading
 {: aria-label='Fields' }
 
-______
+___
 ### sub_end
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_end
 {: aria-label='Fields' }
 
-______
+___
 ### sub_start
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_start
 {: aria-label='Fields' }
 
-______
+___
 ### target1
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target1
 {: aria-label='Fields' }
 
-______
+___
 ### target2
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target2
 {: aria-label='Fields' }
 
-______
+___
 ### timer
 {: aria-label='Fields' }
 #### number .timer
 {: aria-label='Fields' }
 
-______
+___
 ### weapAnimation
 {: aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weapAnimation

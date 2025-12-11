@@ -17,19 +17,19 @@ lang: en
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
 {: aria-label='Fields' }
 
-______
+___
 ### hiddenReward
 {: aria-label='Fields' }
 #### boolean .hiddenReward
 {: aria-label='Fields' }
 
-______
+___
 ### requirement
 {: aria-label='Fields' }
 #### [ChoiceReq](../Hyperspace/ChoiceReq) .requirement
 {: aria-label='Fields' }
 
-______
+___
 ### text
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text

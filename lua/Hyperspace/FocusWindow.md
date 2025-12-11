@@ -25,13 +25,13 @@ ___
 #### boolean .bCloseButtonSelected
 {: aria-label='Fields' }
 
-______
+___
 ### bFullFocus
 {: aria-label='Fields' }
 #### boolean .bFullFocus
 {: aria-label='Fields' }
 
-______
+___
 ### bOpen
 {: aria-label='Fields' }
 #### boolean .bOpen

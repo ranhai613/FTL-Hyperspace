@@ -19,7 +19,7 @@ Extends: [CombatDrone](../Hyperspace/CombatDrone)
 #### CachedImage .repairBeam
 {: aria-label='Fields' }
 
-______
+___
 ### repairBeams
 {: aria-label='Fields' }
 #### vector\<number\> .repairBeams

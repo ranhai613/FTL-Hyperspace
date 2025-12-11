@@ -17,7 +17,7 @@ lang: en
 {: aria-label='Methods' }
 Retrieve the corresponding text string from the `text_` xml files in the current language.
 
-______
+___
 ### GetText ()
 {: aria-label='Methods' }
 #### string :GetText (string name, string lang)

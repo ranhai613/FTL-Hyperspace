@@ -17,19 +17,19 @@ lang: en
 #### [CustomDamage](../Hyperspace/CustomDamage) .customDamage
 {: aria-label='Fields' }
 
-______
+___
 ### missedDrones
 {: aria-label='Fields' }
 #### vector\<integer\> .missedDrones
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### orig (Read-only)
 {: aria-label='Fields' }
 #### [Projectile](../Hyperspace/Projectile) .orig

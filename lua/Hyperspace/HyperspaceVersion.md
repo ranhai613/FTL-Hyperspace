@@ -16,31 +16,31 @@ lang: en
 #### string :__tostring ()
 {: aria-label='Methods' }
 
-______
+___
 ### getDeprecatedIntegerVersion ()
 {: aria-label='Methods' }
 #### integer :getDeprecatedIntegerVersion ()
 {: aria-label='Methods' }
 
-______
+___
 ### getFeatureName ()
 {: aria-label='Methods' }
 #### string :getFeatureName ()
 {: aria-label='Methods' }
 
-______
+___
 ### isFeatureBuild ()
 {: aria-label='Methods' }
 #### boolean :isFeatureBuild ()
 {: aria-label='Methods' }
 
-______
+___
 ### toIdentifierString ()
 {: aria-label='Methods' }
 #### string :toIdentifierString ()
 {: aria-label='Methods' }
 
-______
+___
 ### toVersionString ()
 {: aria-label='Methods' }
 #### string :toVersionString ()
@@ -55,13 +55,13 @@ ___
 #### uint .major
 {: aria-label='Fields' }
 
-______
+___
 ### minor (Read-only)
 {: aria-label='Fields' }
 #### uint .minor
 {: aria-label='Fields' }
 
-______
+___
 ### patch (Read-only)
 {: aria-label='Fields' }
 #### uint .patch

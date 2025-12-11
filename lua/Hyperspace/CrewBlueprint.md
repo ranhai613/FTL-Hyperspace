@@ -15,7 +15,7 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) CrewBlueprint ()
 {: aria-label='Constructors' }
 
-______
+___
 ### CrewBlueprint ()
 {: aria-label='Constructors' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) CrewBlueprint ([CrewBlueprint](../Hyperspace/CrewBlueprint) unknown)
@@ -32,25 +32,25 @@ ___
 #### [GL_Color](../Graphics/GL_Color) :GetCurrentSkillColor (integer skill)
 {: aria-label='Methods' }
 
-______
+___
 ### GetNameShort ()
 {: aria-label='Methods' }
 #### string :GetNameShort ()
 {: aria-label='Methods' }
 
-______
+___
 ### RandomSkills ()
 {: aria-label='Methods' }
 #### void :RandomSkills (integer worldLevel)
 {: aria-label='Methods' }
 
-______
+___
 ### RenderIcon ()
 {: aria-label='Methods' }
 #### void :RenderIcon (number opacity)
 {: aria-label='Methods' }
 
-______
+___
 ### RenderSkill ()
 {: aria-label='Methods' }
 #### void :RenderSkill (integer x, integer y, integer length, integer height, integer skill)
@@ -65,31 +65,31 @@ ___
 #### vector\<integer\> .colorChoices
 {: aria-label='Fields' }
 
-______
+___
 ### colorLayers
 {: aria-label='Fields' }
 #### vector\<vector\<[GL_Color](../Graphics/GL_Color)\>\> .colorLayers
 {: aria-label='Fields' }
 
-______
+___
 ### crewNameLong
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .crewNameLong
 {: aria-label='Fields' }
 
-______
+___
 ### male
 {: aria-label='Fields' }
 #### boolean .male
 {: aria-label='Fields' }
 
-______
+___
 ### powers
 {: aria-label='Fields' }
 #### vector\<[TextString](../Hyperspace/TextString)\> .powers
 {: aria-label='Fields' }
 
-______
+___
 ### skillLevel
 {: aria-label='Fields' }
 #### vector\<std_pair_int_int\> .skillLevel

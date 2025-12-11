@@ -17,19 +17,19 @@ lang: en
 #### integer .roomId
 {: aria-label='Fields' }
 
-______
+___
 ### shipId
 {: aria-label='Fields' }
 #### integer .shipId
 {: aria-label='Fields' }
 
-______
+___
 ### slotId
 {: aria-label='Fields' }
 #### integer .slotId
 {: aria-label='Fields' }
 
-______
+___
 ### teleporting
 {: aria-label='Fields' }
 #### boolean .teleporting

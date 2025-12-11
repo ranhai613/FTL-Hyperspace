@@ -25,25 +25,25 @@ ___
 #### boolean .blue
 {: aria-label='Fields' }
 
-______
+___
 ### max_group
 {: aria-label='Fields' }
 #### integer .max_group
 {: aria-label='Fields' }
 
-______
+___
 ### max_level
 {: aria-label='Fields' }
 #### integer .max_level
 {: aria-label='Fields' }
 
-______
+___
 ### min_level
 {: aria-label='Fields' }
 #### integer .min_level
 {: aria-label='Fields' }
 
-______
+___
 ### object
 {: aria-label='Fields' }
 #### string .object

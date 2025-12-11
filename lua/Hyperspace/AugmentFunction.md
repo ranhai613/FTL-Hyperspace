@@ -25,31 +25,31 @@ ___
 #### boolean .modifyChoiceTextScrap
 {: aria-label='Fields' }
 
-______
+___
 ### preferHigher (Read-only)
 {: aria-label='Fields' }
 #### boolean .preferHigher
 {: aria-label='Fields' }
 
-______
+___
 ### sys (Read-only)
 {: aria-label='Fields' }
 #### integer .sys
 {: aria-label='Fields' }
 
-______
+___
 ### useForReqs (Read-only)
 {: aria-label='Fields' }
 #### boolean .useForReqs
 {: aria-label='Fields' }
 
-______
+___
 ### value (Read-only)
 {: aria-label='Fields' }
 #### number .value
 {: aria-label='Fields' }
 
-______
+___
 ### warning (Read-only)
 {: aria-label='Fields' }
 #### boolean .warning

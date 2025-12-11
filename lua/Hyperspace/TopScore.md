@@ -25,7 +25,7 @@ ___
 #### integer .score
 {: aria-label='Fields' }
 
-______
+___
 ### sector
 {: aria-label='Fields' }
 #### integer .sector

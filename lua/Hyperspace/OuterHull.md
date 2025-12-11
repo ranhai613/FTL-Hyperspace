@@ -19,7 +19,7 @@ Extends: [Repairable](../Hyperspace/Repairable)
 #### [Animation](../Hyperspace/Animation) .breach
 {: aria-label='Fields' }
 
-______
+___
 ### heal
 {: aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .heal

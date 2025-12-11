@@ -23,37 +23,37 @@ ___
 #### [ShipManager](../Hyperspace/ShipManager) .CreateShip (string name, integer sector, ShipEvent event)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GenerateSystemMaxes ()
 {: aria-label='StaticMethods' }
 #### vector\<integer\> .GenerateSystemMaxes ([ShipBlueprint](../Hyperspace/ShipBlueprint) ship, integer level)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GetPossibleCrewList ()
 {: aria-label='StaticMethods' }
 #### vector\<[CrewBlueprint](../Hyperspace/CrewBlueprint)\> .GetPossibleCrewList ([ShipManager](../Hyperspace/ShipManager) ship, string crewList, uint flags)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GetPossibleDroneList ()
 {: aria-label='StaticMethods' }
 #### vector\<[DroneBlueprint](../Hyperspace/DroneBlueprint)\> .GetPossibleDroneList ([ShipManager](../Hyperspace/ShipManager) ship, string droneList, integer scrap, uint flags, boolean repeat)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GetPossibleSystemUpgrades ()
 {: aria-label='StaticMethods' }
 #### vector\<integer\> .GetPossibleSystemUpgrades ([ShipManager](../Hyperspace/ShipManager) ship, vector\<integer\> systemMaxes, integer scrap, integer type)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### GetPossibleWeaponList ()
 {: aria-label='StaticMethods' }
 #### vector\<[WeaponBlueprint](../Hyperspace/WeaponBlueprint)\> .GetPossibleWeaponList ([ShipManager](../Hyperspace/ShipManager) ship, string weaponList, integer scrap, uint flags)
 {: aria-label='StaticMethods' }
 
-______
+___
 ### UpgradeSystem ()
 {: aria-label='StaticMethods' }
 #### boolean .UpgradeSystem ([ShipManager](../Hyperspace/ShipManager) ship, vector\<integer\> systemMaxes, uint sysId)

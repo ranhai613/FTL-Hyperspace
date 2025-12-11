@@ -27,7 +27,7 @@ ___
 #### number .angle
 {: aria-label='Fields' }
 
-______
+___
 ### imageId
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .imageId

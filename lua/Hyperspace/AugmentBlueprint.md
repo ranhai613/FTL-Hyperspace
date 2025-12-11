@@ -19,7 +19,7 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 #### boolean .stacking
 {: aria-label='Fields' }
 
-______
+___
 ### value
 {: aria-label='Fields' }
 #### number .value

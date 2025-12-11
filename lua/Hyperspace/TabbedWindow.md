@@ -19,14 +19,14 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 #### boolean .bBlockClose
 {: aria-label='Fields' }
 
-______
+___
 ### bTutorialMode
 {: aria-label='Fields' }
 #### boolean .bTutorialMode
 {: aria-label='Fields' }
 If true, player cannot access anything other than Upgrades screen.
 
-______
+___
 ### bWindowLock
 {: aria-label='Fields' }
 #### boolean .bWindowLock

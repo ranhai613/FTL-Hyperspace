@@ -19,37 +19,37 @@ Extends: [Selectable](../Hyperspace/Selectable)
 #### number .fDamage
 {: aria-label='Fields' }
 
-______
+___
 ### fMaxDamage
 {: aria-label='Fields' }
 #### number .fMaxDamage
 {: aria-label='Fields' }
 
-______
+___
 ### iRepairCount
 {: aria-label='Fields' }
 #### integer .iRepairCount
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### pLoc
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .pLoc
 {: aria-label='Fields' }
 
-______
+___
 ### roomId
 {: aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
-______
+___
 ### shipObj
 {: aria-label='Fields' }
 #### [ShipObject](../Hyperspace/ShipObject) .shipObj

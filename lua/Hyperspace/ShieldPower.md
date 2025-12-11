@@ -17,13 +17,13 @@ lang: en
 #### integer .first
 {: aria-label='Fields' }
 
-______
+___
 ### second
 {: aria-label='Fields' }
 #### integer .second
 {: aria-label='Fields' }
 
-______
+___
 ### super
 {: aria-label='Fields' }
 #### pair\<integer, integer\> .super

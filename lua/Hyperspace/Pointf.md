@@ -13,7 +13,7 @@ lang: en
 #### [Pointf](../Hyperspace/Pointf) Pointf ()
 {: aria-label='Constructors' }
 
-______
+___
 ### Pointf ()
 {: aria-label='Constructors' }
 #### [Pointf](../Hyperspace/Pointf) Pointf (number _x, number _y)
@@ -30,37 +30,37 @@ ___
 #### [Pointf](../Hyperspace/Pointf) :Normalize ()
 {: aria-label='Methods' }
 
-______
+___
 ### RelativeDistance ()
 {: aria-label='Methods' }
 #### number :RelativeDistance ([Pointf](../Hyperspace/Pointf) other)
 {: aria-label='Methods' }
 
-______
+___
 ### __add ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :__add ([Pointf](../Hyperspace/Pointf) unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### __div ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :__div (number unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### __mul ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :__mul (number unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### __sub ()
 {: aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :__sub ([Pointf](../Hyperspace/Pointf) unknown)
 {: aria-label='Methods' }
 
-______
+___
 ### constructor ()
 {: aria-label='Methods' }
 #### void :constructor (number x, number y)
@@ -75,7 +75,7 @@ ___
 #### number .x
 {: aria-label='Fields' }
 
-______
+___
 ### y
 {: aria-label='Fields' }
 #### number .y

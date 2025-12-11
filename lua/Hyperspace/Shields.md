@@ -26,25 +26,25 @@ ___
 #### void :AddSuperShield ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
-______
+___
 ### CollisionReal ()
 {: aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionReal (number x, number y, [Damage](../Hyperspace/Damage) damage, boolean force)
 {: aria-label='Methods' }
 
-______
+___
 ### InstantCharge ()
 {: aria-label='Methods' }
 #### void :InstantCharge ()
 {: aria-label='Methods' }
 
-______
+___
 ### SetBaseEllipse ()
 {: aria-label='Methods' }
 #### void :SetBaseEllipse ([Ellipse](../Hyperspace/Ellipse) ellipse)
 {: aria-label='Methods' }
 
-______
+___
 ### SetHackingLevel ()
 {: aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
@@ -59,127 +59,127 @@ ___
 #### boolean .bBarrierMode
 {: aria-label='Fields' }
 
-______
+___
 ### bEnemyPresent
 {: aria-label='Fields' }
 #### boolean .bEnemyPresent
 {: aria-label='Fields' }
 
-______
+___
 ### bExcessChargeHack
 {: aria-label='Fields' }
 #### boolean .bExcessChargeHack
 {: aria-label='Fields' }
 
-______
+___
 ### baseShield
 {: aria-label='Fields' }
 #### [Ellipse](../Hyperspace/Ellipse) .baseShield
 {: aria-label='Fields' }
 
-______
+___
 ### center
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
 
-______
+___
 ### chargeTime
 {: aria-label='Fields' }
 #### number .chargeTime
 {: aria-label='Fields' }
 
-______
+___
 ### ellipseRatio
 {: aria-label='Fields' }
 #### number .ellipseRatio
 {: aria-label='Fields' }
 
-______
+___
 ### iHighlightedSide
 {: aria-label='Fields' }
 #### integer .iHighlightedSide
 {: aria-label='Fields' }
 
-______
+___
 ### lastHitShieldLevel
 {: aria-label='Fields' }
 #### integer .lastHitShieldLevel
 {: aria-label='Fields' }
 
-______
+___
 ### lastHitTimer
 {: aria-label='Fields' }
 #### number .lastHitTimer
 {: aria-label='Fields' }
 
-______
+___
 ### shieldHits
 {: aria-label='Fields' }
 #### vector\<[Shields.ShieldAnimation](../Hyperspace/Shields.ShieldAnimation)\> .shieldHits
 {: aria-label='Fields' }
 
-______
+___
 ### shieldImage
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .shieldImage
 {: aria-label='Fields' }
 
-______
+___
 ### shieldImageName
 {: aria-label='Fields' }
 #### string .shieldImageName
 {: aria-label='Fields' }
 
-______
+___
 ### shieldPrimitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shieldPrimitive
 {: aria-label='Fields' }
 
-______
+___
 ### shields
 {: aria-label='Fields' }
 #### [Shield](../Hyperspace/Shield) .shields
 {: aria-label='Fields' }
 
-______
+___
 ### shieldsDown
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsDown
 {: aria-label='Fields' }
 
-______
+___
 ### shieldsDownPoint
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shieldsDownPoint
 {: aria-label='Fields' }
 
-______
+___
 ### shieldsUp
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsUp
 {: aria-label='Fields' }
 
-______
+___
 ### shields_shutdown
 {: aria-label='Fields' }
 #### boolean .shields_shutdown
 {: aria-label='Fields' }
 
-______
+___
 ### superShieldDown
 {: aria-label='Fields' }
 #### boolean .superShieldDown
 {: aria-label='Fields' }
 
-______
+___
 ### superShieldUp
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .superShieldUp
 {: aria-label='Fields' }
 
-______
+___
 ### superUpLoc
 {: aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .superUpLoc

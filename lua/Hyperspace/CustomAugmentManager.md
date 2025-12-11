@@ -32,13 +32,13 @@ ___
 #### [AugmentDefinition](../Hyperspace/AugmentDefinition) :GetAugmentDefinition (string name)
 {: aria-label='Methods' }
 
-______
+___
 ### GetShipAugments ()
 {: aria-label='Methods' }
 #### unordered_map\<string, integer\> :GetShipAugments (integer iShipId)
 {: aria-label='Methods' }
 
-______
+___
 ### IsAugment ()
 {: aria-label='Methods' }
 #### boolean :IsAugment (string name)

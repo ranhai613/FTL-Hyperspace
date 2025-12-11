@@ -25,19 +25,19 @@ ___
 #### boolean .isList
 {: aria-label='Fields' }
 
-______
+___
 ### name
 {: aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
-______
+___
 ### roomId
 {: aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
-______
+___
 ### species
 {: aria-label='Fields' }
 #### string .species

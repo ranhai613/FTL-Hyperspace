@@ -13,7 +13,7 @@ lang: en
 #### [ToggleValue_bool](../Hyperspace/ToggleValue_bool) ToggleValue_bool ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ToggleValue_bool ()
 {: aria-label='Constructors' }
 #### [ToggleValue_bool](../Hyperspace/ToggleValue_bool) ToggleValue_bool (boolean unknown)
@@ -31,7 +31,7 @@ ___
 #### boolean .enabled
 {: aria-label='Fields' }
 
-______
+___
 ### value
 {: aria-label='Fields' }
 #### boolean .value

@@ -35,74 +35,74 @@ ___
 #### boolean .centered
 {: aria-label='Fields' }
 
-______
+___
 ### choiceBoxes
 {: aria-label='Fields' }
 #### vector\<[Rect](../Hyperspace/Rect)\> .choiceBoxes
 {: aria-label='Fields' }
 
-______
+___
 ### choices
 {: aria-label='Fields' }
 #### vector\<[ChoiceText](../Hyperspace/ChoiceText)\> .choices
 {: aria-label='Fields' }
 If you want to modify the current `ChoiceText` values please refer to `:GetChoices()` instead
 
-______
+___
 ### columnSize
 {: aria-label='Fields' }
 #### uint .columnSize
 {: aria-label='Fields' }
 
-______
+___
 ### currentTextColor
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .currentTextColor
 {: aria-label='Fields' }
 
-______
+___
 ### fontSize
 {: aria-label='Fields' }
 #### integer .fontSize
 {: aria-label='Fields' }
 
-______
+___
 ### gap_size
 {: aria-label='Fields' }
 #### integer .gap_size
 {: aria-label='Fields' }
 
-______
+___
 ### lastChoice
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastChoice
 {: aria-label='Fields' }
 
-______
+___
 ### mainText
 {: aria-label='Fields' }
 #### string .mainText
 {: aria-label='Fields' }
 
-______
+___
 ### openTime
 {: aria-label='Fields' }
 #### number .openTime
 {: aria-label='Fields' }
 
-______
+___
 ### potentialChoice
 {: aria-label='Fields' }
 #### integer .potentialChoice
 {: aria-label='Fields' }
 
-______
+___
 ### rewards
 {: aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .rewards
 {: aria-label='Fields' }
 
-______
+___
 ### selectedChoice
 {: aria-label='Fields' }
 #### integer .selectedChoice

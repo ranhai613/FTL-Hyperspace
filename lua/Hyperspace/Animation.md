@@ -13,7 +13,7 @@ lang: en
 #### [Animation](../Hyperspace/Animation) Animation ()
 {: aria-label='Constructors' }
 
-______
+___
 ### Animation ()
 {: aria-label='Constructors' }
 #### [Animation](../Hyperspace/Animation) Animation (string _image, integer _length, number _time, [Pointf](../Hyperspace/Pointf) _position, integer _imageWidth, integer _imageHeight, integer _stripStartX, integer _numFrames)
@@ -30,67 +30,67 @@ ___
 #### void :AddSoundQueue (integer frame, string sound)
 {: aria-label='Methods' }
 
-______
+___
 ### Done ()
 {: aria-label='Methods' }
 #### boolean :Done ()
 {: aria-label='Methods' }
 
-______
+___
 ### LoadState ()
 {: aria-label='Methods' }
 #### void :LoadState (integer fd)
 {: aria-label='Methods' }
 
-______
+___
 ### OnRender ()
 {: aria-label='Methods' }
 #### void :OnRender (number opacity, [GL_Color](../Graphics/GL_Color) color, boolean mirror)
 {: aria-label='Methods' }
 
-______
+___
 ### RandomStart ()
 {: aria-label='Methods' }
 #### integer :RandomStart ()
 {: aria-label='Methods' }
 
-______
+___
 ### SaveState ()
 {: aria-label='Methods' }
 #### void :SaveState (integer fd)
 {: aria-label='Methods' }
 
-______
+___
 ### SetAnimationId ()
 {: aria-label='Methods' }
 #### void :SetAnimationId ([GL_Texture](../Graphics/GL_Texture) tex)
 {: aria-label='Methods' }
 
-______
+___
 ### SetCurrentFrame ()
 {: aria-label='Methods' }
 #### void :SetCurrentFrame (integer frame)
 {: aria-label='Methods' }
 
-______
+___
 ### SetProgress ()
 {: aria-label='Methods' }
 #### void :SetProgress (number progress)
 {: aria-label='Methods' }
 
-______
+___
 ### Start ()
 {: aria-label='Methods' }
 #### void :Start (boolean reset)
 {: aria-label='Methods' }
 
-______
+___
 ### StartReverse ()
 {: aria-label='Methods' }
 #### void :StartReverse (boolean reset)
 {: aria-label='Methods' }
 
-______
+___
 ### Update ()
 {: aria-label='Methods' }
 #### void :Update ()
@@ -105,121 +105,121 @@ ___
 #### string .animName
 {: aria-label='Fields' }
 
-______
+___
 ### animationStrip
 {: aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .animationStrip
 {: aria-label='Fields' }
 
-______
+___
 ### bAlwaysMirror
 {: aria-label='Fields' }
 #### boolean .bAlwaysMirror
 {: aria-label='Fields' }
 
-______
+___
 ### currentFrame
 {: aria-label='Fields' }
 #### integer .currentFrame
 {: aria-label='Fields' }
 
-______
+___
 ### fScale
 {: aria-label='Fields' }
 #### number .fScale
 {: aria-label='Fields' }
 
-______
+___
 ### fYStretch
 {: aria-label='Fields' }
 #### number .fYStretch
 {: aria-label='Fields' }
 
-______
+___
 ### fadeOut
 {: aria-label='Fields' }
 #### number .fadeOut
 {: aria-label='Fields' }
 
-______
+___
 ### info
 {: aria-label='Fields' }
 #### [AnimationDescriptor](../Hyperspace/AnimationDescriptor) .info
 {: aria-label='Fields' }
 
-______
+___
 ### mask_x_pos
 {: aria-label='Fields' }
 #### integer .mask_x_pos
 {: aria-label='Fields' }
 
-______
+___
 ### mask_x_size
 {: aria-label='Fields' }
 #### integer .mask_x_size
 {: aria-label='Fields' }
 
-______
+___
 ### mask_y_pos
 {: aria-label='Fields' }
 #### integer .mask_y_pos
 {: aria-label='Fields' }
 
-______
+___
 ### mask_y_size
 {: aria-label='Fields' }
 #### integer .mask_y_size
 {: aria-label='Fields' }
 
-______
+___
 ### mirroredPrimitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .mirroredPrimitive
 {: aria-label='Fields' }
 
-______
+___
 ### position
 {: aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .position
 {: aria-label='Fields' }
 
-______
+___
 ### primitive
 {: aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .primitive
 {: aria-label='Fields' }
 
-______
+___
 ### randomizeFrames
 {: aria-label='Fields' }
 #### boolean .randomizeFrames
 {: aria-label='Fields' }
 
-______
+___
 ### soundForward
 {: aria-label='Fields' }
 #### string .soundForward
 {: aria-label='Fields' }
 
-______
+___
 ### soundQueue
 {: aria-label='Fields' }
 #### vector\<vector\<string\>\> .soundQueue
 {: aria-label='Fields' }
 
-______
+___
 ### soundReverse
 {: aria-label='Fields' }
 #### string .soundReverse
 {: aria-label='Fields' }
 
-______
+___
 ### startFadeOut
 {: aria-label='Fields' }
 #### number .startFadeOut
 {: aria-label='Fields' }
 
-______
+___
 ### tracker
 {: aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .tracker

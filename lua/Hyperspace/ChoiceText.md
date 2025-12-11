@@ -13,7 +13,7 @@ lang: en
 #### [ChoiceText](../Hyperspace/ChoiceText) ChoiceText ()
 {: aria-label='Constructors' }
 
-______
+___
 ### ChoiceText ()
 {: aria-label='Constructors' }
 #### [ChoiceText](../Hyperspace/ChoiceText) ChoiceText (integer _type, string _text, [ResourceEvent](../Hyperspace/ResourceEvent) _rewards)
@@ -31,13 +31,13 @@ ___
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .rewards
 {: aria-label='Fields' }
 
-______
+___
 ### text
 {: aria-label='Fields' }
 #### string .text
 {: aria-label='Fields' }
 
-______
+___
 ### type
 {: aria-label='Fields' }
 #### integer .type

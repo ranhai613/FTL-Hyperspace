@@ -27,121 +27,121 @@ ___
 #### [BoostPower](../Hyperspace/BoostPower) .boostPower
 {: aria-label='Fields' }
 
-______
+___
 ### chargeLevels
 {: aria-label='Fields' }
 #### integer .chargeLevels
 {: aria-label='Fields' }
 
-______
+___
 ### color
 {: aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
-______
+___
 ### combatIcon
 {: aria-label='Fields' }
 #### string .combatIcon
 {: aria-label='Fields' }
 
-______
+___
 ### cooldown
 {: aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
-______
+___
 ### damage
 {: aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
-______
+___
 ### drone_targetable
 {: aria-label='Fields' }
 #### integer .drone_targetable
 {: aria-label='Fields' }
 
-______
+___
 ### effects
 {: aria-label='Fields' }
 #### [EffectsBlueprint](../Hyperspace/EffectsBlueprint) .effects
 {: aria-label='Fields' }
 
-______
+___
 ### explosion
 {: aria-label='Fields' }
 #### string .explosion
 {: aria-label='Fields' }
 
-______
+___
 ### flavorType
 {: aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .flavorType
 {: aria-label='Fields' }
 
-______
+___
 ### length
 {: aria-label='Fields' }
 #### integer .length
 {: aria-label='Fields' }
 
-______
+___
 ### miniCount
 {: aria-label='Fields' }
 #### integer .miniCount
 {: aria-label='Fields' }
 
-______
+___
 ### miniProjectiles
 {: aria-label='Fields' }
 #### vector\<[MiniProjectile](../Hyperspace/MiniProjectile)\> .miniProjectiles
 {: aria-label='Fields' }
 
-______
+___
 ### missiles
 {: aria-label='Fields' }
 #### integer .missiles
 {: aria-label='Fields' }
 
-______
+___
 ### power
 {: aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
-______
+___
 ### radius
 {: aria-label='Fields' }
 #### integer .radius
 {: aria-label='Fields' }
 
-______
+___
 ### shots
 {: aria-label='Fields' }
 #### integer .shots
 {: aria-label='Fields' }
 
-______
+___
 ### speed
 {: aria-label='Fields' }
 #### number .speed
 {: aria-label='Fields' }
 
-______
+___
 ### spin
 {: aria-label='Fields' }
 #### integer .spin
 {: aria-label='Fields' }
 
-______
+___
 ### typeName
 {: aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
-______
+___
 ### weaponArt
 {: aria-label='Fields' }
 #### string .weaponArt

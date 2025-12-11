@@ -16,7 +16,7 @@ lang: en
 #### integer :PlaySoundMix (string soundName, number volume, boolean loop)
 {: aria-label='Methods' }
 
-______
+___
 ### StopChannel ()
 {: aria-label='Methods' }
 #### void :StopChannel (integer channel, number fade)

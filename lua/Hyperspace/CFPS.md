@@ -17,37 +17,37 @@ lang: en
 #### integer .Frames
 {: aria-label='Fields' }
 
-______
+___
 ### LastTime (Read-only)
 {: aria-label='Fields' }
 #### number .LastTime
 {: aria-label='Fields' }
 
-______
+___
 ### NumFrames (Read-only)
 {: aria-label='Fields' }
 #### integer .NumFrames
 {: aria-label='Fields' }
 
-______
+___
 ### OldTime (Read-only)
 {: aria-label='Fields' }
 #### number .OldTime
 {: aria-label='Fields' }
 
-______
+___
 ### RunningTime (Read-only)
 {: aria-label='Fields' }
 #### number .RunningTime
 {: aria-label='Fields' }
 
-______
+___
 ### SpeedFactor (Read-only)
 {: aria-label='Fields' }
 #### number .SpeedFactor
 {: aria-label='Fields' }
 
-______
+___
 ### speedLevel
 {: aria-label='Fields' }
 #### integer .speedLevel

@@ -17,7 +17,7 @@ lang: en
 {: aria-label='Methods' }
 Close game, autosave profile and settings but not current run (current run will be on previous autosave).
 
-______
+___
 ### OnRequestExit ()
 {: aria-label='Methods' }
 #### void :OnRequestExit ()
@@ -33,14 +33,14 @@ ___
 #### [CommandGui](../Hyperspace/CommandGui) .gui
 {: aria-label='Fields' }
 
-______
+___
 ### menu (Read-only)
 {: aria-label='Fields' }
 #### [MainMenu](../Hyperspace/MainMenu) .menu
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### world
 {: aria-label='Fields' }
 #### [WorldManager](../Hyperspace/WorldManager) .world

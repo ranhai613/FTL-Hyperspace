@@ -33,19 +33,19 @@ ___
 #### integer .accuracyMod
 {: aria-label='Fields' }
 
-______
+___
 ### def
 {: aria-label='Fields' }
 #### [CustomDamageDefinition](../Hyperspace/CustomDamageDefinition) .def
 {: aria-label='Fields' }
 
-______
+___
 ### droneAccuracyMod
 {: aria-label='Fields' }
 #### integer .droneAccuracyMod
 {: aria-label='Fields' }
 
-______
+___
 ### sourceShipId (Read-only)
 {: aria-label='Fields' }
 #### integer .sourceShipId

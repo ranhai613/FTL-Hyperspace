@@ -18,14 +18,14 @@ lang: en
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
-______
+___
 ### level (Read-only)
 {: aria-label='Fields' }
 #### integer .level
 {: aria-label='Fields' }
 **Read-only**
 
-______
+___
 ### visited
 {: aria-label='Fields' }
 #### boolean .visited

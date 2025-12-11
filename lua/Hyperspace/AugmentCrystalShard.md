@@ -17,13 +17,13 @@ lang: en
 #### number .chance
 {: aria-label='Fields' }
 
-______
+___
 ### stacking (Read-only)
 {: aria-label='Fields' }
 #### integer .stacking
 {: aria-label='Fields' }
 
-______
+___
 ### weapon (Read-only)
 {: aria-label='Fields' }
 #### string .weapon
