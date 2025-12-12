@@ -69,6 +69,18 @@ body.lua-doc {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+body.lua-doc img.banner {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+body.lua-mobile-overlay-active {
+  overflow: hidden;
+}
+
 body.lua-doc.lua-dark {
   /* Dark theme values, based on original hard-coded colors */
   --lua-body-bg: #000000;
@@ -461,6 +473,47 @@ summary {
   min-height: 1.2rem;
 }
 
+.lua-mobile-controls {
+  display: none;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lua-mobile-toggle {
+  flex: 1 1 auto;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  background: var(--lua-link-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.lua-mobile-toggle:focus-visible,
+.lua-mobile-toggle:hover {
+  background: #0e7490;
+}
+
+.lua-mobile-close {
+  display: none;
+  margin-left: auto;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  color: var(--lua-link-color);
+  cursor: pointer;
+}
+
+.lua-mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+}
+
 .lua-search-results {
   margin-top: 0.75rem;
   border-top: 1px solid var(--lua-border-color);
@@ -671,11 +724,49 @@ body.lua-hide-marks .lua-content mark {
     flex-direction: column;
   }
 
+  .lua-mobile-controls {
+    display: flex;
+    flex-direction: row;
+  }
+
   .lua-nav-left,
   .lua-nav-right {
-    position: static;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: min(90vw, 360px);
+    padding: 1.5rem 1.25rem 2rem;
+    overflow-y: auto;
+    z-index: 1001;
+    background: var(--lua-main-bg);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     max-height: none;
-    width: 100%;
-    margin-top: 1.5rem;
+  }
+
+  .lua-nav-left {
+    left: 0;
+  }
+
+  .lua-nav-right {
+    right: 0;
+    left: auto;
+  }
+
+  .lua-nav-left.is-mobile-visible,
+  .lua-nav-right.is-mobile-visible {
+    display: block;
+  }
+
+  .lua-mobile-close {
+    display: block;
+  }
+
+  .lua-mobile-overlay {
+    display: none;
+  }
+
+  body.lua-mobile-overlay-active .lua-mobile-overlay {
+    display: block;
   }
 }
