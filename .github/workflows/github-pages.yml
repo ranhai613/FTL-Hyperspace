@@ -3,7 +3,8 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages-source
+      - gh-pages-wiki
+  workflow_dispatch:
 
 jobs:
   github-pages:
