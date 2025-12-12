@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /lua/search-data.json
+---
+[
+{% assign lua_pages = site.pages | where_exp: 'p', "p.path contains 'lua/'" %}
+{% assign first_item = true %}
+{% for p in lua_pages %}
+{% unless p.path contains 'search-data.json' %}
+{% if first_item %}{% assign first_item = false %}{% else %},
+{% endif %}
+  {
+    "title": {{ p.title | default: p.name | jsonify }},
+    "url": {{ p.url | relative_url | jsonify }},
+    "content": {{ p.content | strip_html | normalize_whitespace | jsonify }}
+  }
+{% endunless %}
+{% endfor %}
+]

@@ -394,6 +394,131 @@ summary {
   overflow-y: auto;
 }
 
+.lua-search {
+  border: 1px solid var(--lua-border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background: var(--lua-main-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lua-search-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.lua-search-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.lua-search-input-row input[type="search"] {
+  flex: 1 1 auto;
+  border: 1px solid var(--lua-border-color);
+  border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+  background: var(--lua-section-bg);
+  color: inherit;
+}
+
+.lua-search-input-row input[type="search"]:focus {
+  outline: 2px solid var(--lua-link-color);
+  outline-offset: 1px;
+}
+
+.lua-search-clear {
+  border: none;
+  background: none;
+  color: var(--lua-link-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  padding: 0 0.25rem;
+  transition: opacity 120ms ease;
+  pointer-events: none;
+}
+
+.lua-search-clear.is-visible {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+.lua-search-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.lua-search-meta {
+  margin-top: 0.4rem;
+  font-size: 0.76rem;
+  color: var(--lua-breadcrumb-color);
+  min-height: 1.2rem;
+}
+
+.lua-search-results {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--lua-border-color);
+  padding-top: 0.5rem;
+  max-height: 16rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lua-search-result {
+  border: 1px solid var(--lua-border-color);
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+  background: var(--lua-section-bg);
+}
+
+.lua-search-result-title {
+  display: block;
+  font-weight: 600;
+  color: var(--lua-link-color);
+}
+
+.lua-search-result-snippet {
+  font-size: 0.8rem;
+  margin: 0.2rem 0 0;
+  color: var(--lua-nav-text);
+}
+
+.lua-search-results mark {
+  background-color: #ffe58f;
+  color: #111111;
+  padding: 0 0.1em;
+  border-radius: 2px;
+}
+
+body.lua-doc.lua-dark .lua-search-results mark {
+  background-color: #ffc041;
+  color: #141414;
+}
+
+.lua-search-hint,
+.lua-search-empty,
+.lua-search-error {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.lua-search-empty {
+  color: #a12d2d;
+}
+
+.lua-search-error {
+  color: #b33a3a;
+  font-weight: 600;
+}
+
 .lua-sidebar {
   display: flex;
   flex-direction: column;
@@ -521,6 +646,23 @@ summary {
   border-left: 5px solid #dddddd;
   line-height: 1.15;
   margin: 0 0 1.5rem 0;
+}
+
+.lua-content mark {
+  background-color: #ffe58f;
+  color: #111111;
+  padding: 0 0.15em;
+  border-radius: 3px;
+}
+
+body.lua-doc.lua-dark .lua-content mark {
+  background-color: #ffc041;
+  color: #141414;
+}
+
+body.lua-hide-marks .lua-content mark {
+  background-color: transparent;
+  color: inherit;
 }
 
 /* Stack layout on small screens */
