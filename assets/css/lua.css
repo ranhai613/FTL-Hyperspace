@@ -24,6 +24,11 @@
 
 body.lua-doc {
   /* Light theme (default) */
+  --lua-topbar-height: 72px;
+  --lua-topbar-bg: #fdfdfd;
+  --lua-topbar-border: rgba(15, 23, 42, 0.12);
+  --lua-topbar-text: var(--lua-body-fg);
+  --lua-topbar-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
   --lua-body-bg: #f9fafb;
   --lua-body-fg: #111827;
   --lua-main-bg: #ffffff;
@@ -69,12 +74,247 @@ body.lua-doc {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-body.lua-doc img.banner {
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.lua-icon {
+  width: 1.3rem;
+  height: 1.3rem;
   display: block;
-  width: 100%;
-  max-width: 960px;
-  height: auto;
+}
+
+.lua-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  background: var(--lua-topbar-bg);
+  border-bottom: 1px solid var(--lua-topbar-border);
+  box-shadow: var(--lua-topbar-shadow);
+}
+
+.lua-global-header__inner {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lua-header-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.lua-header-badge {
+  height: 36px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+}
+
+.lua-header-home {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--lua-topbar-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.lua-header-home:hover,
+.lua-header-home:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+.lua-header-home-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  color: #ffffff;
+}
+
+body.lua-doc.lua-dark .lua-header-home-icon {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+}
+
+.lua-header-home-text {
+  letter-spacing: 0.01em;
+}
+
+.lua-header-mobile-row {
+  display: none;
+  width: 100%;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lua-header-mobile-row .lua-header-icon-button {
+  flex: 0 0 auto;
+}
+
+.lua-header-mobile-title {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 600;
+  color: var(--lua-topbar-text);
+  font-size: 1rem;
+}
+
+.lua-header-mobile-search {
+  margin-left: auto;
+}
+
+.lua-header-actions {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.lua-header-icon-button {
+  border: 1px solid transparent;
+  background: none;
+  color: var(--lua-topbar-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.45rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.lua-header-icon-button:hover,
+.lua-header-icon-button:focus-visible {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.lua-doc:not(.lua-dark) .lua-header-icon-button:hover,
+body.lua-doc:not(.lua-dark) .lua-header-icon-button:focus-visible {
+  background: rgba(15, 23, 42, 0.08);
+  border-color: rgba(15, 23, 42, 0.18);
+}
+
+.lua-github-link {
+  text-decoration: none;
+}
+
+.lua-search--header {
+  flex: 1 1 420px;
+  min-width: 240px;
+}
+
+.lua-footer {
+  background: var(--md-footer-bg-color--dark);
+  border-top: 1px solid var(--lua-border-color);
+  color: var(--lua-nav-text);
+}
+
+.lua-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.lua-footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.lua-footer-meta>p {
+  margin: 0;
+}
+
+.lua-footer a {
+  color: var(--lua-link-color);
+}
+
+.lua-footer-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+}
+
+.lua-footer-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lua-topbar-text);
+  background: rgba(15, 23, 42, 0.06);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+body.lua-doc.lua-dark .lua-footer-icon {
+  color: var(--lua-body-fg);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lua-footer-icon:hover,
+.lua-footer-icon:focus-visible {
+  outline: none;
+  border-color: var(--lua-border-color);
+  background: rgba(15, 23, 42, 0.12);
+}
+
+body.lua-doc.lua-dark .lua-footer-icon:hover,
+body.lua-doc.lua-dark .lua-footer-icon:focus-visible {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.lua-footer-icon--discord {
+  color: #5865f2;
+}
+
+body.lua-doc.lua-dark .lua-footer-icon--discord {
+  color: #8da2fb;
+}
+
+@media (max-width: 720px) {
+  .lua-footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .lua-footer-meta {
+    text-align: center;
+  }
+
+  .lua-footer-social {
+    justify-content: center;
+  }
 }
 
 body.lua-mobile-overlay-active {
@@ -83,6 +323,10 @@ body.lua-mobile-overlay-active {
 
 body.lua-doc.lua-dark {
   /* Dark theme values, based on original hard-coded colors */
+  --lua-topbar-bg: #111827;
+  --lua-topbar-border: rgba(255, 255, 255, 0.12);
+  --lua-topbar-text: #f9fafb;
+  --lua-topbar-shadow: 0 10px 26px rgba(0, 0, 0, 0.65);
   --lua-body-bg: #000000;
   --lua-body-fg: #e5e7eb;
   --lua-main-bg: #202c3b;
@@ -401,76 +645,137 @@ summary {
   font-size: 0.9rem;
   color: var(--lua-nav-text);
   position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
+  top: calc(var(--lua-topbar-height, 0px) + 1rem);
+  max-height: calc(100vh - var(--lua-topbar-height, 0px) - 2rem);
   overflow-y: auto;
 }
 
 .lua-search {
-  border: 1px solid var(--lua-border-color);
-  border-radius: 6px;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  background: var(--lua-main-bg);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.lua-search-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.35rem;
+  position: relative;
+  width: 100%;
 }
 
 .lua-search-input-row {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--lua-border-color);
+  border-radius: 999px;
+  background: var(--lua-main-bg);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+.lua-search-input-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lua-breadcrumb-color);
 }
 
 .lua-search-input-row input[type="search"] {
   flex: 1 1 auto;
-  border: 1px solid var(--lua-border-color);
-  border-radius: 4px;
-  padding: 0.35rem 0.5rem;
-  background: var(--lua-section-bg);
+  border: none;
+  background: transparent;
   color: inherit;
+  font-size: 0.95rem;
+  min-width: 0;
 }
 
 .lua-search-input-row input[type="search"]:focus {
-  outline: 2px solid var(--lua-link-color);
-  outline-offset: 1px;
+  outline: none;
 }
 
 .lua-search-clear {
   border: none;
   background: none;
-  color: var(--lua-link-color);
-  font-size: 1.2rem;
+  color: var(--lua-breadcrumb-link);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 999px;
   cursor: pointer;
   opacity: 0;
-  padding: 0 0.25rem;
-  transition: opacity 120ms ease;
+  transition: opacity 120ms ease, background 120ms ease;
   pointer-events: none;
 }
 
 .lua-search-clear.is-visible {
-  opacity: 0.8;
+  opacity: 0.85;
   pointer-events: auto;
+}
+
+.lua-search-clear:hover,
+.lua-search-clear:focus-visible {
+  background: rgba(15, 23, 42, 0.08);
+  outline: none;
+}
+
+body.lua-doc.lua-dark .lua-search-input-row {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+body.lua-doc.lua-dark .lua-search-clear:hover,
+body.lua-doc.lua-dark .lua-search-clear:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lua-search-panel {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  width: 100%;
+  background: var(--lua-main-bg);
+  border: 1px solid var(--lua-border-color);
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.18);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1210;
+}
+
+.lua-search--header:focus-within .lua-search-panel,
+.lua-search-panel.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .lua-search-toggle {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 
+.lua-search-toggle input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
 .lua-search-meta {
-  margin-top: 0.4rem;
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   color: var(--lua-breadcrumb-color);
-  min-height: 1.2rem;
+  min-height: 1rem;
+}
+
+.lua-search-results {
+  border-top: 1px solid var(--lua-border-color);
+  padding-top: 0.5rem;
+  max-height: 40vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .lua-mobile-controls {
@@ -483,7 +788,6 @@ summary {
   flex: 1 1 auto;
   padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
-  background: var(--lua-link-color);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -512,17 +816,6 @@ summary {
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
   z-index: 1000;
-}
-
-.lua-search-results {
-  margin-top: 0.75rem;
-  border-top: 1px solid var(--lua-border-color);
-  padding-top: 0.5rem;
-  max-height: 16rem;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .lua-search-result {
@@ -650,8 +943,8 @@ body.lua-doc.lua-dark .lua-search-results mark {
   font-size: 1rem;
   color: var(--lua-nav-text);
   position: sticky;
-  top: 1rem;
-  max-height: calc(100vh - 2rem);
+  top: calc(var(--lua-topbar-height, 0px) + 1rem);
+  max-height: calc(100vh - var(--lua-topbar-height, 0px) - 2rem);
   overflow-y: auto;
 }
 
@@ -720,6 +1013,81 @@ body.lua-hide-marks .lua-content mark {
 
 /* Stack layout on small screens */
 @media (max-width: 960px) {
+  .lua-header-badge {
+    display: none;
+  }
+
+  .lua-header-branding {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .lua-header-home {
+    display: none;
+  }
+
+  .lua-header-mobile-row {
+    display: flex;
+    width: 100%;
+  }
+
+  .lua-header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    position: relative;
+  }
+
+  #lua-theme-toggle {
+    display: none;
+  }
+
+  .lua-github-link {
+    display: none;
+  }
+
+  .lua-global-header__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .lua-search--header {
+    flex: 0 0 100%;
+    width: 100%;
+    display: none;
+  }
+
+  .lua-search--header.is-mobile-active {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 14px;
+    border: 1px solid var(--lua-border-color);
+    background: var(--lua-main-bg);
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.22);
+  }
+
+  .lua-search--header:not(.is-mobile-active) .lua-search-panel {
+    display: none;
+  }
+
+  .lua-search--header.is-mobile-active .lua-search-panel {
+    position: static;
+    display: flex;
+    margin-top: 0.75rem;
+    max-height: 60vh;
+    border-radius: 12px;
+    border: 1px solid var(--lua-border-color);
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
+
   .lua-page-wrapper {
     flex-direction: column;
   }
