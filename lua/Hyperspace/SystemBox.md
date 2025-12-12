@@ -56,3 +56,9 @@ ___
 The ShipSystem managed by this SystemBox.
 
 ___
+### table
+{: #table .lua-content-item aria-label='Fields' }
+#### table .table
+{: aria-label='Fields' }
+
+___

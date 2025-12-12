@@ -239,19 +239,19 @@ ___
 
 | Type | Field |
 | --- | --- |
-| boolean | .[bDead](Drone#bDead-) |
-| [DroneBlueprint](../Hyperspace/DroneBlueprint) | .[blueprint](Drone#blueprint-) |
-| boolean | .[deployed](Drone#deployed-) |
-| number | .[destroyedTimer](Drone#destroyedTimer-) |
-| number | .[hackTime](Drone#hackTime-) |
-| integer | .[iBonusPower](Drone#iBonusPower-) |
-| integer | .[iHackLevel](Drone#iHackLevel-) |
-| integer | .[iShipId](Drone#iShipId-) |
-| integer | .[powerRequired](Drone#powerRequired-) |
-| boolean | .[powered](Drone#powered-) |
-| boolean | .[poweredAtLocation](Drone#poweredAtLocation-) |
-| integer | .[selfId](Drone#selfId-) |
-| integer | .[type](Drone#type-) |
+| boolean | .[bDead](Drone#bDead) |
+| [DroneBlueprint](../Hyperspace/DroneBlueprint) | .[blueprint](Drone#blueprint) |
+| boolean | .[deployed](Drone#deployed) |
+| number | .[destroyedTimer](Drone#destroyedTimer) |
+| number | .[hackTime](Drone#hackTime) |
+| integer | .[iBonusPower](Drone#iBonusPower) |
+| integer | .[iHackLevel](Drone#iHackLevel) |
+| integer | .[iShipId](Drone#iShipId) |
+| integer | .[powerRequired](Drone#powerRequired) |
+| boolean | .[powered](Drone#powered) |
+| boolean | .[poweredAtLocation](Drone#poweredAtLocation) |
+| integer | .[selfId](Drone#selfId) |
+| integer | .[type](Drone#type) |
 
 </details>
 ___
@@ -432,6 +432,12 @@ ___
 ### speedVector
 {: #speedVector .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speedVector
+{: aria-label='Fields' }
+
+___
+### table
+{: #table .lua-content-item aria-label='Fields' }
+#### table .table
 {: aria-label='Fields' }
 
 ___

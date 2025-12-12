@@ -371,7 +371,10 @@ class WikiPage:
             return ret
         
         for constant in sorted(self.constants, key=lambda x: x.name):
-            ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} .lua-content-item aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
+            ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} .lua-content-item aria-label='Constants' }}\n"
+            ret += f"#### {wrap_type_for_md(constant.className, get_lua_type(constant.returnType))} .{constant.name}\n{{: aria-label='Constants' }}\n"
+            if constant.value is not None:
+                ret += f"Equivalent to `{constant.value}`.\n"
             if constant.documentation:
                 ret += f"{constant.documentation}\n"
             ret += "\n"
@@ -470,7 +473,7 @@ class WikiPage:
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Type | Field |\n| --- | --- |\n"
                 for field in sorted(inherited_map[parentClass], key=lambda x: x.name):
-                    ret += f"| {wrap_type_for_md(field.className, field.returnType)} | .[{field.name}]({md_ref_path(self.moduleName, field.moduleName, field.className, f"#{to_md_ref(field.name)}-")}) |\n"
+                    ret += f"| {wrap_type_for_md(field.className, field.returnType)} | .[{field.name}]({md_ref_path(self.moduleName, field.moduleName, field.className, f"#{to_md_ref(field.name)}")}) |\n"
             ret += "\n</details>\n"
         
         if not self.fields:
@@ -798,7 +801,7 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                 propertyType=PropertyType.CONSTANT,
                 className=className,
                 moduleName=moduleName,
-                returnType=get_lua_type(typeName),
+                returnType="integer",
                 documentation=documentation,
                 value=value
             ))
@@ -952,11 +955,19 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         if static_fields_m:
             fields += parse_fields(className, wikiInfo, static_fields_m.group(1))
         
-        # appended_fields = g_fieldsAppendMap.get(full_name, None)
-        # if appended_fields:
-        #     for content in appended_fields:
-        #         part_fields += f"---@field {content}\n"
-        #         count_fields += 1
+        appended_fields = g_fieldsAppendMap.get(full_name, None)
+        if appended_fields:
+            for content in appended_fields:
+                assert len(parts := content.split( )) == 2
+                name = parts[0]
+                type = parts[1]
+                fields.append(WikiPageItem(
+                    name=name,
+                    propertyType=PropertyType.FIELD,
+                    className=className,
+                    moduleName=moduleName,
+                    returnType=get_lua_type(type)
+                ))
         
         constructors = parse_constructor(moduleName, className)
 
@@ -975,10 +986,16 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         if constants_m:
             constants += parse_constants(className, wikiInfo, constants_m.group(1))
         
-        # additionalTableMembers = additionalTableMembersMap.get(className, None)
-        # if additionalTableMembers:
-        #     for memberName in additionalTableMembers:
-        #         part_consts += f"    {memberName} = {{}},\n"
+        additionalTableMembers = additionalTableMembersMap.get(className, None)
+        if additionalTableMembers:
+            for memberName in additionalTableMembers:
+                fields.append(WikiPageItem(
+                    name=memberName,
+                    propertyType=PropertyType.FIELD,
+                    returnType="table",
+                    className=className,
+                    moduleName=moduleName
+                ))
         
         should_be_enum = len(constructors) < 2 and len(methods) + len(static_methods) == 0 and len(fields) == 0 and len(constants) > 0
         if should_be_enum:

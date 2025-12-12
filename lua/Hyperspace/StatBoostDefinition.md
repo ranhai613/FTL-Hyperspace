@@ -21,176 +21,246 @@ ___
 {: #Constants .lua-content-section}
 ### StatBoostDefinition.BoostSource_AUGMENT
 {: #BoostSource_AUGMENT .lua-content-item aria-label='Constants' }
+#### integer .BoostSource_AUGMENT
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.BoostSource_CREW
 {: #BoostSource_CREW .lua-content-item aria-label='Constants' }
+#### integer .BoostSource_CREW
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.BoostType_ADD
 {: #BoostType_ADD .lua-content-item aria-label='Constants' }
+#### integer .BoostType_ADD
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.BoostType_FLAT
 {: #BoostType_FLAT .lua-content-item aria-label='Constants' }
+#### integer .BoostType_FLAT
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.BoostType_FLIP
 {: #BoostType_FLIP .lua-content-item aria-label='Constants' }
+#### integer .BoostType_FLIP
+{: aria-label='Constants' }
 Equivalent to `3`.
 
 ___
 ### StatBoostDefinition.BoostType_MAX
 {: #BoostType_MAX .lua-content-item aria-label='Constants' }
+#### integer .BoostType_MAX
+{: aria-label='Constants' }
 Equivalent to `6`.
 
 ___
 ### StatBoostDefinition.BoostType_MIN
 {: #BoostType_MIN .lua-content-item aria-label='Constants' }
+#### integer .BoostType_MIN
+{: aria-label='Constants' }
 Equivalent to `5`.
 
 ___
 ### StatBoostDefinition.BoostType_MULT
 {: #BoostType_MULT .lua-content-item aria-label='Constants' }
+#### integer .BoostType_MULT
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.BoostType_REPLACE_GROUP
 {: #BoostType_REPLACE_GROUP .lua-content-item aria-label='Constants' }
+#### integer .BoostType_REPLACE_GROUP
+{: aria-label='Constants' }
 Equivalent to `7`.
 
 ___
 ### StatBoostDefinition.BoostType_REPLACE_POWER
 {: #BoostType_REPLACE_POWER .lua-content-item aria-label='Constants' }
+#### integer .BoostType_REPLACE_POWER
+{: aria-label='Constants' }
 Equivalent to `8`.
 
 ___
 ### StatBoostDefinition.BoostType_SET
 {: #BoostType_SET .lua-content-item aria-label='Constants' }
+#### integer .BoostType_SET
+{: aria-label='Constants' }
 Equivalent to `2`.
 
 ___
 ### StatBoostDefinition.BoostType_SET_VALUE
 {: #BoostType_SET_VALUE .lua-content-item aria-label='Constants' }
+#### integer .BoostType_SET_VALUE
+{: aria-label='Constants' }
 Equivalent to `4`.
 
 ___
 ### StatBoostDefinition.CrewTarget_ALL
 {: #CrewTarget_ALL .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_ALL
+{: aria-label='Constants' }
 Equivalent to `3`.
 
 ___
 ### StatBoostDefinition.CrewTarget_ALLIES
 {: #CrewTarget_ALLIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_ALLIES
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.CrewTarget_CURRENT_ALLIES
 {: #CrewTarget_CURRENT_ALLIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_CURRENT_ALLIES
+{: aria-label='Constants' }
 Equivalent to `4`.
 
 ___
 ### StatBoostDefinition.CrewTarget_CURRENT_ENEMIES
 {: #CrewTarget_CURRENT_ENEMIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_CURRENT_ENEMIES
+{: aria-label='Constants' }
 Equivalent to `5`.
 
 ___
 ### StatBoostDefinition.CrewTarget_ENEMIES
 {: #CrewTarget_ENEMIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_ENEMIES
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.CrewTarget_ORIGINAL_ALLIES
 {: #CrewTarget_ORIGINAL_ALLIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_ORIGINAL_ALLIES
+{: aria-label='Constants' }
 Equivalent to `6`.
 
 ___
 ### StatBoostDefinition.CrewTarget_ORIGINAL_ENEMIES
 {: #CrewTarget_ORIGINAL_ENEMIES .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_ORIGINAL_ENEMIES
+{: aria-label='Constants' }
 Equivalent to `7`.
 
 ___
 ### StatBoostDefinition.CrewTarget_SELF
 {: #CrewTarget_SELF .lua-content-item aria-label='Constants' }
+#### integer .CrewTarget_SELF
+{: aria-label='Constants' }
 Equivalent to `2`.
 
 ___
 ### StatBoostDefinition.DroneTarget_ALL
 {: #DroneTarget_ALL .lua-content-item aria-label='Constants' }
+#### integer .DroneTarget_ALL
+{: aria-label='Constants' }
 Equivalent to `2`.
 
 ___
 ### StatBoostDefinition.DroneTarget_CREW
 {: #DroneTarget_CREW .lua-content-item aria-label='Constants' }
+#### integer .DroneTarget_CREW
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.DroneTarget_DRONES
 {: #DroneTarget_DRONES .lua-content-item aria-label='Constants' }
+#### integer .DroneTarget_DRONES
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.ShipTarget_ALL
 {: #ShipTarget_ALL .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_ALL
+{: aria-label='Constants' }
 Equivalent to `9`.
 
 ___
 ### StatBoostDefinition.ShipTarget_CREW_TARGET
 {: #ShipTarget_CREW_TARGET .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_CREW_TARGET
+{: aria-label='Constants' }
 Equivalent to `7`.
 
 ___
 ### StatBoostDefinition.ShipTarget_CURRENT_ALL
 {: #ShipTarget_CURRENT_ALL .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_CURRENT_ALL
+{: aria-label='Constants' }
 Equivalent to `2`.
 
 ___
 ### StatBoostDefinition.ShipTarget_CURRENT_ROOM
 {: #ShipTarget_CURRENT_ROOM .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_CURRENT_ROOM
+{: aria-label='Constants' }
 Equivalent to `3`.
 
 ___
 ### StatBoostDefinition.ShipTarget_ENEMY_SHIP
 {: #ShipTarget_ENEMY_SHIP .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_ENEMY_SHIP
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### StatBoostDefinition.ShipTarget_ORIGINAL_OTHER_SHIP
 {: #ShipTarget_ORIGINAL_OTHER_SHIP .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_ORIGINAL_OTHER_SHIP
+{: aria-label='Constants' }
 Equivalent to `6`.
 
 ___
 ### StatBoostDefinition.ShipTarget_ORIGINAL_SHIP
 {: #ShipTarget_ORIGINAL_SHIP .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_ORIGINAL_SHIP
+{: aria-label='Constants' }
 Equivalent to `5`.
 
 ___
 ### StatBoostDefinition.ShipTarget_OTHER_ALL
 {: #ShipTarget_OTHER_ALL .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_OTHER_ALL
+{: aria-label='Constants' }
 Equivalent to `4`.
 
 ___
 ### StatBoostDefinition.ShipTarget_PLAYER_SHIP
 {: #ShipTarget_PLAYER_SHIP .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_PLAYER_SHIP
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.ShipTarget_TARGETS_ME
 {: #ShipTarget_TARGETS_ME .lua-content-item aria-label='Constants' }
+#### integer .ShipTarget_TARGETS_ME
+{: aria-label='Constants' }
 Equivalent to `8`.
 
 ___
 ### StatBoostDefinition.SystemRoomTarget_ALL
 {: #SystemRoomTarget_ALL .lua-content-item aria-label='Constants' }
+#### integer .SystemRoomTarget_ALL
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### StatBoostDefinition.SystemRoomTarget_NONE
 {: #SystemRoomTarget_NONE .lua-content-item aria-label='Constants' }
+#### integer .SystemRoomTarget_NONE
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___

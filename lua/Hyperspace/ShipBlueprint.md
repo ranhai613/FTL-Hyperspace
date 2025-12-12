@@ -55,8 +55,8 @@ ___
 
 | Type | Field |
 | --- | --- |
-| string | .[name](Blueprint#name-) |
-| integer | .[type](Blueprint#type-) |
+| string | .[name](Blueprint#name) |
+| integer | .[type](Blueprint#type) |
 
 </details>
 ___

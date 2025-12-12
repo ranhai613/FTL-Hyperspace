@@ -73,19 +73,19 @@ ___
 
 | Type | Field |
 | --- | --- |
-| integer | .[activeTouch](GenericButton#activeTouch-) |
-| boolean | .[allowAnyTouch](GenericButton#allowAnyTouch-) |
-| boolean | .[bActivated](GenericButton#bActivated-) |
-| boolean | .[bActive](GenericButton#bActive-) |
-| boolean | .[bFlashing](GenericButton#bFlashing-) |
-| boolean | .[bHover](GenericButton#bHover-) |
-| boolean | .[bRenderOff](GenericButton#bRenderOff-) |
-| boolean | .[bRenderSelected](GenericButton#bRenderSelected-) |
-| boolean | .[bSelected](GenericButton#bSelected-) |
-| [AnimationTracker](../Hyperspace/AnimationTracker) | .[flashing](GenericButton#flashing-) |
-| [Rect](../Hyperspace/Rect) | .[hitbox](GenericButton#hitbox-) |
-| [Point](../Hyperspace/Point) | .[position](GenericButton#position-) |
-| boolean | .[touchSelectable](GenericButton#touchSelectable-) |
+| integer | .[activeTouch](GenericButton#activeTouch) |
+| boolean | .[allowAnyTouch](GenericButton#allowAnyTouch) |
+| boolean | .[bActivated](GenericButton#bActivated) |
+| boolean | .[bActive](GenericButton#bActive) |
+| boolean | .[bFlashing](GenericButton#bFlashing) |
+| boolean | .[bHover](GenericButton#bHover) |
+| boolean | .[bRenderOff](GenericButton#bRenderOff) |
+| boolean | .[bRenderSelected](GenericButton#bRenderSelected) |
+| boolean | .[bSelected](GenericButton#bSelected) |
+| [AnimationTracker](../Hyperspace/AnimationTracker) | .[flashing](GenericButton#flashing) |
+| [Rect](../Hyperspace/Rect) | .[hitbox](GenericButton#hitbox) |
+| [Point](../Hyperspace/Point) | .[position](GenericButton#position) |
+| boolean | .[touchSelectable](GenericButton#touchSelectable) |
 
 </details>
 

@@ -33,7 +33,7 @@ ___
 
 | Type | Field |
 | --- | --- |
-| integer | .[selectedState](Selectable#selectedState-) |
+| integer | .[selectedState](Selectable#selectedState) |
 
 </details>
 ___
@@ -74,5 +74,11 @@ ___
 #### [Rect](../Hyperspace/Rect) .rect
 {: aria-label='Fields' }
 **Read-only**
+
+___
+### table
+{: #table .lua-content-item aria-label='Fields' }
+#### table .table
+{: aria-label='Fields' }
 
 ___

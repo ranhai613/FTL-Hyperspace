@@ -27,21 +27,29 @@ ___
 {: #Constants .lua-content-section}
 ### ActivatedPowerRequirements.Type_CHARGE
 {: #Type_CHARGE .lua-content-item aria-label='Constants' }
+#### integer .Type_CHARGE
+{: aria-label='Constants' }
 Equivalent to `2`.
 
 ___
 ### ActivatedPowerRequirements.Type_ENEMY
 {: #Type_ENEMY .lua-content-item aria-label='Constants' }
+#### integer .Type_ENEMY
+{: aria-label='Constants' }
 Equivalent to `1`.
 
 ___
 ### ActivatedPowerRequirements.Type_PLAYER
 {: #Type_PLAYER .lua-content-item aria-label='Constants' }
+#### integer .Type_PLAYER
+{: aria-label='Constants' }
 Equivalent to `0`.
 
 ___
 ### ActivatedPowerRequirements.Type_UNKNOWN
 {: #Type_UNKNOWN .lua-content-item aria-label='Constants' }
+#### integer .Type_UNKNOWN
+{: aria-label='Constants' }
 Equivalent to `3`.
 
 ___

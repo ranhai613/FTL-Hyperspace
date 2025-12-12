@@ -146,7 +146,7 @@ ___
 
 | Type | Field |
 | --- | --- |
-| integer | .[iShipId](ShipObject#iShipId-) |
+| integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
 ___

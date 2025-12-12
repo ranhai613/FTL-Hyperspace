@@ -98,40 +98,41 @@ ___
 
 | Type | Field |
 | --- | --- |
-| [Targetable](../Hyperspace/Targetable) | .[movingTarget](LaserBlast#movingTarget-) |
-| number | .[spinAngle](LaserBlast#spinAngle-) |
-| number | .[spinSpeed](LaserBlast#spinSpeed-) |
+| [Targetable](../Hyperspace/Targetable) | .[movingTarget](LaserBlast#movingTarget) |
+| number | .[spinAngle](LaserBlast#spinAngle) |
+| number | .[spinSpeed](LaserBlast#spinSpeed) |
 
 #### From [Projectile](Projectile)
 
 | Type | Field |
 | --- | --- |
-| [Targetable](../Hyperspace/Targetable) | .[_targetable](Projectile#_targetable-) |
-| boolean | .[bBroadcastTarget](Projectile#bBroadcastTarget-) |
-| [GL_Color](../Graphics/GL_Color) | .[color](Projectile#color-) |
-| integer | .[currentSpace](Projectile#currentSpace-) |
-| [Damage](../Hyperspace/Damage) | .[damage](Projectile#damage-) |
-| boolean | .[dead](Projectile#dead-) |
-| [Animation](../Hyperspace/Animation) | .[death_animation](Projectile#death_animation-) |
-| integer | .[destinationSpace](Projectile#destinationSpace-) |
-| number | .[entryAngle](Projectile#entryAngle-) |
-| [Projectile_Extend](../Hyperspace/Projectile_Extend) | .[extend](Projectile#extend-) |
-| [AnimationTracker](../Hyperspace/AnimationTracker) | .[flashTracker](Projectile#flashTracker-) |
-| [Animation](../Hyperspace/Animation) | .[flight_animation](Projectile#flight_animation-) |
-| number | .[heading](Projectile#heading-) |
-| string | .[hitShieldSound](Projectile#hitShieldSound-) |
-| string | .[hitSolidSound](Projectile#hitSolidSound-) |
-| boolean | .[hitTarget](Projectile#hitTarget-) |
-| [Pointf](../Hyperspace/Pointf) | .[last_position](Projectile#last_position-) |
-| number | .[lifespan](Projectile#lifespan-) |
-| integer | .[ownerId](Projectile#ownerId-) |
-| [Pointf](../Hyperspace/Pointf) | .[position](Projectile#position-) |
-| uint | .[selfId](Projectile#selfId-) |
-| [Pointf](../Hyperspace/Pointf) | .[speed](Projectile#speed-) |
-| number | .[speed_magnitude](Projectile#speed_magnitude-) |
-| boolean | .[startedDeath](Projectile#startedDeath-) |
-| [Pointf](../Hyperspace/Pointf) | .[target](Projectile#target-) |
-| integer | .[targetId](Projectile#targetId-) |
+| [Targetable](../Hyperspace/Targetable) | .[_targetable](Projectile#_targetable) |
+| boolean | .[bBroadcastTarget](Projectile#bBroadcastTarget) |
+| [GL_Color](../Graphics/GL_Color) | .[color](Projectile#color) |
+| integer | .[currentSpace](Projectile#currentSpace) |
+| [Damage](../Hyperspace/Damage) | .[damage](Projectile#damage) |
+| boolean | .[dead](Projectile#dead) |
+| [Animation](../Hyperspace/Animation) | .[death_animation](Projectile#death_animation) |
+| integer | .[destinationSpace](Projectile#destinationSpace) |
+| number | .[entryAngle](Projectile#entryAngle) |
+| [Projectile_Extend](../Hyperspace/Projectile_Extend) | .[extend](Projectile#extend) |
+| [AnimationTracker](../Hyperspace/AnimationTracker) | .[flashTracker](Projectile#flashTracker) |
+| [Animation](../Hyperspace/Animation) | .[flight_animation](Projectile#flight_animation) |
+| number | .[heading](Projectile#heading) |
+| string | .[hitShieldSound](Projectile#hitShieldSound) |
+| string | .[hitSolidSound](Projectile#hitSolidSound) |
+| boolean | .[hitTarget](Projectile#hitTarget) |
+| [Pointf](../Hyperspace/Pointf) | .[last_position](Projectile#last_position) |
+| number | .[lifespan](Projectile#lifespan) |
+| integer | .[ownerId](Projectile#ownerId) |
+| [Pointf](../Hyperspace/Pointf) | .[position](Projectile#position) |
+| uint | .[selfId](Projectile#selfId) |
+| [Pointf](../Hyperspace/Pointf) | .[speed](Projectile#speed) |
+| number | .[speed_magnitude](Projectile#speed_magnitude) |
+| boolean | .[startedDeath](Projectile#startedDeath) |
+| table | .[table](Projectile#table) |
+| [Pointf](../Hyperspace/Pointf) | .[target](Projectile#target) |
+| integer | .[targetId](Projectile#targetId) |
 
 </details>
 ___

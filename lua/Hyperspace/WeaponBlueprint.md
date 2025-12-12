@@ -49,9 +49,9 @@ ___
 
 | Type | Field |
 | --- | --- |
-| [Description](../Hyperspace/Description) | .[desc](Blueprint#desc-) |
-| string | .[name](Blueprint#name-) |
-| integer | .[type](Blueprint#type-) |
+| [Description](../Hyperspace/Description) | .[desc](Blueprint#desc) |
+| string | .[name](Blueprint#name) |
+| integer | .[type](Blueprint#type) |
 
 </details>
 ___

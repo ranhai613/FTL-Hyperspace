@@ -108,7 +108,7 @@ ___
 
 | Type | Field |
 | --- | --- |
-| integer | .[iShipId](ShipObject#iShipId-) |
+| integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
 ___
@@ -295,6 +295,12 @@ ___
 ### subCooldown
 {: #subCooldown .lua-content-item aria-label='Fields' }
 #### pair\<number, number\> .subCooldown
+{: aria-label='Fields' }
+
+___
+### table
+{: #table .lua-content-item aria-label='Fields' }
+#### table .table
 {: aria-label='Fields' }
 
 ___

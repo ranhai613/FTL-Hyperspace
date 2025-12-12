@@ -25,7 +25,7 @@ Subclasses: [OuterHull](../Hyperspace/OuterHull), [Spreadable](../Hyperspace/Spr
 
 | Type | Field |
 | --- | --- |
-| integer | .[selectedState](Selectable#selectedState-) |
+| integer | .[selectedState](Selectable#selectedState) |
 
 </details>
 ___

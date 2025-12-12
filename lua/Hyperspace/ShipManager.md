@@ -497,7 +497,7 @@ ___
 
 | Type | Field |
 | --- | --- |
-| integer | .[iShipId](ShipObject#iShipId-) |
+| integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
 ___
@@ -776,6 +776,12 @@ ___
 #### vector\<[SpaceDrone](../Hyperspace/SpaceDrone)\> .superDrones
 {: aria-label='Fields' }
 Note: Vectors start at index 0, unlike normal arrays in Lua
+
+___
+### table
+{: #table .lua-content-item aria-label='Fields' }
+#### table .table
+{: aria-label='Fields' }
 
 ___
 ### teleportSystem (Read-only)

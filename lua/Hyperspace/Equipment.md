@@ -57,9 +57,9 @@ ___
 
 | Type | Field |
 | --- | --- |
-| boolean | .[bCloseButtonSelected](FocusWindow#bCloseButtonSelected-) |
-| boolean | .[bFullFocus](FocusWindow#bFullFocus-) |
-| boolean | .[bOpen](FocusWindow#bOpen-) |
+| boolean | .[bCloseButtonSelected](FocusWindow#bCloseButtonSelected) |
+| boolean | .[bFullFocus](FocusWindow#bFullFocus) |
+| boolean | .[bOpen](FocusWindow#bOpen) |
 
 </details>
 

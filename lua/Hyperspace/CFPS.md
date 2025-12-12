@@ -49,6 +49,12 @@ ___
 {: aria-label='Fields' }
 
 ___
+### speedEnabled
+{: #speedEnabled .lua-content-item aria-label='Fields' }
+#### boolean .speedEnabled
+{: aria-label='Fields' }
+
+___
 ### speedLevel
 {: #speedLevel .lua-content-item aria-label='Fields' }
 #### integer .speedLevel
