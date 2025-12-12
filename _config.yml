@@ -16,4 +16,5 @@ description: "A binary mod for FTL: Faster Than Light"
 show_downloads: false
 baseurl: /FTL-Hyperspace
 exclude:
+  - vendor
   - parseSource
