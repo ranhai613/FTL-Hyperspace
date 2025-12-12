@@ -434,7 +434,7 @@ class WikiPage:
             ret += "___\n<details markdown=\"1\"><summary id=\"InheritedMethods\" class=\"lua-content-item\" markdown=\"span\">Inherited Methods</summary>\n\n"
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Return Type | Method |\n| --- | --- |\n"
-                for method in sorted(inherited_map[parentClass], key=lambda x: x.name):
+                for method in sorted(inherited_map[parentClass], key=lambda x: x.name + "".join(x.params_type) + "".join(x.params_name)):
                     params = []
                     for i in range(len(method.params_name)):
                         params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
@@ -529,7 +529,7 @@ class WikiPage:
         return ret
     
     def Output(self, basePath: str):
-        output_path = Path(basePath) / self.moduleName / f"{self.name}.md"
+        output_path = Path(basePath) / self.moduleName / f"{self.name if self.name != self.moduleName else "index"}.md"
         replace_map = {
             "NAME": self.name,
             "RELATIONS": self.outputRelations() or None,

@@ -28,8 +28,8 @@ Extends: [ShipObject](../Hyperspace/ShipObject)
 | vector\<string\> | :[GetAugmentationList](ShipObject#GetAugmentationList) () |
 | number | :[GetAugmentationValue](ShipObject#GetAugmentationValue) (string augment) |
 | integer | :[HasAugmentation](ShipObject#HasAugmentation) (string augment) |
-| integer | :[HasEquipment](ShipObject#HasEquipment) (string equip) |
 | integer | :[HasEquipment](ShipObject#HasEquipment) (string equipmentName, boolean checkCargo=false) |
+| integer | :[HasEquipment](ShipObject#HasEquipment) (string equip) |
 | void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
 
 </details>
