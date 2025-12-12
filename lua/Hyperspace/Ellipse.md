@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Ellipse ()
-{: #Ellipse aria-label='Constructors' }
+{: #Ellipse .lua-content-item aria-label='Constructors' }
 #### [Ellipse](../Hyperspace/Ellipse) Ellipse ()
 {: aria-label='Constructors' }
 
@@ -21,21 +21,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### a
-{: #a aria-label='Fields' }
+{: #a .lua-content-item aria-label='Fields' }
 #### number .a
 {: aria-label='Fields' }
 
 ___
 ### b
-{: #b aria-label='Fields' }
+{: #b .lua-content-item aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
 ___
 ### center
-{: #center aria-label='Fields' }
+{: #center .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
 

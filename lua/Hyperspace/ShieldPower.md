@@ -12,21 +12,21 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### first
-{: #first aria-label='Fields' }
+{: #first .lua-content-item aria-label='Fields' }
 #### integer .first
 {: aria-label='Fields' }
 
 ___
 ### second
-{: #second aria-label='Fields' }
+{: #second .lua-content-item aria-label='Fields' }
 #### integer .second
 {: aria-label='Fields' }
 
 ___
 ### super
-{: #super aria-label='Fields' }
+{: #super .lua-content-item aria-label='Fields' }
 #### pair\<integer, integer\> .super
 {: aria-label='Fields' }
 

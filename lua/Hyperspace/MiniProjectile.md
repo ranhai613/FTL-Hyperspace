@@ -12,15 +12,15 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### fake
-{: #fake aria-label='Fields' }
+{: #fake .lua-content-item aria-label='Fields' }
 #### boolean .fake
 {: aria-label='Fields' }
 
 ___
 ### image
-{: #image aria-label='Fields' }
+{: #image .lua-content-item aria-label='Fields' }
 #### string .image
 {: aria-label='Fields' }
 

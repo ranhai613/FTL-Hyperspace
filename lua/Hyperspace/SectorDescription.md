@@ -12,21 +12,21 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### name
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .name
 {: aria-label='Fields' }
 
 ___
 ### shortName
-{: #shortName aria-label='Fields' }
+{: #shortName .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortName
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

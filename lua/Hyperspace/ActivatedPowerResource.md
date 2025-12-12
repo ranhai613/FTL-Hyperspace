@@ -8,27 +8,27 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### ActivatedPowerResource ()
-{: #ActivatedPowerResource aria-label='Constructors' }
+{: #ActivatedPowerResource .lua-content-item aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def)
 {: aria-label='Constructors' }
 
 ___
 ### ActivatedPowerResource ()
-{: #ActivatedPowerResource aria-label='Constructors' }
+{: #ActivatedPowerResource .lua-content-item aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember](../Hyperspace/CrewMember) _crew, [CrewMember_Extend](../Hyperspace/CrewMember_Extend) _ex)
 {: aria-label='Constructors' }
 
 ___
 ### ActivatedPowerResource ()
-{: #ActivatedPowerResource aria-label='Constructors' }
+{: #ActivatedPowerResource .lua-content-item aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember](../Hyperspace/CrewMember) _crew)
 {: aria-label='Constructors' }
 
 ___
 ### ActivatedPowerResource ()
-{: #ActivatedPowerResource aria-label='Constructors' }
+{: #ActivatedPowerResource .lua-content-item aria-label='Constructors' }
 #### [ActivatedPowerResource](../Hyperspace/ActivatedPowerResource) ActivatedPowerResource ([PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) _def, [CrewMember_Extend](../Hyperspace/CrewMember_Extend) _ex)
 {: aria-label='Constructors' }
 
@@ -38,45 +38,45 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### DisablePower ()
-{: #DisablePower aria-label='Methods' }
+{: #DisablePower .lua-content-item aria-label='Methods' }
 #### void :DisablePower ()
 {: aria-label='Methods' }
 
 ___
 ### EnableInit ()
-{: #EnableInit aria-label='Methods' }
+{: #EnableInit .lua-content-item aria-label='Methods' }
 #### void :EnableInit ()
 {: aria-label='Methods' }
 
 ___
 ### EnablePower ()
-{: #EnablePower aria-label='Methods' }
+{: #EnablePower .lua-content-item aria-label='Methods' }
 #### void :EnablePower ()
 {: aria-label='Methods' }
 
 ___
 ### GetCrewBoxResourceWidth ()
-{: #GetCrewBoxResourceWidth aria-label='Methods' }
+{: #GetCrewBoxResourceWidth .lua-content-item aria-label='Methods' }
 #### integer :GetCrewBoxResourceWidth (integer mode)
 {: aria-label='Methods' }
 
 ___
 ### GetLinkedPowers ()
-{: #GetLinkedPowers aria-label='Methods' }
+{: #GetLinkedPowers .lua-content-item aria-label='Methods' }
 #### void :GetLinkedPowers ()
 {: aria-label='Methods' }
 
 ___
 ### OnUpdate ()
-{: #OnUpdate aria-label='Methods' }
+{: #OnUpdate .lua-content-item aria-label='Methods' }
 #### void :OnUpdate ()
 {: aria-label='Methods' }
 
 ___
 ### PowerReq ()
-{: #PowerReq aria-label='Methods' }
+{: #PowerReq .lua-content-item aria-label='Methods' }
 #### PowerReadyState :PowerReq ([ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) req)
 {: aria-label='Methods' }
 
@@ -84,54 +84,54 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### crew (Read-only)
-{: #crew aria-label='Fields' }
+{: #crew .lua-content-item aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .crew
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### crew_ex (Read-only)
-{: #crew_ex aria-label='Fields' }
+{: #crew_ex .lua-content-item aria-label='Fields' }
 #### [CrewMember_Extend](../Hyperspace/CrewMember_Extend) .crew_ex
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### def (Read-only)
-{: #def aria-label='Fields' }
+{: #def .lua-content-item aria-label='Fields' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .def
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### enabled
-{: #enabled aria-label='Fields' }
+{: #enabled .lua-content-item aria-label='Fields' }
 #### boolean .enabled
 {: aria-label='Fields' }
 
 ___
 ### modifiedChargesPerJump
-{: #modifiedChargesPerJump aria-label='Fields' }
+{: #modifiedChargesPerJump .lua-content-item aria-label='Fields' }
 #### number .modifiedChargesPerJump
 {: aria-label='Fields' }
 
 ___
 ### modifiedPowerCharges
-{: #modifiedPowerCharges aria-label='Fields' }
+{: #modifiedPowerCharges .lua-content-item aria-label='Fields' }
 #### number .modifiedPowerCharges
 {: aria-label='Fields' }
 
 ___
 ### powerCharges
-{: #powerCharges aria-label='Fields' }
+{: #powerCharges .lua-content-item aria-label='Fields' }
 #### pair\<integer, integer\> .powerCharges
 {: aria-label='Fields' }
 
 ___
 ### powerCooldown
-{: #powerCooldown aria-label='Fields' }
+{: #powerCooldown .lua-content-item aria-label='Fields' }
 #### pair\<number, number\> .powerCooldown
 {: aria-label='Fields' }
 

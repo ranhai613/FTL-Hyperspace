@@ -12,9 +12,9 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### name (Read-only)
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 

@@ -77,11 +77,11 @@ body.lua-doc.lua-dark {
   --lua-main-fg: #fff7f7;
   --lua-heading-color: #ffffff;
   --lua-link-color: #79c0ff;
-  --lua-code-bg: #1b1b1f;
+  --lua-code-bg: #313138;
   --lua-table-bg: #16161a;
   --lua-border-color: #2a2a30;
   --lua-th-bg: #202028;
-  --lua-section-bg: #15151a;
+  --lua-section-bg: #333b45;
   --lua-section-border: #ffd15c;
   --lua-breadcrumb-color: #aaaaaa;
   --lua-breadcrumb-link: #dddddd;
@@ -89,21 +89,21 @@ body.lua-doc.lua-dark {
   --lua-nav-text: #cccccc;
 
   --function-color: #405e9a;
-  --function-color-light: #272938;
+  --function-color-light: #090a0d;
   --static-function-color: #7b4397;
-  --static-function-color-light: #272938;
+  --static-function-color-light: #090a0d;
   --var-color: #128676;
-  --var-color-light: #272938;
+  --var-color-light: #090a0d;
   --constructor-color: #e65100;
-  --constructor-color-light: #272938;
+  --constructor-color-light: #090a0d;
   --function-overview-bg-color: rgb(64 94 154 / 50%);
   --var-overview-bg-color: rgb(18 134 118 / 50%);
   --constructor-overview-bg-color: rgb(230 81 0 / 50%);
   --operator-color: #BA68C8;
-  --operator-color-light: #272938;
+  --operator-color-light: #090a0d;
   --operator-overview-bg-color: rgb(186 104 200 / 50%);
   --constants-color: #c86868;
-  --constants-color-light: #382727;
+  --constants-color-light: #090a0d;
   --constants-overview-bg-color: rgba(200, 104, 104, 0.5);
   --md-hue: 232;
 

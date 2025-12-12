@@ -11,22 +11,22 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetAchievementStatus ()
-{: #GetAchievementStatus aria-label='Methods' }
+{: #GetAchievementStatus .lua-content-item aria-label='Methods' }
 #### integer :GetAchievementStatus (string name)
 {: aria-label='Methods' }
 
 ___
 ### SetAchievement ()
-{: #SetAchievement aria-label='Methods' }
+{: #SetAchievement .lua-content-item aria-label='Methods' }
 #### void :SetAchievement (string name, boolean noPopup)
 {: aria-label='Methods' }
 Used to award achievements (CheckShipAchievement is automatically called if needed)
 
 ___
 ### UpdateVariableAchievements ()
-{: #UpdateVariableAchievements aria-label='Methods' }
+{: #UpdateVariableAchievements .lua-content-item aria-label='Methods' }
 #### void :UpdateVariableAchievements (string varName, integer varValue, boolean inGame=true)
 {: aria-label='Methods' }
 
@@ -34,9 +34,9 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### instance (Read-only)
-{: #instance aria-label='Fields' }
+{: #instance .lua-content-item aria-label='Fields' }
 #### [CustomAchievementTracker](../Hyperspace/CustomAchievementTracker) .instance
 {: aria-label='Fields' }
 

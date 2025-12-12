@@ -13,9 +13,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -32,9 +32,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -66,8 +66,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -95,8 +95,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -157,19 +157,19 @@ ___
 </details>
 ___
 ### bCloaked
-{: #bCloaked aria-label='Fields' }
+{: #bCloaked .lua-content-item aria-label='Fields' }
 #### boolean .bCloaked
 {: aria-label='Fields' }
 
 ___
 ### projectileFactory
-{: #projectileFactory aria-label='Fields' }
+{: #projectileFactory .lua-content-item aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .projectileFactory
 {: aria-label='Fields' }
 
 ___
 ### target
-{: #target aria-label='Fields' }
+{: #target .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .target
 {: aria-label='Fields' }
 

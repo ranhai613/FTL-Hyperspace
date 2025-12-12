@@ -12,45 +12,45 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### frameHeight
-{: #frameHeight aria-label='Fields' }
+{: #frameHeight .lua-content-item aria-label='Fields' }
 #### integer .frameHeight
 {: aria-label='Fields' }
 
 ___
 ### frameWidth
-{: #frameWidth aria-label='Fields' }
+{: #frameWidth .lua-content-item aria-label='Fields' }
 #### integer .frameWidth
 {: aria-label='Fields' }
 
 ___
 ### imageHeight
-{: #imageHeight aria-label='Fields' }
+{: #imageHeight .lua-content-item aria-label='Fields' }
 #### integer .imageHeight
 {: aria-label='Fields' }
 
 ___
 ### imageWidth
-{: #imageWidth aria-label='Fields' }
+{: #imageWidth .lua-content-item aria-label='Fields' }
 #### integer .imageWidth
 {: aria-label='Fields' }
 
 ___
 ### numFrames
-{: #numFrames aria-label='Fields' }
+{: #numFrames .lua-content-item aria-label='Fields' }
 #### integer .numFrames
 {: aria-label='Fields' }
 
 ___
 ### stripStartX
-{: #stripStartX aria-label='Fields' }
+{: #stripStartX .lua-content-item aria-label='Fields' }
 #### integer .stripStartX
 {: aria-label='Fields' }
 
 ___
 ### stripStartY
-{: #stripStartY aria-label='Fields' }
+{: #stripStartY .lua-content-item aria-label='Fields' }
 #### integer .stripStartY
 {: aria-label='Fields' }
 

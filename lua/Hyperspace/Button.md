@@ -11,9 +11,9 @@ Extends: [GenericButton](../Hyperspace/GenericButton)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Button ()
-{: #Button aria-label='Constructors' }
+{: #Button .lua-content-item aria-label='Constructors' }
 #### [Button](../Hyperspace/Button) Button ()
 {: aria-label='Constructors' }
 
@@ -23,8 +23,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [GenericButton](GenericButton)
@@ -44,37 +44,37 @@ ___
 </details>
 ___
 ### OnInit ()
-{: #OnInit aria-label='Methods' }
+{: #OnInit .lua-content-item aria-label='Methods' }
 #### void :OnInit (string img, [Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: #OnRender aria-label='Methods' }
+{: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
 ___
 ### SetActiveImage ()
-{: #SetActiveImage aria-label='Methods' }
+{: #SetActiveImage .lua-content-item aria-label='Methods' }
 #### void :SetActiveImage ([GL_Texture](../Graphics/GL_Texture) texture)
 {: aria-label='Methods' }
 
 ___
 ### SetImageBase ()
-{: #SetImageBase aria-label='Methods' }
+{: #SetImageBase .lua-content-item aria-label='Methods' }
 #### void :SetImageBase (string imageBase)
 {: aria-label='Methods' }
 
 ___
 ### SetInactiveImage ()
-{: #SetInactiveImage aria-label='Methods' }
+{: #SetInactiveImage .lua-content-item aria-label='Methods' }
 #### void :SetInactiveImage ([GL_Texture](../Graphics/GL_Texture) texture)
 {: aria-label='Methods' }
 
 ___
 ### SetLocation ()
-{: #SetLocation aria-label='Methods' }
+{: #SetLocation .lua-content-item aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
@@ -82,8 +82,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [GenericButton](GenericButton)
@@ -107,25 +107,25 @@ ___
 </details>
 ___
 ### bMirror
-{: #bMirror aria-label='Fields' }
+{: #bMirror .lua-content-item aria-label='Fields' }
 #### boolean .bMirror
 {: aria-label='Fields' }
 
 ___
 ### imageSize
-{: #imageSize aria-label='Fields' }
+{: #imageSize .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .imageSize
 {: aria-label='Fields' }
 
 ___
 ### images
-{: #images aria-label='Fields' }
+{: #images .lua-content-item aria-label='Fields' }
 #### [GL_Texture[]](../Graphics/GL_Texture) .images
 {: aria-label='Fields' }
 
 ___
 ### primitives
-{: #primitives aria-label='Fields' }
+{: #primitives .lua-content-item aria-label='Fields' }
 #### [GL_Primitive[]](../Graphics/GL_Primitive) .primitives
 {: aria-label='Fields' }
 

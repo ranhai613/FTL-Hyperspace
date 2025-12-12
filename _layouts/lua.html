@@ -79,16 +79,54 @@
         <aside class="lua-nav-right">
           {% if page.title %}
           <label class="lua-nav-title">Table of contents</label>
-          {% assign headers = page.content | newline_to_br | split: '<br />' %}
+          {% assign toc_markup = content | replace: '</h2>', '</h2><br />' | replace: '</h3>', '</h3><br />' | replace: '</summary>', '</summary><br />' %}
+          {% assign rendered_headers = toc_markup | newline_to_br | split: '<br />' %}
+          {% assign headers = rendered_headers %}
+          {% assign using_rendered_content = true %}
+          {% assign has_heading_tags = false %}
+          {% for h in rendered_headers %}
+            {% if h contains 'lua-content-section' or h contains 'lua-content-item' %}
+              {% assign has_heading_tags = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% unless has_heading_tags %}
+            {% assign headers = page.content | newline_to_br | split: '<br />' %}
+            {% assign using_rendered_content = false %}
+          {% endunless %}
           <nav>
             <ul class="lua-nav-right-item-list">
             {%- assign in_h2 = false -%}
             {%- assign has_h3 = false -%}
+            {%- assign current_aria_label = '' -%}
             {%- for h in headers -%}
               {%- assign h_trim = h | strip -%}
-              {%- assign h_prefix3 = h_trim | slice: 0, 4 -%}
-              {%- assign h_prefix2 = h_trim | slice: 0, 3 -%}
-              {%- if h_prefix2 == '## ' and h_prefix3 != '### ' -%}
+              {%- if h_trim == '' -%}{%- continue -%}{%- endif -%}
+              {%- assign is_section = false -%}
+              {%- assign is_item = false -%}
+              {%- if using_rendered_content -%}
+                {%- if h_trim contains 'lua-content-section' -%}
+                  {%- assign is_section = true -%}
+                {%- elsif h_trim contains 'lua-content-item' -%}
+                  {%- assign is_item = true -%}
+                {%- endif -%}
+              {%- endif -%}
+              {%- if is_section -%}
+                {%- assign section_title = '' -%}
+                {%- assign section_id = '' -%}
+                {%- if using_rendered_content -%}
+                  {%- assign section_title = h_trim | strip_html | strip -%}
+                  {%- if h_trim contains 'id="' -%}
+                    {%- assign id_parts = h_trim | split: 'id="' -%}
+                    {%- if id_parts.size > 1 -%}
+                      {%- assign section_id = id_parts[1] | split: '"' | first -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+                {%- if section_title == '' -%}{%- continue -%}{%- endif -%}
+                {%- if section_id == '' -%}
+                  {%- assign section_id = section_title | slugify -%}
+                {%- endif -%}
                 {%- if has_h3 -%}
                       </ul>
                     </nav>
@@ -97,20 +135,33 @@
                 {%- if in_h2 -%}
                   </li>
                 {%- endif -%}
-                {%- assign id = h_trim | replace: '##', '' | replace: '(', '' | replace: ')', '' | strip | replace: ' ', '-' -%}
                 <li class="lua-nav-right-item">
-                  <a class="md-nav__link" href="#{{ id }}">{{ h_trim | replace: '##', '' | strip }}</a>
+                  <a class="md-nav__link" href="#{{ section_id }}">{{ section_title }}</a>
                 {%- assign in_h2 = true -%}
-                {%- assign current_aria-label = h_trim | replace: '##', '' | strip | replace: ' ', '' -%}
-              {%- elsif h_prefix3 == '### ' -%}
+                {%- assign current_aria_label = section_title | replace: ' ', '' -%}
+              {%- elsif is_item -%}
+                {%- assign item_title = '' -%}
+                {%- assign item_id = '' -%}
+                {%- if using_rendered_content -%}
+                  {%- assign item_title = h_trim | strip_html | strip -%}
+                  {%- if h_trim contains 'id="' -%}
+                    {%- assign id_parts = h_trim | split: 'id="' -%}
+                    {%- if id_parts.size > 1 -%}
+                      {%- assign item_id = id_parts[1] | split: '"' | first -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+                {%- if item_title == '' -%}{%- continue -%}{%- endif -%}
+                {%- if item_id == '' -%}
+                  {%- assign item_id = item_title | slugify -%}
+                {%- endif -%}
                 {%- unless has_h3 -%}
-                  <nav aria-label="{{ current_aria-label }}">
+                  <nav aria-label="{{ current_aria_label }}">
                     <ul class="lua-nav-right-item-list">
                   {%- assign has_h3 = true -%}
                 {%- endunless -%}
-                {%- assign id = h_trim | replace: '###', '' | replace: '(', '' | replace: ')', '' | strip | replace: ' ', '-' -%}
                   <li class="lua-nav-right-list-item">
-                    <a class="md-nav__link" href="#{{ id }}">{{ h_trim | replace: '###', '' | strip }}</a>
+                    <a class="md-nav__link" href="#{{ item_id }}">{{ item_title }}</a>
                   </li>
               {%- endif -%}
             {%- endfor -%}

@@ -11,9 +11,9 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### HackingDrone ()
-{: #HackingDrone aria-label='Constructors' }
+{: #HackingDrone .lua-content-item aria-label='Constructors' }
 #### [HackingDrone](../Hyperspace/HackingDrone) HackingDrone ()
 {: aria-label='Constructors' }
 
@@ -23,8 +23,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Drone](Drone)
@@ -93,19 +93,19 @@ ___
 </details>
 ___
 ### CollisionMoving ()
-{: #CollisionMoving aria-label='Methods' }
+{: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
 ___
 ### SetMovementTarget ()
-{: #SetMovementTarget aria-label='Methods' }
+{: #SetMovementTarget .lua-content-item aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -113,8 +113,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Drone](Drone)
@@ -178,73 +178,73 @@ ___
 </details>
 ___
 ### arrived
-{: #arrived aria-label='Fields' }
+{: #arrived .lua-content-item aria-label='Fields' }
 #### boolean .arrived
 {: aria-label='Fields' }
 
 ___
 ### droneImage_off
-{: #droneImage_off aria-label='Fields' }
+{: #droneImage_off .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_off
 {: aria-label='Fields' }
 
 ___
 ### droneImage_on
-{: #droneImage_on aria-label='Fields' }
+{: #droneImage_on .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_on
 {: aria-label='Fields' }
 
 ___
 ### explosion
-{: #explosion aria-label='Fields' }
+{: #explosion .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
 {: aria-label='Fields' }
 
 ___
 ### extending
-{: #extending aria-label='Fields' }
+{: #extending .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .extending
 {: aria-label='Fields' }
 
 ___
 ### finalDestination
-{: #finalDestination aria-label='Fields' }
+{: #finalDestination .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .finalDestination
 {: aria-label='Fields' }
 
 ___
 ### finishedSetup
-{: #finishedSetup aria-label='Fields' }
+{: #finishedSetup .lua-content-item aria-label='Fields' }
 #### boolean .finishedSetup
 {: aria-label='Fields' }
 
 ___
 ### flashTracker
-{: #flashTracker aria-label='Fields' }
+{: #flashTracker .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
 {: aria-label='Fields' }
 
 ___
 ### flying
-{: #flying aria-label='Fields' }
+{: #flying .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flying
 {: aria-label='Fields' }
 
 ___
 ### lightImage
-{: #lightImage aria-label='Fields' }
+{: #lightImage .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lightImage
 {: aria-label='Fields' }
 
 ___
 ### prefRoom
-{: #prefRoom aria-label='Fields' }
+{: #prefRoom .lua-content-item aria-label='Fields' }
 #### integer .prefRoom
 {: aria-label='Fields' }
 
 ___
 ### startingPosition
-{: #startingPosition aria-label='Fields' }
+{: #startingPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
 {: aria-label='Fields' }
 

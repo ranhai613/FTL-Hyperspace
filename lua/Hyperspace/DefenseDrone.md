@@ -13,9 +13,9 @@ Subclasses: [SuperShieldDrone](../Hyperspace/SuperShieldDrone)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### DefenseDrone ()
-{: #DefenseDrone aria-label='Constructors' }
+{: #DefenseDrone .lua-content-item aria-label='Constructors' }
 #### [DefenseDrone](../Hyperspace/DefenseDrone) DefenseDrone ()
 {: aria-label='Constructors' }
 
@@ -25,8 +25,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Drone](Drone)
@@ -94,31 +94,31 @@ ___
 </details>
 ___
 ### GetTooltip ()
-{: #GetTooltip aria-label='Methods' }
+{: #GetTooltip .lua-content-item aria-label='Methods' }
 #### string :GetTooltip ()
 {: aria-label='Methods' }
 
 ___
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
 ___
 ### PickTarget ()
-{: #PickTarget aria-label='Methods' }
+{: #PickTarget .lua-content-item aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
 ___
 ### SetWeaponTarget ()
-{: #SetWeaponTarget aria-label='Methods' }
+{: #SetWeaponTarget .lua-content-item aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### ValidTargetObject ()
-{: #ValidTargetObject aria-label='Methods' }
+{: #ValidTargetObject .lua-content-item aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -126,8 +126,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Drone](Drone)
@@ -192,55 +192,55 @@ ___
 </details>
 ___
 ### currentSpeed
-{: #currentSpeed aria-label='Fields' }
+{: #currentSpeed .lua-content-item aria-label='Fields' }
 #### number .currentSpeed
 {: aria-label='Fields' }
 
 ___
 ### currentTargetId
-{: #currentTargetId aria-label='Fields' }
+{: #currentTargetId .lua-content-item aria-label='Fields' }
 #### integer .currentTargetId
 {: aria-label='Fields' }
 
 ___
 ### currentTargetType
-{: #currentTargetType aria-label='Fields' }
+{: #currentTargetType .lua-content-item aria-label='Fields' }
 #### integer .currentTargetType
 {: aria-label='Fields' }
 
 ___
 ### drone_image
-{: #drone_image aria-label='Fields' }
+{: #drone_image .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image
 {: aria-label='Fields' }
 
 ___
 ### engine_image
-{: #engine_image aria-label='Fields' }
+{: #engine_image .lua-content-item aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
 
 ___
 ### gun_image_charging
-{: #gun_image_charging aria-label='Fields' }
+{: #gun_image_charging .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_charging
 {: aria-label='Fields' }
 
 ___
 ### gun_image_off
-{: #gun_image_off aria-label='Fields' }
+{: #gun_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_off
 {: aria-label='Fields' }
 
 ___
 ### gun_image_on
-{: #gun_image_on aria-label='Fields' }
+{: #gun_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_on
 {: aria-label='Fields' }
 
 ___
 ### shotAtTargetId
-{: #shotAtTargetId aria-label='Fields' }
+{: #shotAtTargetId .lua-content-item aria-label='Fields' }
 #### integer .shotAtTargetId
 {: aria-label='Fields' }
 

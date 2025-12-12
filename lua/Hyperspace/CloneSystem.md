@@ -13,9 +13,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -32,9 +32,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -66,8 +66,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -95,8 +95,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -157,49 +157,49 @@ ___
 </details>
 ___
 ### bottom
-{: #bottom aria-label='Fields' }
+{: #bottom .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .bottom
 {: aria-label='Fields' }
 
 ___
 ### clone
-{: #clone aria-label='Fields' }
+{: #clone .lua-content-item aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .clone
 {: aria-label='Fields' }
 
 ___
 ### fDeathTime
-{: #fDeathTime aria-label='Fields' }
+{: #fDeathTime .lua-content-item aria-label='Fields' }
 #### number .fDeathTime
 {: aria-label='Fields' }
 
 ___
 ### fTimeGoal
-{: #fTimeGoal aria-label='Fields' }
+{: #fTimeGoal .lua-content-item aria-label='Fields' }
 #### number .fTimeGoal
 {: aria-label='Fields' }
 
 ___
 ### fTimeToClone
-{: #fTimeToClone aria-label='Fields' }
+{: #fTimeToClone .lua-content-item aria-label='Fields' }
 #### number .fTimeToClone
 {: aria-label='Fields' }
 
 ___
 ### gas
-{: #gas aria-label='Fields' }
+{: #gas .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .gas
 {: aria-label='Fields' }
 
 ___
 ### slot
-{: #slot aria-label='Fields' }
+{: #slot .lua-content-item aria-label='Fields' }
 #### integer .slot
 {: aria-label='Fields' }
 
 ___
 ### top
-{: #top aria-label='Fields' }
+{: #top .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .top
 {: aria-label='Fields' }
 

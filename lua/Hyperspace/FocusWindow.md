@@ -12,9 +12,9 @@ Subclasses: [ChoiceBox](../Hyperspace/ChoiceBox), [Equipment](../Hyperspace/Equi
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### FocusWindow ()
-{: #FocusWindow aria-label='Constructors' }
+{: #FocusWindow .lua-content-item aria-label='Constructors' }
 #### [FocusWindow](../Hyperspace/FocusWindow) FocusWindow ()
 {: aria-label='Constructors' }
 
@@ -25,21 +25,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### bCloseButtonSelected
-{: #bCloseButtonSelected aria-label='Fields' }
+{: #bCloseButtonSelected .lua-content-item aria-label='Fields' }
 #### boolean .bCloseButtonSelected
 {: aria-label='Fields' }
 
 ___
 ### bFullFocus
-{: #bFullFocus aria-label='Fields' }
+{: #bFullFocus .lua-content-item aria-label='Fields' }
 #### boolean .bFullFocus
 {: aria-label='Fields' }
 
 ___
 ### bOpen
-{: #bOpen aria-label='Fields' }
+{: #bOpen .lua-content-item aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
 

@@ -13,9 +13,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -32,8 +32,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -64,8 +64,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -90,19 +90,19 @@ ___
 </details>
 ___
 ### ForceIncreasePower ()
-{: #ForceIncreasePower aria-label='Methods' }
+{: #ForceIncreasePower .lua-content-item aria-label='Methods' }
 #### boolean :ForceIncreasePower (integer amount)
 {: aria-label='Methods' }
 
 ___
 ### RemoveWeapon ()
-{: #RemoveWeapon aria-label='Methods' }
+{: #RemoveWeapon .lua-content-item aria-label='Methods' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) :RemoveWeapon (integer slot)
 {: aria-label='Methods' }
 
 ___
 ### SetBonusPower ()
-{: #SetBonusPower aria-label='Methods' }
+{: #SetBonusPower .lua-content-item aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
 {: aria-label='Methods' }
 
@@ -110,8 +110,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -172,67 +172,67 @@ ___
 </details>
 ___
 ### iStartingBatteryPower
-{: #iStartingBatteryPower aria-label='Fields' }
+{: #iStartingBatteryPower .lua-content-item aria-label='Fields' }
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
 
 ___
 ### missile_count
-{: #missile_count aria-label='Fields' }
+{: #missile_count .lua-content-item aria-label='Fields' }
 #### integer .missile_count
 {: aria-label='Fields' }
 
 ___
 ### missile_start
-{: #missile_start aria-label='Fields' }
+{: #missile_start .lua-content-item aria-label='Fields' }
 #### integer .missile_start
 {: aria-label='Fields' }
 
 ___
 ### repowerList
-{: #repowerList aria-label='Fields' }
+{: #repowerList .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
 
 ___
 ### shot_count
-{: #shot_count aria-label='Fields' }
+{: #shot_count .lua-content-item aria-label='Fields' }
 #### integer .shot_count
 {: aria-label='Fields' }
 
 ___
 ### shot_timer
-{: #shot_timer aria-label='Fields' }
+{: #shot_timer .lua-content-item aria-label='Fields' }
 #### number .shot_timer
 {: aria-label='Fields' }
 
 ___
 ### slot_count
-{: #slot_count aria-label='Fields' }
+{: #slot_count .lua-content-item aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
 
 ___
 ### target
-{: #target aria-label='Fields' }
+{: #target .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
 {: aria-label='Fields' }
 
 ___
 ### userPowered
-{: #userPowered aria-label='Fields' }
+{: #userPowered .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .userPowered
 {: aria-label='Fields' }
 
 ___
 ### weapons
-{: #weapons aria-label='Fields' }
+{: #weapons .lua-content-item aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weapons
 {: aria-label='Fields' }
 
 ___
 ### weaponsTrashList
-{: #weaponsTrashList aria-label='Fields' }
+{: #weaponsTrashList .lua-content-item aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weaponsTrashList
 {: aria-label='Fields' }
 

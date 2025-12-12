@@ -15,69 +15,69 @@ Subclasses: [Projectile](../Hyperspace/Projectile)
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### CollisionMoving ()
-{: #CollisionMoving aria-label='Methods' }
+{: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### DamageArea ()
-{: #DamageArea aria-label='Methods' }
+{: #DamageArea .lua-content-item aria-label='Methods' }
 #### boolean :DamageArea ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit)
 {: aria-label='Methods' }
 
 ___
 ### DamageBeam ()
-{: #DamageBeam aria-label='Methods' }
+{: #DamageBeam .lua-content-item aria-label='Methods' }
 #### boolean :DamageBeam ([Pointf](../Hyperspace/Pointf) current, [Pointf](../Hyperspace/Pointf) last, [Damage](../Hyperspace/Damage) damage)
 {: aria-label='Methods' }
 
 ___
 ### DamageShield ()
-{: #DamageShield aria-label='Methods' }
+{: #DamageShield .lua-content-item aria-label='Methods' }
 #### boolean :DamageShield ([Pointf](../Hyperspace/Pointf) location, [Damage](../Hyperspace/Damage) damage, boolean forceHit)
 {: aria-label='Methods' }
 
 ___
 ### GetDodged ()
-{: #GetDodged aria-label='Methods' }
+{: #GetDodged .lua-content-item aria-label='Methods' }
 #### boolean :GetDodged ()
 {: aria-label='Methods' }
 
 ___
 ### GetOwnerId ()
-{: #GetOwnerId aria-label='Methods' }
+{: #GetOwnerId .lua-content-item aria-label='Methods' }
 #### integer :GetOwnerId ()
 {: aria-label='Methods' }
 
 ___
 ### GetSelfId ()
-{: #GetSelfId aria-label='Methods' }
+{: #GetSelfId .lua-content-item aria-label='Methods' }
 #### integer :GetSelfId ()
 {: aria-label='Methods' }
 
 ___
 ### GetSpaceId ()
-{: #GetSpaceId aria-label='Methods' }
+{: #GetSpaceId .lua-content-item aria-label='Methods' }
 #### integer :GetSpaceId ()
 {: aria-label='Methods' }
 
 ___
 ### GetSuperShield ()
-{: #GetSuperShield aria-label='Methods' }
+{: #GetSuperShield .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSuperShield ()
 {: aria-label='Methods' }
 
 ___
 ### SetTempVision ()
-{: #SetTempVision aria-label='Methods' }
+{: #SetTempVision .lua-content-item aria-label='Methods' }
 #### void :SetTempVision ([Pointf](../Hyperspace/Pointf) location)
 {: aria-label='Methods' }
 
 ___
 ### ValidTargetLocation ()
-{: #ValidTargetLocation aria-label='Methods' }
+{: #ValidTargetLocation .lua-content-item aria-label='Methods' }
 #### boolean :ValidTargetLocation ([Pointf](../Hyperspace/Pointf) location)
 {: aria-label='Methods' }
 

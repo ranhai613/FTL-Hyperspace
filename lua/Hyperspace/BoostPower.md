@@ -12,21 +12,21 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### amount
-{: #amount aria-label='Fields' }
+{: #amount .lua-content-item aria-label='Fields' }
 #### number .amount
 {: aria-label='Fields' }
 
 ___
 ### count
-{: #count aria-label='Fields' }
+{: #count .lua-content-item aria-label='Fields' }
 #### integer .count
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 

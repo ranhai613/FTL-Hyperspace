@@ -11,9 +11,9 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### Functional ()
-{: #Functional aria-label='Methods' }
+{: #Functional .lua-content-item aria-label='Methods' }
 #### boolean :Functional (integer iShipId)
 {: aria-label='Methods' }
 
@@ -21,39 +21,39 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### modifyChoiceTextScrap (Read-only)
-{: #modifyChoiceTextScrap aria-label='Fields' }
+{: #modifyChoiceTextScrap .lua-content-item aria-label='Fields' }
 #### boolean .modifyChoiceTextScrap
 {: aria-label='Fields' }
 
 ___
 ### preferHigher (Read-only)
-{: #preferHigher aria-label='Fields' }
+{: #preferHigher .lua-content-item aria-label='Fields' }
 #### boolean .preferHigher
 {: aria-label='Fields' }
 
 ___
 ### sys (Read-only)
-{: #sys aria-label='Fields' }
+{: #sys .lua-content-item aria-label='Fields' }
 #### integer .sys
 {: aria-label='Fields' }
 
 ___
 ### useForReqs (Read-only)
-{: #useForReqs aria-label='Fields' }
+{: #useForReqs .lua-content-item aria-label='Fields' }
 #### boolean .useForReqs
 {: aria-label='Fields' }
 
 ___
 ### value (Read-only)
-{: #value aria-label='Fields' }
+{: #value .lua-content-item aria-label='Fields' }
 #### number .value
 {: aria-label='Fields' }
 
 ___
 ### warning (Read-only)
-{: #warning aria-label='Fields' }
+{: #warning .lua-content-item aria-label='Fields' }
 #### boolean .warning
 {: aria-label='Fields' }
 

@@ -12,9 +12,9 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### augList
-{: #augList aria-label='Fields' }
+{: #augList .lua-content-item aria-label='Fields' }
 #### map\<string, integer\> .augList
 {: aria-label='Fields' }
 

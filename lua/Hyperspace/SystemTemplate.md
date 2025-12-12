@@ -12,57 +12,57 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### bp
-{: #bp aria-label='Fields' }
+{: #bp .lua-content-item aria-label='Fields' }
 #### integer .bp
 {: aria-label='Fields' }
 
 ___
 ### direction
-{: #direction aria-label='Fields' }
+{: #direction .lua-content-item aria-label='Fields' }
 #### integer .direction
 {: aria-label='Fields' }
 
 ___
 ### image
-{: #image aria-label='Fields' }
+{: #image .lua-content-item aria-label='Fields' }
 #### string .image
 {: aria-label='Fields' }
 
 ___
 ### location
-{: #location aria-label='Fields' }
+{: #location .lua-content-item aria-label='Fields' }
 #### vector\<integer\> .location
 {: aria-label='Fields' }
 
 ___
 ### maxPower
-{: #maxPower aria-label='Fields' }
+{: #maxPower .lua-content-item aria-label='Fields' }
 #### integer .maxPower
 {: aria-label='Fields' }
 
 ___
 ### powerLevel
-{: #powerLevel aria-label='Fields' }
+{: #powerLevel .lua-content-item aria-label='Fields' }
 #### integer .powerLevel
 {: aria-label='Fields' }
 
 ___
 ### slot
-{: #slot aria-label='Fields' }
+{: #slot .lua-content-item aria-label='Fields' }
 #### integer .slot
 {: aria-label='Fields' }
 
 ___
 ### systemId
-{: #systemId aria-label='Fields' }
+{: #systemId .lua-content-item aria-label='Fields' }
 #### integer .systemId
 {: aria-label='Fields' }
 
 ___
 ### weapon
-{: #weapon aria-label='Fields' }
+{: #weapon .lua-content-item aria-label='Fields' }
 #### vector\<string\> .weapon
 {: aria-label='Fields' }
 

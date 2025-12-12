@@ -12,45 +12,45 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### h
-{: #h aria-label='Fields' }
+{: #h .lua-content-item aria-label='Fields' }
 #### integer .h
 {: aria-label='Fields' }
 
 ___
 ### resId
-{: #resId aria-label='Fields' }
+{: #resId .lua-content-item aria-label='Fields' }
 #### integer .resId
 {: aria-label='Fields' }
 
 ___
 ### rot
-{: #rot aria-label='Fields' }
+{: #rot .lua-content-item aria-label='Fields' }
 #### integer .rot
 {: aria-label='Fields' }
 
 ___
 ### tex
-{: #tex aria-label='Fields' }
+{: #tex .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .tex
 {: aria-label='Fields' }
 
 ___
 ### w
-{: #w aria-label='Fields' }
+{: #w .lua-content-item aria-label='Fields' }
 #### integer .w
 {: aria-label='Fields' }
 
 ___
 ### x
-{: #x aria-label='Fields' }
+{: #x .lua-content-item aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 
 ___
 ### y
-{: #y aria-label='Fields' }
+{: #y .lua-content-item aria-label='Fields' }
 #### integer .y
 {: aria-label='Fields' }
 

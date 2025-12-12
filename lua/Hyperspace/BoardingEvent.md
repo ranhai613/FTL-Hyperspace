@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### BoardingEvent ()
-{: #BoardingEvent aria-label='Constructors' }
+{: #BoardingEvent .lua-content-item aria-label='Constructors' }
 #### [BoardingEvent](../Hyperspace/BoardingEvent) BoardingEvent ()
 {: aria-label='Constructors' }
 
@@ -21,33 +21,33 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### amount
-{: #amount aria-label='Fields' }
+{: #amount .lua-content-item aria-label='Fields' }
 #### integer .amount
 {: aria-label='Fields' }
 
 ___
 ### breach
-{: #breach aria-label='Fields' }
+{: #breach .lua-content-item aria-label='Fields' }
 #### boolean .breach
 {: aria-label='Fields' }
 
 ___
 ### max
-{: #max aria-label='Fields' }
+{: #max .lua-content-item aria-label='Fields' }
 #### integer .max
 {: aria-label='Fields' }
 
 ___
 ### min
-{: #min aria-label='Fields' }
+{: #min .lua-content-item aria-label='Fields' }
 #### integer .min
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

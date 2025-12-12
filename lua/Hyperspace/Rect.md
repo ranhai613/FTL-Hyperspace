@@ -8,15 +8,15 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Rect ()
-{: #Rect aria-label='Constructors' }
+{: #Rect .lua-content-item aria-label='Constructors' }
 #### [Rect](../Hyperspace/Rect) Rect ()
 {: aria-label='Constructors' }
 
 ___
 ### Rect ()
-{: #Rect aria-label='Constructors' }
+{: #Rect .lua-content-item aria-label='Constructors' }
 #### [Rect](../Hyperspace/Rect) Rect (integer _x, integer _y, integer _w, integer _h)
 {: aria-label='Constructors' }
 
@@ -27,27 +27,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### h
-{: #h aria-label='Fields' }
+{: #h .lua-content-item aria-label='Fields' }
 #### integer .h
 {: aria-label='Fields' }
 
 ___
 ### w
-{: #w aria-label='Fields' }
+{: #w .lua-content-item aria-label='Fields' }
 #### integer .w
 {: aria-label='Fields' }
 
 ___
 ### x
-{: #x aria-label='Fields' }
+{: #x .lua-content-item aria-label='Fields' }
 #### integer .x
 {: aria-label='Fields' }
 
 ___
 ### y
-{: #y aria-label='Fields' }
+{: #y .lua-content-item aria-label='Fields' }
 #### integer .y
 {: aria-label='Fields' }
 

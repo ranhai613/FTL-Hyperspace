@@ -12,21 +12,21 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### charger
-{: #charger aria-label='Fields' }
+{: #charger .lua-content-item aria-label='Fields' }
 #### number .charger
 {: aria-label='Fields' }
 
 ___
 ### power
-{: #power aria-label='Fields' }
+{: #power .lua-content-item aria-label='Fields' }
 #### [ShieldPower](../Hyperspace/ShieldPower) .power
 {: aria-label='Fields' }
 
 ___
 ### superTimer
-{: #superTimer aria-label='Fields' }
+{: #superTimer .lua-content-item aria-label='Fields' }
 #### number .superTimer
 {: aria-label='Fields' }
 

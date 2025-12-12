@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### ActivatedPowerDefinition ()
-{: #ActivatedPowerDefinition aria-label='Constructors' }
+{: #ActivatedPowerDefinition .lua-content-item aria-label='Constructors' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) ActivatedPowerDefinition ()
 {: aria-label='Constructors' }
 
@@ -19,15 +19,15 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### AddNamedDefinition ()
-{: #AddNamedDefinition aria-label='StaticMethods' }
+{: #AddNamedDefinition .lua-content-item aria-label='StaticMethods' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .AddNamedDefinition (string _name, [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) copyDef)
 {: aria-label='StaticMethods' }
 
 ___
 ### GetPowerByName ()
-{: #GetPowerByName aria-label='StaticMethods' }
+{: #GetPowerByName .lua-content-item aria-label='StaticMethods' }
 #### [ActivatedPowerDefinition](../Hyperspace/ActivatedPowerDefinition) .GetPowerByName (string _name)
 {: aria-label='StaticMethods' }
 
@@ -35,33 +35,33 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### AssignActivateGroup ()
-{: #AssignActivateGroup aria-label='Methods' }
+{: #AssignActivateGroup .lua-content-item aria-label='Methods' }
 #### void :AssignActivateGroup (string _name)
 {: aria-label='Methods' }
 
 ___
 ### AssignGroup ()
-{: #AssignGroup aria-label='Methods' }
+{: #AssignGroup .lua-content-item aria-label='Methods' }
 #### void :AssignGroup (string _name)
 {: aria-label='Methods' }
 
 ___
 ### AssignIndex ()
-{: #AssignIndex aria-label='Methods' }
+{: #AssignIndex .lua-content-item aria-label='Methods' }
 #### void :AssignIndex ()
 {: aria-label='Methods' }
 
 ___
 ### AssignName ()
-{: #AssignName aria-label='Methods' }
+{: #AssignName .lua-content-item aria-label='Methods' }
 #### void :AssignName (string _name)
 {: aria-label='Methods' }
 
 ___
 ### AssignReplaceGroup ()
-{: #AssignReplaceGroup aria-label='Methods' }
+{: #AssignReplaceGroup .lua-content-item aria-label='Methods' }
 #### void :AssignReplaceGroup (string _name)
 {: aria-label='Methods' }
 
@@ -69,300 +69,300 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### activateGroupIndex (Read-only)
-{: #activateGroupIndex aria-label='Fields' }
+{: #activateGroupIndex .lua-content-item aria-label='Fields' }
 #### uint .activateGroupIndex
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### activateReadyEnemies
-{: #activateReadyEnemies aria-label='Fields' }
+{: #activateReadyEnemies .lua-content-item aria-label='Fields' }
 #### boolean .activateReadyEnemies
 {: aria-label='Fields' }
 
 ___
 ### activateWhenReady
-{: #activateWhenReady aria-label='Fields' }
+{: #activateWhenReady .lua-content-item aria-label='Fields' }
 #### boolean .activateWhenReady
 {: aria-label='Fields' }
 
 ___
 ### animFrame
-{: #animFrame aria-label='Fields' }
+{: #animFrame .lua-content-item aria-label='Fields' }
 #### integer .animFrame
 {: aria-label='Fields' }
 
 ___
 ### buttonLabel
-{: #buttonLabel aria-label='Fields' }
+{: #buttonLabel .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .buttonLabel
 {: aria-label='Fields' }
 
 ___
 ### chargeReq
-{: #chargeReq aria-label='Fields' }
+{: #chargeReq .lua-content-item aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .chargeReq
 {: aria-label='Fields' }
 
 ___
 ### chargesPerJump
-{: #chargesPerJump aria-label='Fields' }
+{: #chargesPerJump .lua-content-item aria-label='Fields' }
 #### integer .chargesPerJump
 {: aria-label='Fields' }
 
 ___
 ### cooldown
-{: #cooldown aria-label='Fields' }
+{: #cooldown .lua-content-item aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### cooldownColor
-{: #cooldownColor aria-label='Fields' }
+{: #cooldownColor .lua-content-item aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .cooldownColor
 {: aria-label='Fields' }
 
 ___
 ### crewHealth
-{: #crewHealth aria-label='Fields' }
+{: #crewHealth .lua-content-item aria-label='Fields' }
 #### number .crewHealth
 {: aria-label='Fields' }
 
 ___
 ### crewSpawns
-{: #crewSpawns aria-label='Fields' }
+{: #crewSpawns .lua-content-item aria-label='Fields' }
 #### vector\<CrewSpawn\> .crewSpawns
 {: aria-label='Fields' }
 
 ___
 ### damage
-{: #damage aria-label='Fields' }
+{: #damage .lua-content-item aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
 ___
 ### disabledCharges
-{: #disabledCharges aria-label='Fields' }
+{: #disabledCharges .lua-content-item aria-label='Fields' }
 #### integer .disabledCharges
 {: aria-label='Fields' }
 
 ___
 ### disabledCooldown
-{: #disabledCooldown aria-label='Fields' }
+{: #disabledCooldown .lua-content-item aria-label='Fields' }
 #### integer .disabledCooldown
 {: aria-label='Fields' }
 
 ___
 ### effectAnim
-{: #effectAnim aria-label='Fields' }
+{: #effectAnim .lua-content-item aria-label='Fields' }
 #### string .effectAnim
 {: aria-label='Fields' }
 
 ___
 ### effectPostAnim
-{: #effectPostAnim aria-label='Fields' }
+{: #effectPostAnim .lua-content-item aria-label='Fields' }
 #### string .effectPostAnim
 {: aria-label='Fields' }
 
 ___
 ### effectSounds
-{: #effectSounds aria-label='Fields' }
+{: #effectSounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .effectSounds
 {: aria-label='Fields' }
 
 ___
 ### effectSoundsEnemy
-{: #effectSoundsEnemy aria-label='Fields' }
+{: #effectSoundsEnemy .lua-content-item aria-label='Fields' }
 #### boolean .effectSoundsEnemy
 {: aria-label='Fields' }
 
 ___
 ### enemyHealth
-{: #enemyHealth aria-label='Fields' }
+{: #enemyHealth .lua-content-item aria-label='Fields' }
 #### number .enemyHealth
 {: aria-label='Fields' }
 
 ___
 ### enemyReq
-{: #enemyReq aria-label='Fields' }
+{: #enemyReq .lua-content-item aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .enemyReq
 {: aria-label='Fields' }
 
 ___
 ### event
-{: #event aria-label='Fields' }
+{: #event .lua-content-item aria-label='Fields' }
 #### array\<string, 2\> .event
 {: aria-label='Fields' }
 
 ___
 ### followCrew
-{: #followCrew aria-label='Fields' }
+{: #followCrew .lua-content-item aria-label='Fields' }
 #### boolean .followCrew
 {: aria-label='Fields' }
 
 ___
 ### hasSpecialPower
-{: #hasSpecialPower aria-label='Fields' }
+{: #hasSpecialPower .lua-content-item aria-label='Fields' }
 #### boolean .hasSpecialPower
 {: aria-label='Fields' }
 
 ___
 ### hasTemporaryPower
-{: #hasTemporaryPower aria-label='Fields' }
+{: #hasTemporaryPower .lua-content-item aria-label='Fields' }
 #### boolean .hasTemporaryPower
 {: aria-label='Fields' }
 
 ___
 ### hideButton
-{: #hideButton aria-label='Fields' }
+{: #hideButton .lua-content-item aria-label='Fields' }
 #### boolean .hideButton
 {: aria-label='Fields' }
 
 ___
 ### hideCharges
-{: #hideCharges aria-label='Fields' }
+{: #hideCharges .lua-content-item aria-label='Fields' }
 #### boolean .hideCharges
 {: aria-label='Fields' }
 
 ___
 ### hideCooldown
-{: #hideCooldown aria-label='Fields' }
+{: #hideCooldown .lua-content-item aria-label='Fields' }
 #### boolean .hideCooldown
 {: aria-label='Fields' }
 
 ___
 ### initialCharges
-{: #initialCharges aria-label='Fields' }
+{: #initialCharges .lua-content-item aria-label='Fields' }
 #### integer .initialCharges
 {: aria-label='Fields' }
 
 ___
 ### initialCooldownFraction
-{: #initialCooldownFraction aria-label='Fields' }
+{: #initialCooldownFraction .lua-content-item aria-label='Fields' }
 #### number .initialCooldownFraction
 {: aria-label='Fields' }
 
 ___
 ### jumpCooldown
-{: #jumpCooldown aria-label='Fields' }
+{: #jumpCooldown .lua-content-item aria-label='Fields' }
 #### integer .jumpCooldown
 {: aria-label='Fields' }
 
 ___
 ### name (Read-only)
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### onDeath
-{: #onDeath aria-label='Fields' }
+{: #onDeath .lua-content-item aria-label='Fields' }
 #### integer .onDeath
 {: aria-label='Fields' }
 
 ___
 ### onHotkey
-{: #onHotkey aria-label='Fields' }
+{: #onHotkey .lua-content-item aria-label='Fields' }
 #### integer .onHotkey
 {: aria-label='Fields' }
 
 ___
 ### playerReq
-{: #playerReq aria-label='Fields' }
+{: #playerReq .lua-content-item aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .playerReq
 {: aria-label='Fields' }
 
 ___
 ### powerCharges
-{: #powerCharges aria-label='Fields' }
+{: #powerCharges .lua-content-item aria-label='Fields' }
 #### integer .powerCharges
 {: aria-label='Fields' }
 
 ___
 ### powerResources
-{: #powerResources aria-label='Fields' }
+{: #powerResources .lua-content-item aria-label='Fields' }
 #### vector\<[PowerResourceDefinition](../Hyperspace/PowerResourceDefinition)\> .powerResources
 {: aria-label='Fields' }
 
 ___
 ### replaceGroupIndex (Read-only)
-{: #replaceGroupIndex aria-label='Fields' }
+{: #replaceGroupIndex .lua-content-item aria-label='Fields' }
 #### uint .replaceGroupIndex
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### respawnCharges
-{: #respawnCharges aria-label='Fields' }
+{: #respawnCharges .lua-content-item aria-label='Fields' }
 #### integer .respawnCharges
 {: aria-label='Fields' }
 
 ___
 ### roomStatBoosts
-{: #roomStatBoosts aria-label='Fields' }
+{: #roomStatBoosts .lua-content-item aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .roomStatBoosts
 {: aria-label='Fields' }
 
 ___
 ### selfHealth
-{: #selfHealth aria-label='Fields' }
+{: #selfHealth .lua-content-item aria-label='Fields' }
 #### number .selfHealth
 {: aria-label='Fields' }
 
 ___
 ### shipFriendlyFire
-{: #shipFriendlyFire aria-label='Fields' }
+{: #shipFriendlyFire .lua-content-item aria-label='Fields' }
 #### boolean .shipFriendlyFire
 {: aria-label='Fields' }
 
 ___
 ### sortOrder
-{: #sortOrder aria-label='Fields' }
+{: #sortOrder .lua-content-item aria-label='Fields' }
 #### integer .sortOrder
 {: aria-label='Fields' }
 
 ___
 ### sounds
-{: #sounds aria-label='Fields' }
+{: #sounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .sounds
 {: aria-label='Fields' }
 
 ___
 ### soundsEnemy
-{: #soundsEnemy aria-label='Fields' }
+{: #soundsEnemy .lua-content-item aria-label='Fields' }
 #### boolean .soundsEnemy
 {: aria-label='Fields' }
 
 ___
 ### statBoosts
-{: #statBoosts aria-label='Fields' }
+{: #statBoosts .lua-content-item aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
 {: aria-label='Fields' }
 
 ___
 ### tempPower
-{: #tempPower aria-label='Fields' }
+{: #tempPower .lua-content-item aria-label='Fields' }
 #### [TemporaryPowerDefinition](../Hyperspace/TemporaryPowerDefinition) .tempPower
 {: aria-label='Fields' }
 
 ___
 ### tooltip
-{: #tooltip aria-label='Fields' }
+{: #tooltip .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .tooltip
 {: aria-label='Fields' }
 
 ___
 ### transformRace
-{: #transformRace aria-label='Fields' }
+{: #transformRace .lua-content-item aria-label='Fields' }
 #### string .transformRace
 {: aria-label='Fields' }
 
 ___
 ### win
-{: #win aria-label='Fields' }
+{: #win .lua-content-item aria-label='Fields' }
 #### boolean .win
 {: aria-label='Fields' }
 

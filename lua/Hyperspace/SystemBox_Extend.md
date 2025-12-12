@@ -12,9 +12,9 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### orig (Read-only)
-{: #orig aria-label='Fields' }
+{: #orig .lua-content-item aria-label='Fields' }
 #### [SystemBox](../Hyperspace/SystemBox) .orig
 {: aria-label='Fields' }
 **Read-only**
@@ -22,7 +22,7 @@ The SystemBox associated with this SystemBox_Extend.
 
 ___
 ### xOffset
-{: #xOffset aria-label='Fields' }
+{: #xOffset .lua-content-item aria-label='Fields' }
 #### integer .xOffset
 {: aria-label='Fields' }
 The offset from this SystemBox to the next in the UI.

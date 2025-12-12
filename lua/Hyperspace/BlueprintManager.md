@@ -11,39 +11,39 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetAugmentBlueprint ()
-{: #GetAugmentBlueprint aria-label='Methods' }
+{: #GetAugmentBlueprint .lua-content-item aria-label='Methods' }
 #### [AugmentBlueprint](../Hyperspace/AugmentBlueprint) :GetAugmentBlueprint (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetBlueprintList ()
-{: #GetBlueprintList aria-label='Methods' }
+{: #GetBlueprintList .lua-content-item aria-label='Methods' }
 #### vector\<string\> :GetBlueprintList (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetCrewBlueprint ()
-{: #GetCrewBlueprint aria-label='Methods' }
+{: #GetCrewBlueprint .lua-content-item aria-label='Methods' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) :GetCrewBlueprint (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetDroneBlueprint ()
-{: #GetDroneBlueprint aria-label='Methods' }
+{: #GetDroneBlueprint .lua-content-item aria-label='Methods' }
 #### [DroneBlueprint](../Hyperspace/DroneBlueprint) :GetDroneBlueprint (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetShipBlueprint ()
-{: #GetShipBlueprint aria-label='Methods' }
+{: #GetShipBlueprint .lua-content-item aria-label='Methods' }
 #### [ShipBlueprint](../Hyperspace/ShipBlueprint) :GetShipBlueprint (string name, integer sector)
 {: aria-label='Methods' }
 
 ___
 ### GetWeaponBlueprint ()
-{: #GetWeaponBlueprint aria-label='Methods' }
+{: #GetWeaponBlueprint .lua-content-item aria-label='Methods' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) :GetWeaponBlueprint (string name)
 {: aria-label='Methods' }
 

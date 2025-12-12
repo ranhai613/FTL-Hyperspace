@@ -12,63 +12,63 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### baseRarity
-{: #baseRarity aria-label='Fields' }
+{: #baseRarity .lua-content-item aria-label='Fields' }
 #### integer .baseRarity
 {: aria-label='Fields' }
 
 ___
 ### bp
-{: #bp aria-label='Fields' }
+{: #bp .lua-content-item aria-label='Fields' }
 #### integer .bp
 {: aria-label='Fields' }
 
 ___
 ### cost
-{: #cost aria-label='Fields' }
+{: #cost .lua-content-item aria-label='Fields' }
 #### integer .cost
 {: aria-label='Fields' }
 
 ___
 ### description
-{: #description aria-label='Fields' }
+{: #description .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .description
 {: aria-label='Fields' }
 
 ___
 ### locked
-{: #locked aria-label='Fields' }
+{: #locked .lua-content-item aria-label='Fields' }
 #### boolean .locked
 {: aria-label='Fields' }
 
 ___
 ### rarity
-{: #rarity aria-label='Fields' }
+{: #rarity .lua-content-item aria-label='Fields' }
 #### integer .rarity
 {: aria-label='Fields' }
 
 ___
 ### shortTitle
-{: #shortTitle aria-label='Fields' }
+{: #shortTitle .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .shortTitle
 {: aria-label='Fields' }
 
 ___
 ### tip
-{: #tip aria-label='Fields' }
+{: #tip .lua-content-item aria-label='Fields' }
 #### string .tip
 {: aria-label='Fields' }
 
 ___
 ### title
-{: #title aria-label='Fields' }
+{: #title .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .title
 {: aria-label='Fields' }
 
 ___
 ### tooltip
-{: #tooltip aria-label='Fields' }
+{: #tooltip .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .tooltip
 {: aria-label='Fields' }
 

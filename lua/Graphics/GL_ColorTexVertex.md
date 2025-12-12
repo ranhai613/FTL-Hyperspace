@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### GL_ColorTexVertex ()
-{: #GL_ColorTexVertex aria-label='Constructors' }
+{: #GL_ColorTexVertex .lua-content-item aria-label='Constructors' }
 #### [GL_ColorTexVertex](../Graphics/GL_ColorTexVertex) GL_ColorTexVertex ()
 {: aria-label='Constructors' }
 
@@ -21,51 +21,51 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### a
-{: #a aria-label='Fields' }
+{: #a .lua-content-item aria-label='Fields' }
 #### number .a
 {: aria-label='Fields' }
 
 ___
 ### b
-{: #b aria-label='Fields' }
+{: #b .lua-content-item aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
 ___
 ### g
-{: #g aria-label='Fields' }
+{: #g .lua-content-item aria-label='Fields' }
 #### number .g
 {: aria-label='Fields' }
 
 ___
 ### r
-{: #r aria-label='Fields' }
+{: #r .lua-content-item aria-label='Fields' }
 #### number .r
 {: aria-label='Fields' }
 
 ___
 ### u
-{: #u aria-label='Fields' }
+{: #u .lua-content-item aria-label='Fields' }
 #### number .u
 {: aria-label='Fields' }
 
 ___
 ### v
-{: #v aria-label='Fields' }
+{: #v .lua-content-item aria-label='Fields' }
 #### number .v
 {: aria-label='Fields' }
 
 ___
 ### x
-{: #x aria-label='Fields' }
+{: #x .lua-content-item aria-label='Fields' }
 #### number .x
 {: aria-label='Fields' }
 
 ___
 ### y
-{: #y aria-label='Fields' }
+{: #y .lua-content-item aria-label='Fields' }
 #### number .y
 {: aria-label='Fields' }
 

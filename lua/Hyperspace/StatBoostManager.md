@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### StatBoostManager ()
-{: #StatBoostManager aria-label='Constructors' }
+{: #StatBoostManager .lua-content-item aria-label='Constructors' }
 #### [StatBoostManager](../Hyperspace/StatBoostManager) StatBoostManager ()
 {: aria-label='Constructors' }
 
@@ -19,9 +19,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### GetInstance ()
-{: #GetInstance aria-label='StaticMethods' }
+{: #GetInstance .lua-content-item aria-label='StaticMethods' }
 #### [StatBoostManager](../Hyperspace/StatBoostManager) .GetInstance ()
 {: aria-label='StaticMethods' }
 Returns the main instance of `StatBoostManager`. Always use this to access any members and methods belonging to this class.
@@ -30,9 +30,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### CreateTimedAugmentBoost ()
-{: #CreateTimedAugmentBoost aria-label='Methods' }
+{: #CreateTimedAugmentBoost .lua-content-item aria-label='Methods' }
 #### void :CreateTimedAugmentBoost ([StatBoost](../Hyperspace/StatBoost) unknown, [CrewMember](../Hyperspace/CrewMember) unknown)
 {: aria-label='Methods' }
 

@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### AnimationTracker ()
-{: #AnimationTracker aria-label='Constructors' }
+{: #AnimationTracker .lua-content-item aria-label='Constructors' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) AnimationTracker ()
 {: aria-label='Constructors' }
 
@@ -20,45 +20,45 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetAlphaLevel ()
-{: #GetAlphaLevel aria-label='Methods' }
+{: #GetAlphaLevel .lua-content-item aria-label='Methods' }
 #### number :GetAlphaLevel (boolean reverse)
 {: aria-label='Methods' }
 
 ___
 ### Progress ()
-{: #Progress aria-label='Methods' }
+{: #Progress .lua-content-item aria-label='Methods' }
 #### number :Progress (number speed)
 {: aria-label='Methods' }
 
 ___
 ### SetLoop ()
-{: #SetLoop aria-label='Methods' }
+{: #SetLoop .lua-content-item aria-label='Methods' }
 #### void :SetLoop (boolean loop, number loopDelay)
 {: aria-label='Methods' }
 
 ___
 ### SetProgress ()
-{: #SetProgress aria-label='Methods' }
+{: #SetProgress .lua-content-item aria-label='Methods' }
 #### void :SetProgress (number time)
 {: aria-label='Methods' }
 
 ___
 ### Start ()
-{: #Start aria-label='Methods' }
+{: #Start .lua-content-item aria-label='Methods' }
 #### void :Start (number time)
 {: aria-label='Methods' }
 
 ___
 ### StartReverse ()
-{: #StartReverse aria-label='Methods' }
+{: #StartReverse .lua-content-item aria-label='Methods' }
 #### void :StartReverse (number time)
 {: aria-label='Methods' }
 
 ___
 ### Stop ()
-{: #Stop aria-label='Methods' }
+{: #Stop .lua-content-item aria-label='Methods' }
 #### void :Stop (boolean resetTime)
 {: aria-label='Methods' }
 
@@ -66,51 +66,51 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### currentDelay
-{: #currentDelay aria-label='Fields' }
+{: #currentDelay .lua-content-item aria-label='Fields' }
 #### number .currentDelay
 {: aria-label='Fields' }
 
 ___
 ### current_time
-{: #current_time aria-label='Fields' }
+{: #current_time .lua-content-item aria-label='Fields' }
 #### number .current_time
 {: aria-label='Fields' }
 
 ___
 ### done
-{: #done aria-label='Fields' }
+{: #done .lua-content-item aria-label='Fields' }
 #### boolean .done
 {: aria-label='Fields' }
 
 ___
 ### loop
-{: #loop aria-label='Fields' }
+{: #loop .lua-content-item aria-label='Fields' }
 #### boolean .loop
 {: aria-label='Fields' }
 
 ___
 ### loopDelay
-{: #loopDelay aria-label='Fields' }
+{: #loopDelay .lua-content-item aria-label='Fields' }
 #### number .loopDelay
 {: aria-label='Fields' }
 
 ___
 ### reverse
-{: #reverse aria-label='Fields' }
+{: #reverse .lua-content-item aria-label='Fields' }
 #### boolean .reverse
 {: aria-label='Fields' }
 
 ___
 ### running
-{: #running aria-label='Fields' }
+{: #running .lua-content-item aria-label='Fields' }
 #### boolean .running
 {: aria-label='Fields' }
 
 ___
 ### time
-{: #time aria-label='Fields' }
+{: #time .lua-content-item aria-label='Fields' }
 #### number .time
 {: aria-label='Fields' }
 

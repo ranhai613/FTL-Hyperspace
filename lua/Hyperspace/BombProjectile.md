@@ -11,9 +11,9 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### BombProjectile ()
-{: #BombProjectile aria-label='Constructors' }
+{: #BombProjectile .lua-content-item aria-label='Constructors' }
 #### [BombProjectile](../Hyperspace/BombProjectile) BombProjectile ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [Projectile](Projectile)
@@ -38,9 +38,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Collideable](Collideable)
@@ -90,8 +90,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Projectile](Projectile)
@@ -130,31 +130,31 @@ ___
 </details>
 ___
 ### bMissed
-{: #bMissed aria-label='Fields' }
+{: #bMissed .lua-content-item aria-label='Fields' }
 #### boolean .bMissed
 {: aria-label='Fields' }
 
 ___
 ### bSuperShield
-{: #bSuperShield aria-label='Fields' }
+{: #bSuperShield .lua-content-item aria-label='Fields' }
 #### boolean .bSuperShield
 {: aria-label='Fields' }
 
 ___
 ### explosiveDelay
-{: #explosiveDelay aria-label='Fields' }
+{: #explosiveDelay .lua-content-item aria-label='Fields' }
 #### number .explosiveDelay
 {: aria-label='Fields' }
 
 ___
 ### missMessage
-{: #missMessage aria-label='Fields' }
+{: #missMessage .lua-content-item aria-label='Fields' }
 #### DamageMessage .missMessage
 {: aria-label='Fields' }
 
 ___
 ### superShieldBypass
-{: #superShieldBypass aria-label='Fields' }
+{: #superShieldBypass .lua-content-item aria-label='Fields' }
 #### boolean .superShieldBypass
 {: aria-label='Fields' }
 

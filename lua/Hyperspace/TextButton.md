@@ -11,9 +11,9 @@ Extends: [GenericButton](../Hyperspace/GenericButton)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### TextButton ()
-{: #TextButton aria-label='Constructors' }
+{: #TextButton .lua-content-item aria-label='Constructors' }
 #### [TextButton](../Hyperspace/TextButton) TextButton ()
 {: aria-label='Constructors' }
 
@@ -23,8 +23,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [GenericButton](GenericButton)
@@ -44,19 +44,19 @@ ___
 </details>
 ___
 ### OnInit ()
-{: #OnInit aria-label='Methods' }
+{: #OnInit .lua-content-item aria-label='Methods' }
 #### void :OnInit ([Point](../Hyperspace/Point) pos, [Point](../Hyperspace/Point) size, integer cornerInset, [TextString](../Hyperspace/TextString) buttonLabel, integer font)
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: #OnRender aria-label='Methods' }
+{: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
 ___
 ### ResetPrimitives ()
-{: #ResetPrimitives aria-label='Methods' }
+{: #ResetPrimitives .lua-content-item aria-label='Methods' }
 #### void :ResetPrimitives ()
 {: aria-label='Methods' }
 
@@ -64,9 +64,9 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [GenericButton](GenericButton)

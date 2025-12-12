@@ -15,69 +15,69 @@ Subclasses: [Button](../Hyperspace/Button), [TextButton](../Hyperspace/TextButto
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### MouseMove ()
-{: #MouseMove aria-label='Methods' }
+{: #MouseMove .lua-content-item aria-label='Methods' }
 #### void :MouseMove (integer x, integer y, boolean silent)
 {: aria-label='Methods' }
 
 ___
 ### OnClick ()
-{: #OnClick aria-label='Methods' }
+{: #OnClick .lua-content-item aria-label='Methods' }
 #### void :OnClick ()
 {: aria-label='Methods' }
 
 ___
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: #OnRender aria-label='Methods' }
+{: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
 ___
 ### OnRightClick ()
-{: #OnRightClick aria-label='Methods' }
+{: #OnRightClick .lua-content-item aria-label='Methods' }
 #### void :OnRightClick ()
 {: aria-label='Methods' }
 
 ___
 ### OnTouch ()
-{: #OnTouch aria-label='Methods' }
+{: #OnTouch .lua-content-item aria-label='Methods' }
 #### void :OnTouch ()
 {: aria-label='Methods' }
 
 ___
 ### Reset ()
-{: #Reset aria-label='Methods' }
+{: #Reset .lua-content-item aria-label='Methods' }
 #### void :Reset ()
 {: aria-label='Methods' }
 
 ___
 ### ResetPrimitives ()
-{: #ResetPrimitives aria-label='Methods' }
+{: #ResetPrimitives .lua-content-item aria-label='Methods' }
 #### void :ResetPrimitives ()
 {: aria-label='Methods' }
 
 ___
 ### SetActive ()
-{: #SetActive aria-label='Methods' }
+{: #SetActive .lua-content-item aria-label='Methods' }
 #### void :SetActive (boolean active)
 {: aria-label='Methods' }
 
 ___
 ### SetHitBox ()
-{: #SetHitBox aria-label='Methods' }
+{: #SetHitBox .lua-content-item aria-label='Methods' }
 #### void :SetHitBox ([Rect](../Hyperspace/Rect) rect)
 {: aria-label='Methods' }
 
 ___
 ### SetLocation ()
-{: #SetLocation aria-label='Methods' }
+{: #SetLocation .lua-content-item aria-label='Methods' }
 #### void :SetLocation ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
@@ -85,83 +85,83 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### activeTouch
-{: #activeTouch aria-label='Fields' }
+{: #activeTouch .lua-content-item aria-label='Fields' }
 #### integer .activeTouch
 {: aria-label='Fields' }
 
 ___
 ### allowAnyTouch
-{: #allowAnyTouch aria-label='Fields' }
+{: #allowAnyTouch .lua-content-item aria-label='Fields' }
 #### boolean .allowAnyTouch
 {: aria-label='Fields' }
 
 ___
 ### bActivated
-{: #bActivated aria-label='Fields' }
+{: #bActivated .lua-content-item aria-label='Fields' }
 #### boolean .bActivated
 {: aria-label='Fields' }
 
 ___
 ### bActive
-{: #bActive aria-label='Fields' }
+{: #bActive .lua-content-item aria-label='Fields' }
 #### boolean .bActive
 {: aria-label='Fields' }
 
 ___
 ### bFlashing
-{: #bFlashing aria-label='Fields' }
+{: #bFlashing .lua-content-item aria-label='Fields' }
 #### boolean .bFlashing
 {: aria-label='Fields' }
 
 ___
 ### bHover
-{: #bHover aria-label='Fields' }
+{: #bHover .lua-content-item aria-label='Fields' }
 #### boolean .bHover
 {: aria-label='Fields' }
 
 ___
 ### bRenderOff
-{: #bRenderOff aria-label='Fields' }
+{: #bRenderOff .lua-content-item aria-label='Fields' }
 #### boolean .bRenderOff
 {: aria-label='Fields' }
 
 ___
 ### bRenderSelected
-{: #bRenderSelected aria-label='Fields' }
+{: #bRenderSelected .lua-content-item aria-label='Fields' }
 #### boolean .bRenderSelected
 {: aria-label='Fields' }
 
 ___
 ### bSelected
-{: #bSelected aria-label='Fields' }
+{: #bSelected .lua-content-item aria-label='Fields' }
 #### boolean .bSelected
 {: aria-label='Fields' }
 
 ___
 ### flashing
-{: #flashing aria-label='Fields' }
+{: #flashing .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashing
 {: aria-label='Fields' }
 
 ___
 ### hitbox (Read-only)
-{: #hitbox aria-label='Fields' }
+{: #hitbox .lua-content-item aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .hitbox
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ___
 ### position (Read-only)
-{: #position aria-label='Fields' }
+{: #position .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.
 
 ___
 ### touchSelectable
-{: #touchSelectable aria-label='Fields' }
+{: #touchSelectable .lua-content-item aria-label='Fields' }
 #### boolean .touchSelectable
 {: aria-label='Fields' }
 

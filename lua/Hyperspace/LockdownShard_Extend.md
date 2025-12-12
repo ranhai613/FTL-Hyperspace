@@ -12,9 +12,9 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### anim (Read-only)
-{: #anim aria-label='Fields' }
+{: #anim .lua-content-item aria-label='Fields' }
 #### string .anim
 {: aria-label='Fields' }
 **Read-Only**
@@ -22,21 +22,21 @@ The name of the animation for this shard. Used for restoring animations on save/
 
 ___
 ### canDilate
-{: #canDilate aria-label='Fields' }
+{: #canDilate .lua-content-item aria-label='Fields' }
 #### boolean .canDilate
 {: aria-label='Fields' }
 If this shard is affected by time dilation.
 
 ___
 ### color
-{: #color aria-label='Fields' }
+{: #color .lua-content-item aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 The color that this shard is tinted.
 
 ___
 ### door (Read-only)
-{: #door aria-label='Fields' }
+{: #door .lua-content-item aria-label='Fields' }
 #### [Door](../Hyperspace/Door) .door
 {: aria-label='Fields' }
 **Read-Only**
@@ -44,7 +44,7 @@ The door that this shard is locking down, if any. Nil if no associated door.
 
 ___
 ### health
-{: #health aria-label='Fields' }
+{: #health .lua-content-item aria-label='Fields' }
 #### integer .health
 {: aria-label='Fields' }
 The current health of the shard. Is reduced by 1 for each hit from a crew member with base door damage. Only matters for door shards.

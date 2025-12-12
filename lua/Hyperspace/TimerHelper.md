@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### TimerHelper ()
-{: #TimerHelper aria-label='Constructors' }
+{: #TimerHelper .lua-content-item aria-label='Constructors' }
 #### [TimerHelper](../Hyperspace/TimerHelper) TimerHelper (boolean isLoop=false)
 {: aria-label='Constructors' }
 
@@ -20,51 +20,51 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### Done ()
-{: #Done aria-label='Methods' }
+{: #Done .lua-content-item aria-label='Methods' }
 #### boolean :Done ()
 {: aria-label='Methods' }
 
 ___
 ### ResetMinMax ()
-{: #ResetMinMax aria-label='Methods' }
+{: #ResetMinMax .lua-content-item aria-label='Methods' }
 #### void :ResetMinMax (integer min, integer max)
 {: aria-label='Methods' }
 
 ___
 ### Running ()
-{: #Running aria-label='Methods' }
+{: #Running .lua-content-item aria-label='Methods' }
 #### boolean :Running ()
 {: aria-label='Methods' }
 
 ___
 ### SetMaxTime ()
-{: #SetMaxTime aria-label='Methods' }
+{: #SetMaxTime .lua-content-item aria-label='Methods' }
 #### void :SetMaxTime (number max)
 {: aria-label='Methods' }
 
 ___
 ### Start ()
-{: #Start aria-label='Methods' }
+{: #Start .lua-content-item aria-label='Methods' }
 #### void :Start (integer goal)
 {: aria-label='Methods' }
 
 ___
 ### Start_Float ()
-{: #Start_Float aria-label='Methods' }
+{: #Start_Float .lua-content-item aria-label='Methods' }
 #### void :Start_Float (number goal)
 {: aria-label='Methods' }
 
 ___
 ### Stop ()
-{: #Stop aria-label='Methods' }
+{: #Stop .lua-content-item aria-label='Methods' }
 #### void :Stop ()
 {: aria-label='Methods' }
 
 ___
 ### Update ()
-{: #Update aria-label='Methods' }
+{: #Update .lua-content-item aria-label='Methods' }
 #### void :Update ()
 {: aria-label='Methods' }
 
@@ -72,39 +72,39 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### currGoal
-{: #currGoal aria-label='Fields' }
+{: #currGoal .lua-content-item aria-label='Fields' }
 #### number .currGoal
 {: aria-label='Fields' }
 
 ___
 ### currTime
-{: #currTime aria-label='Fields' }
+{: #currTime .lua-content-item aria-label='Fields' }
 #### number .currTime
 {: aria-label='Fields' }
 
 ___
 ### loop
-{: #loop aria-label='Fields' }
+{: #loop .lua-content-item aria-label='Fields' }
 #### boolean .loop
 {: aria-label='Fields' }
 
 ___
 ### maxTime
-{: #maxTime aria-label='Fields' }
+{: #maxTime .lua-content-item aria-label='Fields' }
 #### integer .maxTime
 {: aria-label='Fields' }
 
 ___
 ### minTime
-{: #minTime aria-label='Fields' }
+{: #minTime .lua-content-item aria-label='Fields' }
 #### integer .minTime
 {: aria-label='Fields' }
 
 ___
 ### running
-{: #running aria-label='Fields' }
+{: #running .lua-content-item aria-label='Fields' }
 #### boolean .running
 {: aria-label='Fields' }
 

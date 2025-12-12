@@ -14,9 +14,9 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -32,8 +32,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -47,61 +47,61 @@ ___
 </details>
 ___
 ### combatIcon (Read-only)
-{: #combatIcon aria-label='Fields' }
+{: #combatIcon .lua-content-item aria-label='Fields' }
 #### string .combatIcon
 {: aria-label='Fields' }
 
 ___
 ### cooldown (Read-only)
-{: #cooldown aria-label='Fields' }
+{: #cooldown .lua-content-item aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### dodge (Read-only)
-{: #dodge aria-label='Fields' }
+{: #dodge .lua-content-item aria-label='Fields' }
 #### integer .dodge
 {: aria-label='Fields' }
 
 ___
 ### droneImage (Read-only)
-{: #droneImage aria-label='Fields' }
+{: #droneImage .lua-content-item aria-label='Fields' }
 #### string .droneImage
 {: aria-label='Fields' }
 
 ___
 ### level (Read-only)
-{: #level aria-label='Fields' }
+{: #level .lua-content-item aria-label='Fields' }
 #### integer .level
 {: aria-label='Fields' }
 
 ___
 ### power (Read-only)
-{: #power aria-label='Fields' }
+{: #power .lua-content-item aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
 ___
 ### speed (Read-only)
-{: #speed aria-label='Fields' }
+{: #speed .lua-content-item aria-label='Fields' }
 #### integer .speed
 {: aria-label='Fields' }
 
 ___
 ### targetType (Read-only)
-{: #targetType aria-label='Fields' }
+{: #targetType .lua-content-item aria-label='Fields' }
 #### integer .targetType
 {: aria-label='Fields' }
 
 ___
 ### typeName (Read-only)
-{: #typeName aria-label='Fields' }
+{: #typeName .lua-content-item aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
 ___
 ### weaponBlueprint (Read-only)
-{: #weaponBlueprint aria-label='Fields' }
+{: #weaponBlueprint .lua-content-item aria-label='Fields' }
 #### string .weaponBlueprint
 {: aria-label='Fields' }
 

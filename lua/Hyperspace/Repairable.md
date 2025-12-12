@@ -17,8 +17,8 @@ Subclasses: [OuterHull](../Hyperspace/OuterHull), [Spreadable](../Hyperspace/Spr
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Selectable](Selectable)
@@ -30,43 +30,43 @@ Subclasses: [OuterHull](../Hyperspace/OuterHull), [Spreadable](../Hyperspace/Spr
 </details>
 ___
 ### fDamage
-{: #fDamage aria-label='Fields' }
+{: #fDamage .lua-content-item aria-label='Fields' }
 #### number .fDamage
 {: aria-label='Fields' }
 
 ___
 ### fMaxDamage
-{: #fMaxDamage aria-label='Fields' }
+{: #fMaxDamage .lua-content-item aria-label='Fields' }
 #### number .fMaxDamage
 {: aria-label='Fields' }
 
 ___
 ### iRepairCount
-{: #iRepairCount aria-label='Fields' }
+{: #iRepairCount .lua-content-item aria-label='Fields' }
 #### integer .iRepairCount
 {: aria-label='Fields' }
 
 ___
 ### name
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### pLoc
-{: #pLoc aria-label='Fields' }
+{: #pLoc .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .pLoc
 {: aria-label='Fields' }
 
 ___
 ### roomId
-{: #roomId aria-label='Fields' }
+{: #roomId .lua-content-item aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### shipObj
-{: #shipObj aria-label='Fields' }
+{: #shipObj .lua-content-item aria-label='Fields' }
 #### [ShipObject](../Hyperspace/ShipObject) .shipObj
 {: aria-label='Fields' }
 

@@ -13,9 +13,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -32,8 +32,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -65,8 +65,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -91,13 +91,13 @@ ___
 </details>
 ___
 ### SetArmed ()
-{: #SetArmed aria-label='Methods' }
+{: #SetArmed .lua-content-item aria-label='Methods' }
 #### void :SetArmed (integer armed)
 {: aria-label='Methods' }
 
 ___
 ### SetHackingLevel ()
-{: #SetHackingLevel aria-label='Methods' }
+{: #SetHackingLevel .lua-content-item aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
 {: aria-label='Methods' }
 
@@ -105,8 +105,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -167,55 +167,55 @@ ___
 </details>
 ___
 ### bBlocked
-{: #bBlocked aria-label='Fields' }
+{: #bBlocked .lua-content-item aria-label='Fields' }
 #### boolean .bBlocked
 {: aria-label='Fields' }
 
 ___
 ### bCanUse
-{: #bCanUse aria-label='Fields' }
+{: #bCanUse .lua-content-item aria-label='Fields' }
 #### boolean .bCanUse
 {: aria-label='Fields' }
 
 ___
 ### bSuperShields
-{: #bSuperShields aria-label='Fields' }
+{: #bSuperShields .lua-content-item aria-label='Fields' }
 #### boolean .bSuperShields
 {: aria-label='Fields' }
 
 ___
 ### controlTimer
-{: #controlTimer aria-label='Fields' }
+{: #controlTimer .lua-content-item aria-label='Fields' }
 #### pair\<number, number\> .controlTimer
 {: aria-label='Fields' }
 
 ___
 ### controlledCrew
-{: #controlledCrew aria-label='Fields' }
+{: #controlledCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .controlledCrew
 {: aria-label='Fields' }
 
 ___
 ### iArmed
-{: #iArmed aria-label='Fields' }
+{: #iArmed .lua-content-item aria-label='Fields' }
 #### integer .iArmed
 {: aria-label='Fields' }
 
 ___
 ### iQueuedShip
-{: #iQueuedShip aria-label='Fields' }
+{: #iQueuedShip .lua-content-item aria-label='Fields' }
 #### integer .iQueuedShip
 {: aria-label='Fields' }
 
 ___
 ### iQueuedTarget
-{: #iQueuedTarget aria-label='Fields' }
+{: #iQueuedTarget .lua-content-item aria-label='Fields' }
 #### integer .iQueuedTarget
 {: aria-label='Fields' }
 
 ___
 ### queuedCrew
-{: #queuedCrew aria-label='Fields' }
+{: #queuedCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .queuedCrew
 {: aria-label='Fields' }
 

@@ -11,9 +11,9 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### BeamWeapon ()
-{: #BeamWeapon aria-label='Constructors' }
+{: #BeamWeapon .lua-content-item aria-label='Constructors' }
 #### [BeamWeapon](../Hyperspace/BeamWeapon) BeamWeapon ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target, [Pointf](../Hyperspace/Pointf) _target2, integer _length, [Targetable](../Hyperspace/Targetable) _targetable, number _heading=0.0f)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [Projectile](Projectile)
@@ -38,8 +38,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Collideable](Collideable)
@@ -86,7 +86,7 @@ ___
 </details>
 ___
 ### OnRenderSpecific ()
-{: #OnRenderSpecific aria-label='Methods' }
+{: #OnRenderSpecific .lua-content-item aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
 {: aria-label='Methods' }
 
@@ -94,8 +94,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Projectile](Projectile)
@@ -133,151 +133,151 @@ ___
 </details>
 ___
 ### animationTimer
-{: #animationTimer aria-label='Fields' }
+{: #animationTimer .lua-content-item aria-label='Fields' }
 #### number .animationTimer
 {: aria-label='Fields' }
 
 ___
 ### bDamageSuperShield
-{: #bDamageSuperShield aria-label='Fields' }
+{: #bDamageSuperShield .lua-content-item aria-label='Fields' }
 #### boolean .bDamageSuperShield
 {: aria-label='Fields' }
 
 ___
 ### checkedCollision
-{: #checkedCollision aria-label='Fields' }
+{: #checkedCollision .lua-content-item aria-label='Fields' }
 #### boolean .checkedCollision
 {: aria-label='Fields' }
 
 ___
 ### contactAnimations
-{: #contactAnimations aria-label='Fields' }
+{: #contactAnimations .lua-content-item aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .contactAnimations
 {: aria-label='Fields' }
 
 ___
 ### dh
-{: #dh aria-label='Fields' }
+{: #dh .lua-content-item aria-label='Fields' }
 #### number .dh
 {: aria-label='Fields' }
 
 ___
 ### final_end
-{: #final_end aria-label='Fields' }
+{: #final_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .final_end
 {: aria-label='Fields' }
 
 ___
 ### lastDamage
-{: #lastDamage aria-label='Fields' }
+{: #lastDamage .lua-content-item aria-label='Fields' }
 #### integer .lastDamage
 {: aria-label='Fields' }
 
 ___
 ### lastSmokeAnim
-{: #lastSmokeAnim aria-label='Fields' }
+{: #lastSmokeAnim .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastSmokeAnim
 {: aria-label='Fields' }
 
 ___
 ### last_collision
-{: #last_collision aria-label='Fields' }
+{: #last_collision .lua-content-item aria-label='Fields' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) .last_collision
 {: aria-label='Fields' }
 
 ___
 ### length
-{: #length aria-label='Fields' }
+{: #length .lua-content-item aria-label='Fields' }
 #### number .length
 {: aria-label='Fields' }
 
 ___
 ### lifespan
-{: #lifespan aria-label='Fields' }
+{: #lifespan .lua-content-item aria-label='Fields' }
 #### number .lifespan
 {: aria-label='Fields' }
 
 ___
 ### movingTarget
-{: #movingTarget aria-label='Fields' }
+{: #movingTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
 
 ___
 ### movingTargetId
-{: #movingTargetId aria-label='Fields' }
+{: #movingTargetId .lua-content-item aria-label='Fields' }
 #### integer .movingTargetId
 {: aria-label='Fields' }
 
 ___
 ### oneSpace
-{: #oneSpace aria-label='Fields' }
+{: #oneSpace .lua-content-item aria-label='Fields' }
 #### boolean .oneSpace
 {: aria-label='Fields' }
 
 ___
 ### piercedShield
-{: #piercedShield aria-label='Fields' }
+{: #piercedShield .lua-content-item aria-label='Fields' }
 #### boolean .piercedShield
 {: aria-label='Fields' }
 
 ___
 ### shield_end
-{: #shield_end aria-label='Fields' }
+{: #shield_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shield_end
 {: aria-label='Fields' }
 
 ___
 ### smokeAnims
-{: #smokeAnims aria-label='Fields' }
+{: #smokeAnims .lua-content-item aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .smokeAnims
 {: aria-label='Fields' }
 
 ___
 ### soundChannel
-{: #soundChannel aria-label='Fields' }
+{: #soundChannel .lua-content-item aria-label='Fields' }
 #### integer .soundChannel
 {: aria-label='Fields' }
 
 ___
 ### start_heading
-{: #start_heading aria-label='Fields' }
+{: #start_heading .lua-content-item aria-label='Fields' }
 #### number .start_heading
 {: aria-label='Fields' }
 
 ___
 ### sub_end
-{: #sub_end aria-label='Fields' }
+{: #sub_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_end
 {: aria-label='Fields' }
 
 ___
 ### sub_start
-{: #sub_start aria-label='Fields' }
+{: #sub_start .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_start
 {: aria-label='Fields' }
 
 ___
 ### target1
-{: #target1 aria-label='Fields' }
+{: #target1 .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target1
 {: aria-label='Fields' }
 
 ___
 ### target2
-{: #target2 aria-label='Fields' }
+{: #target2 .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target2
 {: aria-label='Fields' }
 
 ___
 ### timer
-{: #timer aria-label='Fields' }
+{: #timer .lua-content-item aria-label='Fields' }
 #### number .timer
 {: aria-label='Fields' }
 
 ___
 ### weapAnimation
-{: #weapAnimation aria-label='Fields' }
+{: #weapAnimation .lua-content-item aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weapAnimation
 {: aria-label='Fields' }
 

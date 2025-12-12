@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### PowerResourceDefinition ()
-{: #PowerResourceDefinition aria-label='Constructors' }
+{: #PowerResourceDefinition .lua-content-item aria-label='Constructors' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) PowerResourceDefinition ()
 {: aria-label='Constructors' }
 
@@ -19,15 +19,15 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### AddNamedDefinition ()
-{: #AddNamedDefinition aria-label='StaticMethods' }
+{: #AddNamedDefinition .lua-content-item aria-label='StaticMethods' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .AddNamedDefinition (string _name, [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) copyDef)
 {: aria-label='StaticMethods' }
 
 ___
 ### GetByName ()
-{: #GetByName aria-label='StaticMethods' }
+{: #GetByName .lua-content-item aria-label='StaticMethods' }
 #### [PowerResourceDefinition](../Hyperspace/PowerResourceDefinition) .GetByName (string _name)
 {: aria-label='StaticMethods' }
 
@@ -35,21 +35,21 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### AssignGroup ()
-{: #AssignGroup aria-label='Methods' }
+{: #AssignGroup .lua-content-item aria-label='Methods' }
 #### void :AssignGroup (string _name)
 {: aria-label='Methods' }
 
 ___
 ### AssignIndex ()
-{: #AssignIndex aria-label='Methods' }
+{: #AssignIndex .lua-content-item aria-label='Methods' }
 #### void :AssignIndex ()
 {: aria-label='Methods' }
 
 ___
 ### AssignName ()
-{: #AssignName aria-label='Methods' }
+{: #AssignName .lua-content-item aria-label='Methods' }
 #### void :AssignName (string _name)
 {: aria-label='Methods' }
 
@@ -57,125 +57,125 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### chargeReq
-{: #chargeReq aria-label='Fields' }
+{: #chargeReq .lua-content-item aria-label='Fields' }
 #### [ActivatedPowerRequirements](../Hyperspace/ActivatedPowerRequirements) .chargeReq
 {: aria-label='Fields' }
 
 ___
 ### chargesPerJump
-{: #chargesPerJump aria-label='Fields' }
+{: #chargesPerJump .lua-content-item aria-label='Fields' }
 #### integer .chargesPerJump
 {: aria-label='Fields' }
 
 ___
 ### cooldown
-{: #cooldown aria-label='Fields' }
+{: #cooldown .lua-content-item aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### cooldownColor
-{: #cooldownColor aria-label='Fields' }
+{: #cooldownColor .lua-content-item aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .cooldownColor
 {: aria-label='Fields' }
 
 ___
 ### disabledCharges
-{: #disabledCharges aria-label='Fields' }
+{: #disabledCharges .lua-content-item aria-label='Fields' }
 #### integer .disabledCharges
 {: aria-label='Fields' }
 
 ___
 ### disabledCooldown
-{: #disabledCooldown aria-label='Fields' }
+{: #disabledCooldown .lua-content-item aria-label='Fields' }
 #### integer .disabledCooldown
 {: aria-label='Fields' }
 
 ___
 ### groupIndex (Read-only)
-{: #groupIndex aria-label='Fields' }
+{: #groupIndex .lua-content-item aria-label='Fields' }
 #### uint .groupIndex
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### hideCharges
-{: #hideCharges aria-label='Fields' }
+{: #hideCharges .lua-content-item aria-label='Fields' }
 #### boolean .hideCharges
 {: aria-label='Fields' }
 
 ___
 ### hideCooldown
-{: #hideCooldown aria-label='Fields' }
+{: #hideCooldown .lua-content-item aria-label='Fields' }
 #### boolean .hideCooldown
 {: aria-label='Fields' }
 
 ___
 ### initialCharges
-{: #initialCharges aria-label='Fields' }
+{: #initialCharges .lua-content-item aria-label='Fields' }
 #### integer .initialCharges
 {: aria-label='Fields' }
 
 ___
 ### initialCooldownFraction
-{: #initialCooldownFraction aria-label='Fields' }
+{: #initialCooldownFraction .lua-content-item aria-label='Fields' }
 #### number .initialCooldownFraction
 {: aria-label='Fields' }
 
 ___
 ### jumpCooldown
-{: #jumpCooldown aria-label='Fields' }
+{: #jumpCooldown .lua-content-item aria-label='Fields' }
 #### integer .jumpCooldown
 {: aria-label='Fields' }
 
 ___
 ### name (Read-only)
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### onDeath
-{: #onDeath aria-label='Fields' }
+{: #onDeath .lua-content-item aria-label='Fields' }
 #### integer .onDeath
 {: aria-label='Fields' }
 
 ___
 ### powerCharges
-{: #powerCharges aria-label='Fields' }
+{: #powerCharges .lua-content-item aria-label='Fields' }
 #### integer .powerCharges
 {: aria-label='Fields' }
 
 ___
 ### respawnCharges
-{: #respawnCharges aria-label='Fields' }
+{: #respawnCharges .lua-content-item aria-label='Fields' }
 #### integer .respawnCharges
 {: aria-label='Fields' }
 
 ___
 ### showLinkedCharges
-{: #showLinkedCharges aria-label='Fields' }
+{: #showLinkedCharges .lua-content-item aria-label='Fields' }
 #### boolean .showLinkedCharges
 {: aria-label='Fields' }
 
 ___
 ### showLinkedCooldowns
-{: #showLinkedCooldowns aria-label='Fields' }
+{: #showLinkedCooldowns .lua-content-item aria-label='Fields' }
 #### boolean .showLinkedCooldowns
 {: aria-label='Fields' }
 
 ___
 ### showTemporaryBars
-{: #showTemporaryBars aria-label='Fields' }
+{: #showTemporaryBars .lua-content-item aria-label='Fields' }
 #### boolean .showTemporaryBars
 {: aria-label='Fields' }
 
 ___
 ### sortOrder
-{: #sortOrder aria-label='Fields' }
+{: #sortOrder .lua-content-item aria-label='Fields' }
 #### integer .sortOrder
 {: aria-label='Fields' }
 

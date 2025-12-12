@@ -11,15 +11,15 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### AddBoarders ()
-{: #AddBoarders aria-label='Methods' }
+{: #AddBoarders .lua-content-item aria-label='Methods' }
 #### boolean :AddBoarders ([BoardingEvent](../Hyperspace/BoardingEvent) boardingEvent)
 {: aria-label='Methods' }
 
 ___
 ### ClearLocation ()
-{: #ClearLocation aria-label='Methods' }
+{: #ClearLocation .lua-content-item aria-label='Methods' }
 #### void :ClearLocation ()
 {: aria-label='Methods' }
 
@@ -27,55 +27,55 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### bLoadingGame (Read-only)
-{: #bLoadingGame aria-label='Fields' }
+{: #bLoadingGame .lua-content-item aria-label='Fields' }
 #### boolean .bLoadingGame
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### bStartedGame (Read-only)
-{: #bStartedGame aria-label='Fields' }
+{: #bStartedGame .lua-content-item aria-label='Fields' }
 #### boolean .bStartedGame
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### currentDifficulty (Read-only)
-{: #currentDifficulty aria-label='Fields' }
+{: #currentDifficulty .lua-content-item aria-label='Fields' }
 #### integer .currentDifficulty
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### killedCrew
-{: #killedCrew aria-label='Fields' }
+{: #killedCrew .lua-content-item aria-label='Fields' }
 #### integer .killedCrew
 {: aria-label='Fields' }
 
 ___
 ### playerCrewCount
-{: #playerCrewCount aria-label='Fields' }
+{: #playerCrewCount .lua-content-item aria-label='Fields' }
 #### integer .playerCrewCount
 {: aria-label='Fields' }
 
 ___
 ### playerHull
-{: #playerHull aria-label='Fields' }
+{: #playerHull .lua-content-item aria-label='Fields' }
 #### integer .playerHull
 {: aria-label='Fields' }
 
 ___
 ### space (Read-only)
-{: #space aria-label='Fields' }
+{: #space .lua-content-item aria-label='Fields' }
 #### [SpaceManager](../Hyperspace/SpaceManager) .space
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### starMap (Read-only)
-{: #starMap aria-label='Fields' }
+{: #starMap .lua-content-item aria-label='Fields' }
 #### [StarMap](../Hyperspace/StarMap) .starMap
 {: aria-label='Fields' }
 **Read-only**

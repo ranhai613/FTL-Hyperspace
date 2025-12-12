@@ -11,9 +11,9 @@ Extends: [LaserBlast](../Hyperspace/LaserBlast) <- [Projectile](../Hyperspace/Pr
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### PDSFire ()
-{: #PDSFire aria-label='Constructors' }
+{: #PDSFire .lua-content-item aria-label='Constructors' }
 #### [PDSFire](../Hyperspace/PDSFire) PDSFire ([Point](../Hyperspace/Point) pos, integer destinationSpace, [Pointf](../Hyperspace/Pointf) destination)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [Projectile](Projectile)
@@ -38,9 +38,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Collideable](Collideable)
@@ -90,8 +90,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [LaserBlast](LaserBlast)
@@ -136,31 +136,31 @@ ___
 </details>
 ___
 ### currentScale
-{: #currentScale aria-label='Fields' }
+{: #currentScale .lua-content-item aria-label='Fields' }
 #### number .currentScale
 {: aria-label='Fields' }
 
 ___
 ### explosionAnimation
-{: #explosionAnimation aria-label='Fields' }
+{: #explosionAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosionAnimation
 {: aria-label='Fields' }
 
 ___
 ### missed
-{: #missed aria-label='Fields' }
+{: #missed .lua-content-item aria-label='Fields' }
 #### boolean .missed
 {: aria-label='Fields' }
 
 ___
 ### passedTarget
-{: #passedTarget aria-label='Fields' }
+{: #passedTarget .lua-content-item aria-label='Fields' }
 #### boolean .passedTarget
 {: aria-label='Fields' }
 
 ___
 ### startPoint
-{: #startPoint aria-label='Fields' }
+{: #startPoint .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startPoint
 {: aria-label='Fields' }
 

@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomAugmentManager ()
-{: #CustomAugmentManager aria-label='Constructors' }
+{: #CustomAugmentManager .lua-content-item aria-label='Constructors' }
 #### [CustomAugmentManager](../Hyperspace/CustomAugmentManager) CustomAugmentManager ()
 {: aria-label='Constructors' }
 
@@ -19,9 +19,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### GetInstance ()
-{: #GetInstance aria-label='StaticMethods' }
+{: #GetInstance .lua-content-item aria-label='StaticMethods' }
 #### [CustomAugmentManager](../Hyperspace/CustomAugmentManager) .GetInstance ()
 {: aria-label='StaticMethods' }
 
@@ -29,21 +29,21 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetAugmentDefinition ()
-{: #GetAugmentDefinition aria-label='Methods' }
+{: #GetAugmentDefinition .lua-content-item aria-label='Methods' }
 #### [AugmentDefinition](../Hyperspace/AugmentDefinition) :GetAugmentDefinition (string name)
 {: aria-label='Methods' }
 
 ___
 ### GetShipAugments ()
-{: #GetShipAugments aria-label='Methods' }
+{: #GetShipAugments .lua-content-item aria-label='Methods' }
 #### unordered_map\<string, integer\> :GetShipAugments (integer iShipId)
 {: aria-label='Methods' }
 
 ___
 ### IsAugment ()
-{: #IsAugment aria-label='Methods' }
+{: #IsAugment .lua-content-item aria-label='Methods' }
 #### boolean :IsAugment (string name)
 {: aria-label='Methods' }
 

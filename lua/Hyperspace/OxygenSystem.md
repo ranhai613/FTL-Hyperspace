@@ -11,9 +11,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### OxygenSystem ()
-{: #OxygenSystem aria-label='Constructors' }
+{: #OxygenSystem .lua-content-item aria-label='Constructors' }
 #### [OxygenSystem](../Hyperspace/OxygenSystem) OxygenSystem (integer numRooms, integer roomId, integer shipId, integer startingPower)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -41,8 +41,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -74,8 +74,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -101,19 +101,19 @@ ___
 </details>
 ___
 ### EmptyOxygen ()
-{: #EmptyOxygen aria-label='Methods' }
+{: #EmptyOxygen .lua-content-item aria-label='Methods' }
 #### void :EmptyOxygen (integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### GetRefillSpeed ()
-{: #GetRefillSpeed aria-label='Methods' }
+{: #GetRefillSpeed .lua-content-item aria-label='Methods' }
 #### number :GetRefillSpeed ()
 {: aria-label='Methods' }
 
 ___
 ### ModifyRoomOxygen ()
-{: #ModifyRoomOxygen aria-label='Methods' }
+{: #ModifyRoomOxygen .lua-content-item aria-label='Methods' }
 #### void :ModifyRoomOxygen (integer roomId, number value)
 {: aria-label='Methods' }
 
@@ -121,8 +121,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -183,19 +183,19 @@ ___
 </details>
 ___
 ### bLeakingO2 (Read-only)
-{: #bLeakingO2 aria-label='Fields' }
+{: #bLeakingO2 .lua-content-item aria-label='Fields' }
 #### boolean .bLeakingO2
 {: aria-label='Fields' }
 
 ___
 ### fTotalOxygen
-{: #fTotalOxygen aria-label='Fields' }
+{: #fTotalOxygen .lua-content-item aria-label='Fields' }
 #### number .fTotalOxygen
 {: aria-label='Fields' }
 
 ___
 ### leakModifier (Read-only)
-{: #leakModifier aria-label='Fields' }
+{: #leakModifier .lua-content-item aria-label='Fields' }
 #### number .leakModifier
 {: aria-label='Fields' }
 **Read-only**
@@ -204,13 +204,13 @@ Can be changed with `CALCULATE_LEAK_MODIFIER` callback.
 
 ___
 ### max_oxygen
-{: #max_oxygen aria-label='Fields' }
+{: #max_oxygen .lua-content-item aria-label='Fields' }
 #### number .max_oxygen
 {: aria-label='Fields' }
 
 ___
 ### oxygenLevels
-{: #oxygenLevels aria-label='Fields' }
+{: #oxygenLevels .lua-content-item aria-label='Fields' }
 #### vector\<number\> .oxygenLevels
 {: aria-label='Fields' }
 

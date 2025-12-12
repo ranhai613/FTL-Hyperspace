@@ -11,9 +11,9 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### WeaponBlueprint ()
-{: #WeaponBlueprint aria-label='Constructors' }
+{: #WeaponBlueprint .lua-content-item aria-label='Constructors' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) WeaponBlueprint ()
 {: aria-label='Constructors' }
 
@@ -23,9 +23,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -41,8 +41,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -56,127 +56,127 @@ ___
 </details>
 ___
 ### boostPower
-{: #boostPower aria-label='Fields' }
+{: #boostPower .lua-content-item aria-label='Fields' }
 #### [BoostPower](../Hyperspace/BoostPower) .boostPower
 {: aria-label='Fields' }
 
 ___
 ### chargeLevels
-{: #chargeLevels aria-label='Fields' }
+{: #chargeLevels .lua-content-item aria-label='Fields' }
 #### integer .chargeLevels
 {: aria-label='Fields' }
 
 ___
 ### color
-{: #color aria-label='Fields' }
+{: #color .lua-content-item aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
 ___
 ### combatIcon
-{: #combatIcon aria-label='Fields' }
+{: #combatIcon .lua-content-item aria-label='Fields' }
 #### string .combatIcon
 {: aria-label='Fields' }
 
 ___
 ### cooldown
-{: #cooldown aria-label='Fields' }
+{: #cooldown .lua-content-item aria-label='Fields' }
 #### number .cooldown
 {: aria-label='Fields' }
 
 ___
 ### damage
-{: #damage aria-label='Fields' }
+{: #damage .lua-content-item aria-label='Fields' }
 #### [Damage](../Hyperspace/Damage) .damage
 {: aria-label='Fields' }
 
 ___
 ### drone_targetable
-{: #drone_targetable aria-label='Fields' }
+{: #drone_targetable .lua-content-item aria-label='Fields' }
 #### integer .drone_targetable
 {: aria-label='Fields' }
 
 ___
 ### effects
-{: #effects aria-label='Fields' }
+{: #effects .lua-content-item aria-label='Fields' }
 #### [EffectsBlueprint](../Hyperspace/EffectsBlueprint) .effects
 {: aria-label='Fields' }
 
 ___
 ### explosion
-{: #explosion aria-label='Fields' }
+{: #explosion .lua-content-item aria-label='Fields' }
 #### string .explosion
 {: aria-label='Fields' }
 
 ___
 ### flavorType
-{: #flavorType aria-label='Fields' }
+{: #flavorType .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .flavorType
 {: aria-label='Fields' }
 
 ___
 ### length
-{: #length aria-label='Fields' }
+{: #length .lua-content-item aria-label='Fields' }
 #### integer .length
 {: aria-label='Fields' }
 
 ___
 ### miniCount
-{: #miniCount aria-label='Fields' }
+{: #miniCount .lua-content-item aria-label='Fields' }
 #### integer .miniCount
 {: aria-label='Fields' }
 
 ___
 ### miniProjectiles
-{: #miniProjectiles aria-label='Fields' }
+{: #miniProjectiles .lua-content-item aria-label='Fields' }
 #### vector\<[MiniProjectile](../Hyperspace/MiniProjectile)\> .miniProjectiles
 {: aria-label='Fields' }
 
 ___
 ### missiles
-{: #missiles aria-label='Fields' }
+{: #missiles .lua-content-item aria-label='Fields' }
 #### integer .missiles
 {: aria-label='Fields' }
 
 ___
 ### power
-{: #power aria-label='Fields' }
+{: #power .lua-content-item aria-label='Fields' }
 #### integer .power
 {: aria-label='Fields' }
 
 ___
 ### radius
-{: #radius aria-label='Fields' }
+{: #radius .lua-content-item aria-label='Fields' }
 #### integer .radius
 {: aria-label='Fields' }
 
 ___
 ### shots
-{: #shots aria-label='Fields' }
+{: #shots .lua-content-item aria-label='Fields' }
 #### integer .shots
 {: aria-label='Fields' }
 
 ___
 ### speed
-{: #speed aria-label='Fields' }
+{: #speed .lua-content-item aria-label='Fields' }
 #### number .speed
 {: aria-label='Fields' }
 
 ___
 ### spin
-{: #spin aria-label='Fields' }
+{: #spin .lua-content-item aria-label='Fields' }
 #### integer .spin
 {: aria-label='Fields' }
 
 ___
 ### typeName
-{: #typeName aria-label='Fields' }
+{: #typeName .lua-content-item aria-label='Fields' }
 #### string .typeName
 {: aria-label='Fields' }
 
 ___
 ### weaponArt
-{: #weaponArt aria-label='Fields' }
+{: #weaponArt .lua-content-item aria-label='Fields' }
 #### string .weaponArt
 {: aria-label='Fields' }
 

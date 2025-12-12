@@ -12,33 +12,33 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### gib
-{: #gib aria-label='Fields' }
+{: #gib .lua-content-item aria-label='Fields' }
 #### integer .gib
 {: aria-label='Fields' }
 
 ___
 ### mirror
-{: #mirror aria-label='Fields' }
+{: #mirror .lua-content-item aria-label='Fields' }
 #### boolean .mirror
 {: aria-label='Fields' }
 
 ___
 ### position
-{: #position aria-label='Fields' }
+{: #position .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 
 ___
 ### rotate
-{: #rotate aria-label='Fields' }
+{: #rotate .lua-content-item aria-label='Fields' }
 #### boolean .rotate
 {: aria-label='Fields' }
 
 ___
 ### slide
-{: #slide aria-label='Fields' }
+{: #slide .lua-content-item aria-label='Fields' }
 #### integer .slide
 {: aria-label='Fields' }
 

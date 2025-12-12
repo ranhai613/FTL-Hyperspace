@@ -10,26 +10,26 @@ lang: en
 ?}
 {?
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 {{CONSTRUCTORS}}
 ?}
 {?
 ## Constants
-{: #Constants .section}
+{: #Constants .lua-content-section}
 {{CONSTANTS}}
 ?}
 {?
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 {{STATIC_METHODS}}
 ?}
 {?
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 {{METHODS}}
 ?}
 {?
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 {{FIELDS}}
 ?}

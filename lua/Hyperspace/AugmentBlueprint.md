@@ -14,9 +14,9 @@ Extends: [Blueprint](../Hyperspace/Blueprint)
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -32,8 +32,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Blueprint](Blueprint)
@@ -47,13 +47,13 @@ ___
 </details>
 ___
 ### stacking
-{: #stacking aria-label='Fields' }
+{: #stacking .lua-content-item aria-label='Fields' }
 #### boolean .stacking
 {: aria-label='Fields' }
 
 ___
 ### value
-{: #value aria-label='Fields' }
+{: #value .lua-content-item aria-label='Fields' }
 #### number .value
 {: aria-label='Fields' }
 

@@ -16,8 +16,8 @@ Subclasses: [BoarderPodDrone](../Hyperspace/BoarderPodDrone), [CombatDrone](../H
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Drone](Drone)
@@ -55,175 +55,175 @@ Subclasses: [BoarderPodDrone](../Hyperspace/BoarderPodDrone), [CombatDrone](../H
 </details>
 ___
 ### CollisionMoving ()
-{: #CollisionMoving aria-label='Methods' }
+{: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### DamageArea ()
-{: #DamageArea aria-label='Methods' }
+{: #DamageArea .lua-content-item aria-label='Methods' }
 #### boolean :DamageArea ([Pointf](../Hyperspace/Pointf) pos, [Damage](../Hyperspace/Damage) damage, boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### DamageBeam ()
-{: #DamageBeam aria-label='Methods' }
+{: #DamageBeam .lua-content-item aria-label='Methods' }
 #### boolean :DamageBeam ([Pointf](../Hyperspace/Pointf) pos1, [Pointf](../Hyperspace/Pointf) pos2, [Damage](../Hyperspace/Damage) damage)
 {: aria-label='Methods' }
 
 ___
 ### GetBoardingDrone ()
-{: #GetBoardingDrone aria-label='Methods' }
+{: #GetBoardingDrone .lua-content-item aria-label='Methods' }
 #### BoarderDrone :GetBoardingDrone ()
 {: aria-label='Methods' }
 
 ___
 ### GetNextProjectile ()
-{: #GetNextProjectile aria-label='Methods' }
+{: #GetNextProjectile .lua-content-item aria-label='Methods' }
 #### [Projectile](../Hyperspace/Projectile) :GetNextProjectile ()
 {: aria-label='Methods' }
 
 ___
 ### GetOwnerId ()
-{: #GetOwnerId aria-label='Methods' }
+{: #GetOwnerId .lua-content-item aria-label='Methods' }
 #### integer :GetOwnerId ()
 {: aria-label='Methods' }
 
 ___
 ### GetRandomTargettingPoint ()
-{: #GetRandomTargettingPoint aria-label='Methods' }
+{: #GetRandomTargettingPoint .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRandomTargettingPoint (boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### GetSelfId ()
-{: #GetSelfId aria-label='Methods' }
+{: #GetSelfId .lua-content-item aria-label='Methods' }
 #### integer :GetSelfId ()
 {: aria-label='Methods' }
 
 ___
 ### GetShieldShape ()
-{: #GetShieldShape aria-label='Methods' }
+{: #GetShieldShape .lua-content-item aria-label='Methods' }
 #### [Ellipse](../Hyperspace/Ellipse) :GetShieldShape ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
 {: aria-label='Methods' }
 
 ___
 ### GetSpaceId ()
-{: #GetSpaceId aria-label='Methods' }
+{: #GetSpaceId .lua-content-item aria-label='Methods' }
 #### integer :GetSpaceId ()
 {: aria-label='Methods' }
 
 ___
 ### GetSpeed ()
-{: #GetSpeed aria-label='Methods' }
+{: #GetSpeed .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetSpeed ()
 {: aria-label='Methods' }
 
 ___
 ### GetTooltip ()
-{: #GetTooltip aria-label='Methods' }
+{: #GetTooltip .lua-content-item aria-label='Methods' }
 #### string :GetTooltip ([SpaceDrone](../Hyperspace/SpaceDrone) drone)
 {: aria-label='Methods' }
 
 ___
 ### GetWeaponCooldown ()
-{: #GetWeaponCooldown aria-label='Methods' }
+{: #GetWeaponCooldown .lua-content-item aria-label='Methods' }
 #### number :GetWeaponCooldown ()
 {: aria-label='Methods' }
 
 ___
 ### GetWorldCenterPoint ()
-{: #GetWorldCenterPoint aria-label='Methods' }
+{: #GetWorldCenterPoint .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetWorldCenterPoint ()
 {: aria-label='Methods' }
 
 ___
 ### HasTarget ()
-{: #HasTarget aria-label='Methods' }
+{: #HasTarget .lua-content-item aria-label='Methods' }
 #### boolean :HasTarget ()
 {: aria-label='Methods' }
 
 ___
 ### HideUnderOwner ()
-{: #HideUnderOwner aria-label='Methods' }
+{: #HideUnderOwner .lua-content-item aria-label='Methods' }
 #### boolean :HideUnderOwner ()
 {: aria-label='Methods' }
 
 ___
 ### MouseMove ()
-{: #MouseMove aria-label='Methods' }
+{: #MouseMove .lua-content-item aria-label='Methods' }
 #### void :MouseMove (integer mX, integer mY)
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: #OnRender aria-label='Methods' }
+{: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender (integer space)
 {: aria-label='Methods' }
 
 ___
 ### PickDestination ()
-{: #PickDestination aria-label='Methods' }
+{: #PickDestination .lua-content-item aria-label='Methods' }
 #### void :PickDestination ()
 {: aria-label='Methods' }
 
 ___
 ### PickTarget ()
-{: #PickTarget aria-label='Methods' }
+{: #PickTarget .lua-content-item aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
 ___
 ### RandomizeStartingPosition ()
-{: #RandomizeStartingPosition aria-label='Methods' }
+{: #RandomizeStartingPosition .lua-content-item aria-label='Methods' }
 #### void :RandomizeStartingPosition ()
 {: aria-label='Methods' }
 
 ___
 ### RenderDrone ()
-{: #RenderDrone aria-label='Methods' }
+{: #RenderDrone .lua-content-item aria-label='Methods' }
 #### void :RenderDrone ()
 {: aria-label='Methods' }
 
 ___
 ### SetCurrentLocation ()
-{: #SetCurrentLocation aria-label='Methods' }
+{: #SetCurrentLocation .lua-content-item aria-label='Methods' }
 #### void :SetCurrentLocation ([Pointf](../Hyperspace/Pointf) pos)
 {: aria-label='Methods' }
 
 ___
 ### SetDeployed ()
-{: #SetDeployed aria-label='Methods' }
+{: #SetDeployed .lua-content-item aria-label='Methods' }
 #### void :SetDeployed (boolean deployed)
 {: aria-label='Methods' }
 
 ___
 ### SetMovementTarget ()
-{: #SetMovementTarget aria-label='Methods' }
+{: #SetMovementTarget .lua-content-item aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### SetWeaponTarget ()
-{: #SetWeaponTarget aria-label='Methods' }
+{: #SetWeaponTarget .lua-content-item aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
 ___
 ### UpdateAimingAngle ()
-{: #UpdateAimingAngle aria-label='Methods' }
+{: #UpdateAimingAngle .lua-content-item aria-label='Methods' }
 #### number :UpdateAimingAngle ([Pointf](../Hyperspace/Pointf) location, number percentage, number forceDesired)
 {: aria-label='Methods' }
 
 ___
 ### ValidTarget ()
-{: #ValidTarget aria-label='Methods' }
+{: #ValidTarget .lua-content-item aria-label='Methods' }
 #### boolean :ValidTarget ()
 {: aria-label='Methods' }
 
 ___
 ### ValidTargetObject ()
-{: #ValidTargetObject aria-label='Methods' }
+{: #ValidTargetObject .lua-content-item aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -231,8 +231,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Drone](Drone)
@@ -256,218 +256,218 @@ ___
 </details>
 ___
 ### _collideable
-{: #_collideable aria-label='Fields' }
+{: #_collideable .lua-content-item aria-label='Fields' }
 #### [Collideable](../Hyperspace/Collideable) ._collideable
 {: aria-label='Fields' }
 
 ___
 ### _targetable
-{: #_targetable aria-label='Fields' }
+{: #_targetable .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) ._targetable
 {: aria-label='Fields' }
 
 ___
 ### additionalPause
-{: #additionalPause aria-label='Fields' }
+{: #additionalPause .lua-content-item aria-label='Fields' }
 #### number .additionalPause
 {: aria-label='Fields' }
 
 ___
 ### aimingAngle
-{: #aimingAngle aria-label='Fields' }
+{: #aimingAngle .lua-content-item aria-label='Fields' }
 #### number .aimingAngle
 {: aria-label='Fields' }
 
 ___
 ### bDisrupted
-{: #bDisrupted aria-label='Fields' }
+{: #bDisrupted .lua-content-item aria-label='Fields' }
 #### boolean .bDisrupted
 {: aria-label='Fields' }
 
 ___
 ### bFire
-{: #bFire aria-label='Fields' }
+{: #bFire .lua-content-item aria-label='Fields' }
 #### boolean .bFire
 {: aria-label='Fields' }
 
 ___
 ### bLoadedPosition
-{: #bLoadedPosition aria-label='Fields' }
+{: #bLoadedPosition .lua-content-item aria-label='Fields' }
 #### boolean .bLoadedPosition
 {: aria-label='Fields' }
 
 ___
 ### beamCurrentTarget
-{: #beamCurrentTarget aria-label='Fields' }
+{: #beamCurrentTarget .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamCurrentTarget
 {: aria-label='Fields' }
 
 ___
 ### beamFinalTarget
-{: #beamFinalTarget aria-label='Fields' }
+{: #beamFinalTarget .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .beamFinalTarget
 {: aria-label='Fields' }
 
 ___
 ### beamSpeed
-{: #beamSpeed aria-label='Fields' }
+{: #beamSpeed .lua-content-item aria-label='Fields' }
 #### number .beamSpeed
 {: aria-label='Fields' }
 
 ___
 ### currentLocation
-{: #currentLocation aria-label='Fields' }
+{: #currentLocation .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .currentLocation
 {: aria-label='Fields' }
 
 ___
 ### currentSpace
-{: #currentSpace aria-label='Fields' }
+{: #currentSpace .lua-content-item aria-label='Fields' }
 #### integer .currentSpace
 {: aria-label='Fields' }
 
 ___
 ### current_angle
-{: #current_angle aria-label='Fields' }
+{: #current_angle .lua-content-item aria-label='Fields' }
 #### number .current_angle
 {: aria-label='Fields' }
 
 ___
 ### deployedLastFrame
-{: #deployedLastFrame aria-label='Fields' }
+{: #deployedLastFrame .lua-content-item aria-label='Fields' }
 #### boolean .deployedLastFrame
 {: aria-label='Fields' }
 
 ___
 ### desiredAimingAngle
-{: #desiredAimingAngle aria-label='Fields' }
+{: #desiredAimingAngle .lua-content-item aria-label='Fields' }
 #### number .desiredAimingAngle
 {: aria-label='Fields' }
 
 ___
 ### destinationLocation
-{: #destinationLocation aria-label='Fields' }
+{: #destinationLocation .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .destinationLocation
 {: aria-label='Fields' }
 
 ___
 ### destinationSpace
-{: #destinationSpace aria-label='Fields' }
+{: #destinationSpace .lua-content-item aria-label='Fields' }
 #### integer .destinationSpace
 {: aria-label='Fields' }
 
 ___
 ### explosion
-{: #explosion aria-label='Fields' }
+{: #explosion .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
 {: aria-label='Fields' }
 
 ___
 ### hackAngle
-{: #hackAngle aria-label='Fields' }
+{: #hackAngle .lua-content-item aria-label='Fields' }
 #### number .hackAngle
 {: aria-label='Fields' }
 
 ___
 ### hackSparks
-{: #hackSparks aria-label='Fields' }
+{: #hackSparks .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .hackSparks
 {: aria-label='Fields' }
 
 ___
 ### ionStun
-{: #ionStun aria-label='Fields' }
+{: #ionStun .lua-content-item aria-label='Fields' }
 #### number .ionStun
 {: aria-label='Fields' }
 
 ___
 ### lastAimingAngle
-{: #lastAimingAngle aria-label='Fields' }
+{: #lastAimingAngle .lua-content-item aria-label='Fields' }
 #### number .lastAimingAngle
 {: aria-label='Fields' }
 
 ___
 ### lastLocation
-{: #lastLocation aria-label='Fields' }
+{: #lastLocation .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastLocation
 {: aria-label='Fields' }
 
 ___
 ### lifespan
-{: #lifespan aria-label='Fields' }
+{: #lifespan .lua-content-item aria-label='Fields' }
 #### integer .lifespan
 {: aria-label='Fields' }
 
 ___
 ### message
-{: #message aria-label='Fields' }
+{: #message .lua-content-item aria-label='Fields' }
 #### DamageMessage .message
 {: aria-label='Fields' }
 
 ___
 ### movementTarget
-{: #movementTarget aria-label='Fields' }
+{: #movementTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movementTarget
 {: aria-label='Fields' }
 
 ___
 ### pause
-{: #pause aria-label='Fields' }
+{: #pause .lua-content-item aria-label='Fields' }
 #### number .pause
 {: aria-label='Fields' }
 
 ___
 ### pointTarget
-{: #pointTarget aria-label='Fields' }
+{: #pointTarget .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .pointTarget
 {: aria-label='Fields' }
 
 ___
 ### poweredLastFrame
-{: #poweredLastFrame aria-label='Fields' }
+{: #poweredLastFrame .lua-content-item aria-label='Fields' }
 #### boolean .poweredLastFrame
 {: aria-label='Fields' }
 
 ___
 ### speedVector
-{: #speedVector aria-label='Fields' }
+{: #speedVector .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .speedVector
 {: aria-label='Fields' }
 
 ___
 ### targetLocation
-{: #targetLocation aria-label='Fields' }
+{: #targetLocation .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetLocation
 {: aria-label='Fields' }
 
 ___
 ### targetSpeed
-{: #targetSpeed aria-label='Fields' }
+{: #targetSpeed .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .targetSpeed
 {: aria-label='Fields' }
 
 ___
 ### weaponBlueprint (Read-only)
-{: #weaponBlueprint aria-label='Fields' }
+{: #weaponBlueprint .lua-content-item aria-label='Fields' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) .weaponBlueprint
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### weaponCooldown
-{: #weaponCooldown aria-label='Fields' }
+{: #weaponCooldown .lua-content-item aria-label='Fields' }
 #### number .weaponCooldown
 {: aria-label='Fields' }
 
 ___
 ### weaponTarget
-{: #weaponTarget aria-label='Fields' }
+{: #weaponTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .weaponTarget
 {: aria-label='Fields' }
 
 ___
 ### weapon_animation
-{: #weapon_animation aria-label='Fields' }
+{: #weapon_animation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .weapon_animation
 {: aria-label='Fields' }
 

@@ -11,9 +11,9 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Asteroid ()
-{: #Asteroid aria-label='Constructors' }
+{: #Asteroid .lua-content-item aria-label='Constructors' }
 #### [Asteroid](../Hyperspace/Asteroid) Asteroid ([Pointf](../Hyperspace/Pointf) pos, integer destinationSpace)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [Projectile](Projectile)
@@ -38,9 +38,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Collideable](Collideable)
@@ -90,8 +90,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Projectile](Projectile)
@@ -130,13 +130,13 @@ ___
 </details>
 ___
 ### angle
-{: #angle aria-label='Fields' }
+{: #angle .lua-content-item aria-label='Fields' }
 #### number .angle
 {: aria-label='Fields' }
 
 ___
 ### imageId
-{: #imageId aria-label='Fields' }
+{: #imageId .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .imageId
 {: aria-label='Fields' }
 

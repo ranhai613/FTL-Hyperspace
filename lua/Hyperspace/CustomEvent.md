@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomEvent ()
-{: #CustomEvent aria-label='Constructors' }
+{: #CustomEvent .lua-content-item aria-label='Constructors' }
 #### [CustomEvent](../Hyperspace/CustomEvent) CustomEvent ()
 {: aria-label='Constructors' }
 
@@ -21,16 +21,16 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### triggeredEvents (Read-only)
-{: #triggeredEvents aria-label='Fields' }
+{: #triggeredEvents .lua-content-item aria-label='Fields' }
 #### vector\<uint\> .triggeredEvents
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### unlockShip
-{: #unlockShip aria-label='Fields' }
+{: #unlockShip .lua-content-item aria-label='Fields' }
 #### string .unlockShip
 {: aria-label='Fields' }
 

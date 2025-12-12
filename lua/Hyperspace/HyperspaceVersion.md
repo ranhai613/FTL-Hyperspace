@@ -11,39 +11,39 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### __tostring ()
-{: #__tostring aria-label='Methods' }
+{: #__tostring .lua-content-item aria-label='Methods' }
 #### string :__tostring ()
 {: aria-label='Methods' }
 
 ___
 ### getDeprecatedIntegerVersion ()
-{: #getDeprecatedIntegerVersion aria-label='Methods' }
+{: #getDeprecatedIntegerVersion .lua-content-item aria-label='Methods' }
 #### integer :getDeprecatedIntegerVersion ()
 {: aria-label='Methods' }
 
 ___
 ### getFeatureName ()
-{: #getFeatureName aria-label='Methods' }
+{: #getFeatureName .lua-content-item aria-label='Methods' }
 #### string :getFeatureName ()
 {: aria-label='Methods' }
 
 ___
 ### isFeatureBuild ()
-{: #isFeatureBuild aria-label='Methods' }
+{: #isFeatureBuild .lua-content-item aria-label='Methods' }
 #### boolean :isFeatureBuild ()
 {: aria-label='Methods' }
 
 ___
 ### toIdentifierString ()
-{: #toIdentifierString aria-label='Methods' }
+{: #toIdentifierString .lua-content-item aria-label='Methods' }
 #### string :toIdentifierString ()
 {: aria-label='Methods' }
 
 ___
 ### toVersionString ()
-{: #toVersionString aria-label='Methods' }
+{: #toVersionString .lua-content-item aria-label='Methods' }
 #### string :toVersionString ()
 {: aria-label='Methods' }
 
@@ -51,21 +51,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### major (Read-only)
-{: #major aria-label='Fields' }
+{: #major .lua-content-item aria-label='Fields' }
 #### uint .major
 {: aria-label='Fields' }
 
 ___
 ### minor (Read-only)
-{: #minor aria-label='Fields' }
+{: #minor .lua-content-item aria-label='Fields' }
 #### uint .minor
 {: aria-label='Fields' }
 
 ___
 ### patch (Read-only)
-{: #patch aria-label='Fields' }
+{: #patch .lua-content-item aria-label='Fields' }
 #### uint .patch
 {: aria-label='Fields' }
 

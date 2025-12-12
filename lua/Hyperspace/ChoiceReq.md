@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### ChoiceReq ()
-{: #ChoiceReq aria-label='Constructors' }
+{: #ChoiceReq .lua-content-item aria-label='Constructors' }
 #### [ChoiceReq](../Hyperspace/ChoiceReq) ChoiceReq ()
 {: aria-label='Constructors' }
 
@@ -21,33 +21,33 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### blue
-{: #blue aria-label='Fields' }
+{: #blue .lua-content-item aria-label='Fields' }
 #### boolean .blue
 {: aria-label='Fields' }
 
 ___
 ### max_group
-{: #max_group aria-label='Fields' }
+{: #max_group .lua-content-item aria-label='Fields' }
 #### integer .max_group
 {: aria-label='Fields' }
 
 ___
 ### max_level
-{: #max_level aria-label='Fields' }
+{: #max_level .lua-content-item aria-label='Fields' }
 #### integer .max_level
 {: aria-label='Fields' }
 
 ___
 ### min_level
-{: #min_level aria-label='Fields' }
+{: #min_level .lua-content-item aria-label='Fields' }
 #### integer .min_level
 {: aria-label='Fields' }
 
 ___
 ### object
-{: #object aria-label='Fields' }
+{: #object .lua-content-item aria-label='Fields' }
 #### string .object
 {: aria-label='Fields' }
 

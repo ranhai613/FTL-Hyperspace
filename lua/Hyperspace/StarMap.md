@@ -14,9 +14,9 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### ForceWaitMessage ()
-{: #ForceWaitMessage aria-label='Methods' }
+{: #ForceWaitMessage .lua-content-item aria-label='Methods' }
 #### void :ForceWaitMessage ([GL_Primitive](../Graphics/GL_Primitive) waitMessage)
 {: aria-label='Methods' }
 Disables the ability to jump and enables the wait/distress menu. Replaces the "NO FUEL" message shown on the sector map with a primitive of your own.
@@ -25,19 +25,19 @@ If no argument is passed, then the jump menu is re-enabled and the "NO FUEL" mes
 
 ___
 ### ForceWaitMessage ()
-{: #ForceWaitMessage aria-label='Methods' }
+{: #ForceWaitMessage .lua-content-item aria-label='Methods' }
 #### void :ForceWaitMessage ()
 {: aria-label='Methods' }
 
 ___
 ### ModifyPursuit ()
-{: #ModifyPursuit aria-label='Methods' }
+{: #ModifyPursuit .lua-content-item aria-label='Methods' }
 #### void :ModifyPursuit (integer unk0)
 {: aria-label='Methods' }
 
 ___
 ### PointToGrid ()
-{: #PointToGrid aria-label='Methods' }
+{: #PointToGrid .lua-content-item aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :PointToGrid (number x, number y)
 {: aria-label='Methods' }
 
@@ -45,8 +45,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [FocusWindow](FocusWindow)
@@ -60,101 +60,101 @@ ___
 </details>
 ___
 ### bChoosingNewSector
-{: #bChoosingNewSector aria-label='Fields' }
+{: #bChoosingNewSector .lua-content-item aria-label='Fields' }
 #### boolean .bChoosingNewSector
 {: aria-label='Fields' }
 
 ___
 ### bMapRevealed
-{: #bMapRevealed aria-label='Fields' }
+{: #bMapRevealed .lua-content-item aria-label='Fields' }
 #### boolean .bMapRevealed
 {: aria-label='Fields' }
 
 ___
 ### bSecretSector
-{: #bSecretSector aria-label='Fields' }
+{: #bSecretSector .lua-content-item aria-label='Fields' }
 #### boolean .bSecretSector
 {: aria-label='Fields' }
 
 ___
 ### bTutorialGenerated
-{: #bTutorialGenerated aria-label='Fields' }
+{: #bTutorialGenerated .lua-content-item aria-label='Fields' }
 #### boolean .bTutorialGenerated
 {: aria-label='Fields' }
 
 ___
 ### currentLoc
-{: #currentLoc aria-label='Fields' }
+{: #currentLoc .lua-content-item aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .currentLoc
 {: aria-label='Fields' }
 
 ___
 ### currentSector
-{: #currentSector aria-label='Fields' }
+{: #currentSector .lua-content-item aria-label='Fields' }
 #### [Sector](../Hyperspace/Sector) .currentSector
 {: aria-label='Fields' }
 
 ___
 ### dangerZone
-{: #dangerZone aria-label='Fields' }
+{: #dangerZone .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .dangerZone
 {: aria-label='Fields' }
 
 ___
 ### hoverLoc
-{: #hoverLoc aria-label='Fields' }
+{: #hoverLoc .lua-content-item aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .hoverLoc
 {: aria-label='Fields' }
 
 ___
 ### locations (Read-only)
-{: #locations aria-label='Fields' }
+{: #locations .lua-content-item aria-label='Fields' }
 #### vector\<[Location](../Hyperspace/Location)\> .locations
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### mapsBottom
-{: #mapsBottom aria-label='Fields' }
+{: #mapsBottom .lua-content-item aria-label='Fields' }
 #### [GL_Primitive[]](../Graphics/GL_Primitive) .mapsBottom
 {: aria-label='Fields' }
 Contains the 3 background images of the sector map. Index selected via `worldLevel % 3`.
 
 ___
 ### potentialLoc
-{: #potentialLoc aria-label='Fields' }
+{: #potentialLoc .lua-content-item aria-label='Fields' }
 #### [Location](../Hyperspace/Location) .potentialLoc
 {: aria-label='Fields' }
 
 ___
 ### pursuitDelay
-{: #pursuitDelay aria-label='Fields' }
+{: #pursuitDelay .lua-content-item aria-label='Fields' }
 #### integer .pursuitDelay
 {: aria-label='Fields' }
 
 ___
 ### sectors
-{: #sectors aria-label='Fields' }
+{: #sectors .lua-content-item aria-label='Fields' }
 #### vector\<[Sector](../Hyperspace/Sector)\> .sectors
 {: aria-label='Fields' }
 
 ___
 ### ship
-{: #ship aria-label='Fields' }
+{: #ship .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .ship
 {: aria-label='Fields' }
 The map icon that rotates around the current location representing the player ship.
 
 ___
 ### shipNoFuel
-{: #shipNoFuel aria-label='Fields' }
+{: #shipNoFuel .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shipNoFuel
 {: aria-label='Fields' }
 The no fuel variant of the `ship` icon.
 
 ___
 ### worldLevel (Read-only)
-{: #worldLevel aria-label='Fields' }
+{: #worldLevel .lua-content-item aria-label='Fields' }
 #### integer .worldLevel
 {: aria-label='Fields' }
 **Read-only**

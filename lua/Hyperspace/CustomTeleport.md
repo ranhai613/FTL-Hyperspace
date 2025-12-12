@@ -12,27 +12,27 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### roomId
-{: #roomId aria-label='Fields' }
+{: #roomId .lua-content-item aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### shipId
-{: #shipId aria-label='Fields' }
+{: #shipId .lua-content-item aria-label='Fields' }
 #### integer .shipId
 {: aria-label='Fields' }
 
 ___
 ### slotId
-{: #slotId aria-label='Fields' }
+{: #slotId .lua-content-item aria-label='Fields' }
 #### integer .slotId
 {: aria-label='Fields' }
 
 ___
 ### teleporting
-{: #teleporting aria-label='Fields' }
+{: #teleporting .lua-content-item aria-label='Fields' }
 #### boolean .teleporting
 {: aria-label='Fields' }
 

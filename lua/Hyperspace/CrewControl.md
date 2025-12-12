@@ -12,43 +12,43 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### currentMouse
-{: #currentMouse aria-label='Fields' }
+{: #currentMouse .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .currentMouse
 {: aria-label='Fields' }
 Affect the visual portion of the selection box
 
 ___
 ### firstMouse
-{: #firstMouse aria-label='Fields' }
+{: #firstMouse .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .firstMouse
 {: aria-label='Fields' }
 Affect the visual portion of the selection box
 
 ___
 ### potentialSelectedCrew
-{: #potentialSelectedCrew aria-label='Fields' }
+{: #potentialSelectedCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .potentialSelectedCrew
 {: aria-label='Fields' }
 Crew hovered by the selection box
 
 ___
 ### selectedCrew
-{: #selectedCrew aria-label='Fields' }
+{: #selectedCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .selectedCrew
 {: aria-label='Fields' }
 
 ___
 ### worldCurrentMouse
-{: #worldCurrentMouse aria-label='Fields' }
+{: #worldCurrentMouse .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldCurrentMouse
 {: aria-label='Fields' }
 Affect the logic portion of the selection box, fills `.potentialSelectedCrew`
 
 ___
 ### worldFirstMouse
-{: #worldFirstMouse aria-label='Fields' }
+{: #worldFirstMouse .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .worldFirstMouse
 {: aria-label='Fields' }
 Affect the logic portion of the selection box, fills `.potentialSelectedCrew`

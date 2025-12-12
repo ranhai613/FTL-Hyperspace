@@ -12,89 +12,89 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### beacon
-{: #beacon aria-label='Fields' }
+{: #beacon .lua-content-item aria-label='Fields' }
 #### boolean .beacon
 {: aria-label='Fields' }
 
 ___
 ### boss
-{: #boss aria-label='Fields' }
+{: #boss .lua-content-item aria-label='Fields' }
 #### boolean .boss
 {: aria-label='Fields' }
 Final boss event overrides the beacon, no visual indication.
 
 ___
 ### connectedLocations
-{: #connectedLocations aria-label='Fields' }
+{: #connectedLocations .lua-content-item aria-label='Fields' }
 #### vector\<[Location](../Hyperspace/Location)\> .connectedLocations
 {: aria-label='Fields' }
 
 ___
 ### dangerZone
-{: #dangerZone aria-label='Fields' }
+{: #dangerZone .lua-content-item aria-label='Fields' }
 #### boolean .dangerZone
 {: aria-label='Fields' }
 
 ___
 ### event
-{: #event aria-label='Fields' }
+{: #event .lua-content-item aria-label='Fields' }
 #### [LocationEvent](../Hyperspace/LocationEvent) .event
 {: aria-label='Fields' }
 
 ___
 ### fleetChanging
-{: #fleetChanging aria-label='Fields' }
+{: #fleetChanging .lua-content-item aria-label='Fields' }
 #### boolean .fleetChanging
 {: aria-label='Fields' }
 
 ___
 ### known
-{: #known aria-label='Fields' }
+{: #known .lua-content-item aria-label='Fields' }
 #### boolean .known
 {: aria-label='Fields' }
 
 ___
 ### loc
-{: #loc aria-label='Fields' }
+{: #loc .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .loc
 {: aria-label='Fields' }
 
 ___
 ### nebula
-{: #nebula aria-label='Fields' }
+{: #nebula .lua-content-item aria-label='Fields' }
 #### boolean .nebula
 {: aria-label='Fields' }
 Grant the fleet delay of nebula, no changes to the event itself
 
 ___
 ### planet
-{: #planet aria-label='Fields' }
+{: #planet .lua-content-item aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .planet
 {: aria-label='Fields' }
 
 ___
 ### planetImage
-{: #planetImage aria-label='Fields' }
+{: #planetImage .lua-content-item aria-label='Fields' }
 #### string .planetImage
 {: aria-label='Fields' }
 
 ___
 ### space
-{: #space aria-label='Fields' }
+{: #space .lua-content-item aria-label='Fields' }
 #### [ImageDesc](../Hyperspace/ImageDesc) .space
 {: aria-label='Fields' }
 
 ___
 ### spaceImage
-{: #spaceImage aria-label='Fields' }
+{: #spaceImage .lua-content-item aria-label='Fields' }
 #### string .spaceImage
 {: aria-label='Fields' }
 
 ___
 ### visited
-{: #visited aria-label='Fields' }
+{: #visited .lua-content-item aria-label='Fields' }
 #### integer .visited
 {: aria-label='Fields' }
 

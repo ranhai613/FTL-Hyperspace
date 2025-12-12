@@ -8,15 +8,15 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### GL_Line ()
-{: #GL_Line aria-label='Constructors' }
+{: #GL_Line .lua-content-item aria-label='Constructors' }
 #### [GL_Line](../Graphics/GL_Line) GL_Line (number x1, number y1, number x2, number y2)
 {: aria-label='Constructors' }
 
 ___
 ### GL_Line ()
-{: #GL_Line aria-label='Constructors' }
+{: #GL_Line .lua-content-item aria-label='Constructors' }
 #### [GL_Line](../Graphics/GL_Line) GL_Line ([Pointf](../Hyperspace/Pointf) _start, [Pointf](../Hyperspace/Pointf) _end)
 {: aria-label='Constructors' }
 
@@ -27,15 +27,15 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### c_end (Read-only)
-{: #c_end aria-label='Fields' }
+{: #c_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .c_end
 {: aria-label='Fields' }
 
 ___
 ### start (Read-only)
-{: #start aria-label='Fields' }
+{: #start .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .start
 {: aria-label='Fields' }
 

@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### TopScore ()
-{: #TopScore aria-label='Constructors' }
+{: #TopScore .lua-content-item aria-label='Constructors' }
 #### [TopScore](../Hyperspace/TopScore) TopScore ()
 {: aria-label='Constructors' }
 
@@ -21,15 +21,15 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### score
-{: #score aria-label='Fields' }
+{: #score .lua-content-item aria-label='Fields' }
 #### integer .score
 {: aria-label='Fields' }
 
 ___
 ### sector
-{: #sector aria-label='Fields' }
+{: #sector .lua-content-item aria-label='Fields' }
 #### integer .sector
 {: aria-label='Fields' }
 

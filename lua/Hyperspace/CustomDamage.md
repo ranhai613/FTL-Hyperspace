@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomDamage ()
-{: #CustomDamage aria-label='Constructors' }
+{: #CustomDamage .lua-content-item aria-label='Constructors' }
 #### [CustomDamage](../Hyperspace/CustomDamage) CustomDamage ()
 {: aria-label='Constructors' }
 
@@ -20,9 +20,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### Clear ()
-{: #Clear aria-label='Methods' }
+{: #Clear .lua-content-item aria-label='Methods' }
 #### void :Clear ()
 {: aria-label='Methods' }
 
@@ -30,27 +30,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### accuracyMod
-{: #accuracyMod aria-label='Fields' }
+{: #accuracyMod .lua-content-item aria-label='Fields' }
 #### integer .accuracyMod
 {: aria-label='Fields' }
 
 ___
 ### def
-{: #def aria-label='Fields' }
+{: #def .lua-content-item aria-label='Fields' }
 #### [CustomDamageDefinition](../Hyperspace/CustomDamageDefinition) .def
 {: aria-label='Fields' }
 
 ___
 ### droneAccuracyMod
-{: #droneAccuracyMod aria-label='Fields' }
+{: #droneAccuracyMod .lua-content-item aria-label='Fields' }
 #### integer .droneAccuracyMod
 {: aria-label='Fields' }
 
 ___
 ### sourceShipId (Read-only)
-{: #sourceShipId aria-label='Fields' }
+{: #sourceShipId .lua-content-item aria-label='Fields' }
 #### integer .sourceShipId
 {: aria-label='Fields' }
 

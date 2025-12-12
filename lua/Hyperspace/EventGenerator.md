@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### EventGenerator ()
-{: #EventGenerator aria-label='Constructors' }
+{: #EventGenerator .lua-content-item aria-label='Constructors' }
 #### [EventGenerator](../Hyperspace/EventGenerator) EventGenerator ()
 {: aria-label='Constructors' }
 
@@ -20,15 +20,15 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### CreateEvent ()
-{: #CreateEvent aria-label='Methods' }
+{: #CreateEvent .lua-content-item aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :CreateEvent (string name, integer worldLevel, boolean ignoreUnique)
 {: aria-label='Methods' }
 
 ___
 ### GetBaseEvent ()
-{: #GetBaseEvent aria-label='Methods' }
+{: #GetBaseEvent .lua-content-item aria-label='Methods' }
 #### [LocationEvent](../Hyperspace/LocationEvent) :GetBaseEvent (string name, integer worldLevel, boolean ignoreUnique, integer seed)
 {: aria-label='Methods' }
 

@@ -10,21 +10,21 @@ lang: en
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### GetShipInfo ()
-{: #GetShipInfo aria-label='StaticMethods' }
+{: #GetShipInfo .lua-content-item aria-label='StaticMethods' }
 #### [ShipGraph](../Hyperspace/ShipGraph) .GetShipInfo (integer shipId)
 {: aria-label='StaticMethods' }
 
 ___
 ### TranslateFromGrid ()
-{: #TranslateFromGrid aria-label='StaticMethods' }
+{: #TranslateFromGrid .lua-content-item aria-label='StaticMethods' }
 #### [Point](../Hyperspace/Point) .TranslateFromGrid (integer xx, integer yy)
 {: aria-label='StaticMethods' }
 
 ___
 ### TranslateToGrid ()
-{: #TranslateToGrid aria-label='StaticMethods' }
+{: #TranslateToGrid .lua-content-item aria-label='StaticMethods' }
 #### [Point](../Hyperspace/Point) .TranslateToGrid (integer xx, integer yy)
 {: aria-label='StaticMethods' }
 
@@ -32,171 +32,171 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### ComputeCenter ()
-{: #ComputeCenter aria-label='Methods' }
+{: #ComputeCenter .lua-content-item aria-label='Methods' }
 #### void :ComputeCenter ()
 {: aria-label='Methods' }
 
 ___
 ### ConnectedGridSquares ()
-{: #ConnectedGridSquares aria-label='Methods' }
+{: #ConnectedGridSquares .lua-content-item aria-label='Methods' }
 #### integer :ConnectedGridSquares (integer x1, integer y1, integer x2, integer y2)
 {: aria-label='Methods' }
 
 ___
 ### ConnectedGridSquaresPoint ()
-{: #ConnectedGridSquaresPoint aria-label='Methods' }
+{: #ConnectedGridSquaresPoint .lua-content-item aria-label='Methods' }
 #### integer :ConnectedGridSquaresPoint ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2)
 {: aria-label='Methods' }
 
 ___
 ### ConnectingDoor ()
-{: #ConnectingDoor aria-label='Methods' }
+{: #ConnectingDoor .lua-content-item aria-label='Methods' }
 #### [Door](../Hyperspace/Door) :ConnectingDoor (integer x1, integer y1, integer x2, integer y2)
 {: aria-label='Methods' }
 
 ___
 ### ConnectingDoor ()
-{: #ConnectingDoor aria-label='Methods' }
+{: #ConnectingDoor .lua-content-item aria-label='Methods' }
 #### [Door](../Hyperspace/Door) :ConnectingDoor ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2)
 {: aria-label='Methods' }
 
 ___
 ### ConnectivityDFS ()
-{: #ConnectivityDFS aria-label='Methods' }
+{: #ConnectivityDFS .lua-content-item aria-label='Methods' }
 #### vector\<integer\> :ConnectivityDFS (integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### ContainsPoint ()
-{: #ContainsPoint aria-label='Methods' }
+{: #ContainsPoint .lua-content-item aria-label='Methods' }
 #### boolean :ContainsPoint (integer x, integer y)
 {: aria-label='Methods' }
 
 ___
 ### ConvertToLocalAngle ()
-{: #ConvertToLocalAngle aria-label='Methods' }
+{: #ConvertToLocalAngle .lua-content-item aria-label='Methods' }
 #### number :ConvertToLocalAngle (number ang)
 {: aria-label='Methods' }
 
 ___
 ### ConvertToLocalPosition ()
-{: #ConvertToLocalPosition aria-label='Methods' }
+{: #ConvertToLocalPosition .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :ConvertToLocalPosition ([Pointf](../Hyperspace/Pointf) world, boolean past)
 {: aria-label='Methods' }
 
 ___
 ### ConvertToWorldAngle ()
-{: #ConvertToWorldAngle aria-label='Methods' }
+{: #ConvertToWorldAngle .lua-content-item aria-label='Methods' }
 #### number :ConvertToWorldAngle (number ang)
 {: aria-label='Methods' }
 
 ___
 ### ConvertToWorldPosition ()
-{: #ConvertToWorldPosition aria-label='Methods' }
+{: #ConvertToWorldPosition .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :ConvertToWorldPosition ([Pointf](../Hyperspace/Pointf) local)
 {: aria-label='Methods' }
 
 ___
 ### Dijkstra ()
-{: #Dijkstra aria-label='Methods' }
+{: #Dijkstra .lua-content-item aria-label='Methods' }
 #### Path :Dijkstra ([Point](../Hyperspace/Point) start, [Point](../Hyperspace/Point) goal, integer shipId)
 {: aria-label='Methods' }
 
 ___
 ### DoorCount ()
-{: #DoorCount aria-label='Methods' }
+{: #DoorCount .lua-content-item aria-label='Methods' }
 #### integer :DoorCount (integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### FindPath ()
-{: #FindPath aria-label='Methods' }
+{: #FindPath .lua-content-item aria-label='Methods' }
 #### Path :FindPath ([Point](../Hyperspace/Point) p1, [Point](../Hyperspace/Point) p2, integer shipId)
 {: aria-label='Methods' }
 
 ___
 ### GetClosestSlot ()
-{: #GetClosestSlot aria-label='Methods' }
+{: #GetClosestSlot .lua-content-item aria-label='Methods' }
 #### [Slot](../Hyperspace/Slot) :GetClosestSlot ([Point](../Hyperspace/Point) pos, integer shipId, boolean intruder)
 {: aria-label='Methods' }
 
 ___
 ### GetDoors ()
-{: #GetDoors aria-label='Methods' }
+{: #GetDoors .lua-content-item aria-label='Methods' }
 #### vector\<[Door](../Hyperspace/Door)\> :GetDoors (integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### GetIntoRoom ()
-{: #GetIntoRoom aria-label='Methods' }
+{: #GetIntoRoom .lua-content-item aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetIntoRoom (integer roomId, [Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
 ___
 ### GetNumSlots ()
-{: #GetNumSlots aria-label='Methods' }
+{: #GetNumSlots .lua-content-item aria-label='Methods' }
 #### integer :GetNumSlots (integer room)
 {: aria-label='Methods' }
 
 ___
 ### GetRoomBlackedOut ()
-{: #GetRoomBlackedOut aria-label='Methods' }
+{: #GetRoomBlackedOut .lua-content-item aria-label='Methods' }
 #### boolean :GetRoomBlackedOut (integer room)
 {: aria-label='Methods' }
 
 ___
 ### GetRoomCenter ()
-{: #GetRoomCenter aria-label='Methods' }
+{: #GetRoomCenter .lua-content-item aria-label='Methods' }
 #### [Pointf](../Hyperspace/Pointf) :GetRoomCenter (integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### GetRoomOxygen ()
-{: #GetRoomOxygen aria-label='Methods' }
+{: #GetRoomOxygen .lua-content-item aria-label='Methods' }
 #### number :GetRoomOxygen (integer room)
 {: aria-label='Methods' }
 
 ___
 ### GetRoomShape ()
-{: #GetRoomShape aria-label='Methods' }
+{: #GetRoomShape .lua-content-item aria-label='Methods' }
 #### [Rect](../Hyperspace/Rect) :GetRoomShape (integer room)
 {: aria-label='Methods' }
 
 ___
 ### GetSelectedRoom ()
-{: #GetSelectedRoom aria-label='Methods' }
+{: #GetSelectedRoom .lua-content-item aria-label='Methods' }
 #### integer :GetSelectedRoom (integer x, integer y, boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### GetSlotRenderPosition ()
-{: #GetSlotRenderPosition aria-label='Methods' }
+{: #GetSlotRenderPosition .lua-content-item aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetSlotRenderPosition (integer slotId, integer roomId, boolean intruder)
 {: aria-label='Methods' }
 
 ___
 ### GetSlotWorldPosition ()
-{: #GetSlotWorldPosition aria-label='Methods' }
+{: #GetSlotWorldPosition .lua-content-item aria-label='Methods' }
 #### [Point](../Hyperspace/Point) :GetSlotWorldPosition (integer slotId, integer roomId)
 {: aria-label='Methods' }
 
 ___
 ### IsRoomConnected ()
-{: #IsRoomConnected aria-label='Methods' }
+{: #IsRoomConnected .lua-content-item aria-label='Methods' }
 #### boolean :IsRoomConnected (integer room1, integer room2)
 {: aria-label='Methods' }
 
 ___
 ### PopClosestDoor ()
-{: #PopClosestDoor aria-label='Methods' }
+{: #PopClosestDoor .lua-content-item aria-label='Methods' }
 #### integer :PopClosestDoor (vector\<integer\> doors, vector\<number\> distances)
 {: aria-label='Methods' }
 
 ___
 ### RoomCount ()
-{: #RoomCount aria-label='Methods' }
+{: #RoomCount .lua-content-item aria-label='Methods' }
 #### integer :RoomCount ()
 {: aria-label='Methods' }
 
@@ -204,63 +204,63 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### center
-{: #center aria-label='Fields' }
+{: #center .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
 
 ___
 ### doorCounts
-{: #doorCounts aria-label='Fields' }
+{: #doorCounts .lua-content-item aria-label='Fields' }
 #### vector\<integer\> .doorCounts
 {: aria-label='Fields' }
 
 ___
 ### doors
-{: #doors aria-label='Fields' }
+{: #doors .lua-content-item aria-label='Fields' }
 #### vector\<[Door](../Hyperspace/Door)\> .doors
 {: aria-label='Fields' }
 
 ___
 ### lastWorldHeading
-{: #lastWorldHeading aria-label='Fields' }
+{: #lastWorldHeading .lua-content-item aria-label='Fields' }
 #### number .lastWorldHeading
 {: aria-label='Fields' }
 
 ___
 ### lastWorldPosition
-{: #lastWorldPosition aria-label='Fields' }
+{: #lastWorldPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastWorldPosition
 {: aria-label='Fields' }
 
 ___
 ### rooms
-{: #rooms aria-label='Fields' }
+{: #rooms .lua-content-item aria-label='Fields' }
 #### vector\<[Room](../Hyperspace/Room)\> .rooms
 {: aria-label='Fields' }
 
 ___
 ### shipBox
-{: #shipBox aria-label='Fields' }
+{: #shipBox .lua-content-item aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .shipBox
 {: aria-label='Fields' }
 
 ___
 ### shipName
-{: #shipName aria-label='Fields' }
+{: #shipName .lua-content-item aria-label='Fields' }
 #### string .shipName
 {: aria-label='Fields' }
 
 ___
 ### worldHeading
-{: #worldHeading aria-label='Fields' }
+{: #worldHeading .lua-content-item aria-label='Fields' }
 #### number .worldHeading
 {: aria-label='Fields' }
 
 ___
 ### worldPosition
-{: #worldPosition aria-label='Fields' }
+{: #worldPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .worldPosition
 {: aria-label='Fields' }
 

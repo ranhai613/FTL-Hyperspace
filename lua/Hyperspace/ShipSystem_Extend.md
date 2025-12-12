@@ -12,15 +12,15 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### additionalPowerLoss
-{: #additionalPowerLoss aria-label='Fields' }
+{: #additionalPowerLoss .lua-content-item aria-label='Fields' }
 #### integer .additionalPowerLoss
 {: aria-label='Fields' }
 
 ___
 ### xOffset
-{: #xOffset aria-label='Fields' }
+{: #xOffset .lua-content-item aria-label='Fields' }
 #### integer .xOffset
 {: aria-label='Fields' }
 The offset from this SystemBox to the next in the UI.

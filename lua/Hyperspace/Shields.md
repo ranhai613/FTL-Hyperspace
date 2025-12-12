@@ -11,9 +11,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Shields ()
-{: #Shields aria-label='Constructors' }
+{: #Shields .lua-content-item aria-label='Constructors' }
 #### [Shields](../Hyperspace/Shields) Shields (integer roomId, integer shipId, integer startingPower, string shieldFile)
 {: aria-label='Constructors' }
 
@@ -22,9 +22,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -41,8 +41,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -74,8 +74,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -100,31 +100,31 @@ ___
 </details>
 ___
 ### AddSuperShield ()
-{: #AddSuperShield aria-label='Methods' }
+{: #AddSuperShield .lua-content-item aria-label='Methods' }
 #### void :AddSuperShield ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
 
 ___
 ### CollisionReal ()
-{: #CollisionReal aria-label='Methods' }
+{: #CollisionReal .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionReal (number x, number y, [Damage](../Hyperspace/Damage) damage, boolean force)
 {: aria-label='Methods' }
 
 ___
 ### InstantCharge ()
-{: #InstantCharge aria-label='Methods' }
+{: #InstantCharge .lua-content-item aria-label='Methods' }
 #### void :InstantCharge ()
 {: aria-label='Methods' }
 
 ___
 ### SetBaseEllipse ()
-{: #SetBaseEllipse aria-label='Methods' }
+{: #SetBaseEllipse .lua-content-item aria-label='Methods' }
 #### void :SetBaseEllipse ([Ellipse](../Hyperspace/Ellipse) ellipse)
 {: aria-label='Methods' }
 
 ___
 ### SetHackingLevel ()
-{: #SetHackingLevel aria-label='Methods' }
+{: #SetHackingLevel .lua-content-item aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
 {: aria-label='Methods' }
 
@@ -132,8 +132,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -194,133 +194,133 @@ ___
 </details>
 ___
 ### bBarrierMode
-{: #bBarrierMode aria-label='Fields' }
+{: #bBarrierMode .lua-content-item aria-label='Fields' }
 #### boolean .bBarrierMode
 {: aria-label='Fields' }
 
 ___
 ### bEnemyPresent
-{: #bEnemyPresent aria-label='Fields' }
+{: #bEnemyPresent .lua-content-item aria-label='Fields' }
 #### boolean .bEnemyPresent
 {: aria-label='Fields' }
 
 ___
 ### bExcessChargeHack
-{: #bExcessChargeHack aria-label='Fields' }
+{: #bExcessChargeHack .lua-content-item aria-label='Fields' }
 #### boolean .bExcessChargeHack
 {: aria-label='Fields' }
 
 ___
 ### baseShield
-{: #baseShield aria-label='Fields' }
+{: #baseShield .lua-content-item aria-label='Fields' }
 #### [Ellipse](../Hyperspace/Ellipse) .baseShield
 {: aria-label='Fields' }
 
 ___
 ### center
-{: #center aria-label='Fields' }
+{: #center .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
 
 ___
 ### chargeTime
-{: #chargeTime aria-label='Fields' }
+{: #chargeTime .lua-content-item aria-label='Fields' }
 #### number .chargeTime
 {: aria-label='Fields' }
 
 ___
 ### ellipseRatio
-{: #ellipseRatio aria-label='Fields' }
+{: #ellipseRatio .lua-content-item aria-label='Fields' }
 #### number .ellipseRatio
 {: aria-label='Fields' }
 
 ___
 ### iHighlightedSide
-{: #iHighlightedSide aria-label='Fields' }
+{: #iHighlightedSide .lua-content-item aria-label='Fields' }
 #### integer .iHighlightedSide
 {: aria-label='Fields' }
 
 ___
 ### lastHitShieldLevel
-{: #lastHitShieldLevel aria-label='Fields' }
+{: #lastHitShieldLevel .lua-content-item aria-label='Fields' }
 #### integer .lastHitShieldLevel
 {: aria-label='Fields' }
 
 ___
 ### lastHitTimer
-{: #lastHitTimer aria-label='Fields' }
+{: #lastHitTimer .lua-content-item aria-label='Fields' }
 #### number .lastHitTimer
 {: aria-label='Fields' }
 
 ___
 ### shieldHits
-{: #shieldHits aria-label='Fields' }
+{: #shieldHits .lua-content-item aria-label='Fields' }
 #### vector\<[Shields.ShieldAnimation](../Hyperspace/Shields.ShieldAnimation)\> .shieldHits
 {: aria-label='Fields' }
 
 ___
 ### shieldImage
-{: #shieldImage aria-label='Fields' }
+{: #shieldImage .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .shieldImage
 {: aria-label='Fields' }
 
 ___
 ### shieldImageName
-{: #shieldImageName aria-label='Fields' }
+{: #shieldImageName .lua-content-item aria-label='Fields' }
 #### string .shieldImageName
 {: aria-label='Fields' }
 
 ___
 ### shieldPrimitive
-{: #shieldPrimitive aria-label='Fields' }
+{: #shieldPrimitive .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shieldPrimitive
 {: aria-label='Fields' }
 
 ___
 ### shields
-{: #shields aria-label='Fields' }
+{: #shields .lua-content-item aria-label='Fields' }
 #### [Shield](../Hyperspace/Shield) .shields
 {: aria-label='Fields' }
 
 ___
 ### shieldsDown
-{: #shieldsDown aria-label='Fields' }
+{: #shieldsDown .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsDown
 {: aria-label='Fields' }
 
 ___
 ### shieldsDownPoint
-{: #shieldsDownPoint aria-label='Fields' }
+{: #shieldsDownPoint .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shieldsDownPoint
 {: aria-label='Fields' }
 
 ___
 ### shieldsUp
-{: #shieldsUp aria-label='Fields' }
+{: #shieldsUp .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsUp
 {: aria-label='Fields' }
 
 ___
 ### shields_shutdown
-{: #shields_shutdown aria-label='Fields' }
+{: #shields_shutdown .lua-content-item aria-label='Fields' }
 #### boolean .shields_shutdown
 {: aria-label='Fields' }
 
 ___
 ### superShieldDown
-{: #superShieldDown aria-label='Fields' }
+{: #superShieldDown .lua-content-item aria-label='Fields' }
 #### boolean .superShieldDown
 {: aria-label='Fields' }
 
 ___
 ### superShieldUp
-{: #superShieldUp aria-label='Fields' }
+{: #superShieldUp .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .superShieldUp
 {: aria-label='Fields' }
 
 ___
 ### superUpLoc
-{: #superUpLoc aria-label='Fields' }
+{: #superUpLoc .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .superUpLoc
 {: aria-label='Fields' }
 

@@ -337,7 +337,7 @@ class WikiPage:
         
         ret = ""
         for constructor in sorted(self.constructors, key=lambda x: x.name):
-            ret += f"___\n### {constructor.name} ()\n{{: #{constructor.name} aria-label='Constructors' }}\n"
+            ret += f"___\n### {constructor.name} ()\n{{: #{constructor.name} .lua-content-item aria-label='Constructors' }}\n"
             params = []
             for i in range(len(constructor.params_name)):
                 params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
@@ -360,7 +360,7 @@ class WikiPage:
             inherited_map = defaultdict(list)
             for constant in inherited_constants:
                 inherited_map[constant.className].append(constant)
-            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Constants</summary>\n\n"
+            ret += "___\n<details markdown=\"1\"><summary id=\"InheritedConstants\" class=\"lua-content-item\" markdown=\"span\">Inherited Constants</summary>\n\n"
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Constant | Value |\n| --- | --- |\n"
                 for constant in sorted(inherited_map[parentClass], key=lambda x: x.name):
@@ -371,7 +371,7 @@ class WikiPage:
             return ret
         
         for constant in sorted(self.constants, key=lambda x: x.name):
-            ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
+            ret += f"___\n### {constant.className}.{constant.name}\n{{: #{constant.name} .lua-content-item aria-label='Constants' }}\nEquivalent to `{constant.value}`.\n"
             if constant.documentation:
                 ret += f"{constant.documentation}\n"
             ret += "\n"
@@ -390,7 +390,7 @@ class WikiPage:
             inherited_map = defaultdict(list)
             for method in inherited_methods:
                 inherited_map[method.className].append(method)
-            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Static Methods</summary>\n\n"
+            ret += "___\n<details markdown=\"1\"><summary id=\"InheritedStaticMethods\" class=\"lua-content-item\" markdown=\"span\">Inherited Static Methods</summary>\n\n"
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Return Type | Method |\n| --- | --- |\n"
                 for method in sorted(inherited_map[parentClass], key=lambda x: x.name):
@@ -405,7 +405,7 @@ class WikiPage:
             return ret
         
         for method in sorted(self.staticMethods, key=lambda x: x.name):
-            ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='StaticMethods' }}\n"
+            ret += f"___\n### {method.name} ()\n{{: #{method.name} .lua-content-item aria-label='StaticMethods' }}\n"
             params = []
             for i in range(len(method.params_name)):
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
@@ -428,7 +428,7 @@ class WikiPage:
             inherited_map = defaultdict(list)
             for method in inherited_methods:
                 inherited_map[method.className].append(method)
-            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Methods</summary>\n\n"
+            ret += "___\n<details markdown=\"1\"><summary id=\"InheritedMethods\" class=\"lua-content-item\" markdown=\"span\">Inherited Methods</summary>\n\n"
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Return Type | Method |\n| --- | --- |\n"
                 for method in sorted(inherited_map[parentClass], key=lambda x: x.name):
@@ -443,7 +443,7 @@ class WikiPage:
             return ret
         
         for method in sorted(self.methods, key=lambda x: x.name):
-            ret += f"___\n### {method.name} ()\n{{: #{method.name} aria-label='Methods' }}\n"
+            ret += f"___\n### {method.name} ()\n{{: #{method.name} .lua-content-item aria-label='Methods' }}\n"
             params = []
             for i in range(len(method.params_name)):
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
@@ -466,7 +466,7 @@ class WikiPage:
             inherited_map = defaultdict(list)
             for field in inherited_fields:
                 inherited_map[field.className].append(field)
-            ret += "___\n<details markdown=\"1\"><summary markdown=\"span\">Inherited Fields</summary>\n\n"
+            ret += "___\n<details markdown=\"1\"><summary id=\"InheritedFields\" class=\"lua-content-item\" markdown=\"span\">Inherited Fields</summary>\n\n"
             for parentClass in sorted(inherited_map.keys()):
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Type | Field |\n| --- | --- |\n"
                 for field in sorted(inherited_map[parentClass], key=lambda x: x.name):
@@ -480,7 +480,7 @@ class WikiPage:
             ret += f"___\n### {field.name}"
             if field.immutable:
                 ret += " (Read-only)"
-            ret += f"\n{{: #{field.name} aria-label='Fields' }}\n"
+            ret += f"\n{{: #{field.name} .lua-content-item aria-label='Fields' }}\n"
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
             if field.documentation:
                 ret += f"{field.documentation}\n"

@@ -8,15 +8,15 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### SystemBox ()
-{: #SystemBox aria-label='Constructors' }
+{: #SystemBox .lua-content-item aria-label='Constructors' }
 #### [SystemBox](../Hyperspace/SystemBox) SystemBox ()
 {: aria-label='Constructors' }
 
 ___
 ### SystemBox ()
-{: #SystemBox aria-label='Constructors' }
+{: #SystemBox .lua-content-item aria-label='Constructors' }
 #### [SystemBox](../Hyperspace/SystemBox) SystemBox ([Point](../Hyperspace/Point) pos, [ShipSystem](../Hyperspace/ShipSystem) sys, boolean playerUI)
 {: aria-label='Constructors' }
 
@@ -27,15 +27,15 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### bPlayerUI
-{: #bPlayerUI aria-label='Fields' }
+{: #bPlayerUI .lua-content-item aria-label='Fields' }
 #### boolean .bPlayerUI
 {: aria-label='Fields' }
 
 ___
 ### extend (Read-only)
-{: #extend aria-label='Fields' }
+{: #extend .lua-content-item aria-label='Fields' }
 #### [SystemBox_Extend](../Hyperspace/SystemBox_Extend) .extend
 {: aria-label='Fields' }
 **Read-only**
@@ -43,14 +43,14 @@ The SystemBox_Extend associated with this SystemBox.
 
 ___
 ### location
-{: #location aria-label='Fields' }
+{: #location .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .location
 {: aria-label='Fields' }
 The location of the SystemBox.
 
 ___
 ### pSystem
-{: #pSystem aria-label='Fields' }
+{: #pSystem .lua-content-item aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .pSystem
 {: aria-label='Fields' }
 The ShipSystem managed by this SystemBox.

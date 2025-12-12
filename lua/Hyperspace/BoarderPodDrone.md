@@ -11,9 +11,9 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### BoarderPodDrone ()
-{: #BoarderPodDrone aria-label='Constructors' }
+{: #BoarderPodDrone .lua-content-item aria-label='Constructors' }
 #### [BoarderPodDrone](../Hyperspace/BoarderPodDrone) BoarderPodDrone (integer _iShipId, integer _selfId, [DroneBlueprint](../Hyperspace/DroneBlueprint) _bp)
 {: aria-label='Constructors' }
 
@@ -23,8 +23,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Drone](Drone)
@@ -91,31 +91,31 @@ ___
 </details>
 ___
 ### CanBeDeployed ()
-{: #CanBeDeployed aria-label='Methods' }
+{: #CanBeDeployed .lua-content-item aria-label='Methods' }
 #### boolean :CanBeDeployed ()
 {: aria-label='Methods' }
 
 ___
 ### CollisionMoving ()
-{: #CollisionMoving aria-label='Methods' }
+{: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
 
 ___
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
 ___
 ### SetDeployed ()
-{: #SetDeployed aria-label='Methods' }
+{: #SetDeployed .lua-content-item aria-label='Methods' }
 #### void :SetDeployed (boolean _deployed)
 {: aria-label='Methods' }
 
 ___
 ### SetMovementTarget ()
-{: #SetMovementTarget aria-label='Methods' }
+{: #SetMovementTarget .lua-content-item aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -123,8 +123,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Drone](Drone)
@@ -189,49 +189,49 @@ ___
 </details>
 ___
 ### bDeliveredDrone
-{: #bDeliveredDrone aria-label='Fields' }
+{: #bDeliveredDrone .lua-content-item aria-label='Fields' }
 #### boolean .bDeliveredDrone
 {: aria-label='Fields' }
 
 ___
 ### baseSheet
-{: #baseSheet aria-label='Fields' }
+{: #baseSheet .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseSheet
 {: aria-label='Fields' }
 
 ___
 ### boarderDrone
-{: #boarderDrone aria-label='Fields' }
+{: #boarderDrone .lua-content-item aria-label='Fields' }
 #### BoarderDrone .boarderDrone
 {: aria-label='Fields' }
 
 ___
 ### colorSheet
-{: #colorSheet aria-label='Fields' }
+{: #colorSheet .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorSheet
 {: aria-label='Fields' }
 
 ___
 ### diedInSpace
-{: #diedInSpace aria-label='Fields' }
+{: #diedInSpace .lua-content-item aria-label='Fields' }
 #### boolean .diedInSpace
 {: aria-label='Fields' }
 
 ___
 ### droneImage
-{: #droneImage aria-label='Fields' }
+{: #droneImage .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .droneImage
 {: aria-label='Fields' }
 
 ___
 ### flame
-{: #flame aria-label='Fields' }
+{: #flame .lua-content-item aria-label='Fields' }
 #### CachedImage .flame
 {: aria-label='Fields' }
 
 ___
 ### startingPosition
-{: #startingPosition aria-label='Fields' }
+{: #startingPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
 {: aria-label='Fields' }
 

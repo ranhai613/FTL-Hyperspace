@@ -8,15 +8,15 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### GL_Color ()
-{: #GL_Color aria-label='Constructors' }
+{: #GL_Color .lua-content-item aria-label='Constructors' }
 #### [GL_Color](../Graphics/GL_Color) GL_Color (number rr, number gg, number bb, number aa)
 {: aria-label='Constructors' }
 
 ___
 ### GL_Color ()
-{: #GL_Color aria-label='Constructors' }
+{: #GL_Color .lua-content-item aria-label='Constructors' }
 #### [GL_Color](../Graphics/GL_Color) GL_Color ()
 {: aria-label='Constructors' }
 
@@ -25,9 +25,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### FromHSV ()
-{: #FromHSV aria-label='StaticMethods' }
+{: #FromHSV .lua-content-item aria-label='StaticMethods' }
 #### [GL_Color](../Graphics/GL_Color) .FromHSV (number fH, number fS, number fV, number fA)
 {: aria-label='StaticMethods' }
 
@@ -36,27 +36,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### a
-{: #a aria-label='Fields' }
+{: #a .lua-content-item aria-label='Fields' }
 #### number .a
 {: aria-label='Fields' }
 
 ___
 ### b
-{: #b aria-label='Fields' }
+{: #b .lua-content-item aria-label='Fields' }
 #### number .b
 {: aria-label='Fields' }
 
 ___
 ### g
-{: #g aria-label='Fields' }
+{: #g .lua-content-item aria-label='Fields' }
 #### number .g
 {: aria-label='Fields' }
 
 ___
 ### r
-{: #r aria-label='Fields' }
+{: #r .lua-content-item aria-label='Fields' }
 #### number .r
 {: aria-label='Fields' }
 

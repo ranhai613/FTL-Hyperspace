@@ -13,9 +13,9 @@ Subclasses: [PDSFire](../Hyperspace/PDSFire)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### LaserBlast ()
-{: #LaserBlast aria-label='Constructors' }
+{: #LaserBlast .lua-content-item aria-label='Constructors' }
 #### [LaserBlast](../Hyperspace/LaserBlast) LaserBlast ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target)
 {: aria-label='Constructors' }
 
@@ -24,9 +24,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [Projectile](Projectile)
@@ -40,9 +40,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Collideable](Collideable)
@@ -92,8 +92,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Projectile](Projectile)
@@ -132,19 +132,19 @@ ___
 </details>
 ___
 ### movingTarget
-{: #movingTarget aria-label='Fields' }
+{: #movingTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
 
 ___
 ### spinAngle
-{: #spinAngle aria-label='Fields' }
+{: #spinAngle .lua-content-item aria-label='Fields' }
 #### number .spinAngle
 {: aria-label='Fields' }
 
 ___
 ### spinSpeed
-{: #spinSpeed aria-label='Fields' }
+{: #spinSpeed .lua-content-item aria-label='Fields' }
 #### number .spinSpeed
 {: aria-label='Fields' }
 

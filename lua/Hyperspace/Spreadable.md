@@ -17,8 +17,8 @@ Subclasses: [Fire](../Hyperspace/Fire)
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Repairable](Repairable)
@@ -42,7 +42,7 @@ Subclasses: [Fire](../Hyperspace/Fire)
 </details>
 ___
 ### soundName
-{: #soundName aria-label='Fields' }
+{: #soundName .lua-content-item aria-label='Fields' }
 #### string .soundName
 {: aria-label='Fields' }
 

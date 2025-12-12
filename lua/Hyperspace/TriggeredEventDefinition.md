@@ -12,21 +12,21 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### defs (Read-only)
-{: #defs aria-label='Fields' }
+{: #defs .lua-content-item aria-label='Fields' }
 #### vector\<[TriggeredEventDefinition](../Hyperspace/TriggeredEventDefinition)\> .defs
 {: aria-label='Fields' }
 
 ___
 ### event (Read-only)
-{: #event aria-label='Fields' }
+{: #event .lua-content-item aria-label='Fields' }
 #### string .event
 {: aria-label='Fields' }
 
 ___
 ### name (Read-only)
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 

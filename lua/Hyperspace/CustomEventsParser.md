@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomEventsParser ()
-{: #CustomEventsParser aria-label='Constructors' }
+{: #CustomEventsParser .lua-content-item aria-label='Constructors' }
 #### [CustomEventsParser](../Hyperspace/CustomEventsParser) CustomEventsParser ()
 {: aria-label='Constructors' }
 
@@ -19,9 +19,9 @@ ___
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### GetInstance ()
-{: #GetInstance aria-label='StaticMethods' }
+{: #GetInstance .lua-content-item aria-label='StaticMethods' }
 #### [CustomEventsParser](../Hyperspace/CustomEventsParser) .GetInstance ()
 {: aria-label='StaticMethods' }
 
@@ -29,27 +29,27 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetCustomEvent ()
-{: #GetCustomEvent aria-label='Methods' }
+{: #GetCustomEvent .lua-content-item aria-label='Methods' }
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent (string event)
 {: aria-label='Methods' }
 
 ___
 ### GetCustomEvent ()
-{: #GetCustomEvent aria-label='Methods' }
+{: #GetCustomEvent .lua-content-item aria-label='Methods' }
 #### [CustomEvent](../Hyperspace/CustomEvent) :GetCustomEvent ([Location](../Hyperspace/Location) loc)
 {: aria-label='Methods' }
 
 ___
 ### LoadEvent ()
-{: #LoadEvent aria-label='Methods' }
+{: #LoadEvent .lua-content-item aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, EventLoadList eventList, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)
 {: aria-label='Methods' }
 
 ___
 ### LoadEvent ()
-{: #LoadEvent aria-label='Methods' }
+{: #LoadEvent .lua-content-item aria-label='Methods' }
 #### void :LoadEvent ([WorldManager](../Hyperspace/WorldManager) world, string eventName, boolean ignoreUnique, integer seed, [CustomEvent](../Hyperspace/CustomEvent) parentEvent=nullptr)
 {: aria-label='Methods' }
 

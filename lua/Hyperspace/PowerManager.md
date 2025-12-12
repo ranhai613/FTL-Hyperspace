@@ -10,9 +10,9 @@ lang: en
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ### GetPowerManager ()
-{: #GetPowerManager aria-label='StaticMethods' }
+{: #GetPowerManager .lua-content-item aria-label='StaticMethods' }
 #### [PowerManager](../Hyperspace/PowerManager) .GetPowerManager (integer iShipId)
 {: aria-label='StaticMethods' }
 
@@ -20,15 +20,15 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetAvailablePower ()
-{: #GetAvailablePower aria-label='Methods' }
+{: #GetAvailablePower .lua-content-item aria-label='Methods' }
 #### integer :GetAvailablePower ()
 {: aria-label='Methods' }
 
 ___
 ### GetMaxPower ()
-{: #GetMaxPower aria-label='Methods' }
+{: #GetMaxPower .lua-content-item aria-label='Methods' }
 #### integer :GetMaxPower ()
 {: aria-label='Methods' }
 
@@ -36,57 +36,57 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### batteryPower
-{: #batteryPower aria-label='Fields' }
+{: #batteryPower .lua-content-item aria-label='Fields' }
 #### pair\<integer, integer\> .batteryPower
 {: aria-label='Fields' }
 
 ___
 ### currentPower
-{: #currentPower aria-label='Fields' }
+{: #currentPower .lua-content-item aria-label='Fields' }
 #### pair\<integer, integer\> .currentPower
 {: aria-label='Fields' }
 
 ___
 ### fFuel
-{: #fFuel aria-label='Fields' }
+{: #fFuel .lua-content-item aria-label='Fields' }
 #### number .fFuel
 {: aria-label='Fields' }
 
 ___
 ### failedPowerup
-{: #failedPowerup aria-label='Fields' }
+{: #failedPowerup .lua-content-item aria-label='Fields' }
 #### boolean .failedPowerup
 {: aria-label='Fields' }
 
 ___
 ### iHacked
-{: #iHacked aria-label='Fields' }
+{: #iHacked .lua-content-item aria-label='Fields' }
 #### integer .iHacked
 {: aria-label='Fields' }
 
 ___
 ### iTempDividePower
-{: #iTempDividePower aria-label='Fields' }
+{: #iTempDividePower .lua-content-item aria-label='Fields' }
 #### integer .iTempDividePower
 {: aria-label='Fields' }
 
 ___
 ### iTempPowerCap
-{: #iTempPowerCap aria-label='Fields' }
+{: #iTempPowerCap .lua-content-item aria-label='Fields' }
 #### integer .iTempPowerCap
 {: aria-label='Fields' }
 
 ___
 ### iTempPowerLoss
-{: #iTempPowerLoss aria-label='Fields' }
+{: #iTempPowerLoss .lua-content-item aria-label='Fields' }
 #### integer .iTempPowerLoss
 {: aria-label='Fields' }
 
 ___
 ### over_powered
-{: #over_powered aria-label='Fields' }
+{: #over_powered .lua-content-item aria-label='Fields' }
 #### integer .over_powered
 {: aria-label='Fields' }
 

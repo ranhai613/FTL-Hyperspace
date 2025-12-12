@@ -11,15 +11,15 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetCloneReadyList ()
-{: #GetCloneReadyList aria-label='Methods' }
+{: #GetCloneReadyList .lua-content-item aria-label='Methods' }
 #### void :GetCloneReadyList (vector\<[CrewMember](../Hyperspace/CrewMember)\> vec, boolean player)
 {: aria-label='Methods' }
 
 ___
 ### GetCloneReadyList ()
-{: #GetCloneReadyList aria-label='Methods' }
+{: #GetCloneReadyList .lua-content-item aria-label='Methods' }
 #### void :GetCloneReadyList (boolean player)
 {: aria-label='Methods' }
 
@@ -27,9 +27,9 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### crewMembers (Read-only)
-{: #crewMembers aria-label='Fields' }
+{: #crewMembers .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .crewMembers
 {: aria-label='Fields' }
 **read-only**

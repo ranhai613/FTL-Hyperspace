@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CrewDesc ()
-{: #CrewDesc aria-label='Constructors' }
+{: #CrewDesc .lua-content-item aria-label='Constructors' }
 #### [CrewDesc](../Hyperspace/CrewDesc) CrewDesc ()
 {: aria-label='Constructors' }
 
@@ -21,21 +21,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### amount
-{: #amount aria-label='Fields' }
+{: #amount .lua-content-item aria-label='Fields' }
 #### integer .amount
 {: aria-label='Fields' }
 
 ___
 ### prop
-{: #prop aria-label='Fields' }
+{: #prop .lua-content-item aria-label='Fields' }
 #### number .prop
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### string .type
 {: aria-label='Fields' }
 

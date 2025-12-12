@@ -8,15 +8,15 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### StatBoost ()
-{: #StatBoost aria-label='Constructors' }
+{: #StatBoost .lua-content-item aria-label='Constructors' }
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)
 {: aria-label='Constructors' }
 
 ___
 ### StatBoost ()
-{: #StatBoost aria-label='Constructors' }
+{: #StatBoost .lua-content-item aria-label='Constructors' }
 #### [StatBoost](../Hyperspace/StatBoost) StatBoost ([StatBoostDefinition](../Hyperspace/StatBoostDefinition) definition)
 {: aria-label='Constructors' }
 

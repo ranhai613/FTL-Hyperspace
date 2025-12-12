@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### LocationEvent ()
-{: #LocationEvent aria-label='Constructors' }
+{: #LocationEvent .lua-content-item aria-label='Constructors' }
 #### [LocationEvent](../Hyperspace/LocationEvent) LocationEvent ()
 {: aria-label='Constructors' }
 
@@ -20,21 +20,21 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### AddChoice ()
-{: #AddChoice aria-label='Methods' }
+{: #AddChoice .lua-content-item aria-label='Methods' }
 #### void :AddChoice ([LocationEvent](../Hyperspace/LocationEvent) newEvent, string text, [ChoiceReq](../Hyperspace/ChoiceReq) requirement, boolean hiddenReward)
 {: aria-label='Methods' }
 
 ___
 ### GetChoices ()
-{: #GetChoices aria-label='Methods' }
+{: #GetChoices .lua-content-item aria-label='Methods' }
 #### vector\<[Choice](../Hyperspace/Choice)\> :GetChoices ()
 {: aria-label='Methods' }
 
 ___
 ### RemoveChoice ()
-{: #RemoveChoice aria-label='Methods' }
+{: #RemoveChoice .lua-content-item aria-label='Methods' }
 #### boolean :RemoveChoice (integer index)
 {: aria-label='Methods' }
 
@@ -42,136 +42,136 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### beacon
-{: #beacon aria-label='Fields' }
+{: #beacon .lua-content-item aria-label='Fields' }
 #### boolean .beacon
 {: aria-label='Fields' }
 
 ___
 ### boarders
-{: #boarders aria-label='Fields' }
+{: #boarders .lua-content-item aria-label='Fields' }
 #### [BoardingEvent](../Hyperspace/BoardingEvent) .boarders
 {: aria-label='Fields' }
 
 ___
 ### choices
-{: #choices aria-label='Fields' }
+{: #choices .lua-content-item aria-label='Fields' }
 #### vector\<[Choice](../Hyperspace/Choice)\> .choices
 {: aria-label='Fields' }
 If you want to modify the current `Choice` values please refer to `:GetChoices()` instead
 
 ___
 ### distressBeacon
-{: #distressBeacon aria-label='Fields' }
+{: #distressBeacon .lua-content-item aria-label='Fields' }
 #### boolean .distressBeacon
 {: aria-label='Fields' }
 
 ___
 ### environment
-{: #environment aria-label='Fields' }
+{: #environment .lua-content-item aria-label='Fields' }
 #### integer .environment
 {: aria-label='Fields' }
 
 ___
 ### environmentTarget
-{: #environmentTarget aria-label='Fields' }
+{: #environmentTarget .lua-content-item aria-label='Fields' }
 #### integer .environmentTarget
 {: aria-label='Fields' }
 
 ___
 ### eventName
-{: #eventName aria-label='Fields' }
+{: #eventName .lua-content-item aria-label='Fields' }
 #### string .eventName
 {: aria-label='Fields' }
 
 ___
 ### fleetPosition
-{: #fleetPosition aria-label='Fields' }
+{: #fleetPosition .lua-content-item aria-label='Fields' }
 #### integer .fleetPosition
 {: aria-label='Fields' }
 
 ___
 ### gap_ex_cleared
-{: #gap_ex_cleared aria-label='Fields' }
+{: #gap_ex_cleared .lua-content-item aria-label='Fields' }
 #### boolean .gap_ex_cleared
 {: aria-label='Fields' }
 
 ___
 ### modifyPursuit
-{: #modifyPursuit aria-label='Fields' }
+{: #modifyPursuit .lua-content-item aria-label='Fields' }
 #### integer .modifyPursuit
 {: aria-label='Fields' }
 
 ___
 ### planetImage
-{: #planetImage aria-label='Fields' }
+{: #planetImage .lua-content-item aria-label='Fields' }
 #### string .planetImage
 {: aria-label='Fields' }
 
 ___
 ### quest
-{: #quest aria-label='Fields' }
+{: #quest .lua-content-item aria-label='Fields' }
 #### string .quest
 {: aria-label='Fields' }
 
 ___
 ### repair
-{: #repair aria-label='Fields' }
+{: #repair .lua-content-item aria-label='Fields' }
 #### boolean .repair
 {: aria-label='Fields' }
 
 ___
 ### reveal_map
-{: #reveal_map aria-label='Fields' }
+{: #reveal_map .lua-content-item aria-label='Fields' }
 #### boolean .reveal_map
 {: aria-label='Fields' }
 
 ___
 ### reward
-{: #reward aria-label='Fields' }
+{: #reward .lua-content-item aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .reward
 {: aria-label='Fields' }
 
 ___
 ### secretSector
-{: #secretSector aria-label='Fields' }
+{: #secretSector .lua-content-item aria-label='Fields' }
 #### boolean .secretSector
 {: aria-label='Fields' }
 
 ___
 ### spaceImage
-{: #spaceImage aria-label='Fields' }
+{: #spaceImage .lua-content-item aria-label='Fields' }
 #### string .spaceImage
 {: aria-label='Fields' }
 
 ___
 ### store
-{: #store aria-label='Fields' }
+{: #store .lua-content-item aria-label='Fields' }
 #### boolean .store
 {: aria-label='Fields' }
 
 ___
 ### stuff
-{: #stuff aria-label='Fields' }
+{: #stuff .lua-content-item aria-label='Fields' }
 #### [ResourceEvent](../Hyperspace/ResourceEvent) .stuff
 {: aria-label='Fields' }
 
 ___
 ### text
-{: #text aria-label='Fields' }
+{: #text .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .text
 {: aria-label='Fields' }
 
 ___
 ### unlockShip
-{: #unlockShip aria-label='Fields' }
+{: #unlockShip .lua-content-item aria-label='Fields' }
 #### integer .unlockShip
 {: aria-label='Fields' }
 
 ___
 ### unlockShipText
-{: #unlockShipText aria-label='Fields' }
+{: #unlockShipText .lua-content-item aria-label='Fields' }
 #### [TextString](../Hyperspace/TextString) .unlockShipText
 {: aria-label='Fields' }
 

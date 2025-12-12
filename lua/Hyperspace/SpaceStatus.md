@@ -11,9 +11,9 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### RenderWarningText ()
-{: #RenderWarningText aria-label='Methods' }
+{: #RenderWarningText .lua-content-item aria-label='Methods' }
 #### void :RenderWarningText (integer effect, integer textOffset)
 {: aria-label='Methods' }
 

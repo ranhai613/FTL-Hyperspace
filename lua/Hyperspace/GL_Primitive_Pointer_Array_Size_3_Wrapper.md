@@ -11,15 +11,15 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### __getitem ()
-{: #__getitem aria-label='Methods' }
+{: #__getitem .lua-content-item aria-label='Methods' }
 #### [GL_Primitive](../Graphics/GL_Primitive) :__getitem (uint unknown)
 {: aria-label='Methods' }
 
 ___
 ### __setitem ()
-{: #__setitem aria-label='Methods' }
+{: #__setitem .lua-content-item aria-label='Methods' }
 #### unknown :__setitem (uint unknown, [GL_Primitive](../Graphics/GL_Primitive) unknown)
 {: aria-label='Methods' }
 

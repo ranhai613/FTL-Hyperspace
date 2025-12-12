@@ -16,9 +16,9 @@ Subclasses: [Repairable](../Hyperspace/Repairable), [Room](../Hyperspace/Room)
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### selectedState
-{: #selectedState aria-label='Fields' }
+{: #selectedState .lua-content-item aria-label='Fields' }
 #### integer .selectedState
 {: aria-label='Fields' }
 

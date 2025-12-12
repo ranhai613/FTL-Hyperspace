@@ -12,9 +12,9 @@ Subclasses: [AugmentBlueprint](../Hyperspace/AugmentBlueprint), [CrewBlueprint](
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Blueprint ()
-{: #Blueprint aria-label='Constructors' }
+{: #Blueprint .lua-content-item aria-label='Constructors' }
 #### [Blueprint](../Hyperspace/Blueprint) Blueprint ()
 {: aria-label='Constructors' }
 
@@ -24,21 +24,21 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GetNameLong ()
-{: #GetNameLong aria-label='Methods' }
+{: #GetNameLong .lua-content-item aria-label='Methods' }
 #### string :GetNameLong ()
 {: aria-label='Methods' }
 
 ___
 ### GetNameShort ()
-{: #GetNameShort aria-label='Methods' }
+{: #GetNameShort .lua-content-item aria-label='Methods' }
 #### string :GetNameShort ()
 {: aria-label='Methods' }
 
 ___
 ### GetType ()
-{: #GetType aria-label='Methods' }
+{: #GetType .lua-content-item aria-label='Methods' }
 #### integer :GetType ()
 {: aria-label='Methods' }
 
@@ -46,21 +46,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### desc
-{: #desc aria-label='Fields' }
+{: #desc .lua-content-item aria-label='Fields' }
 #### [Description](../Hyperspace/Description) .desc
 {: aria-label='Fields' }
 
 ___
 ### name
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 [`ShipGraph`](#ShipGraph) `.GetShipInfo(int shipId)`

@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### GL_Primitive ()
-{: #GL_Primitive aria-label='Constructors' }
+{: #GL_Primitive .lua-content-item aria-label='Constructors' }
 #### [GL_Primitive](../Graphics/GL_Primitive) GL_Primitive ()
 {: aria-label='Constructors' }
 
@@ -21,51 +21,51 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### color
-{: #color aria-label='Fields' }
+{: #color .lua-content-item aria-label='Fields' }
 #### [GL_Color](../Graphics/GL_Color) .color
 {: aria-label='Fields' }
 
 ___
 ### hasColor
-{: #hasColor aria-label='Fields' }
+{: #hasColor .lua-content-item aria-label='Fields' }
 #### boolean .hasColor
 {: aria-label='Fields' }
 
 ___
 ### hasTexture
-{: #hasTexture aria-label='Fields' }
+{: #hasTexture .lua-content-item aria-label='Fields' }
 #### boolean .hasTexture
 {: aria-label='Fields' }
 
 ___
 ### id
-{: #id aria-label='Fields' }
+{: #id .lua-content-item aria-label='Fields' }
 #### integer .id
 {: aria-label='Fields' }
 
 ___
 ### lineWidth
-{: #lineWidth aria-label='Fields' }
+{: #lineWidth .lua-content-item aria-label='Fields' }
 #### number .lineWidth
 {: aria-label='Fields' }
 
 ___
 ### texture
-{: #texture aria-label='Fields' }
+{: #texture .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .texture
 {: aria-label='Fields' }
 
 ___
 ### textureAntialias
-{: #textureAntialias aria-label='Fields' }
+{: #textureAntialias .lua-content-item aria-label='Fields' }
 #### boolean .textureAntialias
 {: aria-label='Fields' }
 
 ___
 ### type
-{: #type aria-label='Fields' }
+{: #type .lua-content-item aria-label='Fields' }
 #### integer .type
 {: aria-label='Fields' }
 

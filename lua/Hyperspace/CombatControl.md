@@ -12,94 +12,94 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### aimingPoints
-{: #aimingPoints aria-label='Fields' }
+{: #aimingPoints .lua-content-item aria-label='Fields' }
 #### vector\<[Pointf](../Hyperspace/Pointf)\> .aimingPoints
 {: aria-label='Fields' }
 
 ___
 ### beamMoveLast
-{: #beamMoveLast aria-label='Fields' }
+{: #beamMoveLast .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .beamMoveLast
 {: aria-label='Fields' }
 
 ___
 ### boss_visual (Read-only)
-{: #boss_visual aria-label='Fields' }
+{: #boss_visual .lua-content-item aria-label='Fields' }
 #### boolean .boss_visual
 {: aria-label='Fields' }
 **Read-only**
 
 ___
 ### invalidBeamTouch
-{: #invalidBeamTouch aria-label='Fields' }
+{: #invalidBeamTouch .lua-content-item aria-label='Fields' }
 #### boolean .invalidBeamTouch
 {: aria-label='Fields' }
 
 ___
 ### isAimingTouch
-{: #isAimingTouch aria-label='Fields' }
+{: #isAimingTouch .lua-content-item aria-label='Fields' }
 #### boolean .isAimingTouch
 {: aria-label='Fields' }
 
 ___
 ### mouseDown
-{: #mouseDown aria-label='Fields' }
+{: #mouseDown .lua-content-item aria-label='Fields' }
 #### boolean .mouseDown
 {: aria-label='Fields' }
 
 ___
 ### movingBeam
-{: #movingBeam aria-label='Fields' }
+{: #movingBeam .lua-content-item aria-label='Fields' }
 #### boolean .movingBeam
 {: aria-label='Fields' }
 
 ___
 ### open
-{: #open aria-label='Fields' }
+{: #open .lua-content-item aria-label='Fields' }
 #### boolean .open
 {: aria-label='Fields' }
 
 ___
 ### playerShipPosition
-{: #playerShipPosition aria-label='Fields' }
+{: #playerShipPosition .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .playerShipPosition
 {: aria-label='Fields' }
 
 ___
 ### position
-{: #position aria-label='Fields' }
+{: #position .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .position
 {: aria-label='Fields' }
 
 ___
 ### potentialAiming
-{: #potentialAiming aria-label='Fields' }
+{: #potentialAiming .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .potentialAiming
 {: aria-label='Fields' }
 
 ___
 ### selectedRoom
-{: #selectedRoom aria-label='Fields' }
+{: #selectedRoom .lua-content-item aria-label='Fields' }
 #### integer .selectedRoom
 {: aria-label='Fields' }
 
 ___
 ### selectedSelfRoom
-{: #selectedSelfRoom aria-label='Fields' }
+{: #selectedSelfRoom .lua-content-item aria-label='Fields' }
 #### integer .selectedSelfRoom
 {: aria-label='Fields' }
 
 ___
 ### targetPosition
-{: #targetPosition aria-label='Fields' }
+{: #targetPosition .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .targetPosition
 {: aria-label='Fields' }
 
 ___
 ### weapControl
-{: #weapControl aria-label='Fields' }
+{: #weapControl .lua-content-item aria-label='Fields' }
 #### [WeaponControl](../Hyperspace/WeaponControl) .weapControl
 {: aria-label='Fields' }
 

@@ -14,21 +14,21 @@ Extends: [Spreadable](../Hyperspace/Spreadable) <- [Repairable](../Hyperspace/Re
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
 ___
 ### UpdateDeathTimer ()
-{: #UpdateDeathTimer aria-label='Methods' }
+{: #UpdateDeathTimer .lua-content-item aria-label='Methods' }
 #### void :UpdateDeathTimer (integer connectedFires)
 {: aria-label='Methods' }
 
 ___
 ### UpdateStartTimer ()
-{: #UpdateStartTimer aria-label='Methods' }
+{: #UpdateStartTimer .lua-content-item aria-label='Methods' }
 #### void :UpdateStartTimer (integer doorLevel)
 {: aria-label='Methods' }
 
@@ -36,8 +36,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Repairable](Repairable)
@@ -67,37 +67,37 @@ ___
 </details>
 ___
 ### bWasOnFire
-{: #bWasOnFire aria-label='Fields' }
+{: #bWasOnFire .lua-content-item aria-label='Fields' }
 #### boolean .bWasOnFire
 {: aria-label='Fields' }
 
 ___
 ### fDeathTimer
-{: #fDeathTimer aria-label='Fields' }
+{: #fDeathTimer .lua-content-item aria-label='Fields' }
 #### number .fDeathTimer
 {: aria-label='Fields' }
 
 ___
 ### fOxygen
-{: #fOxygen aria-label='Fields' }
+{: #fOxygen .lua-content-item aria-label='Fields' }
 #### number .fOxygen
 {: aria-label='Fields' }
 
 ___
 ### fStartTimer
-{: #fStartTimer aria-label='Fields' }
+{: #fStartTimer .lua-content-item aria-label='Fields' }
 #### number .fStartTimer
 {: aria-label='Fields' }
 
 ___
 ### fireAnimation
-{: #fireAnimation aria-label='Fields' }
+{: #fireAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .fireAnimation
 {: aria-label='Fields' }
 
 ___
 ### smokeAnimation
-{: #smokeAnimation aria-label='Fields' }
+{: #smokeAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .smokeAnimation
 {: aria-label='Fields' }
 

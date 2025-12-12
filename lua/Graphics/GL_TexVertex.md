@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### GL_TexVertex ()
-{: #GL_TexVertex aria-label='Constructors' }
+{: #GL_TexVertex .lua-content-item aria-label='Constructors' }
 #### [GL_TexVertex](../Graphics/GL_TexVertex) GL_TexVertex ()
 {: aria-label='Constructors' }
 
@@ -21,27 +21,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### u
-{: #u aria-label='Fields' }
+{: #u .lua-content-item aria-label='Fields' }
 #### number .u
 {: aria-label='Fields' }
 
 ___
 ### v
-{: #v aria-label='Fields' }
+{: #v .lua-content-item aria-label='Fields' }
 #### number .v
 {: aria-label='Fields' }
 
 ___
 ### x
-{: #x aria-label='Fields' }
+{: #x .lua-content-item aria-label='Fields' }
 #### number .x
 {: aria-label='Fields' }
 
 ___
 ### y
-{: #y aria-label='Fields' }
+{: #y .lua-content-item aria-label='Fields' }
 #### number .y
 {: aria-label='Fields' }
 

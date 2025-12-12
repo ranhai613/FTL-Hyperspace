@@ -15,8 +15,8 @@ Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Se
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Repairable](Repairable)
@@ -40,13 +40,13 @@ Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Se
 </details>
 ___
 ### breach
-{: #breach aria-label='Fields' }
+{: #breach .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .breach
 {: aria-label='Fields' }
 
 ___
 ### heal
-{: #heal aria-label='Fields' }
+{: #heal .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .heal
 {: aria-label='Fields' }
 

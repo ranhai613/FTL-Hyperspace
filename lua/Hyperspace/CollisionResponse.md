@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CollisionResponse ()
-{: #CollisionResponse aria-label='Constructors' }
+{: #CollisionResponse .lua-content-item aria-label='Constructors' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) CollisionResponse ()
 {: aria-label='Constructors' }
 
@@ -21,27 +21,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### collision_type
-{: #collision_type aria-label='Fields' }
+{: #collision_type .lua-content-item aria-label='Fields' }
 #### integer .collision_type
 {: aria-label='Fields' }
 
 ___
 ### damage
-{: #damage aria-label='Fields' }
+{: #damage .lua-content-item aria-label='Fields' }
 #### integer .damage
 {: aria-label='Fields' }
 
 ___
 ### point
-{: #point aria-label='Fields' }
+{: #point .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .point
 {: aria-label='Fields' }
 
 ___
 ### superDamage
-{: #superDamage aria-label='Fields' }
+{: #superDamage .lua-content-item aria-label='Fields' }
 #### integer .superDamage
 {: aria-label='Fields' }
 

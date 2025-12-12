@@ -12,27 +12,27 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### hullDamageResistChance
-{: #hullDamageResistChance aria-label='Fields' }
+{: #hullDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .hullDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### ionDamageResistChance
-{: #ionDamageResistChance aria-label='Fields' }
+{: #ionDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .ionDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### sysDamageResistChance
-{: #sysDamageResistChance aria-label='Fields' }
+{: #sysDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .sysDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### timeDilation
-{: #timeDilation aria-label='Fields' }
+{: #timeDilation .lua-content-item aria-label='Fields' }
 #### integer .timeDilation
 {: aria-label='Fields' }
 

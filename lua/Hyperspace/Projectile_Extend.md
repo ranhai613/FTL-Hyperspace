@@ -12,27 +12,27 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### customDamage
-{: #customDamage aria-label='Fields' }
+{: #customDamage .lua-content-item aria-label='Fields' }
 #### [CustomDamage](../Hyperspace/CustomDamage) .customDamage
 {: aria-label='Fields' }
 
 ___
 ### missedDrones
-{: #missedDrones aria-label='Fields' }
+{: #missedDrones .lua-content-item aria-label='Fields' }
 #### vector\<integer\> .missedDrones
 {: aria-label='Fields' }
 
 ___
 ### name
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### orig (Read-only)
-{: #orig aria-label='Fields' }
+{: #orig .lua-content-item aria-label='Fields' }
 #### [Projectile](../Hyperspace/Projectile) .orig
 {: aria-label='Fields' }
 

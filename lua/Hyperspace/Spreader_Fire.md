@@ -11,9 +11,9 @@ Extends: [ShipObject](../Hyperspace/ShipObject)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### Spreader_Fire ()
-{: #Spreader_Fire aria-label='Constructors' }
+{: #Spreader_Fire .lua-content-item aria-label='Constructors' }
 #### [Spreader_Fire](../Hyperspace/Spreader_Fire) Spreader_Fire ()
 {: aria-label='Constructors' }
 
@@ -23,9 +23,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipObject](ShipObject)
@@ -38,8 +38,8 @@ ___
 | vector\<string\> | :[GetAugmentationList](ShipObject#GetAugmentationList) () |
 | number | :[GetAugmentationValue](ShipObject#GetAugmentationValue) (string augment) |
 | integer | :[HasAugmentation](ShipObject#HasAugmentation) (string augment) |
-| integer | :[HasEquipment](ShipObject#HasEquipment) (string equipmentName, boolean checkCargo=false) |
 | integer | :[HasEquipment](ShipObject#HasEquipment) (string equip) |
+| integer | :[HasEquipment](ShipObject#HasEquipment) (string equipmentName, boolean checkCargo=false) |
 | void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
 
 </details>
@@ -47,8 +47,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipObject](ShipObject)
@@ -60,19 +60,19 @@ ___
 </details>
 ___
 ### count
-{: #count aria-label='Fields' }
+{: #count .lua-content-item aria-label='Fields' }
 #### integer .count
 {: aria-label='Fields' }
 
 ___
 ### grid
-{: #grid aria-label='Fields' }
+{: #grid .lua-content-item aria-label='Fields' }
 #### vector\<vector\<[Fire](../Hyperspace/Fire)\>\> .grid
 {: aria-label='Fields' }
 
 ___
 ### roomCount
-{: #roomCount aria-label='Fields' }
+{: #roomCount .lua-content-item aria-label='Fields' }
 #### vector\<integer\> .roomCount
 {: aria-label='Fields' }
 

@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomDamageDefinition ()
-{: #CustomDamageDefinition aria-label='Constructors' }
+{: #CustomDamageDefinition .lua-content-item aria-label='Constructors' }
 #### [CustomDamageDefinition](../Hyperspace/CustomDamageDefinition) CustomDamageDefinition ()
 {: aria-label='Constructors' }
 
@@ -20,9 +20,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### GiveId ()
-{: #GiveId aria-label='Methods' }
+{: #GiveId .lua-content-item aria-label='Methods' }
 #### void :GiveId ()
 {: aria-label='Methods' }
 
@@ -30,90 +30,90 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### accuracyMod
-{: #accuracyMod aria-label='Fields' }
+{: #accuracyMod .lua-content-item aria-label='Fields' }
 #### integer .accuracyMod
 {: aria-label='Fields' }
 
 ___
 ### crewSpawnChance
-{: #crewSpawnChance aria-label='Fields' }
+{: #crewSpawnChance .lua-content-item aria-label='Fields' }
 #### integer .crewSpawnChance
 {: aria-label='Fields' }
 
 ___
 ### crewSpawns (Read-only)
-{: #crewSpawns aria-label='Fields' }
+{: #crewSpawns .lua-content-item aria-label='Fields' }
 #### vector\<CrewSpawn\> .crewSpawns
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### droneAccuracyMod
-{: #droneAccuracyMod aria-label='Fields' }
+{: #droneAccuracyMod .lua-content-item aria-label='Fields' }
 #### integer .droneAccuracyMod
 {: aria-label='Fields' }
 
 ___
 ### erosionChance
-{: #erosionChance aria-label='Fields' }
+{: #erosionChance .lua-content-item aria-label='Fields' }
 #### integer .erosionChance
 {: aria-label='Fields' }
 
 ___
 ### erosionEffect
-{: #erosionEffect aria-label='Fields' }
+{: #erosionEffect .lua-content-item aria-label='Fields' }
 #### ErosionEffect .erosionEffect
 {: aria-label='Fields' }
 
 ___
 ### idx (Read-only)
-{: #idx aria-label='Fields' }
+{: #idx .lua-content-item aria-label='Fields' }
 #### integer .idx
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### ionBeamFix
-{: #ionBeamFix aria-label='Fields' }
+{: #ionBeamFix .lua-content-item aria-label='Fields' }
 #### boolean .ionBeamFix
 {: aria-label='Fields' }
 
 ___
 ### noPersDamage
-{: #noPersDamage aria-label='Fields' }
+{: #noPersDamage .lua-content-item aria-label='Fields' }
 #### boolean .noPersDamage
 {: aria-label='Fields' }
 
 ___
 ### noSysDamage
-{: #noSysDamage aria-label='Fields' }
+{: #noSysDamage .lua-content-item aria-label='Fields' }
 #### boolean .noSysDamage
 {: aria-label='Fields' }
 
 ___
 ### roomStatBoostChance
-{: #roomStatBoostChance aria-label='Fields' }
+{: #roomStatBoostChance .lua-content-item aria-label='Fields' }
 #### integer .roomStatBoostChance
 {: aria-label='Fields' }
 
 ___
 ### roomStatBoosts (Read-only)
-{: #roomStatBoosts aria-label='Fields' }
+{: #roomStatBoosts .lua-content-item aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .roomStatBoosts
 {: aria-label='Fields' }
 **read-only**
 
 ___
 ### statBoostChance
-{: #statBoostChance aria-label='Fields' }
+{: #statBoostChance .lua-content-item aria-label='Fields' }
 #### integer .statBoostChance
 {: aria-label='Fields' }
 
 ___
 ### statBoosts (Read-only)
-{: #statBoosts aria-label='Fields' }
+{: #statBoosts .lua-content-item aria-label='Fields' }
 #### vector\<[StatBoostDefinition](../Hyperspace/StatBoostDefinition)\> .statBoosts
 {: aria-label='Fields' }
 **read-only**

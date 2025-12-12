@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CustomShipGenerator ()
-{: #CustomShipGenerator aria-label='Constructors' }
+{: #CustomShipGenerator .lua-content-item aria-label='Constructors' }
 #### [CustomShipGenerator](../Hyperspace/CustomShipGenerator) CustomShipGenerator ()
 {: aria-label='Constructors' }
 
@@ -20,9 +20,9 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### CreateShip ()
-{: #CreateShip aria-label='Methods' }
+{: #CreateShip .lua-content-item aria-label='Methods' }
 #### [ShipManager](../Hyperspace/ShipManager) :CreateShip ([ShipBlueprint](../Hyperspace/ShipBlueprint) shipBlueprint, integer sector, ShipEvent event)
 {: aria-label='Methods' }
 

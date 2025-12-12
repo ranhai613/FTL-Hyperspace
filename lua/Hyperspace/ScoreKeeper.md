@@ -12,9 +12,9 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### currentScore (Read-only)
-{: #currentScore aria-label='Fields' }
+{: #currentScore .lua-content-item aria-label='Fields' }
 #### [TopScore](../Hyperspace/TopScore) .currentScore
 {: aria-label='Fields' }
 Field is **read-only** but fields under this object may still be mutable.

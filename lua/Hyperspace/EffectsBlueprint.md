@@ -12,33 +12,33 @@ lang: en
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### hitShieldSounds
-{: #hitShieldSounds aria-label='Fields' }
+{: #hitShieldSounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .hitShieldSounds
 {: aria-label='Fields' }
 
 ___
 ### hitShipSounds
-{: #hitShipSounds aria-label='Fields' }
+{: #hitShipSounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .hitShipSounds
 {: aria-label='Fields' }
 
 ___
 ### image
-{: #image aria-label='Fields' }
+{: #image .lua-content-item aria-label='Fields' }
 #### string .image
 {: aria-label='Fields' }
 
 ___
 ### launchSounds
-{: #launchSounds aria-label='Fields' }
+{: #launchSounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .launchSounds
 {: aria-label='Fields' }
 
 ___
 ### missSounds
-{: #missSounds aria-label='Fields' }
+{: #missSounds .lua-content-item aria-label='Fields' }
 #### vector\<string\> .missSounds
 {: aria-label='Fields' }
 

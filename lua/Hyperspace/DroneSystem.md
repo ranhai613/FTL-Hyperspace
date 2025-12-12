@@ -13,9 +13,9 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
 
 ## Static Methods
-{: #Static-Methods .section}
+{: #Static-Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Static Methods</summary>
+<details markdown="1"><summary id="InheritedStaticMethods" class="lua-content-item" markdown="span">Inherited Static Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -32,8 +32,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -65,8 +65,8 @@ ___
 | integer | :[GetSelected](ShipSystem#GetSelected) () |
 | boolean | :[IncreasePower](ShipSystem#IncreasePower) (integer amount, boolean force) |
 | void | :[IonDamage](ShipSystem#IonDamage) (integer amount) |
-| boolean | :[Ioned](ShipSystem#Ioned) () |
 | boolean | :[Ioned](ShipSystem#Ioned) (integer num) |
+| boolean | :[Ioned](ShipSystem#Ioned) () |
 | integer | :[IsMannedBoost](ShipSystem#IsMannedBoost) () |
 | boolean | :[IsRoomBased](ShipSystem#IsRoomBased) () |
 | void | :[LockSystem](ShipSystem#LockSystem) (integer lock) |
@@ -91,19 +91,19 @@ ___
 </details>
 ___
 ### DePowerDrone ()
-{: #DePowerDrone aria-label='Methods' }
+{: #DePowerDrone .lua-content-item aria-label='Methods' }
 #### boolean :DePowerDrone ([Drone](../Hyperspace/Drone) drone, boolean unk)
 {: aria-label='Methods' }
 
 ___
 ### RemoveDrone ()
-{: #RemoveDrone aria-label='Methods' }
+{: #RemoveDrone .lua-content-item aria-label='Methods' }
 #### [Drone](../Hyperspace/Drone) :RemoveDrone (integer slot)
 {: aria-label='Methods' }
 
 ___
 ### SetBonusPower ()
-{: #SetBonusPower aria-label='Methods' }
+{: #SetBonusPower .lua-content-item aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
 {: aria-label='Methods' }
 
@@ -111,8 +111,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [ShipSystem](ShipSystem)
@@ -173,51 +173,51 @@ ___
 </details>
 ___
 ### drone_count
-{: #drone_count aria-label='Fields' }
+{: #drone_count .lua-content-item aria-label='Fields' }
 #### integer .drone_count
 {: aria-label='Fields' }
 
 ___
 ### drone_start
-{: #drone_start aria-label='Fields' }
+{: #drone_start .lua-content-item aria-label='Fields' }
 #### integer .drone_start
 {: aria-label='Fields' }
 
 ___
 ### drones
-{: #drones aria-label='Fields' }
+{: #drones .lua-content-item aria-label='Fields' }
 #### vector\<[Drone](../Hyperspace/Drone)\> .drones
 {: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
 ___
 ### iStartingBatteryPower
-{: #iStartingBatteryPower aria-label='Fields' }
+{: #iStartingBatteryPower .lua-content-item aria-label='Fields' }
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
 
 ___
 ### repowerList
-{: #repowerList aria-label='Fields' }
+{: #repowerList .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
 Vector starts at index 0 not 1.
 
 ___
 ### slot_count
-{: #slot_count aria-label='Fields' }
+{: #slot_count .lua-content-item aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
 
 ___
 ### targetShip
-{: #targetShip aria-label='Fields' }
+{: #targetShip .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .targetShip
 {: aria-label='Fields' }
 
 ___
 ### userPowered
-{: #userPowered aria-label='Fields' }
+{: #userPowered .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .userPowered
 {: aria-label='Fields' }
 Vector starts at index 0 not 1.

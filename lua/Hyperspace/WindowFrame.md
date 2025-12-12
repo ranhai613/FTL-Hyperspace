@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### WindowFrame ()
-{: #WindowFrame aria-label='Constructors' }
+{: #WindowFrame .lua-content-item aria-label='Constructors' }
 #### [WindowFrame](../Hyperspace/WindowFrame) WindowFrame (integer _x, integer _y, integer _w, integer _h)
 {: aria-label='Constructors' }
 
@@ -20,15 +20,15 @@ ___
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### Draw ()
-{: #Draw aria-label='Methods' }
+{: #Draw .lua-content-item aria-label='Methods' }
 #### void :Draw (integer x, integer y)
 {: aria-label='Methods' }
 
 ___
 ### DrawMask ()
-{: #DrawMask aria-label='Methods' }
+{: #DrawMask .lua-content-item aria-label='Methods' }
 #### void :DrawMask (integer unk)
 {: aria-label='Methods' }
 
@@ -36,27 +36,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### mask
-{: #mask aria-label='Fields' }
+{: #mask .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .mask
 {: aria-label='Fields' }
 
 ___
 ### outline
-{: #outline aria-label='Fields' }
+{: #outline .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .outline
 {: aria-label='Fields' }
 
 ___
 ### pattern
-{: #pattern aria-label='Fields' }
+{: #pattern .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .pattern
 {: aria-label='Fields' }
 
 ___
 ### rect
-{: #rect aria-label='Fields' }
+{: #rect .lua-content-item aria-label='Fields' }
 #### [Rect](../Hyperspace/Rect) .rect
 {: aria-label='Fields' }
 

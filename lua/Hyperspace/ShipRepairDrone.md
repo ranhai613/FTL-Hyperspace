@@ -14,9 +14,9 @@ Extends: [CombatDrone](../Hyperspace/CombatDrone) <- [SpaceDrone](../Hyperspace/
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [CombatDrone](CombatDrone)
@@ -95,8 +95,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [CombatDrone](CombatDrone)
@@ -174,13 +174,13 @@ ___
 </details>
 ___
 ### repairBeam
-{: #repairBeam aria-label='Fields' }
+{: #repairBeam .lua-content-item aria-label='Fields' }
 #### CachedImage .repairBeam
 {: aria-label='Fields' }
 
 ___
 ### repairBeams
-{: #repairBeams aria-label='Fields' }
+{: #repairBeams .lua-content-item aria-label='Fields' }
 #### vector\<number\> .repairBeams
 {: aria-label='Fields' }
 

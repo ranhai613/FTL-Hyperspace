@@ -14,8 +14,8 @@ Extends: [TextButton0](../Hyperspace/TextButton0) <- [GenericButton](../Hyperspa
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [GenericButton](GenericButton)
@@ -35,13 +35,13 @@ Extends: [TextButton0](../Hyperspace/TextButton0) <- [GenericButton](../Hyperspa
 </details>
 ___
 ### MouseMove ()
-{: #MouseMove aria-label='Methods' }
+{: #MouseMove .lua-content-item aria-label='Methods' }
 #### void :MouseMove (integer mX, integer mY, boolean silent)
 {: aria-label='Methods' }
 
 ___
 ### OnRender ()
-{: #OnRender aria-label='Methods' }
+{: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
 
@@ -49,9 +49,9 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [GenericButton](GenericButton)

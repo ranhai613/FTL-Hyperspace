@@ -14,33 +14,33 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### AddAugment ()
-{: #AddAugment aria-label='Methods' }
+{: #AddAugment .lua-content-item aria-label='Methods' }
 #### void :AddAugment ([AugmentBlueprint](../Hyperspace/AugmentBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
 ___
 ### AddDrone ()
-{: #AddDrone aria-label='Methods' }
+{: #AddDrone .lua-content-item aria-label='Methods' }
 #### void :AddDrone ([DroneBlueprint](../Hyperspace/DroneBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
 ___
 ### AddToCargo ()
-{: #AddToCargo aria-label='Methods' }
+{: #AddToCargo .lua-content-item aria-label='Methods' }
 #### void :AddToCargo (string name)
 {: aria-label='Methods' }
 
 ___
 ### AddWeapon ()
-{: #AddWeapon aria-label='Methods' }
+{: #AddWeapon .lua-content-item aria-label='Methods' }
 #### void :AddWeapon ([WeaponBlueprint](../Hyperspace/WeaponBlueprint) bp, boolean free, boolean forceCargo)
 {: aria-label='Methods' }
 
 ___
 ### GetCargoHold ()
-{: #GetCargoHold aria-label='Methods' }
+{: #GetCargoHold .lua-content-item aria-label='Methods' }
 #### vector\<string\> :GetCargoHold ()
 {: aria-label='Methods' }
 
@@ -48,9 +48,9 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ___
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [FocusWindow](FocusWindow)

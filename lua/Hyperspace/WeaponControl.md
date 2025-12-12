@@ -11,9 +11,9 @@ lang: en
 
 
 ## Methods
-{: #Methods .section}
+{: #Methods .lua-content-section}
 ### Fire ()
-{: #Fire aria-label='Methods' }
+{: #Fire .lua-content-item aria-label='Methods' }
 #### void :Fire (vector\<[Pointf](../Hyperspace/Pointf)\> points, integer target, boolean autoFire)
 {: aria-label='Methods' }
 
@@ -21,21 +21,21 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### armedSlot
-{: #armedSlot aria-label='Fields' }
+{: #armedSlot .lua-content-item aria-label='Fields' }
 #### integer .armedSlot
 {: aria-label='Fields' }
 
 ___
 ### armedWeapon
-{: #armedWeapon aria-label='Fields' }
+{: #armedWeapon .lua-content-item aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .armedWeapon
 {: aria-label='Fields' }
 
 ___
 ### autoFiring (Read-only)
-{: #autoFiring aria-label='Fields' }
+{: #autoFiring .lua-content-item aria-label='Fields' }
 #### boolean .autoFiring
 {: aria-label='Fields' }
 **Read-only**

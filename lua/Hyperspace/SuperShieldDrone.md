@@ -11,9 +11,9 @@ Extends: [DefenseDrone](../Hyperspace/DefenseDrone) <- [SpaceDrone](../Hyperspac
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### SuperShieldDrone ()
-{: #SuperShieldDrone aria-label='Constructors' }
+{: #SuperShieldDrone .lua-content-item aria-label='Constructors' }
 #### [SuperShieldDrone](../Hyperspace/SuperShieldDrone) SuperShieldDrone (integer iShipId, integer selfId, [DroneBlueprint](../Hyperspace/DroneBlueprint) blueprint)
 {: aria-label='Constructors' }
 
@@ -23,8 +23,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [DefenseDrone](DefenseDrone)
@@ -100,13 +100,13 @@ ___
 </details>
 ___
 ### GetWeaponCooldown ()
-{: #GetWeaponCooldown aria-label='Methods' }
+{: #GetWeaponCooldown .lua-content-item aria-label='Methods' }
 #### number :GetWeaponCooldown ()
 {: aria-label='Methods' }
 
 ___
 ### OnLoop ()
-{: #OnLoop aria-label='Methods' }
+{: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
 
@@ -114,8 +114,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [DefenseDrone](DefenseDrone)
@@ -194,31 +194,31 @@ ___
 </details>
 ___
 ### drone_image_glow
-{: #drone_image_glow aria-label='Fields' }
+{: #drone_image_glow .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_glow
 {: aria-label='Fields' }
 
 ___
 ### drone_image_off
-{: #drone_image_off aria-label='Fields' }
+{: #drone_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
 
 ___
 ### drone_image_on
-{: #drone_image_on aria-label='Fields' }
+{: #drone_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
 
 ___
 ### glowAnimation
-{: #glowAnimation aria-label='Fields' }
+{: #glowAnimation .lua-content-item aria-label='Fields' }
 #### number .glowAnimation
 {: aria-label='Fields' }
 
 ___
 ### shieldSystem
-{: #shieldSystem aria-label='Fields' }
+{: #shieldSystem .lua-content-item aria-label='Fields' }
 #### [Shields](../Hyperspace/Shields) .shieldSystem
 {: aria-label='Fields' }
 

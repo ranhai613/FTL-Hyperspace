@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### RoomDefinition ()
-{: #RoomDefinition aria-label='Constructors' }
+{: #RoomDefinition .lua-content-item aria-label='Constructors' }
 #### [RoomDefinition](../Hyperspace/RoomDefinition) RoomDefinition ()
 {: aria-label='Constructors' }
 
@@ -21,33 +21,33 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### hullDamageResistChance
-{: #hullDamageResistChance aria-label='Fields' }
+{: #hullDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .hullDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### ionDamageResistChance
-{: #ionDamageResistChance aria-label='Fields' }
+{: #ionDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .ionDamageResistChance
 {: aria-label='Fields' }
 
 ___
 ### roomId
-{: #roomId aria-label='Fields' }
+{: #roomId .lua-content-item aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### sensorBlind
-{: #sensorBlind aria-label='Fields' }
+{: #sensorBlind .lua-content-item aria-label='Fields' }
 #### boolean .sensorBlind
 {: aria-label='Fields' }
 
 ___
 ### sysDamageResistChance
-{: #sysDamageResistChance aria-label='Fields' }
+{: #sysDamageResistChance .lua-content-item aria-label='Fields' }
 #### number .sysDamageResistChance
 {: aria-label='Fields' }
 

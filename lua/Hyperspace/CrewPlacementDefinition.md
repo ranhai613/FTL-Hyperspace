@@ -8,9 +8,9 @@ lang: en
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CrewPlacementDefinition ()
-{: #CrewPlacementDefinition aria-label='Constructors' }
+{: #CrewPlacementDefinition .lua-content-item aria-label='Constructors' }
 #### [CrewPlacementDefinition](../Hyperspace/CrewPlacementDefinition) CrewPlacementDefinition ()
 {: aria-label='Constructors' }
 
@@ -21,27 +21,27 @@ ___
 
 
 ## Fields
-{: #Fields .section}
+{: #Fields .lua-content-section}
 ### isList
-{: #isList aria-label='Fields' }
+{: #isList .lua-content-item aria-label='Fields' }
 #### boolean .isList
 {: aria-label='Fields' }
 
 ___
 ### name
-{: #name aria-label='Fields' }
+{: #name .lua-content-item aria-label='Fields' }
 #### string .name
 {: aria-label='Fields' }
 
 ___
 ### roomId
-{: #roomId aria-label='Fields' }
+{: #roomId .lua-content-item aria-label='Fields' }
 #### integer .roomId
 {: aria-label='Fields' }
 
 ___
 ### species
-{: #species aria-label='Fields' }
+{: #species .lua-content-item aria-label='Fields' }
 #### string .species
 {: aria-label='Fields' }
 

@@ -13,9 +13,9 @@ Subclasses: [ShipRepairDrone](../Hyperspace/ShipRepairDrone)
 
 
 ## Constructors
-{: #Constructors .section}
+{: #Constructors .lua-content-section}
 ### CombatDrone ()
-{: #CombatDrone aria-label='Constructors' }
+{: #CombatDrone .lua-content-item aria-label='Constructors' }
 #### [CombatDrone](../Hyperspace/CombatDrone) CombatDrone (integer shipId, integer self, [DroneBlueprint](../Hyperspace/DroneBlueprint) bp)
 {: aria-label='Constructors' }
 
@@ -25,8 +25,8 @@ ___
 
 
 ## Methods
-{: #Methods .section}
-<details markdown="1"><summary markdown="span">Inherited Methods</summary>
+{: #Methods .lua-content-section}
+<details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
 
 
 #### From [Drone](Drone)
@@ -96,13 +96,13 @@ ___
 </details>
 ___
 ### PickTarget ()
-{: #PickTarget aria-label='Methods' }
+{: #PickTarget .lua-content-item aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
 
 ___
 ### SetWeaponTarget ()
-{: #SetWeaponTarget aria-label='Methods' }
+{: #SetWeaponTarget .lua-content-item aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
 
@@ -110,8 +110,8 @@ ___
 
 
 ## Fields
-{: #Fields .section}
-<details markdown="1"><summary markdown="span">Inherited Fields</summary>
+{: #Fields .lua-content-section}
+<details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
 
 
 #### From [Drone](Drone)
@@ -176,49 +176,49 @@ ___
 </details>
 ___
 ### drone_image_charging
-{: #drone_image_charging aria-label='Fields' }
+{: #drone_image_charging .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_charging
 {: aria-label='Fields' }
 
 ___
 ### drone_image_off
-{: #drone_image_off aria-label='Fields' }
+{: #drone_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
 
 ___
 ### drone_image_on
-{: #drone_image_on aria-label='Fields' }
+{: #drone_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
 
 ___
 ### engine_image
-{: #engine_image aria-label='Fields' }
+{: #engine_image .lua-content-item aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
 
 ___
 ### heading
-{: #heading aria-label='Fields' }
+{: #heading .lua-content-item aria-label='Fields' }
 #### number .heading
 {: aria-label='Fields' }
 
 ___
 ### lastDestination
-{: #lastDestination aria-label='Fields' }
+{: #lastDestination .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastDestination
 {: aria-label='Fields' }
 
 ___
 ### oldHeading
-{: #oldHeading aria-label='Fields' }
+{: #oldHeading .lua-content-item aria-label='Fields' }
 #### number .oldHeading
 {: aria-label='Fields' }
 
 ___
 ### progressToDestination
-{: #progressToDestination aria-label='Fields' }
+{: #progressToDestination .lua-content-item aria-label='Fields' }
 #### number .progressToDestination
 {: aria-label='Fields' }
 
