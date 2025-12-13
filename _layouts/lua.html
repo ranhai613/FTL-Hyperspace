@@ -19,14 +19,9 @@
     <div class="lua-global-header" role="banner">
       <div class="lua-global-header__inner">
         <div class="lua-header-branding">
-          <img class="lua-header-badge" src="{{ '/assets/img/hyperspace_banner.png' | relative_url }}" alt="{{ site.title | default: site.github.repository_name }} banner" />
-          <a class="lua-header-home" href="{{ '/lua/' | relative_url }}" aria-label="Go to Lua API home">
-            <!-- <span class="lua-header-home-icon" aria-hidden="true">
-              <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <path d="M4 10.5L12 4l8 6.5v9.5h-6v-6H10v6H4z" fill="currentColor" />
-              </svg>
-            </span> -->
+          <a class="lua-header-home" href="{{ site.baseurl }}/" aria-label="Go to home">
             <span class="lua-header-home-text">FTL: Hyperspace</span>
+            <img class="lua-header-badge" src="{{ '/assets/img/hyperspace_banner.png' | relative_url }}" alt="{{ site.title | default: site.github.repository_name }} banner" />
           </a>
         </div>
         <div class="lua-header-mobile-row" aria-label="Mobile controls">
@@ -37,16 +32,16 @@
           </button>
           <span class="lua-header-mobile-title">FTL: Hyperspace</span>
           <button type="button" class="lua-header-icon-button lua-mobile-toggle lua-header-mobile-contents" data-mobile-target="#lua-nav-right-panel" aria-label="Open table of contents">
-            <svg class="lua-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M17 6H7a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2Zm2 5H7a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2Zm-4 5H7a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2Z" fill="currentColor" />
-              <circle cx="5" cy="7" r="1" fill="currentColor" />
-              <circle cx="5" cy="12" r="1" fill="currentColor" />
-              <circle cx="5" cy="17" r="1" fill="currentColor" />
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
             </svg>
           </button>
           <button type="button" class="lua-header-icon-button lua-theme-toggle-btn lua-header-mobile-theme" aria-label="Toggle dark mode">
-            <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path d="M12 3a1 1 0 0 1 1 1v2.05A6.002 6.002 0 0 1 17 12c0 3.314-2.686 6-6 6a6.002 6.002 0 0 1-5.95-5H3a1 1 0 1 1 0-2h2.05A6.002 6.002 0 0 1 11 6.05V4a1 1 0 0 1 1-1zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor" />
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
             </svg>
           </button>
           <button type="button" class="lua-header-icon-button lua-header-mobile-search" aria-label="Search Lua documentation" data-search-toggle="#lua-header-search">
@@ -57,8 +52,11 @@
         </div>
         <div class="lua-header-actions">
           <button id="lua-theme-toggle" class="lua-theme-toggle lua-header-icon-button lua-theme-toggle-btn" type="button" aria-label="Toggle dark mode">
-            <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path d="M12 3a1 1 0 0 1 1 1v2.05A6.002 6.002 0 0 1 17 12c0 3.314-2.686 6-6 6a6.002 6.002 0 0 1-5.95-5H3a1 1 0 1 1 0-2h2.05A6.002 6.002 0 0 1 11 6.05V4a1 1 0 0 1 1-1zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor" />
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
             </svg>
           </button>
           <div class="lua-search lua-search--header" id="lua-header-search" role="search">
@@ -89,8 +87,8 @@
           </div>
           {% if site.github.is_project_page %}
           <a class="lua-header-icon-button lua-github-link" href="{{ site.github.repository_url }}" aria-label="View project on GitHub">
-            <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path d="M12 .5a11.5 11.5 0 0 0-3.63 22.42c.57.1.78-.25.78-.55v-2c-3 .65-3.63-1.27-3.63-1.27a2.86 2.86 0 0 0-1.2-1.57c-1-.68.08-.67.08-.67a2.26 2.26 0 0 1 1.64 1.1 2.3 2.3 0 0 0 3.14.9 2.31 2.31 0 0 1 .69-1.44c-2.39-.27-4.91-1.2-4.91-5.33A4.19 4.19 0 0 1 6.3 7.9a3.9 3.9 0 0 1 .1-2.89s.9-.29 3 1.1a10.2 10.2 0 0 1 5.52 0c2.09-1.39 3-1.1 3-1.1a3.9 3.9 0 0 1 .11 2.9 4.18 4.18 0 0 1 1.11 2.91c0 4.14-2.53 5.05-4.94 5.32a2.59 2.59 0 0 1 .74 2v2.95c0 .31.21.66.79.55A11.5 11.5 0 0 0 12 .5Z" fill="currentColor" />
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
             </svg>
           </a>
           {% endif %}
@@ -264,14 +262,14 @@
         <div class="lua-footer-social" aria-label="Project community links">
           {% if site.github.is_project_page %}
           <a class="lua-footer-icon lua-footer-icon--github" href="{{ site.github.repository_url }}" aria-label="View project on GitHub">
-            <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path d="M12 .5a11.5 11.5 0 0 0-3.63 22.42c.57.1.78-.25.78-.55v-2c-3 .65-3.63-1.27-3.63-1.27a2.86 2.86 0 0 0-1.2-1.57c-1-.68.08-.67.08-.67a2.26 2.26 0 0 1 1.64 1.1 2.3 2.3 0 0 0 3.14.9 2.31 2.31 0 0 1 .69-1.44c-2.39-.27-4.91-1.2-4.91-5.33A4.19 4.19 0 0 1 6.3 7.9a3.9 3.9 0 0 1 .1-2.89s.9-.29 3 1.1a10.2 10.2 0 0 1 5.52 0c2.09-1.39 3-1.1 3-1.1a3.9 3.9 0 0 1 .11 2.9 4.18 4.18 0 0 1 1.11 2.91c0 4.14-2.53 5.05-4.94 5.32a2.59 2.59 0 0 1 .74 2v2.95c0 .31.21.66.79.55A11.5 11.5 0 0 0 12 .5Z" fill="currentColor" />
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
             </svg>
           </a>
           {% endif %}
-          <a class="lua-footer-icon lua-footer-icon--discord" href="https://discord.gg/ftlmultiverse" target="_blank" rel="noopener" aria-label="Join the Hyperspace Discord">
-            <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path d="M20 4.5a18.36 18.36 0 0 0-4.5-1.5l-.21.43a13.1 13.1 0 0 1 3.74 1.38A14.89 14.89 0 0 0 15.5 3l-.43.05a18.59 18.59 0 0 0-6.14 0L8.5 3a14.89 14.89 0 0 0-3.53 1.81 13.1 13.1 0 0 1 3.74-1.38L8.5 3a18.36 18.36 0 0 0-4.5 1.5c-3 4.38-3.81 8.66-3.39 12.9a18.7 18.7 0 0 0 4.77 2.45l.54-.64A12.8 12.8 0 0 1 2.73 17l.68.33a13.71 13.71 0 0 0 12.18 0l.68-.33a12.85 12.85 0 0 1-1.19 3.21l.54.64a18.7 18.7 0 0 0 4.77-2.45c.53-4.93-.86-9.17-3.39-12.9ZM8.75 15.5c-1.04 0-1.88-.96-1.88-2.14s.83-2.14 1.88-2.14 1.89 1 1.88 2.14-.83 2.14-1.88 2.14Zm6.5 0c-1.04 0-1.88-.96-1.88-2.14s.83-2.14 1.88-2.14 1.89 1 1.88 2.14-.83 2.14-1.88 2.14Z" fill="currentColor" />
+          <a class="lua-footer-icon lua-footer-icon--discord" href="https://discord.gg/ftlmultiverse" target="_blank" rel="noopener" aria-label="Join the Discord">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
             </svg>
           </a>
         </div>
@@ -376,9 +374,40 @@
 
         var leftPanel = document.getElementById('lua-nav-left-panel');
         var rightPanel = document.getElementById('lua-nav-right-panel');
+        var mainContent = document.querySelector('.lua-main');
         var mobileOverlay = document.getElementById('lua-mobile-overlay');
         var activePanel = null;
         var mobilePanels = [leftPanel, rightPanel];
+
+        function syncPanelHeight(panel) {
+          if (!panel) return;
+          if (window.innerWidth <= 960) {
+            panel.style.maxHeight = '';
+            return;
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            mainContent = document.querySelector('.lua-main');
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            panel.style.maxHeight = '';
+            return;
+          }
+
+          var mainHeight = mainContent.offsetHeight;
+          var panelStyles = window.getComputedStyle(panel);
+          var paddingTop = parseFloat(panelStyles.paddingTop) || 0;
+          var paddingBottom = parseFloat(panelStyles.paddingBottom) || 0;
+          var topOffset = parseFloat(panelStyles.top) || 0;
+          var availableFromMain = mainHeight - paddingTop - paddingBottom;
+          var availableFromViewport = window.innerHeight - topOffset - paddingTop - paddingBottom;
+          var available = Math.min(availableFromMain, availableFromViewport);
+          panel.style.maxHeight = available > 0 ? available + 'px' : '0px';
+        }
+
+        function syncPanelHeights() {
+          syncPanelHeight(leftPanel);
+          syncPanelHeight(rightPanel);
+        }
 
         function closeMobilePanel() {
           if (activePanel) {
@@ -428,6 +457,7 @@
             body.classList.remove('lua-mobile-overlay-active');
             setMobileSearchActive(false);
           }
+          syncPanelHeights();
         }
 
         var mobileButtons = document.querySelectorAll('.lua-mobile-toggle');
@@ -468,6 +498,20 @@
           });
         }
 
+        if (rightPanel) {
+          rightPanel.addEventListener('click', function(evt) {
+            var link = evt.target.closest('a');
+            if (!link) return;
+            if (!body.classList.contains('lua-mobile-overlay-active')) return;
+            if (!rightPanel.classList.contains('is-mobile-visible')) return;
+            var href = link.getAttribute('href') || '';
+            if (href.charAt(0) !== '#') return;
+            window.requestAnimationFrame(function() {
+              closeMobilePanel();
+            });
+          });
+        }
+
         document.addEventListener('keydown', function(evt) {
           if (evt.key === 'Escape') {
             closeMobilePanel();
@@ -499,13 +543,21 @@
             desktopQuery.addListener(handler);
           }
           syncPanelsForViewport(desktopQuery.matches);
+          syncPanelHeights();
         }
         else {
           syncPanelsForViewport(window.innerWidth >= 961);
+          syncPanelHeights();
           window.addEventListener('resize', function() {
             syncPanelsForViewport(window.innerWidth >= 961);
           });
         }
+
+        window.addEventListener('resize', function() {
+          syncPanelHeights();
+        });
+
+        syncPanelHeights();
       })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
