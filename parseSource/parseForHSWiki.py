@@ -78,6 +78,11 @@ ADDITIONAL_ENUMS = [
 MODULE_NAME_PATTERN = re.compile(r'#define\s+SWIG_name\s+"(\w+)"')
 CLASS_NAME_PATTERN = re.compile(r'static swig_lua_namespace swig_(\w+?)_(?:Sf_)?SwigStatic = {\s*"(\w+)"\s*,')
 
+class CategoryType(Enum):
+    MODULE = 1,
+    CLASS = 2,
+    ENUM = 3
+
 class PropertyType(Enum):
     CONSTRUCTOR = 1,
     CONSTANT = 2,
@@ -290,7 +295,8 @@ class WikiPageItem:
             return hash((self.propertyType, self.name))
 
 class WikiPage:
-    def __init__(self, name: str, moduleName: str, parentNames, constructors: list[WikiPageItem], constants: list[WikiPageItem], staticMethods: list[WikiPageItem], methods: list[WikiPageItem], fields: list[WikiPageItem]):
+    def __init__(self, category: CategoryType, name: str, moduleName: str, parentNames, constructors: list[WikiPageItem], constants: list[WikiPageItem], staticMethods: list[WikiPageItem], methods: list[WikiPageItem], fields: list[WikiPageItem]):
+        self.category = category
         self.name = name
         self.moduleName = moduleName
         self.parentNames = parentNames
@@ -529,8 +535,15 @@ class WikiPage:
         return ret
     
     def Output(self, basePath: str):
-        output_path = Path(basePath) / self.moduleName / f"{self.name if self.name != self.moduleName else "index"}.md"
+        if self.category == CategoryType.MODULE:
+            category = "Module"
+        elif self.category == CategoryType.CLASS:
+            category = "Class"
+        elif self.category == CategoryType.ENUM:
+            category = "Enum"
+        
         replace_map = {
+            "CATEGORY": category,
             "NAME": self.name,
             "RELATIONS": self.outputRelations() or None,
             "CONSTRUCTORS": self.outputConstructors() or None,
@@ -539,6 +552,8 @@ class WikiPage:
             "METHODS": self.outputMethods() or None,
             "FIELDS": self.outputFields() or None
         }
+        
+        output_path = Path(basePath) / self.moduleName / f"{self.name if self.name != self.moduleName else "index"}.md"
         create_wiki_md(replace_map, output_path)
     
 g_functionDataMap: dict[str, FunctionInfo] = {}
@@ -899,34 +914,60 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         additionalTableMembersMap[className].append(memberName)
     
     # Parse variables attributed just under the module
-    # globalFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    # if globalFields:
-    #     part_module_fields, _ = parse_fields(moduleName, globalWikiInfo, globalFields.group(1))
+    globalFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    if globalFields:
+        module_fields = parse_fields(moduleName, globalWikiInfo, globalFields.group(1))
     
-    # globalStaticFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_Sf_SwigStatic_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    # if globalStaticFields:
-    #     part_module_fields += parse_fields(moduleName, globalWikiInfo, globalStaticFields.group(1))[0]
+    globalStaticFields = re.search(r'static\s+swig_lua_attribute\s+swig_SwigModule_Sf_SwigStatic_attributes\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    if globalStaticFields:
+        module_fields = parse_fields(moduleName, globalWikiInfo, globalStaticFields.group(1))[0]
     
-    # appended_fields = g_fieldsAppendMap.get(moduleName, None)
-    # if appended_fields:
-    #     for content in appended_fields:
-    #         part_module_fields += f"---@field {content}\n"
+    module_appended_fields = g_fieldsAppendMap.get(moduleName, None)
+    if module_appended_fields:
+        if module_appended_fields:
+            for content in module_appended_fields:
+                assert len(parts := content.split( )) == 2
+                name = parts[0]
+                type = parts[1]
+                module_fields.append(WikiPageItem(
+                    name=name,
+                    propertyType=PropertyType.FIELD,
+                    className=className,
+                    moduleName=moduleName,
+                    returnType=get_lua_type(type)
+                ))
     
-    # globalMethods = re.search(r'static\s+swig_lua_method\s+swig_SwigModule_methods\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    # if globalMethods:
-    #     part_module_methods, _ = parse_methods(moduleName, globalHSInfo, globalWikiInfo, globalMethods.group(1), FuncType.STATIC)
+    globalStaticMethods = re.search(r'static\s+swig_lua_method\s+swig_SwigModule_methods\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    if globalStaticMethods:
+        module_static_methods = parse_methods(moduleName, globalHSInfo, globalWikiInfo, globalStaticMethods.group(1), FuncType.STATIC)
     
-    # globalConstants = re.search(r'static\s+swig_lua_const_info\s+swig_SwigModule_constants\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
-    # if globalConstants:
-    #     part_module_consts, _ = parse_constants(moduleName, globalWikiInfo, globalConstants.group(1))
+    globalConstants = re.search(r'static\s+swig_lua_const_info\s+swig_SwigModule_constants\[\]\s*=\s*\{(.*?)\};', lua_code, re.DOTALL)
+    if globalConstants:
+        module_constants = parse_constants(moduleName, globalWikiInfo, globalConstants.group(1))
     
-    # additionalTableMembers = additionalTableMembersMap.get(moduleName, None)
-    # if additionalTableMembers:
-    #     for memberName in additionalTableMembers:
-    #         part_module_consts += f"    {memberName} = {{}},\n"
+    additionalTableMembers = additionalTableMembersMap.get(moduleName, None)
+    if additionalTableMembers:
+        for memberName in additionalTableMembers:
+                module_fields.append(WikiPageItem(
+                    name=memberName,
+                    propertyType=PropertyType.FIELD,
+                    returnType="table",
+                    className=className,
+                    moduleName=moduleName
+                ))
     
-    # result += f"---@class {moduleName}\n{part_module_fields}{moduleName} = {{" + (f"\n{part_module_consts}" if part_module_consts else "") + f"}}\n\n{part_module_methods}"
-    
+    g_wiki_pages[moduleName] = WikiPage(
+        category=CategoryType.MODULE,
+        name=moduleName,
+        moduleName=moduleName,
+        parentNames=[],
+        constructors=[],
+        constants=module_constants if globalConstants else [],
+        staticMethods=module_static_methods if globalStaticMethods else [],
+        methods=[],
+        fields=module_fields if globalFields else []
+    )
+        
     # Parse classes
     for className, _ in CLASSNAMES:
         full_name = get_lua_type(className, True)
@@ -1002,8 +1043,8 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
             # result += f"---@enum {full_name}\n{full_name} = {{\n{part_consts}}}\n\n"
             pass
         else:
-            # result += f"---@class {full_name}" + ((": " + ", ".join(parents)) if parents else "") + f"\n{part_fields}{full_name} = {{" + (f"\n{part_consts}" if part_consts else "") + f"}}\n\n{part_constructor}{part_methods}"
             g_wiki_pages[full_name] = WikiPage(
+                category=CategoryType.CLASS,
                 name=className,
                 moduleName=moduleName,
                 parentNames=parents,
@@ -1013,23 +1054,6 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
                 methods=methods,
                 fields=fields
             )
-            # replace_map = {}
-            # replace_map["NAME"] = className
-            # if parents:
-            #     replace_map["PARENTS"] = ", ".join([wrap_type_for_md(className, parent) for parent in parents])
-            # if count_constructor > 0:
-            #     replace_map["CONSTRUCTORS"] = part_constructor
-            # if count_consts > 0:
-            #     replace_map["CONSTANTS"] = part_consts
-            # if count_static_methods > 0:
-            #     replace_map["STATIC_METHODS"] = part_static_methods
-            # if count_methods > 0:
-            #     replace_map["METHODS"] = part_methods
-            # if count_fields > 0:
-            #     replace_map["FIELDS"] = part_fields
-            
-            # output_path = f"lua/{moduleName}/{className}.md"
-            # create_wiki_md(replace_map, output_path)
     
     # Build subclass relationships
     for full_name, wiki_page in g_wiki_pages.items():

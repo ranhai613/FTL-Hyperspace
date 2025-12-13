@@ -930,6 +930,16 @@ body.lua-doc.lua-dark .lua-search-results mark {
   display: none;
 }
 
+.lua-sidebar-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lua-nav-text);
+  opacity: 0.65;
+  margin-left: -0.5rem;
+  padding: 0.25rem 0 0.1rem;
+}
+
 .lua-sidebar-group.is-open .lua-sidebar-list {
   display: block;
 }

@@ -4,7 +4,7 @@ title: {{NAME}}
 lang: en
 ---
 
-# Class "{{NAME}}"
+# {{CATEGORY}} "{{NAME}}"
 {?
 {{RELATIONS}}
 ?}
