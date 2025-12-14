@@ -2,6 +2,7 @@
 layout: lua
 title: Blueprint
 lang: en
+category: Class
 ---
 
 # Class "Blueprint"

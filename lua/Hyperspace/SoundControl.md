@@ -2,6 +2,7 @@
 layout: lua
 title: SoundControl
 lang: en
+category: Class
 ---
 
 # Class "SoundControl"

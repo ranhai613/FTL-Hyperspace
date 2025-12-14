@@ -2,6 +2,7 @@
 layout: lua
 title: ToggleValue_bool
 lang: en
+category: Class
 ---
 
 # Class "ToggleValue_bool"

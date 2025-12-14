@@ -2,6 +2,7 @@
 layout: lua
 title: ToggleValue_int
 lang: en
+category: Class
 ---
 
 # Class "ToggleValue_int"

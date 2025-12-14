@@ -2,6 +2,7 @@
 layout: lua
 title: EffectsBlueprint
 lang: en
+category: Class
 ---
 
 # Class "EffectsBlueprint"

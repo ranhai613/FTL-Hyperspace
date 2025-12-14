@@ -2,6 +2,7 @@
 layout: lua
 title: TutorialArrow
 lang: en
+category: Class
 ---
 
 # Class "TutorialArrow"

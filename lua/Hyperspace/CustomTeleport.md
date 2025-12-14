@@ -2,6 +2,7 @@
 layout: lua
 title: CustomTeleport
 lang: en
+category: Class
 ---
 
 # Class "CustomTeleport"

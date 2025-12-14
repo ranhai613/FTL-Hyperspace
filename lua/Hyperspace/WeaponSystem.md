@@ -2,6 +2,7 @@
 layout: lua
 title: WeaponSystem
 lang: en
+category: Class
 ---
 
 # Class "WeaponSystem"

@@ -2,6 +2,7 @@
 layout: lua
 title: Fire
 lang: en
+category: Class
 ---
 
 # Class "Fire"

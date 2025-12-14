@@ -2,6 +2,7 @@
 layout: lua
 title: AnimationControl
 lang: en
+category: Class
 ---
 
 # Class "AnimationControl"

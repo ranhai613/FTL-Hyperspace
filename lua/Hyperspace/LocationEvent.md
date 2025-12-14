@@ -2,6 +2,7 @@
 layout: lua
 title: LocationEvent
 lang: en
+category: Class
 ---
 
 # Class "LocationEvent"

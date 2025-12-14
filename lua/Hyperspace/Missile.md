@@ -2,6 +2,7 @@
 layout: lua
 title: Missile
 lang: en
+category: Class
 ---
 
 # Class "Missile"

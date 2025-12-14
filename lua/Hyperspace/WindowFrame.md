@@ -2,6 +2,7 @@
 layout: lua
 title: WindowFrame
 lang: en
+category: Class
 ---
 
 # Class "WindowFrame"

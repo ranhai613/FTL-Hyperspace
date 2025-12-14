@@ -2,6 +2,7 @@
 layout: lua
 title: Choice
 lang: en
+category: Class
 ---
 
 # Class "Choice"

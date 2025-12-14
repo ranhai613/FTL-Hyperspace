@@ -2,6 +2,7 @@
 layout: lua
 title: BoostPower
 lang: en
+category: Class
 ---
 
 # Class "BoostPower"

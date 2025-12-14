@@ -2,6 +2,7 @@
 layout: lua
 title: Room_Extend
 lang: en
+category: Class
 ---
 
 # Class "Room_Extend"

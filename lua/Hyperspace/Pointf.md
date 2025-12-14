@@ -2,6 +2,7 @@
 layout: lua
 title: Pointf
 lang: en
+category: Class
 ---
 
 # Class "Pointf"

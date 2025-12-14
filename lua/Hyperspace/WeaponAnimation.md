@@ -2,6 +2,7 @@
 layout: lua
 title: WeaponAnimation
 lang: en
+category: Class
 ---
 
 # Class "WeaponAnimation"

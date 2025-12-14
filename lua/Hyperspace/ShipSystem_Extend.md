@@ -2,6 +2,7 @@
 layout: lua
 title: ShipSystem_Extend
 lang: en
+category: Class
 ---
 
 # Class "ShipSystem_Extend"

@@ -2,6 +2,7 @@
 layout: lua
 title: GL_Line
 lang: en
+category: Class
 ---
 
 # Class "GL_Line"

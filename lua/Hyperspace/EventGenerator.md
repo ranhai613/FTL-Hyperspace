@@ -2,6 +2,7 @@
 layout: lua
 title: EventGenerator
 lang: en
+category: Class
 ---
 
 # Class "EventGenerator"

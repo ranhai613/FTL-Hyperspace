@@ -2,6 +2,7 @@
 layout: lua
 title: ResourceControl
 lang: en
+category: Class
 ---
 
 # Class "ResourceControl"

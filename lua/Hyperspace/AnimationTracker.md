@@ -2,6 +2,7 @@
 layout: lua
 title: AnimationTracker
 lang: en
+category: Class
 ---
 
 # Class "AnimationTracker"

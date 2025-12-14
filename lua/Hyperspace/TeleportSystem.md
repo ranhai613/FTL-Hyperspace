@@ -2,6 +2,7 @@
 layout: lua
 title: TeleportSystem
 lang: en
+category: Class
 ---
 
 # Class "TeleportSystem"

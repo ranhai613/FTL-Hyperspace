@@ -2,6 +2,7 @@
 layout: lua
 title: Button
 lang: en
+category: Class
 ---
 
 # Class "Button"

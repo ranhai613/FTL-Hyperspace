@@ -2,6 +2,7 @@
 layout: lua
 title: {{NAME}}
 lang: en
+category: {{CATEGORY}}
 ---
 
 # {{CATEGORY}} "{{NAME}}"

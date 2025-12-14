@@ -2,6 +2,7 @@
 layout: lua
 title: TemporalSystemParser
 lang: en
+category: Class
 ---
 
 # Class "TemporalSystemParser"

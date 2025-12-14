@@ -2,6 +2,7 @@
 layout: lua
 title: Rect
 lang: en
+category: Class
 ---
 
 # Class "Rect"

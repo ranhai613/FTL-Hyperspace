@@ -2,6 +2,7 @@
 layout: lua
 title: ActivatedPowerRequirements
 lang: en
+category: Class
 ---
 
 # Class "ActivatedPowerRequirements"

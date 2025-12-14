@@ -2,6 +2,7 @@
 layout: lua
 title: CloneSystem
 lang: en
+category: Class
 ---
 
 # Class "CloneSystem"

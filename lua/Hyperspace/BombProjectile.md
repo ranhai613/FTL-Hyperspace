@@ -2,6 +2,7 @@
 layout: lua
 title: BombProjectile
 lang: en
+category: Class
 ---
 
 # Class "BombProjectile"

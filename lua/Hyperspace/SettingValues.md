@@ -2,6 +2,7 @@
 layout: lua
 title: SettingValues
 lang: en
+category: Class
 ---
 
 # Class "SettingValues"

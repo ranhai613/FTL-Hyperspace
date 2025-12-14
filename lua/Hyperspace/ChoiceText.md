@@ -2,6 +2,7 @@
 layout: lua
 title: ChoiceText
 lang: en
+category: Class
 ---
 
 # Class "ChoiceText"

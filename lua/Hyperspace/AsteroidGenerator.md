@@ -2,6 +2,7 @@
 layout: lua
 title: AsteroidGenerator
 lang: en
+category: Class
 ---
 
 # Class "AsteroidGenerator"

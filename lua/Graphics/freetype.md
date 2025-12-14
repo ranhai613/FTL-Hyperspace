@@ -2,6 +2,7 @@
 layout: lua
 title: freetype
 lang: en
+category: Class
 ---
 
 # Class "freetype"

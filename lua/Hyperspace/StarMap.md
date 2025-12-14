@@ -2,6 +2,7 @@
 layout: lua
 title: StarMap
 lang: en
+category: Class
 ---
 
 # Class "StarMap"

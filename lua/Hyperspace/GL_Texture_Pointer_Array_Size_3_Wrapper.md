@@ -2,6 +2,7 @@
 layout: lua
 title: GL_Texture_Pointer_Array_Size_3_Wrapper
 lang: en
+category: Class
 ---
 
 # Class "GL_Texture_Pointer_Array_Size_3_Wrapper"

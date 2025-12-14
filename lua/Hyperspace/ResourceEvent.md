@@ -2,6 +2,7 @@
 layout: lua
 title: ResourceEvent
 lang: en
+category: Class
 ---
 
 # Class "ResourceEvent"

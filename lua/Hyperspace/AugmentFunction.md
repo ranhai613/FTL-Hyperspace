@@ -2,6 +2,7 @@
 layout: lua
 title: AugmentFunction
 lang: en
+category: Class
 ---
 
 # Class "AugmentFunction"

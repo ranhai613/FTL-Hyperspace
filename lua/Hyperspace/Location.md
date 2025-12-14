@@ -2,6 +2,7 @@
 layout: lua
 title: Location
 lang: en
+category: Class
 ---
 
 # Class "Location"

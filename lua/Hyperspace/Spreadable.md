@@ -2,6 +2,7 @@
 layout: lua
 title: Spreadable
 lang: en
+category: Class
 ---
 
 # Class "Spreadable"

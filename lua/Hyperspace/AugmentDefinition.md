@@ -2,6 +2,7 @@
 layout: lua
 title: AugmentDefinition
 lang: en
+category: Class
 ---
 
 # Class "AugmentDefinition"

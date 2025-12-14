@@ -2,6 +2,7 @@
 layout: lua
 title: CrewControl
 lang: en
+category: Class
 ---
 
 # Class "CrewControl"

@@ -107,13 +107,17 @@
             {% assign graphics_pages = site.pages | where_exp: "p", "p.path contains 'lua/Graphics/'" | sort: 'title' %}
             {% assign hyperspace_pages = site.pages | where_exp: "p", "p.path contains 'lua/Hyperspace/'" | sort: 'title' %}
 
-            {% assign defines_index_page = defines_pages | where: "name", "index.md" | first %}
-            {% assign graphics_index_page = graphics_pages | where: "name", "index.md" | first %}
-            {% assign hyperspace_index_page = hyperspace_pages | where: "name", "index.md" | first %}
+            {% assign defines_module_pages = defines_pages | where: "category", "Module" %}
+            {% assign defines_enum_pages = defines_pages | where: "category", "Enum" %}
+            {% assign defines_class_pages = defines_pages | where: "category", "Class" %}
 
-            {% assign defines_class_pages = defines_pages | where_exp: "p", "p.name != 'index.md'" %}
-            {% assign graphics_class_pages = graphics_pages | where_exp: "p", "p.name != 'index.md'" %}
-            {% assign hyperspace_class_pages = hyperspace_pages | where_exp: "p", "p.name != 'index.md'" %}
+            {% assign graphics_module_pages = graphics_pages | where: "category", "Module" %}
+            {% assign graphics_enum_pages = graphics_pages | where: "category", "Enum" %}
+            {% assign graphics_class_pages = graphics_pages | where: "category", "Class" %}
+
+            {% assign hyperspace_module_pages = hyperspace_pages | where: "category", "Module" %}
+            {% assign hyperspace_enum_pages = hyperspace_pages | where: "category", "Enum" %}
+            {% assign hyperspace_class_pages = hyperspace_pages | where: "category", "Class" %}
 
             {% assign current_defines = defines_pages | where: "url", page.url | first %}
             {% assign current_graphics = graphics_pages | where: "url", page.url | first %}
@@ -125,11 +129,21 @@
                 <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
               </button>
               <ul id="lua-sidebar-defines" class="lua-sidebar-list">
-                {% if defines_index_page %}
+                {% if defines_module_pages.size > 0 %}
                   <li class="lua-sidebar-label">Module</li>
-                  <li{% if defines_index_page.url == page.url %} class="active"{% endif %}>
-                    <a href="{{ defines_index_page.url | relative_url }}">{{ defines_index_page.title | default: defines_index_page.name }}</a>
-                  </li>
+                  {% for p in defines_module_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+                {% if defines_enum_pages.size > 0 %}
+                  <li class="lua-sidebar-label">Enum</li>
+                  {% for p in defines_enum_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
                 {% endif %}
                 {% if defines_class_pages.size > 0 %}
                   <li class="lua-sidebar-label">Class</li>
@@ -148,11 +162,21 @@
                 <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
               </button>
               <ul id="lua-sidebar-graphics" class="lua-sidebar-list">
-                {% if graphics_index_page %}
+                {% if graphics_module_pages.size > 0 %}
                   <li class="lua-sidebar-label">Module</li>
-                  <li{% if graphics_index_page.url == page.url %} class="active"{% endif %}>
-                    <a href="{{ graphics_index_page.url | relative_url }}">{{ graphics_index_page.title | default: graphics_index_page.name }}</a>
-                  </li>
+                  {% for p in graphics_module_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+                {% if graphics_enum_pages.size > 0 %}
+                  <li class="lua-sidebar-label">Enum</li>
+                  {% for p in graphics_enum_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
                 {% endif %}
                 {% if graphics_class_pages.size > 0 %}
                   <li class="lua-sidebar-label">Class</li>
@@ -171,11 +195,21 @@
                 <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
               </button>
               <ul id="lua-sidebar-hyperspace" class="lua-sidebar-list">
-                {% if hyperspace_index_page %}
+                {% if hyperspace_module_pages.size > 0 %}
                   <li class="lua-sidebar-label">Module</li>
-                  <li{% if hyperspace_index_page.url == page.url %} class="active"{% endif %}>
-                    <a href="{{ hyperspace_index_page.url | relative_url }}">{{ hyperspace_index_page.title | default: hyperspace_index_page.name }}</a>
-                  </li>
+                  {% for p in hyperspace_module_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+                {% if hyperspace_enum_pages.size > 0 %}
+                  <li class="lua-sidebar-label">Enum</li>
+                  {% for p in hyperspace_enum_pages %}
+                    <li{% if p.url == page.url %} class="active"{% endif %}>
+                      <a href="{{ p.url | relative_url }}">{{ p.title | default: p.name }}</a>
+                    </li>
+                  {% endfor %}
                 {% endif %}
                 {% if hyperspace_class_pages.size > 0 %}
                   <li class="lua-sidebar-label">Class</li>

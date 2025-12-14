@@ -2,6 +2,7 @@
 layout: lua
 title: Ellipse
 lang: en
+category: Class
 ---
 
 # Class "Ellipse"

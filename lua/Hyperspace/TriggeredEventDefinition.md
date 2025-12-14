@@ -2,6 +2,7 @@
 layout: lua
 title: TriggeredEventDefinition
 lang: en
+category: Class
 ---
 
 # Class "TriggeredEventDefinition"

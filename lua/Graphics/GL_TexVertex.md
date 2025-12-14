@@ -2,6 +2,7 @@
 layout: lua
 title: GL_TexVertex
 lang: en
+category: Class
 ---
 
 # Class "GL_TexVertex"

@@ -2,6 +2,7 @@
 layout: lua
 title: MindSystem
 lang: en
+category: Class
 ---
 
 # Class "MindSystem"

@@ -2,6 +2,7 @@
 layout: lua
 title: ShipGraph
 lang: en
+category: Class
 ---
 
 # Class "ShipGraph"

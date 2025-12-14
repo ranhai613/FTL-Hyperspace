@@ -2,6 +2,7 @@
 layout: lua
 title: MiniProjectile
 lang: en
+category: Class
 ---
 
 # Class "MiniProjectile"

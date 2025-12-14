@@ -2,6 +2,7 @@
 layout: lua
 title: CollisionResponse
 lang: en
+category: Class
 ---
 
 # Class "CollisionResponse"

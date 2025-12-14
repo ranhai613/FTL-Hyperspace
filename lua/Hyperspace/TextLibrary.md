@@ -2,6 +2,7 @@
 layout: lua
 title: TextLibrary
 lang: en
+category: Class
 ---
 
 # Class "TextLibrary"

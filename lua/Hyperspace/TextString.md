@@ -2,6 +2,7 @@
 layout: lua
 title: TextString
 lang: en
+category: Class
 ---
 
 # Class "TextString"

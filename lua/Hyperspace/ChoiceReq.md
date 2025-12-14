@@ -2,6 +2,7 @@
 layout: lua
 title: ChoiceReq
 lang: en
+category: Class
 ---
 
 # Class "ChoiceReq"

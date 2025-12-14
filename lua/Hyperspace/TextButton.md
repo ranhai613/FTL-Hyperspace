@@ -2,6 +2,7 @@
 layout: lua
 title: TextButton
 lang: en
+category: Class
 ---
 
 # Class "TextButton"

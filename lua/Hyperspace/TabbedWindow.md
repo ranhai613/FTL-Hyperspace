@@ -2,6 +2,7 @@
 layout: lua
 title: TabbedWindow
 lang: en
+category: Class
 ---
 
 # Class "TabbedWindow"

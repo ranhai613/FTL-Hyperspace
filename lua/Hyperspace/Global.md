@@ -2,6 +2,7 @@
 layout: lua
 title: Global
 lang: en
+category: Class
 ---
 
 # Class "Global"

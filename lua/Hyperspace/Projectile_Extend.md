@@ -2,6 +2,7 @@
 layout: lua
 title: Projectile_Extend
 lang: en
+category: Class
 ---
 
 # Class "Projectile_Extend"

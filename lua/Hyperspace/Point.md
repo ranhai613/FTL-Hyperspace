@@ -2,6 +2,7 @@
 layout: lua
 title: Point
 lang: en
+category: Class
 ---
 
 # Class "Point"

@@ -2,6 +2,7 @@
 layout: lua
 title: Slot
 lang: en
+category: Class
 ---
 
 # Class "Slot"

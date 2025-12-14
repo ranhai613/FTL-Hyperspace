@@ -2,6 +2,7 @@
 layout: lua
 title: Repairable
 lang: en
+category: Class
 ---
 
 # Class "Repairable"

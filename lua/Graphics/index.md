@@ -2,6 +2,7 @@
 layout: lua
 title: Graphics
 lang: en
+category: Module
 ---
 
 # Module "Graphics"

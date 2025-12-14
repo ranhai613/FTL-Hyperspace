@@ -2,6 +2,7 @@
 layout: lua
 title: AugmentBlueprint
 lang: en
+category: Class
 ---
 
 # Class "AugmentBlueprint"

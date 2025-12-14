@@ -2,6 +2,7 @@
 layout: lua
 title: StatBoostDefinition
 lang: en
+category: Class
 ---
 
 # Class "StatBoostDefinition"

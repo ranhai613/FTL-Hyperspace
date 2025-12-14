@@ -2,6 +2,7 @@
 layout: lua
 title: Door
 lang: en
+category: Class
 ---
 
 # Class "Door"

@@ -2,6 +2,7 @@
 layout: lua
 title: HyperspaceVersion
 lang: en
+category: Class
 ---
 
 # Class "HyperspaceVersion"

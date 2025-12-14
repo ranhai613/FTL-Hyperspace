@@ -2,6 +2,7 @@
 layout: lua
 title: playerVariableType
 lang: en
+category: Class
 ---
 
 # Class "playerVariableType"

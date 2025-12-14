@@ -2,6 +2,7 @@
 layout: lua
 title: StatBoostManager
 lang: en
+category: Class
 ---
 
 # Class "StatBoostManager"

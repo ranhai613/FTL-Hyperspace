@@ -2,6 +2,7 @@
 layout: lua
 title: TopScore
 lang: en
+category: Class
 ---
 
 # Class "TopScore"

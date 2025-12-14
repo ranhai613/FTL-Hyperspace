@@ -2,6 +2,7 @@
 layout: lua
 title: CustomEventsParser
 lang: en
+category: Class
 ---
 
 # Class "CustomEventsParser"

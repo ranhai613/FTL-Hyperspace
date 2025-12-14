@@ -2,6 +2,7 @@
 layout: lua
 title: Ship
 lang: en
+category: Class
 ---
 
 # Class "Ship"

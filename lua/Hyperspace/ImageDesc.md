@@ -2,6 +2,7 @@
 layout: lua
 title: ImageDesc
 lang: en
+category: Class
 ---
 
 # Class "ImageDesc"

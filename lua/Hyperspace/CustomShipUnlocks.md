@@ -2,6 +2,7 @@
 layout: lua
 title: CustomShipUnlocks
 lang: en
+category: Class
 ---
 
 # Class "CustomShipUnlocks"

@@ -2,6 +2,7 @@
 layout: lua
 title: CustomAugmentManager
 lang: en
+category: Class
 ---
 
 # Class "CustomAugmentManager"

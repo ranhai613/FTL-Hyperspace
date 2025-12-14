@@ -2,6 +2,7 @@
 layout: lua
 title: StatBoost
 lang: en
+category: Class
 ---
 
 # Class "StatBoost"

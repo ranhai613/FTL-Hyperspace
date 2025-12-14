@@ -2,6 +2,7 @@
 layout: lua
 title: CloakingSystem
 lang: en
+category: Class
 ---
 
 # Class "CloakingSystem"

@@ -2,6 +2,7 @@
 layout: lua
 title: CustomShipGenerator
 lang: en
+category: Class
 ---
 
 # Class "CustomShipGenerator"

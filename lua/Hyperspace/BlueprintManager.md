@@ -2,6 +2,7 @@
 layout: lua
 title: BlueprintManager
 lang: en
+category: Class
 ---
 
 # Class "BlueprintManager"

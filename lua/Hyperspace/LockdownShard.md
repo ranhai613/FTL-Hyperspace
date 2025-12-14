@@ -2,6 +2,7 @@
 layout: lua
 title: LockdownShard
 lang: en
+category: Class
 ---
 
 # Class "LockdownShard"

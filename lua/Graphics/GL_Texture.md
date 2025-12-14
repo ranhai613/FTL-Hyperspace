@@ -2,6 +2,7 @@
 layout: lua
 title: GL_Texture
 lang: en
+category: Class
 ---
 
 # Class "GL_Texture"

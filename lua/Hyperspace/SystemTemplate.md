@@ -2,6 +2,7 @@
 layout: lua
 title: SystemTemplate
 lang: en
+category: Class
 ---
 
 # Class "SystemTemplate"

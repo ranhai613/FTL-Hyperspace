@@ -2,6 +2,7 @@
 layout: lua
 title: ToggleValue_float
 lang: en
+category: Class
 ---
 
 # Class "ToggleValue_float"

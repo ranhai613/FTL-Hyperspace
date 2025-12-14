@@ -2,6 +2,7 @@
 layout: lua
 title: CrewPlacementDefinition
 lang: en
+category: Class
 ---
 
 # Class "CrewPlacementDefinition"

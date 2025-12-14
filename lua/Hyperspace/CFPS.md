@@ -2,6 +2,7 @@
 layout: lua
 title: CFPS
 lang: en
+category: Class
 ---
 
 # Class "CFPS"

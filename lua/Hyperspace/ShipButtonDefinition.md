@@ -2,6 +2,7 @@
 layout: lua
 title: ShipButtonDefinition
 lang: en
+category: Class
 ---
 
 # Class "ShipButtonDefinition"

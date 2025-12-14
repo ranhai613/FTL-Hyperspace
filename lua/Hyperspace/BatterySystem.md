@@ -2,6 +2,7 @@
 layout: lua
 title: BatterySystem
 lang: en
+category: Class
 ---
 
 # Class "BatterySystem"

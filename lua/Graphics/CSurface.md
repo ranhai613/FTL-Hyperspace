@@ -2,6 +2,7 @@
 layout: lua
 title: CSurface
 lang: en
+category: Class
 ---
 
 # Class "CSurface"

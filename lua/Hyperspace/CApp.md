@@ -2,6 +2,7 @@
 layout: lua
 title: CApp
 lang: en
+category: Class
 ---
 
 # Class "CApp"

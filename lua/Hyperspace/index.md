@@ -2,6 +2,7 @@
 layout: lua
 title: Hyperspace
 lang: en
+category: Module
 ---
 
 # Module "Hyperspace"

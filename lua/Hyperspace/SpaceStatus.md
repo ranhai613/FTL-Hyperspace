@@ -2,6 +2,7 @@
 layout: lua
 title: SpaceStatus
 lang: en
+category: Class
 ---
 
 # Class "SpaceStatus"

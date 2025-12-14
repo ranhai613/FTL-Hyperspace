@@ -2,6 +2,7 @@
 layout: lua
 title: CustomEvent
 lang: en
+category: Class
 ---
 
 # Class "CustomEvent"

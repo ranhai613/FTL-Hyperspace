@@ -2,6 +2,7 @@
 layout: lua
 title: Animation
 lang: en
+category: Class
 ---
 
 # Class "Animation"

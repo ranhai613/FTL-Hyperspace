@@ -2,6 +2,7 @@
 layout: lua
 title: ArtillerySystem
 lang: en
+category: Class
 ---
 
 # Class "ArtillerySystem"

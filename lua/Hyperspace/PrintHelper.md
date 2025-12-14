@@ -2,6 +2,7 @@
 layout: lua
 title: PrintHelper
 lang: en
+category: Class
 ---
 
 # Class "PrintHelper"

@@ -2,6 +2,7 @@
 layout: lua
 title: SuperShieldDrone
 lang: en
+category: Class
 ---
 
 # Class "SuperShieldDrone"

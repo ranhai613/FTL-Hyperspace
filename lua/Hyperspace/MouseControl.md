@@ -2,6 +2,7 @@
 layout: lua
 title: MouseControl
 lang: en
+category: Class
 ---
 
 # Class "MouseControl"

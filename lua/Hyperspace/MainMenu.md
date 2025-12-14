@@ -2,6 +2,7 @@
 layout: lua
 title: MainMenu
 lang: en
+category: Class
 ---
 
 # Class "MainMenu"

@@ -2,6 +2,7 @@
 layout: lua
 title: PowerManager
 lang: en
+category: Class
 ---
 
 # Class "PowerManager"

@@ -2,6 +2,7 @@
 layout: lua
 title: CommandGui
 lang: en
+category: Class
 ---
 
 # Class "CommandGui"

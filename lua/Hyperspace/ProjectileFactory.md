@@ -2,6 +2,7 @@
 layout: lua
 title: ProjectileFactory
 lang: en
+category: Class
 ---
 
 # Class "ProjectileFactory"

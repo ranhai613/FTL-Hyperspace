@@ -2,6 +2,7 @@
 layout: lua
 title: OuterHull
 lang: en
+category: Class
 ---
 
 # Class "OuterHull"

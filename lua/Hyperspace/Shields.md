@@ -2,6 +2,7 @@
 layout: lua
 title: Shields
 lang: en
+category: Class
 ---
 
 # Class "Shields"

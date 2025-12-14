@@ -2,6 +2,7 @@
 layout: lua
 title: BoardingEvent
 lang: en
+category: Class
 ---
 
 # Class "BoardingEvent"

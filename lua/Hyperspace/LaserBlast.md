@@ -2,6 +2,7 @@
 layout: lua
 title: LaserBlast
 lang: en
+category: Class
 ---
 
 # Class "LaserBlast"

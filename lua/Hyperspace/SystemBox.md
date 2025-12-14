@@ -2,6 +2,7 @@
 layout: lua
 title: SystemBox
 lang: en
+category: Class
 ---
 
 # Class "SystemBox"

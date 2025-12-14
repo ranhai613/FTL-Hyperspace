@@ -2,6 +2,7 @@
 layout: lua
 title: CrewMemberFactory
 lang: en
+category: Class
 ---
 
 # Class "CrewMemberFactory"

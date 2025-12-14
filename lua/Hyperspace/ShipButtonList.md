@@ -2,6 +2,7 @@
 layout: lua
 title: ShipButtonList
 lang: en
+category: Class
 ---
 
 # Class "ShipButtonList"

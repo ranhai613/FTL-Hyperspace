@@ -613,14 +613,28 @@ summary {
   padding: 0.4rem 0.6rem;
 }
 
-.lua-main th:first-child,
-.lua-main td:first-child {
+/* 2 rows table : inheritance table*/
+.lua-main tr > th:nth-child(1):nth-last-child(2),
+.lua-main tr > td:nth-child(1):nth-last-child(2) {
   width: 20%;
 }
-
-.lua-main th:last-child,
-.lua-main td:last-child {
+.lua-main tr > th:nth-child(2):nth-last-child(1),
+.lua-main tr > td:nth-child(2):nth-last-child(1) {
   width: 80%;
+}
+
+/* 3 rows table : enum table */
+.lua-main tr > th:nth-child(1):nth-last-child(3),
+.lua-main tr > td:nth-child(1):nth-last-child(3) {
+  width: 20%;
+}
+.lua-main tr > th:nth-child(2):nth-last-child(2),
+.lua-main tr > td:nth-child(2):nth-last-child(2) {
+  width: 10%;
+}
+.lua-main tr > th:nth-child(3):nth-last-child(1),
+.lua-main tr > td:nth-child(3):nth-last-child(1) {
+  width: 70%;
 }
 
 .lua-main th {

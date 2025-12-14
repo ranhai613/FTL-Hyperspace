@@ -2,6 +2,7 @@
 layout: lua
 title: ScoreKeeper
 lang: en
+category: Class
 ---
 
 # Class "ScoreKeeper"

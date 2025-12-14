@@ -2,6 +2,7 @@
 layout: lua
 title: GL_Color
 lang: en
+category: Class
 ---
 
 # Class "GL_Color"

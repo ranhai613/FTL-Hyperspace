@@ -2,6 +2,7 @@
 layout: lua
 title: AugmentSuperShield
 lang: en
+category: Class
 ---
 
 # Class "AugmentSuperShield"

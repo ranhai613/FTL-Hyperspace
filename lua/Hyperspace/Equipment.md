@@ -2,6 +2,7 @@
 layout: lua
 title: Equipment
 lang: en
+category: Class
 ---
 
 # Class "Equipment"

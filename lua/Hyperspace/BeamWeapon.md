@@ -2,6 +2,7 @@
 layout: lua
 title: BeamWeapon
 lang: en
+category: Class
 ---
 
 # Class "BeamWeapon"

@@ -2,6 +2,7 @@
 layout: lua
 title: PowerResourceDefinition
 lang: en
+category: Class
 ---
 
 # Class "PowerResourceDefinition"

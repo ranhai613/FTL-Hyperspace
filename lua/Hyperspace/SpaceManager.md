@@ -2,6 +2,7 @@
 layout: lua
 title: SpaceManager
 lang: en
+category: Class
 ---
 
 # Class "SpaceManager"

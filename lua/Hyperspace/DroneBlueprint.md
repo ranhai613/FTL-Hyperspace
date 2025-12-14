@@ -2,6 +2,7 @@
 layout: lua
 title: DroneBlueprint
 lang: en
+category: Class
 ---
 
 # Class "DroneBlueprint"

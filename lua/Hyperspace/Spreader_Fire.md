@@ -2,6 +2,7 @@
 layout: lua
 title: Spreader_Fire
 lang: en
+category: Class
 ---
 
 # Class "Spreader_Fire"

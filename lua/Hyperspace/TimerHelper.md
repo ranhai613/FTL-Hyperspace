@@ -2,6 +2,7 @@
 layout: lua
 title: TimerHelper
 lang: en
+category: Class
 ---
 
 # Class "TimerHelper"

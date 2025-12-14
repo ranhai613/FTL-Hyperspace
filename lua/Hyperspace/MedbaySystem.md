@@ -2,6 +2,7 @@
 layout: lua
 title: MedbaySystem
 lang: en
+category: Class
 ---
 
 # Class "MedbaySystem"

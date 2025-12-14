@@ -2,6 +2,7 @@
 layout: lua
 title: PDSFire
 lang: en
+category: Class
 ---
 
 # Class "PDSFire"

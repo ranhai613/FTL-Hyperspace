@@ -2,6 +2,7 @@
 layout: lua
 title: SystemBox_Extend
 lang: en
+category: Class
 ---
 
 # Class "SystemBox_Extend"

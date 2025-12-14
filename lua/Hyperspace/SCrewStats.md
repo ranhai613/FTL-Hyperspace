@@ -2,6 +2,7 @@
 layout: lua
 title: SCrewStats
 lang: en
+category: Class
 ---
 
 # Class "SCrewStats"

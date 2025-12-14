@@ -2,6 +2,7 @@
 layout: lua
 title: AugmentCrystalShard
 lang: en
+category: Class
 ---
 
 # Class "AugmentCrystalShard"

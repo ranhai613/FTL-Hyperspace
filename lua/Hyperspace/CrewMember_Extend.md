@@ -2,6 +2,7 @@
 layout: lua
 title: CrewMember_Extend
 lang: en
+category: Class
 ---
 
 # Class "CrewMember_Extend"

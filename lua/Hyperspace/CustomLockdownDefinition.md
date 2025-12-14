@@ -2,6 +2,7 @@
 layout: lua
 title: CustomLockdownDefinition
 lang: en
+category: Class
 ---
 
 # Class "CustomLockdownDefinition"

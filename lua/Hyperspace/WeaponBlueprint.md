@@ -2,6 +2,7 @@
 layout: lua
 title: WeaponBlueprint
 lang: en
+category: Class
 ---
 
 # Class "WeaponBlueprint"

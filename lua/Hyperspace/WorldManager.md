@@ -2,6 +2,7 @@
 layout: lua
 title: WorldManager
 lang: en
+category: Class
 ---
 
 # Class "WorldManager"

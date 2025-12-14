@@ -2,6 +2,7 @@
 layout: lua
 title: WeaponMount
 lang: en
+category: Class
 ---
 
 # Class "WeaponMount"

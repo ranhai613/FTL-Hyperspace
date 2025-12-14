@@ -2,6 +2,7 @@
 layout: lua
 title: FTLButton
 lang: en
+category: Class
 ---
 
 # Class "FTLButton"

@@ -2,6 +2,7 @@
 layout: lua
 title: CustomShipSelect
 lang: en
+category: Class
 ---
 
 # Class "CustomShipSelect"

@@ -2,6 +2,7 @@
 layout: lua
 title: FocusWindow
 lang: en
+category: Class
 ---
 
 # Class "FocusWindow"

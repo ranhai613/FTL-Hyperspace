@@ -2,6 +2,7 @@
 layout: lua
 title: SectorDescription
 lang: en
+category: Class
 ---
 
 # Class "SectorDescription"

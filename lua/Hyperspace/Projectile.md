@@ -2,6 +2,7 @@
 layout: lua
 title: Projectile
 lang: en
+category: Class
 ---
 
 # Class "Projectile"

@@ -499,6 +499,15 @@ class WikiPage:
             ret = ret[4:] # remove leading ___
         return ret
     
+    def outputEnums(self) -> str:
+        assert self.category == CategoryType.ENUM, "WikiPage: outputEnums called on non-enum page"
+        
+        ret = "| Name | Value | Description |\n| --- | --- | --- |\n"
+        for constant in sorted(self.constants, key=lambda x: x.value):
+            description = constant.documentation.replace("\n", " ") if constant.documentation else ""
+            ret += f"| {constant.name} | {constant.value} | {description} |\n"
+        return ret
+    
     def getAncestorNames(self) -> list[str]:
         ancestors_list = []
         if not self.parentNames:
@@ -542,19 +551,27 @@ class WikiPage:
         elif self.category == CategoryType.ENUM:
             category = "Enum"
         
-        replace_map = {
-            "CATEGORY": category,
-            "NAME": self.name,
-            "RELATIONS": self.outputRelations() or None,
-            "CONSTRUCTORS": self.outputConstructors() or None,
-            "CONSTANTS": self.outputConstants() or None,
-            "STATIC_METHODS": self.outputStaticMethods() or None,
-            "METHODS": self.outputMethods() or None,
-            "FIELDS": self.outputFields() or None
-        }
+        if self.category == CategoryType.ENUM:
+            replace_map = {
+                "NAME": self.name,
+                "CONTENTS": self.outputEnums() or None
+            }
+            template_path ="parseSource/template_enum.md"
+        else:
+            replace_map = {
+                "CATEGORY": category,
+                "NAME": self.name,
+                "RELATIONS": self.outputRelations() or None,
+                "CONSTRUCTORS": self.outputConstructors() or None,
+                "CONSTANTS": self.outputConstants() or None,
+                "STATIC_METHODS": self.outputStaticMethods() or None,
+                "METHODS": self.outputMethods() or None,
+                "FIELDS": self.outputFields() or None
+            }
+            template_path ="parseSource/template.md"
         
         output_path = Path(basePath) / self.moduleName / f"{self.name if self.name != self.moduleName else "index"}.md"
-        create_wiki_md(replace_map, output_path)
+        create_wiki_md(replace_map, output_path, template_path)
     
 g_functionDataMap: dict[str, FunctionInfo] = {}
 
@@ -660,7 +677,7 @@ def format_container_type(className: str) -> str|None:
     
     return get_lua_type(func.args[0])
 
-def create_wiki_md(replace_map: dict[str, str], output_path: str):
+def create_wiki_md(replace_map: dict[str, str], output_path: str, template_path: str):
     def optional_replace(match: re.Match) -> str:
         key = re.search(r"\{\{(.*?)\}\}", match.group(1)).group(1)
         if key in replace_map and replace_map[key] is not None:
@@ -668,7 +685,7 @@ def create_wiki_md(replace_map: dict[str, str], output_path: str):
         else:
             return ""
     
-    with open("parseSource/template.md", 'r', encoding='utf8') as f:
+    with open(template_path, 'r', encoding='utf8') as f:
         template = f.read()
     
     template = re.sub(r"\{\?(.*?)\?\}", optional_replace, template, flags=re.DOTALL)
@@ -1040,8 +1057,17 @@ def parse_LUA_wrap(eventHookBuilder: EventHookBuilder, additionalEnumBuilder: Ad
         
         should_be_enum = len(constructors) < 2 and len(methods) + len(static_methods) == 0 and len(fields) == 0 and len(constants) > 0
         if should_be_enum:
-            # result += f"---@enum {full_name}\n{full_name} = {{\n{part_consts}}}\n\n"
-            pass
+            g_wiki_pages[full_name] = WikiPage(
+                category=CategoryType.ENUM,
+                name=className,
+                moduleName=moduleName,
+                parentNames=parents,
+                constructors=[],
+                constants=constants,
+                staticMethods=[],
+                methods=[],
+                fields=[]
+            )
         else:
             g_wiki_pages[full_name] = WikiPage(
                 category=CategoryType.CLASS,

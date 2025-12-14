@@ -2,6 +2,7 @@
 layout: lua
 title: ShieldPower
 lang: en
+category: Class
 ---
 
 # Class "ShieldPower"

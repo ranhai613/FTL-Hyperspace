@@ -2,6 +2,7 @@
 layout: lua
 title: ShipObject
 lang: en
+category: Class
 ---
 
 # Class "ShipObject"

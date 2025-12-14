@@ -2,6 +2,7 @@
 layout: lua
 title: HackingSystem
 lang: en
+category: Class
 ---
 
 # Class "HackingSystem"

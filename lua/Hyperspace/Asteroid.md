@@ -2,6 +2,7 @@
 layout: lua
 title: Asteroid
 lang: en
+category: Class
 ---
 
 # Class "Asteroid"

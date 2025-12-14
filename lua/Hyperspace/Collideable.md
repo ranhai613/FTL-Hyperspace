@@ -2,6 +2,7 @@
 layout: lua
 title: Collideable
 lang: en
+category: Class
 ---
 
 # Class "Collideable"

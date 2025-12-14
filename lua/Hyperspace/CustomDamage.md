@@ -2,6 +2,7 @@
 layout: lua
 title: CustomDamage
 lang: en
+category: Class
 ---
 
 # Class "CustomDamage"

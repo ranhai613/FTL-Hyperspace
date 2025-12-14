@@ -2,6 +2,7 @@
 layout: lua
 title: Description
 lang: en
+category: Class
 ---
 
 # Class "Description"

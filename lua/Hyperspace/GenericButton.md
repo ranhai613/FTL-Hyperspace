@@ -2,6 +2,7 @@
 layout: lua
 title: GenericButton
 lang: en
+category: Class
 ---
 
 # Class "GenericButton"

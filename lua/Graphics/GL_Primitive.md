@@ -2,6 +2,7 @@
 layout: lua
 title: GL_Primitive
 lang: en
+category: Class
 ---
 
 # Class "GL_Primitive"

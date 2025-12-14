@@ -2,6 +2,7 @@
 layout: lua
 title: SpaceDrone
 lang: en
+category: Class
 ---
 
 # Class "SpaceDrone"

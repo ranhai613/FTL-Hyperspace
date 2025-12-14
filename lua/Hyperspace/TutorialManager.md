@@ -2,6 +2,7 @@
 layout: lua
 title: TutorialManager
 lang: en
+category: Class
 ---
 
 # Class "TutorialManager"

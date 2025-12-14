@@ -2,6 +2,7 @@
 layout: lua
 title: OxygenSystem
 lang: en
+category: Class
 ---
 
 # Class "OxygenSystem"

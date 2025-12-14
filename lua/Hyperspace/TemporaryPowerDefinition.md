@@ -2,6 +2,7 @@
 layout: lua
 title: TemporaryPowerDefinition
 lang: en
+category: Class
 ---
 
 # Class "TemporaryPowerDefinition"

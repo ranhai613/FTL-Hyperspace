@@ -2,6 +2,7 @@
 layout: lua
 title: ActivatedPower
 lang: en
+category: Class
 ---
 
 # Class "ActivatedPower"

@@ -2,6 +2,7 @@
 layout: lua
 title: Targetable
 lang: en
+category: Class
 ---
 
 # Class "Targetable"

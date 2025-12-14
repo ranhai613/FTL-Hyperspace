@@ -2,6 +2,7 @@
 layout: lua
 title: CustomAchievementTracker
 lang: en
+category: Class
 ---
 
 # Class "CustomAchievementTracker"

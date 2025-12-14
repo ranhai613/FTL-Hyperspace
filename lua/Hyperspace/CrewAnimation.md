@@ -2,6 +2,7 @@
 layout: lua
 title: CrewAnimation
 lang: en
+category: Class
 ---
 
 # Class "CrewAnimation"

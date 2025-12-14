@@ -2,6 +2,7 @@
 layout: lua
 title: Room
 lang: en
+category: Class
 ---
 
 # Class "Room"

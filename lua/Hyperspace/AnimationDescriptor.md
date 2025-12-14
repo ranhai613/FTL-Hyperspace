@@ -2,6 +2,7 @@
 layout: lua
 title: AnimationDescriptor
 lang: en
+category: Class
 ---
 
 # Class "AnimationDescriptor"
