@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/style.css?v="> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/lua.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hyperspace | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Hyperspace" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/lua/Hyperspace/" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/lua/Hyperspace/" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hyperspace" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"Hyperspace","url":"https://github.com/FTL-Hyperspace/lua/Hyperspace/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="lua-doc">
+
+    <!-- STICKY UTILITY BAR -->
+    <div class="lua-global-header" role="banner">
+      <div class="lua-global-header__inner">
+        <div class="lua-header-branding">
+          <a class="lua-header-home" href="/FTL-Hyperspace/" aria-label="Go to home">
+            <span class="lua-header-home-text">FTL: Hyperspace</span>
+            <img class="lua-header-badge" src="/FTL-Hyperspace/assets/img/hyperspace_banner.png" alt="FTL Hyperspace banner" />
+          </a>
+        </div>
+        <div class="lua-header-mobile-row" aria-label="Mobile controls">
+          <button type="button" class="lua-header-icon-button lua-mobile-toggle lua-header-mobile-nav" data-mobile-target="#lua-nav-left-panel" aria-label="Open navigation">
+            <svg class="lua-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 7h16a1 1 0 0 0 0-2H4a1 1 0 1 0 0 2Zm0 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2Zm0 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2Z" fill="currentColor" />
+            </svg>
+          </button>
+          <span class="lua-header-mobile-title">FTL: Hyperspace</span>
+          <button type="button" class="lua-header-icon-button lua-mobile-toggle lua-header-mobile-contents" data-mobile-target="#lua-nav-right-panel" aria-label="Open table of contents">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+          </button>
+          <button type="button" class="lua-header-icon-button lua-theme-toggle-btn lua-header-mobile-theme" aria-label="Toggle dark mode">
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>
+          </button>
+          <button type="button" class="lua-header-icon-button lua-header-mobile-search" aria-label="Search Lua documentation" data-search-toggle="#lua-header-search">
+            <svg class="lua-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M11 3a8 8 0 0 1 6.32 12.9l3.39 3.39a1 1 0 0 1-1.42 1.42l-3.39-3.39A8 8 0 1 1 11 3zm0 2a6 6 0 1 0 3.87 10.54l.38-.33.33-.38A6 6 0 0 0 11 5z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+        <div class="lua-header-actions">
+          <button id="lua-theme-toggle" class="lua-theme-toggle lua-header-icon-button lua-theme-toggle-btn" type="button" aria-label="Toggle dark mode">
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>
+          </button>
+          <div class="lua-search lua-search--header" id="lua-header-search" role="search">
+            <label class="sr-only" for="lua-search-input">Search Lua documentation</label>
+            <div class="lua-search-input-row">
+              <span class="lua-search-input-icon" aria-hidden="true">
+                <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M11 3a8 8 0 0 1 6.32 12.9l3.39 3.39a1 1 0 0 1-1.42 1.42l-3.39-3.39A8 8 0 1 1 11 3zm0 2a6 6 0 1 0 3.87 10.54l.38-.33.33-.38A6 6 0 0 0 11 5z" fill="currentColor" />
+                </svg>
+              </span>
+              <input type="search" id="lua-search-input" name="lua-search-input" placeholder="Search Lua API..." autocomplete="off" spellcheck="false" />
+              <button type="button" id="lua-search-clear" class="lua-search-clear" aria-label="Clear search results">
+                <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M6.343 6.343a1 1 0 0 1 1.414 0L12 10.586l4.243-4.243a1 1 0 0 1 1.414 1.414L13.414 12l4.243 4.243a1 1 0 1 1-1.414 1.414L12 13.414l-4.243 4.243a1 1 0 0 1-1.414-1.414L10.586 12 6.343 7.757a1 1 0 0 1 0-1.414z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+            <div class="lua-search-panel">
+              <div class="lua-search-toggle">
+                <input type="checkbox" id="lua-highlight-toggle" checked />
+                <label for="lua-highlight-toggle">Highlight matches inside documents</label>
+              </div>
+              <div class="lua-search-meta" aria-live="polite">
+                <span id="lua-search-summary"></span>
+              </div>
+              <div id="lua-search-results" class="lua-search-results" aria-live="polite"></div>
+            </div>
+          </div>
+          
+          <a class="lua-header-icon-button lua-github-link" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace" aria-label="View project on GitHub">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner lua-page-wrapper">
+        <aside class="lua-nav-left" id="lua-nav-left-panel" aria-hidden="false">
+          <button type="button" class="lua-mobile-close" data-mobile-close="#lua-nav-left-panel" aria-label="Close navigation">&times;</button>
+          <h2>Lua Reference</h2>
+          <nav class="lua-sidebar">
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            <div class="lua-sidebar-group">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-defines" aria-expanded="false">
+                <span>Defines</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-defines" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/">Defines</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Enum</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/BeamHit.html">BeamHit</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/Chain.html">Chain</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/Evasion.html">Evasion</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/InternalEvents.html">InternalEvents</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/RenderEvents.html">RenderEvents</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/SDL.html">SDL</a>
+                    </li>
+                  
+                
+                
+              </ul>
+            </div>
+
+            <div class="lua-sidebar-group">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-graphics" aria-expanded="false">
+                <span>Graphics</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-graphics" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/">Graphics</a>
+                    </li>
+                  
+                
+                
+                
+                  <li class="lua-sidebar-label">Class</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/CSurface.html">CSurface</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Color.html">GL_Color</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_ColorTexVertex.html">GL_ColorTexVertex</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Line.html">GL_Line</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Primitive.html">GL_Primitive</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_TexVertex.html">GL_TexVertex</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Texture.html">GL_Texture</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/freetype.html">freetype</a>
+                    </li>
+                  
+                
+              </ul>
+            </div>
+
+            <div class="lua-sidebar-group is-open">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-hyperspace" aria-expanded="true">
+                <span>Hyperspace</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-hyperspace" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li class="active">
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/">Hyperspace</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Enum</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerRequirements.Type.html">ActivatedPowerRequirements.Type</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewExtraCondition.html">CrewExtraCondition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewStat.html">CrewStat</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.BoostSource.html">StatBoostDefinition.BoostSource</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.BoostType.html">StatBoostDefinition.BoostType</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.CrewTarget.html">StatBoostDefinition.CrewTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.DroneTarget.html">StatBoostDefinition.DroneTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.ShipTarget.html">StatBoostDefinition.ShipTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.SystemRoomTarget.html">StatBoostDefinition.SystemRoomTarget</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Class</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPower.html">ActivatedPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerDefinition.html">ActivatedPowerDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerRequirements.html">ActivatedPowerRequirements</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerResource.html">ActivatedPowerResource</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Animation.html">Animation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationControl.html">AnimationControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationDescriptor.html">AnimationDescriptor</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationTracker.html">AnimationTracker</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ArtillerySystem.html">ArtillerySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Asteroid.html">Asteroid</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AsteroidGenerator.html">AsteroidGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentBlueprint.html">AugmentBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentCrystalShard.html">AugmentCrystalShard</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentDefinition.html">AugmentDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentFunction.html">AugmentFunction</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentSuperShield.html">AugmentSuperShield</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BatterySystem.html">BatterySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BeamWeapon.html">BeamWeapon</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Blueprint.html">Blueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BlueprintManager.html">BlueprintManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoarderPodDrone.html">BoarderPodDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoardingEvent.html">BoardingEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BombProjectile.html">BombProjectile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoostPower.html">BoostPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Button.html">Button</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CApp.html">CApp</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CFPS.html">CFPS</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Choice.html">Choice</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceBox.html">ChoiceBox</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceReq.html">ChoiceReq</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceText.html">ChoiceText</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CloakingSystem.html">CloakingSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CloneSystem.html">CloneSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Collideable.html">Collideable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CollisionResponse.html">CollisionResponse</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CombatControl.html">CombatControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CombatDrone.html">CombatDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CommandGui.html">CommandGui</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewAnimation.html">CrewAnimation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewBlueprint.html">CrewBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewControl.html">CrewControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewDefinition.html">CrewDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewDesc.html">CrewDesc</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMember.html">CrewMember</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMemberFactory.html">CrewMemberFactory</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMember_Extend.html">CrewMember_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewPlacementDefinition.html">CrewPlacementDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomAchievementTracker.html">CustomAchievementTracker</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomAugmentManager.html">CustomAugmentManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomDamage.html">CustomDamage</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomDamageDefinition.html">CustomDamageDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomEvent.html">CustomEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomEventsParser.html">CustomEventsParser</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomLockdownDefinition.html">CustomLockdownDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipDefinition.html">CustomShipDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipGenerator.html">CustomShipGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipSelect.html">CustomShipSelect</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipUnlocks.html">CustomShipUnlocks</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomTeleport.html">CustomTeleport</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Damage.html">Damage</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DefenseDrone.html">DefenseDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Description.html">Description</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Door.html">Door</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Drone.html">Drone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DroneBlueprint.html">DroneBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DroneSystem.html">DroneSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EffectsBlueprint.html">EffectsBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Ellipse.html">Ellipse</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EngineSystem.html">EngineSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Equipment.html">Equipment</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EventGenerator.html">EventGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/FTLButton.html">FTLButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Fire.html">Fire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/FocusWindow.html">FocusWindow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GL_Primitive_Pointer_Array_Size_3_Wrapper.html">GL_Primitive_Pointer_Array_Size_3_Wrapper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GL_Texture_Pointer_Array_Size_3_Wrapper.html">GL_Texture_Pointer_Array_Size_3_Wrapper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GenericButton.html">GenericButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Global.html">Global</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Globals.html">Globals</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HackingDrone.html">HackingDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HackingSystem.html">HackingSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HyperspaceVersion.html">HyperspaceVersion</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ImageDesc.html">ImageDesc</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LaserBlast.html">LaserBlast</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Location.html">Location</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LocationEvent.html">LocationEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LockdownShard.html">LockdownShard</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LockdownShard_Extend.html">LockdownShard_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MainMenu.html">MainMenu</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MedbaySystem.html">MedbaySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MindSystem.html">MindSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MiniProjectile.html">MiniProjectile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Missile.html">Missile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MouseControl.html">MouseControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/OuterHull.html">OuterHull</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/OxygenSystem.html">OxygenSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PDSFire.html">PDSFire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Point.html">Point</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Pointf.html">Pointf</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PowerManager.html">PowerManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PowerResourceDefinition.html">PowerResourceDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PrintHelper.html">PrintHelper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Projectile.html">Projectile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ProjectileFactory.html">ProjectileFactory</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Projectile_Extend.html">Projectile_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Rect.html">Rect</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Repairable.html">Repairable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ResourceControl.html">ResourceControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ResourceEvent.html">ResourceEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Room.html">Room</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/RoomDefinition.html">RoomDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Room_Extend.html">Room_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SCrewStats.html">SCrewStats</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ScoreKeeper.html">ScoreKeeper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Sector.html">Sector</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SectorDescription.html">SectorDescription</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Selectable.html">Selectable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SettingValues.html">SettingValues</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Shield.html">Shield</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShieldPower.html">ShieldPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Shields.html">Shields</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Ship.html">Ship</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipBlueprint.html">ShipBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipBuilder.html">ShipBuilder</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipButtonDefinition.html">ShipButtonDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipButtonList.html">ShipButtonList</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipGenerator.html">ShipGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipGraph.html">ShipGraph</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipInfo.html">ShipInfo</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipManager.html">ShipManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipManager_Extend.html">ShipManager_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipObject.html">ShipObject</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipRepairDrone.html">ShipRepairDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipSystem.html">ShipSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipSystem_Extend.html">ShipSystem_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Slot.html">Slot</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SoundControl.html">SoundControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceDrone.html">SpaceDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceManager.html">SpaceManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceStatus.html">SpaceStatus</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Spreadable.html">Spreadable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Spreader_Fire.html">Spreader_Fire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StarMap.html">StarMap</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoost.html">StatBoost</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.html">StatBoostDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostManager.html">StatBoostManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SuperShieldDrone.html">SuperShieldDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemBox.html">SystemBox</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemBox_Extend.html">SystemBox_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemTemplate.html">SystemTemplate</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TabbedWindow.html">TabbedWindow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Targetable.html">Targetable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TeleportSystem.html">TeleportSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TemporalSystemParser.html">TemporalSystemParser</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TemporaryPowerDefinition.html">TemporaryPowerDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextButton.html">TextButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextButton0.html">TextButton0</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextLibrary.html">TextLibrary</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextString.html">TextString</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TimerHelper.html">TimerHelper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_bool.html">ToggleValue_bool</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_float.html">ToggleValue_float</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_int.html">ToggleValue_int</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TopScore.html">TopScore</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TriggeredEventDefinition.html">TriggeredEventDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TutorialArrow.html">TutorialArrow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TutorialManager.html">TutorialManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponAnimation.html">WeaponAnimation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponBlueprint.html">WeaponBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponControl.html">WeaponControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponMount.html">WeaponMount</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponSystem.html">WeaponSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WindowFrame.html">WindowFrame</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WorldManager.html">WorldManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/playerVariableType.html">playerVariableType</a>
+                    </li>
+                  
+                
+              </ul>
+            </div>
+          </nav>
+        </aside>
+        <main class="lua-main lua-content">
+          
+          
+          
+          
+          
+          
+
+          
+
+          <div class="lua-breadcrumb lua-small lua-muted">
+            <a href="/FTL-Hyperspace/">Home</a> / <a href="/FTL-Hyperspace/lua/">Lua API</a>
+            
+              
+                / Hyperspace
+              
+              
+            
+          </div>
+          <h1 id="module-hyperspace">Module “Hyperspace”</h1>
+
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/_head.md" -->
+
+<h2 id="Constants" class="lua-content-section">Constants</h2>
+<h3 id="ActivatedPowerRequirements_Type_CHARGE" class="lua-content-item" aria-label="Constants">Hyperspace.ActivatedPowerRequirements_Type_CHARGE</h3>
+<h4 aria-label="Constants" id="integer-activatedpowerrequirements_type_charge">integer .ActivatedPowerRequirements_Type_CHARGE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerRequirements_Type_CHARGE.md" --></p>
+
+<hr />
+<h3 id="ActivatedPowerRequirements_Type_ENEMY" class="lua-content-item" aria-label="Constants">Hyperspace.ActivatedPowerRequirements_Type_ENEMY</h3>
+<h4 aria-label="Constants" id="integer-activatedpowerrequirements_type_enemy">integer .ActivatedPowerRequirements_Type_ENEMY</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerRequirements_Type_ENEMY.md" --></p>
+
+<hr />
+<h3 id="ActivatedPowerRequirements_Type_PLAYER" class="lua-content-item" aria-label="Constants">Hyperspace.ActivatedPowerRequirements_Type_PLAYER</h3>
+<h4 aria-label="Constants" id="integer-activatedpowerrequirements_type_player">integer .ActivatedPowerRequirements_Type_PLAYER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerRequirements_Type_PLAYER.md" --></p>
+
+<hr />
+<h3 id="ActivatedPowerRequirements_Type_UNKNOWN" class="lua-content-item" aria-label="Constants">Hyperspace.ActivatedPowerRequirements_Type_UNKNOWN</h3>
+<h4 aria-label="Constants" id="integer-activatedpowerrequirements_type_unknown">integer .ActivatedPowerRequirements_Type_UNKNOWN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerRequirements_Type_UNKNOWN.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_BURNING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_BURNING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_burning">integer .CrewExtraCondition_BURNING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_BURNING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_DYING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_DYING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_dying">integer .CrewExtraCondition_DYING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">14</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_DYING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_FIGHTING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_FIGHTING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_fighting">integer .CrewExtraCondition_FIGHTING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">7</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_FIGHTING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_FIREFIGHTING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_FIREFIGHTING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_firefighting">integer .CrewExtraCondition_FIREFIGHTING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">13</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_FIREFIGHTING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_IDLE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_IDLE</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_idle">integer .CrewExtraCondition_IDLE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">11</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_IDLE.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_MANNING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_MANNING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_manning">integer .CrewExtraCondition_MANNING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">12</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_MANNING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_MIND_CONTROLLED" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_MIND_CONTROLLED</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_mind_controlled">integer .CrewExtraCondition_MIND_CONTROLLED</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_MIND_CONTROLLED.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_MOVING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_MOVING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_moving">integer .CrewExtraCondition_MOVING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">10</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_MOVING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_REPAIRING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_REPAIRING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_repairing">integer .CrewExtraCondition_REPAIRING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">4</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_REPAIRING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_REPAIRING_BREACH" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_REPAIRING_BREACH</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_repairing_breach">integer .CrewExtraCondition_REPAIRING_BREACH</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">6</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_REPAIRING_BREACH.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_REPAIRING_SYSTEM" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_REPAIRING_SYSTEM</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_repairing_system">integer .CrewExtraCondition_REPAIRING_SYSTEM</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">5</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_REPAIRING_SYSTEM.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_SABOTAGING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_SABOTAGING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_sabotaging">integer .CrewExtraCondition_SABOTAGING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">8</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_SABOTAGING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_SHOOTING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_SHOOTING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_shooting">integer .CrewExtraCondition_SHOOTING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">9</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_SHOOTING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_STUNNED" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_STUNNED</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_stunned">integer .CrewExtraCondition_STUNNED</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_STUNNED.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_SUFFOCATING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_SUFFOCATING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_suffocating">integer .CrewExtraCondition_SUFFOCATING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_SUFFOCATING.md" --></p>
+
+<hr />
+<h3 id="CrewExtraCondition_TELEPORTING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewExtraCondition_TELEPORTING</h3>
+<h4 aria-label="Constants" id="integer-crewextracondition_teleporting">integer .CrewExtraCondition_TELEPORTING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">15</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewExtraCondition_TELEPORTING.md" --></p>
+
+<hr />
+<h3 id="CrewStat_ACTIVATE_WHEN_READY" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_ACTIVATE_WHEN_READY</h3>
+<h4 aria-label="Constants" id="integer-crewstat_activate_when_ready">integer .CrewStat_ACTIVATE_WHEN_READY</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">55</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_ACTIVATE_WHEN_READY.md" --></p>
+
+<hr />
+<h3 id="CrewStat_ACTIVE_HEAL_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_ACTIVE_HEAL_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_active_heal_amount">integer .CrewStat_ACTIVE_HEAL_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">17</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_ACTIVE_HEAL_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_all_damage_taken_multiplier">integer .CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">19</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_BONUS_POWER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_BONUS_POWER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_bonus_power">integer .CrewStat_BONUS_POWER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">23</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_BONUS_POWER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_BURN" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_BURN</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_burn">integer .CrewStat_CAN_BURN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">33</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_BURN.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_FIGHT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_FIGHT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_fight">integer .CrewStat_CAN_FIGHT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">26</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_FIGHT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_MAN" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_MAN</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_man">integer .CrewStat_CAN_MAN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">29</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_MAN.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_MOVE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_MOVE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_move">integer .CrewStat_CAN_MOVE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">48</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_MOVE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_PHASE_THROUGH_DOORS" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_PHASE_THROUGH_DOORS</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_phase_through_doors">integer .CrewStat_CAN_PHASE_THROUGH_DOORS</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">37</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_PHASE_THROUGH_DOORS.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_REPAIR" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_REPAIR</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_repair">integer .CrewStat_CAN_REPAIR</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">27</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_REPAIR.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_SABOTAGE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_SABOTAGE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_sabotage">integer .CrewStat_CAN_SABOTAGE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">28</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_SABOTAGE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_SUFFOCATE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_SUFFOCATE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_suffocate">integer .CrewStat_CAN_SUFFOCATE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">31</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_SUFFOCATE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CAN_TELEPORT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CAN_TELEPORT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_can_teleport">integer .CrewStat_CAN_TELEPORT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">30</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CAN_TELEPORT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CLONE_LOSE_SKILLS" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CLONE_LOSE_SKILLS</h3>
+<h4 aria-label="Constants" id="integer-crewstat_clone_lose_skills">integer .CrewStat_CLONE_LOSE_SKILLS</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">39</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CLONE_LOSE_SKILLS.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CLONE_SPEED_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CLONE_SPEED_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_clone_speed_multiplier">integer .CrewStat_CLONE_SPEED_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">12</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CLONE_SPEED_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CONTROLLABLE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CONTROLLABLE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_controllable">integer .CrewStat_CONTROLLABLE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">32</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CONTROLLABLE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_CREW_SLOTS" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_CREW_SLOTS</h3>
+<h4 aria-label="Constants" id="integer-crewstat_crew_slots">integer .CrewStat_CREW_SLOTS</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">54</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_CREW_SLOTS.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DAMAGE_ENEMIES_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DAMAGE_ENEMIES_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_damage_enemies_amount">integer .CrewStat_DAMAGE_ENEMIES_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">22</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DAMAGE_ENEMIES_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DAMAGE_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DAMAGE_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_damage_multiplier">integer .CrewStat_DAMAGE_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">4</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DAMAGE_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DAMAGE_TAKEN_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DAMAGE_TAKEN_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_damage_taken_multiplier">integer .CrewStat_DAMAGE_TAKEN_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">11</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DAMAGE_TAKEN_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DEATH_EFFECT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DEATH_EFFECT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_death_effect">integer .CrewStat_DEATH_EFFECT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">57</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DEATH_EFFECT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DEFAULT_SKILL_LEVEL" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DEFAULT_SKILL_LEVEL</h3>
+<h4 aria-label="Constants" id="integer-crewstat_default_skill_level">integer .CrewStat_DEFAULT_SKILL_LEVEL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">41</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DEFAULT_SKILL_LEVEL.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DETECTS_LIFEFORMS" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DETECTS_LIFEFORMS</h3>
+<h4 aria-label="Constants" id="integer-crewstat_detects_lifeforms">integer .CrewStat_DETECTS_LIFEFORMS</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">38</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DETECTS_LIFEFORMS.md" --></p>
+
+<hr />
+<h3 id="CrewStat_DOOR_DAMAGE_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_DOOR_DAMAGE_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_door_damage_multiplier">integer .CrewStat_DOOR_DAMAGE_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">6</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_DOOR_DAMAGE_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_ESSENTIAL" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_ESSENTIAL</h3>
+<h4 aria-label="Constants" id="integer-crewstat_essential">integer .CrewStat_ESSENTIAL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">25</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_ESSENTIAL.md" --></p>
+
+<hr />
+<h3 id="CrewStat_FIRE_DAMAGE_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_FIRE_DAMAGE_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_fire_damage_multiplier">integer .CrewStat_FIRE_DAMAGE_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">9</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_FIRE_DAMAGE_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_FIRE_REPAIR_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_FIRE_REPAIR_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_fire_repair_multiplier">integer .CrewStat_FIRE_REPAIR_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">7</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_FIRE_REPAIR_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_HACK_DOORS" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_HACK_DOORS</h3>
+<h4 aria-label="Constants" id="integer-crewstat_hack_doors">integer .CrewStat_HACK_DOORS</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">43</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_HACK_DOORS.md" --></p>
+
+<hr />
+<h3 id="CrewStat_HEAL_CREW_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_HEAL_CREW_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_heal_crew_amount">integer .CrewStat_HEAL_CREW_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">21</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_HEAL_CREW_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_HEAL_SPEED_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_HEAL_SPEED_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_heal_speed_multiplier">integer .CrewStat_HEAL_SPEED_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">20</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_HEAL_SPEED_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_IS_ANAEROBIC" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_IS_ANAEROBIC</h3>
+<h4 aria-label="Constants" id="integer-crewstat_is_anaerobic">integer .CrewStat_IS_ANAEROBIC</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">36</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_IS_ANAEROBIC.md" --></p>
+
+<hr />
+<h3 id="CrewStat_IS_TELEPATHIC" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_IS_TELEPATHIC</h3>
+<h4 aria-label="Constants" id="integer-crewstat_is_telepathic">integer .CrewStat_IS_TELEPATHIC</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">34</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_IS_TELEPATHIC.md" --></p>
+
+<hr />
+<h3 id="CrewStat_LOW_HEALTH_THRESHOLD" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_LOW_HEALTH_THRESHOLD</h3>
+<h4 aria-label="Constants" id="integer-crewstat_low_health_threshold">integer .CrewStat_LOW_HEALTH_THRESHOLD</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">52</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_LOW_HEALTH_THRESHOLD.md" --></p>
+
+<hr />
+<h3 id="CrewStat_MAX_HEALTH" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_MAX_HEALTH</h3>
+<h4 aria-label="Constants" id="integer-crewstat_max_health">integer .CrewStat_MAX_HEALTH</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_MAX_HEALTH.md" --></p>
+
+<hr />
+<h3 id="CrewStat_MOVE_SPEED_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_MOVE_SPEED_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_move_speed_multiplier">integer .CrewStat_MOVE_SPEED_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_MOVE_SPEED_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_NO_AI" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_NO_AI</h3>
+<h4 aria-label="Constants" id="integer-crewstat_no_ai">integer .CrewStat_NO_AI</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">46</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_NO_AI.md" --></p>
+
+<hr />
+<h3 id="CrewStat_NO_CLONE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_NO_CLONE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_no_clone">integer .CrewStat_NO_CLONE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">44</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_NO_CLONE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_NO_SLOT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_NO_SLOT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_no_slot">integer .CrewStat_NO_SLOT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">45</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_NO_SLOT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_NO_WARNING" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_NO_WARNING</h3>
+<h4 aria-label="Constants" id="integer-crewstat_no_warning">integer .CrewStat_NO_WARNING</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">53</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_NO_WARNING.md" --></p>
+
+<hr />
+<h3 id="CrewStat_OXYGEN_CHANGE_SPEED" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_OXYGEN_CHANGE_SPEED</h3>
+<h4 aria-label="Constants" id="integer-crewstat_oxygen_change_speed">integer .CrewStat_OXYGEN_CHANGE_SPEED</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">10</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_OXYGEN_CHANGE_SPEED.md" --></p>
+
+<hr />
+<h3 id="CrewStat_PASSIVE_HEAL_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_PASSIVE_HEAL_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_passive_heal_amount">integer .CrewStat_PASSIVE_HEAL_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">13</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_PASSIVE_HEAL_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_PASSIVE_HEAL_DELAY" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_PASSIVE_HEAL_DELAY</h3>
+<h4 aria-label="Constants" id="integer-crewstat_passive_heal_delay">integer .CrewStat_PASSIVE_HEAL_DELAY</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">16</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_PASSIVE_HEAL_DELAY.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_CHARGES_PER_JUMP" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_CHARGES_PER_JUMP</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_charges_per_jump">integer .CrewStat_POWER_CHARGES_PER_JUMP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">60</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_CHARGES_PER_JUMP.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_COOLDOWN" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_COOLDOWN</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_cooldown">integer .CrewStat_POWER_COOLDOWN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">61</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_COOLDOWN.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_DRAIN" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_DRAIN</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_drain">integer .CrewStat_POWER_DRAIN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">24</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_DRAIN.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_DRAIN_FRIENDLY" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_DRAIN_FRIENDLY</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_drain_friendly">integer .CrewStat_POWER_DRAIN_FRIENDLY</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">40</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_DRAIN_FRIENDLY.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_EFFECT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_EFFECT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_effect">integer .CrewStat_POWER_EFFECT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">58</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_EFFECT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_MAX_CHARGES" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_MAX_CHARGES</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_max_charges">integer .CrewStat_POWER_MAX_CHARGES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">59</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_MAX_CHARGES.md" --></p>
+
+<hr />
+<h3 id="CrewStat_POWER_RECHARGE_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_POWER_RECHARGE_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_power_recharge_multiplier">integer .CrewStat_POWER_RECHARGE_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">42</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_POWER_RECHARGE_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_RANGED_DAMAGE_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_RANGED_DAMAGE_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_ranged_damage_multiplier">integer .CrewStat_RANGED_DAMAGE_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">5</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_RANGED_DAMAGE_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_REPAIR_SPEED_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_REPAIR_SPEED_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_repair_speed_multiplier">integer .CrewStat_REPAIR_SPEED_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_REPAIR_SPEED_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_RESISTS_MIND_CONTROL" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_RESISTS_MIND_CONTROL</h3>
+<h4 aria-label="Constants" id="integer-crewstat_resists_mind_control">integer .CrewStat_RESISTS_MIND_CONTROL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">35</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_RESISTS_MIND_CONTROL.md" --></p>
+
+<hr />
+<h3 id="CrewStat_SABOTAGE_SPEED_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_SABOTAGE_SPEED_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_sabotage_speed_multiplier">integer .CrewStat_SABOTAGE_SPEED_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">18</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_SABOTAGE_SPEED_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_SILENCED" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_SILENCED</h3>
+<h4 aria-label="Constants" id="integer-crewstat_silenced">integer .CrewStat_SILENCED</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">51</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_SILENCED.md" --></p>
+
+<hr />
+<h3 id="CrewStat_STAT_BOOST" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_STAT_BOOST</h3>
+<h4 aria-label="Constants" id="integer-crewstat_stat_boost">integer .CrewStat_STAT_BOOST</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">56</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_STAT_BOOST.md" --></p>
+
+<hr />
+<h3 id="CrewStat_STUN_MULTIPLIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_STUN_MULTIPLIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_stun_multiplier">integer .CrewStat_STUN_MULTIPLIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_STUN_MULTIPLIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_SUFFOCATION_MODIFIER" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_SUFFOCATION_MODIFIER</h3>
+<h4 aria-label="Constants" id="integer-crewstat_suffocation_modifier">integer .CrewStat_SUFFOCATION_MODIFIER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">8</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_SUFFOCATION_MODIFIER.md" --></p>
+
+<hr />
+<h3 id="CrewStat_TELEPORT_MOVE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_TELEPORT_MOVE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_teleport_move">integer .CrewStat_TELEPORT_MOVE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">49</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_TELEPORT_MOVE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_TELEPORT_MOVE_OTHER_SHIP" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_TELEPORT_MOVE_OTHER_SHIP</h3>
+<h4 aria-label="Constants" id="integer-crewstat_teleport_move_other_ship">integer .CrewStat_TELEPORT_MOVE_OTHER_SHIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">50</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_TELEPORT_MOVE_OTHER_SHIP.md" --></p>
+
+<hr />
+<h3 id="CrewStat_TRANSFORM_RACE" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_TRANSFORM_RACE</h3>
+<h4 aria-label="Constants" id="integer-crewstat_transform_race">integer .CrewStat_TRANSFORM_RACE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">62</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_TRANSFORM_RACE.md" --></p>
+
+<hr />
+<h3 id="CrewStat_TRUE_HEAL_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_TRUE_HEAL_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_true_heal_amount">integer .CrewStat_TRUE_HEAL_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">15</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_TRUE_HEAL_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_TRUE_PASSIVE_HEAL_AMOUNT" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_TRUE_PASSIVE_HEAL_AMOUNT</h3>
+<h4 aria-label="Constants" id="integer-crewstat_true_passive_heal_amount">integer .CrewStat_TRUE_PASSIVE_HEAL_AMOUNT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">14</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_TRUE_PASSIVE_HEAL_AMOUNT.md" --></p>
+
+<hr />
+<h3 id="CrewStat_VALID_TARGET" class="lua-content-item" aria-label="Constants">Hyperspace.CrewStat_VALID_TARGET</h3>
+<h4 aria-label="Constants" id="integer-crewstat_valid_target">integer .CrewStat_VALID_TARGET</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">47</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewStat_VALID_TARGET.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostSource_AUGMENT" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostSource_AUGMENT</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boostsource_augment">integer .StatBoostDefinition_BoostSource_AUGMENT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostSource_AUGMENT.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostSource_CREW" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostSource_CREW</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boostsource_crew">integer .StatBoostDefinition_BoostSource_CREW</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostSource_CREW.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_ADD" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_ADD</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_add">integer .StatBoostDefinition_BoostType_ADD</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_ADD.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_FLAT" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_FLAT</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_flat">integer .StatBoostDefinition_BoostType_FLAT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_FLAT.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_FLIP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_FLIP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_flip">integer .StatBoostDefinition_BoostType_FLIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_FLIP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_MAX" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_MAX</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_max">integer .StatBoostDefinition_BoostType_MAX</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">6</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_MAX.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_MIN" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_MIN</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_min">integer .StatBoostDefinition_BoostType_MIN</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">5</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_MIN.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_MULT" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_MULT</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_mult">integer .StatBoostDefinition_BoostType_MULT</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_MULT.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_REPLACE_GROUP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_REPLACE_GROUP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_replace_group">integer .StatBoostDefinition_BoostType_REPLACE_GROUP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">7</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_REPLACE_GROUP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_REPLACE_POWER" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_REPLACE_POWER</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_replace_power">integer .StatBoostDefinition_BoostType_REPLACE_POWER</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">8</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_REPLACE_POWER.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_SET" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_SET</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_set">integer .StatBoostDefinition_BoostType_SET</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_SET.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_BoostType_SET_VALUE" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_BoostType_SET_VALUE</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_boosttype_set_value">integer .StatBoostDefinition_BoostType_SET_VALUE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">4</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_BoostType_SET_VALUE.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_all">integer .StatBoostDefinition_CrewTarget_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_ALLIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_ALLIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_allies">integer .StatBoostDefinition_CrewTarget_ALLIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_ALLIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_CURRENT_ALLIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_CURRENT_ALLIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_current_allies">integer .StatBoostDefinition_CrewTarget_CURRENT_ALLIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">4</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_CURRENT_ALLIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_CURRENT_ENEMIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_CURRENT_ENEMIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_current_enemies">integer .StatBoostDefinition_CrewTarget_CURRENT_ENEMIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">5</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_CURRENT_ENEMIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_ENEMIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_ENEMIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_enemies">integer .StatBoostDefinition_CrewTarget_ENEMIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_ENEMIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_original_allies">integer .StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">6</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_original_enemies">integer .StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">7</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_CrewTarget_SELF" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_CrewTarget_SELF</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_crewtarget_self">integer .StatBoostDefinition_CrewTarget_SELF</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_CrewTarget_SELF.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_DroneTarget_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_DroneTarget_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_dronetarget_all">integer .StatBoostDefinition_DroneTarget_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_DroneTarget_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_DroneTarget_CREW" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_DroneTarget_CREW</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_dronetarget_crew">integer .StatBoostDefinition_DroneTarget_CREW</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_DroneTarget_CREW.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_DroneTarget_DRONES" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_DroneTarget_DRONES</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_dronetarget_drones">integer .StatBoostDefinition_DroneTarget_DRONES</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_DroneTarget_DRONES.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_all">integer .StatBoostDefinition_ShipTarget_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">9</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_CREW_TARGET" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_CREW_TARGET</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_crew_target">integer .StatBoostDefinition_ShipTarget_CREW_TARGET</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">7</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_CREW_TARGET.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_CURRENT_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_CURRENT_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_current_all">integer .StatBoostDefinition_ShipTarget_CURRENT_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">2</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_CURRENT_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_CURRENT_ROOM" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_CURRENT_ROOM</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_current_room">integer .StatBoostDefinition_ShipTarget_CURRENT_ROOM</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">3</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_CURRENT_ROOM.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_ENEMY_SHIP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_ENEMY_SHIP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_enemy_ship">integer .StatBoostDefinition_ShipTarget_ENEMY_SHIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_ENEMY_SHIP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_original_other_ship">integer .StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">6</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_ORIGINAL_SHIP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_ORIGINAL_SHIP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_original_ship">integer .StatBoostDefinition_ShipTarget_ORIGINAL_SHIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">5</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_ORIGINAL_SHIP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_OTHER_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_OTHER_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_other_all">integer .StatBoostDefinition_ShipTarget_OTHER_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">4</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_OTHER_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_PLAYER_SHIP" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_PLAYER_SHIP</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_player_ship">integer .StatBoostDefinition_ShipTarget_PLAYER_SHIP</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_PLAYER_SHIP.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_ShipTarget_TARGETS_ME" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_ShipTarget_TARGETS_ME</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_shiptarget_targets_me">integer .StatBoostDefinition_ShipTarget_TARGETS_ME</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">8</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_ShipTarget_TARGETS_ME.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_SystemRoomTarget_ALL" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_SystemRoomTarget_ALL</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_systemroomtarget_all">integer .StatBoostDefinition_SystemRoomTarget_ALL</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">0</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_SystemRoomTarget_ALL.md" --></p>
+
+<hr />
+<h3 id="StatBoostDefinition_SystemRoomTarget_NONE" class="lua-content-item" aria-label="Constants">Hyperspace.StatBoostDefinition_SystemRoomTarget_NONE</h3>
+<h4 aria-label="Constants" id="integer-statboostdefinition_systemroomtarget_none">integer .StatBoostDefinition_SystemRoomTarget_NONE</h4>
+<p>Equivalent to <code class="language-plaintext highlighter-rouge">1</code>.
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_SystemRoomTarget_NONE.md" --></p>
+
+<hr />
+
+<h2 id="Static-Methods" class="lua-content-section">Static Methods</h2>
+<h3 id="ActivatedPowerDefinition_AddNamedDefinition" class="lua-content-item" aria-label="StaticMethods">ActivatedPowerDefinition_AddNamedDefinition ()</h3>
+<h4 aria-label="StaticMethods" id="activatedpowerdefinition-activatedpowerdefinition_addnameddefinition-string-_name-activatedpowerdefinition-copydef"><a href="ActivatedPowerDefinition">ActivatedPowerDefinition</a> .ActivatedPowerDefinition_AddNamedDefinition (string _name, <a href="ActivatedPowerDefinition">ActivatedPowerDefinition</a> copyDef)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerDefinition_AddNamedDefinition(string,Hyperspace.ActivatedPowerDefinition).md" -->
+
+<hr />
+<h3 id="ActivatedPowerDefinition_GetPowerByName" class="lua-content-item" aria-label="StaticMethods">ActivatedPowerDefinition_GetPowerByName ()</h3>
+<h4 aria-label="StaticMethods" id="activatedpowerdefinition-activatedpowerdefinition_getpowerbyname-string-_name"><a href="ActivatedPowerDefinition">ActivatedPowerDefinition</a> .ActivatedPowerDefinition_GetPowerByName (string _name)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ActivatedPowerDefinition_GetPowerByName(string).md" -->
+
+<hr />
+<h3 id="CrewMember_GetSkillFromSystem" class="lua-content-item" aria-label="StaticMethods">CrewMember_GetSkillFromSystem ()</h3>
+<h4 aria-label="StaticMethods" id="integer-crewmember_getskillfromsystem-integer-systemid">integer .CrewMember_GetSkillFromSystem (integer systemId)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewMember_GetSkillFromSystem(integer).md" -->
+
+<hr />
+<h3 id="CustomAugmentManager_GetInstance" class="lua-content-item" aria-label="StaticMethods">CustomAugmentManager_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="customaugmentmanager-customaugmentmanager_getinstance-"><a href="CustomAugmentManager">CustomAugmentManager</a> .CustomAugmentManager_GetInstance ()</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CustomAugmentManager_GetInstance().md" -->
+
+<hr />
+<h3 id="CustomEventsParser_GetInstance" class="lua-content-item" aria-label="StaticMethods">CustomEventsParser_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="customeventsparser-customeventsparser_getinstance-"><a href="CustomEventsParser">CustomEventsParser</a> .CustomEventsParser_GetInstance ()</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CustomEventsParser_GetInstance().md" -->
+
+<hr />
+<h3 id="CustomShipSelect_GetInstance" class="lua-content-item" aria-label="StaticMethods">CustomShipSelect_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="customshipselect-customshipselect_getinstance-"><a href="CustomShipSelect">CustomShipSelect</a> .CustomShipSelect_GetInstance ()</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CustomShipSelect_GetInstance().md" -->
+
+<hr />
+<h3 id="ErrorMessage" class="lua-content-item" aria-label="StaticMethods">ErrorMessage ()</h3>
+<h4 aria-label="StaticMethods" id="unknown-errormessage-string-unknown">unknown .ErrorMessage (string unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ErrorMessage(string).md" -->
+
+<hr />
+<h3 id="GetNextPowerReadyState" class="lua-content-item" aria-label="StaticMethods">GetNextPowerReadyState ()</h3>
+<h4 aria-label="StaticMethods" id="uint-getnextpowerreadystate-uint-unknown">uint .GetNextPowerReadyState (uint unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/GetNextPowerReadyState(uint).md" -->
+
+<hr />
+<h3 id="Get_CrewMember_Extend" class="lua-content-item" aria-label="StaticMethods">Get_CrewMember_Extend ()</h3>
+<h4 aria-label="StaticMethods" id="crewmember_extend-get_crewmember_extend-crewmember-unknown"><a href="CrewMember_Extend">CrewMember_Extend</a> .Get_CrewMember_Extend (<a href="CrewMember">CrewMember</a> unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Get_CrewMember_Extend(Hyperspace.CrewMember).md" -->
+
+<hr />
+<h3 id="Get_Projectile_Extend" class="lua-content-item" aria-label="StaticMethods">Get_Projectile_Extend ()</h3>
+<h4 aria-label="StaticMethods" id="projectile_extend-get_projectile_extend-projectile-unknown"><a href="Projectile_Extend">Projectile_Extend</a> .Get_Projectile_Extend (<a href="Projectile">Projectile</a> unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Get_Projectile_Extend(Hyperspace.Projectile).md" -->
+
+<hr />
+<h3 id="Global_GetInstance" class="lua-content-item" aria-label="StaticMethods">Global_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="global-global_getinstance-"><a href="Global">Global</a> .Global_GetInstance ()</h4>
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Global_GetInstance().md" -->
+<p>Returns the main instance of <a href="#Global"><code class="language-plaintext highlighter-rouge">Global</code></a>. Always use this to access any members and methods belonging to this class. <code class="language-plaintext highlighter-rouge">Hyperspace.Global.GetInstance()</code>
+<!-- End of content --></p>
+
+<hr />
+<h3 id="Global_IsSeededRun" class="lua-content-item" aria-label="StaticMethods">Global_IsSeededRun ()</h3>
+<h4 aria-label="StaticMethods" id="boolean-global_isseededrun-">boolean .Global_IsSeededRun ()</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Global_IsSeededRun().md" -->
+
+<hr />
+<h3 id="PowerManager_GetPowerManager" class="lua-content-item" aria-label="StaticMethods">PowerManager_GetPowerManager ()</h3>
+<h4 aria-label="StaticMethods" id="powermanager-powermanager_getpowermanager-integer-ishipid"><a href="PowerManager">PowerManager</a> .PowerManager_GetPowerManager (integer iShipId)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/PowerManager_GetPowerManager(integer).md" -->
+
+<hr />
+<h3 id="PowerResourceDefinition_AddNamedDefinition" class="lua-content-item" aria-label="StaticMethods">PowerResourceDefinition_AddNamedDefinition ()</h3>
+<h4 aria-label="StaticMethods" id="powerresourcedefinition-powerresourcedefinition_addnameddefinition-string-_name-powerresourcedefinition-copydef"><a href="PowerResourceDefinition">PowerResourceDefinition</a> .PowerResourceDefinition_AddNamedDefinition (string _name, <a href="PowerResourceDefinition">PowerResourceDefinition</a> copyDef)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/PowerResourceDefinition_AddNamedDefinition(string,Hyperspace.PowerResourceDefinition).md" -->
+
+<hr />
+<h3 id="PowerResourceDefinition_GetByName" class="lua-content-item" aria-label="StaticMethods">PowerResourceDefinition_GetByName ()</h3>
+<h4 aria-label="StaticMethods" id="powerresourcedefinition-powerresourcedefinition_getbyname-string-_name"><a href="PowerResourceDefinition">PowerResourceDefinition</a> .PowerResourceDefinition_GetByName (string _name)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/PowerResourceDefinition_GetByName(string).md" -->
+
+<hr />
+<h3 id="PrintHelper_GetInstance" class="lua-content-item" aria-label="StaticMethods">PrintHelper_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="printhelper-printhelper_getinstance-"><a href="PrintHelper">PrintHelper</a> .PrintHelper_GetInstance ()</h4>
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/PrintHelper_GetInstance().md" -->
+<p>Returns the main instance of <code class="language-plaintext highlighter-rouge">PrintHelper</code>. Always use this to access any members belonging to this class.
+<!-- End of content --></p>
+
+<hr />
+<h3 id="Projectile_RandomSidePoint" class="lua-content-item" aria-label="StaticMethods">Projectile_RandomSidePoint ()</h3>
+<h4 aria-label="StaticMethods" id="pointf-projectile_randomsidepoint-integer-side"><a href="Pointf">Pointf</a> .Projectile_RandomSidePoint (integer side)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Projectile_RandomSidePoint(integer).md" -->
+
+<hr />
+<h3 id="ShipGenerator_CreateShip" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_CreateShip ()</h3>
+<h4 aria-label="StaticMethods" id="shipmanager-shipgenerator_createship-string-name-integer-sector-shipevent-event"><a href="ShipManager">ShipManager</a> .ShipGenerator_CreateShip (string name, integer sector, ShipEvent event)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_CreateShip(string,integer,ShipEvent).md" -->
+
+<hr />
+<h3 id="ShipGenerator_GenerateSystemMaxes" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_GenerateSystemMaxes ()</h3>
+<h4 aria-label="StaticMethods" id="vectorinteger-shipgenerator_generatesystemmaxes-shipblueprint-ship-integer-level">vector&lt;integer&gt; .ShipGenerator_GenerateSystemMaxes (<a href="ShipBlueprint">ShipBlueprint</a> ship, integer level)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_GenerateSystemMaxes(Hyperspace.ShipBlueprint,integer).md" -->
+
+<hr />
+<h3 id="ShipGenerator_GetPossibleCrewList" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_GetPossibleCrewList ()</h3>
+<h4 aria-label="StaticMethods" id="vectorcrewblueprint-shipgenerator_getpossiblecrewlist-shipmanager-ship-string-crewlist-uint-flags">vector&lt;<a href="CrewBlueprint">CrewBlueprint</a>&gt; .ShipGenerator_GetPossibleCrewList (<a href="ShipManager">ShipManager</a> ship, string crewList, uint flags)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_GetPossibleCrewList(Hyperspace.ShipManager,string,uint).md" -->
+
+<hr />
+<h3 id="ShipGenerator_GetPossibleDroneList" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_GetPossibleDroneList ()</h3>
+<h4 aria-label="StaticMethods" id="vectordroneblueprint-shipgenerator_getpossibledronelist-shipmanager-ship-string-dronelist-integer-scrap-uint-flags-boolean-repeat">vector&lt;<a href="DroneBlueprint">DroneBlueprint</a>&gt; .ShipGenerator_GetPossibleDroneList (<a href="ShipManager">ShipManager</a> ship, string droneList, integer scrap, uint flags, boolean repeat)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_GetPossibleDroneList(Hyperspace.ShipManager,string,integer,uint,boolean).md" -->
+
+<hr />
+<h3 id="ShipGenerator_GetPossibleSystemUpgrades" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_GetPossibleSystemUpgrades ()</h3>
+<h4 aria-label="StaticMethods" id="vectorinteger-shipgenerator_getpossiblesystemupgrades-shipmanager-ship-vectorinteger-systemmaxes-integer-scrap-integer-type">vector&lt;integer&gt; .ShipGenerator_GetPossibleSystemUpgrades (<a href="ShipManager">ShipManager</a> ship, vector&lt;integer&gt; systemMaxes, integer scrap, integer type)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_GetPossibleSystemUpgrades(Hyperspace.ShipManager,vector_integer_,integer,integer).md" -->
+
+<hr />
+<h3 id="ShipGenerator_GetPossibleWeaponList" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_GetPossibleWeaponList ()</h3>
+<h4 aria-label="StaticMethods" id="vectorweaponblueprint-shipgenerator_getpossibleweaponlist-shipmanager-ship-string-weaponlist-integer-scrap-uint-flags">vector&lt;<a href="WeaponBlueprint">WeaponBlueprint</a>&gt; .ShipGenerator_GetPossibleWeaponList (<a href="ShipManager">ShipManager</a> ship, string weaponList, integer scrap, uint flags)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_GetPossibleWeaponList(Hyperspace.ShipManager,string,integer,uint).md" -->
+
+<hr />
+<h3 id="ShipGenerator_UpgradeSystem" class="lua-content-item" aria-label="StaticMethods">ShipGenerator_UpgradeSystem ()</h3>
+<h4 aria-label="StaticMethods" id="boolean-shipgenerator_upgradesystem-shipmanager-ship-vectorinteger-systemmaxes-uint-sysid">boolean .ShipGenerator_UpgradeSystem (<a href="ShipManager">ShipManager</a> ship, vector&lt;integer&gt; systemMaxes, uint sysId)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGenerator_UpgradeSystem(Hyperspace.ShipManager,vector_integer_,uint).md" -->
+
+<hr />
+<h3 id="ShipGraph_GetShipInfo" class="lua-content-item" aria-label="StaticMethods">ShipGraph_GetShipInfo ()</h3>
+<h4 aria-label="StaticMethods" id="shipgraph-shipgraph_getshipinfo-integer-shipid"><a href="ShipGraph">ShipGraph</a> .ShipGraph_GetShipInfo (integer shipId)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGraph_GetShipInfo(integer).md" -->
+
+<hr />
+<h3 id="ShipGraph_TranslateFromGrid" class="lua-content-item" aria-label="StaticMethods">ShipGraph_TranslateFromGrid ()</h3>
+<h4 aria-label="StaticMethods" id="point-shipgraph_translatefromgrid-integer-xx-integer-yy"><a href="Point">Point</a> .ShipGraph_TranslateFromGrid (integer xx, integer yy)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGraph_TranslateFromGrid(integer,integer).md" -->
+
+<hr />
+<h3 id="ShipGraph_TranslateToGrid" class="lua-content-item" aria-label="StaticMethods">ShipGraph_TranslateToGrid ()</h3>
+<h4 aria-label="StaticMethods" id="point-shipgraph_translatetogrid-integer-xx-integer-yy"><a href="Point">Point</a> .ShipGraph_TranslateToGrid (integer xx, integer yy)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipGraph_TranslateToGrid(integer,integer).md" -->
+
+<hr />
+<h3 id="ShipSystem_GetLevelDescription" class="lua-content-item" aria-label="StaticMethods">ShipSystem_GetLevelDescription ()</h3>
+<h4 aria-label="StaticMethods" id="string-shipsystem_getleveldescription-integer-systemid-integer-level-boolean-tooltip">string .ShipSystem_GetLevelDescription (integer systemId, integer level, boolean tooltip)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipSystem_GetLevelDescription(integer,integer,boolean).md" -->
+
+<hr />
+<h3 id="ShipSystem_IsSubsystem" class="lua-content-item" aria-label="StaticMethods">ShipSystem_IsSubsystem ()</h3>
+<h4 aria-label="StaticMethods" id="boolean-shipsystem_issubsystem-integer-systemtype">boolean .ShipSystem_IsSubsystem (integer systemType)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipSystem_IsSubsystem(integer).md" -->
+
+<hr />
+<h3 id="ShipSystem_NameToSystemId" class="lua-content-item" aria-label="StaticMethods">ShipSystem_NameToSystemId ()</h3>
+<h4 aria-label="StaticMethods" id="integer-shipsystem_nametosystemid-string-name">integer .ShipSystem_NameToSystemId (string name)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipSystem_NameToSystemId(string).md" -->
+
+<hr />
+<h3 id="ShipSystem_SystemIdToName" class="lua-content-item" aria-label="StaticMethods">ShipSystem_SystemIdToName ()</h3>
+<h4 aria-label="StaticMethods" id="string-shipsystem_systemidtoname-integer-systemid">string .ShipSystem_SystemIdToName (integer systemId)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/ShipSystem_SystemIdToName(integer).md" -->
+
+<hr />
+<h3 id="StatBoostManager_GetInstance" class="lua-content-item" aria-label="StaticMethods">StatBoostManager_GetInstance ()</h3>
+<h4 aria-label="StaticMethods" id="statboostmanager-statboostmanager_getinstance-"><a href="StatBoostManager">StatBoostManager</a> .StatBoostManager_GetInstance ()</h4>
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostManager_GetInstance().md" -->
+<p>Returns the main instance of <code class="language-plaintext highlighter-rouge">StatBoostManager</code>. Always use this to access any members and methods belonging to this class.
+<!-- End of content --></p>
+
+<hr />
+<h3 id="TemporalSystemParser_GetDilationStrength" class="lua-content-item" aria-label="StaticMethods">TemporalSystemParser_GetDilationStrength ()</h3>
+<h4 aria-label="StaticMethods" id="number-temporalsystemparser_getdilationstrength-integer-effectstrength">number .TemporalSystemParser_GetDilationStrength (integer effectStrength)</h4>
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/TemporalSystemParser_GetDilationStrength(integer).md" -->
+<p>Gets the temporal modifier for a given time dilation value.
+<!-- End of content --></p>
+
+<hr />
+<h3 id="font_text_width" class="lua-content-item" aria-label="StaticMethods">font_text_width ()</h3>
+<h4 aria-label="StaticMethods" id="number-font_text_width-freetypefont_data-unknown-string-unknown-number-unknown">number .font_text_width (<a href="../Graphics/freetype.font_data">freetype.font_data</a> unknown, string unknown, number unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/font_text_width(Graphics.freetype.font_data,string,number).md" -->
+
+<hr />
+<h3 id="getSkillBonus" class="lua-content-item" aria-label="StaticMethods">getSkillBonus ()</h3>
+<h4 aria-label="StaticMethods" id="number-getskillbonus-integer-unknown-integer-unknown">number .getSkillBonus (integer unknown, integer unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/getSkillBonus(integer,integer).md" -->
+
+<hr />
+<h3 id="random32" class="lua-content-item" aria-label="StaticMethods">random32 ()</h3>
+<h4 aria-label="StaticMethods" id="integer-random32-">integer .random32 ()</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/random32().md" -->
+
+<hr />
+<h3 id="setRandomSeed" class="lua-content-item" aria-label="StaticMethods">setRandomSeed ()</h3>
+<h4 aria-label="StaticMethods" id="unknown-setrandomseed-uint-unknown">unknown .setRandomSeed (uint unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/setRandomSeed(uint).md" -->
+
+<hr />
+<h3 id="setWindowTitle" class="lua-content-item" aria-label="StaticMethods">setWindowTitle ()</h3>
+<h4 aria-label="StaticMethods" id="unknown-setwindowtitle-string-unknown">unknown .setWindowTitle (string unknown)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/setWindowTitle(string).md" -->
+
+<hr />
+
+<h2 id="Fields" class="lua-content-section">Fields</h2>
+<h3 id="Animations" class="lua-content-item" aria-label="Fields">Animations (Read-only)</h3>
+<h4 aria-label="Fields" id="animationcontrol-animations"><a href="AnimationControl">AnimationControl</a> .Animations</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Animations.md" -->
+
+<hr />
+<h3 id="App" class="lua-content-item" aria-label="Fields">App (Read-only)</h3>
+<h4 aria-label="Fields" id="capp-app"><a href="CApp">CApp</a> .App</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/App.md" -->
+
+<hr />
+<h3 id="Blueprints" class="lua-content-item" aria-label="Fields">Blueprints (Read-only)</h3>
+<h4 aria-label="Fields" id="blueprintmanager-blueprints"><a href="BlueprintManager">BlueprintManager</a> .Blueprints</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Blueprints.md" -->
+
+<hr />
+<h3 id="CrewFactory" class="lua-content-item" aria-label="Fields">CrewFactory (Read-only)</h3>
+<h4 aria-label="Fields" id="crewmemberfactory-crewfactory"><a href="CrewMemberFactory">CrewMemberFactory</a> .CrewFactory</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CrewFactory.md" -->
+
+<hr />
+<h3 id="CustomAchievementTracker_instance" class="lua-content-item" aria-label="Fields">CustomAchievementTracker_instance (Read-only)</h3>
+<h4 aria-label="Fields" id="customachievementtracker-customachievementtracker_instance"><a href="CustomAchievementTracker">CustomAchievementTracker</a> .CustomAchievementTracker_instance</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CustomAchievementTracker_instance.md" -->
+
+<hr />
+<h3 id="CustomShipUnlocks_instance" class="lua-content-item" aria-label="Fields">CustomShipUnlocks_instance (Read-only)</h3>
+<h4 aria-label="Fields" id="customshipunlocks-customshipunlocks_instance"><a href="CustomShipUnlocks">CustomShipUnlocks</a> .CustomShipUnlocks_instance</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/CustomShipUnlocks_instance.md" -->
+
+<hr />
+<h3 id="Event" class="lua-content-item" aria-label="Fields">Event (Read-only)</h3>
+<h4 aria-label="Fields" id="eventgenerator-event"><a href="EventGenerator">EventGenerator</a> .Event</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Event.md" -->
+
+<hr />
+<h3 id="FPS" class="lua-content-item" aria-label="Fields">FPS (Read-only)</h3>
+<h4 aria-label="Fields" id="cfps-fps"><a href="CFPS">CFPS</a> .FPS</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/FPS.md" -->
+
+<hr />
+<h3 id="Global_currentSeed" class="lua-content-item" aria-label="Fields">Global_currentSeed (Read-only)</h3>
+<h4 aria-label="Fields" id="uint-global_currentseed">uint .Global_currentSeed</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Global_currentSeed.md" -->
+
+<hr />
+<h3 id="Mouse" class="lua-content-item" aria-label="Fields">Mouse (Read-only)</h3>
+<h4 aria-label="Fields" id="mousecontrol-mouse"><a href="MouseControl">MouseControl</a> .Mouse</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Mouse.md" -->
+
+<hr />
+<h3 id="Resources" class="lua-content-item" aria-label="Fields">Resources (Read-only)</h3>
+<h4 aria-label="Fields" id="resourcecontrol-resources"><a href="ResourceControl">ResourceControl</a> .Resources</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Resources.md" -->
+
+<hr />
+<h3 id="Score" class="lua-content-item" aria-label="Fields">Score (Read-only)</h3>
+<h4 aria-label="Fields" id="scorekeeper-score"><a href="ScoreKeeper">ScoreKeeper</a> .Score</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Score.md" -->
+
+<hr />
+<h3 id="Settings" class="lua-content-item" aria-label="Fields">Settings (Read-only)</h3>
+<h4 aria-label="Fields" id="settingvalues-settings"><a href="SettingValues">SettingValues</a> .Settings</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Settings.md" -->
+
+<hr />
+<h3 id="Sounds" class="lua-content-item" aria-label="Fields">Sounds (Read-only)</h3>
+<h4 aria-label="Fields" id="soundcontrol-sounds"><a href="SoundControl">SoundControl</a> .Sounds</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Sounds.md" -->
+
+<hr />
+<h3 id="StatBoostDefinition_savedStatBoostDefs" class="lua-content-item" aria-label="Fields">StatBoostDefinition_savedStatBoostDefs</h3>
+<h4 aria-label="Fields" id="unordered_mapstring-statboostdefinition-statboostdefinition_savedstatboostdefs">unordered_map&lt;string, <a href="StatBoostDefinition">StatBoostDefinition</a>&gt; .StatBoostDefinition_savedStatBoostDefs</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_savedStatBoostDefs.md" -->
+
+<hr />
+<h3 id="StatBoostDefinition_statBoostDefs" class="lua-content-item" aria-label="Fields">StatBoostDefinition_statBoostDefs</h3>
+<h4 aria-label="Fields" id="vectorstatboostdefinition-statboostdefinition_statboostdefs">vector&lt;<a href="StatBoostDefinition">StatBoostDefinition</a>&gt; .StatBoostDefinition_statBoostDefs</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/StatBoostDefinition_statBoostDefs.md" -->
+
+<hr />
+<h3 id="Text" class="lua-content-item" aria-label="Fields">Text (Read-only)</h3>
+<h4 aria-label="Fields" id="textlibrary-text"><a href="TextLibrary">TextLibrary</a> .Text</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Text.md" -->
+
+<hr />
+<h3 id="TriggeredEventDefinition_defs" class="lua-content-item" aria-label="Fields">TriggeredEventDefinition_defs (Read-only)</h3>
+<h4 aria-label="Fields" id="vectortriggeredeventdefinition-triggeredeventdefinition_defs">vector&lt;<a href="TriggeredEventDefinition">TriggeredEventDefinition</a>&gt; .TriggeredEventDefinition_defs</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/TriggeredEventDefinition_defs.md" -->
+
+<hr />
+<h3 id="Tutorial" class="lua-content-item" aria-label="Fields">Tutorial (Read-only)</h3>
+<h4 aria-label="Fields" id="tutorialmanager-tutorial"><a href="TutorialManager">TutorialManager</a> .Tutorial</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/Tutorial.md" -->
+
+<hr />
+<h3 id="metaVariables" class="lua-content-item" aria-label="Fields">metaVariables</h3>
+<h4 aria-label="Fields" id="playervariabletype-metavariables"><a href="playerVariableType">playerVariableType</a> .metaVariables</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/metaVariables.md" -->
+
+<hr />
+<h3 id="playerVariables" class="lua-content-item" aria-label="Fields">playerVariables</h3>
+<h4 aria-label="Fields" id="playervariabletype-playervariables"><a href="playerVariableType">playerVariableType</a> .playerVariables</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/playerVariables.md" -->
+
+<hr />
+<h3 id="useAugmentReq" class="lua-content-item" aria-label="Fields">useAugmentReq</h3>
+<h4 aria-label="Fields" id="boolean-useaugmentreq">boolean .useAugmentReq</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/useAugmentReq.md" -->
+
+<hr />
+<h3 id="version" class="lua-content-item" aria-label="Fields">version (Read-only)</h3>
+<h4 aria-label="Fields" id="hyperspaceversion-version"><a href="HyperspaceVersion">HyperspaceVersion</a> .version</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Hyperspace/version.md" -->
+
+<hr />
+
+        </main>
+        <aside class="lua-nav-right" id="lua-nav-right-panel" aria-hidden="false">
+          <button type="button" class="lua-mobile-close" data-mobile-close="#lua-nav-right-panel" aria-label="Close table of contents">&times;</button>
+          
+          <label class="lua-nav-title">Table of contents</label>
+          
+          
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+          
+          <nav>
+            <ul class="lua-nav-right-item-list"><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Constants">Constants</a><nav aria-label="Constants">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerRequirements_Type_CHARGE">Hyperspace.ActivatedPowerRequirements_Type_CHARGE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerRequirements_Type_ENEMY">Hyperspace.ActivatedPowerRequirements_Type_ENEMY</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerRequirements_Type_PLAYER">Hyperspace.ActivatedPowerRequirements_Type_PLAYER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerRequirements_Type_UNKNOWN">Hyperspace.ActivatedPowerRequirements_Type_UNKNOWN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_BURNING">Hyperspace.CrewExtraCondition_BURNING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_DYING">Hyperspace.CrewExtraCondition_DYING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_FIGHTING">Hyperspace.CrewExtraCondition_FIGHTING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_FIREFIGHTING">Hyperspace.CrewExtraCondition_FIREFIGHTING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_IDLE">Hyperspace.CrewExtraCondition_IDLE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_MANNING">Hyperspace.CrewExtraCondition_MANNING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_MIND_CONTROLLED">Hyperspace.CrewExtraCondition_MIND_CONTROLLED</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_MOVING">Hyperspace.CrewExtraCondition_MOVING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_REPAIRING">Hyperspace.CrewExtraCondition_REPAIRING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_REPAIRING_BREACH">Hyperspace.CrewExtraCondition_REPAIRING_BREACH</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_REPAIRING_SYSTEM">Hyperspace.CrewExtraCondition_REPAIRING_SYSTEM</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_SABOTAGING">Hyperspace.CrewExtraCondition_SABOTAGING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_SHOOTING">Hyperspace.CrewExtraCondition_SHOOTING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_STUNNED">Hyperspace.CrewExtraCondition_STUNNED</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_SUFFOCATING">Hyperspace.CrewExtraCondition_SUFFOCATING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewExtraCondition_TELEPORTING">Hyperspace.CrewExtraCondition_TELEPORTING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_ACTIVATE_WHEN_READY">Hyperspace.CrewStat_ACTIVATE_WHEN_READY</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_ACTIVE_HEAL_AMOUNT">Hyperspace.CrewStat_ACTIVE_HEAL_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER">Hyperspace.CrewStat_ALL_DAMAGE_TAKEN_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_BONUS_POWER">Hyperspace.CrewStat_BONUS_POWER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_BURN">Hyperspace.CrewStat_CAN_BURN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_FIGHT">Hyperspace.CrewStat_CAN_FIGHT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_MAN">Hyperspace.CrewStat_CAN_MAN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_MOVE">Hyperspace.CrewStat_CAN_MOVE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_PHASE_THROUGH_DOORS">Hyperspace.CrewStat_CAN_PHASE_THROUGH_DOORS</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_REPAIR">Hyperspace.CrewStat_CAN_REPAIR</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_SABOTAGE">Hyperspace.CrewStat_CAN_SABOTAGE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_SUFFOCATE">Hyperspace.CrewStat_CAN_SUFFOCATE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CAN_TELEPORT">Hyperspace.CrewStat_CAN_TELEPORT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CLONE_LOSE_SKILLS">Hyperspace.CrewStat_CLONE_LOSE_SKILLS</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CLONE_SPEED_MULTIPLIER">Hyperspace.CrewStat_CLONE_SPEED_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CONTROLLABLE">Hyperspace.CrewStat_CONTROLLABLE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_CREW_SLOTS">Hyperspace.CrewStat_CREW_SLOTS</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DAMAGE_ENEMIES_AMOUNT">Hyperspace.CrewStat_DAMAGE_ENEMIES_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DAMAGE_MULTIPLIER">Hyperspace.CrewStat_DAMAGE_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DAMAGE_TAKEN_MULTIPLIER">Hyperspace.CrewStat_DAMAGE_TAKEN_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DEATH_EFFECT">Hyperspace.CrewStat_DEATH_EFFECT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DEFAULT_SKILL_LEVEL">Hyperspace.CrewStat_DEFAULT_SKILL_LEVEL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DETECTS_LIFEFORMS">Hyperspace.CrewStat_DETECTS_LIFEFORMS</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_DOOR_DAMAGE_MULTIPLIER">Hyperspace.CrewStat_DOOR_DAMAGE_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_ESSENTIAL">Hyperspace.CrewStat_ESSENTIAL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_FIRE_DAMAGE_MULTIPLIER">Hyperspace.CrewStat_FIRE_DAMAGE_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_FIRE_REPAIR_MULTIPLIER">Hyperspace.CrewStat_FIRE_REPAIR_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_HACK_DOORS">Hyperspace.CrewStat_HACK_DOORS</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_HEAL_CREW_AMOUNT">Hyperspace.CrewStat_HEAL_CREW_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_HEAL_SPEED_MULTIPLIER">Hyperspace.CrewStat_HEAL_SPEED_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_IS_ANAEROBIC">Hyperspace.CrewStat_IS_ANAEROBIC</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_IS_TELEPATHIC">Hyperspace.CrewStat_IS_TELEPATHIC</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_LOW_HEALTH_THRESHOLD">Hyperspace.CrewStat_LOW_HEALTH_THRESHOLD</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_MAX_HEALTH">Hyperspace.CrewStat_MAX_HEALTH</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_MOVE_SPEED_MULTIPLIER">Hyperspace.CrewStat_MOVE_SPEED_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_NO_AI">Hyperspace.CrewStat_NO_AI</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_NO_CLONE">Hyperspace.CrewStat_NO_CLONE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_NO_SLOT">Hyperspace.CrewStat_NO_SLOT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_NO_WARNING">Hyperspace.CrewStat_NO_WARNING</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_OXYGEN_CHANGE_SPEED">Hyperspace.CrewStat_OXYGEN_CHANGE_SPEED</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_PASSIVE_HEAL_AMOUNT">Hyperspace.CrewStat_PASSIVE_HEAL_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_PASSIVE_HEAL_DELAY">Hyperspace.CrewStat_PASSIVE_HEAL_DELAY</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_CHARGES_PER_JUMP">Hyperspace.CrewStat_POWER_CHARGES_PER_JUMP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_COOLDOWN">Hyperspace.CrewStat_POWER_COOLDOWN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_DRAIN">Hyperspace.CrewStat_POWER_DRAIN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_DRAIN_FRIENDLY">Hyperspace.CrewStat_POWER_DRAIN_FRIENDLY</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_EFFECT">Hyperspace.CrewStat_POWER_EFFECT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_MAX_CHARGES">Hyperspace.CrewStat_POWER_MAX_CHARGES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_POWER_RECHARGE_MULTIPLIER">Hyperspace.CrewStat_POWER_RECHARGE_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_RANGED_DAMAGE_MULTIPLIER">Hyperspace.CrewStat_RANGED_DAMAGE_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_REPAIR_SPEED_MULTIPLIER">Hyperspace.CrewStat_REPAIR_SPEED_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_RESISTS_MIND_CONTROL">Hyperspace.CrewStat_RESISTS_MIND_CONTROL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_SABOTAGE_SPEED_MULTIPLIER">Hyperspace.CrewStat_SABOTAGE_SPEED_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_SILENCED">Hyperspace.CrewStat_SILENCED</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_STAT_BOOST">Hyperspace.CrewStat_STAT_BOOST</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_STUN_MULTIPLIER">Hyperspace.CrewStat_STUN_MULTIPLIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_SUFFOCATION_MODIFIER">Hyperspace.CrewStat_SUFFOCATION_MODIFIER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_TELEPORT_MOVE">Hyperspace.CrewStat_TELEPORT_MOVE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_TELEPORT_MOVE_OTHER_SHIP">Hyperspace.CrewStat_TELEPORT_MOVE_OTHER_SHIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_TRANSFORM_RACE">Hyperspace.CrewStat_TRANSFORM_RACE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_TRUE_HEAL_AMOUNT">Hyperspace.CrewStat_TRUE_HEAL_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_TRUE_PASSIVE_HEAL_AMOUNT">Hyperspace.CrewStat_TRUE_PASSIVE_HEAL_AMOUNT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewStat_VALID_TARGET">Hyperspace.CrewStat_VALID_TARGET</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostSource_AUGMENT">Hyperspace.StatBoostDefinition_BoostSource_AUGMENT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostSource_CREW">Hyperspace.StatBoostDefinition_BoostSource_CREW</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_ADD">Hyperspace.StatBoostDefinition_BoostType_ADD</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_FLAT">Hyperspace.StatBoostDefinition_BoostType_FLAT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_FLIP">Hyperspace.StatBoostDefinition_BoostType_FLIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_MAX">Hyperspace.StatBoostDefinition_BoostType_MAX</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_MIN">Hyperspace.StatBoostDefinition_BoostType_MIN</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_MULT">Hyperspace.StatBoostDefinition_BoostType_MULT</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_REPLACE_GROUP">Hyperspace.StatBoostDefinition_BoostType_REPLACE_GROUP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_REPLACE_POWER">Hyperspace.StatBoostDefinition_BoostType_REPLACE_POWER</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_SET">Hyperspace.StatBoostDefinition_BoostType_SET</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_BoostType_SET_VALUE">Hyperspace.StatBoostDefinition_BoostType_SET_VALUE</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_ALL">Hyperspace.StatBoostDefinition_CrewTarget_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_ALLIES">Hyperspace.StatBoostDefinition_CrewTarget_ALLIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_CURRENT_ALLIES">Hyperspace.StatBoostDefinition_CrewTarget_CURRENT_ALLIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_CURRENT_ENEMIES">Hyperspace.StatBoostDefinition_CrewTarget_CURRENT_ENEMIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_ENEMIES">Hyperspace.StatBoostDefinition_CrewTarget_ENEMIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES">Hyperspace.StatBoostDefinition_CrewTarget_ORIGINAL_ALLIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES">Hyperspace.StatBoostDefinition_CrewTarget_ORIGINAL_ENEMIES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_CrewTarget_SELF">Hyperspace.StatBoostDefinition_CrewTarget_SELF</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_DroneTarget_ALL">Hyperspace.StatBoostDefinition_DroneTarget_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_DroneTarget_CREW">Hyperspace.StatBoostDefinition_DroneTarget_CREW</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_DroneTarget_DRONES">Hyperspace.StatBoostDefinition_DroneTarget_DRONES</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_ALL">Hyperspace.StatBoostDefinition_ShipTarget_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_CREW_TARGET">Hyperspace.StatBoostDefinition_ShipTarget_CREW_TARGET</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_CURRENT_ALL">Hyperspace.StatBoostDefinition_ShipTarget_CURRENT_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_CURRENT_ROOM">Hyperspace.StatBoostDefinition_ShipTarget_CURRENT_ROOM</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_ENEMY_SHIP">Hyperspace.StatBoostDefinition_ShipTarget_ENEMY_SHIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP">Hyperspace.StatBoostDefinition_ShipTarget_ORIGINAL_OTHER_SHIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_ORIGINAL_SHIP">Hyperspace.StatBoostDefinition_ShipTarget_ORIGINAL_SHIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_OTHER_ALL">Hyperspace.StatBoostDefinition_ShipTarget_OTHER_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_PLAYER_SHIP">Hyperspace.StatBoostDefinition_ShipTarget_PLAYER_SHIP</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_ShipTarget_TARGETS_ME">Hyperspace.StatBoostDefinition_ShipTarget_TARGETS_ME</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_SystemRoomTarget_ALL">Hyperspace.StatBoostDefinition_SystemRoomTarget_ALL</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_SystemRoomTarget_NONE">Hyperspace.StatBoostDefinition_SystemRoomTarget_NONE</a>
+                  </li></ul>
+                    </nav></li><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Static-Methods">Static Methods</a><nav aria-label="StaticMethods">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerDefinition_AddNamedDefinition">ActivatedPowerDefinition_AddNamedDefinition ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ActivatedPowerDefinition_GetPowerByName">ActivatedPowerDefinition_GetPowerByName ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewMember_GetSkillFromSystem">CrewMember_GetSkillFromSystem ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CustomAugmentManager_GetInstance">CustomAugmentManager_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CustomEventsParser_GetInstance">CustomEventsParser_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CustomShipSelect_GetInstance">CustomShipSelect_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ErrorMessage">ErrorMessage ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#GetNextPowerReadyState">GetNextPowerReadyState ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Get_CrewMember_Extend">Get_CrewMember_Extend ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Get_Projectile_Extend">Get_Projectile_Extend ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Global_GetInstance">Global_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Global_IsSeededRun">Global_IsSeededRun ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#PowerManager_GetPowerManager">PowerManager_GetPowerManager ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#PowerResourceDefinition_AddNamedDefinition">PowerResourceDefinition_AddNamedDefinition ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#PowerResourceDefinition_GetByName">PowerResourceDefinition_GetByName ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#PrintHelper_GetInstance">PrintHelper_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Projectile_RandomSidePoint">Projectile_RandomSidePoint ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_CreateShip">ShipGenerator_CreateShip ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_GenerateSystemMaxes">ShipGenerator_GenerateSystemMaxes ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_GetPossibleCrewList">ShipGenerator_GetPossibleCrewList ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_GetPossibleDroneList">ShipGenerator_GetPossibleDroneList ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_GetPossibleSystemUpgrades">ShipGenerator_GetPossibleSystemUpgrades ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_GetPossibleWeaponList">ShipGenerator_GetPossibleWeaponList ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGenerator_UpgradeSystem">ShipGenerator_UpgradeSystem ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGraph_GetShipInfo">ShipGraph_GetShipInfo ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGraph_TranslateFromGrid">ShipGraph_TranslateFromGrid ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipGraph_TranslateToGrid">ShipGraph_TranslateToGrid ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipSystem_GetLevelDescription">ShipSystem_GetLevelDescription ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipSystem_IsSubsystem">ShipSystem_IsSubsystem ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipSystem_NameToSystemId">ShipSystem_NameToSystemId ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#ShipSystem_SystemIdToName">ShipSystem_SystemIdToName ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostManager_GetInstance">StatBoostManager_GetInstance ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#TemporalSystemParser_GetDilationStrength">TemporalSystemParser_GetDilationStrength ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#font_text_width">font_text_width ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#getSkillBonus">getSkillBonus ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#random32">random32 ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#setRandomSeed">setRandomSeed ()</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#setWindowTitle">setWindowTitle ()</a>
+                  </li></ul>
+                    </nav></li><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Fields">Fields</a><nav aria-label="Fields">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Animations">Animations (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#App">App (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Blueprints">Blueprints (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CrewFactory">CrewFactory (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CustomAchievementTracker_instance">CustomAchievementTracker_instance (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#CustomShipUnlocks_instance">CustomShipUnlocks_instance (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Event">Event (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#FPS">FPS (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Global_currentSeed">Global_currentSeed (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Mouse">Mouse (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Resources">Resources (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Score">Score (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Settings">Settings (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Sounds">Sounds (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_savedStatBoostDefs">StatBoostDefinition_savedStatBoostDefs</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#StatBoostDefinition_statBoostDefs">StatBoostDefinition_statBoostDefs</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Text">Text (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#TriggeredEventDefinition_defs">TriggeredEventDefinition_defs (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Tutorial">Tutorial (Read-only)</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#metaVariables">metaVariables</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#playerVariables">playerVariables</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#useAugmentReq">useAugmentReq</a>
+                  </li><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#version">version (Read-only)</a>
+                  </li></ul>
+                </nav></li></ul>
+          </nav>
+          
+        </aside>
+      </section>
+    </div>
+    <div class="lua-mobile-overlay" id="lua-mobile-overlay" aria-hidden="true"></div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer lua-footer">
+      <footer class="inner lua-footer-inner">
+        <div class="lua-footer-meta">
+          
+          <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+          
+          <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+          <p>Site last updated: 14 December 2025</p>
+        </div>
+        <div class="lua-footer-social" aria-label="Project community links">
+          
+          <a class="lua-footer-icon lua-footer-icon--github" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace" aria-label="View project on GitHub">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </a>
+          
+          <a class="lua-footer-icon lua-footer-icon--discord" href="https://discord.gg/ftlmultiverse" target="_blank" rel="noopener" aria-label="Join the Discord">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (function() {
+        var body = document.body;
+        var searchContainer = document.getElementById('lua-header-search');
+        var searchInput = document.getElementById('lua-search-input');
+        var storageKey = 'luaTheme';
+        var stored = null;
+        try {
+          stored = window.localStorage ? localStorage.getItem(storageKey) : null;
+        } catch (e) {
+          stored = null;
+        }
+
+        function prefersDark() {
+          return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function applyTheme(mode) {
+          if (mode === 'dark') {
+            body.classList.add('lua-dark');
+          } else {
+            body.classList.remove('lua-dark');
+          }
+          try {
+            if (window.localStorage) {
+              localStorage.setItem(storageKey, mode);
+            }
+          } catch (e) {
+            /* ignore */
+          }
+        }
+
+        // Initial theme: stored preference, otherwise system preference
+        if (stored === 'dark' || stored === 'light') {
+          applyTheme(stored);
+        } else {
+          applyTheme(prefersDark() ? 'dark' : 'light');
+        }
+
+        function bindThemeButtons() {
+          var themeButtons = document.querySelectorAll('.lua-theme-toggle-btn');
+          for (var t = 0; t < themeButtons.length; t++) {
+            themeButtons[t].addEventListener('click', function() {
+              var current = body.classList.contains('lua-dark') ? 'dark' : 'light';
+              applyTheme(current === 'dark' ? 'light' : 'dark');
+            });
+          }
+        }
+
+        bindThemeButtons();
+
+        var searchToggleButtons = document.querySelectorAll('[data-search-toggle]');
+
+        function setMobileSearchActive(active) {
+          if (!searchContainer) return;
+          searchContainer.classList.toggle('is-mobile-active', !!active);
+          for (var s = 0; s < searchToggleButtons.length; s++) {
+            searchToggleButtons[s].setAttribute('aria-pressed', active ? 'true' : 'false');
+          }
+          if (active && searchInput) {
+            searchInput.focus();
+          }
+        }
+
+        if (searchToggleButtons.length && searchContainer) {
+          for (var st = 0; st < searchToggleButtons.length; st++) {
+            searchToggleButtons[st].setAttribute('aria-pressed', 'false');
+            searchToggleButtons[st].addEventListener('click', function(event) {
+              event.preventDefault();
+              var isActive = searchContainer.classList.contains('is-mobile-active');
+              setMobileSearchActive(!isActive);
+            });
+          }
+        }
+
+        // Collapsible left-hand Lua sidebar navigation
+        var groups = document.querySelectorAll('.lua-sidebar-group');
+        for (var i = 0; i < groups.length; i++) {
+          (function(group) {
+            var button = group.querySelector('.lua-sidebar-toggle');
+            if (!button) return;
+
+            var targetId = button.getAttribute('data-target');
+            var list = targetId ? document.getElementById(targetId) : null;
+            if (!list) return;
+
+            // Ensure aria-expanded matches initial open state
+            var isInitiallyOpen = group.classList.contains('is-open');
+            button.setAttribute('aria-expanded', isInitiallyOpen ? 'true' : 'false');
+
+            button.addEventListener('click', function() {
+              var isOpen = group.classList.toggle('is-open');
+              button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+          })(groups[i]);
+        }
+
+        var leftPanel = document.getElementById('lua-nav-left-panel');
+        var rightPanel = document.getElementById('lua-nav-right-panel');
+        var mainContent = document.querySelector('.lua-main');
+        var mobileOverlay = document.getElementById('lua-mobile-overlay');
+        var activePanel = null;
+        var mobilePanels = [leftPanel, rightPanel];
+
+        function syncPanelHeight(panel) {
+          if (!panel) return;
+          if (window.innerWidth <= 960) {
+            panel.style.maxHeight = '';
+            return;
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            mainContent = document.querySelector('.lua-main');
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            panel.style.maxHeight = '';
+            return;
+          }
+
+          var mainHeight = mainContent.offsetHeight;
+          var panelStyles = window.getComputedStyle(panel);
+          var paddingTop = parseFloat(panelStyles.paddingTop) || 0;
+          var paddingBottom = parseFloat(panelStyles.paddingBottom) || 0;
+          var topOffset = parseFloat(panelStyles.top) || 0;
+          var availableFromMain = mainHeight - paddingTop - paddingBottom;
+          var availableFromViewport = window.innerHeight - topOffset - paddingTop - paddingBottom;
+          var available = Math.min(availableFromMain, availableFromViewport);
+          panel.style.maxHeight = available > 0 ? available + 'px' : '0px';
+        }
+
+        function syncPanelHeights() {
+          syncPanelHeight(leftPanel);
+          syncPanelHeight(rightPanel);
+        }
+
+        function closeMobilePanel() {
+          if (activePanel) {
+            activePanel.classList.remove('is-mobile-visible');
+            activePanel.setAttribute('aria-hidden', 'true');
+            activePanel = null;
+          }
+          body.classList.remove('lua-mobile-overlay-active');
+          if (mobileOverlay) {
+            mobileOverlay.setAttribute('aria-hidden', 'true');
+          }
+          setMobileSearchActive(false);
+        }
+
+        function openMobilePanel(panel) {
+          if (!panel) return;
+          setMobileSearchActive(false);
+          if (activePanel && activePanel !== panel) {
+            closeMobilePanel();
+          }
+          activePanel = panel;
+          panel.classList.add('is-mobile-visible');
+          panel.setAttribute('aria-hidden', 'false');
+          body.classList.add('lua-mobile-overlay-active');
+          if (mobileOverlay) {
+            mobileOverlay.setAttribute('aria-hidden', 'false');
+          }
+        }
+
+        function syncPanelsForViewport(isDesktop) {
+          for (var j = 0; j < mobilePanels.length; j++) {
+            var panel = mobilePanels[j];
+            if (!panel) continue;
+            if (isDesktop) {
+              panel.classList.remove('is-mobile-visible');
+              panel.setAttribute('aria-hidden', 'false');
+            } else if (panel !== activePanel) {
+              panel.classList.remove('is-mobile-visible');
+              panel.setAttribute('aria-hidden', 'true');
+            }
+          }
+          if (isDesktop) {
+            activePanel = null;
+            if (mobileOverlay) {
+              mobileOverlay.setAttribute('aria-hidden', 'true');
+            }
+            body.classList.remove('lua-mobile-overlay-active');
+            setMobileSearchActive(false);
+          }
+          syncPanelHeights();
+        }
+
+        var mobileButtons = document.querySelectorAll('.lua-mobile-toggle');
+        for (var k = 0; k < mobileButtons.length; k++) {
+          mobileButtons[k].addEventListener('click', function(event) {
+            event.preventDefault();
+            var targetSelector = this.getAttribute('data-mobile-target');
+            if (!targetSelector) return;
+            var panel = document.querySelector(targetSelector);
+            if (!panel) return;
+            if (activePanel === panel) {
+              closeMobilePanel();
+            } else {
+              openMobilePanel(panel);
+            }
+          });
+        }
+
+        var closeButtons = document.querySelectorAll('.lua-mobile-close');
+        for (var m = 0; m < closeButtons.length; m++) {
+          closeButtons[m].addEventListener('click', function(event) {
+            event.preventDefault();
+            var selector = this.getAttribute('data-mobile-close');
+            if (selector) {
+              var panel = document.querySelector(selector);
+              if (panel) {
+                panel.classList.remove('is-mobile-visible');
+                panel.setAttribute('aria-hidden', 'true');
+              }
+            }
+            closeMobilePanel();
+          });
+        }
+
+        if (mobileOverlay) {
+          mobileOverlay.addEventListener('click', function() {
+            closeMobilePanel();
+          });
+        }
+
+        if (rightPanel) {
+          rightPanel.addEventListener('click', function(evt) {
+            var link = evt.target.closest('a');
+            if (!link) return;
+            if (!body.classList.contains('lua-mobile-overlay-active')) return;
+            if (!rightPanel.classList.contains('is-mobile-visible')) return;
+            var href = link.getAttribute('href') || '';
+            if (href.charAt(0) !== '#') return;
+            window.requestAnimationFrame(function() {
+              closeMobilePanel();
+            });
+          });
+        }
+
+        document.addEventListener('keydown', function(evt) {
+          if (evt.key === 'Escape') {
+            closeMobilePanel();
+            setMobileSearchActive(false);
+          }
+        });
+
+        document.addEventListener('click', function(evt) {
+          if (!searchContainer || !searchContainer.classList.contains('is-mobile-active')) {
+            return;
+          }
+          if (searchContainer.contains(evt.target)) {
+            return;
+          }
+          if (evt.target.closest('[data-search-toggle]')) {
+            return;
+          }
+          setMobileSearchActive(false);
+        });
+
+        var desktopQuery = window.matchMedia ? window.matchMedia('(min-width: 961px)') : null;
+        if (desktopQuery) {
+          var handler = function(e) {
+            syncPanelsForViewport(e.matches);
+          };
+          if (typeof desktopQuery.addEventListener === 'function') {
+            desktopQuery.addEventListener('change', handler);
+          } else if (typeof desktopQuery.addListener === 'function') {
+            desktopQuery.addListener(handler);
+          }
+          syncPanelsForViewport(desktopQuery.matches);
+          syncPanelHeights();
+        }
+        else {
+          syncPanelsForViewport(window.innerWidth >= 961);
+          syncPanelHeights();
+          window.addEventListener('resize', function() {
+            syncPanelsForViewport(window.innerWidth >= 961);
+          });
+        }
+
+        window.addEventListener('resize', function() {
+          syncPanelHeights();
+        });
+
+        syncPanelHeights();
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+    <script>
+      window.luaSearchConfig = {
+        searchDataUrl: "/FTL-Hyperspace/lua/search-data.json",
+        siteBaseUrl: "/FTL-Hyperspace",
+        minChars: 2
+      };
+    </script>
+    <script src="/FTL-Hyperspace/assets/js/lua-search.js?v="></script>
+  </body>
+</html>

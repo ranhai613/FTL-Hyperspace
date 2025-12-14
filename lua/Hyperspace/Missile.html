@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/style.css?v="> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/FTL-Hyperspace/assets/css/lua.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.4/css/flag-icons.min.css" integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Missile | FTL Hyperspace</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Missile" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A binary mod for FTL: Faster Than Light" />
+<meta property="og:description" content="A binary mod for FTL: Faster Than Light" />
+<link rel="canonical" href="https://github.com/FTL-Hyperspace/lua/Hyperspace/Missile.html" />
+<meta property="og:url" content="https://github.com/FTL-Hyperspace/lua/Hyperspace/Missile.html" />
+<meta property="og:site_name" content="FTL Hyperspace" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Missile" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A binary mod for FTL: Faster Than Light","headline":"Missile","url":"https://github.com/FTL-Hyperspace/lua/Hyperspace/Missile.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/FTL-Hyperspace/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="lua-doc">
+
+    <!-- STICKY UTILITY BAR -->
+    <div class="lua-global-header" role="banner">
+      <div class="lua-global-header__inner">
+        <div class="lua-header-branding">
+          <a class="lua-header-home" href="/FTL-Hyperspace/" aria-label="Go to home">
+            <span class="lua-header-home-text">FTL: Hyperspace</span>
+            <img class="lua-header-badge" src="/FTL-Hyperspace/assets/img/hyperspace_banner.png" alt="FTL Hyperspace banner" />
+          </a>
+        </div>
+        <div class="lua-header-mobile-row" aria-label="Mobile controls">
+          <button type="button" class="lua-header-icon-button lua-mobile-toggle lua-header-mobile-nav" data-mobile-target="#lua-nav-left-panel" aria-label="Open navigation">
+            <svg class="lua-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 7h16a1 1 0 0 0 0-2H4a1 1 0 1 0 0 2Zm0 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2Zm0 6h16a1 1 0 0 0 0-2H4a1 1 0 0 0 0 2Z" fill="currentColor" />
+            </svg>
+          </button>
+          <span class="lua-header-mobile-title">FTL: Hyperspace</span>
+          <button type="button" class="lua-header-icon-button lua-mobile-toggle lua-header-mobile-contents" data-mobile-target="#lua-nav-right-panel" aria-label="Open table of contents">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+          </button>
+          <button type="button" class="lua-header-icon-button lua-theme-toggle-btn lua-header-mobile-theme" aria-label="Toggle dark mode">
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>
+          </button>
+          <button type="button" class="lua-header-icon-button lua-header-mobile-search" aria-label="Search Lua documentation" data-search-toggle="#lua-header-search">
+            <svg class="lua-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M11 3a8 8 0 0 1 6.32 12.9l3.39 3.39a1 1 0 0 1-1.42 1.42l-3.39-3.39A8 8 0 1 1 11 3zm0 2a6 6 0 1 0 3.87 10.54l.38-.33.33-.38A6 6 0 0 0 11 5z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+        <div class="lua-header-actions">
+          <button id="lua-theme-toggle" class="lua-theme-toggle lua-header-icon-button lua-theme-toggle-btn" type="button" aria-label="Toggle dark mode">
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>
+            <svg class="lua-icon lua-theme-icon lua-theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>
+          </button>
+          <div class="lua-search lua-search--header" id="lua-header-search" role="search">
+            <label class="sr-only" for="lua-search-input">Search Lua documentation</label>
+            <div class="lua-search-input-row">
+              <span class="lua-search-input-icon" aria-hidden="true">
+                <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M11 3a8 8 0 0 1 6.32 12.9l3.39 3.39a1 1 0 0 1-1.42 1.42l-3.39-3.39A8 8 0 1 1 11 3zm0 2a6 6 0 1 0 3.87 10.54l.38-.33.33-.38A6 6 0 0 0 11 5z" fill="currentColor" />
+                </svg>
+              </span>
+              <input type="search" id="lua-search-input" name="lua-search-input" placeholder="Search Lua API..." autocomplete="off" spellcheck="false" />
+              <button type="button" id="lua-search-clear" class="lua-search-clear" aria-label="Clear search results">
+                <svg class="lua-icon" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M6.343 6.343a1 1 0 0 1 1.414 0L12 10.586l4.243-4.243a1 1 0 0 1 1.414 1.414L13.414 12l4.243 4.243a1 1 0 1 1-1.414 1.414L12 13.414l-4.243 4.243a1 1 0 0 1-1.414-1.414L10.586 12 6.343 7.757a1 1 0 0 1 0-1.414z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+            <div class="lua-search-panel">
+              <div class="lua-search-toggle">
+                <input type="checkbox" id="lua-highlight-toggle" checked />
+                <label for="lua-highlight-toggle">Highlight matches inside documents</label>
+              </div>
+              <div class="lua-search-meta" aria-live="polite">
+                <span id="lua-search-summary"></span>
+              </div>
+              <div id="lua-search-results" class="lua-search-results" aria-live="polite"></div>
+            </div>
+          </div>
+          
+          <a class="lua-header-icon-button lua-github-link" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace" aria-label="View project on GitHub">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner lua-page-wrapper">
+        <aside class="lua-nav-left" id="lua-nav-left-panel" aria-hidden="false">
+          <button type="button" class="lua-mobile-close" data-mobile-close="#lua-nav-left-panel" aria-label="Close navigation">&times;</button>
+          <h2>Lua Reference</h2>
+          <nav class="lua-sidebar">
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+
+            <div class="lua-sidebar-group">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-defines" aria-expanded="false">
+                <span>Defines</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-defines" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/">Defines</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Enum</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/BeamHit.html">BeamHit</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/Chain.html">Chain</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/Evasion.html">Evasion</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/InternalEvents.html">InternalEvents</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/RenderEvents.html">RenderEvents</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Defines/SDL.html">SDL</a>
+                    </li>
+                  
+                
+                
+              </ul>
+            </div>
+
+            <div class="lua-sidebar-group">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-graphics" aria-expanded="false">
+                <span>Graphics</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-graphics" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/">Graphics</a>
+                    </li>
+                  
+                
+                
+                
+                  <li class="lua-sidebar-label">Class</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/CSurface.html">CSurface</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Color.html">GL_Color</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_ColorTexVertex.html">GL_ColorTexVertex</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Line.html">GL_Line</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Primitive.html">GL_Primitive</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_TexVertex.html">GL_TexVertex</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/GL_Texture.html">GL_Texture</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Graphics/freetype.html">freetype</a>
+                    </li>
+                  
+                
+              </ul>
+            </div>
+
+            <div class="lua-sidebar-group is-open">
+              <button class="lua-sidebar-toggle" type="button" data-target="lua-sidebar-hyperspace" aria-expanded="true">
+                <span>Hyperspace</span>
+                <span class="lua-sidebar-arrow" aria-hidden="true">▸</span>
+              </button>
+              <ul id="lua-sidebar-hyperspace" class="lua-sidebar-list">
+                
+                  <li class="lua-sidebar-label">Module</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/">Hyperspace</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Enum</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerRequirements.Type.html">ActivatedPowerRequirements.Type</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewExtraCondition.html">CrewExtraCondition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewStat.html">CrewStat</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.BoostSource.html">StatBoostDefinition.BoostSource</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.BoostType.html">StatBoostDefinition.BoostType</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.CrewTarget.html">StatBoostDefinition.CrewTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.DroneTarget.html">StatBoostDefinition.DroneTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.ShipTarget.html">StatBoostDefinition.ShipTarget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.SystemRoomTarget.html">StatBoostDefinition.SystemRoomTarget</a>
+                    </li>
+                  
+                
+                
+                  <li class="lua-sidebar-label">Class</li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPower.html">ActivatedPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerDefinition.html">ActivatedPowerDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerRequirements.html">ActivatedPowerRequirements</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ActivatedPowerResource.html">ActivatedPowerResource</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Animation.html">Animation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationControl.html">AnimationControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationDescriptor.html">AnimationDescriptor</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AnimationTracker.html">AnimationTracker</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ArtillerySystem.html">ArtillerySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Asteroid.html">Asteroid</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AsteroidGenerator.html">AsteroidGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentBlueprint.html">AugmentBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentCrystalShard.html">AugmentCrystalShard</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentDefinition.html">AugmentDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentFunction.html">AugmentFunction</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/AugmentSuperShield.html">AugmentSuperShield</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BatterySystem.html">BatterySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BeamWeapon.html">BeamWeapon</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Blueprint.html">Blueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BlueprintManager.html">BlueprintManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoarderPodDrone.html">BoarderPodDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoardingEvent.html">BoardingEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BombProjectile.html">BombProjectile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/BoostPower.html">BoostPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Button.html">Button</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CApp.html">CApp</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CFPS.html">CFPS</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Choice.html">Choice</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceBox.html">ChoiceBox</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceReq.html">ChoiceReq</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ChoiceText.html">ChoiceText</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CloakingSystem.html">CloakingSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CloneSystem.html">CloneSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Collideable.html">Collideable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CollisionResponse.html">CollisionResponse</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CombatControl.html">CombatControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CombatDrone.html">CombatDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CommandGui.html">CommandGui</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewAnimation.html">CrewAnimation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewBlueprint.html">CrewBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewControl.html">CrewControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewDefinition.html">CrewDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewDesc.html">CrewDesc</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMember.html">CrewMember</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMemberFactory.html">CrewMemberFactory</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewMember_Extend.html">CrewMember_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CrewPlacementDefinition.html">CrewPlacementDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomAchievementTracker.html">CustomAchievementTracker</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomAugmentManager.html">CustomAugmentManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomDamage.html">CustomDamage</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomDamageDefinition.html">CustomDamageDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomEvent.html">CustomEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomEventsParser.html">CustomEventsParser</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomLockdownDefinition.html">CustomLockdownDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipDefinition.html">CustomShipDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipGenerator.html">CustomShipGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipSelect.html">CustomShipSelect</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomShipUnlocks.html">CustomShipUnlocks</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/CustomTeleport.html">CustomTeleport</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Damage.html">Damage</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DefenseDrone.html">DefenseDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Description.html">Description</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Door.html">Door</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Drone.html">Drone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DroneBlueprint.html">DroneBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/DroneSystem.html">DroneSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EffectsBlueprint.html">EffectsBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Ellipse.html">Ellipse</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EngineSystem.html">EngineSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Equipment.html">Equipment</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/EventGenerator.html">EventGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/FTLButton.html">FTLButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Fire.html">Fire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/FocusWindow.html">FocusWindow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GL_Primitive_Pointer_Array_Size_3_Wrapper.html">GL_Primitive_Pointer_Array_Size_3_Wrapper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GL_Texture_Pointer_Array_Size_3_Wrapper.html">GL_Texture_Pointer_Array_Size_3_Wrapper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/GenericButton.html">GenericButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Global.html">Global</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Globals.html">Globals</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HackingDrone.html">HackingDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HackingSystem.html">HackingSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/HyperspaceVersion.html">HyperspaceVersion</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ImageDesc.html">ImageDesc</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LaserBlast.html">LaserBlast</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Location.html">Location</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LocationEvent.html">LocationEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LockdownShard.html">LockdownShard</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/LockdownShard_Extend.html">LockdownShard_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MainMenu.html">MainMenu</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MedbaySystem.html">MedbaySystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MindSystem.html">MindSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MiniProjectile.html">MiniProjectile</a>
+                    </li>
+                  
+                    <li class="active">
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Missile.html">Missile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/MouseControl.html">MouseControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/OuterHull.html">OuterHull</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/OxygenSystem.html">OxygenSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PDSFire.html">PDSFire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Point.html">Point</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Pointf.html">Pointf</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PowerManager.html">PowerManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PowerResourceDefinition.html">PowerResourceDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/PrintHelper.html">PrintHelper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Projectile.html">Projectile</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ProjectileFactory.html">ProjectileFactory</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Projectile_Extend.html">Projectile_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Rect.html">Rect</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Repairable.html">Repairable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ResourceControl.html">ResourceControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ResourceEvent.html">ResourceEvent</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Room.html">Room</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/RoomDefinition.html">RoomDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Room_Extend.html">Room_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SCrewStats.html">SCrewStats</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ScoreKeeper.html">ScoreKeeper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Sector.html">Sector</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SectorDescription.html">SectorDescription</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Selectable.html">Selectable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SettingValues.html">SettingValues</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Shield.html">Shield</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShieldPower.html">ShieldPower</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Shields.html">Shields</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Ship.html">Ship</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipBlueprint.html">ShipBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipBuilder.html">ShipBuilder</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipButtonDefinition.html">ShipButtonDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipButtonList.html">ShipButtonList</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipGenerator.html">ShipGenerator</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipGraph.html">ShipGraph</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipInfo.html">ShipInfo</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipManager.html">ShipManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipManager_Extend.html">ShipManager_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipObject.html">ShipObject</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipRepairDrone.html">ShipRepairDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipSystem.html">ShipSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ShipSystem_Extend.html">ShipSystem_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Slot.html">Slot</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SoundControl.html">SoundControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceDrone.html">SpaceDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceManager.html">SpaceManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SpaceStatus.html">SpaceStatus</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Spreadable.html">Spreadable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Spreader_Fire.html">Spreader_Fire</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StarMap.html">StarMap</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoost.html">StatBoost</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostDefinition.html">StatBoostDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/StatBoostManager.html">StatBoostManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SuperShieldDrone.html">SuperShieldDrone</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemBox.html">SystemBox</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemBox_Extend.html">SystemBox_Extend</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/SystemTemplate.html">SystemTemplate</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TabbedWindow.html">TabbedWindow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/Targetable.html">Targetable</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TeleportSystem.html">TeleportSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TemporalSystemParser.html">TemporalSystemParser</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TemporaryPowerDefinition.html">TemporaryPowerDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextButton.html">TextButton</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextButton0.html">TextButton0</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextLibrary.html">TextLibrary</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TextString.html">TextString</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TimerHelper.html">TimerHelper</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_bool.html">ToggleValue_bool</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_float.html">ToggleValue_float</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/ToggleValue_int.html">ToggleValue_int</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TopScore.html">TopScore</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TriggeredEventDefinition.html">TriggeredEventDefinition</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TutorialArrow.html">TutorialArrow</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/TutorialManager.html">TutorialManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponAnimation.html">WeaponAnimation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponBlueprint.html">WeaponBlueprint</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponControl.html">WeaponControl</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponMount.html">WeaponMount</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WeaponSystem.html">WeaponSystem</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WindowFrame.html">WindowFrame</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/WorldManager.html">WorldManager</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/FTL-Hyperspace/lua/Hyperspace/playerVariableType.html">playerVariableType</a>
+                    </li>
+                  
+                
+              </ul>
+            </div>
+          </nav>
+        </aside>
+        <main class="lua-main lua-content">
+          
+          
+          
+          
+          
+          
+
+          
+
+          <div class="lua-breadcrumb lua-small lua-muted">
+            <a href="/FTL-Hyperspace/">Home</a> / <a href="/FTL-Hyperspace/lua/">Lua API</a>
+            
+              
+                / <a href="/FTL-Hyperspace/lua/Hyperspace/">Hyperspace</a>
+              
+              
+                / Missile
+              
+            
+          </div>
+          <h1 id="class-missile">Class “Missile”</h1>
+
+<p>Extends: <a href="../Hyperspace/Projectile">Projectile</a> &lt;- <a href="../Hyperspace/Collideable">Collideable</a></p>
+
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Missile/_head.md" -->
+
+<h2 id="Constructors" class="lua-content-section">Constructors</h2>
+<h3 id="Missile" class="lua-content-item" aria-label="Constructors">Missile ()</h3>
+<h4 aria-label="Constructors" id="missile-missile-pointf-_position-integer-_ownerid-integer-_targetid-pointf-_target-number-_heading"><a href="../Hyperspace/Missile">Missile</a> Missile (<a href="../Hyperspace/Pointf">Pointf</a> _position, integer _ownerId, integer _targetId, <a href="../Hyperspace/Pointf">Pointf</a> _target, number _heading)</h4>
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Missile/Missile(Hyperspace.Pointf,integer,integer,Hyperspace.Pointf,number).md" -->
+
+<hr />
+
+<h2 id="Static-Methods" class="lua-content-section">Static Methods</h2>
+<hr />
+<details>
+  <summary id="InheritedStaticMethods" class="lua-content-item">Inherited Static Methods</summary>
+
+  <h4 id="from-projectile">From <a href="Projectile">Projectile</a></h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Return Type</th>
+        <th>Method</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>.<a href="Projectile#RandomSidePoint">RandomSidePoint</a> (integer side)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</details>
+
+<h2 id="Methods" class="lua-content-section">Methods</h2>
+<hr />
+<details>
+  <summary id="InheritedMethods" class="lua-content-item">Inherited Methods</summary>
+
+  <h4 id="from-collideable">From <a href="Collideable">Collideable</a></h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Return Type</th>
+        <th>Method</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Collideable#DamageArea">DamageArea</a> (<a href="../Hyperspace/Pointf">Pointf</a> location, <a href="../Hyperspace/Damage">Damage</a> damage, boolean forceHit)</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Collideable#DamageBeam">DamageBeam</a> (<a href="../Hyperspace/Pointf">Pointf</a> current, <a href="../Hyperspace/Pointf">Pointf</a> last, <a href="../Hyperspace/Damage">Damage</a> damage)</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Collideable#DamageShield">DamageShield</a> (<a href="../Hyperspace/Pointf">Pointf</a> location, <a href="../Hyperspace/Damage">Damage</a> damage, boolean forceHit)</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Collideable#GetDodged">GetDodged</a> ()</td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>:<a href="Collideable#GetOwnerId">GetOwnerId</a> ()</td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>:<a href="Collideable#GetSelfId">GetSelfId</a> ()</td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>:<a href="Collideable#GetSpaceId">GetSpaceId</a> ()</td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>:<a href="Collideable#GetSuperShield">GetSuperShield</a> ()</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Collideable#SetTempVision">SetTempVision</a> (<a href="../Hyperspace/Pointf">Pointf</a> location)</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Collideable#ValidTargetLocation">ValidTargetLocation</a> (<a href="../Hyperspace/Pointf">Pointf</a> location)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 id="from-projectile-1">From <a href="Projectile">Projectile</a></h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Return Type</th>
+        <th>Method</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#CollisionCheck">CollisionCheck</a> (<a href="../Hyperspace/Collideable">Collideable</a> other)</td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/CollisionResponse">CollisionResponse</a></td>
+        <td>:<a href="Projectile#CollisionMoving">CollisionMoving</a> (<a href="../Hyperspace/Pointf">Pointf</a> start, <a href="../Hyperspace/Pointf">Pointf</a> finish, <a href="../Hyperspace/Damage">Damage</a> damage, boolean raytrace)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#ComputeHeading">ComputeHeading</a> ()</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Projectile#Dead">Dead</a> ()</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#EnterDestinationSpace">EnterDestinationSpace</a> ()</td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>:<a href="Projectile#ForceRenderLayer">ForceRenderLayer</a> ()</td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>:<a href="Projectile#GetRandomTargettingPoint">GetRandomTargettingPoint</a> (boolean valuable)</td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>:<a href="Projectile#GetSpeed">GetSpeed</a> ()</td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>:<a href="Projectile#GetType">GetType</a> ()</td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>:<a href="Projectile#GetWorldCenterPoint">GetWorldCenterPoint</a> ()</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#Initialize">Initialize</a> (<a href="../Hyperspace/WeaponBlueprint">WeaponBlueprint</a> bp)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#Kill">Kill</a> ()</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#LoadProjectile">LoadProjectile</a> (integer fd)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#OnRenderSpecific">OnRenderSpecific</a> (integer spaceId)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#OnUpdate">OnUpdate</a> ()</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SaveProjectile">SaveProjectile</a> (integer fd)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SetDamage">SetDamage</a> (<a href="../Hyperspace/Damage">Damage</a> damage)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SetDestinationSpace">SetDestinationSpace</a> (integer space)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SetMovingTarget">SetMovingTarget</a> (<a href="../Hyperspace/Targetable">Targetable</a> target)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SetSpin">SetSpin</a> (number spin)</td>
+      </tr>
+      <tr>
+        <td>void</td>
+        <td>:<a href="Projectile#SetWeaponAnimation">SetWeaponAnimation</a> (<a href="../Hyperspace/WeaponAnimation">WeaponAnimation</a> animation)</td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>:<a href="Projectile#ValidTarget">ValidTarget</a> ()</td>
+      </tr>
+    </tbody>
+  </table>
+
+</details>
+
+<h2 id="Fields" class="lua-content-section">Fields</h2>
+<hr />
+<details>
+  <summary id="InheritedFields" class="lua-content-item">Inherited Fields</summary>
+
+  <h4 id="from-projectile-2">From <a href="Projectile">Projectile</a></h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Field</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="../Hyperspace/Targetable">Targetable</a></td>
+        <td>.<a href="Projectile#_targetable">_targetable</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#bBroadcastTarget">bBroadcastTarget</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Graphics/GL_Color">GL_Color</a></td>
+        <td>.<a href="Projectile#color">color</a></td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>.<a href="Projectile#currentSpace">currentSpace</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Damage">Damage</a></td>
+        <td>.<a href="Projectile#damage">damage</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#dead">dead</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Animation">Animation</a></td>
+        <td>.<a href="Projectile#death_animation">death_animation</a></td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>.<a href="Projectile#destinationSpace">destinationSpace</a></td>
+      </tr>
+      <tr>
+        <td>number</td>
+        <td>.<a href="Projectile#entryAngle">entryAngle</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Projectile_Extend">Projectile_Extend</a></td>
+        <td>.<a href="Projectile#extend">extend</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/AnimationTracker">AnimationTracker</a></td>
+        <td>.<a href="Projectile#flashTracker">flashTracker</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Animation">Animation</a></td>
+        <td>.<a href="Projectile#flight_animation">flight_animation</a></td>
+      </tr>
+      <tr>
+        <td>number</td>
+        <td>.<a href="Projectile#heading">heading</a></td>
+      </tr>
+      <tr>
+        <td>string</td>
+        <td>.<a href="Projectile#hitShieldSound">hitShieldSound</a></td>
+      </tr>
+      <tr>
+        <td>string</td>
+        <td>.<a href="Projectile#hitSolidSound">hitSolidSound</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#hitTarget">hitTarget</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>.<a href="Projectile#last_position">last_position</a></td>
+      </tr>
+      <tr>
+        <td>number</td>
+        <td>.<a href="Projectile#lifespan">lifespan</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#missed">missed</a></td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>.<a href="Projectile#ownerId">ownerId</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#passedTarget">passedTarget</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>.<a href="Projectile#position">position</a></td>
+      </tr>
+      <tr>
+        <td>uint</td>
+        <td>.<a href="Projectile#selfId">selfId</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>.<a href="Projectile#speed">speed</a></td>
+      </tr>
+      <tr>
+        <td>number</td>
+        <td>.<a href="Projectile#speed_magnitude">speed_magnitude</a></td>
+      </tr>
+      <tr>
+        <td>boolean</td>
+        <td>.<a href="Projectile#startedDeath">startedDeath</a></td>
+      </tr>
+      <tr>
+        <td>table</td>
+        <td>.<a href="Projectile#table">table</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Hyperspace/Pointf">Pointf</a></td>
+        <td>.<a href="Projectile#target">target</a></td>
+      </tr>
+      <tr>
+        <td>integer</td>
+        <td>.<a href="Projectile#targetId">targetId</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</details>
+
+
+        </main>
+        <aside class="lua-nav-right" id="lua-nav-right-panel" aria-hidden="false">
+          <button type="button" class="lua-mobile-close" data-mobile-close="#lua-nav-right-panel" aria-label="Close table of contents">&times;</button>
+          
+          <label class="lua-nav-title">Table of contents</label>
+          
+          
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+          
+          <nav>
+            <ul class="lua-nav-right-item-list"><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Constructors">Constructors</a><nav aria-label="Constructors">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#Missile">Missile ()</a>
+                  </li></ul>
+                    </nav></li><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Static-Methods">Static Methods</a><nav aria-label="StaticMethods">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#InheritedStaticMethods">Inherited Static Methods</a>
+                  </li></ul>
+                    </nav></li><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Methods">Methods</a><nav aria-label="Methods">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#InheritedMethods">Inherited Methods</a>
+                  </li></ul>
+                    </nav></li><li class="lua-nav-right-item">
+                  <a class="md-nav__link" href="#Fields">Fields</a><nav aria-label="Fields">
+                    <ul class="lua-nav-right-item-list"><li class="lua-nav-right-list-item">
+                    <a class="md-nav__link" href="#InheritedFields">Inherited Fields</a>
+                  </li></ul>
+                </nav></li></ul>
+          </nav>
+          
+        </aside>
+      </section>
+    </div>
+    <div class="lua-mobile-overlay" id="lua-mobile-overlay" aria-hidden="true"></div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer lua-footer">
+      <footer class="inner lua-footer-inner">
+        <div class="lua-footer-meta">
+          
+          <p class="copyright">FTL Hyperspace maintained by <a href="https://github.com/FTL-Hyperspace">FTL-Hyperspace</a></p>
+          
+          <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+          <p>Site last updated: 14 December 2025</p>
+        </div>
+        <div class="lua-footer-social" aria-label="Project community links">
+          
+          <a class="lua-footer-icon lua-footer-icon--github" href="https://github.com/FTL-Hyperspace/FTL-Hyperspace" aria-label="View project on GitHub">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </a>
+          
+          <a class="lua-footer-icon lua-footer-icon--discord" href="https://discord.gg/ftlmultiverse" target="_blank" rel="noopener" aria-label="Join the Discord">
+            <svg class="lua-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (function() {
+        var body = document.body;
+        var searchContainer = document.getElementById('lua-header-search');
+        var searchInput = document.getElementById('lua-search-input');
+        var storageKey = 'luaTheme';
+        var stored = null;
+        try {
+          stored = window.localStorage ? localStorage.getItem(storageKey) : null;
+        } catch (e) {
+          stored = null;
+        }
+
+        function prefersDark() {
+          return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function applyTheme(mode) {
+          if (mode === 'dark') {
+            body.classList.add('lua-dark');
+          } else {
+            body.classList.remove('lua-dark');
+          }
+          try {
+            if (window.localStorage) {
+              localStorage.setItem(storageKey, mode);
+            }
+          } catch (e) {
+            /* ignore */
+          }
+        }
+
+        // Initial theme: stored preference, otherwise system preference
+        if (stored === 'dark' || stored === 'light') {
+          applyTheme(stored);
+        } else {
+          applyTheme(prefersDark() ? 'dark' : 'light');
+        }
+
+        function bindThemeButtons() {
+          var themeButtons = document.querySelectorAll('.lua-theme-toggle-btn');
+          for (var t = 0; t < themeButtons.length; t++) {
+            themeButtons[t].addEventListener('click', function() {
+              var current = body.classList.contains('lua-dark') ? 'dark' : 'light';
+              applyTheme(current === 'dark' ? 'light' : 'dark');
+            });
+          }
+        }
+
+        bindThemeButtons();
+
+        var searchToggleButtons = document.querySelectorAll('[data-search-toggle]');
+
+        function setMobileSearchActive(active) {
+          if (!searchContainer) return;
+          searchContainer.classList.toggle('is-mobile-active', !!active);
+          for (var s = 0; s < searchToggleButtons.length; s++) {
+            searchToggleButtons[s].setAttribute('aria-pressed', active ? 'true' : 'false');
+          }
+          if (active && searchInput) {
+            searchInput.focus();
+          }
+        }
+
+        if (searchToggleButtons.length && searchContainer) {
+          for (var st = 0; st < searchToggleButtons.length; st++) {
+            searchToggleButtons[st].setAttribute('aria-pressed', 'false');
+            searchToggleButtons[st].addEventListener('click', function(event) {
+              event.preventDefault();
+              var isActive = searchContainer.classList.contains('is-mobile-active');
+              setMobileSearchActive(!isActive);
+            });
+          }
+        }
+
+        // Collapsible left-hand Lua sidebar navigation
+        var groups = document.querySelectorAll('.lua-sidebar-group');
+        for (var i = 0; i < groups.length; i++) {
+          (function(group) {
+            var button = group.querySelector('.lua-sidebar-toggle');
+            if (!button) return;
+
+            var targetId = button.getAttribute('data-target');
+            var list = targetId ? document.getElementById(targetId) : null;
+            if (!list) return;
+
+            // Ensure aria-expanded matches initial open state
+            var isInitiallyOpen = group.classList.contains('is-open');
+            button.setAttribute('aria-expanded', isInitiallyOpen ? 'true' : 'false');
+
+            button.addEventListener('click', function() {
+              var isOpen = group.classList.toggle('is-open');
+              button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+          })(groups[i]);
+        }
+
+        var leftPanel = document.getElementById('lua-nav-left-panel');
+        var rightPanel = document.getElementById('lua-nav-right-panel');
+        var mainContent = document.querySelector('.lua-main');
+        var mobileOverlay = document.getElementById('lua-mobile-overlay');
+        var activePanel = null;
+        var mobilePanels = [leftPanel, rightPanel];
+
+        function syncPanelHeight(panel) {
+          if (!panel) return;
+          if (window.innerWidth <= 960) {
+            panel.style.maxHeight = '';
+            return;
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            mainContent = document.querySelector('.lua-main');
+          }
+          if (!mainContent || !mainContent.offsetHeight) {
+            panel.style.maxHeight = '';
+            return;
+          }
+
+          var mainHeight = mainContent.offsetHeight;
+          var panelStyles = window.getComputedStyle(panel);
+          var paddingTop = parseFloat(panelStyles.paddingTop) || 0;
+          var paddingBottom = parseFloat(panelStyles.paddingBottom) || 0;
+          var topOffset = parseFloat(panelStyles.top) || 0;
+          var availableFromMain = mainHeight - paddingTop - paddingBottom;
+          var availableFromViewport = window.innerHeight - topOffset - paddingTop - paddingBottom;
+          var available = Math.min(availableFromMain, availableFromViewport);
+          panel.style.maxHeight = available > 0 ? available + 'px' : '0px';
+        }
+
+        function syncPanelHeights() {
+          syncPanelHeight(leftPanel);
+          syncPanelHeight(rightPanel);
+        }
+
+        function closeMobilePanel() {
+          if (activePanel) {
+            activePanel.classList.remove('is-mobile-visible');
+            activePanel.setAttribute('aria-hidden', 'true');
+            activePanel = null;
+          }
+          body.classList.remove('lua-mobile-overlay-active');
+          if (mobileOverlay) {
+            mobileOverlay.setAttribute('aria-hidden', 'true');
+          }
+          setMobileSearchActive(false);
+        }
+
+        function openMobilePanel(panel) {
+          if (!panel) return;
+          setMobileSearchActive(false);
+          if (activePanel && activePanel !== panel) {
+            closeMobilePanel();
+          }
+          activePanel = panel;
+          panel.classList.add('is-mobile-visible');
+          panel.setAttribute('aria-hidden', 'false');
+          body.classList.add('lua-mobile-overlay-active');
+          if (mobileOverlay) {
+            mobileOverlay.setAttribute('aria-hidden', 'false');
+          }
+        }
+
+        function syncPanelsForViewport(isDesktop) {
+          for (var j = 0; j < mobilePanels.length; j++) {
+            var panel = mobilePanels[j];
+            if (!panel) continue;
+            if (isDesktop) {
+              panel.classList.remove('is-mobile-visible');
+              panel.setAttribute('aria-hidden', 'false');
+            } else if (panel !== activePanel) {
+              panel.classList.remove('is-mobile-visible');
+              panel.setAttribute('aria-hidden', 'true');
+            }
+          }
+          if (isDesktop) {
+            activePanel = null;
+            if (mobileOverlay) {
+              mobileOverlay.setAttribute('aria-hidden', 'true');
+            }
+            body.classList.remove('lua-mobile-overlay-active');
+            setMobileSearchActive(false);
+          }
+          syncPanelHeights();
+        }
+
+        var mobileButtons = document.querySelectorAll('.lua-mobile-toggle');
+        for (var k = 0; k < mobileButtons.length; k++) {
+          mobileButtons[k].addEventListener('click', function(event) {
+            event.preventDefault();
+            var targetSelector = this.getAttribute('data-mobile-target');
+            if (!targetSelector) return;
+            var panel = document.querySelector(targetSelector);
+            if (!panel) return;
+            if (activePanel === panel) {
+              closeMobilePanel();
+            } else {
+              openMobilePanel(panel);
+            }
+          });
+        }
+
+        var closeButtons = document.querySelectorAll('.lua-mobile-close');
+        for (var m = 0; m < closeButtons.length; m++) {
+          closeButtons[m].addEventListener('click', function(event) {
+            event.preventDefault();
+            var selector = this.getAttribute('data-mobile-close');
+            if (selector) {
+              var panel = document.querySelector(selector);
+              if (panel) {
+                panel.classList.remove('is-mobile-visible');
+                panel.setAttribute('aria-hidden', 'true');
+              }
+            }
+            closeMobilePanel();
+          });
+        }
+
+        if (mobileOverlay) {
+          mobileOverlay.addEventListener('click', function() {
+            closeMobilePanel();
+          });
+        }
+
+        if (rightPanel) {
+          rightPanel.addEventListener('click', function(evt) {
+            var link = evt.target.closest('a');
+            if (!link) return;
+            if (!body.classList.contains('lua-mobile-overlay-active')) return;
+            if (!rightPanel.classList.contains('is-mobile-visible')) return;
+            var href = link.getAttribute('href') || '';
+            if (href.charAt(0) !== '#') return;
+            window.requestAnimationFrame(function() {
+              closeMobilePanel();
+            });
+          });
+        }
+
+        document.addEventListener('keydown', function(evt) {
+          if (evt.key === 'Escape') {
+            closeMobilePanel();
+            setMobileSearchActive(false);
+          }
+        });
+
+        document.addEventListener('click', function(evt) {
+          if (!searchContainer || !searchContainer.classList.contains('is-mobile-active')) {
+            return;
+          }
+          if (searchContainer.contains(evt.target)) {
+            return;
+          }
+          if (evt.target.closest('[data-search-toggle]')) {
+            return;
+          }
+          setMobileSearchActive(false);
+        });
+
+        var desktopQuery = window.matchMedia ? window.matchMedia('(min-width: 961px)') : null;
+        if (desktopQuery) {
+          var handler = function(e) {
+            syncPanelsForViewport(e.matches);
+          };
+          if (typeof desktopQuery.addEventListener === 'function') {
+            desktopQuery.addEventListener('change', handler);
+          } else if (typeof desktopQuery.addListener === 'function') {
+            desktopQuery.addListener(handler);
+          }
+          syncPanelsForViewport(desktopQuery.matches);
+          syncPanelHeights();
+        }
+        else {
+          syncPanelsForViewport(window.innerWidth >= 961);
+          syncPanelHeights();
+          window.addEventListener('resize', function() {
+            syncPanelsForViewport(window.innerWidth >= 961);
+          });
+        }
+
+        window.addEventListener('resize', function() {
+          syncPanelHeights();
+        });
+
+        syncPanelHeights();
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+    <script>
+      window.luaSearchConfig = {
+        searchDataUrl: "/FTL-Hyperspace/lua/search-data.json",
+        siteBaseUrl: "/FTL-Hyperspace",
+        minChars: 2
+      };
+    </script>
+    <script src="/FTL-Hyperspace/assets/js/lua-search.js?v="></script>
+  </body>
+</html>
