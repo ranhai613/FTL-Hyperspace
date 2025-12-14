@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/_head.md" -->
+
 
 
 
@@ -98,6 +100,7 @@ ___
 {: #BlowHackingDrone .lua-content-item aria-label='Methods' }
 #### void :BlowHackingDrone ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/BlowHackingDrone().md" -->
 
 ___
 
@@ -170,54 +173,64 @@ ___
 {: #bArmed .lua-content-item aria-label='Fields' }
 #### boolean .bArmed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/bArmed.md" -->
 
 ___
 ### bBlocked
 {: #bBlocked .lua-content-item aria-label='Fields' }
 #### boolean .bBlocked
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/bBlocked.md" -->
 
 ___
 ### bCanHack
 {: #bCanHack .lua-content-item aria-label='Fields' }
 #### boolean .bCanHack
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/bCanHack.md" -->
 
 ___
 ### bHacking
 {: #bHacking .lua-content-item aria-label='Fields' }
 #### boolean .bHacking
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/bHacking.md" -->
 
 ___
 ### currentSystem
 {: #currentSystem .lua-content-item aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .currentSystem
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/currentSystem.md" -->
 The current system it is targeting
+<!-- End of content -->
 
 ___
 ### drone
 {: #drone .lua-content-item aria-label='Fields' }
 #### [HackingDrone](../Hyperspace/HackingDrone) .drone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/drone.md" -->
 
 ___
 ### effectTimer
 {: #effectTimer .lua-content-item aria-label='Fields' }
 #### pair\<number, number\> .effectTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/effectTimer.md" -->
 
 ___
 ### queuedSystem
 {: #queuedSystem .lua-content-item aria-label='Fields' }
 #### [ShipSystem](../Hyperspace/ShipSystem) .queuedSystem
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/queuedSystem.md" -->
 
 ___
 ### spendDrone
 {: #spendDrone .lua-content-item aria-label='Fields' }
 #### integer .spendDrone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingSystem/spendDrone.md" -->
 
 ___

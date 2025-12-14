@@ -10,6 +10,8 @@ category: Class
 
 Extends: [FocusWindow](../Hyperspace/FocusWindow)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/TabbedWindow/_head.md" -->
+
 
 
 
@@ -35,18 +37,22 @@ ___
 {: #bBlockClose .lua-content-item aria-label='Fields' }
 #### boolean .bBlockClose
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TabbedWindow/bBlockClose.md" -->
 
 ___
 ### bTutorialMode
 {: #bTutorialMode .lua-content-item aria-label='Fields' }
 #### boolean .bTutorialMode
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/TabbedWindow/bTutorialMode.md" -->
 If true, player cannot access anything other than Upgrades screen.
+<!-- End of content -->
 
 ___
 ### bWindowLock
 {: #bWindowLock .lua-content-item aria-label='Fields' }
 #### boolean .bWindowLock
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TabbedWindow/bWindowLock.md" -->
 
 ___

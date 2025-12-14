@@ -7,6 +7,8 @@ category: Class
 
 # Class "ShipBuilder"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/ShipBuilder/_head.md" -->
+
 
 
 
@@ -18,6 +20,8 @@ category: Class
 {: #bOpen .lua-content-item aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/ShipBuilder/bOpen.md" -->
 **read-only**
+<!-- End of content -->
 
 ___

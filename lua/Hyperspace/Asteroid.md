@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Asteroid/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 {: #Asteroid .lua-content-item aria-label='Constructors' }
 #### [Asteroid](../Hyperspace/Asteroid) Asteroid ([Pointf](../Hyperspace/Pointf) pos, integer destinationSpace)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Asteroid/Asteroid(Hyperspace.Pointf,integer).md" -->
 
 ___
 
@@ -138,11 +141,13 @@ ___
 {: #angle .lua-content-item aria-label='Fields' }
 #### number .angle
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Asteroid/angle.md" -->
 
 ___
 ### imageId
 {: #imageId .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .imageId
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Asteroid/imageId.md" -->
 
 ___

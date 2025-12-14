@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "SDL"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Defines/SDL/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Defines/SDL/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | KEY_UNKNOWN | 0 | Unknown key was pressed |

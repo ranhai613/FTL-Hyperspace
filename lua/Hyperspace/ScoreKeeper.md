@@ -7,6 +7,8 @@ category: Class
 
 # Class "ScoreKeeper"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/ScoreKeeper/_head.md" -->
+
 
 
 
@@ -18,6 +20,8 @@ category: Class
 {: #currentScore .lua-content-item aria-label='Fields' }
 #### [TopScore](../Hyperspace/TopScore) .currentScore
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/ScoreKeeper/currentScore.md" -->
 Field is **read-only** but fields under this object may still be mutable.
+<!-- End of content -->
 
 ___

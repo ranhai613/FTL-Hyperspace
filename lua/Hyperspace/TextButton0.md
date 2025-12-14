@@ -12,6 +12,8 @@ Extends: [GenericButton](../Hyperspace/GenericButton)
 
 Subclasses: [FTLButton](../Hyperspace/FTLButton)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton0/_head.md" -->
+
 
 
 

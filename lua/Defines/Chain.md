@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "Chain"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Defines/Chain/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Defines/Chain/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | CONTINUE | 0 | Call the next callback in the sequence if there is one |

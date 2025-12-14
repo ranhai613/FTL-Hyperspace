@@ -12,6 +12,8 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
 Subclasses: [SuperShieldDrone](../Hyperspace/SuperShieldDrone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -19,6 +21,7 @@ Subclasses: [SuperShieldDrone](../Hyperspace/SuperShieldDrone)
 {: #DefenseDrone .lua-content-item aria-label='Constructors' }
 #### [DefenseDrone](../Hyperspace/DefenseDrone) DefenseDrone ()
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/DefenseDrone().md" -->
 
 ___
 
@@ -99,30 +102,35 @@ ___
 {: #GetTooltip .lua-content-item aria-label='Methods' }
 #### string :GetTooltip ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/GetTooltip().md" -->
 
 ___
 ### OnLoop ()
 {: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/OnLoop().md" -->
 
 ___
 ### PickTarget ()
 {: #PickTarget .lua-content-item aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/PickTarget().md" -->
 
 ___
 ### SetWeaponTarget ()
 {: #SetWeaponTarget .lua-content-item aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/SetWeaponTarget(Hyperspace.Targetable).md" -->
 
 ___
 ### ValidTargetObject ()
 {: #ValidTargetObject .lua-content-item aria-label='Methods' }
 #### boolean :ValidTargetObject ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/ValidTargetObject(Hyperspace.Targetable).md" -->
 
 ___
 
@@ -199,53 +207,62 @@ ___
 {: #currentSpeed .lua-content-item aria-label='Fields' }
 #### number .currentSpeed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/currentSpeed.md" -->
 
 ___
 ### currentTargetId
 {: #currentTargetId .lua-content-item aria-label='Fields' }
 #### integer .currentTargetId
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/currentTargetId.md" -->
 
 ___
 ### currentTargetType
 {: #currentTargetType .lua-content-item aria-label='Fields' }
 #### integer .currentTargetType
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/currentTargetType.md" -->
 
 ___
 ### drone_image
 {: #drone_image .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/drone_image.md" -->
 
 ___
 ### engine_image
 {: #engine_image .lua-content-item aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/engine_image.md" -->
 
 ___
 ### gun_image_charging
 {: #gun_image_charging .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_charging
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/gun_image_charging.md" -->
 
 ___
 ### gun_image_off
 {: #gun_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_off
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/gun_image_off.md" -->
 
 ___
 ### gun_image_on
 {: #gun_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .gun_image_on
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/gun_image_on.md" -->
 
 ___
 ### shotAtTargetId
 {: #shotAtTargetId .lua-content-item aria-label='Fields' }
 #### integer .shotAtTargetId
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DefenseDrone/shotAtTargetId.md" -->
 
 ___

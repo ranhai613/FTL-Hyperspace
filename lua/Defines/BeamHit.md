@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "BeamHit"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Defines/BeamHit/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Defines/BeamHit/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | SAME_TILE | 0 | Treat beam hit as same tile as last frame |

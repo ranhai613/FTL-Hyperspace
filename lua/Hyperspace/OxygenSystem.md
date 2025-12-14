@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 {: #OxygenSystem .lua-content-item aria-label='Constructors' }
 #### [OxygenSystem](../Hyperspace/OxygenSystem) OxygenSystem (integer numRooms, integer roomId, integer shipId, integer startingPower)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/OxygenSystem(integer,integer,integer,integer).md" -->
 
 ___
 
@@ -107,18 +110,21 @@ ___
 {: #EmptyOxygen .lua-content-item aria-label='Methods' }
 #### void :EmptyOxygen (integer roomId)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/EmptyOxygen(integer).md" -->
 
 ___
 ### GetRefillSpeed ()
 {: #GetRefillSpeed .lua-content-item aria-label='Methods' }
 #### number :GetRefillSpeed ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/GetRefillSpeed().md" -->
 
 ___
 ### ModifyRoomOxygen ()
 {: #ModifyRoomOxygen .lua-content-item aria-label='Methods' }
 #### void :ModifyRoomOxygen (integer roomId, number value)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/ModifyRoomOxygen(integer,number).md" -->
 
 ___
 
@@ -191,32 +197,38 @@ ___
 {: #bLeakingO2 .lua-content-item aria-label='Fields' }
 #### boolean .bLeakingO2
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/bLeakingO2.md" -->
 
 ___
 ### fTotalOxygen
 {: #fTotalOxygen .lua-content-item aria-label='Fields' }
 #### number .fTotalOxygen
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/fTotalOxygen.md" -->
 
 ___
 ### leakModifier (Read-only)
 {: #leakModifier .lua-content-item aria-label='Fields' }
 #### number .leakModifier
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/leakModifier.md" -->
 **Read-only**
 A multiplier to the rate at which airlocks and breaches drain oxygen.
 Can be changed with `CALCULATE_LEAK_MODIFIER` callback.
+<!-- End of content -->
 
 ___
 ### max_oxygen
 {: #max_oxygen .lua-content-item aria-label='Fields' }
 #### number .max_oxygen
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/max_oxygen.md" -->
 
 ___
 ### oxygenLevels
 {: #oxygenLevels .lua-content-item aria-label='Fields' }
 #### vector\<number\> .oxygenLevels
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OxygenSystem/oxygenLevels.md" -->
 
 ___

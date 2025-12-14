@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/ArtillerySystem/_head.md" -->
+
 
 
 
@@ -165,17 +167,20 @@ ___
 {: #bCloaked .lua-content-item aria-label='Fields' }
 #### boolean .bCloaked
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/ArtillerySystem/bCloaked.md" -->
 
 ___
 ### projectileFactory
 {: #projectileFactory .lua-content-item aria-label='Fields' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) .projectileFactory
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/ArtillerySystem/projectileFactory.md" -->
 
 ___
 ### target
 {: #target .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .target
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/ArtillerySystem/target.md" -->
 
 ___

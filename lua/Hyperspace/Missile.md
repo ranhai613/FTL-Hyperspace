@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Missile/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 {: #Missile .lua-content-item aria-label='Constructors' }
 #### [Missile](../Hyperspace/Missile) Missile ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target, number _heading)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Missile/Missile(Hyperspace.Pointf,integer,integer,Hyperspace.Pointf,number).md" -->
 
 ___
 

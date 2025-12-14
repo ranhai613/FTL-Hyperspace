@@ -10,6 +10,8 @@ category: Class
 
 Extends: [DefenseDrone](../Hyperspace/DefenseDrone) <- [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [DefenseDrone](../Hyperspace/DefenseDrone) <- [SpaceDrone](../Hyperspac
 {: #SuperShieldDrone .lua-content-item aria-label='Constructors' }
 #### [SuperShieldDrone](../Hyperspace/SuperShieldDrone) SuperShieldDrone (integer iShipId, integer selfId, [DroneBlueprint](../Hyperspace/DroneBlueprint) blueprint)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/SuperShieldDrone(integer,integer,Hyperspace.DroneBlueprint).md" -->
 
 ___
 
@@ -105,12 +108,14 @@ ___
 {: #GetWeaponCooldown .lua-content-item aria-label='Methods' }
 #### number :GetWeaponCooldown ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/GetWeaponCooldown().md" -->
 
 ___
 ### OnLoop ()
 {: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/OnLoop().md" -->
 
 ___
 
@@ -201,29 +206,34 @@ ___
 {: #drone_image_glow .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_glow
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/drone_image_glow.md" -->
 
 ___
 ### drone_image_off
 {: #drone_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/drone_image_off.md" -->
 
 ___
 ### drone_image_on
 {: #drone_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/drone_image_on.md" -->
 
 ___
 ### glowAnimation
 {: #glowAnimation .lua-content-item aria-label='Fields' }
 #### number .glowAnimation
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/glowAnimation.md" -->
 
 ___
 ### shieldSystem
 {: #shieldSystem .lua-content-item aria-label='Fields' }
 #### [Shields](../Hyperspace/Shields) .shieldSystem
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/SuperShieldDrone/shieldSystem.md" -->
 
 ___

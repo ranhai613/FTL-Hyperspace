@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/_head.md" -->
+
 
 
 
@@ -165,47 +167,55 @@ ___
 {: #bottom .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .bottom
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/bottom.md" -->
 
 ___
 ### clone
 {: #clone .lua-content-item aria-label='Fields' }
 #### [CrewMember](../Hyperspace/CrewMember) .clone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/clone.md" -->
 
 ___
 ### fDeathTime
 {: #fDeathTime .lua-content-item aria-label='Fields' }
 #### number .fDeathTime
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/fDeathTime.md" -->
 
 ___
 ### fTimeGoal
 {: #fTimeGoal .lua-content-item aria-label='Fields' }
 #### number .fTimeGoal
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/fTimeGoal.md" -->
 
 ___
 ### fTimeToClone
 {: #fTimeToClone .lua-content-item aria-label='Fields' }
 #### number .fTimeToClone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/fTimeToClone.md" -->
 
 ___
 ### gas
 {: #gas .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .gas
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/gas.md" -->
 
 ___
 ### slot
 {: #slot .lua-content-item aria-label='Fields' }
 #### integer .slot
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/slot.md" -->
 
 ___
 ### top
 {: #top .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .top
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CloneSystem/top.md" -->
 
 ___

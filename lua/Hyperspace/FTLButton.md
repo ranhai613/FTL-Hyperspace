@@ -10,6 +10,8 @@ category: Class
 
 Extends: [TextButton0](../Hyperspace/TextButton0) <- [GenericButton](../Hyperspace/GenericButton)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/FTLButton/_head.md" -->
+
 
 
 
@@ -40,12 +42,14 @@ ___
 {: #MouseMove .lua-content-item aria-label='Methods' }
 #### void :MouseMove (integer mX, integer mY, boolean silent)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FTLButton/MouseMove(integer,integer,boolean).md" -->
 
 ___
 ### OnRender ()
 {: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FTLButton/OnRender().md" -->
 
 ___
 

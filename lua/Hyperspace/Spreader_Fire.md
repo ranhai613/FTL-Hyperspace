@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipObject](../Hyperspace/ShipObject)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Spreader_Fire/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [ShipObject](../Hyperspace/ShipObject)
 {: #Spreader_Fire .lua-content-item aria-label='Constructors' }
 #### [Spreader_Fire](../Hyperspace/Spreader_Fire) Spreader_Fire ()
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Spreader_Fire/Spreader_Fire().md" -->
 
 ___
 
@@ -66,17 +69,20 @@ ___
 {: #count .lua-content-item aria-label='Fields' }
 #### integer .count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Spreader_Fire/count.md" -->
 
 ___
 ### grid
 {: #grid .lua-content-item aria-label='Fields' }
 #### vector\<vector\<[Fire](../Hyperspace/Fire)\>\> .grid
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Spreader_Fire/grid.md" -->
 
 ___
 ### roomCount
 {: #roomCount .lua-content-item aria-label='Fields' }
 #### vector\<integer\> .roomCount
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Spreader_Fire/roomCount.md" -->
 
 ___

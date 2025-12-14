@@ -10,6 +10,8 @@ category: Class
 
 Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 {: #BoarderPodDrone .lua-content-item aria-label='Constructors' }
 #### [BoarderPodDrone](../Hyperspace/BoarderPodDrone) BoarderPodDrone (integer _iShipId, integer _selfId, [DroneBlueprint](../Hyperspace/DroneBlueprint) _bp)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/BoarderPodDrone(integer,integer,Hyperspace.DroneBlueprint).md" -->
 
 ___
 
@@ -96,30 +99,35 @@ ___
 {: #CanBeDeployed .lua-content-item aria-label='Methods' }
 #### boolean :CanBeDeployed ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/CanBeDeployed().md" -->
 
 ___
 ### CollisionMoving ()
 {: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/CollisionMoving(Hyperspace.Pointf,Hyperspace.Pointf,Hyperspace.Damage,boolean).md" -->
 
 ___
 ### OnLoop ()
 {: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/OnLoop().md" -->
 
 ___
 ### SetDeployed ()
 {: #SetDeployed .lua-content-item aria-label='Methods' }
 #### void :SetDeployed (boolean _deployed)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/SetDeployed(boolean).md" -->
 
 ___
 ### SetMovementTarget ()
 {: #SetMovementTarget .lua-content-item aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/SetMovementTarget(Hyperspace.Targetable).md" -->
 
 ___
 
@@ -196,47 +204,55 @@ ___
 {: #bDeliveredDrone .lua-content-item aria-label='Fields' }
 #### boolean .bDeliveredDrone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/bDeliveredDrone.md" -->
 
 ___
 ### baseSheet
 {: #baseSheet .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .baseSheet
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/baseSheet.md" -->
 
 ___
 ### boarderDrone
 {: #boarderDrone .lua-content-item aria-label='Fields' }
 #### BoarderDrone .boarderDrone
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/boarderDrone.md" -->
 
 ___
 ### colorSheet
 {: #colorSheet .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .colorSheet
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/colorSheet.md" -->
 
 ___
 ### diedInSpace
 {: #diedInSpace .lua-content-item aria-label='Fields' }
 #### boolean .diedInSpace
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/diedInSpace.md" -->
 
 ___
 ### droneImage
 {: #droneImage .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .droneImage
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/droneImage.md" -->
 
 ___
 ### flame
 {: #flame .lua-content-item aria-label='Fields' }
 #### CachedImage .flame
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/flame.md" -->
 
 ___
 ### startingPosition
 {: #startingPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BoarderPodDrone/startingPosition.md" -->
 
 ___

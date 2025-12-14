@@ -12,6 +12,8 @@ Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Se
 
 Subclasses: [Fire](../Hyperspace/Fire)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Spreadable/_head.md" -->
+
 
 
 
@@ -47,5 +49,6 @@ ___
 {: #soundName .lua-content-item aria-label='Fields' }
 #### string .soundName
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Spreadable/soundName.md" -->
 
 ___

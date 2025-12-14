@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/_head.md" -->
+
 
 
 
@@ -96,18 +98,21 @@ ___
 {: #ForceIncreasePower .lua-content-item aria-label='Methods' }
 #### boolean :ForceIncreasePower (integer amount)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/ForceIncreasePower(integer).md" -->
 
 ___
 ### RemoveWeapon ()
 {: #RemoveWeapon .lua-content-item aria-label='Methods' }
 #### [ProjectileFactory](../Hyperspace/ProjectileFactory) :RemoveWeapon (integer slot)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/RemoveWeapon(integer).md" -->
 
 ___
 ### SetBonusPower ()
 {: #SetBonusPower .lua-content-item aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/SetBonusPower(integer,integer).md" -->
 
 ___
 
@@ -180,65 +185,76 @@ ___
 {: #iStartingBatteryPower .lua-content-item aria-label='Fields' }
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/iStartingBatteryPower.md" -->
 
 ___
 ### missile_count
 {: #missile_count .lua-content-item aria-label='Fields' }
 #### integer .missile_count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/missile_count.md" -->
 
 ___
 ### missile_start
 {: #missile_start .lua-content-item aria-label='Fields' }
 #### integer .missile_start
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/missile_start.md" -->
 
 ___
 ### repowerList
 {: #repowerList .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/repowerList.md" -->
 
 ___
 ### shot_count
 {: #shot_count .lua-content-item aria-label='Fields' }
 #### integer .shot_count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/shot_count.md" -->
 
 ___
 ### shot_timer
 {: #shot_timer .lua-content-item aria-label='Fields' }
 #### number .shot_timer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/shot_timer.md" -->
 
 ___
 ### slot_count
 {: #slot_count .lua-content-item aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/slot_count.md" -->
 
 ___
 ### target
 {: #target .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/target.md" -->
 
 ___
 ### userPowered
 {: #userPowered .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .userPowered
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/userPowered.md" -->
 
 ___
 ### weapons
 {: #weapons .lua-content-item aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weapons
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/weapons.md" -->
 
 ___
 ### weaponsTrashList
 {: #weaponsTrashList .lua-content-item aria-label='Fields' }
 #### vector\<[ProjectileFactory](../Hyperspace/ProjectileFactory)\> .weaponsTrashList
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/WeaponSystem/weaponsTrashList.md" -->
 
 ___

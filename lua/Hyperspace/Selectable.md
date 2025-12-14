@@ -11,6 +11,8 @@ category: Class
 
 Subclasses: [Repairable](../Hyperspace/Repairable), [Room](../Hyperspace/Room)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Selectable/_head.md" -->
+
 
 
 
@@ -22,5 +24,6 @@ Subclasses: [Repairable](../Hyperspace/Repairable), [Room](../Hyperspace/Room)
 {: #selectedState .lua-content-item aria-label='Fields' }
 #### integer .selectedState
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Selectable/selectedState.md" -->
 
 ___

@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 {: #BeamWeapon .lua-content-item aria-label='Constructors' }
 #### [BeamWeapon](../Hyperspace/BeamWeapon) BeamWeapon ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target, [Pointf](../Hyperspace/Pointf) _target2, integer _length, [Targetable](../Hyperspace/Targetable) _targetable, number _heading=0.0f)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/BeamWeapon(Hyperspace.Pointf,integer,integer,Hyperspace.Pointf,Hyperspace.Pointf,integer,Hyperspace.Targetable,number).md" -->
 
 ___
 
@@ -92,6 +95,7 @@ ___
 {: #OnRenderSpecific .lua-content-item aria-label='Methods' }
 #### void :OnRenderSpecific (integer spaceId)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/OnRenderSpecific(integer).md" -->
 
 ___
 
@@ -141,149 +145,174 @@ ___
 {: #animationTimer .lua-content-item aria-label='Fields' }
 #### number .animationTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/animationTimer.md" -->
 
 ___
 ### bDamageSuperShield
 {: #bDamageSuperShield .lua-content-item aria-label='Fields' }
 #### boolean .bDamageSuperShield
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/bDamageSuperShield.md" -->
 
 ___
 ### checkedCollision
 {: #checkedCollision .lua-content-item aria-label='Fields' }
 #### boolean .checkedCollision
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/checkedCollision.md" -->
 
 ___
 ### contactAnimations
 {: #contactAnimations .lua-content-item aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .contactAnimations
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/contactAnimations.md" -->
 
 ___
 ### dh
 {: #dh .lua-content-item aria-label='Fields' }
 #### number .dh
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/dh.md" -->
 
 ___
 ### final_end
 {: #final_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .final_end
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/final_end.md" -->
 
 ___
 ### lastDamage
 {: #lastDamage .lua-content-item aria-label='Fields' }
 #### integer .lastDamage
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/lastDamage.md" -->
 
 ___
 ### lastSmokeAnim
 {: #lastSmokeAnim .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastSmokeAnim
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/lastSmokeAnim.md" -->
 
 ___
 ### last_collision
 {: #last_collision .lua-content-item aria-label='Fields' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) .last_collision
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/last_collision.md" -->
 
 ___
 ### length
 {: #length .lua-content-item aria-label='Fields' }
 #### number .length
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/length.md" -->
 
 ___
 ### lifespan
 {: #lifespan .lua-content-item aria-label='Fields' }
 #### number .lifespan
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/lifespan.md" -->
 
 ___
 ### movingTarget
 {: #movingTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/movingTarget.md" -->
 
 ___
 ### movingTargetId
 {: #movingTargetId .lua-content-item aria-label='Fields' }
 #### integer .movingTargetId
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/movingTargetId.md" -->
 
 ___
 ### oneSpace
 {: #oneSpace .lua-content-item aria-label='Fields' }
 #### boolean .oneSpace
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/oneSpace.md" -->
 
 ___
 ### piercedShield
 {: #piercedShield .lua-content-item aria-label='Fields' }
 #### boolean .piercedShield
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/piercedShield.md" -->
 
 ___
 ### shield_end
 {: #shield_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shield_end
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/shield_end.md" -->
 
 ___
 ### smokeAnims
 {: #smokeAnims .lua-content-item aria-label='Fields' }
 #### vector\<[Animation](../Hyperspace/Animation)\> .smokeAnims
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/smokeAnims.md" -->
 
 ___
 ### soundChannel
 {: #soundChannel .lua-content-item aria-label='Fields' }
 #### integer .soundChannel
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/soundChannel.md" -->
 
 ___
 ### start_heading
 {: #start_heading .lua-content-item aria-label='Fields' }
 #### number .start_heading
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/start_heading.md" -->
 
 ___
 ### sub_end
 {: #sub_end .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_end
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/sub_end.md" -->
 
 ___
 ### sub_start
 {: #sub_start .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .sub_start
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/sub_start.md" -->
 
 ___
 ### target1
 {: #target1 .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target1
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/target1.md" -->
 
 ___
 ### target2
 {: #target2 .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .target2
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/target2.md" -->
 
 ___
 ### timer
 {: #timer .lua-content-item aria-label='Fields' }
 #### number .timer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/timer.md" -->
 
 ___
 ### weapAnimation
 {: #weapAnimation .lua-content-item aria-label='Fields' }
 #### [WeaponAnimation](../Hyperspace/WeaponAnimation) .weapAnimation
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BeamWeapon/weapAnimation.md" -->
 
 ___

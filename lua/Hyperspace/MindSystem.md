@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/_head.md" -->
+
 
 
 
@@ -97,12 +99,14 @@ ___
 {: #SetArmed .lua-content-item aria-label='Methods' }
 #### void :SetArmed (integer armed)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/SetArmed(integer).md" -->
 
 ___
 ### SetHackingLevel ()
 {: #SetHackingLevel .lua-content-item aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/SetHackingLevel(integer).md" -->
 
 ___
 
@@ -175,53 +179,62 @@ ___
 {: #bBlocked .lua-content-item aria-label='Fields' }
 #### boolean .bBlocked
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/bBlocked.md" -->
 
 ___
 ### bCanUse
 {: #bCanUse .lua-content-item aria-label='Fields' }
 #### boolean .bCanUse
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/bCanUse.md" -->
 
 ___
 ### bSuperShields
 {: #bSuperShields .lua-content-item aria-label='Fields' }
 #### boolean .bSuperShields
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/bSuperShields.md" -->
 
 ___
 ### controlTimer
 {: #controlTimer .lua-content-item aria-label='Fields' }
 #### pair\<number, number\> .controlTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/controlTimer.md" -->
 
 ___
 ### controlledCrew
 {: #controlledCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .controlledCrew
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/controlledCrew.md" -->
 
 ___
 ### iArmed
 {: #iArmed .lua-content-item aria-label='Fields' }
 #### integer .iArmed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/iArmed.md" -->
 
 ___
 ### iQueuedShip
 {: #iQueuedShip .lua-content-item aria-label='Fields' }
 #### integer .iQueuedShip
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/iQueuedShip.md" -->
 
 ___
 ### iQueuedTarget
 {: #iQueuedTarget .lua-content-item aria-label='Fields' }
 #### integer .iQueuedTarget
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/iQueuedTarget.md" -->
 
 ___
 ### queuedCrew
 {: #queuedCrew .lua-content-item aria-label='Fields' }
 #### vector\<[CrewMember](../Hyperspace/CrewMember)\> .queuedCrew
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/MindSystem/queuedCrew.md" -->
 
 ___

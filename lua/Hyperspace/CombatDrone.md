@@ -12,6 +12,8 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
 Subclasses: [ShipRepairDrone](../Hyperspace/ShipRepairDrone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -19,6 +21,7 @@ Subclasses: [ShipRepairDrone](../Hyperspace/ShipRepairDrone)
 {: #CombatDrone .lua-content-item aria-label='Constructors' }
 #### [CombatDrone](../Hyperspace/CombatDrone) CombatDrone (integer shipId, integer self, [DroneBlueprint](../Hyperspace/DroneBlueprint) bp)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/CombatDrone(integer,integer,Hyperspace.DroneBlueprint).md" -->
 
 ___
 
@@ -101,12 +104,14 @@ ___
 {: #PickTarget .lua-content-item aria-label='Methods' }
 #### void :PickTarget ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/PickTarget().md" -->
 
 ___
 ### SetWeaponTarget ()
 {: #SetWeaponTarget .lua-content-item aria-label='Methods' }
 #### void :SetWeaponTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/SetWeaponTarget(Hyperspace.Targetable).md" -->
 
 ___
 
@@ -183,47 +188,55 @@ ___
 {: #drone_image_charging .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_charging
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/drone_image_charging.md" -->
 
 ___
 ### drone_image_off
 {: #drone_image_off .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_off
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/drone_image_off.md" -->
 
 ___
 ### drone_image_on
 {: #drone_image_on .lua-content-item aria-label='Fields' }
 #### CachedImage .drone_image_on
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/drone_image_on.md" -->
 
 ___
 ### engine_image
 {: #engine_image .lua-content-item aria-label='Fields' }
 #### CachedImage .engine_image
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/engine_image.md" -->
 
 ___
 ### heading
 {: #heading .lua-content-item aria-label='Fields' }
 #### number .heading
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/heading.md" -->
 
 ___
 ### lastDestination
 {: #lastDestination .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .lastDestination
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/lastDestination.md" -->
 
 ___
 ### oldHeading
 {: #oldHeading .lua-content-item aria-label='Fields' }
 #### number .oldHeading
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/oldHeading.md" -->
 
 ___
 ### progressToDestination
 {: #progressToDestination .lua-content-item aria-label='Fields' }
 #### number .progressToDestination
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/CombatDrone/progressToDestination.md" -->
 
 ___

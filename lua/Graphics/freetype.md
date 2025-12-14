@@ -7,6 +7,8 @@ category: Class
 
 # Class "freetype"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Graphics/freetype/_head.md" -->
+
 
 
 
@@ -16,56 +18,69 @@ category: Class
 {: #easy_measurePrintLines .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_measurePrintLines (integer fontSize, number x, number y, integer line_length, string text)
 {: aria-label='StaticMethods' }
+<!-- Content pulled from "lua-source-parts-inject/Graphics/freetype/easy_measurePrintLines(integer,number,number,integer,string).md" -->
 Return: The horizontal/vertical size of the text. Note that the augments `x` and `y` do not affect the return value.
+<!-- End of content -->
 
 ___
 ### easy_measureWidth ()
 {: #easy_measureWidth .lua-content-item aria-label='StaticMethods' }
 #### integer .easy_measureWidth (integer fontSize, string text)
 {: aria-label='StaticMethods' }
+<!-- Content pulled from "lua-source-parts-inject/Graphics/freetype/easy_measureWidth(integer,string).md" -->
 Return: The horizontal size of the text.
+<!-- End of content -->
 
 ___
 ### easy_print ()
 {: #easy_print .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_print (integer fontSize, number x, number y, string text)
 {: aria-label='StaticMethods' }
+<!-- Content pulled from "lua-source-parts-inject/Graphics/freetype/easy_print(integer,number,number,string).md" -->
 Return.`x`: The horizontal size of the text.
 Return.`y`: Y position of the last letter.
+<!-- End of content -->
 
 ___
 ### easy_printAutoNewlines ()
 {: #easy_printAutoNewlines .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_printAutoNewlines (integer fontSize, number x, number y, integer line_length, string text)
 {: aria-label='StaticMethods' }
+<!-- Content pulled from "lua-source-parts-inject/Graphics/freetype/easy_printAutoNewlines(integer,number,number,integer,string).md" -->
 Return.`x`: The horizontal size of the text.
 Return.`y`: Y position of the last letter.
+<!-- End of content -->
 
 ___
 ### easy_printAutoShrink ()
 {: #easy_printAutoShrink .lua-content-item aria-label='StaticMethods' }
 #### void .easy_printAutoShrink (integer fontId, number x, number y, integer maxWidth, boolean centered, string text)
 {: aria-label='StaticMethods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Graphics/freetype/easy_printAutoShrink(integer,number,number,integer,boolean,string).md" -->
 
 ___
 ### easy_printCenter ()
 {: #easy_printCenter .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_printCenter (integer fontSize, number x, number y, string text)
 {: aria-label='StaticMethods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Graphics/freetype/easy_printCenter(integer,number,number,string).md" -->
 
 ___
 ### easy_printNewlinesCentered ()
 {: #easy_printNewlinesCentered .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_printNewlinesCentered (integer fontSize, number x, number y, integer line_length, string text)
 {: aria-label='StaticMethods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Graphics/freetype/easy_printNewlinesCentered(integer,number,number,integer,string).md" -->
 
 ___
 ### easy_printRightAlign ()
 {: #easy_printRightAlign .lua-content-item aria-label='StaticMethods' }
 #### [Pointf](../Hyperspace/Pointf) .easy_printRightAlign (integer fontSize, number x, number y, string text)
 {: aria-label='StaticMethods' }
+<!-- Content pulled from "lua-source-parts-inject/Graphics/freetype/easy_printRightAlign(integer,number,number,string).md" -->
 Return.`x`: The value is somehow always fixed to 0.
 Return.`y`: Y position of the last letter.
+<!-- End of content -->
 
 ___
 

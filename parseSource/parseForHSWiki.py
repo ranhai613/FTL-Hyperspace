@@ -349,9 +349,11 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(constructor.className, constructor.returnType)} {constructor.name} ({params_str})\n{{: aria-label='Constructors' }}\n"
-            documantation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{constructor.name}({",".join(constructor.params_type)}).md"))
-            if documantation_path.exists():
-                ret += f"{read_file(documantation_path)}\n"
+            documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{constructor.name}({','.join(constructor.params_type)}).md"))
+            if documentation_path.exists():
+                ret += f"<!-- Content pulled from \"{documentation_path.as_posix()}\" -->\n{read_file(documentation_path)}\n<!-- End of content -->\n"
+            else:
+                ret += f"<!-- Content to be pulled from \"{documentation_path.as_posix()}\" -->\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -384,7 +386,9 @@ class WikiPage:
                 ret += f"Equivalent to `{constant.value}`.\n"
             documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{constant.name}.md"))
             if documentation_path.exists():
-                ret += f"{read_file(documentation_path)}\n"
+                ret += f"<!-- Content pulled from \"{documentation_path.as_posix()}\" -->\n{read_file(documentation_path)}\n<!-- End of content -->\n"
+            else:
+                ret += f"<!-- Content to be pulled from \"{documentation_path.as_posix()}\" -->\n"
             ret += "\n"
         
         ret += "___"
@@ -424,7 +428,9 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} .{method.name} ({params_str})\n{{: aria-label='StaticMethods' }}\n"
             documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md"))
             if documentation_path.exists():
-                ret += f"{read_file(documentation_path)}\n"
+                ret += f"<!-- Content pulled from \"{documentation_path.as_posix()}\" -->\n{read_file(documentation_path)}\n<!-- End of content -->\n"
+            else:
+                ret += f"<!-- Content to be pulled from \"{documentation_path.as_posix()}\" -->\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -463,7 +469,9 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} :{method.name} ({params_str})\n{{: aria-label='Methods' }}\n"
             documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md"))
             if documentation_path.exists():
-                ret += f"{read_file(documentation_path)}\n"
+                ret += f"<!-- Content pulled from \"{documentation_path.as_posix()}\" -->\n{read_file(documentation_path)}\n<!-- End of content -->\n"
+            else:
+                ret += f"<!-- Content to be pulled from \"{documentation_path.as_posix()}\" -->\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -497,7 +505,9 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
             documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{field.name}.md"))
             if documentation_path.exists():
-                ret += f"{read_file(documentation_path)}\n"
+                ret += f"<!-- Content pulled from \"{documentation_path.as_posix()}\" -->\n{read_file(documentation_path)}\n<!-- End of content -->\n"
+            else:
+                ret += f"<!-- Content to be pulled from \"{documentation_path.as_posix()}\" -->\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -509,12 +519,16 @@ class WikiPage:
         if not self.constants:
             return ""
         
-        ret = "| Name | Value | Description |\n| --- | --- | --- |\n"
+        ret = ""
         desc_map = {}
         description_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/_table_descriptions.json"))
         if description_path.exists():
             desc_map = json.loads(read_file(description_path))
+            ret += f"<!-- Table descriptions pulled from \"{description_path.as_posix()}\" -->\n\n"
+        else:
+            ret += f"<!-- Table descriptions to be pulled from \"{description_path.as_posix()}\" -->\n\n"
         
+        ret += "| Name | Value | Description |\n| --- | --- | --- |\n"
         for constant in sorted(self.constants, key=lambda x: x.value):
             description = desc_map.get(constant.name, "").replace("\n", " ")
             ret += f"| {constant.name} | {constant.value} | {description} |\n"
@@ -563,10 +577,17 @@ class WikiPage:
         elif self.category == CategoryType.ENUM:
             category = "Enum"
         
+        head_content_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/_head.md"))
+        if head_content_path.exists():
+            head_content = f"<!-- Head content pulled from \"{head_content_path.as_posix()}\" -->\n{read_file(head_content_path)}\n<!-- End of content -->\n"
+        else:
+            head_content = f"<!-- Head content to be pulled from \"{head_content_path.as_posix()}\" -->\n"
+        
         if self.category == CategoryType.ENUM:
             replace_map = {
                 "NAME": self.name,
-                "CONTENTS": self.outputEnums() or None
+                "HEAD": head_content,
+                "CONTENTS": self.outputEnums()
             }
             template_path ="parseSource/template_enum.md"
         else:
@@ -574,6 +595,7 @@ class WikiPage:
                 "CATEGORY": category,
                 "NAME": self.name,
                 "RELATIONS": self.outputRelations() or None,
+                "HEAD": head_content,
                 "CONSTRUCTORS": self.outputConstructors() or None,
                 "CONSTANTS": self.outputConstants() or None,
                 "STATIC_METHODS": self.outputStaticMethods() or None,

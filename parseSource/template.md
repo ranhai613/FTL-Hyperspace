@@ -9,6 +9,7 @@ category: {{CATEGORY}}
 {?
 {{RELATIONS}}
 ?}
+{{HEAD}}
 {?
 ## Constructors
 {: #Constructors .lua-content-section}

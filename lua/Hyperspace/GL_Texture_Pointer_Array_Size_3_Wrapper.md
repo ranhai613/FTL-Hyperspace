@@ -7,6 +7,8 @@ category: Class
 
 # Class "GL_Texture_Pointer_Array_Size_3_Wrapper"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/GL_Texture_Pointer_Array_Size_3_Wrapper/_head.md" -->
+
 
 
 
@@ -17,12 +19,14 @@ category: Class
 {: #__getitem .lua-content-item aria-label='Methods' }
 #### [GL_Texture](../Graphics/GL_Texture) :__getitem (uint unknown)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/GL_Texture_Pointer_Array_Size_3_Wrapper/__getitem(uint).md" -->
 
 ___
 ### __setitem ()
 {: #__setitem .lua-content-item aria-label='Methods' }
 #### unknown :__setitem (uint unknown, [GL_Texture](../Graphics/GL_Texture) unknown)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/GL_Texture_Pointer_Array_Size_3_Wrapper/__setitem(uint,Graphics.GL_Texture).md" -->
 
 ___
 

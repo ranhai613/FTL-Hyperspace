@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "InternalEvents"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Defines/InternalEvents/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Defines/InternalEvents/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | UNKNOWN | 0 |  |

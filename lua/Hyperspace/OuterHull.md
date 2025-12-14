@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Selectable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/OuterHull/_head.md" -->
+
 
 
 
@@ -45,11 +47,13 @@ ___
 {: #breach .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .breach
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OuterHull/breach.md" -->
 
 ___
 ### heal
 {: #heal .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .heal
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/OuterHull/heal.md" -->
 
 ___

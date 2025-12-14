@@ -7,6 +7,8 @@ category: Class
 
 # Class "BlueprintManager"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/_head.md" -->
+
 
 
 
@@ -17,36 +19,42 @@ category: Class
 {: #GetAugmentBlueprint .lua-content-item aria-label='Methods' }
 #### [AugmentBlueprint](../Hyperspace/AugmentBlueprint) :GetAugmentBlueprint (string name)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetAugmentBlueprint(string).md" -->
 
 ___
 ### GetBlueprintList ()
 {: #GetBlueprintList .lua-content-item aria-label='Methods' }
 #### vector\<string\> :GetBlueprintList (string name)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetBlueprintList(string).md" -->
 
 ___
 ### GetCrewBlueprint ()
 {: #GetCrewBlueprint .lua-content-item aria-label='Methods' }
 #### [CrewBlueprint](../Hyperspace/CrewBlueprint) :GetCrewBlueprint (string name)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetCrewBlueprint(string).md" -->
 
 ___
 ### GetDroneBlueprint ()
 {: #GetDroneBlueprint .lua-content-item aria-label='Methods' }
 #### [DroneBlueprint](../Hyperspace/DroneBlueprint) :GetDroneBlueprint (string name)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetDroneBlueprint(string).md" -->
 
 ___
 ### GetShipBlueprint ()
 {: #GetShipBlueprint .lua-content-item aria-label='Methods' }
 #### [ShipBlueprint](../Hyperspace/ShipBlueprint) :GetShipBlueprint (string name, integer sector)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetShipBlueprint(string,integer).md" -->
 
 ___
 ### GetWeaponBlueprint ()
 {: #GetWeaponBlueprint .lua-content-item aria-label='Methods' }
 #### [WeaponBlueprint](../Hyperspace/WeaponBlueprint) :GetWeaponBlueprint (string name)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BlueprintManager/GetWeaponBlueprint(string).md" -->
 
 ___
 

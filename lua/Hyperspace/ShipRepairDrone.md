@@ -10,6 +10,8 @@ category: Class
 
 Extends: [CombatDrone](../Hyperspace/CombatDrone) <- [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/ShipRepairDrone/_head.md" -->
+
 
 
 
@@ -181,11 +183,13 @@ ___
 {: #repairBeam .lua-content-item aria-label='Fields' }
 #### CachedImage .repairBeam
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/ShipRepairDrone/repairBeam.md" -->
 
 ___
 ### repairBeams
 {: #repairBeams .lua-content-item aria-label='Fields' }
 #### vector\<number\> .repairBeams
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/ShipRepairDrone/repairBeams.md" -->
 
 ___

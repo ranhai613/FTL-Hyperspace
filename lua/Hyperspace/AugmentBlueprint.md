@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Blueprint](../Hyperspace/Blueprint)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/AugmentBlueprint/_head.md" -->
+
 
 
 
@@ -53,11 +55,13 @@ ___
 {: #stacking .lua-content-item aria-label='Fields' }
 #### boolean .stacking
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/AugmentBlueprint/stacking.md" -->
 
 ___
 ### value
 {: #value .lua-content-item aria-label='Fields' }
 #### number .value
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/AugmentBlueprint/value.md" -->
 
 ___

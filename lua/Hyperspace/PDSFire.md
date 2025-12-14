@@ -10,6 +10,8 @@ category: Class
 
 Extends: [LaserBlast](../Hyperspace/LaserBlast) <- [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [LaserBlast](../Hyperspace/LaserBlast) <- [Projectile](../Hyperspace/Pr
 {: #PDSFire .lua-content-item aria-label='Constructors' }
 #### [PDSFire](../Hyperspace/PDSFire) PDSFire ([Point](../Hyperspace/Point) pos, integer destinationSpace, [Pointf](../Hyperspace/Pointf) destination)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/PDSFire(Hyperspace.Point,integer,Hyperspace.Pointf).md" -->
 
 ___
 
@@ -144,29 +147,34 @@ ___
 {: #currentScale .lua-content-item aria-label='Fields' }
 #### number .currentScale
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/currentScale.md" -->
 
 ___
 ### explosionAnimation
 {: #explosionAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosionAnimation
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/explosionAnimation.md" -->
 
 ___
 ### missed
 {: #missed .lua-content-item aria-label='Fields' }
 #### boolean .missed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/missed.md" -->
 
 ___
 ### passedTarget
 {: #passedTarget .lua-content-item aria-label='Fields' }
 #### boolean .passedTarget
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/passedTarget.md" -->
 
 ___
 ### startPoint
 {: #startPoint .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startPoint
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/PDSFire/startPoint.md" -->
 
 ___

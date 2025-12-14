@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/_head.md" -->
+
 
 
 
@@ -97,18 +99,21 @@ ___
 {: #DePowerDrone .lua-content-item aria-label='Methods' }
 #### boolean :DePowerDrone ([Drone](../Hyperspace/Drone) drone, boolean unk)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/DePowerDrone(Hyperspace.Drone,boolean).md" -->
 
 ___
 ### RemoveDrone ()
 {: #RemoveDrone .lua-content-item aria-label='Methods' }
 #### [Drone](../Hyperspace/Drone) :RemoveDrone (integer slot)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/RemoveDrone(integer).md" -->
 
 ___
 ### SetBonusPower ()
 {: #SetBonusPower .lua-content-item aria-label='Methods' }
 #### void :SetBonusPower (integer amount, integer permanentPower)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/SetBonusPower(integer,integer).md" -->
 
 ___
 
@@ -181,50 +186,61 @@ ___
 {: #drone_count .lua-content-item aria-label='Fields' }
 #### integer .drone_count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/drone_count.md" -->
 
 ___
 ### drone_start
 {: #drone_start .lua-content-item aria-label='Fields' }
 #### integer .drone_start
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/drone_start.md" -->
 
 ___
 ### drones
 {: #drones .lua-content-item aria-label='Fields' }
 #### vector\<[Drone](../Hyperspace/Drone)\> .drones
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/drones.md" -->
 Vector starts at index 0 not 1.
+<!-- End of content -->
 
 ___
 ### iStartingBatteryPower
 {: #iStartingBatteryPower .lua-content-item aria-label='Fields' }
 #### integer .iStartingBatteryPower
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/iStartingBatteryPower.md" -->
 
 ___
 ### repowerList
 {: #repowerList .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .repowerList
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/repowerList.md" -->
 Vector starts at index 0 not 1.
+<!-- End of content -->
 
 ___
 ### slot_count
 {: #slot_count .lua-content-item aria-label='Fields' }
 #### integer .slot_count
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/slot_count.md" -->
 
 ___
 ### targetShip
 {: #targetShip .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .targetShip
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/targetShip.md" -->
 
 ___
 ### userPowered
 {: #userPowered .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .userPowered
 {: aria-label='Fields' }
+<!-- Content pulled from "lua-source-parts-inject/Hyperspace/DroneSystem/userPowered.md" -->
 Vector starts at index 0 not 1.
+<!-- End of content -->
 
 ___

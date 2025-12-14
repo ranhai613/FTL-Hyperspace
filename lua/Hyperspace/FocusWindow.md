@@ -11,6 +11,8 @@ category: Class
 
 Subclasses: [ChoiceBox](../Hyperspace/ChoiceBox), [Equipment](../Hyperspace/Equipment), [StarMap](../Hyperspace/StarMap), [TabbedWindow](../Hyperspace/TabbedWindow)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/FocusWindow/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -18,6 +20,7 @@ Subclasses: [ChoiceBox](../Hyperspace/ChoiceBox), [Equipment](../Hyperspace/Equi
 {: #FocusWindow .lua-content-item aria-label='Constructors' }
 #### [FocusWindow](../Hyperspace/FocusWindow) FocusWindow ()
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FocusWindow/FocusWindow().md" -->
 
 ___
 
@@ -31,17 +34,20 @@ ___
 {: #bCloseButtonSelected .lua-content-item aria-label='Fields' }
 #### boolean .bCloseButtonSelected
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FocusWindow/bCloseButtonSelected.md" -->
 
 ___
 ### bFullFocus
 {: #bFullFocus .lua-content-item aria-label='Fields' }
 #### boolean .bFullFocus
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FocusWindow/bFullFocus.md" -->
 
 ___
 ### bOpen
 {: #bOpen .lua-content-item aria-label='Fields' }
 #### boolean .bOpen
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/FocusWindow/bOpen.md" -->
 
 ___

@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [ShipSystem](../Hyperspace/ShipSystem)
 {: #Shields .lua-content-item aria-label='Constructors' }
 #### [Shields](../Hyperspace/Shields) Shields (integer roomId, integer shipId, integer startingPower, string shieldFile)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/Shields(integer,integer,integer,string).md" -->
 
 ___
 
@@ -106,30 +109,35 @@ ___
 {: #AddSuperShield .lua-content-item aria-label='Methods' }
 #### void :AddSuperShield ([Point](../Hyperspace/Point) pos)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/AddSuperShield(Hyperspace.Point).md" -->
 
 ___
 ### CollisionReal ()
 {: #CollisionReal .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionReal (number x, number y, [Damage](../Hyperspace/Damage) damage, boolean force)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/CollisionReal(number,number,Hyperspace.Damage,boolean).md" -->
 
 ___
 ### InstantCharge ()
 {: #InstantCharge .lua-content-item aria-label='Methods' }
 #### void :InstantCharge ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/InstantCharge().md" -->
 
 ___
 ### SetBaseEllipse ()
 {: #SetBaseEllipse .lua-content-item aria-label='Methods' }
 #### void :SetBaseEllipse ([Ellipse](../Hyperspace/Ellipse) ellipse)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/SetBaseEllipse(Hyperspace.Ellipse).md" -->
 
 ___
 ### SetHackingLevel ()
 {: #SetHackingLevel .lua-content-item aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/SetHackingLevel(integer).md" -->
 
 ___
 
@@ -202,131 +210,153 @@ ___
 {: #bBarrierMode .lua-content-item aria-label='Fields' }
 #### boolean .bBarrierMode
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/bBarrierMode.md" -->
 
 ___
 ### bEnemyPresent
 {: #bEnemyPresent .lua-content-item aria-label='Fields' }
 #### boolean .bEnemyPresent
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/bEnemyPresent.md" -->
 
 ___
 ### bExcessChargeHack
 {: #bExcessChargeHack .lua-content-item aria-label='Fields' }
 #### boolean .bExcessChargeHack
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/bExcessChargeHack.md" -->
 
 ___
 ### baseShield
 {: #baseShield .lua-content-item aria-label='Fields' }
 #### [Ellipse](../Hyperspace/Ellipse) .baseShield
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/baseShield.md" -->
 
 ___
 ### center
 {: #center .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .center
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/center.md" -->
 
 ___
 ### chargeTime
 {: #chargeTime .lua-content-item aria-label='Fields' }
 #### number .chargeTime
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/chargeTime.md" -->
 
 ___
 ### ellipseRatio
 {: #ellipseRatio .lua-content-item aria-label='Fields' }
 #### number .ellipseRatio
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/ellipseRatio.md" -->
 
 ___
 ### iHighlightedSide
 {: #iHighlightedSide .lua-content-item aria-label='Fields' }
 #### integer .iHighlightedSide
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/iHighlightedSide.md" -->
 
 ___
 ### lastHitShieldLevel
 {: #lastHitShieldLevel .lua-content-item aria-label='Fields' }
 #### integer .lastHitShieldLevel
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/lastHitShieldLevel.md" -->
 
 ___
 ### lastHitTimer
 {: #lastHitTimer .lua-content-item aria-label='Fields' }
 #### number .lastHitTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/lastHitTimer.md" -->
 
 ___
 ### shieldHits
 {: #shieldHits .lua-content-item aria-label='Fields' }
 #### vector\<[Shields.ShieldAnimation](../Hyperspace/Shields.ShieldAnimation)\> .shieldHits
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldHits.md" -->
 
 ___
 ### shieldImage
 {: #shieldImage .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .shieldImage
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldImage.md" -->
 
 ___
 ### shieldImageName
 {: #shieldImageName .lua-content-item aria-label='Fields' }
 #### string .shieldImageName
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldImageName.md" -->
 
 ___
 ### shieldPrimitive
 {: #shieldPrimitive .lua-content-item aria-label='Fields' }
 #### [GL_Primitive](../Graphics/GL_Primitive) .shieldPrimitive
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldPrimitive.md" -->
 
 ___
 ### shields
 {: #shields .lua-content-item aria-label='Fields' }
 #### [Shield](../Hyperspace/Shield) .shields
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shields.md" -->
 
 ___
 ### shieldsDown
 {: #shieldsDown .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsDown
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldsDown.md" -->
 
 ___
 ### shieldsDownPoint
 {: #shieldsDownPoint .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .shieldsDownPoint
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldsDownPoint.md" -->
 
 ___
 ### shieldsUp
 {: #shieldsUp .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .shieldsUp
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shieldsUp.md" -->
 
 ___
 ### shields_shutdown
 {: #shields_shutdown .lua-content-item aria-label='Fields' }
 #### boolean .shields_shutdown
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/shields_shutdown.md" -->
 
 ___
 ### superShieldDown
 {: #superShieldDown .lua-content-item aria-label='Fields' }
 #### boolean .superShieldDown
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/superShieldDown.md" -->
 
 ___
 ### superShieldUp
 {: #superShieldUp .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .superShieldUp
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/superShieldUp.md" -->
 
 ___
 ### superUpLoc
 {: #superUpLoc .lua-content-item aria-label='Fields' }
 #### [Point](../Hyperspace/Point) .superUpLoc
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Shields/superUpLoc.md" -->
 
 ___

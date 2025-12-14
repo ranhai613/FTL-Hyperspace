@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "CrewStat"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/CrewStat/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Hyperspace/CrewStat/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | MAX_HEALTH | 0 |  |

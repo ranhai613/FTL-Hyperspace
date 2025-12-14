@@ -12,6 +12,8 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 
 Subclasses: [PDSFire](../Hyperspace/PDSFire)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/LaserBlast/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -19,6 +21,7 @@ Subclasses: [PDSFire](../Hyperspace/PDSFire)
 {: #LaserBlast .lua-content-item aria-label='Constructors' }
 #### [LaserBlast](../Hyperspace/LaserBlast) LaserBlast ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/LaserBlast/LaserBlast(Hyperspace.Pointf,integer,integer,Hyperspace.Pointf).md" -->
 
 ___
 
@@ -140,17 +143,20 @@ ___
 {: #movingTarget .lua-content-item aria-label='Fields' }
 #### [Targetable](../Hyperspace/Targetable) .movingTarget
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/LaserBlast/movingTarget.md" -->
 
 ___
 ### spinAngle
 {: #spinAngle .lua-content-item aria-label='Fields' }
 #### number .spinAngle
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/LaserBlast/spinAngle.md" -->
 
 ___
 ### spinSpeed
 {: #spinSpeed .lua-content-item aria-label='Fields' }
 #### number .spinSpeed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/LaserBlast/spinSpeed.md" -->
 
 ___

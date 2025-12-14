@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/_head.md" -->
+
 
 
 
@@ -97,48 +99,56 @@ ___
 {: #CanReceive .lua-content-item aria-label='Methods' }
 #### boolean :CanReceive ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/CanReceive().md" -->
 
 ___
 ### CanSend ()
 {: #CanSend .lua-content-item aria-label='Methods' }
 #### boolean :CanSend ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/CanSend().md" -->
 
 ___
 ### Charged ()
 {: #Charged .lua-content-item aria-label='Methods' }
 #### boolean :Charged ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/Charged().md" -->
 
 ___
 ### ForceReady ()
 {: #ForceReady .lua-content-item aria-label='Methods' }
 #### void :ForceReady ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/ForceReady().md" -->
 
 ___
 ### GetChargedPercent ()
 {: #GetChargedPercent .lua-content-item aria-label='Methods' }
 #### number :GetChargedPercent ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/GetChargedPercent().md" -->
 
 ___
 ### InitiateTeleport ()
 {: #InitiateTeleport .lua-content-item aria-label='Methods' }
 #### void :InitiateTeleport ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/InitiateTeleport().md" -->
 
 ___
 ### SetArmed ()
 {: #SetArmed .lua-content-item aria-label='Methods' }
 #### void :SetArmed (integer armed)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/SetArmed(integer).md" -->
 
 ___
 ### SetHackingLevel ()
 {: #SetHackingLevel .lua-content-item aria-label='Methods' }
 #### void :SetHackingLevel (integer hackingLevel)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/SetHackingLevel(integer).md" -->
 
 ___
 
@@ -211,47 +221,55 @@ ___
 {: #bCanReceive .lua-content-item aria-label='Fields' }
 #### boolean .bCanReceive
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/bCanReceive.md" -->
 
 ___
 ### bCanSend
 {: #bCanSend .lua-content-item aria-label='Fields' }
 #### boolean .bCanSend
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/bCanSend.md" -->
 
 ___
 ### bSuperShields
 {: #bSuperShields .lua-content-item aria-label='Fields' }
 #### boolean .bSuperShields
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/bSuperShields.md" -->
 
 ___
 ### chargeLevel
 {: #chargeLevel .lua-content-item aria-label='Fields' }
 #### number .chargeLevel
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/chargeLevel.md" -->
 
 ___
 ### crewSlots
 {: #crewSlots .lua-content-item aria-label='Fields' }
 #### vector\<boolean\> .crewSlots
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/crewSlots.md" -->
 
 ___
 ### iArmed
 {: #iArmed .lua-content-item aria-label='Fields' }
 #### integer .iArmed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/iArmed.md" -->
 
 ___
 ### iNumSlots
 {: #iNumSlots .lua-content-item aria-label='Fields' }
 #### integer .iNumSlots
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/iNumSlots.md" -->
 
 ___
 ### iPreparedCrew
 {: #iPreparedCrew .lua-content-item aria-label='Fields' }
 #### integer .iPreparedCrew
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TeleportSystem/iPreparedCrew.md" -->
 
 ___

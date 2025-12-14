@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "StatBoostDefinition.CrewTarget"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/StatBoostDefinition.CrewTarget/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Hyperspace/StatBoostDefinition.CrewTarget/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | ALLIES | 0 |  |

@@ -10,6 +10,8 @@ category: Class
 
 Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [SpaceDrone](../Hyperspace/SpaceDrone) <- [Drone](../Hyperspace/Drone)
 {: #HackingDrone .lua-content-item aria-label='Constructors' }
 #### [HackingDrone](../Hyperspace/HackingDrone) HackingDrone ()
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/HackingDrone().md" -->
 
 ___
 
@@ -98,18 +101,21 @@ ___
 {: #CollisionMoving .lua-content-item aria-label='Methods' }
 #### [CollisionResponse](../Hyperspace/CollisionResponse) :CollisionMoving ([Pointf](../Hyperspace/Pointf) start, [Pointf](../Hyperspace/Pointf) finish, [Damage](../Hyperspace/Damage) damage, boolean raytrace)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/CollisionMoving(Hyperspace.Pointf,Hyperspace.Pointf,Hyperspace.Damage,boolean).md" -->
 
 ___
 ### OnLoop ()
 {: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/OnLoop().md" -->
 
 ___
 ### SetMovementTarget ()
 {: #SetMovementTarget .lua-content-item aria-label='Methods' }
 #### void :SetMovementTarget ([Targetable](../Hyperspace/Targetable) target)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/SetMovementTarget(Hyperspace.Targetable).md" -->
 
 ___
 
@@ -185,71 +191,83 @@ ___
 {: #arrived .lua-content-item aria-label='Fields' }
 #### boolean .arrived
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/arrived.md" -->
 
 ___
 ### droneImage_off
 {: #droneImage_off .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_off
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/droneImage_off.md" -->
 
 ___
 ### droneImage_on
 {: #droneImage_on .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .droneImage_on
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/droneImage_on.md" -->
 
 ___
 ### explosion
 {: #explosion .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .explosion
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/explosion.md" -->
 
 ___
 ### extending
 {: #extending .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .extending
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/extending.md" -->
 
 ___
 ### finalDestination
 {: #finalDestination .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .finalDestination
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/finalDestination.md" -->
 
 ___
 ### finishedSetup
 {: #finishedSetup .lua-content-item aria-label='Fields' }
 #### boolean .finishedSetup
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/finishedSetup.md" -->
 
 ___
 ### flashTracker
 {: #flashTracker .lua-content-item aria-label='Fields' }
 #### [AnimationTracker](../Hyperspace/AnimationTracker) .flashTracker
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/flashTracker.md" -->
 
 ___
 ### flying
 {: #flying .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .flying
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/flying.md" -->
 
 ___
 ### lightImage
 {: #lightImage .lua-content-item aria-label='Fields' }
 #### [GL_Texture](../Graphics/GL_Texture) .lightImage
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/lightImage.md" -->
 
 ___
 ### prefRoom
 {: #prefRoom .lua-content-item aria-label='Fields' }
 #### integer .prefRoom
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/prefRoom.md" -->
 
 ___
 ### startingPosition
 {: #startingPosition .lua-content-item aria-label='Fields' }
 #### [Pointf](../Hyperspace/Pointf) .startingPosition
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/HackingDrone/startingPosition.md" -->
 
 ___

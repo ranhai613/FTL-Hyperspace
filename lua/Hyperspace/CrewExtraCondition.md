@@ -7,6 +7,11 @@ category: Enum
 
 # Enum "CrewExtraCondition"
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/CrewExtraCondition/_head.md" -->
+
+
+<!-- Table descriptions pulled from "lua-source-parts-inject/Hyperspace/CrewExtraCondition/_table_descriptions.json" -->
+
 | Name | Value | Description |
 | --- | --- | --- |
 | BURNING | 0 |  |

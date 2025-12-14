@@ -10,6 +10,8 @@ category: Class
 
 Extends: [GenericButton](../Hyperspace/GenericButton)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [GenericButton](../Hyperspace/GenericButton)
 {: #TextButton .lua-content-item aria-label='Constructors' }
 #### [TextButton](../Hyperspace/TextButton) TextButton ()
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton/TextButton().md" -->
 
 ___
 
@@ -49,18 +52,21 @@ ___
 {: #OnInit .lua-content-item aria-label='Methods' }
 #### void :OnInit ([Point](../Hyperspace/Point) pos, [Point](../Hyperspace/Point) size, integer cornerInset, [TextString](../Hyperspace/TextString) buttonLabel, integer font)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton/OnInit(Hyperspace.Point,Hyperspace.Point,integer,Hyperspace.TextString,integer).md" -->
 
 ___
 ### OnRender ()
 {: #OnRender .lua-content-item aria-label='Methods' }
 #### void :OnRender ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton/OnRender().md" -->
 
 ___
 ### ResetPrimitives ()
 {: #ResetPrimitives .lua-content-item aria-label='Methods' }
 #### void :ResetPrimitives ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/TextButton/ResetPrimitives().md" -->
 
 ___
 

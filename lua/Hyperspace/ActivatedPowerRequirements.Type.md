@@ -7,4 +7,6 @@ category: Enum
 
 # Enum "ActivatedPowerRequirements.Type"
 
-{{CONTENTS}}
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/ActivatedPowerRequirements.Type/_head.md" -->
+
+

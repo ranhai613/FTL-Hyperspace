@@ -10,6 +10,8 @@ category: Class
 
 Extends: [ShipSystem](../Hyperspace/ShipSystem)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/BatterySystem/_head.md" -->
+
 
 
 
@@ -165,11 +167,13 @@ ___
 {: #bTurnedOn .lua-content-item aria-label='Fields' }
 #### boolean .bTurnedOn
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BatterySystem/bTurnedOn.md" -->
 
 ___
 ### soundeffect
 {: #soundeffect .lua-content-item aria-label='Fields' }
 #### string .soundeffect
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BatterySystem/soundeffect.md" -->
 
 ___

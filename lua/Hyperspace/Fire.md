@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Spreadable](../Hyperspace/Spreadable) <- [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Selectable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/_head.md" -->
+
 
 
 
@@ -20,18 +22,21 @@ Extends: [Spreadable](../Hyperspace/Spreadable) <- [Repairable](../Hyperspace/Re
 {: #OnLoop .lua-content-item aria-label='Methods' }
 #### void :OnLoop ()
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/OnLoop().md" -->
 
 ___
 ### UpdateDeathTimer ()
 {: #UpdateDeathTimer .lua-content-item aria-label='Methods' }
 #### void :UpdateDeathTimer (integer connectedFires)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/UpdateDeathTimer(integer).md" -->
 
 ___
 ### UpdateStartTimer ()
 {: #UpdateStartTimer .lua-content-item aria-label='Methods' }
 #### void :UpdateStartTimer (integer doorLevel)
 {: aria-label='Methods' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/UpdateStartTimer(integer).md" -->
 
 ___
 
@@ -72,35 +77,41 @@ ___
 {: #bWasOnFire .lua-content-item aria-label='Fields' }
 #### boolean .bWasOnFire
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/bWasOnFire.md" -->
 
 ___
 ### fDeathTimer
 {: #fDeathTimer .lua-content-item aria-label='Fields' }
 #### number .fDeathTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/fDeathTimer.md" -->
 
 ___
 ### fOxygen
 {: #fOxygen .lua-content-item aria-label='Fields' }
 #### number .fOxygen
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/fOxygen.md" -->
 
 ___
 ### fStartTimer
 {: #fStartTimer .lua-content-item aria-label='Fields' }
 #### number .fStartTimer
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/fStartTimer.md" -->
 
 ___
 ### fireAnimation
 {: #fireAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .fireAnimation
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/fireAnimation.md" -->
 
 ___
 ### smokeAnimation
 {: #smokeAnimation .lua-content-item aria-label='Fields' }
 #### [Animation](../Hyperspace/Animation) .smokeAnimation
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/Fire/smokeAnimation.md" -->
 
 ___

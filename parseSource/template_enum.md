@@ -7,4 +7,6 @@ category: Enum
 
 # Enum "{{NAME}}"
 
+{{HEAD}}
+
 {{CONTENTS}}

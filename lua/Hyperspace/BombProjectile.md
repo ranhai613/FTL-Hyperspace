@@ -10,6 +10,8 @@ category: Class
 
 Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/Collideable)
 
+<!-- Head content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/_head.md" -->
+
 
 ## Constructors
 {: #Constructors .lua-content-section}
@@ -17,6 +19,7 @@ Extends: [Projectile](../Hyperspace/Projectile) <- [Collideable](../Hyperspace/C
 {: #BombProjectile .lua-content-item aria-label='Constructors' }
 #### [BombProjectile](../Hyperspace/BombProjectile) BombProjectile ([Pointf](../Hyperspace/Pointf) _position, integer _ownerId, integer _targetId, [Pointf](../Hyperspace/Pointf) _target)
 {: aria-label='Constructors' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/BombProjectile(Hyperspace.Pointf,integer,integer,Hyperspace.Pointf).md" -->
 
 ___
 
@@ -138,29 +141,34 @@ ___
 {: #bMissed .lua-content-item aria-label='Fields' }
 #### boolean .bMissed
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/bMissed.md" -->
 
 ___
 ### bSuperShield
 {: #bSuperShield .lua-content-item aria-label='Fields' }
 #### boolean .bSuperShield
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/bSuperShield.md" -->
 
 ___
 ### explosiveDelay
 {: #explosiveDelay .lua-content-item aria-label='Fields' }
 #### number .explosiveDelay
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/explosiveDelay.md" -->
 
 ___
 ### missMessage
 {: #missMessage .lua-content-item aria-label='Fields' }
 #### DamageMessage .missMessage
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/missMessage.md" -->
 
 ___
 ### superShieldBypass
 {: #superShieldBypass .lua-content-item aria-label='Fields' }
 #### boolean .superShieldBypass
 {: aria-label='Fields' }
+<!-- Content to be pulled from "lua-source-parts-inject/Hyperspace/BombProjectile/superShieldBypass.md" -->
 
 ___
