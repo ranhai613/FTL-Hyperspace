@@ -1,4 +1,4 @@
-from parseutility import get_scope_content, sanitize_type, read_file
+from parseutility import get_scope_content, sanitize_type, read_file, escape_path_component
 from eventhookbuilder import EventHookBuilder
 from additionalEnumTable import AdditionalEnum, AdditionalEnumBuilder
 import os
@@ -349,7 +349,7 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(constructor.className, constructor.returnType)} {constructor.name} ({params_str})\n{{: aria-label='Constructors' }}\n"
-            documantation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.className}/{constructor.name}({",".join(constructor.params_type)}).md")
+            documantation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{constructor.name}({",".join(constructor.params_type)}).md"))
             if documantation_path.exists():
                 ret += f"{read_file(documantation_path)}\n"
             ret += "\n"
@@ -382,7 +382,7 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(constant.className, get_lua_type(constant.returnType))} .{constant.name}\n{{: aria-label='Constants' }}\n"
             if constant.value is not None:
                 ret += f"Equivalent to `{constant.value}`.\n"
-            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.className}/{constant.name}.md")
+            documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{constant.name}.md"))
             if documentation_path.exists():
                 ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
@@ -422,7 +422,7 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} .{method.name} ({params_str})\n{{: aria-label='StaticMethods' }}\n"
-            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md")
+            documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md"))
             if documentation_path.exists():
                 ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
@@ -461,7 +461,7 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} :{method.name} ({params_str})\n{{: aria-label='Methods' }}\n"
-            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md")
+            documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md"))
             if documentation_path.exists():
                 ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
@@ -495,7 +495,7 @@ class WikiPage:
                 ret += " (Read-only)"
             ret += f"\n{{: #{field.name} .lua-content-item aria-label='Fields' }}\n"
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
-            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{field.name}.md")
+            documentation_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{field.name}.md"))
             if documentation_path.exists():
                 ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
@@ -511,7 +511,7 @@ class WikiPage:
         
         ret = "| Name | Value | Description |\n| --- | --- | --- |\n"
         desc_map = {}
-        description_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/_table_descriptions.json")
+        description_path = Path(escape_path_component(f"lua-source-parts-inject/{self.moduleName}/{self.name}/_table_descriptions.json"))
         if description_path.exists():
             desc_map = json.loads(read_file(description_path))
         

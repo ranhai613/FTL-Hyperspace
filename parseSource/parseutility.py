@@ -50,8 +50,11 @@ def parse_function_args(args: str) -> list[dict[str, str]]:
             ret.append({"name": argInfo[1], "type": argInfo[0]})
     return ret
 
+def escape_path_component(component: str) -> str:
+    return re.sub(r'[<>:"|?*]', '_', component)
+
 def make_file(path, content: str):
-    path = re.sub(r'[<>:"|?*]', '_', str(path))
+    path = escape_path_component(str(path))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf8') as f:
         f.write(content)
