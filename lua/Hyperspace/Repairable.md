@@ -29,6 +29,7 @@ Subclasses: [OuterHull](../Hyperspace/OuterHull), [Spreadable](../Hyperspace/Spr
 | integer | .[selectedState](Selectable#selectedState) |
 
 </details>
+
 ___
 ### fDamage
 {: #fDamage .lua-content-item aria-label='Fields' }

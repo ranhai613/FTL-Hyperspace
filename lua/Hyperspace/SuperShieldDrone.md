@@ -99,6 +99,7 @@ ___
 | boolean | :[ValidTarget](SpaceDrone#ValidTarget) () |
 
 </details>
+
 ___
 ### GetWeaponCooldown ()
 {: #GetWeaponCooldown .lua-content-item aria-label='Methods' }
@@ -194,6 +195,7 @@ ___
 | [Animation](../Hyperspace/Animation) | .[weapon_animation](SpaceDrone#weapon_animation) |
 
 </details>
+
 ___
 ### drone_image_glow
 {: #drone_image_glow .lua-content-item aria-label='Fields' }

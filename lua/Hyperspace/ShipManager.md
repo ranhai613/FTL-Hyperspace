@@ -43,6 +43,7 @@ ___
 | void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
 
 </details>
+
 ___
 ### AddCrewMemberFromBlueprint ()
 {: #AddCrewMemberFromBlueprint .lua-content-item aria-label='Methods' }
@@ -501,6 +502,7 @@ ___
 | integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
+
 ___
 ### _targetable (Read-only)
 {: #_targetable .lua-content-item aria-label='Fields' }

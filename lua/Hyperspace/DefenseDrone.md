@@ -93,6 +93,7 @@ ___
 | boolean | :[ValidTarget](SpaceDrone#ValidTarget) () |
 
 </details>
+
 ___
 ### GetTooltip ()
 {: #GetTooltip .lua-content-item aria-label='Methods' }
@@ -192,6 +193,7 @@ ___
 | [Animation](../Hyperspace/Animation) | .[weapon_animation](SpaceDrone#weapon_animation) |
 
 </details>
+
 ___
 ### currentSpeed
 {: #currentSpeed .lua-content-item aria-label='Fields' }

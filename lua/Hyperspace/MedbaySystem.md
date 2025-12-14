@@ -32,6 +32,7 @@ ___
 
 
 
+
 ## Methods
 {: #Methods .lua-content-section}
 ___
@@ -92,6 +93,7 @@ ___
 | boolean | :[UpgradeSystem](ShipSystem#UpgradeSystem) (integer amount) |
 
 </details>
+
 
 
 
@@ -158,4 +160,5 @@ ___
 | table | .[table](ShipSystem#table) |
 
 </details>
+
 

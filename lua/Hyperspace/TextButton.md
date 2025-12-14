@@ -43,6 +43,7 @@ ___
 | void | :[SetLocation](GenericButton#SetLocation) ([Point](../Hyperspace/Point) pos) |
 
 </details>
+
 ___
 ### OnInit ()
 {: #OnInit .lua-content-item aria-label='Methods' }
@@ -89,4 +90,5 @@ ___
 | boolean | .[touchSelectable](GenericButton#touchSelectable) |
 
 </details>
+
 

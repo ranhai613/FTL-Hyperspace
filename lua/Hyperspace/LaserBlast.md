@@ -40,6 +40,7 @@ ___
 
 
 
+
 ## Methods
 {: #Methods .lua-content-section}
 ___
@@ -92,6 +93,7 @@ ___
 
 
 
+
 ## Fields
 {: #Fields .lua-content-section}
 <details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
@@ -132,6 +134,7 @@ ___
 | integer | .[targetId](Projectile#targetId) |
 
 </details>
+
 ___
 ### movingTarget
 {: #movingTarget .lua-content-item aria-label='Fields' }

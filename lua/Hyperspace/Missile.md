@@ -38,6 +38,7 @@ ___
 
 
 
+
 ## Methods
 {: #Methods .lua-content-section}
 ___
@@ -90,6 +91,7 @@ ___
 
 
 
+
 ## Fields
 {: #Fields .lua-content-section}
 ___
@@ -131,4 +133,5 @@ ___
 | integer | .[targetId](Projectile#targetId) |
 
 </details>
+
 

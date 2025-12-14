@@ -32,6 +32,7 @@ ___
 
 
 
+
 ## Methods
 {: #Methods .lua-content-section}
 <details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
@@ -90,6 +91,7 @@ ___
 | boolean | :[UpgradeSystem](ShipSystem#UpgradeSystem) (integer amount) |
 
 </details>
+
 ___
 ### SetArmed ()
 {: #SetArmed .lua-content-item aria-label='Methods' }
@@ -167,6 +169,7 @@ ___
 | table | .[table](ShipSystem#table) |
 
 </details>
+
 ___
 ### bBlocked
 {: #bBlocked .lua-content-item aria-label='Fields' }

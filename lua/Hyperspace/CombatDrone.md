@@ -95,6 +95,7 @@ ___
 | boolean | :[ValidTargetObject](SpaceDrone#ValidTargetObject) ([Targetable](../Hyperspace/Targetable) target) |
 
 </details>
+
 ___
 ### PickTarget ()
 {: #PickTarget .lua-content-item aria-label='Methods' }
@@ -176,6 +177,7 @@ ___
 | [Animation](../Hyperspace/Animation) | .[weapon_animation](SpaceDrone#weapon_animation) |
 
 </details>
+
 ___
 ### drone_image_charging
 {: #drone_image_charging .lua-content-item aria-label='Fields' }

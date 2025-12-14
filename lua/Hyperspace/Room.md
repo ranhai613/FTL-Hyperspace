@@ -37,6 +37,7 @@ ___
 | integer | .[selectedState](Selectable#selectedState) |
 
 </details>
+
 ___
 ### bBlackedOut
 {: #bBlackedOut .lua-content-item aria-label='Fields' }

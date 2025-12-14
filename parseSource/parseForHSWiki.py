@@ -371,7 +371,7 @@ class WikiPage:
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Constant | Value |\n| --- | --- |\n"
                 for constant in sorted(inherited_map[parentClass], key=lambda x: x.name):
                     ret += f"| .[{constant.name}]({md_ref_path(self.moduleName, constant.moduleName, constant.className, f"#{to_md_ref(constant.name)}")}) | `{constant.value}` |\n"
-            ret += "\n</details>\n"
+            ret += "\n</details>\n\n"
         
         if not self.constants:
             return ret
@@ -408,7 +408,7 @@ class WikiPage:
                         params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
                     params_str = ", ".join(params)
                     ret += f"| {wrap_type_for_md(method.className, method.returnType)} | .[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
-            ret += "\n</details>\n"
+            ret += "\n</details>\n\n"
         
         if not self.staticMethods:
             return ret
@@ -446,7 +446,7 @@ class WikiPage:
                         params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
                     params_str = ", ".join(params)
                     ret += f"| {wrap_type_for_md(method.className, method.returnType)} | :[{method.name}]({md_ref_path(self.moduleName, method.moduleName, method.className, f"#{to_md_ref(method.name)}")}) ({params_str}) |\n"
-            ret += "\n</details>\n"
+            ret += "\n</details>\n\n"
         
         if not self.methods:
             return ret
@@ -480,7 +480,7 @@ class WikiPage:
                 ret += f"\n#### From {wrap_type_for_md(self.moduleName, get_lua_type(parentClass))}\n\n| Type | Field |\n| --- | --- |\n"
                 for field in sorted(inherited_map[parentClass], key=lambda x: x.name):
                     ret += f"| {wrap_type_for_md(field.className, field.returnType)} | .[{field.name}]({md_ref_path(self.moduleName, field.moduleName, field.className, f"#{to_md_ref(field.name)}")}) |\n"
-            ret += "\n</details>\n"
+            ret += "\n</details>\n\n"
         
         if not self.fields:
             return ret
@@ -501,6 +501,8 @@ class WikiPage:
     
     def outputEnums(self) -> str:
         assert self.category == CategoryType.ENUM, "WikiPage: outputEnums called on non-enum page"
+        if not self.constants:
+            return ""
         
         ret = "| Name | Value | Description |\n| --- | --- | --- |\n"
         for constant in sorted(self.constants, key=lambda x: x.value):
@@ -1189,22 +1191,28 @@ def main():
     for data in DATA_LIST:
         parse_LUA_wrap(eventHookBuilder, additionalEnumBuilder, enumMap, data["luaWrap"], HSData, data["wikiData"])
     
-    # result = "---@meta\n"
-    # for data in DATA_LIST:
-    #     result += parse_LUA_wrap(eventHookBuilder, additionalEnumBuilder, enumMap, data["luaWrap"], HSData, data["wikiData"])
+    for processor in additionalEnumBuilder.processors:
+        module_name = processor.additional_enum.tableName.split(".")[0]
+        WikiPage(
+            category=CategoryType.ENUM,
+            name=".".join(processor.additional_enum.tableName.split(".")[1:]),
+            moduleName=module_name,
+            parentNames=[],
+            constructors=[],
+            constants=[WikiPageItem(
+                name=constant_name,
+                propertyType=PropertyType.CONSTANT,
+                className=processor.additional_enum.tableName,
+                moduleName=module_name,
+                returnType="integer",
+                value=constant_value,
+                ) for constant_name, constant_value in processor.data.items()],
+            staticMethods=[],
+            methods=[],
+            fields=[]
+        ).Output("lua")
 
-    # result += "\n" + additionalEnumBuilder.output()
-    # result = "\n".join([line.rstrip() for line in result.split("\n")]).strip()
-
-    # os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    
-    # with open(OUTPUT_PATH, 'w', encoding='utf8') as f:
-    #     f.write(result)
-    
     # eventHookBuilder.save(EVENTHOOKS_OUTPUT_PATH)
     
-    # with open(ENUM_PARSE_REQUESTS_OUTPUT_PATH, 'w', encoding='utf8') as f:
-    #     json.dump(sorted(g_enum_parse_requests), f, indent=2)
-
 if __name__ == "__main__":
     main()

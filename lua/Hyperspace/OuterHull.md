@@ -39,6 +39,7 @@ Extends: [Repairable](../Hyperspace/Repairable) <- [Selectable](../Hyperspace/Se
 | integer | .[selectedState](Selectable#selectedState) |
 
 </details>
+
 ___
 ### breach
 {: #breach .lua-content-item aria-label='Fields' }

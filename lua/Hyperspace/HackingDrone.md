@@ -92,6 +92,7 @@ ___
 | boolean | :[ValidTargetObject](SpaceDrone#ValidTargetObject) ([Targetable](../Hyperspace/Targetable) target) |
 
 </details>
+
 ___
 ### CollisionMoving ()
 {: #CollisionMoving .lua-content-item aria-label='Methods' }
@@ -178,6 +179,7 @@ ___
 | [Animation](../Hyperspace/Animation) | .[weapon_animation](SpaceDrone#weapon_animation) |
 
 </details>
+
 ___
 ### arrived
 {: #arrived .lua-content-item aria-label='Fields' }

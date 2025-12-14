@@ -41,6 +41,7 @@ ___
 
 
 
+
 ## Fields
 {: #Fields .lua-content-section}
 <details markdown="1"><summary id="InheritedFields" class="lua-content-item" markdown="span">Inherited Fields</summary>
@@ -55,6 +56,7 @@ ___
 | integer | .[type](Blueprint#type) |
 
 </details>
+
 ___
 ### boostPower
 {: #boostPower .lua-content-item aria-label='Fields' }

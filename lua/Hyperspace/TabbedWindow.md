@@ -29,6 +29,7 @@ Extends: [FocusWindow](../Hyperspace/FocusWindow)
 | boolean | .[bOpen](FocusWindow#bOpen) |
 
 </details>
+
 ___
 ### bBlockClose
 {: #bBlockClose .lua-content-item aria-label='Fields' }

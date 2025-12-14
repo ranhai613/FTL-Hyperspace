@@ -59,6 +59,7 @@ ___
 | boolean | .[bOpen](FocusWindow#bOpen) |
 
 </details>
+
 ___
 ### bChoosingNewSector
 {: #bChoosingNewSector .lua-content-item aria-label='Fields' }

@@ -32,6 +32,7 @@ ___
 
 
 
+
 ## Methods
 {: #Methods .lua-content-section}
 <details markdown="1"><summary id="InheritedMethods" class="lua-content-item" markdown="span">Inherited Methods</summary>
@@ -91,6 +92,7 @@ ___
 | boolean | :[UpgradeSystem](ShipSystem#UpgradeSystem) (integer amount) |
 
 </details>
+
 ___
 ### BlowHackingDrone ()
 {: #BlowHackingDrone .lua-content-item aria-label='Methods' }
@@ -162,6 +164,7 @@ ___
 | table | .[table](ShipSystem#table) |
 
 </details>
+
 ___
 ### bArmed
 {: #bArmed .lua-content-item aria-label='Fields' }

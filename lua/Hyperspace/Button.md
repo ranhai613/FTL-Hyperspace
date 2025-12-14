@@ -43,6 +43,7 @@ ___
 | void | :[SetHitBox](GenericButton#SetHitBox) ([Rect](../Hyperspace/Rect) rect) |
 
 </details>
+
 ___
 ### OnInit ()
 {: #OnInit .lua-content-item aria-label='Methods' }
@@ -106,6 +107,7 @@ ___
 | boolean | .[touchSelectable](GenericButton#touchSelectable) |
 
 </details>
+
 ___
 ### bMirror
 {: #bMirror .lua-content-item aria-label='Fields' }

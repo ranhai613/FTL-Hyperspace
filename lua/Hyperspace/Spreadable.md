@@ -41,6 +41,7 @@ Subclasses: [Fire](../Hyperspace/Fire)
 | integer | .[selectedState](Selectable#selectedState) |
 
 </details>
+
 ___
 ### soundName
 {: #soundName .lua-content-item aria-label='Fields' }

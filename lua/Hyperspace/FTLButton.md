@@ -34,6 +34,7 @@ Extends: [TextButton0](../Hyperspace/TextButton0) <- [GenericButton](../Hyperspa
 | void | :[SetLocation](GenericButton#SetLocation) ([Point](../Hyperspace/Point) pos) |
 
 </details>
+
 ___
 ### MouseMove ()
 {: #MouseMove .lua-content-item aria-label='Methods' }
@@ -74,4 +75,5 @@ ___
 | boolean | .[touchSelectable](GenericButton#touchSelectable) |
 
 </details>
+
 

@@ -47,6 +47,7 @@ ___
 | boolean | .[bOpen](FocusWindow#bOpen) |
 
 </details>
+
 ___
 ### centered
 {: #centered .lua-content-item aria-label='Fields' }

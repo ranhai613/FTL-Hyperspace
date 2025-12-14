@@ -54,6 +54,7 @@ Subclasses: [BoarderPodDrone](../Hyperspace/BoarderPodDrone), [CombatDrone](../H
 | void | :[SetWorldLocation](Drone#SetWorldLocation) ([Point](../Hyperspace/Point) point) |
 
 </details>
+
 ___
 ### CollisionMoving ()
 {: #CollisionMoving .lua-content-item aria-label='Methods' }
@@ -255,6 +256,7 @@ ___
 | integer | .[type](Drone#type) |
 
 </details>
+
 ___
 ### _collideable
 {: #_collideable .lua-content-item aria-label='Fields' }

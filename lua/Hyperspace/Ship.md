@@ -34,6 +34,7 @@ Extends: [ShipObject](../Hyperspace/ShipObject)
 | void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
 
 </details>
+
 ___
 ### BreachRandomHull ()
 {: #BreachRandomHull .lua-content-item aria-label='Methods' }
@@ -150,6 +151,7 @@ ___
 | integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
+
 ___
 ### bCloaked
 {: #bCloaked .lua-content-item aria-label='Fields' }

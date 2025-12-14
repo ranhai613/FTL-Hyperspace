@@ -42,6 +42,7 @@ ___
 | integer | :[GetType](Blueprint#GetType) () |
 
 </details>
+
 ___
 ### GetCurrentSkillColor ()
 {: #GetCurrentSkillColor .lua-content-item aria-label='Methods' }
@@ -89,6 +90,7 @@ ___
 | integer | .[type](Blueprint#type) |
 
 </details>
+
 ___
 ### colorChoices
 {: #colorChoices .lua-content-item aria-label='Fields' }

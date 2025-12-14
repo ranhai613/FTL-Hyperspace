@@ -90,6 +90,7 @@ ___
 | boolean | :[ValidTargetObject](SpaceDrone#ValidTargetObject) ([Targetable](../Hyperspace/Targetable) target) |
 
 </details>
+
 ___
 ### CanBeDeployed ()
 {: #CanBeDeployed .lua-content-item aria-label='Methods' }
@@ -189,6 +190,7 @@ ___
 | [Animation](../Hyperspace/Animation) | .[weapon_animation](SpaceDrone#weapon_animation) |
 
 </details>
+
 ___
 ### bDeliveredDrone
 {: #bDeliveredDrone .lua-content-item aria-label='Fields' }

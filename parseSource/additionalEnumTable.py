@@ -24,7 +24,7 @@ class AdditionalEnumProcessor:
 
 
 class AdditionalEnumBuilder:
-    def __init__(self, additional_enums: list):
+    def __init__(self, additional_enums: list[AdditionalEnum]):
         self.additional_enums = additional_enums
         self.processors = [AdditionalEnumProcessor(enum) for enum in additional_enums]
     

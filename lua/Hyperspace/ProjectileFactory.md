@@ -43,6 +43,7 @@ ___
 | void | :[RemoveAugmentation](ShipObject#RemoveAugmentation) (string augment) |
 
 </details>
+
 ___
 ### Fire ()
 {: #Fire .lua-content-item aria-label='Methods' }
@@ -112,6 +113,7 @@ ___
 | integer | .[iShipId](ShipObject#iShipId) |
 
 </details>
+
 ___
 ### autoFiring
 {: #autoFiring .lua-content-item aria-label='Fields' }

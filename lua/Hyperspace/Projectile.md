@@ -46,6 +46,7 @@ ___
 | boolean | :[ValidTargetLocation](Collideable#ValidTargetLocation) ([Pointf](../Hyperspace/Pointf) location) |
 
 </details>
+
 ___
 ### CollisionCheck ()
 {: #CollisionCheck .lua-content-item aria-label='Methods' }
