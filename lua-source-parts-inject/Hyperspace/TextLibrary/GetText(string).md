@@ -1,0 +1,1 @@
+Retrieve the corresponding text string from the `text_` xml files in the current language.

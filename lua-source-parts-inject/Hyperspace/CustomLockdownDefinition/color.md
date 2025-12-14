@@ -1,0 +1,1 @@
+The color that each shard will be tinted.

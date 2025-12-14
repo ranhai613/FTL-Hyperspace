@@ -1,0 +1,5 @@
+{
+  "SAME_TILE": "Treat beam hit as same tile as last frame",
+  "NEW_TILE": "Treat beam hit as new tile but same room as last frame",
+  "NEW_ROOM": "Treat beam hit as new room from last frame"
+}

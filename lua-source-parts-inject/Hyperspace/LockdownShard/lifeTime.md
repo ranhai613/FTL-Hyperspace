@@ -1,0 +1,1 @@
+The remaining time in seconds until this shard disappears.

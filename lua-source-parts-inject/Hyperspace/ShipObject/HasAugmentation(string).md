@@ -1,0 +1,1 @@
+Returns the number of the given augment you have, NOT a bool.

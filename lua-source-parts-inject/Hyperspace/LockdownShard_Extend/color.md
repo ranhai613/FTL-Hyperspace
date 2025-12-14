@@ -1,0 +1,1 @@
+The color that this shard is tinted.

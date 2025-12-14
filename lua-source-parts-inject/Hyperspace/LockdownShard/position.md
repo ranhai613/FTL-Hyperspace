@@ -1,0 +1,1 @@
+The current position of the shard.

@@ -1,0 +1,1 @@
+Breaches a random tile in the room with `roomId` as its id. This can select an already breached tile, in which case nothing will happen.

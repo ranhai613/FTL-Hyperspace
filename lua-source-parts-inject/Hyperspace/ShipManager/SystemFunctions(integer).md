@@ -1,0 +1,1 @@
+Returns whether the system has any power assigned to it.

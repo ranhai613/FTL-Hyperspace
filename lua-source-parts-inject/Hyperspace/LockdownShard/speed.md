@@ -1,0 +1,1 @@
+The rate at which the shard is moving.

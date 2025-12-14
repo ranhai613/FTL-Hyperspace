@@ -1,0 +1,1 @@
+The animation used for the shard visual.

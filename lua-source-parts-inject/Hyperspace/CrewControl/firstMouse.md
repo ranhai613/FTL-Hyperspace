@@ -1,0 +1,1 @@
+Affect the visual portion of the selection box

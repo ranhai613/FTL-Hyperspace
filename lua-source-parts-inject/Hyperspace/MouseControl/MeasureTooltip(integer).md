@@ -1,0 +1,1 @@
+`tooltipName` should be an id of the text without prefix `tooltip_`.

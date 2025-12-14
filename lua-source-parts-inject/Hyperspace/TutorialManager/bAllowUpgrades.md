@@ -1,0 +1,1 @@
+If true, player can open Upgrades screen.

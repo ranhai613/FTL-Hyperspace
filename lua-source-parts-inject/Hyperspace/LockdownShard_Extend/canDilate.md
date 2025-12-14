@@ -1,0 +1,1 @@
+If this shard is affected by time dilation.

@@ -1,0 +1,1 @@
+Returns the current `float` and `bool` value for the given `CrewStat`.

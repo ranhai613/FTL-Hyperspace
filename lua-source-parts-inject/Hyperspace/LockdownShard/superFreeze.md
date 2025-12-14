@@ -1,0 +1,1 @@
+If false, the shard will gradually complete its animation over the course of its lifetime. If true, the shard will not animation until the end of its lifetime, and will start the animation then at a faster pace.

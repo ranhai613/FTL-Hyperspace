@@ -1,0 +1,1 @@
+Returns the list of Drones for this ship, the `std::vector` it returns can be accessed like an array in Lua

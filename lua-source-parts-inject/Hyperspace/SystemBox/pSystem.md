@@ -1,0 +1,1 @@
+The ShipSystem managed by this SystemBox.

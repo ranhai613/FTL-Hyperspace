@@ -1,0 +1,1 @@
+Final boss event overrides the beacon, no visual indication.

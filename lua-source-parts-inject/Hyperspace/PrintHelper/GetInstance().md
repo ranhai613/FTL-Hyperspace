@@ -1,0 +1,1 @@
+Returns the main instance of `PrintHelper`. Always use this to access any members belonging to this class.

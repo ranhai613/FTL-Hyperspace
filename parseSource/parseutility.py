@@ -1,4 +1,5 @@
 import re
+import os
 
 def sanitize_type(type_str: str) -> str:
     return type_str.replace("std::", "").replace("const ", "").replace("*", "").replace("&", "").replace("unsigned ", "u").replace(" ", "")
@@ -48,3 +49,13 @@ def parse_function_args(args: str) -> list[dict[str, str]]:
         else:
             ret.append({"name": argInfo[1], "type": argInfo[0]})
     return ret
+
+def make_file(path, content: str):
+    path = re.sub(r'[<>:"|?*]', '_', str(path))
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w', encoding='utf8') as f:
+        f.write(content)
+
+def read_file(path: str) -> str:
+    with open(path, 'r', encoding='utf8') as f:
+        return f.read()

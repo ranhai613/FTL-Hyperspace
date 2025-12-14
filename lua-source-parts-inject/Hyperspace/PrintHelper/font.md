@@ -1,0 +1,1 @@
+The size of the font used. Default is 10.

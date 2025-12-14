@@ -1,0 +1,1 @@
+Sets a power loss level, like from an event except can be done at any time regardless of an event.

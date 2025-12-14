@@ -1,0 +1,5 @@
+{
+  "CONTINUE": "Call the next callback in the sequence if there is one",
+  "HALT": "Halt the callback loop, but still run subsequent C++ code",
+  "PREEMPT": "Halt the callback loop and skip subsequent C++ code"
+}

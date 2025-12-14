@@ -1,0 +1,1 @@
+If true, the game will display the value of `.data`, otherwise it will refer to the text id from the value of `.data`.

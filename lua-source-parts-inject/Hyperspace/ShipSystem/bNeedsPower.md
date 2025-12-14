@@ -1,0 +1,1 @@
+True for regular systems, false for subsystems.

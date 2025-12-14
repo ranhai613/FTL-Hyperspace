@@ -1,0 +1,1 @@
+Unlike other resources, fuel is mutable and should be modified directly instead of with a modify method

@@ -1,0 +1,1 @@
+[`ShipGraph`](#ShipGraph) `.GetShipInfo(int shipId)`

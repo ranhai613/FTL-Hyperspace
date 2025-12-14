@@ -1,0 +1,2 @@
+It directly damages the hull? What's more to say, I think negative numbers heal the hull. Could be cool for some random lifesaving or lifetaking mechanics that run mid-battle instead of during an event. Imagine if you could dump all power into hull integrity or something and lose 10% power for the rest of the fight but gain 10% hull, could be fun!
+`force` ignores whether or not the ship is jumping. If it is false and the ship is jumping, the damage will not be applied.

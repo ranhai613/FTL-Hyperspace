@@ -1,0 +1,1 @@
+Return: The horizontal/vertical size of the text. Note that the augments `x` and `y` do not affect the return value.

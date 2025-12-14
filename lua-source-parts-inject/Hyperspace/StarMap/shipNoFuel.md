@@ -1,0 +1,1 @@
+The no fuel variant of the `ship` icon.

@@ -1,0 +1,1 @@
+Sets the room to be selected (Yellow outline). Note: Must be done every tick to have an effect.

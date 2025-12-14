@@ -1,0 +1,1 @@
+Removes the specified augment from the ship. Does nothing if the augment isn't present. Works properly with hidden augments.

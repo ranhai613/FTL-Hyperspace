@@ -1,0 +1,1 @@
+If the shard has reached its destination.

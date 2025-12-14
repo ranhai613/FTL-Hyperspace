@@ -1,0 +1,1 @@
+Remove the current graphic from the selected stack.

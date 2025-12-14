@@ -1,0 +1,1 @@
+Contains the 3 background images of the sector map. Index selected via `worldLevel % 3`.

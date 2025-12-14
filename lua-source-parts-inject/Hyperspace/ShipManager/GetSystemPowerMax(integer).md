@@ -1,0 +1,1 @@
+What is the max power level of this system, functionally this is the same as the system's "level"

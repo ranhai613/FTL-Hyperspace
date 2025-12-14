@@ -1,0 +1,1 @@
+Adds the specified augment to the ship. Works properly with hidden augments.

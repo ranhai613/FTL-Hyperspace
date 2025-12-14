@@ -1,0 +1,1 @@
+Returns the number of drone parts the ship has.

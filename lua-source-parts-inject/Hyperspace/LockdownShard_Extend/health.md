@@ -1,0 +1,1 @@
+The current health of the shard. Is reduced by 1 for each hit from a crew member with base door damage. Only matters for door shards.

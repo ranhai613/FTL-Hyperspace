@@ -1,0 +1,1 @@
+Close game, autosave run, profile, and settings.

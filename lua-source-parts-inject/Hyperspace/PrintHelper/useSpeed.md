@@ -1,0 +1,1 @@
+Whether the speed at which messages are cleared scales with game speed. Default is `false`.

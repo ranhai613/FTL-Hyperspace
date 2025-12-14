@@ -1,0 +1,1 @@
+The offset from this SystemBox to the next in the UI.

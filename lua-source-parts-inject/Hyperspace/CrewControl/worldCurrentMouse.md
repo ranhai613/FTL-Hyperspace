@@ -1,0 +1,1 @@
+Affect the logic portion of the selection box, fills `.potentialSelectedCrew`

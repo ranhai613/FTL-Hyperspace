@@ -1,0 +1,1 @@
+Return a vector of weapons on this ship, can be treated like an array in Lua.

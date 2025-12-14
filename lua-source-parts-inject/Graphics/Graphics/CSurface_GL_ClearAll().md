@@ -1,0 +1,1 @@
+Remove everything that has been drawn.

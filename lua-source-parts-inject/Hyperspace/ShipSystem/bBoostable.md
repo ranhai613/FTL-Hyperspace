@@ -1,0 +1,1 @@
+If the system can be manned by a crewmember.

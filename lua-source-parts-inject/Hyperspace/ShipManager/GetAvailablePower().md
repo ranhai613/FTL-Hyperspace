@@ -1,0 +1,1 @@
+First element of the pair is the maximum reactor power, the second element is the available reactor power.

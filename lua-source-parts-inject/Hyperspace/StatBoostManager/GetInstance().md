@@ -1,0 +1,1 @@
+Returns the main instance of `StatBoostManager`. Always use this to access any members and methods belonging to this class.

@@ -1,0 +1,1 @@
+If the system is given an additional level when manned by a crewmember (e.g. doors, sensors).

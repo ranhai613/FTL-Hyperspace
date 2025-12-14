@@ -1,0 +1,1 @@
+Width (in pixels) before automatic newline. Default is 400.

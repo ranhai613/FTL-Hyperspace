@@ -1,0 +1,1 @@
+Close game, autosave profile and settings but not current run (current run will be on previous autosave).

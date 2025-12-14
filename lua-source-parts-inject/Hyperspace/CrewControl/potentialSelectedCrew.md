@@ -1,0 +1,1 @@
+Crew hovered by the selection box

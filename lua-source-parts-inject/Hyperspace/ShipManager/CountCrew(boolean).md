@@ -1,0 +1,1 @@
+return count of crew on this ship, true for boarders false for regular crewmembers.

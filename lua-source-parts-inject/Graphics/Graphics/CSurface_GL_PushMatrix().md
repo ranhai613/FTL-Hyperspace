@@ -1,0 +1,1 @@
+Push the current graphic, that is about to be drawn, onto the selected stack. Which can later be modified with other `CSurface` methods.

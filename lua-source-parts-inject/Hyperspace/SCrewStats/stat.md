@@ -1,0 +1,1 @@
+Has 5 values. `[0]` is the number of repairs, `[1]` is the number of crew combat kills, `[2]` is piloted evasions, `[3]` is jumps survived, `[4]` is skills mastered.

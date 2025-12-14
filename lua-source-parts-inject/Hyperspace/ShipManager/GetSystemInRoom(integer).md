@@ -1,0 +1,1 @@
+Returns the system in a specific room id. If there is no system in the room, returns 0.

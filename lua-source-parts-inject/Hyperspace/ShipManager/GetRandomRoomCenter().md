@@ -1,0 +1,1 @@
+Chooses a random room on the ship and returns the center point of that room

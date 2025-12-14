@@ -1,0 +1,1 @@
+The amount of time that this lockdown will last, in seconds.

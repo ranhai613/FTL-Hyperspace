@@ -1,0 +1,1 @@
+How much power is assigned to this system

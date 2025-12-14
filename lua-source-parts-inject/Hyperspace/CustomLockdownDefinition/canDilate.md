@@ -1,0 +1,1 @@
+If this lockdown is affected by time dilation.

@@ -1,0 +1,1 @@
+Set the slot to occupied. To empty the slot, use `Ship:EmptySlots`.

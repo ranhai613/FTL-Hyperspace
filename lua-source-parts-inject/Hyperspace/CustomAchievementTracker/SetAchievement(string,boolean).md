@@ -1,0 +1,1 @@
+Used to award achievements (CheckShipAchievement is automatically called if needed)

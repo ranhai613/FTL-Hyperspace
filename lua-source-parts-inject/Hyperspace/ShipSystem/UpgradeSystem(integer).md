@@ -1,0 +1,2 @@
+Upgrading a system is basically the same as changing the max power of a system although I think max power might reset after a jump? Not sure haven't tested.
+I think negative upgrades (downgrades) are allowed, please report if they are not.

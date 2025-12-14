@@ -1,0 +1,1 @@
+0 being ship variant A, 1 is ship variant B and 2 is ship variant C

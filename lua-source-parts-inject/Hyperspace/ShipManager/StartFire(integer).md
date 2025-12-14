@@ -1,0 +1,1 @@
+Yeah, it does *exactly what you think it does* [you monster](https://gfycat.com/complexcarefulant).

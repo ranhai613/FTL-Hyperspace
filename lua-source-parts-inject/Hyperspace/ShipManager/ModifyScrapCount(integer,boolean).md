@@ -1,0 +1,1 @@
+`income` determines whether or not augments should be activated (e.g. Scrap Recovery Arm and Repair Arm).

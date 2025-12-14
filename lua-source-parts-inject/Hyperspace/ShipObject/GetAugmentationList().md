@@ -1,0 +1,1 @@
+Returns a `std::vector<std::string>` of augments, in Lua you can handle this as if it was an array of strings.

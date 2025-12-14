@@ -1,0 +1,1 @@
+Returns the number of augments on the ship.

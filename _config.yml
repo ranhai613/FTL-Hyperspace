@@ -18,3 +18,4 @@ baseurl: /FTL-Hyperspace
 exclude:
   - vendor
   - parseSource
+  - lua-source-parts-inject

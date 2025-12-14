@@ -1,0 +1,1 @@
+Renders a triangle. The verticies are constructed with `Hyperspace.Point(x, y)`

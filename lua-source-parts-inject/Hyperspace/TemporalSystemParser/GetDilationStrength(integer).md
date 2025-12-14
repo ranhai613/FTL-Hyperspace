@@ -1,0 +1,1 @@
+Gets the temporal modifier for a given time dilation value.

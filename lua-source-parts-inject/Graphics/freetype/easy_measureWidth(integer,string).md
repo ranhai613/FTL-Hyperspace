@@ -1,0 +1,1 @@
+Return: The horizontal size of the text.

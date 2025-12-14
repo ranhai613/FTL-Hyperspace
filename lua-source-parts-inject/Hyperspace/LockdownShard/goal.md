@@ -1,0 +1,1 @@
+The location where the shard is heading, if it is not already there.

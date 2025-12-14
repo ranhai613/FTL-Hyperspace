@@ -1,7 +1,7 @@
-from parseutility import get_scope_content, sanitize_type
+from parseutility import get_scope_content, sanitize_type, read_file
 from eventhookbuilder import EventHookBuilder
 from additionalEnumTable import AdditionalEnum, AdditionalEnumBuilder
-
+import os
 import re
 import json
 from collections import defaultdict
@@ -349,8 +349,9 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(constructor.className, constructor.params_type[i])} {constructor.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(constructor.className, constructor.returnType)} {constructor.name} ({params_str})\n{{: aria-label='Constructors' }}\n"
-            if constructor.documentation:
-                ret += f"{constructor.documentation}\n"
+            documantation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.className}/{constructor.name}({",".join(constructor.params_type)}).md")
+            if documantation_path.exists():
+                ret += f"{read_file(documantation_path)}\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -381,8 +382,9 @@ class WikiPage:
             ret += f"#### {wrap_type_for_md(constant.className, get_lua_type(constant.returnType))} .{constant.name}\n{{: aria-label='Constants' }}\n"
             if constant.value is not None:
                 ret += f"Equivalent to `{constant.value}`.\n"
-            if constant.documentation:
-                ret += f"{constant.documentation}\n"
+            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.className}/{constant.name}.md")
+            if documentation_path.exists():
+                ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
         
         ret += "___"
@@ -420,8 +422,9 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} .{method.name} ({params_str})\n{{: aria-label='StaticMethods' }}\n"
-            if method.documentation:
-                ret += f"{method.documentation}\n"
+            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md")
+            if documentation_path.exists():
+                ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -458,8 +461,9 @@ class WikiPage:
                 params.append(f"{wrap_type_for_md(method.className, method.params_type[i])} {method.params_name[i]}")
             params_str = ", ".join(params)
             ret += f"#### {wrap_type_for_md(method.className, method.returnType)} :{method.name} ({params_str})\n{{: aria-label='Methods' }}\n"
-            if method.documentation:
-                ret += f"{method.documentation}\n"
+            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{method.name}({','.join(method.params_type)}).md")
+            if documentation_path.exists():
+                ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -491,8 +495,9 @@ class WikiPage:
                 ret += " (Read-only)"
             ret += f"\n{{: #{field.name} .lua-content-item aria-label='Fields' }}\n"
             ret += f"#### {wrap_type_for_md(field.className, get_lua_type(field.returnType))} .{field.name}\n{{: aria-label='Fields' }}\n"
-            if field.documentation:
-                ret += f"{field.documentation}\n"
+            documentation_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/{field.name}.md")
+            if documentation_path.exists():
+                ret += f"{read_file(documentation_path)}\n"
             ret += "\n"
         ret += "___"
         if len(ret) > 4:
@@ -505,8 +510,13 @@ class WikiPage:
             return ""
         
         ret = "| Name | Value | Description |\n| --- | --- | --- |\n"
+        desc_map = {}
+        description_path = Path(f"lua-source-parts-inject/{self.moduleName}/{self.name}/_table_descriptions.json")
+        if description_path.exists():
+            desc_map = json.loads(read_file(description_path))
+        
         for constant in sorted(self.constants, key=lambda x: x.value):
-            description = constant.documentation.replace("\n", " ") if constant.documentation else ""
+            description = desc_map.get(constant.name, "").replace("\n", " ")
             ret += f"| {constant.name} | {constant.value} | {description} |\n"
         return ret
     

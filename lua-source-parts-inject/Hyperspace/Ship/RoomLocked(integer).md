@@ -1,0 +1,1 @@
+Returns true if the room is locked down.

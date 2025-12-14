@@ -1,0 +1,1 @@
+Can be set within a CalculateStat callback to transform a crew to a different race.

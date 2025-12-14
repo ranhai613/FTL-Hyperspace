@@ -1,0 +1,1 @@
+Return `baseEllipse` member by value.

@@ -1,0 +1,2 @@
+Calculates whether a projectile should be dodged or not.
+Note: 5 calls of this method that return false while the player has fully upgraded, fully powered engines will unlock the achievement 'Astronomically Low Odds'.

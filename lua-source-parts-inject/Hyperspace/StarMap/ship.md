@@ -1,0 +1,1 @@
+The map icon that rotates around the current location representing the player ship.

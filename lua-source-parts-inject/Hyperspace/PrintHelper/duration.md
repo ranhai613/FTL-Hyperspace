@@ -1,0 +1,1 @@
+How long (in seconds) each message lasts. Default is 5.

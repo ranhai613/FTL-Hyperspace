@@ -1,0 +1,2 @@
+Select random crew from the ship *for ~~execution~~ selection of your diabolical plans*.
+Not sure why there is a seed option, not sure if you should give it a fixed number or call `Hyperspace.random32()` for a nice random number.

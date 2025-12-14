@@ -1,0 +1,1 @@
+equivalent of `:GetId() - 100`, all custom ship id are shifted by 100 to not overwrite vanilla ones

@@ -1,0 +1,1 @@
+If true, player cannot access anything other than Upgrades screen.

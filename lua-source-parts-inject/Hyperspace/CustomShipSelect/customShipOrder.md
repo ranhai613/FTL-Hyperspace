@@ -1,0 +1,1 @@
+Each pages is %11 ships, `empty` means that a ship button in the page is skipped, special ships are the two last slots.

@@ -1,0 +1,1 @@
+How many messages may be displayed at once. Default is 10.

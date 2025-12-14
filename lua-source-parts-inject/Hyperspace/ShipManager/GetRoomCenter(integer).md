@@ -1,0 +1,1 @@
+Gets the room center point of a specific room id.
