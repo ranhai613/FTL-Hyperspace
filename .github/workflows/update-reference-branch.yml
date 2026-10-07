@@ -50,3 +50,4 @@ jobs:
             git commit -m "$title" -m "Master: ${master_sha}"
             git push origin HEAD:reference
           fi
+
