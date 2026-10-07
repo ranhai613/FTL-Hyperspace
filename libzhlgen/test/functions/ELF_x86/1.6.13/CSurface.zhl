@@ -15,7 +15,7 @@ static cleanup __cdecl void CSurface::GL_ClearAll();
 "0f57c083ec1cf30f1144240cf30f11442408f30f11442404f30f110424":
 static cleanup __cdecl void CSurface::GL_ClearColor();
 "83ec1c8b44242c8944240c8b44242889442408":
-static cleanup __cdecl int CSurface::SetViewPort(int left, int bottom, int h, int w);
+static cleanup __cdecl bool CSurface::GL_SetViewPort(int left, int bottom, int h, int w);
 "83ec1c8b0d????????8b15????????89c829d0c1f804":
 static cleanup __cdecl void CSurface::GL_PopScissor();
 "565383ec148b4424208b5c24248b74242883f801":
@@ -90,12 +90,8 @@ static cleanup __cdecl GL_Primitive* CSurface::GL_CreatePiePartialPrimitive(int 
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreateMultiImagePrimitive(GL_Texture* tex, std::vector<GL_TexVertex>* vec, GL_Color color);
 "a1????????3b05????????74??85c074??8b15????????":
 static cleanup __cdecl void CSurface::GL_PushStencilMode();
-
-/*
 "5557565383ec5c80bc24a8000000008b742470f30f10542474f30f105c2478f30f10842484000000f30f108c2488000000":
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePartialPrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float start_x, float end_x, float start_y, float end_y, float alpha, GL_Color color, bool mirror); 
-*/
-
 "565383ec248b742430f30f10442434f30f104c2438f30f105c2444":
 static cleanup __cdecl void CSurface::AddTexVertices(std::vector<GL_TexVertex>* vec, float x1, float y1, float u1, float v1, float x2, float y2, float u2, float v2);
 ".5557565383ec6c":
@@ -108,6 +104,8 @@ static cleanup __cdecl bool CSurface::GL_DrawLaser(int x, int y, int w, int h, G
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreateImagePrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color);
 "565383ec54f30f104c2478":
 static cleanup __cdecl GL_Primitive* CSurface::GL_CreatePixelImagePrimitive(GL_Texture *tex, float x, float y, float size_x, float size_y, float rotate, GL_Color color, bool unk);
+"5557565383ec7c8b15????????a1????????f30f10b4":
+static cleanup __cdecl bool CSurface::GL_DrawEllipse(int x, int y, int a1, int b1, GL_Color color);
 
 /* Could cause OpenGL issues
 "5631c05383ec148b7424208b5c24248b542428":
