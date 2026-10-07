@@ -50,3 +50,4 @@ jobs:
             git commit "${commit_args[@]}"
             git push origin HEAD:reference
           fi
+
